@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.10">
+	<Catalog uuid="5aa4e7c2-87ad-4a86-9917-9185d1c647bd">
+		<InternalInfo>
+			<xr:GeneratedType name="CatalogObject.КонтактныеЛица" category="Object">
+				<xr:TypeId>a2613f3f-1540-4377-9d1e-5e7256aa9744</xr:TypeId>
+				<xr:ValueId>30ba0cbe-396e-477c-89c2-4dc977f94d88</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogRef.КонтактныеЛица" category="Ref">
+				<xr:TypeId>b1985e23-3f5a-45b8-8996-5b4bd12529a9</xr:TypeId>
+				<xr:ValueId>cf539d66-62e3-48a7-b53d-8e80b16f6f57</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogSelection.КонтактныеЛица" category="Selection">
+				<xr:TypeId>8bd311fb-44b2-41c8-8952-1c56d1173ccf</xr:TypeId>
+				<xr:ValueId>6ef8eacb-f3a2-4271-9431-ada6f26d9cda</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogList.КонтактныеЛица" category="List">
+				<xr:TypeId>a63d2a53-62a5-4d96-8277-31e9343eb646</xr:TypeId>
+				<xr:ValueId>37f606a5-74d3-42a9-be74-478c750d237a</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogManager.КонтактныеЛица" category="Manager">
+				<xr:TypeId>5173e199-7724-4679-bd37-80f8afa548cf</xr:TypeId>
+				<xr:ValueId>c6e392cf-922c-4634-a636-930aa6491d37</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>КонтактныеЛица</Name>
+			<Comment/>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+		</Properties>
+		<ChildObjects/>
+	</Catalog>
+</MetaDataObject>

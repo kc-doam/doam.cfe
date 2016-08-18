@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.10">
+	<Catalog uuid="1668b2a4-7267-4cf9-826b-df513b4e9d9d">
+		<InternalInfo>
+			<xr:GeneratedType name="CatalogObject.ЗаписиРабочегоКалендаря" category="Object">
+				<xr:TypeId>04c3ce3a-6141-4c5f-a6b2-66307bea5138</xr:TypeId>
+				<xr:ValueId>7fffbca0-0e16-4763-ad14-3b3c776c63ba</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogRef.ЗаписиРабочегоКалендаря" category="Ref">
+				<xr:TypeId>3b11d894-02e0-4b16-ad17-15d7ddcf7e9b</xr:TypeId>
+				<xr:ValueId>2cea7a8a-e07f-4b63-ae1b-eb3d11a33d9a</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogSelection.ЗаписиРабочегоКалендаря" category="Selection">
+				<xr:TypeId>cec078df-8aa0-4299-a5c0-a76367e40ca7</xr:TypeId>
+				<xr:ValueId>93dd2394-c605-4a0b-9c10-09b7a6819c2a</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogList.ЗаписиРабочегоКалендаря" category="List">
+				<xr:TypeId>6449cbd5-0ab3-4835-a47a-beb6a6256b5a</xr:TypeId>
+				<xr:ValueId>cc55b605-1f14-4458-ae5c-c2337bd079f0</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogManager.ЗаписиРабочегоКалендаря" category="Manager">
+				<xr:TypeId>646770bc-fbf0-4edb-ad4c-41efb733acaa</xr:TypeId>
+				<xr:ValueId>a1a48550-17bc-494c-a5d4-a2ee0078a08a</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>ЗаписиРабочегоКалендаря</Name>
+			<Comment/>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+		</Properties>
+		<ChildObjects>
+			<Command uuid="c11801fa-70a7-45e3-8578-470aa34c3cee">
+				<InternalInfo/>
+				<Properties>
+					<Name>СоздатьЗаписьКалендаряНаОсновании</Name>
+					<Comment/>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Group>FormCommandBarCreateBasedOn</Group>
+				</Properties>
+			</Command>
+		</ChildObjects>
+	</Catalog>
+</MetaDataObject>

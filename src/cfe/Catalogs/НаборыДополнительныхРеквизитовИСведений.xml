@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.10">
+	<Catalog uuid="44b887b7-1fcd-4274-8df2-95304d4032c6">
+		<InternalInfo>
+			<xr:GeneratedType name="CatalogObject.НаборыДополнительныхРеквизитовИСведений" category="Object">
+				<xr:TypeId>3c838574-c430-4031-bb5a-e44f7ad44dc6</xr:TypeId>
+				<xr:ValueId>1077e5eb-2a96-4d75-8034-7cc5ddb3b631</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogRef.НаборыДополнительныхРеквизитовИСведений" category="Ref">
+				<xr:TypeId>3195f1c9-0807-4997-92f6-3f216d896c6b</xr:TypeId>
+				<xr:ValueId>51bc4ce1-b494-4817-9a7f-bddcc0f8b681</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogSelection.НаборыДополнительныхРеквизитовИСведений" category="Selection">
+				<xr:TypeId>8b3ee8c1-942f-40f0-9685-a29effb75d58</xr:TypeId>
+				<xr:ValueId>d5c5260c-6c40-40c5-a524-fa92e585d2f5</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogList.НаборыДополнительныхРеквизитовИСведений" category="List">
+				<xr:TypeId>8f43955e-a849-4e22-a055-fb5f69bb6b31</xr:TypeId>
+				<xr:ValueId>c71374f9-1db0-4098-ab70-5583d2d9779b</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="CatalogManager.НаборыДополнительныхРеквизитовИСведений" category="Manager">
+				<xr:TypeId>31db4b7b-1923-49ff-a47e-03c8409e0a4e</xr:TypeId>
+				<xr:ValueId>88265b07-5274-4632-b637-d87d1c997a80</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>НаборыДополнительныхРеквизитовИСведений</Name>
+			<Comment/>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<Hierarchical>true</Hierarchical>
+			<HierarchyType>HierarchyFoldersAndItems</HierarchyType>
+			<DescriptionLength>100</DescriptionLength>
+		</Properties>
+		<ChildObjects>
+			<Attribute uuid="a13de54a-3bfa-4bed-8789-f7a600586ffc">
+				<InternalInfo/>
+				<Properties>
+					<Name>Используется</Name>
+					<Comment/>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="f0324c22-a7db-47c5-bc19-64a9aef04737">
+				<InternalInfo/>
+				<Properties>
+					<Name>КоличествоРеквизитов</Name>
+					<Comment/>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>5</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="e4ec39ab-3e5b-4fff-abe4-8a48777940a6">
+				<InternalInfo/>
+				<Properties>
+					<Name>КоличествоСведений</Name>
+					<Comment/>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>5</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Properties>
+			</Attribute>
+		</ChildObjects>
+	</Catalog>
+</MetaDataObject>

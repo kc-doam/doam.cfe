@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.10">
+	<Enum uuid="20f31089-48de-4f6d-b99a-602f7f67642f">
+		<InternalInfo>
+			<xr:GeneratedType name="EnumRef.ЮрФизЛицо" category="Ref">
+				<xr:TypeId>8f54c3bc-12ed-4b4f-8f97-971ede81a4c9</xr:TypeId>
+				<xr:ValueId>7c550f14-01d4-4762-8a24-a99e862f36b7</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumManager.ЮрФизЛицо" category="Manager">
+				<xr:TypeId>271ff07c-ff62-4fad-938e-62aaf715cbfa</xr:TypeId>
+				<xr:ValueId>85429618-0235-4ab9-8eb6-01a12f0555c8</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumList.ЮрФизЛицо" category="List">
+				<xr:TypeId>15d4a91f-721d-458b-b469-0fef159fc60d</xr:TypeId>
+				<xr:ValueId>bda4bbed-9e7d-4900-ac22-eaa6cc77a1d2</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>ЮрФизЛицо</Name>
+			<Comment/>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+		</Properties>
+		<ChildObjects>
+			<EnumValue uuid="2e80d5dc-b00a-4b55-b0c1-1dcf93fdf89a">
+				<InternalInfo/>
+				<Properties>
+					<Name>ФизЛицо</Name>
+					<Comment/>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+				</Properties>
+			</EnumValue>
+		</ChildObjects>
+	</Enum>
+</MetaDataObject>

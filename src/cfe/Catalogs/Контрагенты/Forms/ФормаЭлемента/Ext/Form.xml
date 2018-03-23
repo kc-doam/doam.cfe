@@ -1093,6 +1093,86 @@
 									</Title>
 									<ExtendedTooltip name="ГруппаДополнительныеРеквизитыExtendedTooltip" id="93"/>
 								</Page>
+								<Page name="ГруппаИсторияВзаимодействия" id="365">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>История взаимодействия</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа история взаимодействия</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="ГруппаИсторияВзаимодействияРасширеннаяПодсказка" id="366"/>
+									<ChildItems>
+										<Table name="ИсторияВзаимодействия" id="367">
+											<Representation>List</Representation>
+											<RowInputMode>BeforeCurrentRow</RowInputMode>
+											<InitialListView>Beginning</InitialListView>
+											<EnableStartDrag>true</EnableStartDrag>
+											<EnableDrag>true</EnableDrag>
+											<FileDragMode>AsFile</FileDragMode>
+											<DataPath>Объект.ИсторияВзаимодействия</DataPath>
+											<RowFilter xsi:nil="true"/>
+											<ContextMenu name="ИсторияВзаимодействияКонтекстноеМеню" id="368"/>
+											<AutoCommandBar name="ИсторияВзаимодействияКоманднаяПанель" id="369"/>
+											<ExtendedTooltip name="ИсторияВзаимодействияРасширеннаяПодсказка" id="370"/>
+											<SearchStringAddition name="ИсторияВзаимодействияСтрокаПоиска" id="371">
+												<AdditionSource>
+													<Item>ИсторияВзаимодействия</Item>
+													<Type>SearchStringRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="ИсторияВзаимодействияСтрокаПоискаКонтекстноеМеню" id="372"/>
+												<ExtendedTooltip name="ИсторияВзаимодействияСтрокаПоискаРасширеннаяПодсказка" id="373"/>
+											</SearchStringAddition>
+											<ViewStatusAddition name="ИсторияВзаимодействияСостояниеПросмотра" id="374">
+												<AdditionSource>
+													<Item>ИсторияВзаимодействия</Item>
+													<Type>ViewStatusRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="ИсторияВзаимодействияСостояниеПросмотраКонтекстноеМеню" id="375"/>
+												<ExtendedTooltip name="ИсторияВзаимодействияСостояниеПросмотраРасширеннаяПодсказка" id="376"/>
+											</ViewStatusAddition>
+											<SearchControlAddition name="ИсторияВзаимодействияУправлениеПоиском" id="377">
+												<AdditionSource>
+													<Item>ИсторияВзаимодействия</Item>
+													<Type>SearchControl</Type>
+												</AdditionSource>
+												<ContextMenu name="ИсторияВзаимодействияУправлениеПоискомКонтекстноеМеню" id="378"/>
+												<ExtendedTooltip name="ИсторияВзаимодействияУправлениеПоискомРасширеннаяПодсказка" id="379"/>
+											</SearchControlAddition>
+											<ChildItems>
+												<LabelField name="ИсторияВзаимодействияНомерСтроки" id="380">
+													<DataPath>Объект.ИсторияВзаимодействия.LineNumber</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="ИсторияВзаимодействияНомерСтрокиКонтекстноеМеню" id="381"/>
+													<ExtendedTooltip name="ИсторияВзаимодействияНомерСтрокиРасширеннаяПодсказка" id="382"/>
+												</LabelField>
+												<InputField name="ИсторияВзаимодействияДата" id="383">
+													<DataPath>Объект.ИсторияВзаимодействия.Дата</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="ИсторияВзаимодействияДатаКонтекстноеМеню" id="384"/>
+													<ExtendedTooltip name="ИсторияВзаимодействияДатаРасширеннаяПодсказка" id="385"/>
+												</InputField>
+												<InputField name="ИсторияВзаимодействияСтадия" id="386">
+													<DataPath>Объект.ИсторияВзаимодействия.Стадия</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="ИсторияВзаимодействияСтадияКонтекстноеМеню" id="387"/>
+													<ExtendedTooltip name="ИсторияВзаимодействияСтадияРасширеннаяПодсказка" id="388"/>
+												</InputField>
+												<InputField name="ИсторияВзаимодействияКомментарий" id="389">
+													<DataPath>Объект.ИсторияВзаимодействия.Комментарий</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="ИсторияВзаимодействияКомментарийКонтекстноеМеню" id="390"/>
+													<ExtendedTooltip name="ИсторияВзаимодействияКомментарийРасширеннаяПодсказка" id="391"/>
+												</InputField>
+											</ChildItems>
+										</Table>
+									</ChildItems>
+								</Page>
 							</ChildItems>
 						</Pages>
 					</ChildItems>

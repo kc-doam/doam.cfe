@@ -98,6 +98,7 @@
 			<Catalog>КлассификаторБанковРФ</Catalog>
 			<Enum>СпособыУказанияВремени</Enum>
 			<Enum>ЮрФизЛицо</Enum>
+			<Enum>СтадииВзаимодействия</Enum>
 			<DataProcessor>РасшДОАМ_СписокКонтрагентов</DataProcessor>
 			<ChartOfCharacteristicTypes>ДополнительныеРеквизитыИСведения</ChartOfCharacteristicTypes>
 		</ChildObjects>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.10">
+	<Enum uuid="3630f7ed-2310-4492-ba57-2402f39557d2">
+		<InternalInfo>
+			<xr:GeneratedType name="EnumRef.СтадииВзаимодействия" category="Ref">
+				<xr:TypeId>891ce8d2-3c2b-45ed-82ea-d0b46a39b807</xr:TypeId>
+				<xr:ValueId>55fd7797-2557-4457-9859-5be3e68c7209</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumManager.СтадииВзаимодействия" category="Manager">
+				<xr:TypeId>1c271565-1dcc-404f-9218-006cc07c2dcb</xr:TypeId>
+				<xr:ValueId>15b6d4c2-3f0d-4a1d-a2eb-e44f8993b9e8</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumList.СтадииВзаимодействия" category="List">
+				<xr:TypeId>accc966f-4b8f-44e5-86bb-045945cd5ba4</xr:TypeId>
+				<xr:ValueId>df9c6b67-d96e-4c41-9613-352e5368cb71</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>СтадииВзаимодействия</Name>
+			<Comment/>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+		</Properties>
+		<ChildObjects/>
+	</Enum>
+</MetaDataObject>

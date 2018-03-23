@@ -249,6 +249,65 @@
 				</Properties>
 				<ChildObjects/>
 			</TabularSection>
+			<TabularSection uuid="511252b1-49fa-410e-acd2-5d3477fce382">
+				<InternalInfo>
+					<xr:GeneratedType name="CatalogTabularSection.Контрагенты.ИсторияВзаимодействия" category="TabularSection">
+						<xr:TypeId>0d3899d6-eb04-4c0e-acb8-c9b6e7370b1e</xr:TypeId>
+						<xr:ValueId>d09c5555-0de8-44de-abdb-cd4bea6e2c40</xr:ValueId>
+					</xr:GeneratedType>
+					<xr:GeneratedType name="CatalogTabularSectionRow.Контрагенты.ИсторияВзаимодействия" category="TabularSectionRow">
+						<xr:TypeId>a449e2cc-274b-4f36-9bab-51de00fa4341</xr:TypeId>
+						<xr:ValueId>070f06a1-a092-4dfa-91ec-42dd7670f03d</xr:ValueId>
+					</xr:GeneratedType>
+				</InternalInfo>
+				<Properties>
+					<Name>ИсторияВзаимодействия</Name>
+					<Comment/>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+				</Properties>
+				<ChildObjects>
+					<Attribute uuid="4b6f1a89-1aaf-4682-8cd5-e732b316dacc">
+						<InternalInfo/>
+						<Properties>
+							<Name>Дата</Name>
+							<Comment/>
+							<ObjectBelonging>Adopted</ObjectBelonging>
+							<Type>
+								<v8:Type>xs:dateTime</v8:Type>
+								<v8:DateQualifiers>
+									<v8:DateFractions>Date</v8:DateFractions>
+								</v8:DateQualifiers>
+							</Type>
+						</Properties>
+					</Attribute>
+					<Attribute uuid="6fdecf60-5bba-458d-815a-b10ff24e54d5">
+						<InternalInfo/>
+						<Properties>
+							<Name>Стадия</Name>
+							<Comment/>
+							<ObjectBelonging>Adopted</ObjectBelonging>
+							<Type>
+								<v8:Type>cfg:EnumRef.СтадииВзаимодействия</v8:Type>
+							</Type>
+						</Properties>
+					</Attribute>
+					<Attribute uuid="193e5f39-14c3-4819-9fea-637bf3fe7ad4">
+						<InternalInfo/>
+						<Properties>
+							<Name>Комментарий</Name>
+							<Comment/>
+							<ObjectBelonging>Adopted</ObjectBelonging>
+							<Type>
+								<v8:Type>xs:string</v8:Type>
+								<v8:StringQualifiers>
+									<v8:Length>0</v8:Length>
+									<v8:AllowedLength>Variable</v8:AllowedLength>
+								</v8:StringQualifiers>
+							</Type>
+						</Properties>
+					</Attribute>
+				</ChildObjects>
+			</TabularSection>
 			<Form>ФормаЭлемента</Form>
 		</ChildObjects>
 	</Catalog>

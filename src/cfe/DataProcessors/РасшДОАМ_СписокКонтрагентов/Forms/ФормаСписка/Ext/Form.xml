@@ -63,6 +63,7 @@
 			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="83"/>
 			<ChildItems>
 				<Table name="Список" id="31">
+					<Representation>List</Representation>
 					<UseAlternationRowColor>true</UseAlternationRowColor>
 					<EnableStartDrag>true</EnableStartDrag>
 					<EnableDrag>true</EnableDrag>
@@ -243,10 +244,10 @@
 				<ManualQuery>true</ManualQuery>
 				<DynamicDataRead>false</DynamicDataRead>
 				<QueryText>ВЫБРАТЬ РАЗРЕШЕННЫЕ
-	Контрагенты.Ссылка,
-	Контрагенты.ЮрФизЛицо
-ИЗ
-	Справочник.Контрагенты КАК Контрагенты</QueryText>
+		Контрагенты.Ссылка,
+		Контрагенты.ЮрФизЛицо
+	ИЗ
+		Справочник.Контрагенты КАК Контрагенты</QueryText>
 				<MainTable>Catalog.Контрагенты</MainTable>
 				<ListSettings>
 					<dcsset:filter>
@@ -367,4 +368,4 @@
 			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 	</Commands>
-</Form>
+</Form>

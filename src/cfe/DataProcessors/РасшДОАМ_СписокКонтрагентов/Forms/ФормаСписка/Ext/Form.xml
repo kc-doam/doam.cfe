@@ -244,10 +244,10 @@
 				<ManualQuery>true</ManualQuery>
 				<DynamicDataRead>false</DynamicDataRead>
 				<QueryText>ВЫБРАТЬ РАЗРЕШЕННЫЕ
-		Контрагенты.Ссылка,
-		Контрагенты.ЮрФизЛицо
-	ИЗ
-		Справочник.Контрагенты КАК Контрагенты</QueryText>
+	Контрагенты.Ссылка,
+	Контрагенты.ЮрФизЛицо
+ИЗ
+	Справочник.Контрагенты КАК Контрагенты</QueryText>
 				<MainTable>Catalog.Контрагенты</MainTable>
 				<ListSettings>
 					<dcsset:filter>

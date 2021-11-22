@@ -627,14 +627,14 @@
 			</UsualGroup>
 		</ChildItems>
 		<Attributes>
-			<Attribute name="Объект" id="1">
+			<Attribute name="Объект" id="1000001">
 				<Type>
 					<v8:Type>cfg:CatalogObject.БанковскиеСчета</v8:Type>
 				</Type>
 				<MainAttribute>true</MainAttribute>
 				<SavedData>true</SavedData>
 			</Attribute>
-			<Attribute name="Валютный" id="2">
+			<Attribute name="Валютный" id="1000002">
 				<Title>
 					<v8:item>
 						<v8:lang>ru</v8:lang>
@@ -645,7 +645,7 @@
 					<v8:Type>xs:boolean</v8:Type>
 				</Type>
 			</Attribute>
-			<Attribute name="УказатьОсновнойБанковскийСчет" id="3">
+			<Attribute name="УказатьОсновнойБанковскийСчет" id="1000003">
 				<Title>
 					<v8:item>
 						<v8:lang>ru</v8:lang>

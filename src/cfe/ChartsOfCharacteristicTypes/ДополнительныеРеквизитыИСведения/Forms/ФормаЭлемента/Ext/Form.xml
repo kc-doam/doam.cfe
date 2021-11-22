@@ -135,13 +135,6 @@
 															</RowsPicture>
 															<CommandSet>
 																<ExcludedCommand>Change</ExcludedCommand>
-																<ExcludedCommand>Choose</ExcludedCommand>
-																<ExcludedCommand>Copy</ExcludedCommand>
-																<ExcludedCommand>Create</ExcludedCommand>
-																<ExcludedCommand>CreateFolder</ExcludedCommand>
-																<ExcludedCommand>Delete</ExcludedCommand>
-																<ExcludedCommand>MoveItem</ExcludedCommand>
-																<ExcludedCommand>SetDeletionMark</ExcludedCommand>
 															</CommandSet>
 															<SearchStringLocation>None</SearchStringLocation>
 															<ViewStatusLocation>None</ViewStatusLocation>
@@ -2258,20 +2251,12 @@
 																<EnableDrag>true</EnableDrag>
 																<FileDragMode>AsFile</FileDragMode>
 																<DataPath>НаборыСвойств</DataPath>
-																<RowPictureDataPath>НаборыСвойств.НомерКартинки</RowPictureDataPath>
 																<RowsPicture>
 																	<xr:Ref>CommonPicture.ПиктограммыЭлементов</xr:Ref>
 																	<xr:LoadTransparent>true</xr:LoadTransparent>
 																</RowsPicture>
 																<CommandSet>
 																	<ExcludedCommand>Change</ExcludedCommand>
-																	<ExcludedCommand>Choose</ExcludedCommand>
-																	<ExcludedCommand>Copy</ExcludedCommand>
-																	<ExcludedCommand>Create</ExcludedCommand>
-																	<ExcludedCommand>CreateFolder</ExcludedCommand>
-																	<ExcludedCommand>Delete</ExcludedCommand>
-																	<ExcludedCommand>MoveItem</ExcludedCommand>
-																	<ExcludedCommand>SetDeletionMark</ExcludedCommand>
 																</CommandSet>
 																<SearchStringLocation>None</SearchStringLocation>
 																<ViewStatusLocation>None</ViewStatusLocation>
@@ -2351,7 +2336,6 @@
 																<EnableStartDrag>true</EnableStartDrag>
 																<FileDragMode>AsFile</FileDragMode>
 																<DataPath>ОбщиеНаборыСвойств</DataPath>
-																<RowPictureDataPath>ОбщиеНаборыСвойств.НомерКартинки</RowPictureDataPath>
 																<RowsPicture>
 																	<xr:Ref>CommonPicture.ПиктограммыЭлементов</xr:Ref>
 																	<xr:LoadTransparent>true</xr:LoadTransparent>
@@ -2436,7 +2420,7 @@
 												<EnableDrag>true</EnableDrag>
 												<FileDragMode>AsFile</FileDragMode>
 												<DataPath>Свойства</DataPath>
-												<RowPictureDataPath>Свойства.НомерКартинки</RowPictureDataPath>
+												<RowPictureDataPath>1000018/1000003</RowPictureDataPath>
 												<RowsPicture>
 													<xr:Ref>CommonPicture.ПиктограммыЭлементов</xr:Ref>
 													<xr:LoadTransparent>false</xr:LoadTransparent>
@@ -3275,7 +3259,7 @@
 																<EnableDrag>true</EnableDrag>
 																<FileDragMode>AsFile</FileDragMode>
 																<DataPath>ЗначенияДополнительныхРеквизитов</DataPath>
-																<RowPictureDataPath>ЗначенияДополнительныхРеквизитов.КодКартинки</RowPictureDataPath>
+																<RowPictureDataPath>1000012/1000002</RowPictureDataPath>
 																<RowsPicture>
 																	<xr:Ref>StdPicture.Attribute</xr:Ref>
 																	<xr:LoadTransparent>true</xr:LoadTransparent>
@@ -3512,14 +3496,14 @@
 			</UsualGroup>
 		</ChildItems>
 		<Attributes>
-			<Attribute name="Объект" id="1">
+			<Attribute name="Объект" id="1000001">
 				<Type>
 					<v8:Type>cfg:ChartOfCharacteristicTypesObject.ДополнительныеРеквизитыИСведения</v8:Type>
 				</Type>
 				<MainAttribute>true</MainAttribute>
 				<SavedData>true</SavedData>
 			</Attribute>
-			<Attribute name="ЭтоДополнительноеСведение" id="3">
+			<Attribute name="ЭтоДополнительноеСведение" id="1000002">
 				<Title>
 					<v8:item>
 						<v8:lang>ru</v8:lang>
@@ -3539,7 +3523,7 @@
 					<Item>FunctionalOption.ИспользоватьДополнительныеРеквизитыИСведения</Item>
 				</FunctionalOptions>
 			</Attribute>
-			<Attribute name="СписокНаборов" id="2">
+			<Attribute name="СписокНаборов" id="1000003">
 				<Title>
 					<v8:item>
 						<v8:lang>ru</v8:lang>
@@ -3550,7 +3534,7 @@
 					<v8:Type>v8:ValueListType</v8:Type>
 				</Type>
 			</Attribute>
-			<Attribute name="МногострочноеПолеВвода" id="7">
+			<Attribute name="МногострочноеПолеВвода" id="1000004">
 				<Title>
 					<v8:item>
 						<v8:lang>ru</v8:lang>
@@ -3565,7 +3549,7 @@
 					<Item>FunctionalOption.ИспользоватьДополнительныеРеквизитыИСведения</Item>
 				</FunctionalOptions>
 			</Attribute>
-			<Attribute name="МногострочноеПолеВводаЧисло" id="8">
+			<Attribute name="МногострочноеПолеВводаЧисло" id="1000005">
 				<Title>
 					<v8:item>
 						<v8:lang>ru</v8:lang>
@@ -3585,7 +3569,7 @@
 					<Item>FunctionalOption.ИспользоватьДополнительныеРеквизитыИСведения</Item>
 				</FunctionalOptions>
 			</Attribute>
-			<Attribute name="Значения" id="9">
+			<Attribute name="Значения" id="1000006">
 				<Title>
 					<v8:item>
 						<v8:lang>ru</v8:lang>
@@ -3620,7 +3604,7 @@
 					</ListSettings>
 				</Settings>
 			</Attribute>
-			<Attribute name="ПоказатьУточнениеНабора" id="10">
+			<Attribute name="ПоказатьУточнениеНабора" id="1000007">
 				<Title>
 					<v8:item>
 						<v8:lang>ru</v8:lang>
@@ -3631,7 +3615,7 @@
 					<v8:Type>xs:boolean</v8:Type>
 				</Type>
 			</Attribute>
-			<Attribute name="ТекущийНаборСвойств" id="4">
+			<Attribute name="ТекущийНаборСвойств" id="1000008">
 				<Title>
 					<v8:item>
 						<v8:lang>ru</v8:lang>
@@ -3642,7 +3626,7 @@
 					<v8:Type>cfg:CatalogRef.НаборыДополнительныхРеквизитовИСведений</v8:Type>
 				</Type>
 			</Attribute>
-			<Attribute name="ПереданныеПараметрыФормы" id="13">
+			<Attribute name="ПереданныеПараметрыФормы" id="1000009">
 				<Title>
 					<v8:item>
 						<v8:lang>ru</v8:lang>
@@ -3651,7 +3635,7 @@
 				</Title>
 				<Type/>
 			</Attribute>
-			<Attribute name="РежимДобавленияРеквизита" id="14">
+			<Attribute name="РежимДобавленияРеквизита" id="1000010">
 				<Title>
 					<v8:item>
 						<v8:lang>ru</v8:lang>
@@ -3666,7 +3650,7 @@
 					</v8:StringQualifiers>
 				</Type>
 			</Attribute>
-			<Attribute name="РежимПомощника" id="15">
+			<Attribute name="РежимПомощника" id="1000011">
 				<Title>
 					<v8:item>
 						<v8:lang>ru</v8:lang>
@@ -3677,7 +3661,7 @@
 					<v8:Type>xs:boolean</v8:Type>
 				</Type>
 			</Attribute>
-			<Attribute name="ЗначенияДополнительныхРеквизитов" id="16">
+			<Attribute name="ЗначенияДополнительныхРеквизитов" id="1000012">
 				<Title>
 					<v8:item>
 						<v8:lang>ru</v8:lang>
@@ -3749,7 +3733,7 @@
 					</Column>
 				</Columns>
 			</Attribute>
-			<Attribute name="ПустаяСсылка" id="17">
+			<Attribute name="ПустаяСсылка" id="1000013">
 				<Title>
 					<v8:item>
 						<v8:lang>ru</v8:lang>
@@ -3760,7 +3744,7 @@
 					<v8:Type>cfg:ChartOfCharacteristicTypesRef.ДополнительныеРеквизитыИСведения</v8:Type>
 				</Type>
 			</Attribute>
-			<Attribute name="УсловияЗависимостиРеквизитов" id="18">
+			<Attribute name="УсловияЗависимостиРеквизитов" id="1000014">
 				<Title>
 					<v8:item>
 						<v8:lang>ru</v8:lang>
@@ -3771,7 +3755,7 @@
 					<v8:Type>v8:ValueListType</v8:Type>
 				</Type>
 			</Attribute>
-			<Attribute name="ИзмененыУсловияЗависимостиРеквизитов" id="19">
+			<Attribute name="ИзмененыУсловияЗависимостиРеквизитов" id="1000015">
 				<Title>
 					<v8:item>
 						<v8:lang>ru</v8:lang>
@@ -3782,7 +3766,7 @@
 					<v8:Type>xs:boolean</v8:Type>
 				</Type>
 			</Attribute>
-			<Attribute name="ВыбранныйНаборСвойств" id="20">
+			<Attribute name="ВыбранныйНаборСвойств" id="1000016">
 				<Title>
 					<v8:item>
 						<v8:lang>ru</v8:lang>
@@ -3793,7 +3777,7 @@
 					<v8:Type>cfg:CatalogRef.НаборыДополнительныхРеквизитовИСведений</v8:Type>
 				</Type>
 			</Attribute>
-			<Attribute name="НаборыСвойств" id="21">
+			<Attribute name="НаборыСвойств" id="1000017">
 				<Title>
 					<v8:item>
 						<v8:lang>ru</v8:lang>
@@ -3873,7 +3857,7 @@
 					</ListSettings>
 				</Settings>
 			</Attribute>
-			<Attribute name="Свойства" id="22">
+			<Attribute name="Свойства" id="1000018">
 				<Title>
 					<v8:item>
 						<v8:lang>ru</v8:lang>
@@ -4048,7 +4032,7 @@
 					</Column>
 				</Columns>
 			</Attribute>
-			<Attribute name="ОбщиеНаборыСвойств" id="23">
+			<Attribute name="ОбщиеНаборыСвойств" id="1000019">
 				<Title>
 					<v8:item>
 						<v8:lang>ru</v8:lang>
@@ -4088,7 +4072,7 @@
 			</Attribute>
 		</Attributes>
 		<Commands>
-			<Command name="РедактироватьФорматЗначения" id="1">
+			<Command name="РедактироватьФорматЗначения" id="1000001">
 				<Title>
 					<v8:item>
 						<v8:lang>ru</v8:lang>
@@ -4104,7 +4088,7 @@
 				<ModifiesSavedData>true</ModifiesSavedData>
 				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
-			<Command name="УточнениеСпискаЗначенийИзменить" id="2">
+			<Command name="УточнениеСпискаЗначенийИзменить" id="1000002">
 				<Title>
 					<v8:item>
 						<v8:lang>ru</v8:lang>
@@ -4119,7 +4103,7 @@
 				</ToolTip>
 				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
-			<Command name="УточнениеНаборовИзменить" id="3">
+			<Command name="УточнениеНаборовИзменить" id="1000003">
 				<Title>
 					<v8:item>
 						<v8:lang>ru</v8:lang>
@@ -4134,7 +4118,7 @@
 				</ToolTip>
 				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
-			<Command name="КомандаДалее" id="4">
+			<Command name="КомандаДалее" id="1000004">
 				<Title>
 					<v8:item>
 						<v8:lang>ru</v8:lang>
@@ -4149,7 +4133,7 @@
 				</ToolTip>
 				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
-			<Command name="КомандаНазад" id="5">
+			<Command name="КомандаНазад" id="1000005">
 				<Title>
 					<v8:item>
 						<v8:lang>ru</v8:lang>
@@ -4164,7 +4148,7 @@
 				</ToolTip>
 				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
-			<Command name="ЗакрытьФорму" id="6">
+			<Command name="ЗакрытьФорму" id="1000006">
 				<Title>
 					<v8:item>
 						<v8:lang>ru</v8:lang>
@@ -4179,7 +4163,7 @@
 				</ToolTip>
 				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
-			<Command name="ПоискИУдалениеДублей" id="7">
+			<Command name="ПоискИУдалениеДублей" id="1000007">
 				<Title>
 					<v8:item>
 						<v8:lang>ru</v8:lang>
@@ -4194,7 +4178,7 @@
 				</ToolTip>
 				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
-			<Command name="Изменить" id="8">
+			<Command name="Изменить" id="1000008">
 				<Title>
 					<v8:item>
 						<v8:lang>ru</v8:lang>
@@ -4214,7 +4198,7 @@
 				</Picture>
 				<CurrentRowUse>DontUse</CurrentRowUse>
 			</Command>
-			<Command name="ОбщиеРеквизитыНеВключенныеВНаборы" id="9">
+			<Command name="ОбщиеРеквизитыНеВключенныеВНаборы" id="1000009">
 				<Title>
 					<v8:item>
 						<v8:lang>ru</v8:lang>

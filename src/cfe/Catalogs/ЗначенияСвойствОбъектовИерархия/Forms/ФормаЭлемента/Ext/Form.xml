@@ -102,7 +102,7 @@
 			</InputField>
 		</ChildItems>
 		<Attributes>
-			<Attribute name="Объект" id="1">
+			<Attribute name="Объект" id="1000001">
 				<Type>
 					<v8:Type>cfg:CatalogObject.ЗначенияСвойствОбъектовИерархия</v8:Type>
 				</Type>

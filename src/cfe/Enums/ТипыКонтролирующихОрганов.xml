@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.10">
+	<Enum uuid="cb2711c4-e075-41c1-8c2b-729eb1d1f788">
+		<InternalInfo>
+			<xr:GeneratedType name="EnumRef.ТипыКонтролирующихОрганов" category="Ref">
+				<xr:TypeId>798917d3-b094-4b03-8223-664da86b0c00</xr:TypeId>
+				<xr:ValueId>182737e8-25fb-4798-9998-5d905856cdef</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumManager.ТипыКонтролирующихОрганов" category="Manager">
+				<xr:TypeId>28b374a1-5f28-4419-b513-a116a4f36cd9</xr:TypeId>
+				<xr:ValueId>b02b99f9-41cd-4f3b-9ecf-2a3191cf8fbb</xr:ValueId>
+			</xr:GeneratedType>
+			<xr:GeneratedType name="EnumList.ТипыКонтролирующихОрганов" category="List">
+				<xr:TypeId>680a3885-c66b-46e4-b193-9d525f587329</xr:TypeId>
+				<xr:ValueId>8785752b-af6e-43d4-959b-93123150f54f</xr:ValueId>
+			</xr:GeneratedType>
+		</InternalInfo>
+		<Properties>
+			<Name>ТипыКонтролирующихОрганов</Name>
+			<Comment/>
+			<ObjectBelonging>Adopted</ObjectBelonging>
+			<ExtendedConfigurationObject>aae14f1a-eff1-4cb4-91b6-c69de7f7781b</ExtendedConfigurationObject>
+		</Properties>
+		<ChildObjects>
+			<EnumValue uuid="5260c410-fecd-41df-9750-9a712bcfc6fc">
+				<InternalInfo/>
+				<Properties>
+					<Name>ФНС</Name>
+					<Comment/>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<ExtendedConfigurationObject>34a9057c-8973-4861-af88-08eeaef55e9d</ExtendedConfigurationObject>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="8b146073-c67c-4aa7-b8d7-8b8e319a16bf">
+				<InternalInfo/>
+				<Properties>
+					<Name>ПФР</Name>
+					<Comment/>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<ExtendedConfigurationObject>742fde9a-f8f6-4375-9f4e-e13d89c19f40</ExtendedConfigurationObject>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="e7b0dd56-c8b4-4235-8a48-8d61aca21cfe">
+				<InternalInfo/>
+				<Properties>
+					<Name>ФСГС</Name>
+					<Comment/>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<ExtendedConfigurationObject>a49d841a-8cd4-4778-a5a8-edc72ff894cb</ExtendedConfigurationObject>
+				</Properties>
+			</EnumValue>
+		</ChildObjects>
+	</Enum>
+</MetaDataObject>

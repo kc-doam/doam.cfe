@@ -190,6 +190,74 @@
 					</Type>
 				</Properties>
 			</Attribute>
+			<Attribute uuid="b0aecfc4-a68d-4bbc-919e-d7192867316d">
+				<InternalInfo/>
+				<Properties>
+					<Name>ИдентификаторССТУ</Name>
+					<Comment/>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<ExtendedConfigurationObject>2b7b3ad8-f12d-4858-a73f-2037aa074124</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>36</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="4207b40a-7520-4b73-9a24-2547e5350414">
+				<InternalInfo/>
+				<Properties>
+					<Name>ЭтоОрганИсполнительнойВласти</Name>
+					<Comment/>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<ExtendedConfigurationObject>cfb36d6f-844d-4b24-ac23-2ff0186ed739</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="c8ca348b-55a9-4f11-9285-dd865f3c177d">
+				<InternalInfo/>
+				<Properties>
+					<Name>ЭтоКонтролирующийОрган</Name>
+					<Comment/>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<ExtendedConfigurationObject>df217eac-1834-43c5-ac92-9b24e3d26b9d</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="9bd6d3ad-c27a-4993-9ec0-cbc2e99753b2">
+				<InternalInfo/>
+				<Properties>
+					<Name>ТипКонтролирующегоОргана</Name>
+					<Comment/>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<ExtendedConfigurationObject>563e057f-d9ea-4cc3-bbca-f5916e885f07</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>cfg:EnumRef.ТипыКонтролирующихОрганов</v8:Type>
+					</Type>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="b1780382-f35b-402b-bb06-e32261763ad3">
+				<InternalInfo/>
+				<Properties>
+					<Name>КодКонтролирующегоОргана</Name>
+					<Comment/>
+					<ObjectBelonging>Adopted</ObjectBelonging>
+					<ExtendedConfigurationObject>4045ecdc-8230-48c3-a655-ff134b74a184</ExtendedConfigurationObject>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>10</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Properties>
+			</Attribute>
 			<TabularSection uuid="c71f881e-a564-44ed-8520-e18259913947">
 				<InternalInfo>
 					<xr:GeneratedType name="CatalogTabularSection.Контрагенты.ДополнительныеРеквизиты" category="TabularSection">

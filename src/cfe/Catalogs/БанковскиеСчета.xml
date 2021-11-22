@@ -148,7 +148,7 @@
 					<Comment/>
 					<ObjectBelonging>Adopted</ObjectBelonging>
 					<Type>
-						<v8:Type>cfg:CatalogRef.КлассификаторБанковРФ</v8:Type>
+						<v8:Type>cfg:CatalogRef.КлассификаторБанков</v8:Type>
 					</Type>
 				</Properties>
 			</Attribute>
@@ -173,7 +173,7 @@
 					<Comment/>
 					<ObjectBelonging>Adopted</ObjectBelonging>
 					<Type>
-						<v8:Type>cfg:CatalogRef.КлассификаторБанковРФ</v8:Type>
+						<v8:Type>cfg:CatalogRef.КлассификаторБанков</v8:Type>
 					</Type>
 				</Properties>
 			</Attribute>
@@ -195,4 +195,4 @@
 			<Form>ФормаЭлемента</Form>
 		</ChildObjects>
 	</Catalog>
-</MetaDataObject>
+</MetaDataObject>

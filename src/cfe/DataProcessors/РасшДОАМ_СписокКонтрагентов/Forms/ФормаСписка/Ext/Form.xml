@@ -5,6 +5,7 @@
 		<Autofill>false</Autofill>
 	</AutoCommandBar>
 	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
 		<Event name="OnLoadDataFromSettingsAtServer">ПриЗагрузкеДанныхИзНастроекНаСервере</Event>
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 	</Events>
@@ -62,6 +63,24 @@
 			<Representation>None</Representation>
 			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="83"/>
 			<ChildItems>
+				<UsualGroup name="ГруппаСписок" id="89">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа список</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа список</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаСписокРасширеннаяПодсказка" id="90"/>
+					<ChildItems>
 						<Table name="Список" id="31">
 							<Representation>List</Representation>
 							<UseAlternationRowColor>true</UseAlternationRowColor>
@@ -184,6 +203,13 @@
 								</LabelField>
 							</ChildItems>
 						</Table>
+						<LabelField name="КоличествоКонтрагентов" id="86">
+							<DataPath>КоличествоКонтрагентов</DataPath>
+							<ContextMenu name="КоличествоКонтрагентовКонтекстноеМеню" id="87"/>
+							<ExtendedTooltip name="КоличествоКонтрагентовРасширеннаяПодсказка" id="88"/>
+						</LabelField>
+					</ChildItems>
+				</UsualGroup>
 				<UsualGroup name="ГруппаМиникарточка" id="75">
 					<Visible>false</Visible>
 					<Title>
@@ -214,7 +240,6 @@
 							</ToolTip>
 							<Width>30</Width>
 							<MaxWidth>14</MaxWidth>
-							<Height>13</Height>
 							<ContextMenu name="ОбзорHTMLКонтекстноеМеню" id="78"/>
 							<ExtendedTooltip name="ОбзорHTMLРасширеннаяПодсказка" id="79"/>
 						</HTMLDocumentField>
@@ -295,6 +320,22 @@
 			<Save>
 				<Field>ПоказыватьОбластьОбзора</Field>
 			</Save>
+		</Attribute>
+		<Attribute name="КоличествоКонтрагентов" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество контрагентов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
 		</Attribute>
 	</Attributes>
 	<Commands>

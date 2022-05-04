@@ -1021,6 +1021,37 @@
 															<ContextMenu name="КомментарийКонтекстноеМеню" id="21"/>
 															<ExtendedTooltip name="КомментарийExtendedTooltip" id="96"/>
 														</InputField>
+														<UsualGroup name="ГруппаДетали" id="524">
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа детали</v8:content>
+																</v8:item>
+															</Title>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа детали</v8:content>
+																</v8:item>
+															</ToolTip>
+															<Representation>None</Representation>
+															<ShowTitle>false</ShowTitle>
+															<ExtendedTooltip name="ГруппаДеталиРасширеннаяПодсказка" id="525"/>
+															<ChildItems>
+																<CheckBoxField name="ПрименениеЭДО" id="518">
+																	<DataPath>Объект.ПрименениеЭДО</DataPath>
+																	<CheckBoxType>Auto</CheckBoxType>
+																	<ContextMenu name="ПрименениеЭДОКонтекстноеМеню" id="519"/>
+																	<ExtendedTooltip name="ПрименениеЭДОРасширеннаяПодсказка" id="520"/>
+																</CheckBoxField>
+																<CheckBoxField name="Самозанятый" id="521">
+																	<DataPath>Объект.Самозанятый</DataPath>
+																	<CheckBoxType>Auto</CheckBoxType>
+																	<ContextMenu name="СамозанятыйКонтекстноеМеню" id="522"/>
+																	<ExtendedTooltip name="СамозанятыйРасширеннаяПодсказка" id="523"/>
+																</CheckBoxField>
+															</ChildItems>
+														</UsualGroup>
 													</ChildItems>
 												</UsualGroup>
 												<UsualGroup name="ГруппаФотоИСпарк" id="471">

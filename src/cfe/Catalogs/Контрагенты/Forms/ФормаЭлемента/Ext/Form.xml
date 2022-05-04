@@ -1701,6 +1701,9 @@
 												<ContextMenu name="ИсторияВзаимодействияУправлениеПоискомКонтекстноеМеню" id="378"/>
 												<ExtendedTooltip name="ИсторияВзаимодействияУправлениеПоискомРасширеннаяПодсказка" id="379"/>
 											</SearchControlAddition>
+											<Events>
+												<Event name="OnStartEdit" callType="After">РасшДОАМ_ИсторияВзаимодействияПриНачалеРедактированияПосле</Event>
+											</Events>
 											<ChildItems>
 												<LabelField name="ИсторияВзаимодействияНомерСтроки" id="380">
 													<DataPath>Объект.ИсторияВзаимодействия.LineNumber</DataPath>
@@ -1719,6 +1722,24 @@
 													<EditMode>EnterOnInput</EditMode>
 													<ContextMenu name="ИсторияВзаимодействияСтадияКонтекстноеМеню" id="387"/>
 													<ExtendedTooltip name="ИсторияВзаимодействияСтадияРасширеннаяПодсказка" id="388"/>
+												</InputField>
+												<InputField name="ИсторияВзаимодействияСообщениеКонтрагента" id="526">
+													<DataPath>Объект.ИсторияВзаимодействия.СообщениеКонтрагента</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="ИсторияВзаимодействияСообщениеКонтрагентаКонтекстноеМеню" id="527"/>
+													<ExtendedTooltip name="ИсторияВзаимодействияСообщениеКонтрагентаРасширеннаяПодсказка" id="528"/>
+												</InputField>
+												<InputField name="ИсторияВзаимодействияОтвет" id="529">
+													<DataPath>Объект.ИсторияВзаимодействия.Ответ</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="ИсторияВзаимодействияОтветКонтекстноеМеню" id="530"/>
+													<ExtendedTooltip name="ИсторияВзаимодействияОтветРасширеннаяПодсказка" id="531"/>
+												</InputField>
+												<InputField name="ИсторияВзаимодействияАвтор" id="532">
+													<DataPath>Объект.ИсторияВзаимодействия.Автор</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="ИсторияВзаимодействияАвторКонтекстноеМеню" id="533"/>
+													<ExtendedTooltip name="ИсторияВзаимодействияАвторРасширеннаяПодсказка" id="534"/>
 												</InputField>
 												<InputField name="ИсторияВзаимодействияКомментарий" id="389">
 													<DataPath>Объект.ИсторияВзаимодействия.Комментарий</DataPath>

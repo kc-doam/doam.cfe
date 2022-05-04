@@ -69,6 +69,7 @@
 			<CommonPicture>ДобавитьВОтчет</CommonPicture>
 			<CommonPicture>ЗаполнитьФорму</CommonPicture>
 			<CommonPicture>ПиктограммыЭлементов</CommonPicture>
+			<Role>ДобавлениеИзменениеКонтрагентов</Role>
 			<CommonModule>ОбщийДОАМ</CommonModule>
 			<FunctionalOption>ВестиУчетФактическихТрудозатрат</FunctionalOption>
 			<FunctionalOption>ДокументооборотИспользоватьОграничениеПравДоступа</FunctionalOption>
@@ -102,6 +103,7 @@
 			<Enum>СтадииВзаимодействия</Enum>
 			<Enum>ТипыКонтролирующихОрганов</Enum>
 			<DataProcessor>РасшДОАМ_СписокКонтрагентов</DataProcessor>
+			<InformationRegister>ДокументыФизическихЛиц</InformationRegister>
 			<ChartOfCharacteristicTypes>ДополнительныеРеквизитыИСведения</ChartOfCharacteristicTypes>
 		</ChildObjects>
 	</Configuration>

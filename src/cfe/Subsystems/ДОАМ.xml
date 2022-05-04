@@ -6,7 +6,9 @@
 			<Name>ДОАМ</Name>
 			<Comment/>
 			<ObjectBelonging>Adopted</ObjectBelonging>
-			<Content/>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.РасшДОАМ_СписокКонтрагентов</xr:Item>
+			</Content>
 		</Properties>
 		<ChildObjects/>
 	</Subsystem>

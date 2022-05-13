@@ -1,3 +1,8 @@
 build/
-ConfigDumpInfo.xml
+src/**/ConfigDumpInfo.xml
+*.cf
 *.cfe
+*.epf
+
+*.rar
+*.zip

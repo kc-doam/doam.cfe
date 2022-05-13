@@ -51,7 +51,7 @@
 			</UsePurposes>
 			<ScriptVariant>Russian</ScriptVariant>
 			<Vendor>ИТД НАУиУ-1С</Vendor>
-			<Version>1.03.002</Version>
+			<Version>1.03.003</Version>
 			<DefaultLanguage>Language.Русский</DefaultLanguage>
 			<BriefInformation/>
 			<DetailedInformation/>
@@ -71,6 +71,7 @@
 			<CommonPicture>ПиктограммыЭлементов</CommonPicture>
 			<Role>ДобавлениеИзменениеКонтрагентов</Role>
 			<CommonModule>ОбщийДОАМ</CommonModule>
+			<CommonModule>ОбщийДОАМКлиентСервер</CommonModule>
 			<FunctionalOption>ВестиУчетФактическихТрудозатрат</FunctionalOption>
 			<FunctionalOption>ДокументооборотИспользоватьОграничениеПравДоступа</FunctionalOption>
 			<FunctionalOption>ИспользоватьБизнесПроцессыИЗадачи</FunctionalOption>

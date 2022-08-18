@@ -5,7 +5,6 @@
 		<Autofill>false</Autofill>
 	</AutoCommandBar>
 	<Events>
-		<Event name="OnOpen">ПриОткрытии</Event>
 		<Event name="OnLoadDataFromSettingsAtServer">ПриЗагрузкеДанныхИзНастроекНаСервере</Event>
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 	</Events>
@@ -81,6 +80,40 @@
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="ГруппаСписокРасширеннаяПодсказка" id="90"/>
 					<ChildItems>
+						<UsualGroup name="ГруппаКоличествоКонтрагентов" id="91">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа количество контрагентов</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа количество контрагентов</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаКоличествоКонтрагентовРасширеннаяПодсказка" id="92"/>
+							<ChildItems>
+								<LabelField name="КоличествоКонтрагентов" id="86">
+									<DataPath>КоличествоКонтрагентов</DataPath>
+									<ContextMenu name="КоличествоКонтрагентовКонтекстноеМеню" id="87"/>
+									<ExtendedTooltip name="КоличествоКонтрагентовРасширеннаяПодсказка" id="88"/>
+								</LabelField>
+								<Button name="ОбновитьКоличествоКонтрагентов" id="93">
+									<Type>UsualButton</Type>
+									<Representation>Picture</Representation>
+									<CommandName>Form.Command.ОбновитьКоличествоКонтрагентов</CommandName>
+									<Picture>
+										<xr:Ref>StdPicture.Refresh</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ExtendedTooltip name="ОбновитьКоличествоКонтрагентовРасширеннаяПодсказка" id="94"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
 						<Table name="Список" id="31">
 							<Representation>List</Representation>
 							<UseAlternationRowColor>true</UseAlternationRowColor>
@@ -203,11 +236,6 @@
 								</LabelField>
 							</ChildItems>
 						</Table>
-						<LabelField name="КоличествоКонтрагентов" id="86">
-							<DataPath>КоличествоКонтрагентов</DataPath>
-							<ContextMenu name="КоличествоКонтрагентовКонтекстноеМеню" id="87"/>
-							<ExtendedTooltip name="КоличествоКонтрагентовРасширеннаяПодсказка" id="88"/>
-						</LabelField>
 					</ChildItems>
 				</UsualGroup>
 				<UsualGroup name="ГруппаМиникарточка" id="75">
@@ -407,6 +435,21 @@
 			<Action>ПечатьСписка</Action>
 			<Representation>TextPicture</Representation>
 			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ОбновитьКоличествоКонтрагентов" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить количество контрагентов</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить количество контрагентов</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбновитьКоличествоКонтрагентов</Action>
 		</Command>
 	</Commands>
 </Form>

@@ -1,13 +1,13 @@
 # To view the line-endings in files you can use the command 'git ls-files --eol'
 # It can be specified: 'w/crlf', 'w/lf', 'w/mixed', 'w/none'
-* text=auto	eol=CRLF
+* text=auto	eol=crlf
 
-# Custom for 1C Enterprise (CRLF for classes or modules)
+# Custom for 1C Enterprise (CRLF for classes or modules) 'git add --renormalize .'
 # NOTE: 'wte' attribute in Git 2.18+ allows to store a file in different from UTF-8 encoding
 *.bsl
 *.xml
 
 # And others formats
-*.log	working-tree-encoding=CP1251
+*.log	working-tree-encoding=cp1251
 *.md
 *.png	binary

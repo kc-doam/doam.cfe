@@ -1,7 +1,7 @@
 ﻿| Расширение      | Конфигурация           | Платформа 
 | :---            | :---                   | :--- 
 | Расширение ДОАМ | Документооборот 8 КОРП | 1С:Предприятие 8.3 
-| 1.3.4           | 2.1.29.17              | 8.3.18.1741 
+| 1.3.5           | 2.1.29.17              | 8.3.18.1741 
 
 ### Краткое описание
 
@@ -110,11 +110,12 @@
 3. [Новые возможности расширений в платформе 8.3.18](//курсы-по-1с.рф/news/2021-02-02-abilities-of-extentions-8-3-18/)
 4. [Как обновить 1С:Документооборот КОРП](//efsol.ru/manuals/1cdo-update.html)
 5. [1С Документооборот 2.1 Самоучитель](//www.youtube.com/playlist?list=PLUoO8d_m0O70dLKgwqeOWjQ9k5NBuuVP-)
+6. [Расширения в 1С (курс)](//www.youtube.com/watch?v=McEeEtS32ms&list=PLh28ogpgRJUM702dP8f8JxOaf0vOK0IoL)
 
 # Дополнительные ссылки
 
 1. [Расширения конфигураций 1С: учимся перехватывать методы](//v8book.ru/public/628422/)
 2. [Поиск "Document Management"](//edt.1c.ru/search/?q=Document+Management&where=edt)
-3. [Вопросы администрирования](//www.1c-kpd.ru/knowledge/voprosy-administrirovaniya/)
-4. [Права доступа](//www.1c-kpd.ru/knowledge/prava-dostupa/)
-
+3. [Вопросы администрирования](//www.1c-kpd.ru/knowledge/voprosy-administrirovaniya/) 
+   [[?](//its.1c.ru/db/doccorp21/content/789/1/issogl2_добавлять_руководителям_доступ_подчиненных)]
+4. [Ускорение медленной работы строк в 1С](//expert.chistov.pro/1c/articles/1303356/)

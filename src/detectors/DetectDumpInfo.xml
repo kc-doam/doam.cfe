@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<DetectDumpInfo xmlns="http://v8.1c.ru/8.3/xcf/dumpinfo" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" format="Hierarchical" version="2.11">
+	<DetectVersions>
+		<Metadata name="ДетекторБизнесСобытия.Форма">
+			<Metadata name="ДетекторБизнесСобытия.Форма.Attribute.Наименование" value="Закончился срок действия документа"/>
+			<Metadata name="ДетекторБизнесСобытия.Форма.Attribute.ВидСобытия" link="Закончился срок действия документа"/>
+			<Metadata name="ДетекторБизнесСобытия.Форма.Attribute.Отвественный" link="Администратор"/>
+			<Metadata name="ДетекторБизнесСобытия.Форма.Attribute.Комментарий"/>
+			<Metadata name="ДетекторБизнесСобытия.Форма.Attribute.ВыражениеНаВстроенномЯзыке" value="true"/>
+			<Metadata name="ДетекторБизнесСобытия.Форма.Attribute.Включен" boolean="true"/>
+		</Metadata>
+		<Metadata name="ДетекторБизнесСобытия.Форма.Handlers.ВидСобытия" link="Закончился срок действия документа"/>
+		<Metadata name="ДетекторБизнесСобытия.Форма.Handlers"/>
+			<Metadata name="ДетекторБизнесСобытия.Форма.Handlers.Attribute.Наименование" value="Закончился срок действия документа (обработка)"/>
+			<Metadata name="ДетекторБизнесСобытия.Форма.Handlers.Attribute.Отвественный" link="Администратор"/>
+			<Metadata name="ДетекторБизнесСобытия.Форма.Handlers.Attribute.Комментарий"/>
+			<Metadata name="ДетекторБизнесСобытия.Форма.Handlers.Attribute.КодОбработкиСобытия" value="true"/>
+			<Metadata name="ДетекторБизнесСобытия.Форма.Handlers.Attribute.КодОтменыОбработкиСобытия" value="false"/>
+			<Metadata name="ДетекторБизнесСобытия.Форма.Handlers.Attribute.Включен" boolean="true"/>
+		</Metadata>
+		<Metadata name="ВидСобытия.Форма"/>
+			<Metadata name="ВидСобытия.Форма.Наименование" value="Закончился срок действия документа"/>
+			<Metadata name="ВидСобытия.Форма.ДополнительныеОбработчики" link="Закончился срок действия документа (обработка)"/>
+			<Metadata name="ВидСобытия.Форма.ПодпискиНаБизнесСобытия" link="Закончился срок действия документа"/>
+			<Metadata name="ВидСобытия.Форма.ПравилаАвтоматическогоЗапускаПроцессов"/>
+				<Metadata name="ВидСобытия.Форма.ПравилаАвтоматическогоЗапускаПроцессов.БизнесПроцесс"/>
+				<Metadata name="ВидСобытия.Форма.ПравилаАвтоматическогоЗапускаПроцессов.ИсточникСобытия"/>
+				<Metadata name="ВидСобытия.Форма.ПравилаАвтоматическогоЗапускаПроцессов.ШаблонПроцесса"/>
+				<Metadata name="ВидСобытия.Форма.ПравилаАвтоматическогоЗапускаПроцессов.Условие"/>
+			</Metadata>
+		</Metadata>
+	</DetectVersions>
+</DetectDumpInfo>

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.11">
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.15">
 	<Catalog uuid="7ef49768-ed48-46a0-84bb-541ecef40514">
 		<InternalInfo>
 			<xr:GeneratedType name="CatalogObject.Контрагенты" category="Object">
@@ -24,9 +24,9 @@
 			</xr:GeneratedType>
 		</InternalInfo>
 		<Properties>
+			<ObjectBelonging>Adopted</ObjectBelonging>
 			<Name>Контрагенты</Name>
 			<Comment/>
-			<ObjectBelonging>Adopted</ObjectBelonging>
 			<Hierarchical>true</Hierarchical>
 			<CodeLength>9</CodeLength>
 			<DescriptionLength>100</DescriptionLength>
@@ -37,9 +37,9 @@
 			<Attribute uuid="29efeb30-e803-4bed-8de8-e14512baef70">
 				<InternalInfo/>
 				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
 					<Name>ОсновнойБанковскийСчет</Name>
 					<Comment/>
-					<ObjectBelonging>Adopted</ObjectBelonging>
 					<Type>
 						<v8:Type>cfg:CatalogRef.БанковскиеСчета</v8:Type>
 					</Type>
@@ -48,9 +48,9 @@
 			<Attribute uuid="e8f7765a-7fc4-4534-aaab-87c2b706bd23">
 				<InternalInfo/>
 				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
 					<Name>ИНН</Name>
 					<Comment/>
-					<ObjectBelonging>Adopted</ObjectBelonging>
 					<Type>
 						<v8:Type>xs:string</v8:Type>
 						<v8:StringQualifiers>
@@ -63,9 +63,9 @@
 			<Attribute uuid="fee5b48d-5cbb-4878-896e-e6d1a8651426">
 				<InternalInfo/>
 				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
 					<Name>НаименованиеПолное</Name>
 					<Comment/>
-					<ObjectBelonging>Adopted</ObjectBelonging>
 					<Type>
 						<v8:Type>xs:string</v8:Type>
 						<v8:StringQualifiers>
@@ -78,9 +78,9 @@
 			<Attribute uuid="f5b1ca00-1f83-46a0-94dd-fbe5cf55d207">
 				<InternalInfo/>
 				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
 					<Name>КодПоОКПО</Name>
 					<Comment/>
-					<ObjectBelonging>Adopted</ObjectBelonging>
 					<Type>
 						<v8:Type>xs:string</v8:Type>
 						<v8:StringQualifiers>
@@ -93,9 +93,9 @@
 			<Attribute uuid="90187ee0-10c8-46b9-bc82-36bc3287e087">
 				<InternalInfo/>
 				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
 					<Name>РегистрационныйНомер</Name>
 					<Comment/>
-					<ObjectBelonging>Adopted</ObjectBelonging>
 					<Type>
 						<v8:Type>xs:string</v8:Type>
 						<v8:StringQualifiers>
@@ -108,9 +108,9 @@
 			<Attribute uuid="4027f1c5-2e3a-4555-aa1b-7975f7394d71">
 				<InternalInfo/>
 				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
 					<Name>ГруппаДоступа</Name>
 					<Comment/>
-					<ObjectBelonging>Adopted</ObjectBelonging>
 					<Type>
 						<v8:Type>cfg:CatalogRef.ГруппыДоступаКонтрагентов</v8:Type>
 					</Type>
@@ -119,9 +119,9 @@
 			<Attribute uuid="7b9d7f24-d6e2-4f53-845e-423030856ac0">
 				<InternalInfo/>
 				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
 					<Name>ЮрФизЛицо</Name>
 					<Comment/>
-					<ObjectBelonging>Adopted</ObjectBelonging>
 					<Type>
 						<v8:Type>cfg:EnumRef.ЮрФизЛицо</v8:Type>
 					</Type>
@@ -130,9 +130,9 @@
 			<Attribute uuid="ea87e4f4-13dd-481b-9f95-db8864cadd98">
 				<InternalInfo/>
 				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
 					<Name>ФизЛицо</Name>
 					<Comment/>
-					<ObjectBelonging>Adopted</ObjectBelonging>
 					<Type>
 						<v8:Type>cfg:CatalogRef.ФизическиеЛица</v8:Type>
 					</Type>
@@ -141,9 +141,9 @@
 			<Attribute uuid="022be8c5-74ed-4785-8af2-d8ed123358df">
 				<InternalInfo/>
 				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
 					<Name>КПП</Name>
 					<Comment/>
-					<ObjectBelonging>Adopted</ObjectBelonging>
 					<Type>
 						<v8:Type>xs:string</v8:Type>
 						<v8:StringQualifiers>
@@ -156,9 +156,9 @@
 			<Attribute uuid="734b7fcc-8138-43c4-9989-9f4cb5e5cd7a">
 				<InternalInfo/>
 				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
 					<Name>Ответственный</Name>
 					<Comment/>
-					<ObjectBelonging>Adopted</ObjectBelonging>
 					<Type>
 						<v8:Type>cfg:CatalogRef.Пользователи</v8:Type>
 					</Type>
@@ -167,9 +167,9 @@
 			<Attribute uuid="917e628c-d8d5-4249-b4c8-21dc6ecb24a7">
 				<InternalInfo/>
 				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
 					<Name>ТакжеСотрудничает_в_ДОАМ</Name>
 					<Comment/>
-					<ObjectBelonging>Adopted</ObjectBelonging>
 					<Type>
 						<v8:Type>cfg:CatalogRef.Пользователи</v8:Type>
 					</Type>
@@ -178,9 +178,9 @@
 			<Attribute uuid="f354f149-0c0f-47f2-a299-2445bdce3a84">
 				<InternalInfo/>
 				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
 					<Name>Комментарий</Name>
 					<Comment/>
-					<ObjectBelonging>Adopted</ObjectBelonging>
 					<Type>
 						<v8:Type>xs:string</v8:Type>
 						<v8:StringQualifiers>
@@ -193,9 +193,9 @@
 			<Attribute uuid="b0aecfc4-a68d-4bbc-919e-d7192867316d">
 				<InternalInfo/>
 				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
 					<Name>ИдентификаторССТУ</Name>
 					<Comment/>
-					<ObjectBelonging>Adopted</ObjectBelonging>
 					<ExtendedConfigurationObject>2b7b3ad8-f12d-4858-a73f-2037aa074124</ExtendedConfigurationObject>
 					<Type>
 						<v8:Type>xs:string</v8:Type>
@@ -209,9 +209,9 @@
 			<Attribute uuid="4207b40a-7520-4b73-9a24-2547e5350414">
 				<InternalInfo/>
 				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
 					<Name>ЭтоОрганИсполнительнойВласти</Name>
 					<Comment/>
-					<ObjectBelonging>Adopted</ObjectBelonging>
 					<ExtendedConfigurationObject>cfb36d6f-844d-4b24-ac23-2ff0186ed739</ExtendedConfigurationObject>
 					<Type>
 						<v8:Type>xs:boolean</v8:Type>
@@ -221,9 +221,9 @@
 			<Attribute uuid="c8ca348b-55a9-4f11-9285-dd865f3c177d">
 				<InternalInfo/>
 				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
 					<Name>ЭтоКонтролирующийОрган</Name>
 					<Comment/>
-					<ObjectBelonging>Adopted</ObjectBelonging>
 					<ExtendedConfigurationObject>df217eac-1834-43c5-ac92-9b24e3d26b9d</ExtendedConfigurationObject>
 					<Type>
 						<v8:Type>xs:boolean</v8:Type>
@@ -233,9 +233,9 @@
 			<Attribute uuid="9bd6d3ad-c27a-4993-9ec0-cbc2e99753b2">
 				<InternalInfo/>
 				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
 					<Name>ТипКонтролирующегоОргана</Name>
 					<Comment/>
-					<ObjectBelonging>Adopted</ObjectBelonging>
 					<ExtendedConfigurationObject>563e057f-d9ea-4cc3-bbca-f5916e885f07</ExtendedConfigurationObject>
 					<Type>
 						<v8:Type>cfg:EnumRef.ТипыКонтролирующихОрганов</v8:Type>
@@ -245,9 +245,9 @@
 			<Attribute uuid="b1780382-f35b-402b-bb06-e32261763ad3">
 				<InternalInfo/>
 				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
 					<Name>КодКонтролирующегоОргана</Name>
 					<Comment/>
-					<ObjectBelonging>Adopted</ObjectBelonging>
 					<ExtendedConfigurationObject>4045ecdc-8230-48c3-a655-ff134b74a184</ExtendedConfigurationObject>
 					<Type>
 						<v8:Type>xs:string</v8:Type>
@@ -350,17 +350,17 @@
 					</xr:GeneratedType>
 				</InternalInfo>
 				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
 					<Name>ДополнительныеРеквизиты</Name>
 					<Comment/>
-					<ObjectBelonging>Adopted</ObjectBelonging>
 				</Properties>
 				<ChildObjects>
 					<Attribute uuid="f12c70eb-953f-4a9b-a797-c483354349d4">
 						<InternalInfo/>
 						<Properties>
+							<ObjectBelonging>Adopted</ObjectBelonging>
 							<Name>Свойство</Name>
 							<Comment/>
-							<ObjectBelonging>Adopted</ObjectBelonging>
 							<Type>
 								<v8:Type>cfg:ChartOfCharacteristicTypesRef.ДополнительныеРеквизитыИСведения</v8:Type>
 							</Type>
@@ -369,9 +369,9 @@
 					<Attribute uuid="66303c55-fbf8-4b9b-81a7-bb401e438885">
 						<InternalInfo/>
 						<Properties>
+							<ObjectBelonging>Adopted</ObjectBelonging>
 							<Name>Значение</Name>
 							<Comment/>
-							<ObjectBelonging>Adopted</ObjectBelonging>
 							<Type>
 								<v8:TypeSet>cfg:Characteristic.ДополнительныеРеквизитыИСведения</v8:TypeSet>
 							</Type>
@@ -391,9 +391,9 @@
 					</xr:GeneratedType>
 				</InternalInfo>
 				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
 					<Name>РасширенныеРеквизиты</Name>
 					<Comment/>
-					<ObjectBelonging>Adopted</ObjectBelonging>
 				</Properties>
 				<ChildObjects/>
 			</TabularSection>
@@ -409,17 +409,17 @@
 					</xr:GeneratedType>
 				</InternalInfo>
 				<Properties>
+					<ObjectBelonging>Adopted</ObjectBelonging>
 					<Name>ИсторияВзаимодействия</Name>
 					<Comment/>
-					<ObjectBelonging>Adopted</ObjectBelonging>
 				</Properties>
 				<ChildObjects>
 					<Attribute uuid="4b6f1a89-1aaf-4682-8cd5-e732b316dacc">
 						<InternalInfo/>
 						<Properties>
+							<ObjectBelonging>Adopted</ObjectBelonging>
 							<Name>Дата</Name>
 							<Comment/>
-							<ObjectBelonging>Adopted</ObjectBelonging>
 							<Type>
 								<v8:Type>xs:dateTime</v8:Type>
 								<v8:DateQualifiers>
@@ -431,9 +431,9 @@
 					<Attribute uuid="6fdecf60-5bba-458d-815a-b10ff24e54d5">
 						<InternalInfo/>
 						<Properties>
+							<ObjectBelonging>Adopted</ObjectBelonging>
 							<Name>Стадия</Name>
 							<Comment/>
-							<ObjectBelonging>Adopted</ObjectBelonging>
 							<Type>
 								<v8:Type>cfg:EnumRef.СтадииВзаимодействия</v8:Type>
 							</Type>
@@ -442,9 +442,9 @@
 					<Attribute uuid="193e5f39-14c3-4819-9fea-637bf3fe7ad4">
 						<InternalInfo/>
 						<Properties>
+							<ObjectBelonging>Adopted</ObjectBelonging>
 							<Name>Комментарий</Name>
 							<Comment/>
-							<ObjectBelonging>Adopted</ObjectBelonging>
 							<Type>
 								<v8:Type>xs:string</v8:Type>
 								<v8:StringQualifiers>

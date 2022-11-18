@@ -1,5 +1,6 @@
 {
-    "files.encoding": "utf8",
-	// Путь по умолчанию к корню файла конфигурации (./src/cf) относительно каталога workspace для правильного autocomplete
+	"files.encoding": "utf8",
+	"git.enableCommitSigning": true,
 	"language-1c-bsl.rootPath": "./src/cfe",
+	"workbench.tree.indent": 16
 }

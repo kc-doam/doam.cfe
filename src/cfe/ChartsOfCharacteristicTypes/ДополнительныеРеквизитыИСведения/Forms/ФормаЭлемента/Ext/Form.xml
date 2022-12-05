@@ -312,19 +312,6 @@
 											</RowsPicture>
 											<CommandSet>
 												<ExcludedCommand>Add</ExcludedCommand>
-												<ExcludedCommand>CancelSearch</ExcludedCommand>
-												<ExcludedCommand>Change</ExcludedCommand>
-												<ExcludedCommand>Copy</ExcludedCommand>
-												<ExcludedCommand>CopyToClipboard</ExcludedCommand>
-												<ExcludedCommand>Delete</ExcludedCommand>
-												<ExcludedCommand>EndEdit</ExcludedCommand>
-												<ExcludedCommand>Find</ExcludedCommand>
-												<ExcludedCommand>MoveDown</ExcludedCommand>
-												<ExcludedCommand>MoveUp</ExcludedCommand>
-												<ExcludedCommand>OutputList</ExcludedCommand>
-												<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
-												<ExcludedCommand>SortListAsc</ExcludedCommand>
-												<ExcludedCommand>SortListDesc</ExcludedCommand>
 											</CommandSet>
 											<SearchStringLocation>None</SearchStringLocation>
 											<ViewStatusLocation>None</ViewStatusLocation>
@@ -979,7 +966,6 @@
 															<RowPictureDataPath>Значения.DefaultPicture</RowPictureDataPath>
 															<CommandSet>
 																<ExcludedCommand>Copy</ExcludedCommand>
-																<ExcludedCommand>Delete</ExcludedCommand>
 															</CommandSet>
 															<SearchStringLocation>None</SearchStringLocation>
 															<ViewStatusLocation>None</ViewStatusLocation>
@@ -1163,22 +1149,6 @@
 															</RowsPicture>
 															<CommandSet>
 																<ExcludedCommand>Add</ExcludedCommand>
-																<ExcludedCommand>Change</ExcludedCommand>
-																<ExcludedCommand>Copy</ExcludedCommand>
-																<ExcludedCommand>CopyToClipboard</ExcludedCommand>
-																<ExcludedCommand>Delete</ExcludedCommand>
-																<ExcludedCommand>EndEdit</ExcludedCommand>
-																<ExcludedCommand>HierarchicalList</ExcludedCommand>
-																<ExcludedCommand>List</ExcludedCommand>
-																<ExcludedCommand>MoveDown</ExcludedCommand>
-																<ExcludedCommand>MoveUp</ExcludedCommand>
-																<ExcludedCommand>OutputList</ExcludedCommand>
-																<ExcludedCommand>SelectAll</ExcludedCommand>
-																<ExcludedCommand>ShowMultipleSelection</ExcludedCommand>
-																<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
-																<ExcludedCommand>SortListAsc</ExcludedCommand>
-																<ExcludedCommand>SortListDesc</ExcludedCommand>
-																<ExcludedCommand>Tree</ExcludedCommand>
 															</CommandSet>
 															<ContextMenu name="ЗначенияДополнительногоРеквизитаКонтекстноеМеню" id="292">
 																<ChildItems>
@@ -2453,19 +2423,6 @@
 												</RowsPicture>
 												<CommandSet>
 													<ExcludedCommand>Add</ExcludedCommand>
-													<ExcludedCommand>CancelSearch</ExcludedCommand>
-													<ExcludedCommand>Change</ExcludedCommand>
-													<ExcludedCommand>Copy</ExcludedCommand>
-													<ExcludedCommand>CopyToClipboard</ExcludedCommand>
-													<ExcludedCommand>Delete</ExcludedCommand>
-													<ExcludedCommand>EndEdit</ExcludedCommand>
-													<ExcludedCommand>Find</ExcludedCommand>
-													<ExcludedCommand>MoveDown</ExcludedCommand>
-													<ExcludedCommand>MoveUp</ExcludedCommand>
-													<ExcludedCommand>OutputList</ExcludedCommand>
-													<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
-													<ExcludedCommand>SortListAsc</ExcludedCommand>
-													<ExcludedCommand>SortListDesc</ExcludedCommand>
 												</CommandSet>
 												<SearchStringLocation>None</SearchStringLocation>
 												<ViewStatusLocation>None</ViewStatusLocation>
@@ -3120,7 +3077,6 @@
 																<RowPictureDataPath>Значения.DefaultPicture</RowPictureDataPath>
 																<CommandSet>
 																	<ExcludedCommand>Copy</ExcludedCommand>
-																	<ExcludedCommand>Delete</ExcludedCommand>
 																</CommandSet>
 																<SearchStringLocation>None</SearchStringLocation>
 																<ViewStatusLocation>None</ViewStatusLocation>
@@ -3304,22 +3260,6 @@
 																</RowsPicture>
 																<CommandSet>
 																	<ExcludedCommand>Add</ExcludedCommand>
-																	<ExcludedCommand>Change</ExcludedCommand>
-																	<ExcludedCommand>Copy</ExcludedCommand>
-																	<ExcludedCommand>CopyToClipboard</ExcludedCommand>
-																	<ExcludedCommand>Delete</ExcludedCommand>
-																	<ExcludedCommand>EndEdit</ExcludedCommand>
-																	<ExcludedCommand>HierarchicalList</ExcludedCommand>
-																	<ExcludedCommand>List</ExcludedCommand>
-																	<ExcludedCommand>MoveDown</ExcludedCommand>
-																	<ExcludedCommand>MoveUp</ExcludedCommand>
-																	<ExcludedCommand>OutputList</ExcludedCommand>
-																	<ExcludedCommand>SelectAll</ExcludedCommand>
-																	<ExcludedCommand>ShowMultipleSelection</ExcludedCommand>
-																	<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
-																	<ExcludedCommand>SortListAsc</ExcludedCommand>
-																	<ExcludedCommand>SortListDesc</ExcludedCommand>
-																	<ExcludedCommand>Tree</ExcludedCommand>
 																</CommandSet>
 																<ContextMenu name="ЗначенияДополнительногоРеквизитаКонтекстноеМеню" id="292">
 																	<ChildItems>

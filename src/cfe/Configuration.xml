@@ -51,7 +51,7 @@
 			</UsePurposes>
 			<ScriptVariant>Russian</ScriptVariant>
 			<Vendor>ИТД НАУиУ-1С</Vendor>
-			<Version>1.04.004</Version>
+			<Version>1.04.005</Version>
 			<DefaultLanguage>Language.Русский</DefaultLanguage>
 			<BriefInformation/>
 			<DetailedInformation/>
@@ -80,29 +80,29 @@
 			<CommonCommand>ДополнительныеСведенияКоманднаяПанель</CommonCommand>
 			<CommonCommand>СозданиеСвязанныхОбъектов</CommonCommand>
 			<CommonCommand>СоздатьПроцесс</CommonCommand>
-			<Constant>ИспользоватьБизнесПроцессыИЗадачи</Constant>
 			<Constant>ВестиУчетФактическихТрудозатрат</Constant>
 			<Constant>ДокументооборотИспользоватьОграничениеПравДоступа</Constant>
+			<Constant>ИспользоватьБизнесПроцессыИЗадачи</Constant>
 			<Constant>ИспользоватьДополнительныеРеквизитыИСведения</Constant>
-			<Catalog>Контрагенты</Catalog>
-			<Catalog>КонтактныеЛица</Catalog>
 			<Catalog>БанковскиеСчета</Catalog>
-			<Catalog>Контроль</Catalog>
-			<Catalog>Мероприятия</Catalog>
-			<Catalog>ФизическиеЛица</Catalog>
-			<Catalog>Пользователи</Catalog>
+			<Catalog>Валюты</Catalog>
 			<Catalog>ГруппыДоступаКонтрагентов</Catalog>
 			<Catalog>ЗаписиРабочегоКалендаря</Catalog>
-			<Catalog>НаборыДополнительныхРеквизитовИСведений</Catalog>
-			<Catalog>ЗначенияСвойствОбъектовИерархия</Catalog>
 			<Catalog>ЗначенияСвойствОбъектов</Catalog>
-			<Catalog>Организации</Catalog>
-			<Catalog>Валюты</Catalog>
+			<Catalog>ЗначенияСвойствОбъектовИерархия</Catalog>
 			<Catalog>КлассификаторБанков</Catalog>
-			<Enum>СпособыУказанияВремени</Enum>
-			<Enum>ЮрФизЛицо</Enum>
+			<Catalog>КонтактныеЛица</Catalog>
+			<Catalog>Контрагенты</Catalog>
+			<Catalog>Контроль</Catalog>
+			<Catalog>Мероприятия</Catalog>
+			<Catalog>НаборыДополнительныхРеквизитовИСведений</Catalog>
+			<Catalog>Организации</Catalog>
+			<Catalog>Пользователи</Catalog>
+			<Catalog>ФизическиеЛица</Catalog>
 			<Enum>СтадииВзаимодействия</Enum>
+			<Enum>СпособыУказанияВремени</Enum>
 			<Enum>ТипыКонтролирующихОрганов</Enum>
+			<Enum>ЮрФизЛицо</Enum>
 			<DataProcessor>РасшДОАМ_СписокКонтрагентов</DataProcessor>
 			<InformationRegister>ДокументыФизическихЛиц</InformationRegister>
 			<ChartOfCharacteristicTypes>ДополнительныеРеквизитыИСведения</ChartOfCharacteristicTypes>

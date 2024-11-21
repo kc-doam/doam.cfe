@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.17">
+	<Item id="19f1d6f5-4a16-4870-b050-8a9a1eabefd7">
+		<Name>СВД</Name>
+		<Code/>
+		<Description>СВД</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="a1a87113-1a1e-4ff0-9598-04e2eaf58e25">
+		<Name>Сервис1СОтчетность</Name>
+		<Code/>
+		<Description>Сервис 1С:Отчетность</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

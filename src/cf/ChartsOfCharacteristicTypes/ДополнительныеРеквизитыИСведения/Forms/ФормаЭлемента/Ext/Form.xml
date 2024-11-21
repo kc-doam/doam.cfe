@@ -868,14 +868,14 @@
 							<PagesRepresentation>TabsOnTop</PagesRepresentation>
 							<ExtendedTooltip name="СтраницыРасширеннаяПодсказка" id="168"/>
 							<ChildItems>
-								<Page name="НачальнаяСтраница" id="169">
+								<Page name="ГлавнаяСтраница" id="169">
 									<Title>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
-											<v8:content>Начальная</v8:content>
+											<v8:content>Главное</v8:content>
 										</v8:item>
 									</Title>
-									<ExtendedTooltip name="НачальнаяСтраницаРасширеннаяПодсказка" id="170"/>
+									<ExtendedTooltip name="ГлавнаяСтраницаРасширеннаяПодсказка" id="170"/>
 									<ChildItems>
 										<UsualGroup name="ГруппаСвойстваИЗависимости" id="324">
 											<Title>

@@ -1189,11 +1189,11 @@
 			</Attribute>
 			<Attribute uuid="ec9260b4-1609-465f-b9b9-562db76e7d2d">
 				<Properties>
-					<Name>ВыводитьНаГлавной</Name>
+					<Name>ВыводитьНаНачальной</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Выводить на главной</v8:content>
+							<v8:content>Выводить на начальной</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>

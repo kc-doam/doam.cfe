@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="CatalogPredefinedItems" version="2.17">
+	<Item id="9cce7d54-c068-4b6e-b31d-8cdeff89e7d1">
+		<Name>ЗагрузкаИз1САрхив</Name>
+		<Code>000000002</Code>
+		<Description>Загрузка из "1С:Архив"</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="3ca0c4ac-b382-4a9f-acbd-947a5c18a607">
+		<Name>СВД</Name>
+		<Code>000000003</Code>
+		<Description>СВД</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="9756147c-2c92-44be-a67b-cee0bf9e1f2e">
+		<Name>УстановкаТиповойМетодики</Name>
+		<Code>000000001</Code>
+		<Description>Установка типовой методики</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="466e6117-9931-4fb3-9782-d8f466a29560">
+		<Name>ЭДО</Name>
+		<Code>000000004</Code>
+		<Description>ЭДО</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
+</PredefinedData>

@@ -1,0 +1,1967 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Задачи мне</v8:content>
+		</v8:item>
+	</Title>
+	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+	<AutoTitle>false</AutoTitle>
+	<CommandBarLocation>Top</CommandBarLocation>
+	<ConversationsRepresentation>DontShow</ConversationsRepresentation>
+	<CollapseItemsByImportanceVariant>DontUse</CollapseItemsByImportanceVariant>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+		<ChildItems>
+			<Button name="ФормаОбщаяКомандаСоздатьПроцесс" id="130">
+				<Type>CommandBarButton</Type>
+				<CommandName>CommonCommand.СоздатьПроцесс</CommandName>
+				<Picture>
+					<xr:Ref>StdPicture.CreateListItem</xr:Ref>
+					<xr:LoadTransparent>true</xr:LoadTransparent>
+				</Picture>
+				<ExtendedTooltip name="ФормаОбщаяКомандаСоздатьПроцессРасширеннаяПодсказка" id="131"/>
+			</Button>
+			<Button name="ЗадачиМнеПоказатьВыполненные" id="55">
+				<Type>CommandBarButton</Type>
+				<Visible>false</Visible>
+				<CommandName>Form.Command.ЗадачиМнеПоказатьВыполненные</CommandName>
+				<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+				<ExtendedTooltip name="ЗадачиМнеПоказатьВыполненныеExtendedTooltip" id="56"/>
+			</Button>
+			<Button name="ФормаСтандартныеНастройкиДинамическогоСписка" id="99">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Item.ЗадачиМнеСписок.StandardCommand.DynamicListStandardSettings</CommandName>
+				<ExtendedTooltip name="ФормаСтандартныеНастройкиДинамическогоСпискаРасширеннаяПодсказка" id="100"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="OnClose">ПриЗакрытии</Event>
+	</Events>
+	<ChildItems>
+		<Table name="ЗадачиМнеСписок" id="3">
+			<Representation>List</Representation>
+			<CommandBarLocation>Top</CommandBarLocation>
+			<ChangeRowSet>false</ChangeRowSet>
+			<ChangeRowOrder>false</ChangeRowOrder>
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<SelectionMode>SingleRow</SelectionMode>
+			<RowSelectionMode>Row</RowSelectionMode>
+			<Header>false</Header>
+			<VerticalLines>false</VerticalLines>
+			<InitialTreeView>ExpandTopLevel</InitialTreeView>
+			<EnableStartDrag>true</EnableStartDrag>
+			<FileDragMode>AsFile</FileDragMode>
+			<DataPath>ЗадачиМнеСписок</DataPath>
+			<SearchStringLocation>FormCaption</SearchStringLocation>
+			<ViewStatusLocation>None</ViewStatusLocation>
+			<SearchControlLocation>None</SearchControlLocation>
+			<RefreshRequest>PullFromTop</RefreshRequest>
+			<BehaviorOnHorizontalCompression>HideItemsByImportance</BehaviorOnHorizontalCompression>
+			<AutoRefresh>false</AutoRefresh>
+			<AutoRefreshPeriod>60</AutoRefreshPeriod>
+			<Period>
+				<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+				<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+				<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+			</Period>
+			<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+			<RestoreCurrentRow>true</RestoreCurrentRow>
+			<TopLevelParent xsi:nil="true"/>
+			<ShowRoot>true</ShowRoot>
+			<AllowRootChoice>false</AllowRootChoice>
+			<UpdateOnDataChange>Auto</UpdateOnDataChange>
+			<UserSettingsGroup>1:02023637-7868-4a5f-8576-835a76e0c9ba</UserSettingsGroup>
+			<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
+			<ContextMenu name="ЗадачиМнеСписокКонтекстноеМеню" id="4">
+				<Autofill>false</Autofill>
+				<ChildItems>
+					<Button name="ЗадачиМнеСписокКонтекстноеМенюПеренаправитьЗадачу" id="16">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ПеренаправитьЗадачу</CommandName>
+						<RepresentationInContextMenu>OnlyInContextMenu</RepresentationInContextMenu>
+						<ExtendedTooltip name="ЗадачиМнеСписокКонтекстноеМенюПеренаправитьЗадачуРасширеннаяПодсказка" id="17"/>
+					</Button>
+					<Button name="ЗадачиМнеСписокКонтекстноеМенюЗадатьВопрос" id="71">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ЗадатьВопрос</CommandName>
+						<ExtendedTooltip name="ЗадачиМнеСписокКонтекстноеМенюЗадатьВопросРасширеннаяПодсказка" id="72"/>
+					</Button>
+					<Button name="ЗадачиМнеСписокКонтекстноеМенюВопросыПоЗадаче" id="93">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ВопросыПоЗадаче</CommandName>
+						<ExtendedTooltip name="ЗадачиМнеСписокКонтекстноеМенюВопросыПоЗадачеРасширеннаяПодсказка" id="94"/>
+					</Button>
+					<Button name="ЗадачиМнеСписокКонтекстноеМенюПринятьКИсполнению" id="65">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ПринятьКИсполнению</CommandName>
+						<ExtendedTooltip name="ЗадачиМнеСписокКонтекстноеМенюПринятьКИсполнениюРасширеннаяПодсказка" id="66"/>
+					</Button>
+					<Button name="ЗадачиМнеСписокКонтекстноеМенюСоздатьПодзадачу" id="18">
+						<Type>CommandBarButton</Type>
+						<CommandName>Task.ЗадачаИсполнителя.Command.СоздатьПодзадачу</CommandName>
+						<DataPath>Items.ЗадачиМнеСписок.CurrentData.Ref</DataPath>
+						<Picture>
+							<xr:Ref>StdPicture.BusinessProcess</xr:Ref>
+							<xr:LoadTransparent>true</xr:LoadTransparent>
+						</Picture>
+						<RepresentationInContextMenu>OnlyInContextMenu</RepresentationInContextMenu>
+						<ExtendedTooltip name="ЗадачиМнеСписокКонтекстноеМенюСоздатьПодзадачуРасширеннаяПодсказка" id="19"/>
+					</Button>
+					<Button name="СправочникЗаписиРабочегоКалендаряСоздатьЗаписьКалендаряНаОсновании" id="91">
+						<Type>CommandBarButton</Type>
+						<CommandName>Catalog.ЗаписиРабочегоКалендаря.Command.СоздатьЗаписьКалендаряНаОсновании</CommandName>
+						<DataPath>Items.ЗадачиМнеСписок.CurrentData.Ref</DataPath>
+						<ExtendedTooltip name="СправочникЗаписиРабочегоКалендаряСоздатьЗаписьКалендаряНаОснованииExtendedTooltip" id="92"/>
+					</Button>
+					<Button name="ОбщаяКомандаСоздатьПисьмоНаОсновании" id="69">
+						<Type>CommandBarButton</Type>
+						<CommandName>CommonCommand.СоздатьПисьмоНаОсновании</CommandName>
+						<DataPath>Items.ЗадачиМнеСписок.CurrentData.Ref</DataPath>
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Написать письмо</v8:content>
+							</v8:item>
+						</Title>
+						<ExtendedTooltip name="ОбщаяКомандаСоздатьПисьмоНаОснованииExtendedTooltip" id="70"/>
+					</Button>
+					<Button name="ЗадачаЗадачаИсполнителяСогласоватьПереносСрока" id="95">
+						<Type>CommandBarButton</Type>
+						<Representation>Picture</Representation>
+						<CommandName>Task.ЗадачаИсполнителя.Command.СогласоватьПереносСрока</CommandName>
+						<DataPath>Items.ЗадачиМнеСписок.CurrentData.Ref</DataPath>
+						<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+						<ExtendedTooltip name="ЗадачаЗадачаИсполнителяСогласоватьПереносСрокаExtendedTooltip" id="96"/>
+					</Button>
+					<Popup name="ЗадачиМнеПодменюФлаги" id="73">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Флаг</v8:content>
+							</v8:item>
+						</Title>
+						<ToolTip>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Флаг</v8:content>
+							</v8:item>
+						</ToolTip>
+						<Picture>
+							<xr:Ref>CommonPicture.ПустойФлаг</xr:Ref>
+							<xr:LoadTransparent>false</xr:LoadTransparent>
+						</Picture>
+						<Representation>Picture</Representation>
+						<ExtendedTooltip name="ЗадачиМнеПодменюФлагиExtendedTooltip" id="74"/>
+						<ChildItems>
+							<ButtonGroup name="ЗадачиМнеГруппаФлаги" id="75">
+								<Title>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Задачи мне группа флаги</v8:content>
+									</v8:item>
+								</Title>
+								<ToolTip>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Задачи мне группа флаги</v8:content>
+									</v8:item>
+								</ToolTip>
+								<ExtendedTooltip name="ЗадачиМнеГруппаФлагиExtendedTooltip" id="76"/>
+								<ChildItems>
+									<Button name="ЗадачиМнеКрасныйФлаг" id="77">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.КрасныйФлаг</CommandName>
+										<ExtendedTooltip name="ЗадачиМнеКрасныйФлагExtendedTooltip" id="78"/>
+									</Button>
+									<Button name="ЗадачиМнеСинийФлаг" id="79">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.СинийФлаг</CommandName>
+										<ExtendedTooltip name="ЗадачиМнеСинийФлагExtendedTooltip" id="80"/>
+									</Button>
+									<Button name="ЗадачиМнеЖелтыйФлаг" id="81">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ЖелтыйФлаг</CommandName>
+										<ExtendedTooltip name="ЗадачиМнеЖелтыйФлагExtendedTooltip" id="82"/>
+									</Button>
+									<Button name="ЗадачиМнеЗеленыйФлаг" id="83">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ЗеленыйФлаг</CommandName>
+										<ExtendedTooltip name="ЗадачиМнеЗеленыйФлагExtendedTooltip" id="84"/>
+									</Button>
+									<Button name="ЗадачиМнеОранжевыйФлаг" id="85">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ОранжевыйФлаг</CommandName>
+										<ExtendedTooltip name="ЗадачиМнеОранжевыйФлагExtendedTooltip" id="86"/>
+									</Button>
+									<Button name="ЗадачиМнеЛиловыйФлаг" id="87">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ЛиловыйФлаг</CommandName>
+										<ExtendedTooltip name="ЗадачиМнеЛиловыйФлагExtendedTooltip" id="88"/>
+									</Button>
+								</ChildItems>
+							</ButtonGroup>
+							<Button name="ЗадачиМнеСнятьПометку" id="89">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.ОчиститьФлаг</CommandName>
+								<ExtendedTooltip name="ЗадачиМнеСнятьПометкуExtendedTooltip" id="90"/>
+							</Button>
+						</ChildItems>
+					</Popup>
+					<Button name="ЗадачиМнеСписокКонтекстноеМенюОтменитьПринятиеКИсполнению" id="67">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ОтменитьПринятиеКИсполнению</CommandName>
+						<ExtendedTooltip name="ЗадачиМнеСписокКонтекстноеМенюОтменитьПринятиеКИсполнениюРасширеннаяПодсказка" id="68"/>
+					</Button>
+				</ChildItems>
+			</ContextMenu>
+			<AutoCommandBar name="ЗадачиМнеСписокКоманднаяПанель" id="5">
+				<Autofill>false</Autofill>
+			</AutoCommandBar>
+			<ExtendedTooltip name="ЗадачиМнеСписокРасширеннаяПодсказка" id="6"/>
+			<SearchStringAddition name="ЗадачиМнеСписокСтрокаПоиска" id="7" DisplayImportance="High">
+				<AdditionSource>
+					<Item>ЗадачиМнеСписок</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<HorizontalStretch>true</HorizontalStretch>
+				<ContextMenu name="ЗадачиМнеСписокСтрокаПоискаКонтекстноеМеню" id="8"/>
+				<ExtendedTooltip name="ЗадачиМнеСписокСтрокаПоискаРасширеннаяПодсказка" id="9"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ЗадачиМнеСписокСостояниеПросмотра" id="10">
+				<AdditionSource>
+					<Item>ЗадачиМнеСписок</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ЗадачиМнеСписокСостояниеПросмотраКонтекстноеМеню" id="11"/>
+				<ExtendedTooltip name="ЗадачиМнеСписокСостояниеПросмотраРасширеннаяПодсказка" id="12"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ЗадачиМнеСписокУправлениеПоиском" id="13">
+				<AdditionSource>
+					<Item>ЗадачиМнеСписок</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ЗадачиМнеСписокУправлениеПоискомКонтекстноеМеню" id="14"/>
+				<ExtendedTooltip name="ЗадачиМнеСписокУправлениеПоискомРасширеннаяПодсказка" id="15"/>
+			</SearchControlAddition>
+			<Events>
+				<Event name="OnActivateRow">ЗадачиМнеСписокПриАктивизацииСтроки</Event>
+				<Event name="RefreshRequestProcessing">ЗадачиМнеСписокОбработкаЗапросаОбновления</Event>
+			</Events>
+			<ChildItems>
+				<ColumnGroup name="Индикаторы" id="23">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>1</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Индикаторы</v8:content>
+						</v8:item>
+					</ToolTip>
+					<HorizontalStretch>false</HorizontalStretch>
+					<VerticalStretch>false</VerticalStretch>
+					<ShowTitle>false</ShowTitle>
+					<FixingInTable>Left</FixingInTable>
+					<ExtendedTooltip name="ИндикаторыРасширеннаяПодсказка" id="24"/>
+					<ChildItems>
+						<PictureField name="СписокРезультатЗавершения" id="34">
+							<DataPath>ЗадачиМнеСписок.КартинкаРезультатЗавершения</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>1</v8:content>
+								</v8:item>
+							</Title>
+							<HorizontalAlign>Center</HorizontalAlign>
+							<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+							<FooterHorizontalAlign>Left</FooterHorizontalAlign>
+							<Width>1</Width>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<MaxWidth>1</MaxWidth>
+							<Height>1</Height>
+							<AutoMaxHeight>false</AutoMaxHeight>
+							<MaxHeight>1</MaxHeight>
+							<VerticalStretch>false</VerticalStretch>
+							<PictureSize>Proportionally</PictureSize>
+							<ValuesPicture>
+								<xr:Ref>CommonPicture.МККоллекцияСостоянияПроцессовИЗадач</xr:Ref>
+								<xr:LoadTransparent>false</xr:LoadTransparent>
+							</ValuesPicture>
+							<Border width="1">
+								<v8ui:style xsi:type="v8ui:ControlBorderType">WithoutBorder</v8ui:style>
+							</Border>
+							<FileDragMode>AsFile</FileDragMode>
+							<ContextMenu name="СписокРезультатЗавершенияКонтекстноеМеню" id="35"/>
+							<ExtendedTooltip name="СписокРезультатЗавершенияРасширеннаяПодсказка" id="36"/>
+						</PictureField>
+						<PictureField name="СписокФлаг" id="20">
+							<DataPath>ЗадачиМнеСписок.КартинкаФлаг</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>1</v8:content>
+								</v8:item>
+							</Title>
+							<HorizontalAlign>Center</HorizontalAlign>
+							<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+							<FooterHorizontalAlign>Left</FooterHorizontalAlign>
+							<Width>1</Width>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<MaxWidth>1</MaxWidth>
+							<Height>1</Height>
+							<AutoMaxHeight>false</AutoMaxHeight>
+							<MaxHeight>1</MaxHeight>
+							<VerticalStretch>false</VerticalStretch>
+							<PictureSize>Proportionally</PictureSize>
+							<ValuesPicture>
+								<xr:Ref>CommonPicture.МККоллекцияФлаги</xr:Ref>
+								<xr:LoadTransparent>false</xr:LoadTransparent>
+							</ValuesPicture>
+							<Border width="1">
+								<v8ui:style xsi:type="v8ui:ControlBorderType">WithoutBorder</v8ui:style>
+							</Border>
+							<FileDragMode>AsFile</FileDragMode>
+							<ContextMenu name="СписокФлагКонтекстноеМеню" id="21"/>
+							<ExtendedTooltip name="СписокФлагРасширеннаяПодсказка" id="22"/>
+						</PictureField>
+						<PictureField name="СписокСостояниеАдресации" id="25">
+							<DataPath>ЗадачиМнеСписок.КартинкаСостояниеАдресации</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>1</v8:content>
+								</v8:item>
+							</Title>
+							<HorizontalAlign>Center</HorizontalAlign>
+							<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+							<FooterHorizontalAlign>Left</FooterHorizontalAlign>
+							<Width>1</Width>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<MaxWidth>1</MaxWidth>
+							<Height>1</Height>
+							<AutoMaxHeight>false</AutoMaxHeight>
+							<MaxHeight>1</MaxHeight>
+							<VerticalStretch>false</VerticalStretch>
+							<PictureSize>Proportionally</PictureSize>
+							<ValuesPicture>
+								<xr:Ref>CommonPicture.МККоллекцияРолиИДелегаты</xr:Ref>
+								<xr:LoadTransparent>false</xr:LoadTransparent>
+							</ValuesPicture>
+							<Border width="1">
+								<v8ui:style xsi:type="v8ui:ControlBorderType">WithoutBorder</v8ui:style>
+							</Border>
+							<FileDragMode>AsFile</FileDragMode>
+							<ContextMenu name="СписокСостояниеАдресацииКонтекстноеМеню" id="26"/>
+							<ExtendedTooltip name="СписокСостояниеАдресацииРасширеннаяПодсказка" id="27"/>
+						</PictureField>
+						<PictureField name="СписокВажность" id="28">
+							<DataPath>ЗадачиМнеСписок.КартинкаВажность</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>1</v8:content>
+								</v8:item>
+							</Title>
+							<HorizontalAlign>Center</HorizontalAlign>
+							<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+							<FooterHorizontalAlign>Left</FooterHorizontalAlign>
+							<Width>1</Width>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<MaxWidth>1</MaxWidth>
+							<Height>1</Height>
+							<AutoMaxHeight>false</AutoMaxHeight>
+							<MaxHeight>1</MaxHeight>
+							<VerticalStretch>false</VerticalStretch>
+							<PictureSize>Proportionally</PictureSize>
+							<ValuesPicture>
+								<xr:Ref>CommonPicture.МККоллекцияСтрокВариантыВажности</xr:Ref>
+								<xr:LoadTransparent>false</xr:LoadTransparent>
+							</ValuesPicture>
+							<Border width="1">
+								<v8ui:style xsi:type="v8ui:ControlBorderType">WithoutBorder</v8ui:style>
+							</Border>
+							<FileDragMode>AsFile</FileDragMode>
+							<ContextMenu name="СписокВажностьКонтекстноеМеню" id="29"/>
+							<ExtendedTooltip name="СписокВажностьРасширеннаяПодсказка" id="30"/>
+						</PictureField>
+						<PictureField name="СписокСостояниеКонтроля" id="31">
+							<DataPath>ЗадачиМнеСписок.КартинкаСостояниеКонтроля</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>1</v8:content>
+								</v8:item>
+							</Title>
+							<HorizontalAlign>Center</HorizontalAlign>
+							<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+							<FooterHorizontalAlign>Left</FooterHorizontalAlign>
+							<Width>1</Width>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<MaxWidth>1</MaxWidth>
+							<Height>1</Height>
+							<AutoMaxHeight>false</AutoMaxHeight>
+							<MaxHeight>1</MaxHeight>
+							<VerticalStretch>false</VerticalStretch>
+							<PictureSize>Proportionally</PictureSize>
+							<ValuesPicture>
+								<xr:Ref>CommonPicture.МККоллекцияСтрокКонтроль</xr:Ref>
+								<xr:LoadTransparent>false</xr:LoadTransparent>
+							</ValuesPicture>
+							<Border width="1">
+								<v8ui:style xsi:type="v8ui:ControlBorderType">WithoutBorder</v8ui:style>
+							</Border>
+							<FileDragMode>AsFile</FileDragMode>
+							<ContextMenu name="СписокСостояниеКонтроляКонтекстноеМеню" id="32"/>
+							<ExtendedTooltip name="СписокСостояниеКонтроляРасширеннаяПодсказка" id="33"/>
+						</PictureField>
+						<PictureField name="ИндексЗаглушка" id="147">
+							<DataPath>ЗадачиМнеСписок.ИндексЗаглушка</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<HorizontalAlign>Center</HorizontalAlign>
+							<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+							<Width>1</Width>
+							<HorizontalStretch>false</HorizontalStretch>
+							<VerticalStretch>false</VerticalStretch>
+							<ContextMenu name="ИндексЗаглушкаКонтекстноеМеню" id="148"/>
+							<ExtendedTooltip name="ИндексЗаглушкаРасширеннаяПодсказка" id="149"/>
+						</PictureField>
+					</ChildItems>
+				</ColumnGroup>
+				<ColumnGroup name="ПоляДанные" id="37">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Поля данные</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Поля данные</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ПоляДанныеРасширеннаяПодсказка" id="38"/>
+					<ChildItems>
+						<ColumnGroup name="ПоляДанныеПерваяСтрока" id="42">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Поля данные первая строка</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Поля данные первая строка</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<ExtendedTooltip name="ПоляДанныеПерваяСтрокаРасширеннаяПодсказка" id="43"/>
+							<ChildItems>
+								<InputField name="СписокНаименование" id="39">
+									<DataPath>ЗадачиМнеСписок.Description</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Наименование</v8:content>
+										</v8:item>
+									</Title>
+									<HorizontalAlign>Left</HorizontalAlign>
+									<AutoCellHeight>true</AutoCellHeight>
+									<Width>10</Width>
+									<AutoMaxHeight>false</AutoMaxHeight>
+									<MaxHeight>3</MaxHeight>
+									<HorizontalStretch>true</HorizontalStretch>
+									<VerticalStretch>false</VerticalStretch>
+									<MultiLine>true</MultiLine>
+									<Font ref="sys:DefaultGUIFont" height="8" kind="WindowsFont"/>
+									<HeightControlVariant>UseContentHeight</HeightControlVariant>
+									<ContextMenu name="СписокНаименованиеКонтекстноеМеню" id="40"/>
+									<ExtendedTooltip name="СписокНаименованиеРасширеннаяПодсказка" id="41"/>
+								</InputField>
+								<LabelField name="СписокСрокИсполнения" id="46">
+									<DataPath>ЗадачиМнеСписок.СрокИсполненияДляОтображенияВСписке</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Срок</v8:content>
+										</v8:item>
+									</Title>
+									<HorizontalAlign>Right</HorizontalAlign>
+									<VerticalAlign>Top</VerticalAlign>
+									<AutoCellHeight>true</AutoCellHeight>
+									<HeaderHorizontalAlign>Right</HeaderHorizontalAlign>
+									<Width>5</Width>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>8</MaxWidth>
+									<AutoMaxHeight>false</AutoMaxHeight>
+									<MaxHeight>2</MaxHeight>
+									<HorizontalStretch>false</HorizontalStretch>
+									<VerticalStretch>false</VerticalStretch>
+									<Font ref="sys:DefaultGUIFont" height="8" kind="WindowsFont"/>
+									<ContextMenu name="СписокСрокИсполненияКонтекстноеМеню" id="47"/>
+									<ExtendedTooltip name="СписокСрокИсполненияРасширеннаяПодсказка" id="48"/>
+								</LabelField>
+							</ChildItems>
+						</ColumnGroup>
+						<ColumnGroup name="ПоляДанныеВтораяСтрока" id="44">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Поля данные вторая строка</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Поля данные вторая строка</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<ExtendedTooltip name="ПоляДанныеВтораяСтрокаРасширеннаяПодсказка" id="45"/>
+							<ChildItems>
+								<LabelField name="СписокАвтор" id="49">
+									<DataPath>ЗадачиМнеСписок.Автор</DataPath>
+									<Width>10</Width>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<Height>1</Height>
+									<AutoMaxHeight>false</AutoMaxHeight>
+									<MaxHeight>1</MaxHeight>
+									<HorizontalStretch>true</HorizontalStretch>
+									<VerticalStretch>false</VerticalStretch>
+									<Font ref="sys:DefaultGUIFont" height="7" kind="WindowsFont"/>
+									<ContextMenu name="СписокАвторКонтекстноеМеню" id="50"/>
+									<ExtendedTooltip name="СписокАвторРасширеннаяПодсказка" id="51"/>
+								</LabelField>
+								<LabelField name="СписокДата" id="52">
+									<DataPath>ЗадачиМнеСписок.Date</DataPath>
+									<HorizontalAlign>Right</HorizontalAlign>
+									<VerticalAlign>Bottom</VerticalAlign>
+									<AutoCellHeight>true</AutoCellHeight>
+									<HeaderHorizontalAlign>Right</HeaderHorizontalAlign>
+									<FooterHorizontalAlign>Right</FooterHorizontalAlign>
+									<Width>5</Width>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MaxWidth>8</MaxWidth>
+									<Height>1</Height>
+									<AutoMaxHeight>false</AutoMaxHeight>
+									<MaxHeight>2</MaxHeight>
+									<HorizontalStretch>false</HorizontalStretch>
+									<VerticalStretch>false</VerticalStretch>
+									<Border width="1">
+										<v8ui:style xsi:type="v8ui:ControlBorderType">Single</v8ui:style>
+									</Border>
+									<Font ref="sys:DefaultGUIFont" height="7" kind="WindowsFont"/>
+									<ContextMenu name="СписокДатаКонтекстноеМеню" id="53"/>
+									<ExtendedTooltip name="СписокДатаРасширеннаяПодсказка" id="54"/>
+								</LabelField>
+							</ChildItems>
+						</ColumnGroup>
+					</ChildItems>
+				</ColumnGroup>
+			</ChildItems>
+		</Table>
+		<UsualGroup name="ГруппаНастройкиСписка" id="97">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройка списка</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа настройки списка</v8:content>
+				</v8:item>
+			</ToolTip>
+			<HorizontalStretch>true</HorizontalStretch>
+			<Group>AlwaysHorizontal</Group>
+			<Behavior>Collapsible</Behavior>
+			<Collapsed>true</Collapsed>
+			<Representation>None</Representation>
+			<ShowLeftMargin>false</ShowLeftMargin>
+			<TitleDataPath>ЗаголовокГруппыНастройкиСписка</TitleDataPath>
+			<ExtendedTooltip name="ГруппаНастройкиСпискаРасширеннаяПодсказка" id="98"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаГруппировкаИОтбор" id="110">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа группировка и отбор</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа группировка и отбор</v8:content>
+						</v8:item>
+					</ToolTip>
+					<HorizontalSpacing>None</HorizontalSpacing>
+					<VerticalSpacing>Single</VerticalSpacing>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаГруппировкаИОтборРасширеннаяПодсказка" id="111"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаВариантОтбора" id="128">
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаВариантОтбораРасширеннаяПодсказка" id="129"/>
+							<ChildItems>
+								<InputField name="ЗадачиМнеВариантОтбора" id="104">
+									<DataPath>ЗадачиМнеВариантОтбора</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Вариант отбора</v8:content>
+										</v8:item>
+									</Title>
+									<TitleLocation>Top</TitleLocation>
+									<ToolTipRepresentation>None</ToolTipRepresentation>
+									<ChoiceButton>false</ChoiceButton>
+									<ClearButton>true</ClearButton>
+									<ListChoiceMode>true</ListChoiceMode>
+									<ChooseType>false</ChooseType>
+									<ChoiceList>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>По автору</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:string">ПоАвтору</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>По предмету</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:string">ПоПредмету</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>По проекту</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:string">ПоПроекту</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>По типу задачи</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:string">ПоТипуЗадачи</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>По сроку</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:string">ПоСроку</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>По важности</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:string">ПоВажности</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>По флагу</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:string">ПоФлагу</Value>
+											</xr:Value>
+										</xr:Item>
+									</ChoiceList>
+									<AutoShowClearButtonMode>FilledOnly</AutoShowClearButtonMode>
+									<ContextMenu name="ЗадачиМнеВариантОтбораКонтекстноеМеню" id="105"/>
+									<ExtendedTooltip name="ЗадачиМнеВариантОтбораРасширеннаяПодсказка" id="106"/>
+									<Events>
+										<Event name="Clearing">ЗадачиМнеВариантОтбораОчистка</Event>
+										<Event name="ChoiceProcessing">ЗадачиМнеВариантОтбораОбработкаВыбора</Event>
+									</Events>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаЗначениеОтбора" id="120">
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа значение отбора</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаЗначениеОтбораРасширеннаяПодсказка" id="121"/>
+							<ChildItems>
+								<InputField name="ЗадачиМнеЗначениеОтбораПоСроку" id="122">
+									<DataPath>ЗадачиМнеЗначениеОтбораПоСроку</DataPath>
+									<Visible>false</Visible>
+									<TitleLocation>Top</TitleLocation>
+									<MultiLine>true</MultiLine>
+									<ClearButton>true</ClearButton>
+									<ListChoiceMode>true</ListChoiceMode>
+									<ChooseType>false</ChooseType>
+									<ChoiceList>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Срок не указан</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:string">СрокНеУказан</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Просрочено</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:string">Просрочено</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>В течение сегодня</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:string">Сегодня</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>До конца недели</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:string">ЭтаНеделя</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>На следующей неделе</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:string">СледующаяНеделя</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Позднее</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:string">Позднее</Value>
+											</xr:Value>
+										</xr:Item>
+									</ChoiceList>
+									<AutoShowClearButtonMode>FilledOnly</AutoShowClearButtonMode>
+									<ContextMenu name="ЗадачиМнеЗначениеОтбораПоСрокуКонтекстноеМеню" id="123"/>
+									<ExtendedTooltip name="ЗадачиМнеЗначениеОтбораПоСрокуРасширеннаяПодсказка" id="124"/>
+									<Events>
+										<Event name="Clearing">ЗадачиМнеЗначениеОтбораПоСрокуОчистка</Event>
+										<Event name="ChoiceProcessing">ЗадачиМнеЗначениеОтбораПоСрокуОбработкаВыбора</Event>
+									</Events>
+								</InputField>
+								<InputField name="ЗадачиМнеЗначениеОтбораПоАвтору" id="125">
+									<DataPath>ЗадачиМнеЗначениеОтбораПоАвтору</DataPath>
+									<Visible>false</Visible>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Значение отбора</v8:content>
+										</v8:item>
+									</Title>
+									<TitleLocation>Top</TitleLocation>
+									<MultiLine>true</MultiLine>
+									<ChoiceButton>true</ChoiceButton>
+									<ClearButton>true</ClearButton>
+									<OpenButton>false</OpenButton>
+									<CreateButton>false</CreateButton>
+									<AutoShowClearButtonMode>FilledOnly</AutoShowClearButtonMode>
+									<ContextMenu name="ЗадачиМнеЗначениеОтбораПоАвторуКонтекстноеМеню" id="126"/>
+									<ExtendedTooltip name="ЗадачиМнеЗначениеОтбораПоАвторуРасширеннаяПодсказка" id="127"/>
+									<Events>
+										<Event name="StartChoice">ЗадачиМнеЗначениеОтбораПоАвторуНачалоВыбора</Event>
+										<Event name="Clearing">ЗадачиМнеЗначениеОтбораПоАвторуОчистка</Event>
+										<Event name="ChoiceProcessing">ЗадачиМнеЗначениеОтбораПоАвторуОбработкаВыбора</Event>
+									</Events>
+								</InputField>
+								<InputField name="ЗадачиМнеЗначениеОтбораПоПредмету" id="132">
+									<DataPath>ЗадачиМнеЗначениеОтбораПоПредмету</DataPath>
+									<Visible>false</Visible>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Значение отбора</v8:content>
+										</v8:item>
+									</Title>
+									<TitleLocation>Top</TitleLocation>
+									<MultiLine>true</MultiLine>
+									<ChoiceButton>true</ChoiceButton>
+									<ClearButton>true</ClearButton>
+									<OpenButton>false</OpenButton>
+									<CreateButton>false</CreateButton>
+									<TextEdit>false</TextEdit>
+									<AutoShowClearButtonMode>FilledOnly</AutoShowClearButtonMode>
+									<ContextMenu name="ЗадачиМнеЗначениеОтбораПоПредметуКонтекстноеМеню" id="133"/>
+									<ExtendedTooltip name="ЗадачиМнеЗначениеОтбораПоПредметуРасширеннаяПодсказка" id="134"/>
+									<Events>
+										<Event name="StartChoice">ЗадачиМнеЗначениеОтбораПоПредметуНачалоВыбора</Event>
+										<Event name="Clearing">ЗадачиМнеЗначениеОтбораПоПредметуОчистка</Event>
+									</Events>
+								</InputField>
+								<InputField name="ЗадачиМнеЗначениеОтбораПоПроекту" id="135">
+									<DataPath>ЗадачиМнеЗначениеОтбораПоПроекту</DataPath>
+									<Visible>false</Visible>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Значение отбора</v8:content>
+										</v8:item>
+									</Title>
+									<TitleLocation>Top</TitleLocation>
+									<MultiLine>true</MultiLine>
+									<ChoiceButton>true</ChoiceButton>
+									<ClearButton>true</ClearButton>
+									<OpenButton>false</OpenButton>
+									<CreateButton>false</CreateButton>
+									<AutoShowClearButtonMode>FilledOnly</AutoShowClearButtonMode>
+									<ContextMenu name="ЗадачиМнеЗначениеОтбораПоПроектуКонтекстноеМеню" id="136"/>
+									<ExtendedTooltip name="ЗадачиМнеЗначениеОтбораПоПроектуРасширеннаяПодсказка" id="137"/>
+									<Events>
+										<Event name="Clearing">ЗадачиМнеЗначениеОтбораПоПроектуОчистка</Event>
+										<Event name="ChoiceProcessing">ЗадачиМнеЗначениеОтбораПоПроектуОбработкаВыбора</Event>
+									</Events>
+								</InputField>
+								<InputField name="ЗадачиМнеЗначениеОтбораПоТипуЗадачи" id="138">
+									<DataPath>ЗадачиМнеЗначениеОтбораПоТипуЗадачи</DataPath>
+									<Visible>false</Visible>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Значение отбора</v8:content>
+										</v8:item>
+									</Title>
+									<TitleLocation>Top</TitleLocation>
+									<MultiLine>true</MultiLine>
+									<ChoiceButton>true</ChoiceButton>
+									<ClearButton>true</ClearButton>
+									<OpenButton>false</OpenButton>
+									<CreateButton>false</CreateButton>
+									<TextEdit>false</TextEdit>
+									<AutoShowClearButtonMode>FilledOnly</AutoShowClearButtonMode>
+									<ContextMenu name="ЗадачиМнеЗначениеОтбораПоТипуЗадачиКонтекстноеМеню" id="139"/>
+									<ExtendedTooltip name="ЗадачиМнеЗначениеОтбораПоТипуЗадачиРасширеннаяПодсказка" id="140"/>
+									<Events>
+										<Event name="StartChoice">ЗадачиМнеЗначениеОтбораПоТипуЗадачиНачалоВыбора</Event>
+										<Event name="Clearing">ЗадачиМнеЗначениеОтбораПоТипуЗадачиОчистка</Event>
+										<Event name="ChoiceProcessing">ЗадачиМнеЗначениеОтбораПоТипуЗадачиОбработкаВыбора</Event>
+									</Events>
+								</InputField>
+								<InputField name="ЗадачиМнеЗначениеОтбораПоВажности" id="141">
+									<DataPath>ЗадачиМнеЗначениеОтбораПоВажности</DataPath>
+									<Visible>false</Visible>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Значение отбора</v8:content>
+										</v8:item>
+									</Title>
+									<TitleLocation>Top</TitleLocation>
+									<ChoiceButton>true</ChoiceButton>
+									<ClearButton>true</ClearButton>
+									<OpenButton>false</OpenButton>
+									<CreateButton>false</CreateButton>
+									<TextEdit>false</TextEdit>
+									<AutoShowClearButtonMode>FilledOnly</AutoShowClearButtonMode>
+									<ContextMenu name="ЗадачиМнеЗначениеОтбораПоВажностиКонтекстноеМеню" id="142"/>
+									<ExtendedTooltip name="ЗадачиМнеЗначениеОтбораПоВажностиРасширеннаяПодсказка" id="143"/>
+									<Events>
+										<Event name="Clearing">ЗадачиМнеЗначениеОтбораПоВажностиОчистка</Event>
+										<Event name="ChoiceProcessing">ЗадачиМнеЗначениеОтбораПоВажностиОбработкаВыбора</Event>
+									</Events>
+								</InputField>
+								<InputField name="ЗадачиМнеЗначениеОтбораПоФлагу" id="144">
+									<DataPath>ЗадачиМнеЗначениеОтбораПоФлагу</DataPath>
+									<Visible>false</Visible>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Значение отбора</v8:content>
+										</v8:item>
+									</Title>
+									<TitleLocation>Top</TitleLocation>
+									<ChoiceButton>true</ChoiceButton>
+									<ClearButton>true</ClearButton>
+									<OpenButton>false</OpenButton>
+									<CreateButton>false</CreateButton>
+									<ListChoiceMode>true</ListChoiceMode>
+									<ChooseType>false</ChooseType>
+									<TextEdit>false</TextEdit>
+									<ChoiceList>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Без флага</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:string">БезФлага</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Любой флаг</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:string">ЛюбойФлаг</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Красный флаг</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:string">КрасныйФлаг</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Синий флаг</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:string">СинийФлаг</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Желтый флаг</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:string">ЖелтыйФлаг</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Зеленый флаг</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:string">ЗеленыйФлаг</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Оранжевый флаг</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:string">ОранжевыйФлаг</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Лиловый флаг</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:string">ЛиловыйФлаг</Value>
+											</xr:Value>
+										</xr:Item>
+									</ChoiceList>
+									<AutoShowClearButtonMode>FilledOnly</AutoShowClearButtonMode>
+									<ContextMenu name="ЗадачиМнеЗначениеОтбораПоФлагуКонтекстноеМеню" id="145"/>
+									<ExtendedTooltip name="ЗадачиМнеЗначениеОтбораПоФлагуРасширеннаяПодсказка" id="146"/>
+									<Events>
+										<Event name="Clearing">ЗадачиМнеЗначениеОтбораПоФлагуОчистка</Event>
+										<Event name="ChoiceProcessing">ЗадачиМнеЗначениеОтбораПоФлагуОбработкаВыбора</Event>
+									</Events>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<CommandBar name="ГруппаКоманднаяПанельСортировка" id="114">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа командная панель сортировка</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа командная панель сортировка</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ToolTipRepresentation>None</ToolTipRepresentation>
+					<HorizontalStretch>false</HorizontalStretch>
+					<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+					<GroupVerticalAlign>Center</GroupVerticalAlign>
+					<HorizontalLocation>Right</HorizontalLocation>
+					<ExtendedTooltip name="ГруппаКоманднаяПанельСортировкаРасширеннаяПодсказка" id="115"/>
+					<ChildItems>
+						<Popup name="ЗадачиМнеМенюСортироватьПо" id="118">
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Задачи мне меню сортировать по</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Picture>
+								<xr:Ref>CommonPicture.ПоляИСортировки</xr:Ref>
+								<xr:LoadTransparent>false</xr:LoadTransparent>
+							</Picture>
+							<ExtendedTooltip name="ЗадачиМнеМенюСортироватьПоРасширеннаяПодсказка" id="119"/>
+							<ChildItems>
+								<Button name="ЗадачиМнеСортироватьПоСрокуИсполнения" id="59">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.ЗадачиМнеСортироватьСрокуИсполнения</CommandName>
+									<ExtendedTooltip name="ЗадачиМнеСортироватьПоСрокуИсполненияРасширеннаяПодсказка" id="60"/>
+								</Button>
+								<Button name="ЗадачиМнеСортироватьПоДатеСоздания" id="61">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.ЗадачиМнеСортироватьДатеСоздания</CommandName>
+									<ExtendedTooltip name="ЗадачиМнеСортироватьПоДатеСозданияРасширеннаяПодсказка" id="62"/>
+								</Button>
+								<Button name="ЗадачиМнеСортироватьПоФлагу" id="63">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.ЗадачиМнеСортироватьПоФлагу</CommandName>
+									<ExtendedTooltip name="ЗадачиМнеСортироватьПоФлагуРасширеннаяПодсказка" id="64"/>
+								</Button>
+							</ChildItems>
+						</Popup>
+					</ChildItems>
+				</CommandBar>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="ЗадачиМнеСписок" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Задачи мне список</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<UseAlways>
+				<Field>ЗадачиМнеСписок.BusinessProcess</Field>
+				<Field>ЗадачиМнеСписок.Executed</Field>
+				<Field>ЗадачиМнеСписок.Ref</Field>
+				<Field>ЗадачиМнеСписок.Исполнитель</Field>
+				<Field>ЗадачиМнеСписок.ПринятаКИсполнению</Field>
+				<Field>ЗадачиМнеСписок.СостояниеВыполнения</Field>
+				<Field>ЗадачиМнеСписок.СрокИсполнения</Field>
+				<Field>ЗадачиМнеСписок.СрокИсполненияДляОтображенияВСписке</Field>
+				<Field>ЗадачиМнеСписок.Флаг</Field>
+			</UseAlways>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>false</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	ИСТИНА КАК ИндексЗаглушка,
+	ЗадачаИсполнителя.Ссылка,
+	ЗадачаИсполнителя.Дата,
+	ЗадачаИсполнителя.БизнесПроцесс,
+	ЗадачаИсполнителя.ТочкаМаршрута,
+	ЗадачаИсполнителя.Наименование,
+	ЗадачаИсполнителя.Выполнена,
+	ЗадачаИсполнителя.СрокИсполнения,
+	ВЫБОР
+		КОГДА НЕ &amp;ИспользоватьДатуИВремяВСрокахЗадач
+				И ЗадачаИсполнителя.СрокИсполнения &lt;&gt; ДАТАВРЕМЯ(1, 1, 1)
+			ТОГДА КОНЕЦПЕРИОДА(ЗадачаИсполнителя.СрокИсполнения, ДЕНЬ)
+		ИНАЧЕ ЗадачаИсполнителя.СрокИсполнения
+	КОНЕЦ КАК СрокИсполненияДляОтображенияВСписке,
+	ЗадачаИсполнителя.ПредметСтрокой,
+	ЗадачаИсполнителя.Автор,
+	ЗадачаИсполнителя.ПринятаКИсполнению,
+	ВЫБОР
+		КОГДА ЗадачаИсполнителя.Важность = ЗНАЧЕНИЕ(Перечисление.ВариантыВажностиЗадачи.Низкая)
+			ТОГДА 0
+		КОГДА ЗадачаИсполнителя.Важность = ЗНАЧЕНИЕ(Перечисление.ВариантыВажностиЗадачи.Высокая)
+			ТОГДА 2
+		ИНАЧЕ -1
+	КОНЕЦ КАК КартинкаВажность,
+	ВЫБОР
+		КОГДА ЗадачаИсполнителя.Проект = ЗНАЧЕНИЕ(Справочник.Проекты.ПустаяСсылка)
+			ТОГДА &amp;ИмяГруппыБезПроекта
+		ИНАЧЕ ЗадачаИсполнителя.Проект
+	КОНЕЦ КАК Проект,
+	ЕСТЬNULL(ФлагиОбъектов.Флаг, ЗНАЧЕНИЕ(Перечисление.ФлагиОбъектов.ПустаяСсылка)) КАК Флаг,
+	ВЫБОР
+		КОГДА ФлагиОбъектов.Флаг = ЗНАЧЕНИЕ(Перечисление.ФлагиОбъектов.Красный)
+			ТОГДА 1
+		КОГДА ФлагиОбъектов.Флаг = ЗНАЧЕНИЕ(Перечисление.ФлагиОбъектов.Синий)
+			ТОГДА 2
+		КОГДА ФлагиОбъектов.Флаг = ЗНАЧЕНИЕ(Перечисление.ФлагиОбъектов.Желтый)
+			ТОГДА 3
+		КОГДА ФлагиОбъектов.Флаг = ЗНАЧЕНИЕ(Перечисление.ФлагиОбъектов.Зеленый)
+			ТОГДА 4
+		КОГДА ФлагиОбъектов.Флаг = ЗНАЧЕНИЕ(Перечисление.ФлагиОбъектов.Оранжевый)
+			ТОГДА 5
+		КОГДА ФлагиОбъектов.Флаг = ЗНАЧЕНИЕ(Перечисление.ФлагиОбъектов.Лиловый)
+			ТОГДА 6
+		ИНАЧЕ -1
+	КОНЕЦ КАК КартинкаФлаг,
+	ЗадачаИсполнителя.Исполнитель,
+	ВЫБОР
+		КОГДА ЗадачиДляВыполнения.СостояниеВыполнения = ЗНАЧЕНИЕ(Перечисление.СостоянияЗадачДляВыполнения.ВыполнениеОтменено)
+			ТОГДА 9
+		КОГДА РезультатыВыполненияПроцессовИЗадач.Результат = ЗНАЧЕНИЕ(Перечисление.ВариантыВыполненияПроцессовИЗадач.Положительно)
+			ТОГДА 7
+		КОГДА РезультатыВыполненияПроцессовИЗадач.Результат = ЗНАЧЕНИЕ(Перечисление.ВариантыВыполненияПроцессовИЗадач.ПоложительноСЗамечаниями)
+			ТОГДА 6
+		КОГДА РезультатыВыполненияПроцессовИЗадач.Результат = ЗНАЧЕНИЕ(Перечисление.ВариантыВыполненияПроцессовИЗадач.Отрицательно)
+			ТОГДА 5
+		КОГДА ЗадачаИсполнителя.Выполнена = ИСТИНА
+			ТОГДА 4
+		ИНАЧЕ -1
+	КОНЕЦ КАК КартинкаРезультатЗавершения,
+	ВЫБОР
+		КОГДА КешИнформацииОбОбъектах.СостояниеКонтроля = ЗНАЧЕНИЕ(Перечисление.СостоянияКонтроля.НаКонтроле)
+			ТОГДА ВЫБОР
+					КОГДА КешИнформацииОбОбъектах.СрокИсполнения = ДАТАВРЕМЯ(1, 1, 1)
+							ИЛИ КешИнформацииОбОбъектах.СрокИсполнения &gt;= &amp;ТекущаяДата
+						ТОГДА 1
+					ИНАЧЕ 3
+				КОНЕЦ
+		КОГДА КешИнформацииОбОбъектах.СостояниеКонтроля = ЗНАЧЕНИЕ(Перечисление.СостоянияКонтроля.СнятсКонтроля)
+			ТОГДА 4
+		КОГДА КешИнформацииОбОбъектах.СостояниеКонтроля = ЗНАЧЕНИЕ(Перечисление.СостоянияКонтроля.НаКонтролеНесколько)
+			ТОГДА ВЫБОР
+					КОГДА КешИнформацииОбОбъектах.СрокИсполнения = ДАТАВРЕМЯ(1, 1, 1)
+							ИЛИ КешИнформацииОбОбъектах.СрокИсполнения &gt;= &amp;ТекущаяДата
+						ТОГДА 6
+					КОГДА КешИнформацииОбОбъектах.СрокИсполненияОбщий = ДАТАВРЕМЯ(1, 1, 1)
+							ИЛИ КешИнформацииОбОбъектах.СрокИсполненияОбщий &gt;= &amp;ТекущаяДата
+						ТОГДА 9
+					ИНАЧЕ 7
+				КОНЕЦ
+		КОГДА КешИнформацииОбОбъектах.СостояниеКонтроля = ЗНАЧЕНИЕ(Перечисление.СостоянияКонтроля.СнятсКонтроляНесколько)
+			ТОГДА 8
+		КОГДА КешИнформацииОбОбъектах.СостояниеКонтроля = ЗНАЧЕНИЕ(Перечисление.СостоянияКонтроля.СмешанноНесколько)
+			ТОГДА ВЫБОР
+					КОГДА КешИнформацииОбОбъектах.СрокИсполнения = ДАТАВРЕМЯ(1, 1, 1)
+							ИЛИ КешИнформацииОбОбъектах.СрокИсполнения &gt;= &amp;ТекущаяДата
+						ТОГДА 10
+					ИНАЧЕ 11
+				КОНЕЦ
+		ИНАЧЕ 0
+	КОНЕЦ КАК КартинкаСостояниеКонтроля,
+	ВЫБОР
+		КОГДА ЗадачаИсполнителя.ТекущийИсполнитель = &amp;ТекущийПользователь
+			ТОГДА -1
+		КОГДА МоиРоли.РольИсполнителя ЕСТЬ NULL 
+			ТОГДА 0
+		ИНАЧЕ 1
+	КОНЕЦ КАК КартинкаСостояниеАдресации,
+	ЗадачаИсполнителя.ДатаИсполнения,
+	ЗадачиДляВыполнения.СостояниеВыполнения КАК СостояниеВыполнения
+	
+	ИЗ
+	Задача.ЗадачаИсполнителя КАК ЗадачаИсполнителя
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ФлагиОбъектов КАК ФлагиОбъектов
+		ПО ЗадачаИсполнителя.Ссылка = ФлагиОбъектов.Объект
+			И (ФлагиОбъектов.Пользователь = &amp;ТекущийПользователь)
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.РезультатыВыполненияПроцессовИЗадач КАК РезультатыВыполненияПроцессовИЗадач
+		ПО ЗадачаИсполнителя.Ссылка = РезультатыВыполненияПроцессовИЗадач.Объект
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.КешИнформацииОбОбъектах КАК КешИнформацииОбОбъектах
+		ПО ЗадачаИсполнителя.Ссылка = КешИнформацииОбОбъектах.Объект
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ЗадачиДляВыполнения КАК ЗадачиДляВыполнения
+		ПО ЗадачаИсполнителя.Ссылка = ЗадачиДляВыполнения.Задача
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ИсполнителиЗадач КАК МоиРоли
+		ПО ЗадачаИсполнителя.ТекущийИсполнитель = МоиРоли.РольИсполнителя
+			И (МоиРоли.Исполнитель = &amp;ТекущийПользователь)
+		{ЛЕВОЕ СОЕДИНЕНИЕ Задача.ЗадачаИсполнителя.Предметы КАК ПредметыЗадач
+		ПО ЗадачаИсполнителя.Ссылка = ПредметыЗадач.Ссылка
+			И (ПредметыЗадач.РольПредмета = ЗНАЧЕНИЕ(Перечисление.РолиПредметов.Основной))}
+		{ВНУТРЕННЕЕ СОЕДИНЕНИЕ Задача.ЗадачаИсполнителя.Предметы КАК ПредметыЗадачВнутренниеДокументы
+		ПО ЗадачаИсполнителя.Ссылка = ПредметыЗадачВнутренниеДокументы.Ссылка
+			И (ПредметыЗадачВнутренниеДокументы.РольПредмета = ЗНАЧЕНИЕ(Перечисление.РолиПредметов.Основной))
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.ДанныеВнутреннихДокументов КАК ДанныеВнутреннихДокументов
+		ПО (ПредметыЗадачВнутренниеДокументы.Предмет = ДанныеВнутреннихДокументов.Документ)}
+		{ВНУТРЕННЕЕ СОЕДИНЕНИЕ Задача.ЗадачаИсполнителя.Предметы КАК ПредметыЗадачВходящиеДокументы
+		ПО ЗадачаИсполнителя.Ссылка = ПредметыЗадачВходящиеДокументы.Ссылка
+			И (ПредметыЗадачВходящиеДокументы.РольПредмета = ЗНАЧЕНИЕ(Перечисление.РолиПредметов.Основной))
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.ДанныеВходящихДокументов КАК ДанныеВходящихДокументов
+		ПО (ПредметыЗадачВходящиеДокументы.Предмет = ДанныеВходящихДокументов.Документ)}
+		{ВНУТРЕННЕЕ СОЕДИНЕНИЕ Задача.ЗадачаИсполнителя.Предметы КАК ПредметыЗадачИсходящиеДокументы
+		ПО ЗадачаИсполнителя.Ссылка = ПредметыЗадачИсходящиеДокументы.Ссылка
+			И (ПредметыЗадачИсходящиеДокументы.РольПредмета = ЗНАЧЕНИЕ(Перечисление.РолиПредметов.Основной))
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.ДанныеИсходящихДокументов КАК ДанныеИсходящихДокументов
+		ПО (ПредметыЗадачИсходящиеДокументы.Предмет = ДанныеИсходящихДокументов.Документ)}
+		
+		{ВНУТРЕННЕЕ СОЕДИНЕНИЕ Задача.ЗадачаИсполнителя.Предметы КАК ПредметыЗадачМероприятия
+		ПО ЗадачаИсполнителя.Ссылка = ПредметыЗадачМероприятия.Ссылка
+			И (ПредметыЗадачМероприятия.РольПредмета = ЗНАЧЕНИЕ(Перечисление.РолиПредметов.Основной))
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ Справочник.Мероприятия КАК Мероприятия
+		ПО (ПредметыЗадачМероприятия.Предмет = Мероприятия.Ссылка)}
+		{ВНУТРЕННЕЕ СОЕДИНЕНИЕ Задача.ЗадачаИсполнителя.Предметы КАК ПредметыЗадачПроекты
+		ПО ЗадачаИсполнителя.Ссылка = ПредметыЗадачПроекты.Ссылка
+			И (ПредметыЗадачПроекты.РольПредмета = ЗНАЧЕНИЕ(Перечисление.РолиПредметов.Основной))
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ Справочник.Проекты КАК Проекты
+		ПО (ПредметыЗадачПроекты.Предмет = Проекты.Ссылка)}
+		
+		
+ГДЕ
+	ЗадачаИсполнителя.СостояниеБизнесПроцесса = ЗНАЧЕНИЕ(Перечисление.СостоянияБизнесПроцессов.Активен)
+	И (ЗадачиДляВыполнения.СостояниеВыполнения ЕСТЬ NULL 
+			ИЛИ ЗадачиДляВыполнения.СостояниеВыполнения &lt;&gt; ЗНАЧЕНИЕ(Перечисление.СостоянияЗадачДляВыполнения.ГотоваКВыполнению))
+	И НЕ ЗадачаИсполнителя.ПометкаУдаления
+	И ЗадачаИсполнителя.ИсключенаИзПроцесса = ЛОЖЬ
+	
+	И (&amp;ПоказыватьВыполненные = Истина Или ЗадачаИсполнителя.Выполнена = ЛОЖЬ)
+	
+	И ИСТИНА В
+			(ВЫБРАТЬ ПЕРВЫЕ 1
+				ИСТИНА
+			ИЗ
+				РегистрСведений.ИсполнителиРолейИДелегаты КАК ИсполнителиРолейИДелегаты
+			ГДЕ
+				ИсполнителиРолейИДелегаты.РольПользователь = ЗадачаИсполнителя.ТекущийИсполнитель
+				И ИсполнителиРолейИДелегаты.ИсполнительДелегат = &amp;ТекущийПользователь
+				И ИсполнителиРолейИДелегаты.ИмяОбластиДелегирования В ("", "ПроцессыИЗадачи"))
+{ГДЕ
+	(ЗадачаИсполнителя.СрокИсполнения = &amp;СрокТочный),
+	(ЗадачаИсполнителя.СрокИсполнения &gt; &amp;СрокНачало И ЗадачаИсполнителя.СрокИсполнения &lt;= &amp;СрокОкончание),
+	(ЗадачаИсполнителя.Автор = &amp;Автор),
+	(ДанныеВнутреннихДокументов.ВидДокумента = &amp;ВидПредметаВнутренниеДокументы),
+	(ДанныеВнутреннихДокументов.ВидДокумента В (&amp;ПодчиненныеВидыПредметовВнутренниеДокументы)),
+	(ДанныеВходящихДокументов.ВидДокумента = &amp;ВидПредметаВходящиеДокументы),
+	(ДанныеВходящихДокументов.ВидДокумента В (&amp;ПодчиненныеВидыПредметовВходящиеДокументы)),
+	(ДанныеИсходящихДокументов.ВидДокумента = &amp;ВидПредметаИсходящиеДокументы),
+	(ДанныеИсходящихДокументов.ВидДокумента В (&amp;ПодчиненныеВидыПредметовИсходящиеДокументы)),
+	(&amp;ВсеДокументы И
+		(ПредметыЗадач.Предмет ССЫЛКА Справочник.ВнутренниеДокументы
+			ИЛИ ПредметыЗадач.Предмет ССЫЛКА Справочник.ВходящиеДокументы
+			ИЛИ ПредметыЗадач.Предмет ССЫЛКА Справочник.ИсходящиеДокументы)),
+	(&amp;ПредметПрочийТипДанныхПереопределяемый),
+	(Мероприятия.ВидМероприятия = &amp;ВидПредметаМероприятия),
+	(Проекты.ВидПроекта = &amp;ВидПредметаПроект),
+	((ПредметыЗадач.Ссылка ЕСТЬ NULL) = &amp;БезПредмета),
+	(ЗадачаИсполнителя.Проект = &amp;Проект),
+	(ЗадачаИсполнителя.ТочкаМаршрута = &amp;ТочкаМаршрута),
+	(ЗадачаИсполнителя.Важность = &amp;Важность),
+	(ЕСТЬNULL(ФлагиОбъектов.Флаг, ЗНАЧЕНИЕ(Перечисление.ФлагиОбъектов.ПустаяСсылка)) = &amp;Флаг),
+	(&amp;ЛюбойФлаг = ИСТИНА И (НЕ ФлагиОбъектов.Флаг ЕСТЬ NULL))
+	}</QueryText>
+				<MainTable>Task.ЗадачаИсполнителя</MainTable>
+				<GetInvisibleFieldPresentations>false</GetInvisibleFieldPresentations>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="ТекущийПользователь" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текущий пользователь</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Пользователи</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ИспользоватьДатуИВремяВСрокахЗадач" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Использовать дату и время в сроках задач</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ЗадачиМнеПоказыватьВыполненные" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показывать выполненные</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<Save>
+				<Field>ЗадачиМнеПоказыватьВыполненные</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ЗадачиМнеНаправлениеСортировки" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Задачи мне направление сортировки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<Save>
+				<Field>ЗадачиМнеНаправлениеСортировки</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ОсноваЗаголовка" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Основа заголовка</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ЗадачиМнеСортироватьПо" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Задачи мне сортировать по</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<Save>
+				<Field>ЗадачиМнеСортироватьПо</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ТочкаМаршрутаИзРабочегоСтолаРуководителя" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Задачи мне текущая точка маршрута</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:TypeSet>cfg:BusinessProcessRoutePointRef</v8:TypeSet>
+			</Type>
+		</Attribute>
+		<Attribute name="ЗадачиМнеВариантОтбора" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Задачи мне вариант отбора</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ЗадачиМнеЗначениеОтбораПоСроку" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Задачи мне значение отбора по сроку</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ЗадачиМнеЗначениеОтбораПоАвтору" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Задачи мне значение отбора</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Пользователи</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ЗадачиМнеЗначениеОтбораПоПредмету" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Задачи мне значение отбора</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="ЗадачиМнеЗначениеОтбораПоТипуЗадачи" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Задачи мне значение отбора</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:TypeSet>cfg:BusinessProcessRoutePointRef</v8:TypeSet>
+			</Type>
+		</Attribute>
+		<Attribute name="ЗадачиМнеЗначениеОтбораПоПроекту" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Задачи мне значение отбора</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Проекты</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ЗадачиМнеЗначениеОтбораПоВажности" id="16">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Задачи мне значение отбора</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:EnumRef.ВариантыВажностиЗадачи</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ЗадачиМнеЗначениеОтбораПоФлагу" id="17">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Задачи мне значение отбора</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ЗадачиМнеЗначениеОтбораПоПредметуСвойства" id="18">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Задачи мне значение отбора</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="ЗадачиМнеСписокТекстЗапросаНачальный" id="19">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Задачи мне список текст запроса начальный</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="СохраняемыеНастройки" id="20">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохраняемые настройки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+			<Settings xsi:type="v8:TypeDescription"/>
+		</Attribute>
+		<Attribute name="КлючСохраненияНастроек" id="21">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ключ сохранения настроек</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ЗаголовокГруппыНастройкиСписка" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заголовок группы настройки списка</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ПеренаправитьЗадачу" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перенаправить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перенаправить задачу другому исполнителю</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.MoveRight</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ЗадачаПеренаправить</Action>
+			<FunctionalOptions>
+				<Item>FunctionalOption.ИспользоватьПеренаправлениеЗадач</Item>
+			</FunctionalOptions>
+			<Representation>Picture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ЗадачиМнеПоказатьВыполненные" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать выполненные</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать выполненные</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗадачиМнеПоказатьВыполненные</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ЗадачиМнеСортироватьПоФлагу" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Флаг</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Задачи мне сортировать по флагу</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗадачиМнеСортироватьПоФлагу</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ЗадачиМнеСортироватьСрокуИсполнения" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Срок</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Задачи мне сортировать сроку исполнения</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗадачиМнеСортироватьСрокуИсполнения</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ЗадачиМнеСортироватьДатеСоздания" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата создания</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Задачи мне сортировать дате создания</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗадачиМнеСортироватьДатеСоздания</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ПринятьКИсполнению" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Принять к исполнению</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Принять к исполнению</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПринятьКИсполнению</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ОтменитьПринятиеКИсполнению" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отменить принятие к исполнению</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отменить принятие к исполнению</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОтменитьПринятиеКИсполнению</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ЗадатьВопрос" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Задать вопрос</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Задать вопрос</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.ВопросАвтору</xr:Ref>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
+			</Picture>
+			<Action>ЗадатьВопрос</Action>
+			<FunctionalOptions>
+				<Item>FunctionalOption.ИспользоватьВопросыВыполненияЗадач</Item>
+			</FunctionalOptions>
+			<Representation>Picture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ЖелтыйФлаг" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Желтый</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Желтый флаг</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.ЖелтыйФлаг</xr:Ref>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
+			</Picture>
+			<Action>ЖелтыйФлаг</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ЗеленыйФлаг" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Зеленый</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Зеленый флаг</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.ЗеленыйФлаг</xr:Ref>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
+			</Picture>
+			<Action>ЗеленыйФлаг</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ЛиловыйФлаг" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Лиловый</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Лиловый флаг</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.ЛиловыйФлаг</xr:Ref>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
+			</Picture>
+			<Action>ЛиловыйФлаг</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="КрасныйФлаг" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Красный</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Красный флаг</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.КрасныйФлаг</xr:Ref>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
+			</Picture>
+			<Action>КрасныйФлаг</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ОранжевыйФлаг" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Оранжевый</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Оранжевый флаг</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.ОранжевыйФлаг</xr:Ref>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
+			</Picture>
+			<Action>ОранжевыйФлаг</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ОчиститьФлаг" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Очистить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Очистить флаг</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОчиститьФлаг</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="СинийФлаг" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Синий</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Синий флаг</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.СинийФлаг</xr:Ref>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
+			</Picture>
+			<Action>СинийФлаг</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ВопросыПоЗадаче" id="16">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вопросы по задаче</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть список вопросов по задаче</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.ВопросАвтору</xr:Ref>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
+			</Picture>
+			<Action>ВопросыПоЗадаче</Action>
+			<FunctionalOptions>
+				<Item>FunctionalOption.ИспользоватьВопросыВыполненияЗадач</Item>
+			</FunctionalOptions>
+			<Representation>Picture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+	<Parameters>
+		<Parameter name="КлючОтбора">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<KeyParameter>true</KeyParameter>
+		</Parameter>
+	</Parameters>
+</Form>

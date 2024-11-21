@@ -894,7 +894,7 @@
 	<CommandInterface>
 		<NavigationPanel>
 			<Item>
-				<Command>0:9ac827c2-4570-46ab-8d3c-d9767b5422f9</Command>
+				<Command>0</Command>
 				<Type>Auto</Type>
 				<CommandGroup>FormNavigationPanelGoTo</CommandGroup>
 				<DefaultVisible>false</DefaultVisible>
@@ -935,7 +935,7 @@
 				</Visible>
 			</Item>
 			<Item>
-				<Command>0:29624fb4-c0e4-4355-a04a-1344eedb945a</Command>
+				<Command>0</Command>
 				<Type>Auto</Type>
 				<DefaultVisible>false</DefaultVisible>
 				<Visible>

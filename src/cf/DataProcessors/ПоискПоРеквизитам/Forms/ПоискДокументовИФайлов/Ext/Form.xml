@@ -1308,7 +1308,7 @@
 																	</Button>
 																	<Button name="ВнутренниеДокументыСписокОбщаяКомандаСоздатьБизнесПроцесс" id="1324">
 																		<Type>CommandBarButton</Type>
-																		<CommandName>0:1823d37a-3b32-4031-8996-56796c8dbe41</CommandName>
+																		<CommandName>0</CommandName>
 																		<DataPath>Items.ВнутренниеДокументыСписок.CurrentData.Ссылка__</DataPath>
 																		<ExtendedTooltip name="ВнутренниеДокументыСписокОбщаяКомандаСоздатьБизнесПроцессExtendedTooltip" id="1413"/>
 																	</Button>
@@ -1335,7 +1335,7 @@
 																<ChildItems>
 																	<Button name="ВнутренниеДокументыСписокСправочникВнутренниеДокументыПечатьКарточки" id="1131">
 																		<Type>CommandBarButton</Type>
-																		<CommandName>0:e3975682-dfc3-433d-a714-2864a632aaa8</CommandName>
+																		<CommandName>0</CommandName>
 																		<DataPath>Items.ВнутренниеДокументыСписок.CurrentData.СодержитОригинал</DataPath>
 																		<ExtendedTooltip name="ВнутренниеДокументыСписокСправочникВнутренниеДокументыПечатьКарточкиExtendedTooltip" id="1415"/>
 																	</Button>
@@ -2039,7 +2039,7 @@
 																	</Button>
 																	<Button name="ВходящиеДокументыСписокОбщаяКомандаСоздатьБизнесПроцесс" id="1325">
 																		<Type>CommandBarButton</Type>
-																		<CommandName>0:1823d37a-3b32-4031-8996-56796c8dbe41</CommandName>
+																		<CommandName>0</CommandName>
 																		<DataPath>Items.ВходящиеДокументыСписок.CurrentData.Ссылка__</DataPath>
 																		<ExtendedTooltip name="ВходящиеДокументыСписокОбщаяКомандаСоздатьБизнесПроцессExtendedTooltip" id="1474"/>
 																	</Button>
@@ -2066,7 +2066,7 @@
 																<ChildItems>
 																	<Button name="ВходящиеДокументыСписокСправочникВходящиеДокументыПечатьКарточки" id="1176">
 																		<Type>CommandBarButton</Type>
-																		<CommandName>0:648a4b16-e9e5-4b6f-9c56-e3300cea440a</CommandName>
+																		<CommandName>0</CommandName>
 																		<DataPath>Items.ВходящиеДокументыСписок.CurrentData.Ссылка__</DataPath>
 																		<ExtendedTooltip name="ВходящиеДокументыСписокСправочникВходящиеДокументыПечатьКарточкиExtendedTooltip" id="1476"/>
 																	</Button>
@@ -2797,7 +2797,7 @@
 																	</Button>
 																	<Button name="ИсходящиеДокументыСписокОбщаяКомандаСоздатьБизнесПроцесс" id="1326">
 																		<Type>CommandBarButton</Type>
-																		<CommandName>0:1823d37a-3b32-4031-8996-56796c8dbe41</CommandName>
+																		<CommandName>0</CommandName>
 																		<DataPath>Items.ИсходящиеДокументыСписок.CurrentData.Ссылка__</DataPath>
 																		<ExtendedTooltip name="ИсходящиеДокументыСписокОбщаяКомандаСоздатьБизнесПроцессExtendedTooltip" id="1530"/>
 																	</Button>
@@ -2824,7 +2824,7 @@
 																<ChildItems>
 																	<Button name="ИсходящиеДокументыСписокСправочникИсходящиеДокументыПечатьКарточки" id="1308">
 																		<Type>CommandBarButton</Type>
-																		<CommandName>0:01ca5d9e-0ced-41d0-b669-3eb6c83dbf51</CommandName>
+																		<CommandName>0</CommandName>
 																		<DataPath>Items.ИсходящиеДокументыСписок.CurrentData.СодержитОригинал</DataPath>
 																		<ExtendedTooltip name="ИсходящиеДокументыСписокСправочникИсходящиеДокументыПечатьКарточкиExtendedTooltip" id="1532"/>
 																	</Button>
@@ -3816,7 +3816,7 @@
 																	</Button>
 																	<Button name="ФайлыСписокОбщаяКомандаСоздатьБизнесПроцесс" id="1327">
 																		<Type>CommandBarButton</Type>
-																		<CommandName>0:1823d37a-3b32-4031-8996-56796c8dbe41</CommandName>
+																		<CommandName>0</CommandName>
 																		<DataPath>Items.ФайлыСписок.CurrentData.Ссылка__</DataPath>
 																		<ExtendedTooltip name="ФайлыСписокОбщаяКомандаСоздатьБизнесПроцессExtendedTooltip" id="1625"/>
 																	</Button>

@@ -130,7 +130,7 @@
 									<Button name="ВывестиСписок" id="24">
 										<Type>CommandBarButton</Type>
 										<SkipOnInput>false</SkipOnInput>
-										<CommandName>6:825c1c15-ef8f-47ab-b002-e6b84b3e5b10</CommandName>
+										<CommandName>0</CommandName>
 										<TextColor>style:ButtonTextColor</TextColor>
 										<BackColor>style:ButtonBackColor</BackColor>
 										<BorderColor>style:BorderColor</BorderColor>
@@ -141,7 +141,6 @@
 										<Type>CommandBarButton</Type>
 										<SkipOnInput>false</SkipOnInput>
 										<CommandName>CommonCommand.ДополнительныеСведенияКоманднаяПанель</CommandName>
-										<DataPath>6:02023637-7868-4a5f-8576-835a76e0c9ba/12</DataPath>
 										<ExtendedTooltip name="ОбщаяКоманда_ДополнительныеСведенияExtendedTooltip" id="101"/>
 									</Button>
 								</ChildItems>

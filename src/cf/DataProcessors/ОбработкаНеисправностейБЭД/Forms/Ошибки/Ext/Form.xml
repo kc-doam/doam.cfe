@@ -139,10 +139,6 @@
 							<ExtendedTooltip name="Группа1СКоннектРасширеннаяПодсказка" id="349"/>
 							<ChildItems>
 								<PictureDecoration name="КоннектКартинка" id="350">
-									<Picture>
-										<xr:Ref>0</xr:Ref>
-										<xr:LoadTransparent>false</xr:LoadTransparent>
-									</Picture>
 									<FileDragMode>AsFile</FileDragMode>
 									<ContextMenu name="КоннектКартинкаКонтекстноеМеню" id="351"/>
 									<ExtendedTooltip name="КоннектКартинкаРасширеннаяПодсказка" id="352"/>

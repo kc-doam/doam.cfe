@@ -1715,12 +1715,12 @@
 																		</Button>
 																		<Button name="ТаблицаПредставленияСкопировать" id="2227">
 																			<Type>CommandBarButton</Type>
-																			<CommandName>2181:0ae4bea5-23be-42a7-b69e-97b11b29c453</CommandName>
+																			<CommandName>0</CommandName>
 																			<ExtendedTooltip name="ТаблицаПредставленияСкопироватьExtendedTooltip" id="2906"/>
 																		</Button>
 																		<Button name="ТаблицаПредставленияИзменить" id="2226">
 																			<Type>CommandBarButton</Type>
-																			<CommandName>2181:b41f5bbc-ba5d-4888-8cd1-db246a371418</CommandName>
+																			<CommandName>0</CommandName>
 																			<ExtendedTooltip name="ТаблицаПредставленияИзменитьExtendedTooltip" id="2907"/>
 																		</Button>
 																		<ButtonGroup name="ТаблицаПредставленияГруппаНайти" id="2228">
@@ -2177,12 +2177,12 @@
 																	</Button>
 																	<Button name="ТаблицаУведомленияСкопировать" id="2368">
 																		<Type>CommandBarButton</Type>
-																		<CommandName>2354:0ae4bea5-23be-42a7-b69e-97b11b29c453</CommandName>
+																		<CommandName>0</CommandName>
 																		<ExtendedTooltip name="ТаблицаУведомленияСкопироватьExtendedTooltip" id="2931"/>
 																	</Button>
 																	<Button name="ТаблицаУведомленияИзменить" id="2369">
 																		<Type>CommandBarButton</Type>
-																		<CommandName>2354:b41f5bbc-ba5d-4888-8cd1-db246a371418</CommandName>
+																		<CommandName>0</CommandName>
 																		<ExtendedTooltip name="ТаблицаУведомленияИзменитьExtendedTooltip" id="2932"/>
 																	</Button>
 																	<ButtonGroup name="ТаблицаУведомленияГруппаНайти" id="2370">
@@ -2703,17 +2703,17 @@
 																	</Button>
 																	<Button name="ТаблицаИсходящиеДокументыФНСКнопкаИзменить" id="1819">
 																		<Type>CommandBarButton</Type>
-																		<CommandName>90:b41f5bbc-ba5d-4888-8cd1-db246a371418</CommandName>
+																		<CommandName>0</CommandName>
 																		<ExtendedTooltip name="ТаблицаИсходящиеДокументыФНСКнопкаИзменитьExtendedTooltip" id="2962"/>
 																	</Button>
 																	<Button name="ТаблицаИсходящиеДокументыФНСКнопкаСкопировать" id="1827">
 																		<Type>CommandBarButton</Type>
-																		<CommandName>90:0ae4bea5-23be-42a7-b69e-97b11b29c453</CommandName>
+																		<CommandName>0</CommandName>
 																		<ExtendedTooltip name="ТаблицаИсходящиеДокументыФНСКнопкаСкопироватьExtendedTooltip" id="2963"/>
 																	</Button>
 																	<Button name="ТаблицаИсходящиеДокументыФНСКнопкаУдалить" id="1820">
 																		<Type>CommandBarButton</Type>
-																		<CommandName>90:a2f737a8-0114-4e86-a214-45e5c213fa65</CommandName>
+																		<CommandName>0</CommandName>
 																		<ExtendedTooltip name="ТаблицаИсходящиеДокументыФНСКнопкаУдалитьExtendedTooltip" id="2964"/>
 																	</Button>
 																	<ButtonGroup name="ТаблицаЦиклыОбменаИсходчщиеФНСГруппаНайти" id="1814">
@@ -4272,17 +4272,17 @@
 																	</Popup>
 																	<Button name="ТаблицаИсходящиеДокументыПФРКнопкаИзменить" id="1818">
 																		<Type>CommandBarButton</Type>
-																		<CommandName>385:b41f5bbc-ba5d-4888-8cd1-db246a371418</CommandName>
+																		<CommandName>0</CommandName>
 																		<ExtendedTooltip name="ТаблицаИсходящиеДокументыПФРКнопкаИзменитьExtendedTooltip" id="3072"/>
 																	</Button>
 																	<Button name="ТаблицаИсходящиеДокументыПФРКнопкаСкопировать" id="1828">
 																		<Type>CommandBarButton</Type>
-																		<CommandName>385:0ae4bea5-23be-42a7-b69e-97b11b29c453</CommandName>
+																		<CommandName>0</CommandName>
 																		<ExtendedTooltip name="ТаблицаИсходящиеДокументыПФРКнопкаСкопироватьExtendedTooltip" id="3073"/>
 																	</Button>
 																	<Button name="ТаблицаИсходящиеДокументыПФРКнопкаУдалить" id="1817">
 																		<Type>CommandBarButton</Type>
-																		<CommandName>385:a2f737a8-0114-4e86-a214-45e5c213fa65</CommandName>
+																		<CommandName>0</CommandName>
 																		<ExtendedTooltip name="ТаблицаИсходящиеДокументыПФРКнопкаУдалитьExtendedTooltip" id="3074"/>
 																	</Button>
 																	<ButtonGroup name="ТаблицаИсходящиеДокументыПФРГруппаНайти" id="1800">
@@ -5683,17 +5683,17 @@
 																	</Button>
 																	<Button name="ТаблицаИсходящиеДокументыФСГСКнопкаИзменить" id="2042">
 																		<Type>CommandBarButton</Type>
-																		<CommandName>2028:b41f5bbc-ba5d-4888-8cd1-db246a371418</CommandName>
+																		<CommandName>0</CommandName>
 																		<ExtendedTooltip name="ТаблицаИсходящиеДокументыФСГСКнопкаИзменитьExtendedTooltip" id="3169"/>
 																	</Button>
 																	<Button name="ТаблицаИсходящиеДокументыФСГСКнопкаСкопировать" id="2043">
 																		<Type>CommandBarButton</Type>
-																		<CommandName>2028:0ae4bea5-23be-42a7-b69e-97b11b29c453</CommandName>
+																		<CommandName>0</CommandName>
 																		<ExtendedTooltip name="ТаблицаИсходящиеДокументыФСГСКнопкаСкопироватьExtendedTooltip" id="3170"/>
 																	</Button>
 																	<Button name="ТаблицаИсходящиеДокументыФСГСКнопкаУдалить" id="2044">
 																		<Type>CommandBarButton</Type>
-																		<CommandName>385:a2f737a8-0114-4e86-a214-45e5c213fa65</CommandName>
+																		<CommandName>0</CommandName>
 																		<ExtendedTooltip name="ТаблицаИсходящиеДокументыФСГСКнопкаУдалитьExtendedTooltip" id="3171"/>
 																	</Button>
 																	<ButtonGroup name="ТаблицаИсходящиеДокументыФСГСГруппаНайти" id="2045">

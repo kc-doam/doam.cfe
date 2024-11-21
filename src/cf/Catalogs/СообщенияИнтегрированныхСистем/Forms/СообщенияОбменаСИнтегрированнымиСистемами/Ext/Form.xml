@@ -73,13 +73,6 @@
 							<OpenButton>false</OpenButton>
 							<ListChoiceMode>true</ListChoiceMode>
 							<QuickChoice>true</QuickChoice>
-							<ChoiceParameterLinks>
-								<xr:Link>
-									<xr:Name>Отбор.Пользователь</xr:Name>
-									<xr:DataPath xsi:type="xs:string">2</xr:DataPath>
-									<xr:ValueChange>Clear</xr:ValueChange>
-								</xr:Link>
-							</ChoiceParameterLinks>
 							<ChoiceParameters>
 								<app:item name="Отбор.Пользователь">
 									<app:value xsi:type="FormChoiceListDesTimeValue">

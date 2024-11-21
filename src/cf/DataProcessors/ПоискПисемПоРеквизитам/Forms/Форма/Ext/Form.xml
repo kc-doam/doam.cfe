@@ -960,7 +960,7 @@
 																</Button>
 																<Button name="СправочникПроектыСоздатьНаОсновании" id="458">
 																	<Type>CommandBarButton</Type>
-																	<CommandName>3:525be83d-4cfc-42a7-8c30-bfb8b0354fc1</CommandName>
+																	<CommandName>0</CommandName>
 																	<DataPath>ТекущееПисьмо</DataPath>
 																	<ExtendedTooltip name="СправочникПроектыСоздатьНаОснованииExtendedTooltip" id="760"/>
 																</Button>
@@ -972,7 +972,7 @@
 																</Button>
 																<Button name="ОбщаяКомандаСоздатьБизнесПроцесс" id="463">
 																	<Type>CommandBarButton</Type>
-																	<CommandName>0:1823d37a-3b32-4031-8996-56796c8dbe41</CommandName>
+																	<CommandName>0</CommandName>
 																	<DataPath>ТекущееПисьмо</DataPath>
 																	<ExtendedTooltip name="ОбщаяКомандаСоздатьБизнесПроцессExtendedTooltip" id="762"/>
 																</Button>

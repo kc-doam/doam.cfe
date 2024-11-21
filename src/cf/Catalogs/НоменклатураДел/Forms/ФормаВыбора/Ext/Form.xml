@@ -14,7 +14,6 @@
 		<ExcludedCommand>SetDeletionMark</ExcludedCommand>
 		<ExcludedCommand>Tree</ExcludedCommand>
 	</CommandSet>
-	<GroupList>2:02023637-7868-4a5f-8576-835a76e0c9ba</GroupList>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
 		<Autofill>false</Autofill>
 	</AutoCommandBar>
@@ -563,7 +562,7 @@
 	<CommandInterface>
 		<CommandBar>
 			<Item>
-				<Command>0:40f4ddb2-0125-4eba-aa68-283938a99e5d</Command>
+				<Command>0</Command>
 				<Type>Auto</Type>
 				<DefaultVisible>false</DefaultVisible>
 				<Visible>

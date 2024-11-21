@@ -1356,7 +1356,7 @@
 							<app:value xsi:type="xs:string">БезОбособленныхПодразделений</app:value>
 						</app:item>
 						<app:item name="Отбор.ЮридическоеФизическоеЛицо">
-							<app:value xsi:type="xr:DesignTimeRef">a42ffe1a-3253-47d6-81a3-05169a79f6b4.d3c76e02-9401-426f-b58d-4ad316954536</app:value>
+							<app:value xsi:type="xr:DesignTimeRef"/>
 						</app:item>
 					</ChoiceParameters>
 					<QuickChoice>Auto</QuickChoice>

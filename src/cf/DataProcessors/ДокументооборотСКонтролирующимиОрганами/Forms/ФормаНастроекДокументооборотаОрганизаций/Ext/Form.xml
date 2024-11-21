@@ -77,7 +77,7 @@
 				<ChildItems>
 					<Button name="СписокНастроекКонтекстноеМенюИзменить" id="24">
 						<Type>CommandBarButton</Type>
-						<CommandName>1:b41f5bbc-ba5d-4888-8cd1-db246a371418</CommandName>
+						<CommandName>0</CommandName>
 						<ExtendedTooltip name="СписокНастроекКонтекстноеМенюИзменитьРасширеннаяПодсказка" id="25"/>
 					</Button>
 					<Button name="СписокНастроекКонтекстноеМенюНайти" id="26">

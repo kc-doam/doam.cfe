@@ -14,6 +14,8 @@
 	<VariantAppearance>НаименованиеТекущегоВарианта</VariantAppearance>
 	<AutoShowState>Auto</AutoShowState>
 	<CustomSettingsFolder>НастройкаExtendedTooltip</CustomSettingsFolder>
+	<ReportResultViewMode>Auto</ReportResultViewMode>
+	<ViewModeApplicationOnSetReportResult>Auto</ViewModeApplicationOnSetReportResult>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
 		<Autofill>false</Autofill>
 	</AutoCommandBar>

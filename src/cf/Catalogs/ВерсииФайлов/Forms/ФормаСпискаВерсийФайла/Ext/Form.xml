@@ -97,7 +97,7 @@
 				<Button name="НастройкаОтображенияДанных" id="39">
 					<Type>CommandBarButton</Type>
 					<SkipOnInput>false</SkipOnInput>
-					<CommandName>2:14559f7c-853c-42a4-9ea1-01546107747b</CommandName>
+					<CommandName>0</CommandName>
 					<ExtendedTooltip name="НастройкаОтображенияДанныхExtendedTooltip" id="80"/>
 				</Button>
 			</ChildItems>
@@ -158,7 +158,7 @@
 					<Button name="КонтекстноеМенюСписокПометитьНаУдаление_СнятьПометку" id="45">
 						<Type>CommandBarButton</Type>
 						<SkipOnInput>false</SkipOnInput>
-						<CommandName>2:a2f737a8-0114-4e86-a214-45e5c213fa65</CommandName>
+						<CommandName>0</CommandName>
 						<ExtendedTooltip name="КонтекстноеМенюСписокПометитьНаУдаление_СнятьПометкуExtendedTooltip" id="86"/>
 					</Button>
 					<Button name="КонтекстноеМенюСписокКопировать" id="46">

@@ -591,7 +591,7 @@
 	<CommandInterface>
 		<NavigationPanel>
 			<Item>
-				<Command>0:116bcaad-e5ab-439b-a08d-5bcfaa44f958</Command>
+				<Command>0</Command>
 				<Type>Auto</Type>
 				<DefaultVisible>false</DefaultVisible>
 				<Visible>
@@ -631,7 +631,7 @@
 				</Visible>
 			</Item>
 			<Item>
-				<Command>0:29624fb4-c0e4-4355-a04a-1344eedb945a</Command>
+				<Command>0</Command>
 				<Type>Auto</Type>
 				<DefaultVisible>false</DefaultVisible>
 				<Visible>

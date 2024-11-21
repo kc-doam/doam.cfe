@@ -389,7 +389,7 @@
 								<Type>CommandBarButton</Type>
 								<Visible>false</Visible>
 								<Representation>Picture</Representation>
-								<CommandName>36:8d772f97-c0ef-47c0-9cb0-efea28c61341</CommandName>
+								<CommandName>0</CommandName>
 								<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
 								<ExtendedTooltip name="СписокУдалитьРасширеннаяПодсказка" id="149"/>
 							</Button>

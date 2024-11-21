@@ -15,7 +15,6 @@
 		<Autofill>false</Autofill>
 	</AutoCommandBar>
 	<Events>
-		<Event name="390d5e4b-e732-4c88-8748-9e211a416984">ПриЧтенииНаСервере</Event>
 		<Event name="OnOpen">ПриОткрытии</Event>
 		<Event name="BeforeClose">ПередЗакрытием</Event>
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>

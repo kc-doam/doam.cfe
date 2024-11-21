@@ -34,8 +34,6 @@
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.СкриптыСхемКомплексныхПроцессов</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ОчередьМаршрутизацииКомплексныхПроцессов</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Constant.ИспользоватьФоновуюМаршрутизациюКомплексныхПроцессов</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">f38760f8-45b8-401c-98e9-a58060d8e8a6</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">e75e9bae-8a93-4242-baf7-e259a9af7243</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonTemplate.СхемаКомплексногоПроцесса</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonTemplate.КарточкаКомплексногоПроцесса</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.ЗадачаКомплексногоПроцессаПриВыполнении</xr:Item>

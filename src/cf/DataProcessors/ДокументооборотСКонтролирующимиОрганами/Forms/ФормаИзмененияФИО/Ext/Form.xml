@@ -55,7 +55,6 @@
 			<ExtendedTooltip name="ОтчествоРасширеннаяПодсказка" id="16"/>
 		</InputField>
 		<InputField name="Период" id="10">
-			<DataPath>4</DataPath>
 			<ContextMenu name="ПериодКонтекстноеМеню" id="11"/>
 			<ExtendedTooltip name="ПериодРасширеннаяПодсказка" id="17"/>
 		</InputField>

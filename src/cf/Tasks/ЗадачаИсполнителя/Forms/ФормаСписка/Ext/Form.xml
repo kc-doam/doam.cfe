@@ -1299,7 +1299,7 @@
 	<CommandInterface>
 		<CommandBar>
 			<Item>
-				<Command>2:dab6706c-e0f7-4dc9-8fac-95b1dfcbf05c</Command>
+				<Command>0</Command>
 				<Type>Auto</Type>
 				<CommandGroup>FormCommandBarCreateBasedOn</CommandGroup>
 				<Index>1</Index>
@@ -1324,7 +1324,7 @@
 				<Index>3</Index>
 			</Item>
 			<Item>
-				<Command>0:1823d37a-3b32-4031-8996-56796c8dbe41</Command>
+				<Command>0</Command>
 				<Type>Auto</Type>
 				<CommandGroup>FormCommandBarCreateBasedOn</CommandGroup>
 				<Index>4</Index>

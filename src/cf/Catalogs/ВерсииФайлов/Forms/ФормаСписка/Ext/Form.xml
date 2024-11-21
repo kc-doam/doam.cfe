@@ -311,20 +311,20 @@
 	<CommandInterface>
 		<CommandBar>
 			<Item>
-				<Command>1:409b9a53-7f7e-4178-86c1-33176c7c7a7a</Command>
+				<Command>0</Command>
 				<Type>Added</Type>
 				<CommandGroup>FormCommandBarImportant</CommandGroup>
 				<DefaultVisible>false</DefaultVisible>
 			</Item>
 			<Item>
-				<Command>2:409b9a53-7f7e-4178-86c1-33176c7c7a7a</Command>
+				<Command>0</Command>
 				<Type>Added</Type>
 				<CommandGroup>FormCommandBarImportant</CommandGroup>
 				<Index>1</Index>
 				<DefaultVisible>false</DefaultVisible>
 			</Item>
 			<Item>
-				<Command>3:409b9a53-7f7e-4178-86c1-33176c7c7a7a</Command>
+				<Command>0</Command>
 				<Type>Added</Type>
 				<CommandGroup>FormCommandBarImportant</CommandGroup>
 				<Index>2</Index>

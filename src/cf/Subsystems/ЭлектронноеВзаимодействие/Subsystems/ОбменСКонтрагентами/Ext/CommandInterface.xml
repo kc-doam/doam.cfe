@@ -6,23 +6,10 @@
 				<xr:Common>false</xr:Common>
 			</Visibility>
 		</Command>
-		<Command name="0:4f6cebed-72e9-4253-93f6-2b9013fcbef2">
-			<Visibility>
-				<xr:Common>false</xr:Common>
-			</Visibility>
-		</Command>
-		<Command name="0:a9adf464-7536-4a70-b2c8-5b9c3fec8f4e">
-			<Visibility>
-				<xr:Common>false</xr:Common>
-			</Visibility>
-		</Command>
 	</CommandsVisibility>
 	<CommandsOrder>
 		<Command name="DataProcessor.ОбменСКонтрагентами.Command.АрхивЭлектронныхДокументов">
 			<CommandGroup>NavigationPanelImportant</CommandGroup>
-		</Command>
-		<Command name="0:38b773d7-0997-459e-9f6f-9da668377e7a">
-			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
 		</Command>
 	</CommandsOrder>
 	<GroupsOrder>

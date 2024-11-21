@@ -1183,7 +1183,7 @@
 	<CommandInterface>
 		<NavigationPanel>
 			<Item>
-				<Command>4</Command>
+				<Command>0</Command>
 				<Type>Auto</Type>
 				<DefaultVisible>false</DefaultVisible>
 				<Visible>
@@ -1199,7 +1199,7 @@
 				</Visible>
 			</Item>
 			<Item>
-				<Command>4:440d115d-a769-427e-891a-88d65fba2057</Command>
+				<Command>0</Command>
 				<Type>Auto</Type>
 				<DefaultVisible>false</DefaultVisible>
 				<Visible>
@@ -1215,7 +1215,7 @@
 				</Visible>
 			</Item>
 			<Item>
-				<Command>0:0d8770aa-fa6e-471c-92c8-b96576927ef0</Command>
+				<Command>0</Command>
 				<Type>Auto</Type>
 				<DefaultVisible>false</DefaultVisible>
 				<Visible>

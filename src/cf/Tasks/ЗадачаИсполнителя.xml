@@ -165,7 +165,7 @@
 					<xr:Comment/>
 					<xr:FullTextSearch>Use</xr:FullTextSearch>
 					<xr:ChoiceParameterLinks/>
-					<xr:FillValue xsi:type="xr:DesignTimeRef">07d25a98-bdd8-4f7b-b87b-172294158755.00000000-0000-0000-0000-000000000000</xr:FillValue>
+					<xr:FillValue xsi:type="xr:DesignTimeRef"/>
 					<xr:Mask/>
 					<xr:ChoiceParameters/>
 				</xr:StandardAttribute>
@@ -577,7 +577,7 @@
 					<xr:CharacteristicTypes from="Catalog.НаборыДополнительныхРеквизитовИСведений.TabularSection.ДополнительныеРеквизиты">
 						<xr:KeyField>Catalog.НаборыДополнительныхРеквизитовИСведений.TabularSection.ДополнительныеРеквизиты.Attribute.Свойство</xr:KeyField>
 						<xr:TypesFilterField>Catalog.НаборыДополнительныхРеквизитовИСведений.TabularSection.ДополнительныеРеквизиты.StandardAttribute.Ref</xr:TypesFilterField>
-						<xr:TypesFilterValue xsi:type="xr:DesignTimeRef">7a576bbd-3683-4c69-8259-b03d2c59db04.ecac97e8-b31a-4904-a35d-2b1e4afebfd9</xr:TypesFilterValue>
+						<xr:TypesFilterValue xsi:type="xr:DesignTimeRef"/>
 						<xr:DataPathField>-1</xr:DataPathField>
 						<xr:MultipleValuesUseField>-1</xr:MultipleValuesUseField>
 					</xr:CharacteristicTypes>
@@ -593,7 +593,7 @@
 					<xr:CharacteristicTypes from="Catalog.НаборыДополнительныхРеквизитовИСведений.TabularSection.ДополнительныеРеквизиты">
 						<xr:KeyField>Catalog.НаборыДополнительныхРеквизитовИСведений.TabularSection.ДополнительныеРеквизиты.Attribute.Свойство</xr:KeyField>
 						<xr:TypesFilterField>Catalog.НаборыДополнительныхРеквизитовИСведений.TabularSection.ДополнительныеРеквизиты.StandardAttribute.Ref</xr:TypesFilterField>
-						<xr:TypesFilterValue xsi:type="xr:DesignTimeRef">7a576bbd-3683-4c69-8259-b03d2c59db04.3134fb53-d6bd-4b9e-bfe3-9ad96777fe6c</xr:TypesFilterValue>
+						<xr:TypesFilterValue xsi:type="xr:DesignTimeRef"/>
 						<xr:DataPathField>-1</xr:DataPathField>
 						<xr:MultipleValuesUseField>-1</xr:MultipleValuesUseField>
 					</xr:CharacteristicTypes>

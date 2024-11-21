@@ -1444,7 +1444,7 @@
 	<CommandInterface>
 		<CommandBar>
 			<Item>
-				<Command>2:679bd72a-4cf8-4c2e-ae00-3f01f48050c4</Command>
+				<Command>0</Command>
 				<Type>Auto</Type>
 				<DefaultVisible>false</DefaultVisible>
 				<Visible>
@@ -1452,7 +1452,7 @@
 				</Visible>
 			</Item>
 			<Item>
-				<Command>2:dab6706c-e0f7-4dc9-8fac-95b1dfcbf05c</Command>
+				<Command>0</Command>
 				<Type>Auto</Type>
 				<DefaultVisible>false</DefaultVisible>
 				<Visible>
@@ -1460,7 +1460,7 @@
 				</Visible>
 			</Item>
 			<Item>
-				<Command>2:57067371-06db-46dc-a7e9-c76d28e21071</Command>
+				<Command>0</Command>
 				<Type>Auto</Type>
 				<DefaultVisible>false</DefaultVisible>
 				<Visible>
@@ -1468,7 +1468,7 @@
 				</Visible>
 			</Item>
 			<Item>
-				<Command>2:3b9d376f-cd28-4f84-b8a8-686da09f0e46</Command>
+				<Command>0</Command>
 				<Type>Auto</Type>
 				<DefaultVisible>false</DefaultVisible>
 				<Visible>
@@ -1476,7 +1476,7 @@
 				</Visible>
 			</Item>
 			<Item>
-				<Command>2:efd06081-12d1-4734-9015-bff31c9f7966</Command>
+				<Command>0</Command>
 				<Type>Auto</Type>
 				<DefaultVisible>false</DefaultVisible>
 				<Visible>
@@ -1484,7 +1484,7 @@
 				</Visible>
 			</Item>
 			<Item>
-				<Command>2:53d146b8-d85f-4cfe-b5ee-af78f4e09445</Command>
+				<Command>0</Command>
 				<Type>Auto</Type>
 				<DefaultVisible>false</DefaultVisible>
 				<Visible>
@@ -1492,7 +1492,7 @@
 				</Visible>
 			</Item>
 			<Item>
-				<Command>2:da3c04c7-1d24-4d54-9686-2c404b8ed4e8</Command>
+				<Command>0</Command>
 				<Type>Auto</Type>
 				<DefaultVisible>false</DefaultVisible>
 				<Visible>
@@ -1500,7 +1500,7 @@
 				</Visible>
 			</Item>
 			<Item>
-				<Command>2:28f131c2-f971-4a8c-bfc4-23f8606a7536</Command>
+				<Command>0</Command>
 				<Type>Auto</Type>
 				<DefaultVisible>false</DefaultVisible>
 				<Visible>
@@ -1516,7 +1516,7 @@
 				</Visible>
 			</Item>
 			<Item>
-				<Command>0:1823d37a-3b32-4031-8996-56796c8dbe41</Command>
+				<Command>0</Command>
 				<Type>Auto</Type>
 				<DefaultVisible>false</DefaultVisible>
 				<Visible>

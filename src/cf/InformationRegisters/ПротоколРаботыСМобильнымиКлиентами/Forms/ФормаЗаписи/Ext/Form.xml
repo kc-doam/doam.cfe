@@ -39,7 +39,6 @@
 			<ExtendedTooltip name="ПериодРасширеннаяПодсказка" id="3"/>
 		</InputField>
 		<InputField name="МобильныйКлиентПользователь" id="22">
-			<DataPath>1/0:884f1085-14ec-4638-9696-847a203bc149/0:c9e08eef-a764-4418-b112-75fa31a1b523</DataPath>
 			<ReadOnly>true</ReadOnly>
 			<OpenButton>true</OpenButton>
 			<ContextMenu name="МобильныйКлиентПользовательКонтекстноеМеню" id="23"/>

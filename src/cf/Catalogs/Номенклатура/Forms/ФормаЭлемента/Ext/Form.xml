@@ -185,12 +185,12 @@
 	<CommandInterface>
 		<NavigationPanel>
 			<Item>
-				<Command>0:bbfe0983-ba2b-43e4-a4ed-64d6b189cc6e</Command>
+				<Command>0</Command>
 				<Type>Auto</Type>
 				<DefaultVisible>false</DefaultVisible>
 			</Item>
 			<Item>
-				<Command>0:b614e686-aa33-4e8e-ac78-5e75453dd16b</Command>
+				<Command>0</Command>
 				<Type>Auto</Type>
 				<DefaultVisible>false</DefaultVisible>
 				<Visible>

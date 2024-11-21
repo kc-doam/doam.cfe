@@ -1418,7 +1418,7 @@
 	<CommandInterface>
 		<CommandBar>
 			<Item>
-				<Command>0:e5d31d93-6cf9-4c25-9c03-555bb967fda5</Command>
+				<Command>0</Command>
 				<Type>Auto</Type>
 				<DefaultVisible>false</DefaultVisible>
 				<Visible>
@@ -1426,7 +1426,7 @@
 				</Visible>
 			</Item>
 			<Item>
-				<Command>0:2baf6d7a-12ed-4f22-ad96-92bb31b747ff</Command>
+				<Command>0</Command>
 				<Type>Auto</Type>
 				<DefaultVisible>false</DefaultVisible>
 				<Visible>

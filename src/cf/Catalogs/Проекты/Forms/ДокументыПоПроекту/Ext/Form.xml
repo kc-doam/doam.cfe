@@ -486,7 +486,7 @@
 									<Button name="СписокКонтекстноеМенюСоздать" id="118">
 										<Type>CommandBarButton</Type>
 										<SkipOnInput>false</SkipOnInput>
-										<CommandName>1:0f8d6d98-2f8b-405a-b8b3-0538e9d95da5</CommandName>
+										<CommandName>0</CommandName>
 										<ExtendedTooltip name="СписокКонтекстноеМенюСоздатьExtendedTooltip" id="119"/>
 									</Button>
 									<ButtonGroup name="ГруппаСтандартныхКоманд" id="120">
@@ -507,23 +507,23 @@
 									</ButtonGroup>
 									<Button name="ФормаВыбратьКатегорииКонтекст" id="122">
 										<Type>CommandBarButton</Type>
-										<CommandName>9:409b9a53-7f7e-4178-86c1-33176c7c7a7a</CommandName>
+										<CommandName>0</CommandName>
 										<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
 										<ExtendedTooltip name="ФормаВыбратьКатегорииКонтекстExtendedTooltip" id="123"/>
 									</Button>
 									<Button name="СписокКонтекстноеМенюПодписать" id="124">
 										<Type>CommandBarButton</Type>
-										<CommandName>7:409b9a53-7f7e-4178-86c1-33176c7c7a7a</CommandName>
+										<CommandName>0</CommandName>
 										<ExtendedTooltip name="СписокКонтекстноеМенюПодписатьExtendedTooltip" id="125"/>
 									</Button>
 									<Button name="СписокКонтекстноеМенюДобавитьВКомплект" id="126">
 										<Type>CommandBarButton</Type>
-										<CommandName>11:409b9a53-7f7e-4178-86c1-33176c7c7a7a</CommandName>
+										<CommandName>0</CommandName>
 										<ExtendedTooltip name="СписокКонтекстноеМенюДобавитьВКомплектExtendedTooltip" id="127"/>
 									</Button>
 									<Button name="СписокКонтекстноеМенюАвтообновление" id="128">
 										<Type>CommandBarButton</Type>
-										<CommandName>10:409b9a53-7f7e-4178-86c1-33176c7c7a7a</CommandName>
+										<CommandName>0</CommandName>
 										<ExtendedTooltip name="СписокКонтекстноеМенюАвтообновлениеExtendedTooltip" id="129"/>
 									</Button>
 								</ChildItems>

@@ -62,7 +62,7 @@
 				<ChildItems>
 					<Button name="ОтборВПапкеКонтекстноеМенюОчиститьИсториюВвода" id="10">
 						<Type>CommandBarButton</Type>
-						<CommandName>24:409b9a53-7f7e-4178-86c1-33176c7c7a7a</CommandName>
+						<CommandName>0</CommandName>
 						<ExtendedTooltip name="ОтборВПапкеКонтекстноеМенюОчиститьИсториюВводаExtendedTooltip" id="20"/>
 					</Button>
 				</ChildItems>

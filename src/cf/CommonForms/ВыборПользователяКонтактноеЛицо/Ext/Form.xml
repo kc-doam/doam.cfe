@@ -111,7 +111,6 @@
 											<v8:content>Командная панель пользователи</v8:content>
 										</v8:item>
 									</ToolTip>
-									<CommandSource>11:02023637-7868-4a5f-8576-835a76e0c9ba</CommandSource>
 									<ExtendedTooltip name="КоманднаяПанельПользователиExtendedTooltip" id="48"/>
 								</CommandBar>
 							</ChildItems>

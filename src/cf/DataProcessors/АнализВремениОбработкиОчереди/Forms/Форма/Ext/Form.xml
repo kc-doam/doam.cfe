@@ -244,7 +244,6 @@
 				<InputField name="ТаблицаРезультатаПрогноз" id="41">
 					<DataPath>ТаблицаРезультата.Прогноз</DataPath>
 					<EditMode>EnterOnInput</EditMode>
-					<FooterDataPath>5</FooterDataPath>
 					<ContextMenu name="ТаблицаРезультатаПрогнозКонтекстноеМеню" id="42"/>
 					<ExtendedTooltip name="ТаблицаРезультатаПрогнозРасширеннаяПодсказка" id="43"/>
 				</InputField>

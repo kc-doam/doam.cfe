@@ -436,7 +436,6 @@
 			</Type>
 			<MainAttribute>true</MainAttribute>
 			<UseAlways>
-				<Field>~Список.Date~Список.Дата</Field>
 				<Field>~Список.DeletionMark</Field>
 				<Field>~Список.Ref</Field>
 				<Field>~Список.Type</Field>

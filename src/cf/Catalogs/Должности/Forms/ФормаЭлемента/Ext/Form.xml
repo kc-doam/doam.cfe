@@ -91,7 +91,7 @@
 	<CommandInterface>
 		<CommandBar>
 			<Item>
-				<Command>0:2baf6d7a-12ed-4f22-ad96-92bb31b747ff</Command>
+				<Command>0</Command>
 				<Type>Auto</Type>
 				<CommandGroup>CommandGroup.Печать</CommandGroup>
 				<DefaultVisible>false</DefaultVisible>

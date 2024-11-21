@@ -100,7 +100,7 @@
 				</Button>
 				<Button name="ФормаВывестиСписок" id="86">
 					<Type>CommandBarButton</Type>
-					<CommandName>50:49602716-fea6-497f-8047-726404038857</CommandName>
+					<CommandName>0</CommandName>
 					<ExtendedTooltip name="ФормаВывестиСписокРасширеннаяПодсказка" id="87"/>
 				</Button>
 				<Button name="ИзменитьФорму" id="95">

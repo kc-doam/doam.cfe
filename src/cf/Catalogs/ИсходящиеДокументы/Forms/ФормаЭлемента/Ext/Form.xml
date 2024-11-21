@@ -19,7 +19,6 @@
 		<Event name="OnOpen">ПриОткрытии</Event>
 		<Event name="BeforeClose">ПередЗакрытием</Event>
 		<Event name="OnLoadDataFromSettingsAtServer">ПриЗагрузкеДанныхИзНастроекНаСервере</Event>
-		<Event name="8f42e083-be92-4102-b1f0-fa58452c1a63">ПередЗаписьюНаСервере</Event>
 		<Event name="BeforeWrite">ПередЗаписью</Event>
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 		<Event name="BeforeWriteAtServer">ПередЗаписьюНаСервере</Event>
@@ -11649,7 +11648,7 @@
 				</Visible>
 			</Item>
 			<Item>
-				<Command>0:9376b18c-cffd-488b-8a1e-cca598f018bc</Command>
+				<Command>0</Command>
 				<Type>Auto</Type>
 				<CommandGroup>FormNavigationPanelSeeAlso</CommandGroup>
 				<DefaultVisible>false</DefaultVisible>
@@ -11685,7 +11684,7 @@
 				<DefaultVisible>false</DefaultVisible>
 			</Item>
 			<Item>
-				<Command>0:9408f92c-d2fe-4e06-961a-6f89010d0e42</Command>
+				<Command>0</Command>
 				<Type>Auto</Type>
 				<CommandGroup>FormNavigationPanelGoTo</CommandGroup>
 				<Index>2</Index>
@@ -11741,18 +11740,18 @@
 				</Visible>
 			</Item>
 			<Item>
-				<Command>3:017baf6e-d210-4362-b7ae-cbe8236aa7c4</Command>
+				<Command>0</Command>
 				<Type>Auto</Type>
 				<CommandGroup>FormCommandBarCreateBasedOn</CommandGroup>
 				<Index>1</Index>
 			</Item>
 			<Item>
-				<Command>3:0b67d466-d255-48f3-bd88-ee8d46a3d9a8</Command>
+				<Command>0</Command>
 				<Type>Auto</Type>
 				<CommandGroup>FormCommandBarCreateBasedOn</CommandGroup>
 			</Item>
 			<Item>
-				<Command>2:57067371-06db-46dc-a7e9-c76d28e21071</Command>
+				<Command>0</Command>
 				<Type>Auto</Type>
 				<CommandGroup>FormCommandBarCreateBasedOn</CommandGroup>
 				<Index>8</Index>
@@ -11762,7 +11761,7 @@
 				</Visible>
 			</Item>
 			<Item>
-				<Command>2:efd06081-12d1-4734-9015-bff31c9f7966</Command>
+				<Command>0</Command>
 				<Type>Auto</Type>
 				<CommandGroup>FormCommandBarCreateBasedOn</CommandGroup>
 				<Index>3</Index>
@@ -11772,7 +11771,7 @@
 				</Visible>
 			</Item>
 			<Item>
-				<Command>2:da3c04c7-1d24-4d54-9686-2c404b8ed4e8</Command>
+				<Command>0</Command>
 				<Type>Auto</Type>
 				<CommandGroup>FormCommandBarCreateBasedOn</CommandGroup>
 				<Index>4</Index>
@@ -11782,7 +11781,7 @@
 				</Visible>
 			</Item>
 			<Item>
-				<Command>2:36a6810c-733e-490c-bae7-1271266f0d95</Command>
+				<Command>0</Command>
 				<Type>Auto</Type>
 				<CommandGroup>FormCommandBarCreateBasedOn</CommandGroup>
 				<Index>5</Index>
@@ -11792,13 +11791,13 @@
 				</Visible>
 			</Item>
 			<Item>
-				<Command>0:471642ee-7ded-4fb8-8f65-d6ffe86419ed</Command>
+				<Command>0</Command>
 				<Type>Auto</Type>
 				<CommandGroup>FormCommandBarCreateBasedOn</CommandGroup>
 				<Index>2</Index>
 			</Item>
 			<Item>
-				<Command>2:3b9d376f-cd28-4f84-b8a8-686da09f0e46</Command>
+				<Command>0</Command>
 				<Type>Auto</Type>
 				<CommandGroup>FormCommandBarCreateBasedOn</CommandGroup>
 				<Index>6</Index>
@@ -11808,7 +11807,7 @@
 				</Visible>
 			</Item>
 			<Item>
-				<Command>0:2baf6d7a-12ed-4f22-ad96-92bb31b747ff</Command>
+				<Command>0</Command>
 				<Type>Auto</Type>
 				<CommandGroup>CommandGroup.Печать</CommandGroup>
 				<Index>1</Index>
@@ -11818,12 +11817,12 @@
 				</Visible>
 			</Item>
 			<Item>
-				<Command>0:01ca5d9e-0ced-41d0-b669-3eb6c83dbf51</Command>
+				<Command>0</Command>
 				<Type>Auto</Type>
 				<CommandGroup>CommandGroup.Печать</CommandGroup>
 			</Item>
 			<Item>
-				<Command>2:679bd72a-4cf8-4c2e-ae00-3f01f48050c4</Command>
+				<Command>0</Command>
 				<Type>Auto</Type>
 				<CommandGroup>FormCommandBarCreateBasedOn</CommandGroup>
 				<Index>7</Index>
@@ -11833,7 +11832,7 @@
 				</Visible>
 			</Item>
 			<Item>
-				<Command>2:23a3e290-0d65-4b39-a385-03fa2c468f2e</Command>
+				<Command>0</Command>
 				<Type>Auto</Type>
 				<CommandGroup>FormCommandBarCreateBasedOn</CommandGroup>
 				<Index>9</Index>
@@ -11862,7 +11861,7 @@
 				</Visible>
 			</Item>
 			<Item>
-				<Command>2:28f131c2-f971-4a8c-bfc4-23f8606a7536</Command>
+				<Command>0</Command>
 				<Type>Auto</Type>
 				<CommandGroup>FormCommandBarCreateBasedOn</CommandGroup>
 				<Index>10</Index>
@@ -11872,7 +11871,7 @@
 				</Visible>
 			</Item>
 			<Item>
-				<Command>2:dab6706c-e0f7-4dc9-8fac-95b1dfcbf05c</Command>
+				<Command>0</Command>
 				<Type>Auto</Type>
 				<CommandGroup>FormCommandBarCreateBasedOn</CommandGroup>
 				<Index>12</Index>
@@ -11959,7 +11958,7 @@
 				<Index>17</Index>
 			</Item>
 			<Item>
-				<Command>3:fb475df2-d71c-43ca-808b-fd458f938153</Command>
+				<Command>0</Command>
 				<Type>Auto</Type>
 				<CommandGroup>FormCommandBarCreateBasedOn</CommandGroup>
 				<Index>18</Index>
@@ -11971,7 +11970,7 @@
 				<Index>19</Index>
 			</Item>
 			<Item>
-				<Command>0:1823d37a-3b32-4031-8996-56796c8dbe41</Command>
+				<Command>0</Command>
 				<Type>Auto</Type>
 				<CommandGroup>FormCommandBarCreateBasedOn</CommandGroup>
 				<Index>20</Index>

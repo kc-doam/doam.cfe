@@ -88,10 +88,6 @@
 									<DataPath>Пароль</DataPath>
 									<PasswordMode>true</PasswordMode>
 									<ChoiceButton>true</ChoiceButton>
-									<ChoiceButtonPicture>
-										<xr:Ref>0</xr:Ref>
-										<xr:LoadTransparent>false</xr:LoadTransparent>
-									</ChoiceButtonPicture>
 									<ContextMenu name="ПарольСкрытыйКонтекстноеМеню" id="11"/>
 									<ExtendedTooltip name="ПарольСкрытыйРасширеннаяПодсказка" id="12"/>
 									<Events>
@@ -102,10 +98,6 @@
 									<DataPath>Пароль</DataPath>
 									<Visible>false</Visible>
 									<ChoiceButton>true</ChoiceButton>
-									<ChoiceButtonPicture>
-										<xr:Ref>0</xr:Ref>
-										<xr:LoadTransparent>false</xr:LoadTransparent>
-									</ChoiceButtonPicture>
 									<ContextMenu name="ПарольКонтекстноеМеню" id="58"/>
 									<ExtendedTooltip name="ПарольРасширеннаяПодсказка" id="59"/>
 									<Events>

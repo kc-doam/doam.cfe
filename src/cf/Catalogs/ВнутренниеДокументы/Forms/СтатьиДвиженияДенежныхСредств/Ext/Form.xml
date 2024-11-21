@@ -125,12 +125,12 @@
 									</Button>
 									<Button name="КонтекстноеМенюИзменить" id="77">
 										<Type>CommandBarButton</Type>
-										<CommandName>34:b41f5bbc-ba5d-4888-8cd1-db246a371418</CommandName>
+										<CommandName>0</CommandName>
 										<ExtendedTooltip name="КонтекстноеМенюИзменитьРасширеннаяПодсказка" id="78"/>
 									</Button>
 									<Button name="КонтекстноеМенюОтменитьПоиск" id="67">
 										<Type>CommandBarButton</Type>
-										<CommandName>34:44ad3ec9-f3c2-4913-9224-5f9fb6418743</CommandName>
+										<CommandName>0</CommandName>
 										<ExtendedTooltip name="КонтекстноеМенюОтменитьПоискРасширеннаяПодсказка" id="68"/>
 									</Button>
 								</ChildItems>

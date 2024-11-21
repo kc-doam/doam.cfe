@@ -278,19 +278,19 @@
 								<ChildItems>
 									<Button name="ВопросыКонтекстноеМенюУдалить" id="374">
 										<Type>CommandBarButton</Type>
-										<CommandName>79:8d772f97-c0ef-47c0-9cb0-efea28c61341</CommandName>
+										<CommandName>0</CommandName>
 										<ExtendedTooltip name="ВопросыКонтекстноеМенюУдалитьРасширеннаяПодсказка" id="375"/>
 									</Button>
 									<Button name="ВопросыКонтекстноеМенюДобавить" id="376">
 										<Type>CommandBarButton</Type>
 										<Visible>false</Visible>
-										<CommandName>79:b0016a68-ec64-4e6d-b905-c71fd62efc4c</CommandName>
+										<CommandName>0</CommandName>
 										<ExtendedTooltip name="ВопросыКонтекстноеМенюДобавитьРасширеннаяПодсказка" id="377"/>
 									</Button>
 									<Button name="ВопросыКонтекстноеМенюСкопировать" id="378">
 										<Type>CommandBarButton</Type>
 										<Visible>false</Visible>
-										<CommandName>79:0ae4bea5-23be-42a7-b69e-97b11b29c453</CommandName>
+										<CommandName>0</CommandName>
 										<ExtendedTooltip name="ВопросыКонтекстноеМенюСкопироватьРасширеннаяПодсказка" id="379"/>
 									</Button>
 								</ChildItems>

@@ -3,6 +3,8 @@
 	<SaveDataInSettings>UseList</SaveDataInSettings>
 	<ReportFormType>Main</ReportFormType>
 	<AutoShowState>Auto</AutoShowState>
+	<ReportResultViewMode>Auto</ReportResultViewMode>
+	<ViewModeApplicationOnSetReportResult>Auto</ViewModeApplicationOnSetReportResult>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
 		<Autofill>false</Autofill>
 		<ChildItems>

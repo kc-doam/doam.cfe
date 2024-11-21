@@ -78,7 +78,7 @@
 						<ChildItems>
 							<Button name="ПолучателиКонтекстноеМенюКопироватьВБуферОбмена" id="41">
 								<Type>CommandBarButton</Type>
-								<CommandName>279:88078230-1f6b-415f-99e4-ad2ff73810cf</CommandName>
+								<CommandName>0</CommandName>
 								<ExtendedTooltip name="ПолучателиКонтекстноеМенюКопироватьВБуферОбменаExtendedTooltip" id="42"/>
 							</Button>
 							<Popup name="ПолучателиКонтекстноеМенюСохранитьКонтакт" id="43">
@@ -102,24 +102,24 @@
 								<ChildItems>
 									<Button name="ПолучателиКонтекстноеМенюСоздатьЛичногоАдресата" id="45">
 										<Type>CommandBarButton</Type>
-										<CommandName>25:409b9a53-7f7e-4178-86c1-33176c7c7a7a</CommandName>
+										<CommandName>0</CommandName>
 										<ExtendedTooltip name="ПолучателиКонтекстноеМенюСоздатьЛичногоАдресатаExtendedTooltip" id="46"/>
 									</Button>
 									<Button name="ПолучателиКонтекстноеМенюСоздатьКонтрагента" id="47">
 										<Type>CommandBarButton</Type>
-										<CommandName>26:409b9a53-7f7e-4178-86c1-33176c7c7a7a</CommandName>
+										<CommandName>0</CommandName>
 										<ExtendedTooltip name="ПолучателиКонтекстноеМенюСоздатьКонтрагентаExtendedTooltip" id="48"/>
 									</Button>
 									<Button name="ПолучателиКонтекстноеМенюСоздатьКонтактноеЛицо" id="49">
 										<Type>CommandBarButton</Type>
-										<CommandName>27:409b9a53-7f7e-4178-86c1-33176c7c7a7a</CommandName>
+										<CommandName>0</CommandName>
 										<ExtendedTooltip name="ПолучателиКонтекстноеМенюСоздатьКонтактноеЛицоExtendedTooltip" id="50"/>
 									</Button>
 								</ChildItems>
 							</Popup>
 							<Button name="ПолучателиКонтекстноеМенюДобавитьВМоиКонтакты" id="51">
 								<Type>CommandBarButton</Type>
-								<CommandName>35:409b9a53-7f7e-4178-86c1-33176c7c7a7a</CommandName>
+								<CommandName>0</CommandName>
 								<ExtendedTooltip name="ПолучателиКонтекстноеМенюДобавитьВМоиКонтактыExtendedTooltip" id="52"/>
 							</Button>
 							<Popup name="ГруппаСпискиАдресов" id="53">
@@ -139,17 +139,17 @@
 								<ChildItems>
 									<Button name="ПолучателиКонтекстноеМенюДобавитьВСписок" id="55">
 										<Type>CommandBarButton</Type>
-										<CommandName>31:409b9a53-7f7e-4178-86c1-33176c7c7a7a</CommandName>
+										<CommandName>0</CommandName>
 										<ExtendedTooltip name="ПолучателиКонтекстноеМенюДобавитьВСписокExtendedTooltip" id="56"/>
 									</Button>
 									<Button name="ПолучателиКонтекстноеМенюДобавитьДоменВСписок" id="57">
 										<Type>CommandBarButton</Type>
-										<CommandName>32:409b9a53-7f7e-4178-86c1-33176c7c7a7a</CommandName>
+										<CommandName>0</CommandName>
 										<ExtendedTooltip name="ПолучателиКонтекстноеМенюДобавитьДоменВСписокExtendedTooltip" id="58"/>
 									</Button>
 									<Button name="ПолучателиКонтекстноеМенюСпискиАдресов" id="59">
 										<Type>CommandBarButton</Type>
-										<CommandName>33:409b9a53-7f7e-4178-86c1-33176c7c7a7a</CommandName>
+										<CommandName>0</CommandName>
 										<ExtendedTooltip name="ПолучателиКонтекстноеМенюСпискиАдресовExtendedTooltip" id="60"/>
 									</Button>
 								</ChildItems>

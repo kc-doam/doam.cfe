@@ -6,6 +6,8 @@
 	<ReportFormType>Main</ReportFormType>
 	<VariantAppearance>НаименованиеТекущегоВарианта</VariantAppearance>
 	<AutoShowState>Auto</AutoShowState>
+	<ReportResultViewMode>Auto</ReportResultViewMode>
+	<ViewModeApplicationOnSetReportResult>Auto</ViewModeApplicationOnSetReportResult>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
 		<Autofill>false</Autofill>
 	</AutoCommandBar>

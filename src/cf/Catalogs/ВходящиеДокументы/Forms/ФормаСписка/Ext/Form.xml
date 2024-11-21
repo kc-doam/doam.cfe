@@ -6195,7 +6195,7 @@
 				</Visible>
 			</Item>
 			<Item>
-				<Command>2:da3c04c7-1d24-4d54-9686-2c404b8ed4e8</Command>
+				<Command>0</Command>
 				<Type>Auto</Type>
 				<Index>5</Index>
 				<DefaultVisible>false</DefaultVisible>
@@ -6204,13 +6204,13 @@
 				</Visible>
 			</Item>
 			<Item>
-				<Command>3:017baf6e-d210-4362-b7ae-cbe8236aa7c4</Command>
+				<Command>0</Command>
 				<Type>Auto</Type>
 				<CommandGroup>FormCommandBarCreateBasedOn</CommandGroup>
 				<Index>3</Index>
 			</Item>
 			<Item>
-				<Command>2:679bd72a-4cf8-4c2e-ae00-3f01f48050c4</Command>
+				<Command>0</Command>
 				<Type>Auto</Type>
 				<CommandGroup>FormCommandBarCreateBasedOn</CommandGroup>
 				<Index>8</Index>
@@ -6220,12 +6220,12 @@
 				</Visible>
 			</Item>
 			<Item>
-				<Command>3:c239fbd7-9454-4830-aa13-a9fe409cd195</Command>
+				<Command>0</Command>
 				<Type>Auto</Type>
 				<CommandGroup>FormCommandBarCreateBasedOn</CommandGroup>
 			</Item>
 			<Item>
-				<Command>2:3b9d376f-cd28-4f84-b8a8-686da09f0e46</Command>
+				<Command>0</Command>
 				<Type>Auto</Type>
 				<CommandGroup>FormCommandBarCreateBasedOn</CommandGroup>
 				<Index>9</Index>
@@ -6235,7 +6235,7 @@
 				</Visible>
 			</Item>
 			<Item>
-				<Command>2:57067371-06db-46dc-a7e9-c76d28e21071</Command>
+				<Command>0</Command>
 				<Type>Auto</Type>
 				<CommandGroup>FormCommandBarCreateBasedOn</CommandGroup>
 				<Index>10</Index>
@@ -6245,7 +6245,7 @@
 				</Visible>
 			</Item>
 			<Item>
-				<Command>2:53d146b8-d85f-4cfe-b5ee-af78f4e09445</Command>
+				<Command>0</Command>
 				<Type>Auto</Type>
 				<CommandGroup>FormCommandBarCreateBasedOn</CommandGroup>
 				<Index>7</Index>
@@ -6255,25 +6255,25 @@
 				</Visible>
 			</Item>
 			<Item>
-				<Command>2:efd06081-12d1-4734-9015-bff31c9f7966</Command>
+				<Command>0</Command>
 				<Type>Auto</Type>
 				<CommandGroup>FormCommandBarCreateBasedOn</CommandGroup>
 				<Index>5</Index>
 			</Item>
 			<Item>
-				<Command>0:ce356ab6-6b35-47b2-bbc0-6c5f2f40436d</Command>
+				<Command>0</Command>
 				<Type>Auto</Type>
 				<CommandGroup>FormCommandBarCreateBasedOn</CommandGroup>
 				<Index>1</Index>
 			</Item>
 			<Item>
-				<Command>0:54719576-4adf-4145-9998-6a202abb3297</Command>
+				<Command>0</Command>
 				<Type>Auto</Type>
 				<CommandGroup>FormCommandBarCreateBasedOn</CommandGroup>
 				<Index>2</Index>
 			</Item>
 			<Item>
-				<Command>0:2baf6d7a-12ed-4f22-ad96-92bb31b747ff</Command>
+				<Command>0</Command>
 				<Type>Auto</Type>
 				<DefaultVisible>false</DefaultVisible>
 				<Visible>
@@ -6281,12 +6281,12 @@
 				</Visible>
 			</Item>
 			<Item>
-				<Command>0:648a4b16-e9e5-4b6f-9c56-e3300cea440a</Command>
+				<Command>0</Command>
 				<Type>Auto</Type>
 				<CommandGroup>CommandGroup.Печать</CommandGroup>
 			</Item>
 			<Item>
-				<Command>2:568a53ba-d7d8-4cd6-96cb-f1f1beb185da</Command>
+				<Command>0</Command>
 				<Type>Auto</Type>
 				<CommandGroup>FormCommandBarCreateBasedOn</CommandGroup>
 				<Index>11</Index>
@@ -6327,7 +6327,7 @@
 				</Visible>
 			</Item>
 			<Item>
-				<Command>2:28f131c2-f971-4a8c-bfc4-23f8606a7536</Command>
+				<Command>0</Command>
 				<Type>Auto</Type>
 				<CommandGroup>FormCommandBarCreateBasedOn</CommandGroup>
 				<Index>12</Index>
@@ -6337,19 +6337,19 @@
 				</Visible>
 			</Item>
 			<Item>
-				<Command>0:1823d37a-3b32-4031-8996-56796c8dbe41</Command>
+				<Command>0</Command>
 				<Type>Auto</Type>
 				<CommandGroup>FormCommandBarCreateBasedOn</CommandGroup>
 				<Index>19</Index>
 			</Item>
 			<Item>
-				<Command>3:fb475df2-d71c-43ca-808b-fd458f938153</Command>
+				<Command>0</Command>
 				<Type>Auto</Type>
 				<CommandGroup>FormCommandBarCreateBasedOn</CommandGroup>
 				<Index>17</Index>
 			</Item>
 			<Item>
-				<Command>2:dab6706c-e0f7-4dc9-8fac-95b1dfcbf05c</Command>
+				<Command>0</Command>
 				<Type>Auto</Type>
 				<CommandGroup>FormCommandBarCreateBasedOn</CommandGroup>
 				<Index>16</Index>
@@ -6375,7 +6375,7 @@
 				<Index>18</Index>
 			</Item>
 			<Item>
-				<Command>2:36a6810c-733e-490c-bae7-1271266f0d95</Command>
+				<Command>0</Command>
 				<Type>Auto</Type>
 				<DefaultVisible>false</DefaultVisible>
 				<Visible>

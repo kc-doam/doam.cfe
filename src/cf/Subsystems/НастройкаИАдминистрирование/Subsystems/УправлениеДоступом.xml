@@ -19,7 +19,6 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ГруппыДоступа</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ГрифыДоступа</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">FilterCriterion.РабочиеГруппыПользователя</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">e80e9fc4-d34f-498e-9d13-f9fde1485a7d</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.УчастникиПроцессов</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.УправлениеРасчетомПрав</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ГруппыДоступаКонтрагентов</xr:Item>

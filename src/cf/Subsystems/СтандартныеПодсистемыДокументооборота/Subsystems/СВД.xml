@@ -15,9 +15,7 @@
 			<UseOneCommand>false</UseOneCommand>
 			<Explanation/>
 			<Picture/>
-			<Content>
-				<xr:Item xsi:type="xr:MDObjectRef">b9341b8c-0fc4-4aac-b9cb-90ba2a41db5f</xr:Item>
-			</Content>
+			<Content/>
 		</Properties>
 		<ChildObjects>
 			<Subsystem>КлиентСВД</Subsystem>

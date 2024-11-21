@@ -37,8 +37,6 @@
 				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.РабочиеГруппыБизнесПроцессыПриЗаписи</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.РабочиеГруппыВидыДокументовПередЗаписью</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.РабочиеГруппыВидыДокументовПриЗаписи</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">9ce59a11-27e3-4d77-b222-ddff59682c4f</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">39d8a6b4-8968-40ff-b360-2b7114c67ecc</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ВидыВходящихДокументов</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ВидыВнутреннихДокументов</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ВидыИсходящихДокументов</xr:Item>

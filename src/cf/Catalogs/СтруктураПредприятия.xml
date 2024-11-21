@@ -289,7 +289,7 @@
 					<xr:CharacteristicTypes from="Catalog.НаборыДополнительныхРеквизитовИСведений.TabularSection.ДополнительныеРеквизиты">
 						<xr:KeyField>Catalog.НаборыДополнительныхРеквизитовИСведений.TabularSection.ДополнительныеРеквизиты.Attribute.Свойство</xr:KeyField>
 						<xr:TypesFilterField>Catalog.НаборыДополнительныхРеквизитовИСведений.TabularSection.ДополнительныеРеквизиты.StandardAttribute.Ref</xr:TypesFilterField>
-						<xr:TypesFilterValue xsi:type="xr:DesignTimeRef">7a576bbd-3683-4c69-8259-b03d2c59db04.b3a1ebbf-1346-41ce-bd22-9542623be6dc</xr:TypesFilterValue>
+						<xr:TypesFilterValue xsi:type="xr:DesignTimeRef"/>
 						<xr:DataPathField>-1</xr:DataPathField>
 						<xr:MultipleValuesUseField>-1</xr:MultipleValuesUseField>
 					</xr:CharacteristicTypes>
@@ -305,7 +305,7 @@
 					<xr:CharacteristicTypes from="Catalog.НаборыДополнительныхРеквизитовИСведений.TabularSection.ДополнительныеСведения">
 						<xr:KeyField>Catalog.НаборыДополнительныхРеквизитовИСведений.TabularSection.ДополнительныеСведения.Attribute.Свойство</xr:KeyField>
 						<xr:TypesFilterField>Catalog.НаборыДополнительныхРеквизитовИСведений.TabularSection.ДополнительныеСведения.StandardAttribute.Ref</xr:TypesFilterField>
-						<xr:TypesFilterValue xsi:type="xr:DesignTimeRef">7a576bbd-3683-4c69-8259-b03d2c59db04.b3a1ebbf-1346-41ce-bd22-9542623be6dc</xr:TypesFilterValue>
+						<xr:TypesFilterValue xsi:type="xr:DesignTimeRef"/>
 						<xr:DataPathField>-1</xr:DataPathField>
 						<xr:MultipleValuesUseField>-1</xr:MultipleValuesUseField>
 					</xr:CharacteristicTypes>

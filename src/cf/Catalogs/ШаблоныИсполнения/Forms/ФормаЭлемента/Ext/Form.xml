@@ -3362,7 +3362,7 @@
 				</Visible>
 			</Item>
 			<Item>
-				<Command>0:29624fb4-c0e4-4355-a04a-1344eedb945a</Command>
+				<Command>0</Command>
 				<Type>Auto</Type>
 				<DefaultVisible>false</DefaultVisible>
 				<Visible>
@@ -3388,13 +3388,13 @@
 		</NavigationPanel>
 		<CommandBar>
 			<Item>
-				<Command>0:8d48f40b-f64f-4d00-97b4-527c3f9bce4a</Command>
+				<Command>0</Command>
 				<Type>Auto</Type>
 				<CommandGroup>FormCommandBarImportant</CommandGroup>
 				<Index>1</Index>
 			</Item>
 			<Item>
-				<Command>0:000110fd-6674-4deb-8d8a-50ced5a85f87</Command>
+				<Command>0</Command>
 				<Type>Auto</Type>
 				<CommandGroup>FormCommandBarImportant</CommandGroup>
 				<Index>2</Index>
@@ -3405,7 +3405,7 @@
 				<CommandGroup>FormCommandBarImportant</CommandGroup>
 			</Item>
 			<Item>
-				<Command>0:2baf6d7a-12ed-4f22-ad96-92bb31b747ff</Command>
+				<Command>0</Command>
 				<Type>Auto</Type>
 				<DefaultVisible>false</DefaultVisible>
 				<Visible>

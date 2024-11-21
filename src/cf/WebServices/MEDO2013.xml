@@ -15,7 +15,7 @@
 				<xr:Item>
 					<xr:Presentation/>
 					<xr:CheckState>0</xr:CheckState>
-					<xr:Value xsi:type="xr:MDObjectRef">e36c4474-30ab-44d8-80ae-fc144465f27c</xr:Value>
+					<xr:Value xsi:type="xr:MDObjectRef"/>
 				</xr:Item>
 			</XDTOPackages>
 			<DescriptorFileName>medo2013.1cws</DescriptorFileName>

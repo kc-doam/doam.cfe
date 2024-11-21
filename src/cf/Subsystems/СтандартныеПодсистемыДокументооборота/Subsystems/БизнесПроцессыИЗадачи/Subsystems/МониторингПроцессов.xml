@@ -31,10 +31,8 @@
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.МониторингПроцессов</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.МониторингПроцессовВызовСервера</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.МониторингПроцессовКлиент</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">32301946-bf03-4d62-bb6c-382e750166ab</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Enum.ЭтапыОбработкиПредметовПоказателейПроцессов</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ПодпискиНаПоказателиПроцессов</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">54f24bee-401b-4e9d-b1f4-97b6b61c3706</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ОчередьПересчетаПоказателейПроцессов</xr:Item>
 			</Content>
 		</Properties>

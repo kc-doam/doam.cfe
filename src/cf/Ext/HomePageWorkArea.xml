@@ -23,15 +23,10 @@
 			<Height>10</Height>
 			<Visibility>
 				<xr:Common>false</xr:Common>
-				<xr:Value name="a1d02606-f82f-4b41-8a91-adb1fa89d504">false</xr:Value>
 				<xr:Value name="Role.ДобавлениеИзменениеВариантовОтчетов">false</xr:Value>
-				<xr:Value name="92754a77-92b6-420d-b66a-e9b06be2d63e">false</xr:Value>
 				<xr:Value name="Role.РедактированиеРеквизитовОбъектов">false</xr:Value>
 				<xr:Value name="Role.КонтрольЗадачИБизнесПроцессов">false</xr:Value>
-				<xr:Value name="d92ddcb9-ccd1-4208-aca6-7bcc5c2a8be8">false</xr:Value>
 				<xr:Value name="Role.ПолныеПрава">false</xr:Value>
-				<xr:Value name="83a9e864-48d2-43e3-bd90-ca92c6f40428">false</xr:Value>
-				<xr:Value name="4a6863d4-16e6-4f84-9470-4d762e38e977">false</xr:Value>
 			</Visibility>
 		</Item>
 		<Item>
@@ -39,15 +34,10 @@
 			<Height>10</Height>
 			<Visibility>
 				<xr:Common>false</xr:Common>
-				<xr:Value name="a1d02606-f82f-4b41-8a91-adb1fa89d504">false</xr:Value>
 				<xr:Value name="Role.ДобавлениеИзменениеВариантовОтчетов">false</xr:Value>
-				<xr:Value name="92754a77-92b6-420d-b66a-e9b06be2d63e">false</xr:Value>
 				<xr:Value name="Role.РедактированиеРеквизитовОбъектов">false</xr:Value>
 				<xr:Value name="Role.КонтрольЗадачИБизнесПроцессов">false</xr:Value>
-				<xr:Value name="d92ddcb9-ccd1-4208-aca6-7bcc5c2a8be8">false</xr:Value>
 				<xr:Value name="Role.ПолныеПрава">false</xr:Value>
-				<xr:Value name="83a9e864-48d2-43e3-bd90-ca92c6f40428">false</xr:Value>
-				<xr:Value name="4a6863d4-16e6-4f84-9470-4d762e38e977">false</xr:Value>
 			</Visibility>
 		</Item>
 		<Item>

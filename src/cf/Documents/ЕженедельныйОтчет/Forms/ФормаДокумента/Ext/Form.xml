@@ -1612,25 +1612,25 @@
 		</NavigationPanel>
 		<CommandBar>
 			<Item>
-				<Command>0:58a839b1-49f5-4163-8e64-856fd07ded9e</Command>
+				<Command>0</Command>
 				<Type>Auto</Type>
 				<CommandGroup>FormCommandBarImportant</CommandGroup>
 				<Index>1</Index>
 			</Item>
 			<Item>
-				<Command>0:f9092eef-67b8-453f-827d-b68deb16c656</Command>
+				<Command>0</Command>
 				<Type>Auto</Type>
 				<CommandGroup>FormCommandBarImportant</CommandGroup>
 			</Item>
 			<Item>
-				<Command>0:7ec7f6d8-3464-4c95-91f8-c941497a403f</Command>
+				<Command>0</Command>
 				<Type>Auto</Type>
 				<CommandGroup>FormCommandBarImportant</CommandGroup>
 				<Index>3</Index>
 				<DefaultVisible>false</DefaultVisible>
 			</Item>
 			<Item>
-				<Command>0:58186604-9b52-45c4-afb6-67342a0cad88</Command>
+				<Command>0</Command>
 				<Type>Auto</Type>
 				<CommandGroup>FormCommandBarImportant</CommandGroup>
 				<Index>2</Index>

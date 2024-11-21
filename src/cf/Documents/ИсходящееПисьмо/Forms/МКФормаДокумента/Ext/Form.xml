@@ -2730,7 +2730,6 @@
 			</Picture>
 			<Action>ПоменятьПометкуПрочтения</Action>
 			<CurrentRowUse>Use</CurrentRowUse>
-			<AssociatedTableElementId xsi:type="xs:string">3:02023637-7868-4a5f-8576-835a76e0c9ba</AssociatedTableElementId>
 		</Command>
 		<Command name="ИзменитьШрифтОтображения" id="13">
 			<Title>

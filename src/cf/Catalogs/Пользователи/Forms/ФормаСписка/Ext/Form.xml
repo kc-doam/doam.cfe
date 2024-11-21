@@ -52,7 +52,7 @@
 						<Button name="ФормаВыбрать" id="216">
 							<Type>CommandBarButton</Type>
 							<Visible>false</Visible>
-							<CommandName>0:8e2b82cf-d1ea-46b2-afdf-a8d64e66ea2b</CommandName>
+							<CommandName>0</CommandName>
 							<ExtendedTooltip name="ФормаВыбратьРасширеннаяПодсказка" id="217"/>
 						</Button>
 						<Button name="ФормаСкопировать" id="212">

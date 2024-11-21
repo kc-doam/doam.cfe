@@ -32,7 +32,6 @@
 				<xr:Item xsi:type="xr:MDObjectRef">BusinessProcess.ОбработкаВнутреннегоДокумента</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">BusinessProcess.ОбработкаВходящегоДокумента</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">BusinessProcess.ОбработкаИсходящегоДокумента</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">1823d37a-3b32-4031-8996-56796c8dbe41</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.СоздатьПроцесс</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">BusinessProcess.Приглашение</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Enum.ВидыВопросовВыполненияЗадач</xr:Item>

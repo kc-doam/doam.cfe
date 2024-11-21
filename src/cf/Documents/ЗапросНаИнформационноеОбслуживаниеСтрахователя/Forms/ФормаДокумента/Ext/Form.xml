@@ -299,13 +299,6 @@
 					<EditMode>EnterOnInput</EditMode>
 					<AutoMarkIncomplete>true</AutoMarkIncomplete>
 					<TextEdit>false</TextEdit>
-					<ChoiceParameterLinks>
-						<xr:Link>
-							<xr:Name>Отбор.Владелец</xr:Name>
-							<xr:DataPath xsi:type="xs:string">1/0:d9eb8e77-e94e-422d-af21-85b1605dade4</xr:DataPath>
-							<xr:ValueChange>Clear</xr:ValueChange>
-						</xr:Link>
-					</ChoiceParameterLinks>
 					<ChoiceListButton>false</ChoiceListButton>
 					<ContextMenu name="ПолучательКонтекстноеМеню" id="8"/>
 					<ExtendedTooltip name="ПолучательExtendedTooltip" id="150"/>
@@ -628,7 +621,7 @@
 	<CommandInterface>
 		<NavigationPanel>
 			<Item>
-				<Command>3:4664988c-e107-46d5-9815-ff4c01235e9c</Command>
+				<Command>0</Command>
 				<Type>Auto</Type>
 				<CommandGroup>FormNavigationPanelGoTo</CommandGroup>
 				<DefaultVisible>false</DefaultVisible>
@@ -637,7 +630,7 @@
 				</Visible>
 			</Item>
 			<Item>
-				<Command>3:d2b2b286-3464-4e99-98ce-b6d18290bca1</Command>
+				<Command>0</Command>
 				<Type>Auto</Type>
 				<CommandGroup>FormNavigationPanelGoTo</CommandGroup>
 				<Index>1</Index>
@@ -647,7 +640,7 @@
 				</Visible>
 			</Item>
 			<Item>
-				<Command>3</Command>
+				<Command>0</Command>
 				<Type>Auto</Type>
 				<DefaultVisible>false</DefaultVisible>
 				<Visible>
@@ -655,7 +648,7 @@
 				</Visible>
 			</Item>
 			<Item>
-				<Command>3:3953cc60-6482-471c-9699-41c70c93335d</Command>
+				<Command>0</Command>
 				<Type>Auto</Type>
 				<CommandGroup>FormNavigationPanelGoTo</CommandGroup>
 				<Index>2</Index>

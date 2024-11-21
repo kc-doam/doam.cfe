@@ -1017,13 +1017,6 @@
 																			<v8:content>Банковский счет</v8:content>
 																		</v8:item>
 																	</Title>
-																	<ChoiceParameterLinks>
-																		<xr:Link>
-																			<xr:Name>Отбор.Владелец</xr:Name>
-																			<xr:DataPath xsi:type="xs:string">1</xr:DataPath>
-																			<xr:ValueChange>Clear</xr:ValueChange>
-																		</xr:Link>
-																	</ChoiceParameterLinks>
 																	<ContextMenu name="ОсновнойБанковскийСчетКонтекстноеМеню" id="55"/>
 																	<ExtendedTooltip name="ОсновнойБанковскийСчетExtendedTooltip" id="90"/>
 																</InputField>
@@ -3589,13 +3582,6 @@
 																			</v8:item>
 																		</Title>
 																		<AutoMaxWidth>false</AutoMaxWidth>
-																		<ChoiceParameterLinks>
-																			<xr:Link>
-																				<xr:Name>Отбор.Владелец</xr:Name>
-																				<xr:DataPath xsi:type="xs:string">1</xr:DataPath>
-																				<xr:ValueChange>Clear</xr:ValueChange>
-																			</xr:Link>
-																		</ChoiceParameterLinks>
 																		<ContextMenu name="ОсновнойБанковскийСчетКонтекстноеМеню" id="55"/>
 																		<ExtendedTooltip name="ОсновнойБанковскийСчетExtendedTooltip" id="90"/>
 																	</InputField>

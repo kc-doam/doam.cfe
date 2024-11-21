@@ -14,9 +14,7 @@
 		</ChildItems>
 	</AutoCommandBar>
 	<Events>
-		<Event name="047d4d09-961c-4bdc-8519-eef10674c35b">ПослеЗаписи</Event>
 		<Event name="OnLoadDataFromSettingsAtServer">ПриЗагрузкеДанныхИзНастроекНаСервере</Event>
-		<Event name="9cc34712-da5f-4faa-a653-343d2085fbe8">ПередЗаписью</Event>
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 	</Events>
 	<ChildItems>
@@ -89,12 +87,12 @@
 						<ChildItems>
 							<Button name="ОбъектДеревоПереместитьВверх" id="78">
 								<Type>CommandBarButton</Type>
-								<CommandName>1:37740564-9e86-44a0-bea9-3f485a5a3f91</CommandName>
+								<CommandName>0</CommandName>
 								<ExtendedTooltip name="ОбъектДеревоПереместитьВверхРасширеннаяПодсказка" id="79"/>
 							</Button>
 							<Button name="ОбъектДеревоПереместитьВниз" id="80">
 								<Type>CommandBarButton</Type>
-								<CommandName>1:fa51b106-eae6-44c7-8054-76cbb3100603</CommandName>
+								<CommandName>0</CommandName>
 								<ExtendedTooltip name="ОбъектДеревоПереместитьВнизРасширеннаяПодсказка" id="81"/>
 							</Button>
 							<ButtonGroup name="ОбъектДеревоРеквизитовКонтекстноеМенюГруппа1" id="82">

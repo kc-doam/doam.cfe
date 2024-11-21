@@ -1736,7 +1736,7 @@
 	<CommandInterface>
 		<NavigationPanel>
 			<Item>
-				<Command>0:136e2d82-80bf-465a-9178-87ea05eee759</Command>
+				<Command>0</Command>
 				<Type>Auto</Type>
 				<CommandGroup>FormNavigationPanelGoTo</CommandGroup>
 				<DefaultVisible>false</DefaultVisible>

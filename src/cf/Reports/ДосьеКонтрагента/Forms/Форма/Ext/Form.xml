@@ -88,7 +88,7 @@
 						</Button>
 						<Button name="КнопкаПечать" id="11">
 							<Type>CommandBarButton</Type>
-							<CommandName>1:0e355e57-d603-4ac6-998b-c522c43d3668</CommandName>
+							<CommandName>0</CommandName>
 							<Title>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
@@ -101,7 +101,7 @@
 						<Button name="КнопкаСохранить" id="24">
 							<Type>CommandBarButton</Type>
 							<Representation>Text</Representation>
-							<CommandName>1:999b786e-0534-4fca-8b62-f706d5336798</CommandName>
+							<CommandName>0</CommandName>
 							<Picture>
 								<xr:Ref>StdPicture.SaveFile</xr:Ref>
 								<xr:LoadTransparent>true</xr:LoadTransparent>

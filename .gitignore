@@ -1,6 +1,6 @@
 build/
 src/**/ConfigDumpInfo.xml
-*.bin
+*Signature.bin
 # Конфигурация
 *.cf
 # Расширение конфигурации, исправления, обновления

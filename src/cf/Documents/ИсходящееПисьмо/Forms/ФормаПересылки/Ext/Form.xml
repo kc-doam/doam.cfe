@@ -67,17 +67,17 @@
 							</Button>
 							<Button name="ПолучателиКонтекстноеМенюИзменить" id="11">
 								<Type>CommandBarButton</Type>
-								<CommandName>355:b41f5bbc-ba5d-4888-8cd1-db246a371418</CommandName>
+								<CommandName>0</CommandName>
 								<ExtendedTooltip name="ПолучателиКонтекстноеМенюИзменитьExtendedTooltip" id="57"/>
 							</Button>
 							<Button name="ПолучателиКонтекстноеМенюКопироватьВБуферОбмена" id="12">
 								<Type>CommandBarButton</Type>
-								<CommandName>355:88078230-1f6b-415f-99e4-ad2ff73810cf</CommandName>
+								<CommandName>0</CommandName>
 								<ExtendedTooltip name="ПолучателиКонтекстноеМенюКопироватьВБуферОбменаExtendedTooltip" id="58"/>
 							</Button>
 							<Button name="ПолучателиКонтекстноеМенюУдалить" id="13">
 								<Type>CommandBarButton</Type>
-								<CommandName>355:8d772f97-c0ef-47c0-9cb0-efea28c61341</CommandName>
+								<CommandName>0</CommandName>
 								<Title>
 									<v8:item>
 										<v8:lang>ru</v8:lang>

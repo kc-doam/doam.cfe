@@ -25,11 +25,12 @@
 				<xr:Item xsi:type="xr:MDObjectRef">ChartOfCharacteristicTypes.ДополнительныеРеквизитыИСведения</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.НаборыДополнительныхРеквизитовИСведений</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ПодсистемаУправлениеДОАМ48</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ОбщийДОАМ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ОбщегоНазначенияДОАМ</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ПодсистемаУправлениеДОАМ</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Enum.СтадииВзаимодействия</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ОбновлениеИнформационнойБазыДокументооборот</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">Role.КонтрагентыДОАМ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.ПросмотрКонтрагентовДОАМ</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.СтруктураПредприятия</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

@@ -51,7 +51,7 @@
 			</UsePurposes>
 			<ScriptVariant>Russian</ScriptVariant>
 			<Vendor>ИТД НАУиУ-1С</Vendor>
-			<Version>1.04.005</Version>
+			<Version>1.05.000</Version>
 			<DefaultLanguage>Language.Русский</DefaultLanguage>
 			<BriefInformation/>
 			<DetailedInformation/>
@@ -70,7 +70,7 @@
 			<CommonPicture>ЗаполнитьФорму</CommonPicture>
 			<CommonPicture>ПиктограммыЭлементов</CommonPicture>
 			<Role>ДобавлениеИзменениеКонтрагентов</Role>
-			<CommonModule>ОбщийДОАМ</CommonModule>
+			<CommonModule>ОбщегоНазначенияДОАМ</CommonModule>
 			<CommonModule>ОбщийДОАМКлиентСервер</CommonModule>
 			<FunctionalOption>ВестиУчетФактическихТрудозатрат</FunctionalOption>
 			<FunctionalOption>ДокументооборотИспользоватьОграничениеПравДоступа</FunctionalOption>
@@ -99,6 +99,7 @@
 			<Catalog>Организации</Catalog>
 			<Catalog>Пользователи</Catalog>
 			<Catalog>ФизическиеЛица</Catalog>
+			<Catalog>СтруктураПредприятия</Catalog>
 			<Enum>СтадииВзаимодействия</Enum>
 			<Enum>СпособыУказанияВремени</Enum>
 			<Enum>ТипыКонтролирующихОрганов</Enum>

@@ -1806,17 +1806,26 @@
 													<ContextMenu name="ИсторияВзаимодействияДатаКонтекстноеМеню" id="384"/>
 													<ExtendedTooltip name="ИсторияВзаимодействияДатаРасширеннаяПодсказка" id="385"/>
 												</InputField>
+												<InputField name="ИсторияВзаимодействияПодразделениеКЦ" id="557">
+													<DataPath>Объект.ИсторияВзаимодействия.ПодразделениеКЦ</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ClearButton>true</ClearButton>
+													<OpenButton>false</OpenButton>
+													<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+													<ContextMenu name="ИсторияВзаимодействияПодразделениеКЦКонтекстноеМеню" id="558"/>
+													<ExtendedTooltip name="ИсторияВзаимодействияПодразделениеКЦРасширеннаяПодсказка" id="559"/>
+												</InputField>
 												<InputField name="ИсторияВзаимодействияСтадия" id="386">
 													<DataPath>Объект.ИсторияВзаимодействия.Стадия</DataPath>
 													<EditMode>EnterOnInput</EditMode>
 													<ContextMenu name="ИсторияВзаимодействияСтадияКонтекстноеМеню" id="387"/>
 													<ExtendedTooltip name="ИсторияВзаимодействияСтадияРасширеннаяПодсказка" id="388"/>
 												</InputField>
-												<InputField name="ИсторияВзаимодействияСообщениеКонтрагента" id="526">
-													<DataPath>Объект.ИсторияВзаимодействия.СообщениеКонтрагента</DataPath>
+												<InputField name="ИсторияВзаимодействияСообщение" id="526">
+													<DataPath>Объект.ИсторияВзаимодействия.Сообщение</DataPath>
 													<EditMode>EnterOnInput</EditMode>
-													<ContextMenu name="ИсторияВзаимодействияСообщениеКонтрагентаКонтекстноеМеню" id="527"/>
-													<ExtendedTooltip name="ИсторияВзаимодействияСообщениеКонтрагентаРасширеннаяПодсказка" id="528"/>
+													<ContextMenu name="ИсторияВзаимодействияСообщениеКонтекстноеМеню" id="527"/>
+													<ExtendedTooltip name="ИсторияВзаимодействияСообщениеРасширеннаяПодсказка" id="528"/>
 												</InputField>
 												<InputField name="ИсторияВзаимодействияОтвет" id="529">
 													<DataPath>Объект.ИсторияВзаимодействия.Ответ</DataPath>
@@ -1824,11 +1833,13 @@
 													<ContextMenu name="ИсторияВзаимодействияОтветКонтекстноеМеню" id="530"/>
 													<ExtendedTooltip name="ИсторияВзаимодействияОтветРасширеннаяПодсказка" id="531"/>
 												</InputField>
-												<InputField name="ИсторияВзаимодействияАвтор" id="532">
-													<DataPath>Объект.ИсторияВзаимодействия.Автор</DataPath>
+												<InputField name="ИсторияВзаимодействияАвторКомментария" id="532">
+													<DataPath>Объект.ИсторияВзаимодействия.АвторКомментария</DataPath>
 													<EditMode>EnterOnInput</EditMode>
-													<ContextMenu name="ИсторияВзаимодействияАвторКонтекстноеМеню" id="533"/>
-													<ExtendedTooltip name="ИсторияВзаимодействияАвторРасширеннаяПодсказка" id="534"/>
+													<ClearButton>true</ClearButton>
+													<OpenButton>false</OpenButton>
+													<ContextMenu name="ИсторияВзаимодействияАвторКомментарияКонтекстноеМеню" id="533"/>
+													<ExtendedTooltip name="ИсторияВзаимодействияАвторКомментарияРасширеннаяПодсказка" id="534"/>
 												</InputField>
 												<InputField name="ИсторияВзаимодействияКомментарий" id="389">
 													<DataPath>Объект.ИсторияВзаимодействия.Комментарий</DataPath>

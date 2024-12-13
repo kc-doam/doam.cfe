@@ -40,11 +40,11 @@
 		<ChildObjects>
 			<EnumValue uuid="16768890-3880-4fcd-b4f3-c1039c4fb01e">
 				<Properties>
-					<Name>ОбращениеАвтора</Name>
+					<Name>ОбращениеКонтрагента</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Обращение автора</v8:content>
+							<v8:content>Обращение контрагента</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -129,6 +129,90 @@
 						<v8:item>
 							<v8:lang>ru</v8:lang>
 							<v8:content>Прекратили работать</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="fa8502d1-000f-48e7-9e14-368bd50d3a51">
+				<Properties>
+					<Name>Расценки</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Расценки</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="988f5f03-64a0-42f9-8370-75854678ab45">
+				<Properties>
+					<Name>ОсобенностиДокументов</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Особенности документов</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="b7658c57-193b-4c97-b66e-87793a9a293b">
+				<Properties>
+					<Name>ПодписьКМатериалам</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Подпись к материалам</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="aa4559a4-995b-4a81-8fee-2c201cfe4696">
+				<Properties>
+					<Name>Карьера</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Карьера</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="5a10813c-06bb-4b7a-9f92-cf262b9cbc17">
+				<Properties>
+					<Name>ОтправленыДокументы</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отправлены документы</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="cf4f92c4-3172-4d1a-b736-15b254f579ec">
+				<Properties>
+					<Name>ПолученыДокументы</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Получены документы</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="c8eade9f-5a18-4230-8196-ce2dae40ba97">
+				<Properties>
+					<Name>ОсобенностиВзаимодействия</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Особенности взаимодействия</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>

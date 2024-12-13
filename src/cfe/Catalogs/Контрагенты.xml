@@ -439,28 +439,31 @@
 							</Type>
 						</Properties>
 					</Attribute>
-					<Attribute uuid="193e5f39-14c3-4819-9fea-637bf3fe7ad4">
+					<Attribute uuid="b468fee1-79a7-446d-ba42-758d02ccb3e8">
 						<InternalInfo/>
 						<Properties>
 							<ObjectBelonging>Adopted</ObjectBelonging>
-							<Name>Комментарий</Name>
+							<Name>ПодразделениеКЦ</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Подразделение КЦ</v8:content>
+								</v8:item>
+							</Synonym>
 							<Comment/>
+							<ExtendedConfigurationObject>2e6dba6e-c5e7-4638-9db9-c27555954452</ExtendedConfigurationObject>
 							<Type>
-								<v8:Type>xs:string</v8:Type>
-								<v8:StringQualifiers>
-									<v8:Length>0</v8:Length>
-									<v8:AllowedLength>Variable</v8:AllowedLength>
-								</v8:StringQualifiers>
+								<v8:Type>cfg:CatalogRef.СтруктураПредприятия</v8:Type>
 							</Type>
 						</Properties>
 					</Attribute>
 					<Attribute uuid="9060be80-3812-4372-9f08-e541b2d7790b">
 						<Properties>
-							<Name>СообщениеКонтрагента</Name>
+							<Name>Сообщение</Name>
 							<Synonym>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
-									<v8:content>Сообщение контрагента</v8:content>
+									<v8:content>Сообщение</v8:content>
 								</v8:item>
 							</Synonym>
 							<Comment/>
@@ -477,7 +480,7 @@
 							<ToolTip/>
 							<MarkNegatives>false</MarkNegatives>
 							<Mask/>
-							<MultiLine>false</MultiLine>
+							<MultiLine>true</MultiLine>
 							<ExtendedEdit>false</ExtendedEdit>
 							<MinValue xsi:nil="true"/>
 							<MaxValue xsi:nil="true"/>
@@ -518,7 +521,7 @@
 							<ToolTip/>
 							<MarkNegatives>false</MarkNegatives>
 							<Mask/>
-							<MultiLine>false</MultiLine>
+							<MultiLine>true</MultiLine>
 							<ExtendedEdit>false</ExtendedEdit>
 							<MinValue xsi:nil="true"/>
 							<MaxValue xsi:nil="true"/>
@@ -538,11 +541,11 @@
 					</Attribute>
 					<Attribute uuid="f352c846-7dc0-4d02-81a3-8363ce290fa6">
 						<Properties>
-							<Name>Автор</Name>
+							<Name>АвторКомментария</Name>
 							<Synonym>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
-									<v8:content>Автор</v8:content>
+									<v8:content>Автор комментария</v8:content>
 								</v8:item>
 							</Synonym>
 							<Comment/>
@@ -571,6 +574,21 @@
 							<Indexing>DontIndex</Indexing>
 							<FullTextSearch>Use</FullTextSearch>
 							<DataHistory>Use</DataHistory>
+						</Properties>
+					</Attribute>
+					<Attribute uuid="193e5f39-14c3-4819-9fea-637bf3fe7ad4">
+						<InternalInfo/>
+						<Properties>
+							<ObjectBelonging>Adopted</ObjectBelonging>
+							<Name>Комментарий</Name>
+							<Comment/>
+							<Type>
+								<v8:Type>xs:string</v8:Type>
+								<v8:StringQualifiers>
+									<v8:Length>0</v8:Length>
+									<v8:AllowedLength>Variable</v8:AllowedLength>
+								</v8:StringQualifiers>
+							</Type>
 						</Properties>
 					</Attribute>
 				</ChildObjects>

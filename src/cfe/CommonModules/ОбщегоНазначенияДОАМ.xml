@@ -4,7 +4,7 @@
 		<InternalInfo/>
 		<Properties>
 			<ObjectBelonging>Adopted</ObjectBelonging>
-			<Name>ОбщийДОАМ</Name>
+			<Name>ОбщегоНазначенияДОАМ</Name>
 			<Comment/>
 		</Properties>
 	</CommonModule>

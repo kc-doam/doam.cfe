@@ -276,6 +276,7 @@
 			<Language>Русский</Language>
 			<Subsystem>АдминистрированиеСервиса</Subsystem>
 			<Subsystem>ГдеМожноУзнатьБольше</Subsystem>
+			<Subsystem>ДОАМ</Subsystem>
 			<Subsystem>ДокументыИФайлы</Subsystem>
 			<Subsystem>Интеграция</Subsystem>
 			<Subsystem>ИнтернетПоддержкаПользователей</Subsystem>
@@ -291,7 +292,6 @@
 			<Subsystem>СтандартныеПодсистемы</Subsystem>
 			<Subsystem>СтандартныеПодсистемыДокументооборота</Subsystem>
 			<Subsystem>ТехнологияСервиса</Subsystem>
-			<Subsystem>ДОАМ</Subsystem>
 			<Subsystem>УправлениеБизнесПроцессами</Subsystem>
 			<Subsystem>УчетВремени</Subsystem>
 			<Subsystem>ЭлектронноеВзаимодействие</Subsystem>
@@ -1257,6 +1257,8 @@
 			<CommonPicture>ПодсистемаРаботаСФайлами</CommonPicture>
 			<CommonPicture>ПодсистемаСерверСВД</CommonPicture>
 			<CommonPicture>ПодсистемаСовместнаяРабота</CommonPicture>
+			<CommonPicture>ПодсистемаУправлениеДОАМ</CommonPicture>
+			<CommonPicture>ПодсистемаУправлениеДОАМ48</CommonPicture>
 			<CommonPicture>ПодсистемаУправленияДоступом</CommonPicture>
 			<CommonPicture>ПодсистемаУчетВремени</CommonPicture>
 			<CommonPicture>ПодсистемаФайлы</CommonPicture>
@@ -1307,8 +1309,6 @@
 			<CommonPicture>ПредметВспомогательный16</CommonPicture>
 			<CommonPicture>ПредметВспомогательный16ПометкаУдаления</CommonPicture>
 			<CommonPicture>ПредметВспомогательный32</CommonPicture>
-			<CommonPicture>ПодсистемаУправлениеДОАМ</CommonPicture>
-			<CommonPicture>ПодсистемаУправлениеДОАМ48</CommonPicture>
 			<CommonPicture>ПредметЗаполнение</CommonPicture>
 			<CommonPicture>ПредметЗаполняемый16</CommonPicture>
 			<CommonPicture>ПредметЗаполняемый16ПометкаУдаления</CommonPicture>
@@ -1881,6 +1881,7 @@
 			<Role>ПроверкаКатегорий</Role>
 			<Role>ПросмотрЖурналаРегистрации</Role>
 			<Role>ПросмотрИнформацииОДоступныхОбновленияхПрограммы</Role>
+			<Role>ПросмотрКонтрагентовДОАМ</Role>
 			<Role>ПросмотрОписанияИзмененийПрограммы</Role>
 			<Role>ПросмотрОтчетаДосьеКонтрагента</Role>
 			<Role>ПросмотрОтчетностиПереданнойВИнтерфакс</Role>
@@ -1913,7 +1914,6 @@
 			<Role>УдаленныйДоступОбменДаннымиВМоделиСервиса</Role>
 			<Role>УдаленныйДоступОбменСообщениями</Role>
 			<Role>УдаленныйДоступПередачаДанных</Role>
-			<Role>КонтрагентыДОАМ</Role>
 			<Role>УдаленныйКонтроль</Role>
 			<Role>УправлениеБизнесПроцессами</Role>
 			<Role>ФормированиеИВыгрузкаОтчетовВССТУ</Role>
@@ -2614,6 +2614,7 @@
 			<CommonModule>ОбщегоНазначенияВызовСервера</CommonModule>
 			<CommonModule>ОбщегоНазначенияВызовСервераБТС</CommonModule>
 			<CommonModule>ОбщегоНазначенияГлобальный</CommonModule>
+			<CommonModule>ОбщегоНазначенияДОАМ</CommonModule>
 			<CommonModule>ОбщегоНазначенияДокументооборот</CommonModule>
 			<CommonModule>ОбщегоНазначенияДокументооборотВызовСервера</CommonModule>
 			<CommonModule>ОбщегоНазначенияДокументооборотГлобальный</CommonModule>
@@ -2622,7 +2623,6 @@
 			<CommonModule>ОбщегоНазначенияДокументооборотКлиентСервер</CommonModule>
 			<CommonModule>ОбщегоНазначенияДокументооборотПовтИсп</CommonModule>
 			<CommonModule>ОбщегоНазначенияКлиент</CommonModule>
-			<CommonModule>ОбщийДОАМ</CommonModule>
 			<CommonModule>ОбщегоНазначенияКлиентПереопределяемый</CommonModule>
 			<CommonModule>ОбщегоНазначенияКлиентПовтИсп</CommonModule>
 			<CommonModule>ОбщегоНазначенияКлиентСервер</CommonModule>

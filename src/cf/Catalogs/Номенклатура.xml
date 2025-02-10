@@ -499,7 +499,7 @@
 					<MinValue xsi:nil="true"/>
 					<MaxValue xsi:nil="true"/>
 					<FillFromFillingValue>true</FillFromFillingValue>
-					<FillValue xsi:type="xr:DesignTimeRef"/>
+					<FillValue xsi:type="xr:DesignTimeRef">d3a0be91-8172-4fd4-9de8-6c72c72127b1.ca0cf7c1-ce04-4fe1-9fe5-0f0e1099a0ff</FillValue>
 					<FillChecking>DontCheck</FillChecking>
 					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
 					<ChoiceParameterLinks/>

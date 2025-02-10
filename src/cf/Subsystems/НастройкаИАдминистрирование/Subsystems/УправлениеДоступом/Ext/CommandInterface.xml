@@ -6,6 +6,11 @@
 				<xr:Common>false</xr:Common>
 			</Visibility>
 		</Command>
+		<Command name="0:59e0be79-f0de-49a9-a09b-5c1709b762c7">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
 		<Command name="DataProcessor.УправлениеРасчетомПрав.StandardCommand.Open">
 			<Visibility>
 				<xr:Common>false</xr:Common>

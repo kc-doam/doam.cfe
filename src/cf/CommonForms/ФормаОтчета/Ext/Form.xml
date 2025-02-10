@@ -5,6 +5,58 @@
 	<AutoURL>false</AutoURL>
 	<CommandBarLocation>None</CommandBarLocation>
 	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<MobileDeviceCommandBarContent>
+		<xr:Item>
+			<xr:Presentation/>
+			<xr:CheckState>0</xr:CheckState>
+			<xr:Value xsi:type="xs:string"/>
+		</xr:Item>
+		<xr:Item>
+			<xr:Presentation/>
+			<xr:CheckState>0</xr:CheckState>
+			<xr:Value xsi:type="xs:string"/>
+		</xr:Item>
+		<xr:Item>
+			<xr:Presentation/>
+			<xr:CheckState>0</xr:CheckState>
+			<xr:Value xsi:type="xs:string"/>
+		</xr:Item>
+		<xr:Item>
+			<xr:Presentation/>
+			<xr:CheckState>0</xr:CheckState>
+			<xr:Value xsi:type="xs:string"/>
+		</xr:Item>
+		<xr:Item>
+			<xr:Presentation/>
+			<xr:CheckState>0</xr:CheckState>
+			<xr:Value xsi:type="xs:string"/>
+		</xr:Item>
+		<xr:Item>
+			<xr:Presentation/>
+			<xr:CheckState>0</xr:CheckState>
+			<xr:Value xsi:type="xs:string"/>
+		</xr:Item>
+		<xr:Item>
+			<xr:Presentation/>
+			<xr:CheckState>0</xr:CheckState>
+			<xr:Value xsi:type="xs:string"/>
+		</xr:Item>
+		<xr:Item>
+			<xr:Presentation/>
+			<xr:CheckState>0</xr:CheckState>
+			<xr:Value xsi:type="xs:string"/>
+		</xr:Item>
+		<xr:Item>
+			<xr:Presentation/>
+			<xr:CheckState>0</xr:CheckState>
+			<xr:Value xsi:type="xs:string"/>
+		</xr:Item>
+		<xr:Item>
+			<xr:Presentation/>
+			<xr:CheckState>0</xr:CheckState>
+			<xr:Value xsi:type="xs:string"/>
+		</xr:Item>
+	</MobileDeviceCommandBarContent>
 	<CommandSet>
 		<ExcludedCommand>ReportSettings</ExcludedCommand>
 	</CommandSet>
@@ -1369,12 +1421,12 @@
 										<ChildItems>
 											<Button name="КонтекстноеМенюОбластиДанныхФильтроватьРавно" id="890">
 												<Type>CommandBarButton</Type>
-												<CommandName>0</CommandName>
+												<CommandName>92:409b9a53-7f7e-4178-86c1-33176c7c7a7a</CommandName>
 												<ExtendedTooltip name="КонтекстноеМенюОбластиДанныхФильтроватьРавноРасширеннаяПодсказка" id="891"/>
 											</Button>
 											<Button name="КонтекстноеМенюОбластиДанныхФильтроватьНеРавно" id="892">
 												<Type>CommandBarButton</Type>
-												<CommandName>0</CommandName>
+												<CommandName>93:409b9a53-7f7e-4178-86c1-33176c7c7a7a</CommandName>
 												<ExtendedTooltip name="КонтекстноеМенюОбластиДанныхФильтроватьНеРавноРасширеннаяПодсказка" id="893"/>
 											</Button>
 										</ChildItems>
@@ -1390,12 +1442,12 @@
 										<ChildItems>
 											<Button name="КонтекстноеМенюОбластиДанныхФильтроватьБольше" id="896">
 												<Type>CommandBarButton</Type>
-												<CommandName>0</CommandName>
+												<CommandName>81:409b9a53-7f7e-4178-86c1-33176c7c7a7a</CommandName>
 												<ExtendedTooltip name="КонтекстноеМенюОбластиДанныхФильтроватьБольшеРасширеннаяПодсказка" id="897"/>
 											</Button>
 											<Button name="КонтекстноеМенюОбластиДанныхФильтроватьМеньше" id="898">
 												<Type>CommandBarButton</Type>
-												<CommandName>0</CommandName>
+												<CommandName>94:409b9a53-7f7e-4178-86c1-33176c7c7a7a</CommandName>
 												<ExtendedTooltip name="КонтекстноеМенюОбластиДанныхФильтроватьМеньшеРасширеннаяПодсказка" id="899"/>
 											</Button>
 										</ChildItems>
@@ -1411,12 +1463,12 @@
 										<ChildItems>
 											<Button name="КонтекстноеМенюОбластиДанныхФильтроватьБольшеИлиРавно" id="902">
 												<Type>CommandBarButton</Type>
-												<CommandName>0</CommandName>
+												<CommandName>82:409b9a53-7f7e-4178-86c1-33176c7c7a7a</CommandName>
 												<ExtendedTooltip name="КонтекстноеМенюОбластиДанныхФильтроватьБольшеИлиРавноРасширеннаяПодсказка" id="903"/>
 											</Button>
 											<Button name="КонтекстноеМенюОбластиДанныхФильтроватьМеньшеИлиРавно" id="904">
 												<Type>CommandBarButton</Type>
-												<CommandName>0</CommandName>
+												<CommandName>95:409b9a53-7f7e-4178-86c1-33176c7c7a7a</CommandName>
 												<ExtendedTooltip name="КонтекстноеМенюОбластиДанныхФильтроватьМеньшеИлиРавноРасширеннаяПодсказка" id="905"/>
 											</Button>
 										</ChildItems>
@@ -1432,12 +1484,12 @@
 										<ChildItems>
 											<Button name="КонтекстноеМенюОбластиДанныхФильтроватьСодержит" id="908">
 												<Type>CommandBarButton</Type>
-												<CommandName>0</CommandName>
+												<CommandName>96:409b9a53-7f7e-4178-86c1-33176c7c7a7a</CommandName>
 												<ExtendedTooltip name="КонтекстноеМенюОбластиДанныхФильтроватьСодержитРасширеннаяПодсказка" id="909"/>
 											</Button>
 											<Button name="КонтекстноеМенюОбластиДанныхФильтроватьНеСодержит" id="910">
 												<Type>CommandBarButton</Type>
-												<CommandName>0</CommandName>
+												<CommandName>97:409b9a53-7f7e-4178-86c1-33176c7c7a7a</CommandName>
 												<ExtendedTooltip name="КонтекстноеМенюОбластиДанныхФильтроватьНеСодержитРасширеннаяПодсказка" id="911"/>
 											</Button>
 										</ChildItems>
@@ -1453,12 +1505,12 @@
 										<ChildItems>
 											<Button name="КонтекстноеМенюОбластиДанныхФильтроватьВСписке" id="914">
 												<Type>CommandBarButton</Type>
-												<CommandName>0</CommandName>
+												<CommandName>98:409b9a53-7f7e-4178-86c1-33176c7c7a7a</CommandName>
 												<ExtendedTooltip name="КонтекстноеМенюОбластиДанныхФильтроватьВСпискеРасширеннаяПодсказка" id="915"/>
 											</Button>
 											<Button name="КонтекстноеМенюОбластиДанныхФильтроватьНеВСписке" id="916">
 												<Type>CommandBarButton</Type>
-												<CommandName>0</CommandName>
+												<CommandName>99:409b9a53-7f7e-4178-86c1-33176c7c7a7a</CommandName>
 												<ExtendedTooltip name="КонтекстноеМенюОбластиДанныхФильтроватьНеВСпискеРасширеннаяПодсказка" id="917"/>
 											</Button>
 										</ChildItems>
@@ -1474,12 +1526,12 @@
 										<ChildItems>
 											<Button name="КонтекстноеМенюОбластиДанныхФильтроватьВСпискеПоИерархии" id="920">
 												<Type>CommandBarButton</Type>
-												<CommandName>0</CommandName>
+												<CommandName>100:409b9a53-7f7e-4178-86c1-33176c7c7a7a</CommandName>
 												<ExtendedTooltip name="КонтекстноеМенюОбластиДанныхФильтроватьВСпискеПоИерархииРасширеннаяПодсказка" id="921"/>
 											</Button>
 											<Button name="КонтекстноеМенюОбластиДанныхФильтроватьНеВСпискеПоИерархии" id="922">
 												<Type>CommandBarButton</Type>
-												<CommandName>0</CommandName>
+												<CommandName>83:409b9a53-7f7e-4178-86c1-33176c7c7a7a</CommandName>
 												<ExtendedTooltip name="КонтекстноеМенюОбластиДанныхФильтроватьНеВСпискеПоИерархииРасширеннаяПодсказка" id="923"/>
 											</Button>
 										</ChildItems>
@@ -1495,12 +1547,12 @@
 										<ChildItems>
 											<Button name="КонтекстноеМенюОбластиДанныхФильтроватьВИерархии" id="926">
 												<Type>CommandBarButton</Type>
-												<CommandName>0</CommandName>
+												<CommandName>91:409b9a53-7f7e-4178-86c1-33176c7c7a7a</CommandName>
 												<ExtendedTooltip name="КонтекстноеМенюОбластиДанныхФильтроватьВИерархииРасширеннаяПодсказка" id="927"/>
 											</Button>
 											<Button name="КонтекстноеМенюОбластиДанныхФильтроватьНеВИерархии" id="928">
 												<Type>CommandBarButton</Type>
-												<CommandName>0</CommandName>
+												<CommandName>101:409b9a53-7f7e-4178-86c1-33176c7c7a7a</CommandName>
 												<ExtendedTooltip name="КонтекстноеМенюОбластиДанныхФильтроватьНеВИерархииРасширеннаяПодсказка" id="929"/>
 											</Button>
 										</ChildItems>
@@ -1516,12 +1568,12 @@
 										<ChildItems>
 											<Button name="КонтекстноеМенюОбластиДанныхФильтроватьЗаполнено" id="932">
 												<Type>CommandBarButton</Type>
-												<CommandName>0</CommandName>
+												<CommandName>84:409b9a53-7f7e-4178-86c1-33176c7c7a7a</CommandName>
 												<ExtendedTooltip name="КонтекстноеМенюОбластиДанныхФильтроватьЗаполненоРасширеннаяПодсказка" id="933"/>
 											</Button>
 											<Button name="КонтекстноеМенюОбластиДанныхФильтроватьНеЗаполнено" id="934">
 												<Type>CommandBarButton</Type>
-												<CommandName>0</CommandName>
+												<CommandName>85:409b9a53-7f7e-4178-86c1-33176c7c7a7a</CommandName>
 												<ExtendedTooltip name="КонтекстноеМенюОбластиДанныхФильтроватьНеЗаполненоРасширеннаяПодсказка" id="935"/>
 											</Button>
 										</ChildItems>
@@ -1537,12 +1589,12 @@
 										<ChildItems>
 											<Button name="КонтекстноеМенюОбластиДанныхФильтроватьНачинаетсяС" id="938">
 												<Type>CommandBarButton</Type>
-												<CommandName>0</CommandName>
+												<CommandName>86:409b9a53-7f7e-4178-86c1-33176c7c7a7a</CommandName>
 												<ExtendedTooltip name="КонтекстноеМенюОбластиДанныхФильтроватьНачинаетсяСРасширеннаяПодсказка" id="939"/>
 											</Button>
 											<Button name="КонтекстноеМенюОбластиДанныхФильтроватьНеНачинаетсяС" id="940">
 												<Type>CommandBarButton</Type>
-												<CommandName>0</CommandName>
+												<CommandName>87:409b9a53-7f7e-4178-86c1-33176c7c7a7a</CommandName>
 												<ExtendedTooltip name="КонтекстноеМенюОбластиДанныхФильтроватьНеНачинаетсяСРасширеннаяПодсказка" id="941"/>
 											</Button>
 										</ChildItems>
@@ -1558,12 +1610,12 @@
 										<ChildItems>
 											<Button name="КонтекстноеМенюОбластиДанныхФильтроватьПодобно" id="944">
 												<Type>CommandBarButton</Type>
-												<CommandName>0</CommandName>
+												<CommandName>88:409b9a53-7f7e-4178-86c1-33176c7c7a7a</CommandName>
 												<ExtendedTooltip name="КонтекстноеМенюОбластиДанныхФильтроватьПодобноРасширеннаяПодсказка" id="945"/>
 											</Button>
 											<Button name="КонтекстноеМенюОбластиДанныхФильтроватьНеПодобно" id="946">
 												<Type>CommandBarButton</Type>
-												<CommandName>0</CommandName>
+												<CommandName>89:409b9a53-7f7e-4178-86c1-33176c7c7a7a</CommandName>
 												<ExtendedTooltip name="КонтекстноеМенюОбластиДанныхФильтроватьНеПодобноРасширеннаяПодсказка" id="947"/>
 											</Button>
 										</ChildItems>
@@ -2878,6 +2930,10 @@
 					<v8:content>Выбрать период</v8:content>
 				</v8:item>
 			</Title>
+			<Picture>
+				<xr:Ref>0</xr:Ref>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
+			</Picture>
 			<Action>Подключаемый_ВыбратьПериод</Action>
 			<Representation>Picture</Representation>
 		</Command>
@@ -2888,6 +2944,10 @@
 					<v8:content>Выбрать период</v8:content>
 				</v8:item>
 			</Title>
+			<Picture>
+				<xr:Ref>0</xr:Ref>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
+			</Picture>
 			<Action>Подключаемый_ВыбратьПериод</Action>
 			<Representation>Picture</Representation>
 		</Command>

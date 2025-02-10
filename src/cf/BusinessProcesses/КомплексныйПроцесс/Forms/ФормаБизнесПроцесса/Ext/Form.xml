@@ -1064,12 +1064,12 @@
 													</Button>
 													<Button name="ЭтапыКонтекстноеМенюКопироватьВБуферОбмена" id="97">
 														<Type>CommandBarButton</Type>
-														<CommandName>0</CommandName>
+														<CommandName>47:88078230-1f6b-415f-99e4-ad2ff73810cf</CommandName>
 														<ExtendedTooltip name="ЭтапыКонтекстноеМенюКопироватьВБуферОбменаExtendedTooltip" id="306"/>
 													</Button>
 													<Button name="ЭтапыКонтекстноеМенюВыделитьВсе" id="100">
 														<Type>CommandBarButton</Type>
-														<CommandName>0</CommandName>
+														<CommandName>47:51c99108-107c-43e1-8918-e48835bf2495</CommandName>
 														<ExtendedTooltip name="ЭтапыКонтекстноеМенюВыделитьВсеExtendedTooltip" id="307"/>
 													</Button>
 												</ChildItems>
@@ -5033,6 +5033,9 @@
 				</v8:item>
 			</ToolTip>
 			<Action>УстановитьГлавнуюЗадачу</Action>
+			<FunctionalOptions>
+				<Item>349378d1-abe3-44de-84a4-d525b08e0474</Item>
+			</FunctionalOptions>
 			<ModifiesSavedData>true</ModifiesSavedData>
 			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
@@ -5720,7 +5723,7 @@
 	<CommandInterface>
 		<NavigationPanel>
 			<Item>
-				<Command>0</Command>
+				<Command>0:76cea45a-a625-43d6-a4fd-8e4db2491121</Command>
 				<Type>Auto</Type>
 				<DefaultVisible>false</DefaultVisible>
 				<Visible>
@@ -5736,7 +5739,7 @@
 				</Visible>
 			</Item>
 			<Item>
-				<Command>0</Command>
+				<Command>0:dcbe38f6-5c48-426a-89d6-b35fb2263bed</Command>
 				<Type>Auto</Type>
 				<DefaultVisible>false</DefaultVisible>
 				<Visible>
@@ -5794,7 +5797,7 @@
 				</Visible>
 			</Item>
 			<Item>
-				<Command>0</Command>
+				<Command>0:2baf6d7a-12ed-4f22-ad96-92bb31b747ff</Command>
 				<Type>Auto</Type>
 				<DefaultVisible>false</DefaultVisible>
 				<Visible>

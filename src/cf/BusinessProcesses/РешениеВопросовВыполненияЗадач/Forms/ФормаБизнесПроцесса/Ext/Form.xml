@@ -1426,6 +1426,7 @@
 							<v8:content>Группа задачи</v8:content>
 						</v8:item>
 					</ToolTip>
+					<TitleDataPath>129</TitleDataPath>
 					<ExtendedTooltip name="ГруппаЗадачиРасширеннаяПодсказка" id="1318"/>
 					<ChildItems>
 						<Table name="Задачи" id="1988">
@@ -2675,7 +2676,7 @@
 	<CommandInterface>
 		<NavigationPanel>
 			<Item>
-				<Command>0</Command>
+				<Command>0:600cddad-143d-4e0b-8a0b-57fb8f241238</Command>
 				<Type>Auto</Type>
 				<DefaultVisible>false</DefaultVisible>
 				<Visible>
@@ -2683,7 +2684,7 @@
 				</Visible>
 			</Item>
 			<Item>
-				<Command>0</Command>
+				<Command>0:76cea45a-a625-43d6-a4fd-8e4db2491121</Command>
 				<Type>Auto</Type>
 				<DefaultVisible>false</DefaultVisible>
 				<Visible>
@@ -2715,7 +2716,7 @@
 				</Visible>
 			</Item>
 			<Item>
-				<Command>0</Command>
+				<Command>0:e560e5c6-7a97-44fd-af24-ebbd5585d527</Command>
 				<Type>Auto</Type>
 				<DefaultVisible>false</DefaultVisible>
 				<Visible>
@@ -2739,7 +2740,7 @@
 				</Visible>
 			</Item>
 			<Item>
-				<Command>0</Command>
+				<Command>0:29624fb4-c0e4-4355-a04a-1344eedb945a</Command>
 				<Type>Auto</Type>
 				<DefaultVisible>false</DefaultVisible>
 				<Visible>
@@ -2749,7 +2750,7 @@
 		</NavigationPanel>
 		<CommandBar>
 			<Item>
-				<Command>0</Command>
+				<Command>0:2baf6d7a-12ed-4f22-ad96-92bb31b747ff</Command>
 				<Type>Auto</Type>
 				<DefaultVisible>false</DefaultVisible>
 				<Visible>

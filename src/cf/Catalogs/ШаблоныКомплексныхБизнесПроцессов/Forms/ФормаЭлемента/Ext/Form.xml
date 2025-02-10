@@ -1116,12 +1116,12 @@
 											</Button>
 											<Button name="ЭтапыКонтекстноеМенюКопироватьВБуферОбмена" id="97">
 												<Type>CommandBarButton</Type>
-												<CommandName>0</CommandName>
+												<CommandName>47:88078230-1f6b-415f-99e4-ad2ff73810cf</CommandName>
 												<ExtendedTooltip name="ЭтапыКонтекстноеМенюКопироватьВБуферОбменаExtendedTooltip" id="362"/>
 											</Button>
 											<Button name="ЭтапыКонтекстноеМенюВыделитьВсе" id="100">
 												<Type>CommandBarButton</Type>
-												<CommandName>0</CommandName>
+												<CommandName>47:51c99108-107c-43e1-8918-e48835bf2495</CommandName>
 												<ExtendedTooltip name="ЭтапыКонтекстноеМенюВыделитьВсеExtendedTooltip" id="363"/>
 											</Button>
 											<Button name="ЭтапыКонтекстноеМенюИзменитьДействие" id="125">
@@ -4545,7 +4545,7 @@
 		</NavigationPanel>
 		<CommandBar>
 			<Item>
-				<Command>0</Command>
+				<Command>0:2baf6d7a-12ed-4f22-ad96-92bb31b747ff</Command>
 				<Type>Auto</Type>
 				<DefaultVisible>false</DefaultVisible>
 				<Visible>

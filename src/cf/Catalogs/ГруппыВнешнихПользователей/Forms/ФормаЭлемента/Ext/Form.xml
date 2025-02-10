@@ -210,7 +210,7 @@
 									<Button name="СоставКонтекстноеМенюСкопировать" id="50">
 										<Type>CommandBarButton</Type>
 										<SkipOnInput>false</SkipOnInput>
-										<CommandName>0</CommandName>
+										<CommandName>10:0ae4bea5-23be-42a7-b69e-97b11b29c453</CommandName>
 										<ExtendedTooltip name="СоставКонтекстноеМенюСкопироватьРасширеннаяПодсказка" id="161"/>
 									</Button>
 									<Button name="СоставКонтекстноеМенюУдалить" id="46">
@@ -265,7 +265,7 @@
 									<Button name="СоставСкопировать" id="49">
 										<Type>CommandBarButton</Type>
 										<SkipOnInput>false</SkipOnInput>
-										<CommandName>0</CommandName>
+										<CommandName>10:0ae4bea5-23be-42a7-b69e-97b11b29c453</CommandName>
 										<ExtendedTooltip name="СоставСкопироватьExtendedTooltip" id="165"/>
 									</Button>
 									<Button name="СоставУдалить" id="33">

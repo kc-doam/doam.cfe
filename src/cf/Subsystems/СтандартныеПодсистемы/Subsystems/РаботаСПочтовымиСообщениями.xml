@@ -27,6 +27,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Enum.ТипыТекстовЭлектронныхПисем</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ПриложитьФайл</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.НастройкаСистемнойУчетнойЗаписиЭлектроннойПочты</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">5cc3a29d-aa98-42bf-9800-f584229c8e46</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.РаботаСПочтовымиСообщениямиВызовСервера</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.ОтправкаТабличныхДокументовПоПочте</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.РаботаСПочтовымиСообщениямиПереопределяемый</xr:Item>

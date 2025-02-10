@@ -319,6 +319,7 @@
 							<Events>
 								<Event name="BeforeAddRow">СписокСертификатовПередНачаломДобавления</Event>
 								<Event name="BeforeDeleteRow">СписокСертификатовПередУдалением</Event>
+								<Event name="97365900-eadf-4dfd-a9aa-fbb9ecabd079">СписокСертификатовПриПолученииДанныхНаСервере</Event>
 								<Event name="BeforeRowChange">СписокСертификатовПередНачаломИзменения</Event>
 							</Events>
 							<ChildItems>

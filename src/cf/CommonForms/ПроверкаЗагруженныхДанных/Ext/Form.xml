@@ -338,7 +338,7 @@
 														</Button>
 														<Button name="ОбщаяКомандаСоздатьБизнесПроцесс" id="567">
 															<Type>CommandBarButton</Type>
-															<CommandName>0</CommandName>
+															<CommandName>0:1823d37a-3b32-4031-8996-56796c8dbe41</CommandName>
 															<DataPath>Items.ВходящиеДокументы.CurrentData.Ref</DataPath>
 															<ExtendedTooltip name="ОбщаяКомандаСоздатьБизнесПроцессExtendedTooltip" id="613"/>
 														</Button>
@@ -1939,7 +1939,7 @@
 												<Button name="КонтрагентыИзменить" id="526">
 													<Type>CommandBarButton</Type>
 													<Representation>PictureAndText</Representation>
-													<CommandName>0</CommandName>
+													<CommandName>446:b41f5bbc-ba5d-4888-8cd1-db246a371418</CommandName>
 													<Title>
 														<v8:item>
 															<v8:lang>ru</v8:lang>
@@ -2041,7 +2041,7 @@
 															<Button name="КонтрагентыИзменить1" id="580">
 																<Type>CommandBarButton</Type>
 																<Representation>PictureAndText</Representation>
-																<CommandName>0</CommandName>
+																<CommandName>446:b41f5bbc-ba5d-4888-8cd1-db246a371418</CommandName>
 																<Title>
 																	<v8:item>
 																		<v8:lang>ru</v8:lang>

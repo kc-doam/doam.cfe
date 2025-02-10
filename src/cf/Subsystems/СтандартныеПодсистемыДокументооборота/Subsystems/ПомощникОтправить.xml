@@ -20,8 +20,10 @@
 				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.ПомощникОтправить</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ПомощникОтправить</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ПомощникОтправитьПереопределяемый</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">56453a27-55d5-42af-b045-f583b3402492</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ПомощникОтправитьКлиент</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ПомощникОтправитьКлиентСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">cbb5ad00-d7b1-406d-8dc6-a9fa9f73c3e2</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ПомощникОтправитьКлиентСерверКОРП</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ПомощникОтправитьКОРП</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ПомощникОтправитьКлиентКОРП</xr:Item>

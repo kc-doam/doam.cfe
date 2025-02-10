@@ -506,7 +506,7 @@
 											</Button>
 											<Button name="СписокВнутренниеДокументыОбщаяКомандаСоздатьБизнесПроцесс" id="766">
 												<Type>CommandBarButton</Type>
-												<CommandName>0</CommandName>
+												<CommandName>0:1823d37a-3b32-4031-8996-56796c8dbe41</CommandName>
 												<DataPath>Items.СписокВнутренниеДокументы.CurrentData.Ref</DataPath>
 												<ExtendedTooltip name="СписокВнутренниеДокументыОбщаяКомандаСоздатьБизнесПроцессExtendedTooltip" id="828"/>
 											</Button>
@@ -533,13 +533,13 @@
 										<ChildItems>
 											<Button name="СписокВнутренниеДокументыСправочникВнутренниеДокументыПечатьКарточки" id="504">
 												<Type>CommandBarButton</Type>
-												<CommandName>0</CommandName>
+												<CommandName>0:e3975682-dfc3-433d-a714-2864a632aaa8</CommandName>
 												<DataPath>Items.СписокВнутренниеДокументы.CurrentData.Ref</DataPath>
 												<ExtendedTooltip name="СписокВнутренниеДокументыСправочникВнутренниеДокументыПечатьКарточкиExtendedTooltip" id="830"/>
 											</Button>
 											<Button name="СписокВнутренниеДокументыОбщаяКомандаДополнительныеОтчетыИОбработкиПечатныеФормы" id="549">
 												<Type>CommandBarButton</Type>
-												<CommandName>0</CommandName>
+												<CommandName>0:2baf6d7a-12ed-4f22-ad96-92bb31b747ff</CommandName>
 												<DataPath>Items.СписокВнутренниеДокументы.CurrentData.Ref</DataPath>
 												<ExtendedTooltip name="СписокВнутренниеДокументыОбщаяКомандаДополнительныеОтчетыИОбработкиПечатныеФормыExtendedTooltip" id="831"/>
 											</Button>
@@ -1092,7 +1092,7 @@
 											</Button>
 											<Button name="СписокВходящиеДокументыОбщаяКомандаСоздатьБизнесПроцесс" id="767">
 												<Type>CommandBarButton</Type>
-												<CommandName>0</CommandName>
+												<CommandName>0:1823d37a-3b32-4031-8996-56796c8dbe41</CommandName>
 												<DataPath>Items.СписокВходящиеДокументы.CurrentData.Ref</DataPath>
 												<ExtendedTooltip name="СписокВходящиеДокументыОбщаяКомандаСоздатьБизнесПроцессExtendedTooltip" id="869"/>
 											</Button>
@@ -1119,13 +1119,13 @@
 										<ChildItems>
 											<Button name="СписокВходящиеДокументыСправочникВходящиеДокументыПечатьКарточки" id="525">
 												<Type>CommandBarButton</Type>
-												<CommandName>0</CommandName>
+												<CommandName>0:648a4b16-e9e5-4b6f-9c56-e3300cea440a</CommandName>
 												<DataPath>Items.СписокВходящиеДокументы.CurrentData.Ref</DataPath>
 												<ExtendedTooltip name="СписокВходящиеДокументыСправочникВходящиеДокументыПечатьКарточкиExtendedTooltip" id="871"/>
 											</Button>
 											<Button name="СписокВходящиеДокументыОбщаяКомандаДополнительныеОтчетыИОбработкиПечатныеФормы" id="526">
 												<Type>CommandBarButton</Type>
-												<CommandName>0</CommandName>
+												<CommandName>0:2baf6d7a-12ed-4f22-ad96-92bb31b747ff</CommandName>
 												<DataPath>Items.СписокВходящиеДокументы.CurrentData.Ref</DataPath>
 												<ExtendedTooltip name="СписокВходящиеДокументыОбщаяКомандаДополнительныеОтчетыИОбработкиПечатныеФормыExtendedTooltip" id="872"/>
 											</Button>
@@ -1665,7 +1665,7 @@
 											</Button>
 											<Button name="СписокИсходящиеДокументыОбщаяКомандаСоздатьБизнесПроцесс" id="768">
 												<Type>CommandBarButton</Type>
-												<CommandName>0</CommandName>
+												<CommandName>0:1823d37a-3b32-4031-8996-56796c8dbe41</CommandName>
 												<DataPath>Items.СписокИсходящиеДокументы.CurrentData.Ref</DataPath>
 												<ExtendedTooltip name="СписокИсходящиеДокументыОбщаяКомандаСоздатьБизнесПроцессExtendedTooltip" id="908"/>
 											</Button>
@@ -1692,13 +1692,13 @@
 										<ChildItems>
 											<Button name="СписокИсходящиеДокументыСправочникИсходящиеДокументыПечатьКарточки" id="551">
 												<Type>CommandBarButton</Type>
-												<CommandName>0</CommandName>
+												<CommandName>0:01ca5d9e-0ced-41d0-b669-3eb6c83dbf51</CommandName>
 												<DataPath>Items.СписокИсходящиеДокументы.CurrentData.Ref</DataPath>
 												<ExtendedTooltip name="СписокИсходящиеДокументыСправочникИсходящиеДокументыПечатьКарточкиExtendedTooltip" id="910"/>
 											</Button>
 											<Button name="СписокИсходящиеДокументыОбщаяКомандаДополнительныеОтчетыИОбработкиПечатныеФормы" id="554">
 												<Type>CommandBarButton</Type>
-												<CommandName>0</CommandName>
+												<CommandName>0:2baf6d7a-12ed-4f22-ad96-92bb31b747ff</CommandName>
 												<DataPath>Items.СписокИсходящиеДокументы.CurrentData.Ref</DataPath>
 												<ExtendedTooltip name="СписокИсходящиеДокументыОбщаяКомандаДополнительныеОтчетыИОбработкиПечатныеФормыExtendedTooltip" id="911"/>
 											</Button>
@@ -2837,7 +2837,7 @@
 											</Button>
 											<Button name="СписокФайлыОбщаяКомандаСоздатьБизнесПроцесс" id="769">
 												<Type>CommandBarButton</Type>
-												<CommandName>0</CommandName>
+												<CommandName>0:1823d37a-3b32-4031-8996-56796c8dbe41</CommandName>
 												<DataPath>Items.СписокФайлы.CurrentData.Ref</DataPath>
 												<ExtendedTooltip name="СписокФайлыОбщаяКомандаСоздатьБизнесПроцессExtendedTooltip" id="999"/>
 											</Button>

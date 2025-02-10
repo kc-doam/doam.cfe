@@ -232,7 +232,7 @@
 					<xr:Comment/>
 					<xr:FullTextSearch>Use</xr:FullTextSearch>
 					<xr:ChoiceParameterLinks/>
-					<xr:FillValue xsi:type="xr:DesignTimeRef"/>
+					<xr:FillValue xsi:type="xr:DesignTimeRef">36c08512-12f1-4b72-bb0c-dc1110bdfa91.00000000-0000-0000-0000-000000000000</xr:FillValue>
 					<xr:Mask/>
 					<xr:ChoiceParameters/>
 				</xr:StandardAttribute>

@@ -626,7 +626,7 @@
 	<CommandInterface>
 		<NavigationPanel>
 			<Item>
-				<Command>0</Command>
+				<Command>0:116bcaad-e5ab-439b-a08d-5bcfaa44f958</Command>
 				<Type>Auto</Type>
 				<DefaultVisible>false</DefaultVisible>
 				<Visible>
@@ -634,7 +634,7 @@
 				</Visible>
 			</Item>
 			<Item>
-				<Command>0</Command>
+				<Command>0:13a5193b-2baf-4506-813d-eaf3d8b94827</Command>
 				<Type>Auto</Type>
 				<CommandGroup>FormNavigationPanelGoTo</CommandGroup>
 				<DefaultVisible>false</DefaultVisible>
@@ -663,7 +663,7 @@
 				</Visible>
 			</Item>
 			<Item>
-				<Command>0</Command>
+				<Command>0:76cea45a-a625-43d6-a4fd-8e4db2491121</Command>
 				<Type>Auto</Type>
 				<CommandGroup>FormNavigationPanelGoTo</CommandGroup>
 				<Index>2</Index>
@@ -673,7 +673,7 @@
 				</Visible>
 			</Item>
 			<Item>
-				<Command>0</Command>
+				<Command>3:33b1cd99-b3fe-4a50-8548-71ae3ce50323</Command>
 				<Type>Auto</Type>
 				<CommandGroup>FormNavigationPanelGoTo</CommandGroup>
 				<Index>4</Index>
@@ -692,7 +692,7 @@
 				</Visible>
 			</Item>
 			<Item>
-				<Command>0</Command>
+				<Command>0:29624fb4-c0e4-4355-a04a-1344eedb945a</Command>
 				<Type>Auto</Type>
 				<CommandGroup>FormNavigationPanelSeeAlso</CommandGroup>
 				<Index>1</Index>
@@ -759,7 +759,7 @@
 				</Visible>
 			</Item>
 			<Item>
-				<Command>0</Command>
+				<Command>0:2baf6d7a-12ed-4f22-ad96-92bb31b747ff</Command>
 				<Type>Auto</Type>
 				<CommandGroup>CommandGroup.Печать</CommandGroup>
 				<DefaultVisible>false</DefaultVisible>

@@ -133,7 +133,7 @@
 			</Popup>
 			<Button name="ФормаРегистрСведенийИндексыНумерацииИндексНумерации" id="29">
 				<Type>CommandBarButton</Type>
-				<CommandName>0</CommandName>
+				<CommandName>0:e5d31d93-6cf9-4c25-9c03-555bb967fda5</CommandName>
 				<DataPath>Объект.Ref</DataPath>
 				<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
 				<ExtendedTooltip name="ФормаРегистрСведенийИндексыНумерацииИндексНумерацииРасширеннаяПодсказка" id="30"/>
@@ -406,7 +406,7 @@
 	<CommandInterface>
 		<NavigationPanel>
 			<Item>
-				<Command>0</Command>
+				<Command>6:440d115d-a769-427e-891a-88d65fba2057</Command>
 				<Type>Auto</Type>
 				<CommandGroup>FormNavigationPanelGoTo</CommandGroup>
 				<DefaultVisible>false</DefaultVisible>
@@ -415,7 +415,7 @@
 				</Visible>
 			</Item>
 			<Item>
-				<Command>0</Command>
+				<Command>5:440d115d-a769-427e-891a-88d65fba2057</Command>
 				<Type>Auto</Type>
 				<CommandGroup>FormNavigationPanelGoTo</CommandGroup>
 				<Index>1</Index>
@@ -456,7 +456,7 @@
 		</NavigationPanel>
 		<CommandBar>
 			<Item>
-				<Command>0</Command>
+				<Command>0:2baf6d7a-12ed-4f22-ad96-92bb31b747ff</Command>
 				<Type>Auto</Type>
 				<DefaultVisible>false</DefaultVisible>
 				<Visible>

@@ -5,6 +5,7 @@
 		<ExcludedCommand>CancelSearch</ExcludedCommand>
 		<ExcludedCommand>Find</ExcludedCommand>
 	</CommandSet>
+	<GroupList>5:02023637-7868-4a5f-8576-835a76e0c9ba</GroupList>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
 		<ChildItems>
 			<Button name="ПоказыватьУдаленные" id="39">

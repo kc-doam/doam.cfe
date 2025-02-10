@@ -56,7 +56,7 @@
 	<CommandInterface>
 		<NavigationPanel>
 			<Item>
-				<Command>0</Command>
+				<Command>0:29624fb4-c0e4-4355-a04a-1344eedb945a</Command>
 				<Type>Added</Type>
 				<Attribute>Объект.Ref</Attribute>
 				<CommandGroup>FormNavigationPanelGoTo</CommandGroup>

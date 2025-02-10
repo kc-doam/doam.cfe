@@ -685,7 +685,7 @@
 	<CommandInterface>
 		<CommandBar>
 			<Item>
-				<Command>0</Command>
+				<Command>0:4ef362ee-0350-49fe-b40a-3ffa1576aa36</Command>
 				<Type>Auto</Type>
 				<CommandGroup>FormCommandBarImportant</CommandGroup>
 				<DefaultVisible>false</DefaultVisible>
@@ -694,7 +694,7 @@
 				</Visible>
 			</Item>
 			<Item>
-				<Command>0</Command>
+				<Command>0:4769b1a9-c88a-4d5e-9520-ea46da1ac861</Command>
 				<Type>Auto</Type>
 				<CommandGroup>FormCommandBarImportant</CommandGroup>
 				<Index>2</Index>
@@ -704,7 +704,7 @@
 				</Visible>
 			</Item>
 			<Item>
-				<Command>0</Command>
+				<Command>0:1ea304f6-8e8f-4479-aceb-086cf9709ce7</Command>
 				<Type>Auto</Type>
 				<CommandGroup>FormCommandBarImportant</CommandGroup>
 				<Index>1</Index>

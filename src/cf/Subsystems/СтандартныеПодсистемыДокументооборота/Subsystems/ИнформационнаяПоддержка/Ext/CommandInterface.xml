@@ -16,6 +16,11 @@
 				<xr:Common>false</xr:Common>
 			</Visibility>
 		</Command>
+		<Command name="0:ad1ecd4f-be69-4da2-8ee1-175051c6928b">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
 		<Command name="CommonCommand.ИнформационнаяПоддержкаОписаниеИзменений">
 			<Visibility>
 				<xr:Common>false</xr:Common>

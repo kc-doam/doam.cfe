@@ -280,13 +280,13 @@
 												</Button>
 												<Button name="ПользователиСортироватьСписокПоВозрастанию" id="737">
 													<Type>CommandBarButton</Type>
-													<CommandName>0</CommandName>
+													<CommandName>631:2bbe4e12-06d2-409b-a972-eea585125d83</CommandName>
 													<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
 													<ExtendedTooltip name="ПользователиСортироватьСписокПоВозрастаниюExtendedTooltip" id="738"/>
 												</Button>
 												<Button name="ПользователиСортироватьСписокПоУбыванию" id="739">
 													<Type>CommandBarButton</Type>
-													<CommandName>0</CommandName>
+													<CommandName>631:58b2a785-23f6-4b0e-a324-9a1323285595</CommandName>
 													<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
 													<ExtendedTooltip name="ПользователиСортироватьСписокПоУбываниюExtendedTooltip" id="740"/>
 												</Button>
@@ -732,7 +732,7 @@
 																		<ChildItems>
 																			<Button name="ТекстПисьмаКонтекстноеМенюПроверитьОрфографию" id="60">
 																				<Type>CommandBarButton</Type>
-																				<CommandName>0</CommandName>
+																				<CommandName>68:409b9a53-7f7e-4178-86c1-33176c7c7a7a</CommandName>
 																				<ExtendedTooltip name="ТекстПисьмаКонтекстноеМенюПроверитьОрфографиюExtendedTooltip" id="61"/>
 																			</Button>
 																		</ChildItems>
@@ -766,7 +766,7 @@
 																		<ChildItems>
 																			<Button name="ТекстПисьмаКакТекстовыйДокументКонтекстноеМенюПроверитьОрфографию" id="67">
 																				<Type>CommandBarButton</Type>
-																				<CommandName>0</CommandName>
+																				<CommandName>68:409b9a53-7f7e-4178-86c1-33176c7c7a7a</CommandName>
 																				<ExtendedTooltip name="ТекстПисьмаКакТекстовыйДокументКонтекстноеМенюПроверитьОрфографиюExtendedTooltip" id="68"/>
 																			</Button>
 																		</ChildItems>

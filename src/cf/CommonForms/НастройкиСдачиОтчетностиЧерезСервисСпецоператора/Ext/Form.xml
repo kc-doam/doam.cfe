@@ -31,6 +31,7 @@
 	</AutoCommandBar>
 	<Events>
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="c1bc0d3e-d35e-4207-a06b-ece68ed25314">ПриЗаписиНаСервере</Event>
 	</Events>
 	<ChildItems>
 		<InputField name="АдресСервисаНаправленийСдачиОтчетности" id="1">

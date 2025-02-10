@@ -67,12 +67,12 @@
 				<ChildItems>
 					<Button name="НастройкиВФормеДобавить" id="32">
 						<Type>CommandBarButton</Type>
-						<CommandName>0</CommandName>
+						<CommandName>18:b0016a68-ec64-4e6d-b905-c71fd62efc4c</CommandName>
 						<ExtendedTooltip name="НастройкиВФормеДобавитьExtendedTooltip" id="36"/>
 					</Button>
 					<Button name="НастройкиВФормеУдалить" id="33">
 						<Type>CommandBarButton</Type>
-						<CommandName>0</CommandName>
+						<CommandName>18:8d772f97-c0ef-47c0-9cb0-efea28c61341</CommandName>
 						<ExtendedTooltip name="НастройкиВФормеУдалитьExtendedTooltip" id="37"/>
 					</Button>
 					<ButtonGroup name="Группа1" id="15">

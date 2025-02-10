@@ -79,12 +79,12 @@
 					<ChildItems>
 						<Button name="УстановитьФлажки" id="21">
 							<Type>CommandBarButton</Type>
-							<CommandName>0</CommandName>
+							<CommandName>2:409b9a53-7f7e-4178-86c1-33176c7c7a7a</CommandName>
 							<ExtendedTooltip name="УстановитьФлажкиРасширеннаяПодсказка" id="22"/>
 						</Button>
 						<Button name="СнятьФлажки" id="23">
 							<Type>CommandBarButton</Type>
-							<CommandName>0</CommandName>
+							<CommandName>3:409b9a53-7f7e-4178-86c1-33176c7c7a7a</CommandName>
 							<ExtendedTooltip name="СнятьФлажкиРасширеннаяПодсказка" id="24"/>
 						</Button>
 					</ChildItems>

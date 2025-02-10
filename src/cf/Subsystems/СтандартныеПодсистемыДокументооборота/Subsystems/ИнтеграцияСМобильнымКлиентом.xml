@@ -32,6 +32,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.СтепеньГотовностиСообщенийИнтегрированныхСистем</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.РаботаСФайламиВнешнийВызов</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.РаботаСФайламиВызовСервера</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">b04b4979-1328-492e-8f87-bcff499c00c0</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ПротоколРаботыСМобильнымиКлиентами</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.ОбменСМобильнымиУдалениеСтарыхЗаписейПротокола</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Enum.ТипыСобытийПротоколаРаботыСМобильнымКлиентом</xr:Item>

@@ -198,7 +198,7 @@
 								</Button>
 								<Button name="СправочникПроектыСоздатьНаОсновании" id="458">
 									<Type>CommandBarButton</Type>
-									<CommandName>0</CommandName>
+									<CommandName>3:525be83d-4cfc-42a7-8c30-bfb8b0354fc1</CommandName>
 									<DataPath>ТекущееПисьмо</DataPath>
 									<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
 									<ExtendedTooltip name="СправочникПроектыСоздатьНаОснованииExtendedTooltip" id="673"/>
@@ -539,7 +539,7 @@
 										</Button>
 										<Button name="СправочникПроектыСоздатьНаОсновании_ВсеДействия" id="866">
 											<Type>CommandBarButton</Type>
-											<CommandName>0</CommandName>
+											<CommandName>3:525be83d-4cfc-42a7-8c30-bfb8b0354fc1</CommandName>
 											<DataPath>ТекущееПисьмо</DataPath>
 											<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
 											<ExtendedTooltip name="СправочникПроектыСоздатьНаОсновании_ВсеДействияРасширеннаяПодсказка" id="867"/>
@@ -553,7 +553,7 @@
 										</Button>
 										<Button name="ОбщаяКомандаСоздатьБизнесПроцесс_ВсеДействия" id="870">
 											<Type>CommandBarButton</Type>
-											<CommandName>0</CommandName>
+											<CommandName>0:1823d37a-3b32-4031-8996-56796c8dbe41</CommandName>
 											<DataPath>Items.Список.CurrentData.Ссылка</DataPath>
 											<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
 											<ExtendedTooltip name="ОбщаяКомандаСоздатьБизнесПроцесс_ВсеДействияРасширеннаяПодсказка" id="871"/>

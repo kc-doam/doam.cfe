@@ -348,7 +348,10 @@
 					<QuickChoice>Auto</QuickChoice>
 					<CreateOnInput>Auto</CreateOnInput>
 					<ChoiceForm/>
-					<LinkByType/>
+					<LinkByType>
+						<xr:DataPath>0:9fd16d51-91bb-4973-a7c4-cf4db87da8bf/0:ee0a8d23-660a-492b-a813-b57394acee05</xr:DataPath>
+						<xr:LinkItem>0</xr:LinkItem>
+					</LinkByType>
 					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
 					<Master>true</Master>
 					<MainFilter>true</MainFilter>

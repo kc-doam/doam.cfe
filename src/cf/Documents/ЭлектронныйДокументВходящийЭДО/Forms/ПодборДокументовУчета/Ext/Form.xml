@@ -411,7 +411,7 @@
 				</Visible>
 			</Item>
 			<Item>
-				<Command>0</Command>
+				<Command>3:5a291219-dd97-4a4d-9806-2c3eb41f1023</Command>
 				<Type>Auto</Type>
 				<Attribute>Документооборот.Ref</Attribute>
 				<DefaultVisible>false</DefaultVisible>
@@ -420,7 +420,7 @@
 				</Visible>
 			</Item>
 			<Item>
-				<Command>0</Command>
+				<Command>3:5c9ae424-4e82-4224-a2fc-5fba01c3c0d5</Command>
 				<Type>Auto</Type>
 				<Attribute>Документооборот.Ref</Attribute>
 				<DefaultVisible>false</DefaultVisible>
@@ -429,7 +429,7 @@
 				</Visible>
 			</Item>
 			<Item>
-				<Command>0</Command>
+				<Command>3:00498ebf-384e-4c1e-837e-3d6217e70b22</Command>
 				<Type>Auto</Type>
 				<Attribute>Документооборот.Ref</Attribute>
 				<DefaultVisible>false</DefaultVisible>
@@ -438,7 +438,7 @@
 				</Visible>
 			</Item>
 			<Item>
-				<Command>0</Command>
+				<Command>4:5c9ae424-4e82-4224-a2fc-5fba01c3c0d5</Command>
 				<Type>Auto</Type>
 				<DefaultVisible>false</DefaultVisible>
 				<Visible>
@@ -448,7 +448,7 @@
 		</NavigationPanel>
 		<CommandBar>
 			<Item>
-				<Command>0</Command>
+				<Command>0:a422ba76-5b7c-428f-955d-26b82240f5cd</Command>
 				<Type>Auto</Type>
 				<DefaultVisible>false</DefaultVisible>
 				<Visible>

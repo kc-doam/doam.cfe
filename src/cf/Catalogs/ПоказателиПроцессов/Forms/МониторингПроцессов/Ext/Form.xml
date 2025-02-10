@@ -282,6 +282,10 @@
 			<FileDragMode>AsFile</FileDragMode>
 			<DataPath>Список</DataPath>
 			<RowPictureDataPath>~Список.КартинкаОтклонениеОтЭталона</RowPictureDataPath>
+			<RowsPicture>
+				<xr:Ref>0:54f24bee-401b-4e9d-b1f4-97b6b61c3706</xr:Ref>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
+			</RowsPicture>
 			<RefreshRequest>PullFromTop</RefreshRequest>
 			<AutoRefresh>false</AutoRefresh>
 			<AutoRefreshPeriod>60</AutoRefreshPeriod>

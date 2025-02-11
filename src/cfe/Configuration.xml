@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.15">
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
 	<Configuration uuid="5c5d7984-f8be-4249-93b1-2d073bca5b58">
 		<InternalInfo>
 			<xr:ContainedObject>
@@ -51,7 +51,7 @@
 			</UsePurposes>
 			<ScriptVariant>Russian</ScriptVariant>
 			<Vendor>ИТД НАУиУ-1С</Vendor>
-			<Version>1.04.002</Version>
+			<Version>2.00.000</Version>
 			<DefaultLanguage>Language.Русский</DefaultLanguage>
 			<BriefInformation/>
 			<DetailedInformation/>
@@ -70,7 +70,7 @@
 			<CommonPicture>ЗаполнитьФорму</CommonPicture>
 			<CommonPicture>ПиктограммыЭлементов</CommonPicture>
 			<Role>ДобавлениеИзменениеКонтрагентов</Role>
-			<CommonModule>ОбщийДОАМ</CommonModule>
+			<CommonModule>ОбщегоНазначенияДОАМ</CommonModule>
 			<CommonModule>ОбщийДОАМКлиентСервер</CommonModule>
 			<FunctionalOption>ВестиУчетФактическихТрудозатрат</FunctionalOption>
 			<FunctionalOption>ДокументооборотИспользоватьОграничениеПравДоступа</FunctionalOption>
@@ -80,29 +80,30 @@
 			<CommonCommand>ДополнительныеСведенияКоманднаяПанель</CommonCommand>
 			<CommonCommand>СозданиеСвязанныхОбъектов</CommonCommand>
 			<CommonCommand>СоздатьПроцесс</CommonCommand>
-			<Constant>ИспользоватьБизнесПроцессыИЗадачи</Constant>
 			<Constant>ВестиУчетФактическихТрудозатрат</Constant>
 			<Constant>ДокументооборотИспользоватьОграничениеПравДоступа</Constant>
+			<Constant>ИспользоватьБизнесПроцессыИЗадачи</Constant>
 			<Constant>ИспользоватьДополнительныеРеквизитыИСведения</Constant>
-			<Catalog>Контрагенты</Catalog>
-			<Catalog>КонтактныеЛица</Catalog>
 			<Catalog>БанковскиеСчета</Catalog>
-			<Catalog>Контроль</Catalog>
-			<Catalog>Мероприятия</Catalog>
-			<Catalog>ФизическиеЛица</Catalog>
-			<Catalog>Пользователи</Catalog>
+			<Catalog>Валюты</Catalog>
 			<Catalog>ГруппыДоступаКонтрагентов</Catalog>
 			<Catalog>ЗаписиРабочегоКалендаря</Catalog>
-			<Catalog>НаборыДополнительныхРеквизитовИСведений</Catalog>
-			<Catalog>ЗначенияСвойствОбъектовИерархия</Catalog>
 			<Catalog>ЗначенияСвойствОбъектов</Catalog>
-			<Catalog>Организации</Catalog>
-			<Catalog>Валюты</Catalog>
+			<Catalog>ЗначенияСвойствОбъектовИерархия</Catalog>
 			<Catalog>КлассификаторБанков</Catalog>
-			<Enum>СпособыУказанияВремени</Enum>
-			<Enum>ЮрФизЛицо</Enum>
+			<Catalog>КонтактныеЛица</Catalog>
+			<Catalog>Контрагенты</Catalog>
+			<Catalog>Контроль</Catalog>
+			<Catalog>Мероприятия</Catalog>
+			<Catalog>НаборыДополнительныхРеквизитовИСведений</Catalog>
+			<Catalog>Организации</Catalog>
+			<Catalog>Пользователи</Catalog>
+			<Catalog>ФизическиеЛица</Catalog>
+			<Catalog>СтруктураПредприятия</Catalog>
 			<Enum>СтадииВзаимодействия</Enum>
+			<Enum>СпособыУказанияВремени</Enum>
 			<Enum>ТипыКонтролирующихОрганов</Enum>
+			<Enum>ЮрФизЛицо</Enum>
 			<DataProcessor>РасшДОАМ_СписокКонтрагентов</DataProcessor>
 			<InformationRegister>ДокументыФизическихЛиц</InformationRegister>
 			<ChartOfCharacteristicTypes>ДополнительныеРеквизитыИСведения</ChartOfCharacteristicTypes>

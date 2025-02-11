@@ -127,13 +127,8 @@
 			</c>
 			<c>
 				<c>
-					<f>11</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Место работы</v8:content>
-						</v8:item>
-					</tl>
+					<f>12</f>
+					<parameter>Заголовок3</parameter>
 				</c>
 			</c>
 			<c>
@@ -142,7 +137,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Статус</v8:content>
+							<v8:content>Статус (^чс)</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -199,49 +194,49 @@
 			<columnsID>50e17278-058a-498d-b62a-1d2abaa69f30</columnsID>
 			<c>
 				<c>
-					<f>12</f>
+					<f>13</f>
 					<parameter>Ответственный</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>12</f>
+					<f>13</f>
 					<parameter>Наименование</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>12</f>
+					<f>13</f>
 					<parameter>МестоРаботы</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>12</f>
+					<f>13</f>
 					<parameter>Статус</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>12</f>
+					<f>13</f>
 					<parameter>РИЦ</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>12</f>
+					<f>13</f>
 					<parameter>Проект</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>12</f>
+					<f>13</f>
 					<parameter>Компетенция</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>13</f>
+					<f>14</f>
 					<parameter>ПоследняяДата</parameter>
 				</c>
 			</c>
@@ -341,7 +336,7 @@
 		</row>
 	</rowsItem>
 	<templateMode>true</templateMode>
-	<defaultFormatIndex>14</defaultFormatIndex>
+	<defaultFormatIndex>15</defaultFormatIndex>
 	<height>27</height>
 	<vgRows>27</vgRows>
 	<merge>
@@ -427,6 +422,12 @@
 		<border>0</border>
 		<width>200</width>
 		<fillType>Text</fillType>
+		<columnSizeChange>Normal</columnSizeChange>
+	</format>
+	<format>
+		<border>0</border>
+		<width>200</width>
+		<fillType>Parameter</fillType>
 		<columnSizeChange>Normal</columnSizeChange>
 	</format>
 	<format>

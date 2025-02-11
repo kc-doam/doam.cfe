@@ -1,5 +1,6 @@
 {
 	"files.encoding": "utf8",
+	"files.insertFinalNewline": false,
 	"git.enableCommitSigning": true,
 	"language-1c-bsl.rootPath": "./src/cfe",
 	"workbench.tree.indent": 16

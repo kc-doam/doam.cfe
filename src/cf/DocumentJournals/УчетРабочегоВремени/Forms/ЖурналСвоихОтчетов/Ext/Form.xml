@@ -1,0 +1,427 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Мои отчеты</v8:content>
+		</v8:item>
+	</Title>
+	<AutoTitle>false</AutoTitle>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<CommandSet>
+		<ExcludedCommand>Create</ExcludedCommand>
+		<ExcludedCommand>CreateByParameter</ExcludedCommand>
+	</CommandSet>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+		<ChildItems>
+			<ButtonGroup name="КоманднаяПанельСоздать" id="20">
+				<ExtendedTooltip name="КоманднаяПанельСоздатьExtendedTooltip" id="32"/>
+				<ChildItems>
+					<Button name="СоздатьЕжедневныйОтчет" id="21">
+						<Type>CommandBarButton</Type>
+						<SkipOnInput>false</SkipOnInput>
+						<CommandName>Form.Command.СоздатьЕжедневныйОтчет</CommandName>
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Ежедневный отчет</v8:content>
+							</v8:item>
+						</Title>
+						<ExtendedTooltip name="СоздатьЕжедневныйОтчетExtendedTooltip" id="33"/>
+					</Button>
+					<Button name="СоздатьОтчетЗаНеделю" id="22">
+						<Type>CommandBarButton</Type>
+						<SkipOnInput>false</SkipOnInput>
+						<CommandName>Form.Command.СоздатьОтчетЗаНеделю</CommandName>
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Отчет за неделю</v8:content>
+							</v8:item>
+						</Title>
+						<ExtendedTooltip name="СоздатьОтчетЗаНеделюExtendedTooltip" id="34"/>
+					</Button>
+				</ChildItems>
+			</ButtonGroup>
+			<Popup name="КоманднаяПанельСоздатьПодменю" id="57">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Командная панель создать подменю</v8:content>
+					</v8:item>
+				</Title>
+				<ToolTip>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Командная панель создать подменю</v8:content>
+					</v8:item>
+				</ToolTip>
+				<Picture>
+					<xr:Ref>StdPicture.CreateListItem</xr:Ref>
+					<xr:LoadTransparent>true</xr:LoadTransparent>
+				</Picture>
+				<Representation>Picture</Representation>
+				<ExtendedTooltip name="КоманднаяПанельСоздатьПодменюРасширеннаяПодсказка" id="58"/>
+			</Popup>
+			<Button name="ФормаОткрытьОтчетЗаСегодня" id="28">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ОткрытьОтчетЗаСегодня</CommandName>
+				<ExtendedTooltip name="ФормаОткрытьОтчетЗаСегодняExtendedTooltip" id="35"/>
+			</Button>
+			<ButtonGroup name="КоманднаяПанельФормы" id="23">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Командная панель формы</v8:content>
+					</v8:item>
+				</Title>
+				<ToolTip>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Командная панель формы</v8:content>
+					</v8:item>
+				</ToolTip>
+				<CommandSource>Form</CommandSource>
+				<ExtendedTooltip name="КоманднаяПанельФормыExtendedTooltip" id="36"/>
+			</ButtonGroup>
+			<Button name="ФормаСправка" id="27">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.StandardCommand.Help</CommandName>
+				<ExtendedTooltip name="ФормаСправкаExtendedTooltip" id="37"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<Table name="Список" id="1">
+			<Representation>List</Representation>
+			<CommandBarLocation>None</CommandBarLocation>
+			<SkipOnInput>false</SkipOnInput>
+			<DefaultItem>true</DefaultItem>
+			<UseAlternationRowColor>true</UseAlternationRowColor>
+			<FileDragMode>AsFile</FileDragMode>
+			<DataPath>Список</DataPath>
+			<RowPictureDataPath>Список.DefaultPicture</RowPictureDataPath>
+			<CommandSet>
+				<ExcludedCommand>CreateByParameter</ExcludedCommand>
+			</CommandSet>
+			<SearchStringLocation>None</SearchStringLocation>
+			<ViewStatusLocation>None</ViewStatusLocation>
+			<SearchControlLocation>None</SearchControlLocation>
+			<RefreshRequest>PullFromTopOrBottom</RefreshRequest>
+			<AutoRefresh>false</AutoRefresh>
+			<AutoRefreshPeriod>60</AutoRefreshPeriod>
+			<Period>
+				<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+				<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+				<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+			</Period>
+			<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+			<RestoreCurrentRow>false</RestoreCurrentRow>
+			<TopLevelParent xsi:nil="true"/>
+			<ShowRoot>false</ShowRoot>
+			<AllowRootChoice>false</AllowRootChoice>
+			<UpdateOnDataChange>Auto</UpdateOnDataChange>
+			<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
+			<ContextMenu name="СписокКонтекстноеМеню" id="2">
+				<Autofill>false</Autofill>
+				<ChildItems>
+					<Button name="СписокКонтекстноеМенюСоздатьЕжедневныйОтчет" id="25">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.СоздатьЕжедневныйОтчет</CommandName>
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Ежедневный отчет</v8:content>
+							</v8:item>
+						</Title>
+						<ExtendedTooltip name="СписокКонтекстноеМенюСоздатьЕжедневныйОтчетExtendedTooltip" id="38"/>
+					</Button>
+					<Button name="СписокКонтекстноеМенюСоздатьОтчетЗаНеделю" id="26">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.СоздатьОтчетЗаНеделю</CommandName>
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Отчет за неделю</v8:content>
+							</v8:item>
+						</Title>
+						<ExtendedTooltip name="СписокКонтекстноеМенюСоздатьОтчетЗаНеделюExtendedTooltip" id="39"/>
+					</Button>
+					<Button name="СписокКонтекстноеМенюОткрытьОтчетЗаСегодня" id="29">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ОткрытьОтчетЗаСегодня</CommandName>
+						<ExtendedTooltip name="СписокКонтекстноеМенюОткрытьОтчетЗаСегодняExtendedTooltip" id="40"/>
+					</Button>
+					<ButtonGroup name="СписокКонтекстноеМенюГруппа" id="24">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Список контекстное меню группа</v8:content>
+							</v8:item>
+						</Title>
+						<ToolTip>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Список контекстное меню группа</v8:content>
+							</v8:item>
+						</ToolTip>
+						<CommandSource>Item.Список</CommandSource>
+						<ExtendedTooltip name="СписокКонтекстноеМенюГруппаExtendedTooltip" id="41"/>
+					</ButtonGroup>
+				</ChildItems>
+			</ContextMenu>
+			<AutoCommandBar name="СписокКоманднаяПанель" id="3"/>
+			<ExtendedTooltip name="СписокExtendedTooltip" id="42"/>
+			<SearchStringAddition name="СписокСтрокаПоиска" id="48">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокСтрокаПоискаКонтекстноеМеню" id="49"/>
+				<ExtendedTooltip name="СписокСтрокаПоискаРасширеннаяПодсказка" id="50"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="СписокСостояниеПросмотра" id="51">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокСостояниеПросмотраКонтекстноеМеню" id="52"/>
+				<ExtendedTooltip name="СписокСостояниеПросмотраРасширеннаяПодсказка" id="53"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="СписокУправлениеПоиском" id="54">
+				<AdditionSource>
+					<Item>Список</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="СписокУправлениеПоискомКонтекстноеМеню" id="55"/>
+				<ExtendedTooltip name="СписокУправлениеПоискомРасширеннаяПодсказка" id="56"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="Тип" id="8">
+					<DataPath>Список.Type</DataPath>
+					<DefaultItem>true</DefaultItem>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Тип</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ТипКонтекстноеМеню" id="9"/>
+					<ExtendedTooltip name="ТипExtendedTooltip" id="43"/>
+				</LabelField>
+				<InputField name="Дата" id="4" DisplayImportance="VeryHigh">
+					<DataPath>Список.Date</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата</v8:content>
+						</v8:item>
+					</Title>
+					<Wrap>false</Wrap>
+					<Format>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ДФ=dd.MM.yyyy</v8:content>
+						</v8:item>
+					</Format>
+					<ContextMenu name="ДатаКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="ДатаExtendedTooltip" id="44"/>
+				</InputField>
+				<InputField name="ДеньНедели" id="14">
+					<DataPath>Список.ДеньНедели</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>День недели</v8:content>
+						</v8:item>
+					</Title>
+					<Width>14</Width>
+					<Wrap>false</Wrap>
+					<Format>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ДФ=дддд</v8:content>
+						</v8:item>
+					</Format>
+					<ContextMenu name="ДеньНеделиКонтекстноеМеню" id="15"/>
+					<ExtendedTooltip name="ДеньНеделиExtendedTooltip" id="45"/>
+				</InputField>
+				<InputField name="ДлительностьРабот" id="18" DisplayImportance="High">
+					<DataPath>Список.ДлительностьРабот</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Всего часов</v8:content>
+						</v8:item>
+					</Title>
+					<Wrap>false</Wrap>
+					<ContextMenu name="ДлительностьРаботКонтекстноеМеню" id="19"/>
+					<ExtendedTooltip name="ДлительностьРаботExtendedTooltip" id="46"/>
+				</InputField>
+				<LabelField name="ДлительностьРабочая" id="59">
+					<DataPath>Список.ДлительностьРабочая</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Рабочих часов</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ДлительностьРабочаяКонтекстноеМеню" id="60"/>
+					<ExtendedTooltip name="ДлительностьРабочаяРасширеннаяПодсказка" id="61"/>
+				</LabelField>
+				<LabelField name="Подразделение" id="30">
+					<DataPath>Список.Подразделение</DataPath>
+					<UserVisible>
+						<xr:Common>false</xr:Common>
+					</UserVisible>
+					<ContextMenu name="ПодразделениеКонтекстноеМеню" id="31"/>
+					<ExtendedTooltip name="ПодразделениеExtendedTooltip" id="47"/>
+				</LabelField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Список" id="1">
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	ЖурналДокументовУчетРабочегоВремени.Ссылка,
+	ЖурналДокументовУчетРабочегоВремени.Дата,
+	ЖурналДокументовУчетРабочегоВремени.ПометкаУдаления,
+	ЖурналДокументовУчетРабочегоВремени.Номер,
+	ЖурналДокументовУчетРабочегоВремени.Проведен,
+	ЖурналДокументовУчетРабочегоВремени.Пользователь,
+	ЖурналДокументовУчетРабочегоВремени.Подразделение,
+	ЖурналДокументовУчетРабочегоВремени.Тип,
+	ВЫБОР
+		КОГДА ДЕНЬНЕДЕЛИ(ЖурналДокументовУчетРабочегоВремени.Дата) = 1
+			ТОГДА ЗНАЧЕНИЕ(Перечисление.ДниНедели.Понедельник)
+		КОГДА ДЕНЬНЕДЕЛИ(ЖурналДокументовУчетРабочегоВремени.Дата) = 2
+			ТОГДА ЗНАЧЕНИЕ(Перечисление.ДниНедели.Вторник)
+		КОГДА ДЕНЬНЕДЕЛИ(ЖурналДокументовУчетРабочегоВремени.Дата) = 3
+			ТОГДА ЗНАЧЕНИЕ(Перечисление.ДниНедели.Среда)
+		КОГДА ДЕНЬНЕДЕЛИ(ЖурналДокументовУчетРабочегоВремени.Дата) = 4
+			ТОГДА ЗНАЧЕНИЕ(Перечисление.ДниНедели.Четверг)
+		КОГДА ДЕНЬНЕДЕЛИ(ЖурналДокументовУчетРабочегоВремени.Дата) = 5
+			ТОГДА ЗНАЧЕНИЕ(Перечисление.ДниНедели.Пятница)
+		КОГДА ДЕНЬНЕДЕЛИ(ЖурналДокументовУчетРабочегоВремени.Дата) = 6
+			ТОГДА ЗНАЧЕНИЕ(Перечисление.ДниНедели.Суббота)
+		КОГДА ДЕНЬНЕДЕЛИ(ЖурналДокументовУчетРабочегоВремени.Дата) = 7
+			ТОГДА ЗНАЧЕНИЕ(Перечисление.ДниНедели.Воскресенье)
+	КОНЕЦ КАК ДеньНедели,
+	ЖурналДокументовУчетРабочегоВремени.ДлительностьРабот,
+	ЖурналДокументовУчетРабочегоВремени.ДлительностьРабочая,
+	ЖурналДокументовУчетРабочегоВремени.НекорректнаяДлительность
+ИЗ
+	ЖурналДокументов.УчетРабочегоВремени КАК ЖурналДокументовУчетРабочегоВремени
+ГДЕ
+	ЖурналДокументовУчетРабочегоВремени.Пользователь = &amp;Пользователь
+	И (
+		(&amp;ИспользоватьЕжедневныеОтчеты И ЖурналДокументовУчетРабочегоВремени.Ссылка ССЫЛКА Документ.ЕжедневныйОтчет)
+		ИЛИ (&amp;ИспользоватьЕженедельныеОтчеты И ЖурналДокументовУчетРабочегоВремени.Ссылка ССЫЛКА Документ.ЕженедельныйОтчет)
+	)</QueryText>
+				<MainTable>DocumentJournal.УчетРабочегоВремени</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="СоздатьЕжедневныйОтчет" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать ежедневный отчет</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать ежедневный отчет</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.AddListItem</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>СоздатьЕжедневныйОтчетВыполнить</Action>
+			<FunctionalOptions>
+				<Item>FunctionalOption.ИспользоватьЕжедневныеОтчеты</Item>
+			</FunctionalOptions>
+			<Representation>TextPicture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="СоздатьОтчетЗаНеделю" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать отчет за неделю</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать отчет за неделю</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.AddListItem</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>СоздатьОтчетЗаНеделюВыполнить</Action>
+			<FunctionalOptions>
+				<Item>FunctionalOption.ИспользоватьЕженедельныеОтчеты</Item>
+			</FunctionalOptions>
+			<Representation>TextPicture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ОткрытьОтчетЗаСегодня" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть отчет за сегодня</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть отчет за сегодня</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.InputFieldOpen</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ОткрытьОтчетЗаСегодня</Action>
+			<FunctionalOptions>
+				<Item>FunctionalOption.ИспользоватьЕжедневныеОтчеты</Item>
+			</FunctionalOptions>
+			<Representation>TextPicture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+</Form>

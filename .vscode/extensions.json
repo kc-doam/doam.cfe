@@ -1,5 +1,6 @@
 {
 	"recommendations": [
+		"uctakeoff.vscode-counter",
 		"1c-syntax.language-1c-bsl"
 	]
 }

@@ -1,7 +1,7 @@
 | Расширение      | Конфигурация           | Платформа 
 | :---            | :---                   | :--- 
 | Расширение ДОАМ | Документооборот 8 КОРП | 1С:Предприятие 8.3 
-| 2.0.0           | 2.1.29.17              | 8.3.24.1691
+| 2.0.0           | 2.1.29.17              | 8.3.26.1540
 
 ### Краткое описание
 
@@ -94,6 +94,20 @@
 
 
 ---
+# Подсчет количества файлов (проверка длины пути файлов)
+
+1.  Установить расширение `vscode-counter`
+2.  Выполнить через консоль (Ctrl+Shift+P) подсчет файлов в директории:  
+    ```
+    vscode count dir
+    ```
+3.  Открыть файл **results.csv** с заголовком `SEP=,` в кодировке **win1251**, и найти путь, превышающий 255 символов:  
+    ```
+    =ЕСЛИ(ДЛСТР(A1)>255;1;0)
+    ```
+
+
+---
 # Актуальные ссылки
 
 1. [Стек технологий для 1С](https://github.com/Oxotka/StackTechnologies1C)
@@ -105,8 +119,9 @@
 
 # Дополнительные ссылки
 
-1. [Расширения конфигураций 1С: учимся перехватывать методы](https://v8book.ru/public/628422/)
-2. [Поиск "Document Management"](https://edt.1c.ru/search/?q=Document+Management&where=edt)
-3. [Вопросы администрирования](https://www.1c-kpd.ru/knowledge/voprosy-administrirovaniya/) 
+1. [Собрать проект (команда)](https://habr.com/ru/articles/657991/#comment_24216169)
+2. [Расширения конфигураций 1С: учимся перехватывать методы](https://v8book.ru/public/628422/)
+3. [Поиск "Document Management"](https://edt.1c.ru/search/?q=Document+Management&where=edt)
+4. [Вопросы администрирования](https://www.1c-kpd.ru/knowledge/voprosy-administrirovaniya/) 
    [[?](https://its.1c.ru/db/doccorp21/content/789/1/issogl2_добавлять_руководителям_доступ_подчиненных)]
-4. [Ускорение медленной работы строк в 1С](https://expert.chistov.pro/1c/articles/1303356/)
+5. [Ускорение медленной работы строк в 1С](https://expert.chistov.pro/1c/articles/1303356/)

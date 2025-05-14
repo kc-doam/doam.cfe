@@ -1,3 +1,4 @@
+.VSCodeCounter/
 build/
 src/**/ConfigDumpInfo.xml
 *Signature.bin

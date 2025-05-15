@@ -26,7 +26,7 @@
 	</columns>
 	<columns>
 		<id>50e17278-058a-498d-b62a-1d2abaa69f30</id>
-		<size>8</size>
+		<size>9</size>
 		<columnsItem>
 			<index>0</index>
 			<column>
@@ -66,13 +66,19 @@
 		<columnsItem>
 			<index>6</index>
 			<column>
-				<formatIndex>2</formatIndex>
+				<formatIndex>8</formatIndex>
 			</column>
 		</columnsItem>
 		<columnsItem>
 			<index>7</index>
 			<column>
-				<formatIndex>8</formatIndex>
+				<formatIndex>9</formatIndex>
+			</column>
+		</columnsItem>
+		<columnsItem>
+			<index>8</index>
+			<column>
+				<formatIndex>10</formatIndex>
 			</column>
 		</columnsItem>
 	</columns>
@@ -81,11 +87,11 @@
 		<row>
 			<c>
 				<c>
-					<f>9</f>
+					<f>11</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Список поставщиков</v8:content>
+							<v8:content>Список поставщиков ДОАМ</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -105,7 +111,7 @@
 			<columnsID>50e17278-058a-498d-b62a-1d2abaa69f30</columnsID>
 			<c>
 				<c>
-					<f>10</f>
+					<f>12</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -116,7 +122,7 @@
 			</c>
 			<c>
 				<c>
-					<f>11</f>
+					<f>13</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -127,13 +133,24 @@
 			</c>
 			<c>
 				<c>
-					<f>12</f>
+					<f>14</f>
 					<parameter>Заголовок3</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>11</f>
+					<f>15</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Подразделение</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>13</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -144,7 +161,7 @@
 			</c>
 			<c>
 				<c>
-					<f>11</f>
+					<f>13</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -155,7 +172,7 @@
 			</c>
 			<c>
 				<c>
-					<f>11</f>
+					<f>13</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -166,7 +183,7 @@
 			</c>
 			<c>
 				<c>
-					<f>11</f>
+					<f>13</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -177,7 +194,7 @@
 			</c>
 			<c>
 				<c>
-					<f>11</f>
+					<f>13</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -194,49 +211,55 @@
 			<columnsID>50e17278-058a-498d-b62a-1d2abaa69f30</columnsID>
 			<c>
 				<c>
-					<f>13</f>
+					<f>16</f>
 					<parameter>Ответственный</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>13</f>
+					<f>16</f>
 					<parameter>Наименование</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>13</f>
+					<f>16</f>
 					<parameter>МестоРаботы</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>13</f>
+					<f>16</f>
+					<parameter>Подразделение</parameter>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>16</f>
 					<parameter>Статус</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>13</f>
+					<f>16</f>
 					<parameter>РИЦ</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>13</f>
+					<f>16</f>
 					<parameter>Проект</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>13</f>
+					<f>16</f>
 					<parameter>Компетенция</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>14</f>
+					<f>17</f>
 					<parameter>ПоследняяДата</parameter>
 				</c>
 			</c>
@@ -336,7 +359,7 @@
 		</row>
 	</rowsItem>
 	<templateMode>true</templateMode>
-	<defaultFormatIndex>15</defaultFormatIndex>
+	<defaultFormatIndex>18</defaultFormatIndex>
 	<height>27</height>
 	<vgRows>27</vgRows>
 	<merge>
@@ -388,13 +411,16 @@
 		<width>23</width>
 	</format>
 	<format>
-		<width>200</width>
+		<width>144</width>
 	</format>
 	<format>
-		<width>267</width>
+		<width>216</width>
 	</format>
 	<format>
-		<width>232</width>
+		<width>214</width>
+	</format>
+	<format>
+		<width>218</width>
 	</format>
 	<format>
 		<width>162</width>
@@ -404,6 +430,9 @@
 	</format>
 	<format>
 		<width>179</width>
+	</format>
+	<format>
+		<width>200</width>
 	</format>
 	<format>
 		<width>125</width>
@@ -429,6 +458,10 @@
 		<width>200</width>
 		<fillType>Parameter</fillType>
 		<columnSizeChange>Normal</columnSizeChange>
+	</format>
+	<format>
+		<border>0</border>
+		<width>200</width>
 	</format>
 	<format>
 		<border>1</border>

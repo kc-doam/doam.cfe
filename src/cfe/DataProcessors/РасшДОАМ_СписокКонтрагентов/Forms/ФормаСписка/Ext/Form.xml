@@ -271,6 +271,9 @@
 							<MaxWidth>14</MaxWidth>
 							<ContextMenu name="ОбзорHTMLКонтекстноеМеню" id="78"/>
 							<ExtendedTooltip name="ОбзорHTMLРасширеннаяПодсказка" id="79"/>
+							<Events>
+								<Event name="OnClick">ПредставлениеHTMLПриНажатии</Event>
+							</Events>
 						</HTMLDocumentField>
 					</ChildItems>
 				</UsualGroup>

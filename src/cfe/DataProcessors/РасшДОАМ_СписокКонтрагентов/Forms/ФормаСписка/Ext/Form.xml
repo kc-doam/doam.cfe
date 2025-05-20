@@ -57,10 +57,23 @@
 				</UsualGroup>
 			</ChildItems>
 		</UsualGroup>
-		<UsualGroup name="Группа1" id="82">
+		<UsualGroup name="ГруппаКонтрагентов" id="82">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа контрагентов</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа контрагентов</v8:content>
+				</v8:item>
+			</ToolTip>
 			<Group>Horizontal</Group>
 			<Representation>None</Representation>
-			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="83"/>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаКонтрагентовРасширеннаяПодсказка" id="83"/>
 			<ChildItems>
 				<UsualGroup name="ГруппаСписок" id="89">
 					<Title>
@@ -80,49 +93,15 @@
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="ГруппаСписокРасширеннаяПодсказка" id="90"/>
 					<ChildItems>
-						<UsualGroup name="ГруппаКоличествоКонтрагентов" id="91">
-							<Title>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Группа количество контрагентов</v8:content>
-								</v8:item>
-							</Title>
-							<ToolTip>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Группа количество контрагентов</v8:content>
-								</v8:item>
-							</ToolTip>
-							<Representation>None</Representation>
-							<ShowTitle>false</ShowTitle>
-							<ExtendedTooltip name="ГруппаКоличествоКонтрагентовРасширеннаяПодсказка" id="92"/>
-							<ChildItems>
-								<LabelField name="КоличествоКонтрагентов" id="86">
-									<DataPath>КоличествоКонтрагентов</DataPath>
-									<ContextMenu name="КоличествоКонтрагентовКонтекстноеМеню" id="87"/>
-									<ExtendedTooltip name="КоличествоКонтрагентовРасширеннаяПодсказка" id="88"/>
-								</LabelField>
-								<Button name="ОбновитьКоличествоКонтрагентов" id="93">
-									<Type>UsualButton</Type>
-									<Representation>Picture</Representation>
-									<CommandName>Form.Command.ОбновитьКоличествоКонтрагентов</CommandName>
-									<Picture>
-										<xr:Ref>StdPicture.Refresh</xr:Ref>
-										<xr:LoadTransparent>true</xr:LoadTransparent>
-									</Picture>
-									<ExtendedTooltip name="ОбновитьКоличествоКонтрагентовРасширеннаяПодсказка" id="94"/>
-								</Button>
-							</ChildItems>
-						</UsualGroup>
 						<Table name="Список" id="31">
 							<Representation>List</Representation>
+							<SelectionMode>SingleRow</SelectionMode>
 							<UseAlternationRowColor>true</UseAlternationRowColor>
 							<EnableStartDrag>true</EnableStartDrag>
 							<EnableDrag>true</EnableDrag>
 							<FileDragMode>AsFile</FileDragMode>
 							<DataPath>Список</DataPath>
 							<RowPictureDataPath>Список.DefaultPicture</RowPictureDataPath>
-							<SearchStringLocation>None</SearchStringLocation>
 							<SearchControlLocation>None</SearchControlLocation>
 							<AutoRefresh>false</AutoRefresh>
 							<AutoRefreshPeriod>60</AutoRefreshPeriod>
@@ -142,9 +121,13 @@
 							<ContextMenu name="СписокКонтекстноеМеню" id="32"/>
 							<AutoCommandBar name="СписокКоманднаяПанель" id="33">
 								<ChildItems>
-									<Button name="СписокВыгрузитьКонтрагентов" id="84">
+									<Button name="СписокВыгрузитьКонтрагентов" id="84" DisplayImportance="VeryHigh">
 										<Type>CommandBarButton</Type>
 										<CommandName>Form.Command.ВыгрузитьКонтрагентов</CommandName>
+										<Picture>
+											<xr:Ref>StdPicture.OutputList</xr:Ref>
+											<xr:LoadTransparent>true</xr:LoadTransparent>
+										</Picture>
 										<ExtendedTooltip name="СписокВыгрузитьКонтрагентовРасширеннаяПодсказка" id="85"/>
 									</Button>
 									<Button name="СписокНайти" id="58">
@@ -194,6 +177,7 @@
 								<ExtendedTooltip name="СписокСтрокаПоискаРасширеннаяПодсказка" id="37"/>
 							</SearchStringAddition>
 							<ViewStatusAddition name="СписокСостояниеПросмотра" id="38">
+								<Enabled>false</Enabled>
 								<AdditionSource>
 									<Item>Список</Item>
 									<Type>ViewStatusRepresentation</Type>
@@ -240,7 +224,6 @@
 					</ChildItems>
 				</UsualGroup>
 				<UsualGroup name="ГруппаМиникарточка" id="75">
-					<Visible>false</Visible>
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -258,6 +241,40 @@
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="ГруппаМиникарточкаРасширеннаяПодсказка" id="76"/>
 					<ChildItems>
+						<UsualGroup name="ГруппаКоличествоКонтрагентов" id="91">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа количество контрагентов</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа количество контрагентов</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаКоличествоКонтрагентовРасширеннаяПодсказка" id="92"/>
+							<ChildItems>
+								<LabelField name="КоличествоКонтрагентов" id="86">
+									<DataPath>КоличествоКонтрагентов</DataPath>
+									<ContextMenu name="КоличествоКонтрагентовКонтекстноеМеню" id="87"/>
+									<ExtendedTooltip name="КоличествоКонтрагентовРасширеннаяПодсказка" id="88"/>
+								</LabelField>
+								<Button name="ОбновитьКоличествоКонтрагентов" id="93">
+									<Type>UsualButton</Type>
+									<Representation>Picture</Representation>
+									<CommandName>Form.Command.ОбновитьКоличествоКонтрагентов</CommandName>
+									<Picture>
+										<xr:Ref>StdPicture.Refresh</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ExtendedTooltip name="ОбновитьКоличествоКонтрагентовРасширеннаяПодсказка" id="94"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
 						<HTMLDocumentField name="ОбзорHTML" id="77">
 							<DataPath>ОбзорHTML</DataPath>
 							<TitleLocation>None</TitleLocation>
@@ -308,6 +325,11 @@
 				<MainTable>Catalog.Контрагенты</MainTable>
 				<ListSettings>
 					<dcsset:filter>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">Ссылка.Наименование</dcsset:left>
+							<dcsset:comparisonType>Contains</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:string"/>
+						</dcsset:item>
 						<dcsset:viewMode>Normal</dcsset:viewMode>
 						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
 					</dcsset:filter>
@@ -316,8 +338,23 @@
 						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
 					</dcsset:order>
 					<dcsset:conditionalAppearance>
+						<dcsset:item>
+							<dcsset:selection/>
+							<dcsset:filter>
+								<dcsset:item xsi:type="dcsset:FilterItemComparison">
+									<dcsset:left xsi:type="dcscor:Field">Ссылка.ТакжеСотрудничает_в_ДОАМ</dcsset:left>
+									<dcsset:comparisonType>Filled</dcsset:comparisonType>
+								</dcsset:item>
+							</dcsset:filter>
+							<dcsset:appearance>
+								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+									<dcscor:parameter>ЦветФона</dcscor:parameter>
+									<dcscor:value xsi:type="v8ui:Color">web:HoneyDew</dcscor:value>
+								</dcscor:item>
+							</dcsset:appearance>
+						</dcsset:item>
 						<dcsset:viewMode>Normal</dcsset:viewMode>
-						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+						<dcsset:userSettingID>7b32c5dc-bfb5-4a17-a17e-7043c1021a9e</dcsset:userSettingID>
 					</dcsset:conditionalAppearance>
 					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
 					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>

@@ -2,9 +2,10 @@
 
 ### Восстановить локальное содержимое файлов после экспорта в неверную директорию
 
-``` nix
-git restore --source origin/master . && git status
-```
+* *Действие необратимо*  
+    ``` nix
+    git clean -fd && git checkout -- .
+    ```
 
 
 ---

@@ -134,6 +134,18 @@
 					<Comment/>
 				</Properties>
 			</EnumValue>
+			<EnumValue uuid="740b3580-57fa-42d1-8c1d-63dff6ad6dde">
+				<Properties>
+					<Name>КонфликтнаяСитуация</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Конфликтная ситуация</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
 			<EnumValue uuid="fa8502d1-000f-48e7-9e14-368bd50d3a51">
 				<Properties>
 					<Name>Расценки</Name>

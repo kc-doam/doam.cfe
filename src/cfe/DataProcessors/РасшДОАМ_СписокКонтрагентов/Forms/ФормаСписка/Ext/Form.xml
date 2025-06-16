@@ -24,7 +24,7 @@
 			</ToolTip>
 			<Representation>NormalSeparation</Representation>
 			<ShowTitle>false</ShowTitle>
-			<BackColor>#FDF5C7</BackColor>
+			<BackColor>web:Ivory</BackColor>
 			<ExtendedTooltip name="ГруппаВсеОтборыРасширеннаяПодсказка" id="67"/>
 			<ChildItems>
 				<UsualGroup name="ГруппаПользовательскихНастроек" id="25">
@@ -95,10 +95,10 @@
 					<ChildItems>
 						<Table name="Список" id="31">
 							<Representation>List</Representation>
+							<DefaultItem>true</DefaultItem>
 							<SelectionMode>SingleRow</SelectionMode>
 							<UseAlternationRowColor>true</UseAlternationRowColor>
-							<EnableStartDrag>true</EnableStartDrag>
-							<EnableDrag>true</EnableDrag>
+							<SearchOnInput>Use</SearchOnInput>
 							<FileDragMode>AsFile</FileDragMode>
 							<DataPath>Список</DataPath>
 							<RowPictureDataPath>Список.DefaultPicture</RowPictureDataPath>
@@ -197,16 +197,16 @@
 								<Event name="OnActivateRow">СписокПриАктивизацииСтроки</Event>
 							</Events>
 							<ChildItems>
-								<LabelField name="СписокСсылкаОтветственныйНаименование" id="68">
-									<DataPath>Список.Ref.Ответственный.Description</DataPath>
+								<LabelField name="СписокСсылкаОтветственный" id="68">
+									<DataPath>Список.Ref.Ответственный</DataPath>
 									<Title>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
 											<v8:content>Ответственный</v8:content>
 										</v8:item>
 									</Title>
-									<ContextMenu name="СписокСсылкаОтветственныйНаименованиеКонтекстноеМеню" id="69"/>
-									<ExtendedTooltip name="СписокСсылкаОтветственныйНаименованиеРасширеннаяПодсказка" id="70"/>
+									<ContextMenu name="СписокСсылкаОтветственныйКонтекстноеМеню" id="69"/>
+									<ExtendedTooltip name="СписокСсылкаОтветственныйРасширеннаяПодсказка" id="70"/>
 								</LabelField>
 								<LabelField name="СписокСсылка" id="44">
 									<DataPath>Список.Ref</DataPath>
@@ -323,13 +323,9 @@
 ИЗ
 	Справочник.Контрагенты КАК Контрагенты</QueryText>
 				<MainTable>Catalog.Контрагенты</MainTable>
+				<AutoSaveUserSettings>false</AutoSaveUserSettings>
 				<ListSettings>
 					<dcsset:filter>
-						<dcsset:item xsi:type="dcsset:FilterItemComparison">
-							<dcsset:left xsi:type="dcscor:Field">Ссылка.Наименование</dcsset:left>
-							<dcsset:comparisonType>Contains</dcsset:comparisonType>
-							<dcsset:right xsi:type="xs:string"/>
-						</dcsset:item>
 						<dcsset:viewMode>Normal</dcsset:viewMode>
 						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
 					</dcsset:filter>
@@ -342,6 +338,21 @@
 							<dcsset:selection/>
 							<dcsset:filter>
 								<dcsset:item xsi:type="dcsset:FilterItemComparison">
+									<dcsset:left xsi:type="dcscor:Field">Ссылка.ТакжеСотрудничает_в_ДОАМ</dcsset:left>
+									<dcsset:comparisonType>Filled</dcsset:comparisonType>
+								</dcsset:item>
+							</dcsset:filter>
+							<dcsset:appearance>
+								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+									<dcscor:parameter>ЦветФона</dcscor:parameter>
+									<dcscor:value xsi:type="v8ui:Color">web:HoneyDew</dcscor:value>
+								</dcscor:item>
+							</dcsset:appearance>
+						</dcsset:item>
+						<dcsset:item>
+							<dcsset:selection/>
+							<dcsset:filter>
+								<dcsset:item xsi:type="dcsset:FilterItemComparison">
 									<dcsset:left xsi:type="dcscor:Field">Ссылка.ПрименениеЭДО</dcsset:left>
 									<dcsset:comparisonType>Equal</dcsset:comparisonType>
 									<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
@@ -349,8 +360,8 @@
 							</dcsset:filter>
 							<dcsset:appearance>
 								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-									<dcscor:parameter>ЦветФона</dcscor:parameter>
-									<dcscor:value xsi:type="v8ui:Color">#FDF5C7</dcscor:value>
+									<dcscor:parameter>ЦветТекста</dcscor:parameter>
+									<dcscor:value xsi:type="v8ui:Color">web:DarkSlateBlue</dcscor:value>
 								</dcscor:item>
 							</dcsset:appearance>
 						</dcsset:item>
@@ -471,7 +482,7 @@
 				</v8:item>
 			</ToolTip>
 			<Picture>
-				<xr:Ref>StdPicture.Print</xr:Ref>
+				<xr:Ref>StdPicture.OutputList</xr:Ref>
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
 			<Action>ПечатьСписка</Action>

@@ -121,15 +121,33 @@
 							<ContextMenu name="СписокКонтекстноеМеню" id="32"/>
 							<AutoCommandBar name="СписокКоманднаяПанель" id="33">
 								<ChildItems>
-									<Button name="СписокВыгрузитьКонтрагентов" id="84" DisplayImportance="VeryHigh">
-										<Type>CommandBarButton</Type>
-										<CommandName>Form.Command.ВыгрузитьКонтрагентов</CommandName>
-										<Picture>
-											<xr:Ref>StdPicture.OutputList</xr:Ref>
-											<xr:LoadTransparent>true</xr:LoadTransparent>
-										</Picture>
-										<ExtendedTooltip name="СписокВыгрузитьКонтрагентовРасширеннаяПодсказка" id="85"/>
-									</Button>
+									<ButtonGroup name="ГруппаВыгрузка" id="95" DisplayImportance="VeryHigh">
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Группа выгрузка</v8:content>
+											</v8:item>
+										</Title>
+										<ToolTip>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Группа выгрузка</v8:content>
+											</v8:item>
+										</ToolTip>
+										<ExtendedTooltip name="ГруппаВыгрузкаРасширеннаяПодсказка" id="96"/>
+										<ChildItems>
+											<Button name="СписокВыгрузитьКонтрагентов" id="84" DisplayImportance="VeryHigh">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.ВыгрузитьКонтрагентов</CommandName>
+												<ExtendedTooltip name="СписокВыгрузитьКонтрагентовРасширеннаяПодсказка" id="85"/>
+											</Button>
+											<Button name="СписокВыгрузитьКонтрагентовИНН" id="97">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.ВыгрузитьКонтрагентовИНН</CommandName>
+												<ExtendedTooltip name="СписокВыгрузитьКонтрагентовИННРасширеннаяПодсказка" id="98"/>
+											</Button>
+										</ChildItems>
+									</ButtonGroup>
 									<Button name="СписокНайти" id="58">
 										<Type>CommandBarButton</Type>
 										<Representation>PictureAndText</Representation>
@@ -177,7 +195,6 @@
 								<ExtendedTooltip name="СписокСтрокаПоискаРасширеннаяПодсказка" id="37"/>
 							</SearchStringAddition>
 							<ViewStatusAddition name="СписокСостояниеПросмотра" id="38">
-								<Enabled>false</Enabled>
 								<AdditionSource>
 									<Item>Список</Item>
 									<Type>ViewStatusRepresentation</Type>
@@ -258,11 +275,6 @@
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="ГруппаКоличествоКонтрагентовРасширеннаяПодсказка" id="92"/>
 							<ChildItems>
-								<LabelField name="КоличествоКонтрагентов" id="86">
-									<DataPath>КоличествоКонтрагентов</DataPath>
-									<ContextMenu name="КоличествоКонтрагентовКонтекстноеМеню" id="87"/>
-									<ExtendedTooltip name="КоличествоКонтрагентовРасширеннаяПодсказка" id="88"/>
-								</LabelField>
 								<Button name="ОбновитьКоличествоКонтрагентов" id="93">
 									<Type>UsualButton</Type>
 									<Representation>Picture</Representation>
@@ -273,6 +285,11 @@
 									</Picture>
 									<ExtendedTooltip name="ОбновитьКоличествоКонтрагентовРасширеннаяПодсказка" id="94"/>
 								</Button>
+								<LabelField name="КоличествоКонтрагентов" id="86">
+									<DataPath>КоличествоКонтрагентов</DataPath>
+									<ContextMenu name="КоличествоКонтрагентовКонтекстноеМеню" id="87"/>
+									<ExtendedTooltip name="КоличествоКонтрагентовРасширеннаяПодсказка" id="88"/>
+								</LabelField>
 							</ChildItems>
 						</UsualGroup>
 						<HTMLDocumentField name="ОбзорHTML" id="77">
@@ -323,7 +340,6 @@
 ИЗ
 	Справочник.Контрагенты КАК Контрагенты</QueryText>
 				<MainTable>Catalog.Контрагенты</MainTable>
-				<AutoSaveUserSettings>false</AutoSaveUserSettings>
 				<ListSettings>
 					<dcsset:filter>
 						<dcsset:viewMode>Normal</dcsset:viewMode>
@@ -418,6 +434,21 @@
 				</v8:NumberQualifiers>
 			</Type>
 		</Attribute>
+		<Attribute name="АдресПараметровКлиентаВХранилище" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Адрес в хранилище</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
 	</Attributes>
 	<Commands>
 		<Command name="ПерезагрузитьСписок" id="3">
@@ -503,6 +534,26 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ОбновитьКоличествоКонтрагентов</Action>
+		</Command>
+		<Command name="ВыгрузитьКонтрагентовИНН" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выгрузить контрагентов ИНН</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выгрузить контрагентов ИНН</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.ChooseValue</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ПечатьСписка</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 	</Commands>
 </Form>

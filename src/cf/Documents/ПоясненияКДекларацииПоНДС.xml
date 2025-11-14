@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.19">
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
 	<Document uuid="ecdf3348-7bc5-4e1b-a5a7-d78c7ed3aa56">
 		<InternalInfo>
 			<xr:GeneratedType name="DocumentObject.ПоясненияКДекларацииПоНДС" category="Object">
@@ -561,6 +561,7 @@
 							<xr:ChoiceParameters/>
 						</xr:StandardAttribute>
 					</StandardAttributes>
+					<LineNumberLength>5</LineNumberLength>
 				</Properties>
 				<ChildObjects>
 					<Attribute uuid="c4003144-241e-4820-8579-e70503020e77">
@@ -2212,6 +2213,7 @@
 							<xr:ChoiceParameters/>
 						</xr:StandardAttribute>
 					</StandardAttributes>
+					<LineNumberLength>5</LineNumberLength>
 				</Properties>
 				<ChildObjects>
 					<Attribute uuid="d7b0112e-dd0c-4b9d-9a21-059af4ae2bda">
@@ -3863,6 +3865,7 @@
 							<xr:ChoiceParameters/>
 						</xr:StandardAttribute>
 					</StandardAttributes>
+					<LineNumberLength>5</LineNumberLength>
 				</Properties>
 				<ChildObjects>
 					<Attribute uuid="7fc1c0eb-2afb-4f97-9ff6-cec78b377078">
@@ -5938,6 +5941,7 @@
 							<xr:ChoiceParameters/>
 						</xr:StandardAttribute>
 					</StandardAttributes>
+					<LineNumberLength>5</LineNumberLength>
 				</Properties>
 				<ChildObjects>
 					<Attribute uuid="1ccde273-0a13-4d03-8281-d181137e21ed">
@@ -8013,6 +8017,7 @@
 							<xr:ChoiceParameters/>
 						</xr:StandardAttribute>
 					</StandardAttributes>
+					<LineNumberLength>5</LineNumberLength>
 				</Properties>
 				<ChildObjects>
 					<Attribute uuid="00c9ab36-e8ae-4ed9-b839-81a5028286db">
@@ -9168,6 +9173,7 @@
 							<xr:ChoiceParameters/>
 						</xr:StandardAttribute>
 					</StandardAttributes>
+					<LineNumberLength>5</LineNumberLength>
 				</Properties>
 				<ChildObjects>
 					<Attribute uuid="beaa9b51-1d1c-4b05-b0e0-f2e9c3b3990f">
@@ -10991,6 +10997,7 @@
 							<xr:ChoiceParameters/>
 						</xr:StandardAttribute>
 					</StandardAttributes>
+					<LineNumberLength>5</LineNumberLength>
 				</Properties>
 				<ChildObjects>
 					<Attribute uuid="dd9d19c5-ed79-428c-85e7-46ed56d59616">
@@ -11784,6 +11791,7 @@
 							<xr:ChoiceParameters/>
 						</xr:StandardAttribute>
 					</StandardAttributes>
+					<LineNumberLength>5</LineNumberLength>
 				</Properties>
 				<ChildObjects>
 					<Attribute uuid="5b01547f-ed6a-46eb-abd9-a7d74e5fa6fb">
@@ -11962,6 +11970,7 @@
 							<xr:ChoiceParameters/>
 						</xr:StandardAttribute>
 					</StandardAttributes>
+					<LineNumberLength>5</LineNumberLength>
 				</Properties>
 				<ChildObjects>
 					<Attribute uuid="5a033d8c-b9a7-44a9-aa38-83c27bc97651">
@@ -12139,6 +12148,7 @@
 							<xr:ChoiceParameters/>
 						</xr:StandardAttribute>
 					</StandardAttributes>
+					<LineNumberLength>5</LineNumberLength>
 				</Properties>
 				<ChildObjects>
 					<Attribute uuid="d4611f2b-7d13-4cb1-abc8-af01f73c0024">
@@ -12275,6 +12285,7 @@
 							<xr:ChoiceParameters/>
 						</xr:StandardAttribute>
 					</StandardAttributes>
+					<LineNumberLength>5</LineNumberLength>
 				</Properties>
 				<ChildObjects>
 					<Attribute uuid="36e4d62d-27e1-4f6b-8f90-7694bebb3705">
@@ -12786,6 +12797,7 @@
 							<xr:ChoiceParameters/>
 						</xr:StandardAttribute>
 					</StandardAttributes>
+					<LineNumberLength>5</LineNumberLength>
 				</Properties>
 				<ChildObjects>
 					<Attribute uuid="eba9f887-7e3b-469c-8e2d-9b8c7564cc60">
@@ -13087,6 +13099,7 @@
 							<xr:ChoiceParameters/>
 						</xr:StandardAttribute>
 					</StandardAttributes>
+					<LineNumberLength>5</LineNumberLength>
 				</Properties>
 				<ChildObjects>
 					<Attribute uuid="d72c3d55-ba95-47ab-9552-52501350ba0d">

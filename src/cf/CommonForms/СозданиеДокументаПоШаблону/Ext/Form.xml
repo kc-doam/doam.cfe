@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
 	<CommandBarLocation>None</CommandBarLocation>
 	<VerticalScroll>useIfNecessary</VerticalScroll>
 	<CommandSet>
@@ -49,6 +49,7 @@
 								</v8:item>
 							</Title>
 							<Group>Horizontal</Group>
+							<Behavior>Usual</Behavior>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="ГруппаПоискаExtendedTooltip" id="212"/>
@@ -103,6 +104,7 @@
 								</v8:item>
 							</Title>
 							<Group>Horizontal</Group>
+							<Behavior>Usual</Behavior>
 							<Representation>None</Representation>
 							<ChildItemsWidth>Equal</ChildItemsWidth>
 							<ShowTitle>false</ShowTitle>
@@ -125,7 +127,7 @@
 									<RowPictureDataPath>СписокШаблонов.ЭтоГруппа</RowPictureDataPath>
 									<RowsPicture>
 										<xr:Ref>CommonPicture.Папка</xr:Ref>
-										<xr:LoadTransparent>true</xr:LoadTransparent>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
 									</RowsPicture>
 									<CommandSet>
 										<ExcludedCommand>Add</ExcludedCommand>
@@ -278,19 +280,19 @@
 								<ChildItems>
 									<Button name="ВопросыКонтекстноеМенюУдалить" id="374">
 										<Type>CommandBarButton</Type>
-										<CommandName>79:8d772f97-c0ef-47c0-9cb0-efea28c61341</CommandName>
+										<CommandName>0</CommandName>
 										<ExtendedTooltip name="ВопросыКонтекстноеМенюУдалитьРасширеннаяПодсказка" id="375"/>
 									</Button>
 									<Button name="ВопросыКонтекстноеМенюДобавить" id="376">
 										<Type>CommandBarButton</Type>
 										<Visible>false</Visible>
-										<CommandName>79:b0016a68-ec64-4e6d-b905-c71fd62efc4c</CommandName>
+										<CommandName>0</CommandName>
 										<ExtendedTooltip name="ВопросыКонтекстноеМенюДобавитьРасширеннаяПодсказка" id="377"/>
 									</Button>
 									<Button name="ВопросыКонтекстноеМенюСкопировать" id="378">
 										<Type>CommandBarButton</Type>
 										<Visible>false</Visible>
-										<CommandName>79:0ae4bea5-23be-42a7-b69e-97b11b29c453</CommandName>
+										<CommandName>0</CommandName>
 										<ExtendedTooltip name="ВопросыКонтекстноеМенюСкопироватьРасширеннаяПодсказка" id="379"/>
 									</Button>
 								</ChildItems>
@@ -397,6 +399,7 @@
 					<ExtendedTooltip name="ГруппаСтраницаПодборИзКлассификатораРасширеннаяПодсказка" id="223"/>
 					<ChildItems>
 						<UsualGroup name="ГруппаЗаголовокВыборИзКлассификатора" id="224">
+							<Behavior>Usual</Behavior>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="ГруппаЗаголовокВыборИзКлассификатораРасширеннаяПодсказка" id="225"/>
@@ -446,6 +449,7 @@
 						</InputField>
 						<UsualGroup name="ГруппаКлассификатор" id="234">
 							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="ГруппаКлассификаторРасширеннаяПодсказка" id="235"/>
@@ -453,6 +457,7 @@
 								<UsualGroup name="ГруппаРазделыТематикиТемы" id="236">
 									<Height>5</Height>
 									<Group>Horizontal</Group>
+									<Behavior>Usual</Behavior>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="ГруппаРазделыТематикиТемыРасширеннаяПодсказка" id="237"/>
@@ -473,6 +478,7 @@
 												</v8:item>
 											</ToolTip>
 											<Group>Vertical</Group>
+											<Behavior>Usual</Behavior>
 											<ExtendedTooltip name="ГруппаРазделыРасширеннаяПодсказка" id="239"/>
 											<ChildItems>
 												<Table name="Разделы" id="240">
@@ -577,6 +583,7 @@
 												</v8:item>
 											</ToolTip>
 											<Group>Vertical</Group>
+											<Behavior>Usual</Behavior>
 											<ExtendedTooltip name="ГруппаТематикиРасширеннаяПодсказка" id="262"/>
 											<ChildItems>
 												<Table name="Тематики" id="263">
@@ -693,6 +700,7 @@
 												</v8:item>
 											</ToolTip>
 											<Group>Vertical</Group>
+											<Behavior>Usual</Behavior>
 											<ExtendedTooltip name="ГруппаТемыРасширеннаяПодсказка" id="285"/>
 											<ChildItems>
 												<Table name="Темы" id="286">
@@ -799,11 +807,13 @@
 										</v8:item>
 									</ToolTip>
 									<Group>Vertical</Group>
+									<Behavior>Usual</Behavior>
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="ГруппаВопросыРасширеннаяПодсказка" id="308"/>
 									<ChildItems>
 										<UsualGroup name="ГруппаЗаголовокПоиск" id="309">
 											<Group>Horizontal</Group>
+											<Behavior>Usual</Behavior>
 											<Representation>None</Representation>
 											<ShowTitle>false</ShowTitle>
 											<ExtendedTooltip name="ГруппаЗаголовокПоискРасширеннаяПодсказка" id="310"/>
@@ -935,6 +945,7 @@
 				</v8:item>
 			</ToolTip>
 			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаКомандыРасширеннаяПодсказка" id="169"/>

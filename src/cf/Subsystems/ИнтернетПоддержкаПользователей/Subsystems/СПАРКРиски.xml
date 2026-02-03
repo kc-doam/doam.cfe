@@ -28,11 +28,11 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Enum.ГрадацияИндексовСПАРКРиски</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Document.СправкиСПАРКРиски</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.КонтрагентыНаМониторингеСПАРКРиски</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.ВсеОбновленияСПАРКРискиОбщее</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.ВсеОбновленияСПАРКРискиРазделенное</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.ОбновлениеИндексовСПАРКРиски</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.ЗаполнениеКонтрагентовНаМониторингеСПАРКРиски</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.СПАРКРискиПовтИсп</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.СПАРКРискиКлиент</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.КонтрагентБИПОбъектПередЗаписью</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.КонтрагентБИПОбъектПередЗаписьюСПАРКРиски</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Enum.ВидыОшибокСПАРКРиски</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.СПАРКРискиГлобальный</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.СПАРКРискиКлиентПовтИсп</xr:Item>
@@ -46,10 +46,8 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Constant.ДатаОбновленияСобытийСПАРКРиски</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Enum.СостоянияЗагрузкиИндексовСПАРКРиски</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.СПАРКРискиКлиентПереопределяемый</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.КонтрагентБИПОбъектПриЗаписи</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.КонтрагентБИПОбъектПриЗаписиСПАРКРиски</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.СправкаСПАРКРиски</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ВсеОбновленияСПАРКОбщее</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ВсеОбновленияСПАРКРазделенное</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.СправкиСПАРКРискиПрисоединенныеФайлы</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.УстановитьПометкуУдаленияПрисоединенныхФайловДокументовСПАРКРиски</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.ПереопределитьПолучаемуюФормуПрисоединенногоФайлаСПАРКРиски</xr:Item>
@@ -62,6 +60,14 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Constant.ИспользоватьСервисСПАРКРиски</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">FunctionalOption.ИспользоватьСервисСПАРКРиски</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.Сервис1СПАРКРиски48</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ВидыКонтрагентовСПАРКРиски</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonTemplate.ОшибкиОтчетовСПАРКРиски</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.СвойстваСПАРКРиски</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.НадежностьВходящегоНДССПАРКРиски</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.НадежностьДебиторовСПАРКРиски</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.АналитическиеОтчетыСПАРКРиски</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.ПереходВВебВерсиюСПАРК</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ПереходыВВебВерсиюСПАРК</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

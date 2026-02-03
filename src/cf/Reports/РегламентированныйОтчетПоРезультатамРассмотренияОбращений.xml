@@ -40,9 +40,9 @@
 		</Properties>
 		<ChildObjects>
 			<Form>ФормаОтчета</Form>
-			<Template>ОсновнаяСхемаКомпоновкиДанных</Template>
 			<Template>МакетОтчета</Template>
 			<Template>ОбразецОтчетаОсновной</Template>
+			<Template>ОсновнаяСхемаКомпоновкиДанных</Template>
 			<Command uuid="1b0e5292-37cf-4882-8dd5-7a40776e80c9">
 				<Properties>
 					<Name>ОткрытьОтчет</Name>

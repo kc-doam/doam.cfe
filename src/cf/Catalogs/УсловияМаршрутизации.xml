@@ -424,9 +424,9 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Attribute>
-			<Form>ФормаЭлемента</Form>
-			<Form>ФормаСписка</Form>
 			<Form>ФормаВыбора</Form>
+			<Form>ФормаСписка</Form>
+			<Form>ФормаЭлемента</Form>
 			<Template>ВнутренниеДокументы</Template>
 			<Template>ВходящиеДокументы</Template>
 			<Template>ИсходящиеДокументы</Template>

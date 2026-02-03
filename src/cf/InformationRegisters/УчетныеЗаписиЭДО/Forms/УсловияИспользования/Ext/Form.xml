@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
 	<Title>
 		<v8:item>
 			<v8:lang>ru</v8:lang>
@@ -49,6 +49,7 @@
 								</v8:item>
 							</Title>
 							<Group>AlwaysHorizontal</Group>
+							<Behavior>Usual</Behavior>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="ГруппаКолонкиРасширеннаяПодсказка" id="2"/>
@@ -65,6 +66,7 @@
 									<VerticalStretch>true</VerticalStretch>
 									<Group>Vertical</Group>
 									<HorizontalAlign>Center</HorizontalAlign>
+									<Behavior>Usual</Behavior>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
 									<BackColor>style:ЦветФонаЖелтыйБЭД</BackColor>
@@ -93,10 +95,11 @@
 										</LabelDecoration>
 										<LabelDecoration name="ДекорацияПодробно" id="22">
 											<AutoMaxWidth>false</AutoMaxWidth>
+											<Height>2</Height>
 											<Title formatted="true">
 												<v8:item>
 													<v8:lang>ru</v8:lang>
-													<v8:content>&lt;link https://portal.1c.ru/applications/30/#description&gt;Подробная&lt;/&gt;&lt;link https://portal.1c.ru/applications/3&gt; &lt;/&gt;&lt;link https://portal.1c.ru/applications/30/#description&gt;информация&lt;/&gt;</v8:content>
+													<v8:content>&lt;link https://portal.1c.ru/applications/1C-Edo&gt;Подробная информация&lt;/&gt;</v8:content>
 												</v8:item>
 											</Title>
 											<HorizontalAlign>Center</HorizontalAlign>
@@ -113,6 +116,7 @@
 										</v8:item>
 									</Title>
 									<Group>Vertical</Group>
+									<Behavior>Usual</Behavior>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="ГруппаПраваяКолонкаРасширеннаяПодсказка" id="26"/>
@@ -124,22 +128,22 @@
 											<Title formatted="true">
 												<v8:item>
 													<v8:lang>ru</v8:lang>
-													<v8:content>&lt;b&gt;Сервис 1С:ЭДО&lt;/&gt;&lt;b&gt;
-
-Используя сервис, вы соглашаетесь с тем, что:&lt;/&gt;
-&lt;b&gt;• &lt;/&gt;В сервис 1С-ЭДО фирмы «1С» для упрощения настройки обмена с вашими контрагентами будут передаваться следующие сведения:
+													<v8:content>&lt;b&gt;Сервис&lt;/&gt;&lt;b&gt; &lt;/&gt;&lt;b&gt;1С:ЭДО&lt;/&gt;&lt;b&gt;
+&lt;/&gt;&lt;b&gt;
+&lt;/&gt;&lt;b&gt;Используя&lt;/&gt;&lt;b&gt; &lt;/&gt;&lt;b&gt;сервис,&lt;/&gt;&lt;b&gt; &lt;/&gt;&lt;b&gt;вы&lt;/&gt;&lt;b&gt; &lt;/&gt;&lt;b&gt;соглашаетесь&lt;/&gt;&lt;b&gt; &lt;/&gt;&lt;b&gt;с&lt;/&gt;&lt;b&gt; &lt;/&gt;&lt;b&gt;тем,&lt;/&gt;&lt;b&gt; &lt;/&gt;&lt;b&gt;что:&lt;/&gt;
+&lt;b&gt;•&lt;/&gt;&lt;b&gt; &lt;/&gt;В сервис 1С-ЭДО фирмы «1С» для упрощения настройки обмена с вашими контрагентами будут передаваться следующие сведения:
     • Название и номер версии используемого прикладного решения;
     • Описание учетной записи, заданное пользователем (например, "Отдел работы с поставщиками");
     • Поддерживаемые прикладным решением виды и форматы электронных документов (это нужно для 
          автоматического выбора оптимального формата электронного документа);
     • Идентификаторы ЭДО контрагентов, с которыми по организациям информационной базы установлен обмен ЭДО.
 
-&lt;b&gt;• &lt;/&gt;Пользователь согласен c условиями:
-     • Пользовательского соглашения на продукт 1С-ЭДО, размещенного на &lt;link https://portal.1c.ru/applications/30/licenseAgreement&gt;Портале 1С&lt;/&gt;;
-     • C &lt;link https://portal.1c.ru/applications/30/#prices&gt;условиями оплаты&lt;/&gt; за использование 1С-ЭДО;
+&lt;b&gt;•&lt;/&gt;&lt;b&gt; &lt;/&gt;Пользователь согласен c условиями:
+     • Пользовательского соглашения на продукт 1С-ЭДО, размещенного на &lt;link https://portal.1c.ru/applications/30/licenseAgreement&gt;Портале&lt;/&gt;&lt;link https://portal.1c.ru/applications/30/licenseAgreement&gt; &lt;/&gt;&lt;link https://portal.1c.ru/applications/30/licenseAgreement&gt;1С&lt;/&gt;;
+     • C &lt;link https://portal.1c.ru/applications/1C-Edo#prices&gt;условиями оплаты&lt;/&gt; за использование 1С-ЭДО;
      • Счет на оплату лицензионного вознаграждения за 1С-ЭДО (включая 1С-Такском) по итогам расчетного  
           периода (месяц) будет выставлен пользователю от обслуживающей организации или от правообладателя
-          продукта 1С-ЭДО - ООО "1С-Онлайн", ИНН &lt;color #333333&gt;&lt;bgcolor #FFFFFF&gt;7709740262&lt;/&gt;&lt;/&gt;, ОГРН &lt;color #333333&gt;&lt;bgcolor #FFFFFF&gt;5077746813282.&lt;/&gt;&lt;/&gt;</v8:content>
+          продукта 1С-ЭДО - ООО "1С-Онлайн", ИНН &lt;color #333333&gt;&lt;bgcolor #ffffff&gt;7709740262&lt;/&gt;&lt;/&gt;, ОГРН &lt;color #333333&gt;&lt;bgcolor #ffffff&gt;5077746813282.&lt;/&gt;&lt;/&gt;</v8:content>
 												</v8:item>
 											</Title>
 											<GroupHorizontalAlign>Left</GroupHorizontalAlign>
@@ -199,6 +203,7 @@
 								</v8:item>
 							</Title>
 							<Group>AlwaysHorizontal</Group>
+							<Behavior>Usual</Behavior>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="ГруппаИнформацияДляКонтрагентовПредупреждениеРасширеннаяПодсказка" id="43"/>
@@ -399,6 +404,7 @@
 								</v8:item>
 							</Title>
 							<Group>AlwaysHorizontal</Group>
+							<Behavior>Usual</Behavior>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="ГруппаКартинкаВниманиеИТекстРасширеннаяПодсказка" id="90"/>
@@ -412,6 +418,7 @@
 									</Title>
 									<HorizontalStretch>false</HorizontalStretch>
 									<Group>Vertical</Group>
+									<Behavior>Usual</Behavior>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="ГруппаКартинкаВниманиеРасширеннаяПодсказка" id="92"/>
@@ -441,6 +448,7 @@
 										</v8:item>
 									</Title>
 									<Group>Vertical</Group>
+									<Behavior>Usual</Behavior>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="ГруппаТекстОПрекращенииПрямогоОбменаРасширеннаяПодсказка" id="94"/>
@@ -517,6 +525,7 @@
 			</Title>
 			<HorizontalStretch>true</HorizontalStretch>
 			<HorizontalAlign>Right</HorizontalAlign>
+			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаКомандыРасширеннаяПодсказка" id="108"/>

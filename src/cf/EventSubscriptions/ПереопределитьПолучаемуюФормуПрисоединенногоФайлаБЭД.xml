@@ -11,6 +11,8 @@
 			</Synonym>
 			<Comment/>
 			<Source>
+				<v8:Type>cfg:CatalogManager.КэшВизуализацииДокументовЭДОПрисоединенныеФайлы</v8:Type>
+				<v8:Type>cfg:CatalogManager.СообщениеЭДОПрисоединенныеФайлы</v8:Type>
 				<v8:Type>cfg:CatalogManager.ТранспортныйКонтейнерЭДОПрисоединенныеФайлы</v8:Type>
 			</Source>
 			<Event>FormGetProcessing</Event>

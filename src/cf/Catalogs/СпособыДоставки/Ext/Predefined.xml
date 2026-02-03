@@ -12,4 +12,10 @@
 		<Description>Сервис 1С:Отчетность</Description>
 		<IsFolder>false</IsFolder>
 	</Item>
+	<Item id="fb992a62-e4a3-44cd-8ee5-d868682aace3">
+		<Name>МЭДО</Name>
+		<Code/>
+		<Description>МЭДО</Description>
+		<IsFolder>false</IsFolder>
+	</Item>
 </PredefinedData>

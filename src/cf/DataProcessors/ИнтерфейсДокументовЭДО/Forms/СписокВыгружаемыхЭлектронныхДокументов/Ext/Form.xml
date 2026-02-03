@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
 	<Title>
 		<v8:item>
 			<v8:lang>ru</v8:lang>
@@ -24,9 +24,10 @@
 				</v8:item>
 			</Title>
 			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
-			<ExtendedTooltip name="ПанельExtendedTooltip" id="187"/>
+			<ExtendedTooltip name="ПанельРасширеннаяПодсказка" id="187"/>
 			<ChildItems>
 				<UsualGroup name="СписокДокументов" id="98">
 					<Title>
@@ -36,9 +37,10 @@
 						</v8:item>
 					</Title>
 					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
-					<ExtendedTooltip name="СписокДокументовExtendedTooltip" id="188"/>
+					<ExtendedTooltip name="СписокДокументовРасширеннаяПодсказка" id="188"/>
 					<ChildItems>
 						<Table name="ТаблицаДанных" id="172">
 							<Representation>List</Representation>
@@ -62,7 +64,7 @@
 							<AutoCommandBar name="ТаблицаДанныхКоманднаяПанель" id="174">
 								<Autofill>false</Autofill>
 							</AutoCommandBar>
-							<ExtendedTooltip name="ТаблицаДанныхExtendedTooltip" id="189"/>
+							<ExtendedTooltip name="ТаблицаДанныхРасширеннаяПодсказка" id="189"/>
 							<SearchStringAddition name="ТаблицаДанныхСтрокаПоиска" id="199">
 								<AdditionSource>
 									<Item>ТаблицаДанных</Item>
@@ -105,42 +107,42 @@
 									<EditMode>EnterOnInput</EditMode>
 									<Hiperlink>true</Hiperlink>
 									<ContextMenu name="ТаблицаДанныхВладелецЭДКонтекстноеМеню" id="176"/>
-									<ExtendedTooltip name="ТаблицаДанныхВладелецЭДExtendedTooltip" id="190"/>
+									<ExtendedTooltip name="ТаблицаДанныхВладелецЭДРасширеннаяПодсказка" id="190"/>
 								</LabelField>
 								<InputField name="ТаблицаДанныхПолноеИмяФайла" id="177">
 									<DataPath>ТаблицаДанных.ПолноеИмяФайла</DataPath>
 									<Visible>false</Visible>
 									<EditMode>EnterOnInput</EditMode>
 									<ContextMenu name="ТаблицаДанныхПолноеИмяФайлаКонтекстноеМеню" id="178"/>
-									<ExtendedTooltip name="ТаблицаДанныхПолноеИмяФайлаExtendedTooltip" id="191"/>
+									<ExtendedTooltip name="ТаблицаДанныхПолноеИмяФайлаРасширеннаяПодсказка" id="191"/>
 								</InputField>
 								<InputField name="ТаблицаДанныхНаименованиеФайла" id="179">
 									<DataPath>ТаблицаДанных.ИмяФайла</DataPath>
 									<Visible>false</Visible>
 									<EditMode>EnterOnInput</EditMode>
 									<ContextMenu name="ТаблицаДанныхНаименованиеФайлаКонтекстноеМеню" id="180"/>
-									<ExtendedTooltip name="ТаблицаДанныхНаименованиеФайлаExtendedTooltip" id="192"/>
+									<ExtendedTooltip name="ТаблицаДанныхНаименованиеФайлаРасширеннаяПодсказка" id="192"/>
 								</InputField>
 								<InputField name="ТаблицаДанныхНаправлениеЭД" id="181">
 									<DataPath>ТаблицаДанных.НаправлениеЭД</DataPath>
 									<Visible>false</Visible>
 									<EditMode>EnterOnInput</EditMode>
 									<ContextMenu name="ТаблицаДанныхНаправлениеЭДКонтекстноеМеню" id="182"/>
-									<ExtendedTooltip name="ТаблицаДанныхНаправлениеЭДExtendedTooltip" id="193"/>
+									<ExtendedTooltip name="ТаблицаДанныхНаправлениеЭДРасширеннаяПодсказка" id="193"/>
 								</InputField>
 								<InputField name="ТаблицаДанныхКонтрагент" id="183">
 									<DataPath>ТаблицаДанных.Контрагент</DataPath>
 									<Visible>false</Visible>
 									<EditMode>EnterOnInput</EditMode>
 									<ContextMenu name="ТаблицаДанныхКонтрагентКонтекстноеМеню" id="184"/>
-									<ExtendedTooltip name="ТаблицаДанныхКонтрагентExtendedTooltip" id="194"/>
+									<ExtendedTooltip name="ТаблицаДанныхКонтрагентРасширеннаяПодсказка" id="194"/>
 								</InputField>
 								<InputField name="ТаблицаДанныхУникальныйИдентификатор" id="185">
 									<DataPath>ТаблицаДанных.УникальныйИдентификатор</DataPath>
 									<Visible>false</Visible>
 									<EditMode>EnterOnInput</EditMode>
 									<ContextMenu name="ТаблицаДанныхУникальныйИдентификаторКонтекстноеМеню" id="186"/>
-									<ExtendedTooltip name="ТаблицаДанныхУникальныйИдентификаторExtendedTooltip" id="195"/>
+									<ExtendedTooltip name="ТаблицаДанныхУникальныйИдентификаторРасширеннаяПодсказка" id="195"/>
 								</InputField>
 								<InputField name="ТаблицаДанныхПредставлениеЭД" id="196">
 									<DataPath>ТаблицаДанных.ПредставлениеЭД</DataPath>
@@ -303,14 +305,6 @@
 	</Attributes>
 	<CommandInterface>
 		<NavigationPanel>
-			<Item>
-				<Command>0</Command>
-				<Type>Auto</Type>
-				<DefaultVisible>false</DefaultVisible>
-				<Visible>
-					<xr:Common>false</xr:Common>
-				</Visible>
-			</Item>
 			<Item>
 				<Command>0</Command>
 				<Type>Auto</Type>

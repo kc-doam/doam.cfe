@@ -13,7 +13,15 @@
 			<Location>Constant.ВыполнятьЗамерыПроизводительности</Location>
 			<PrivilegedGetMode>true</PrivilegedGetMode>
 			<Content>
+				<xr:Object>Subsystem.СтандартныеПодсистемы.Subsystem.ОценкаПроизводительности</xr:Object>
+				<xr:Object>Catalog.КлючевыеОперации</xr:Object>
+				<xr:Object>Catalog.ПрофилиКлючевыхОпераций</xr:Object>
+				<xr:Object>Report.ОценкаПроизводительности</xr:Object>
 				<xr:Object>DataProcessor.ОценкаПроизводительности</xr:Object>
+				<xr:Object>Enum.УровниПроизводительности</xr:Object>
+				<xr:Object>InformationRegister.ЗамерыВремениТехнологические</xr:Object>
+				<xr:Object>InformationRegister.УдалитьЗамерыВремени3</xr:Object>
+				<xr:Object>InformationRegister.ЗамерыВремени</xr:Object>
 			</Content>
 		</Properties>
 	</FunctionalOption>

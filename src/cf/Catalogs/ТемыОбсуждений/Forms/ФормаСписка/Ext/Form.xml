@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
 	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
 	<CommandSet>
 		<ExcludedCommand>Copy</ExcludedCommand>
@@ -303,6 +303,7 @@
 		<Event name="OnOpen">ПриОткрытии</Event>
 		<Event name="OnLoadDataFromSettingsAtServer">ПриЗагрузкеДанныхИзНастроекНаСервере</Event>
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="OnChangeDisplaySettings">ПриИзмененииПараметровЭкрана</Event>
 	</Events>
 	<ChildItems>
 		<UsualGroup name="СписокКомпоновщикНастроекПользовательскиеНастройки" id="332">
@@ -314,6 +315,7 @@
 			</Title>
 			<VerticalStretch>false</VerticalStretch>
 			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="СписокКомпоновщикНастроекПользовательскиеНастройкиРасширеннаяПодсказка" id="333"/>
 		</UsualGroup>
@@ -331,6 +333,7 @@
 				</v8:item>
 			</ToolTip>
 			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаДеревоИСписокExtendedTooltip" id="135"/>
@@ -350,7 +353,7 @@
 					<RowPictureDataPath>ДеревоРазделов.ИндексКартинки</RowPictureDataPath>
 					<RowsPicture>
 						<xr:Ref>CommonPicture.Папки</xr:Ref>
-						<xr:LoadTransparent>true</xr:LoadTransparent>
+						<xr:LoadTransparent>false</xr:LoadTransparent>
 					</RowsPicture>
 					<SearchStringLocation>None</SearchStringLocation>
 					<ViewStatusLocation>None</ViewStatusLocation>
@@ -498,7 +501,7 @@
 					<RowPictureDataPath>Список.ИндексКартинки</RowPictureDataPath>
 					<RowsPicture>
 						<xr:Ref>CommonPicture.КоллекцияПрочтениеФорума</xr:Ref>
-						<xr:LoadTransparent>true</xr:LoadTransparent>
+						<xr:LoadTransparent>false</xr:LoadTransparent>
 					</RowsPicture>
 					<CommandSet>
 						<ExcludedCommand>Copy</ExcludedCommand>
@@ -512,6 +515,7 @@
 						<ExcludedCommand>MoveItem</ExcludedCommand>
 						<ExcludedCommand>Tree</ExcludedCommand>
 					</CommandSet>
+					<RefreshRequest>PullFromTop</RefreshRequest>
 					<AutoRefresh>false</AutoRefresh>
 					<AutoRefreshPeriod>60</AutoRefreshPeriod>
 					<Period>
@@ -595,6 +599,7 @@
 					<Events>
 						<Event name="Selection">СписокВыбор</Event>
 						<Event name="BeforeAddRow">СписокПередНачаломДобавления</Event>
+						<Event name="RefreshRequestProcessing">СписокОбработкаЗапросаОбновления</Event>
 					</Events>
 					<ChildItems>
 						<ColumnGroup name="ТемаАвторДатаСоздания" id="107">
@@ -661,7 +666,7 @@
 											<HorizontalAlign>Left</HorizontalAlign>
 											<HeaderPicture>
 												<xr:Ref>CommonPicture.ПрочтенноеФорум</xr:Ref>
-												<xr:LoadTransparent>true</xr:LoadTransparent>
+												<xr:LoadTransparent>false</xr:LoadTransparent>
 											</HeaderPicture>
 											<Width>5</Width>
 											<HorizontalStretch>false</HorizontalStretch>
@@ -724,6 +729,25 @@
 											</Format>
 											<ContextMenu name="ДатаСозданияКонтекстноеМеню" id="37"/>
 											<ExtendedTooltip name="ДатаСозданияExtendedTooltip" id="159"/>
+										</LabelField>
+										<LabelField name="МК_ДатаСоздания" id="348">
+											<DataPath>Список.МК_ДатаСоздания</DataPath>
+											<Visible>false</Visible>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Поле1</v8:content>
+												</v8:item>
+											</Title>
+											<TitleHeight>8</TitleHeight>
+											<Format>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>ДФ=dd.MM.yy</v8:content>
+												</v8:item>
+											</Format>
+											<ContextMenu name="МК_ДатаСозданияКонтекстноеМеню" id="349"/>
+											<ExtendedTooltip name="МК_ДатаСозданияРасширеннаяПодсказка" id="350"/>
 										</LabelField>
 									</ChildItems>
 								</ColumnGroup>
@@ -816,6 +840,48 @@
 				</Table>
 			</ChildItems>
 		</UsualGroup>
+		<UsualGroup name="МК_ГруппаДеревоИСписок" id="351">
+			<Visible>false</Visible>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа1</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="МК_ГруппаДеревоИСписокРасширеннаяПодсказка" id="352"/>
+			<ChildItems>
+				<UsualGroup name="МК_ГруппаДерево" id="353">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Раздел</v8:content>
+						</v8:item>
+					</Title>
+					<Group>Vertical</Group>
+					<Behavior>PopUp</Behavior>
+					<Representation>None</Representation>
+					<TitleDataPath>ТекущийРаздел.Description</TitleDataPath>
+					<ExtendedTooltip name="МК_ГруппаДеревоРасширеннаяПодсказка" id="354"/>
+				</UsualGroup>
+				<UsualGroup name="МК_ГруппаСписок" id="346">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа1</v8:content>
+						</v8:item>
+					</Title>
+					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="МК_ГруппаСписокРасширеннаяПодсказка" id="347"/>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
 	</ChildItems>
 	<Attributes>
 		<Attribute name="Список" id="1">
@@ -838,7 +904,8 @@
 	СправочникТемыОбсуждений.Папка,
 	СправочникТемыОбсуждений.Наименование,
 	СправочникТемыОбсуждений.Автор,
-	СправочникТемыОбсуждений.ДатаСоздания,
+	СправочникТемыОбсуждений.ДатаСоздания КАК ДатаСоздания,
+	СправочникТемыОбсуждений.ДатаСоздания КАК МК_ДатаСоздания,
 	СправочникТемыОбсуждений.Закрытая,
 	СведенияОТемахОбсуждений.АвторПоследнегоСообщения,
 	СведенияОТемахОбсуждений.ДатаПоследнегоСообщения,
@@ -1258,6 +1325,17 @@
 				<v8:Type>xs:boolean</v8:Type>
 			</Type>
 		</Attribute>
+		<Attribute name="ЭтоМобильныйКлиент" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Это мобильный клиент</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
 	</Attributes>
 	<Commands>
 		<Command name="ПометитьВсеВГруппеКакПрочтенные" id="2">
@@ -1276,7 +1354,7 @@
 			<Shortcut>Ctrl+M</Shortcut>
 			<Picture>
 				<xr:Ref>CommonPicture.ПрочтенноеФорум</xr:Ref>
-				<xr:LoadTransparent>true</xr:LoadTransparent>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
 			</Picture>
 			<Action>ПометитьВсеВГруппеКакПрочтенные</Action>
 			<CurrentRowUse>DontUse</CurrentRowUse>
@@ -1444,7 +1522,7 @@
 	<CommandInterface>
 		<CommandBar>
 			<Item>
-				<Command>2:679bd72a-4cf8-4c2e-ae00-3f01f48050c4</Command>
+				<Command>0</Command>
 				<Type>Auto</Type>
 				<DefaultVisible>false</DefaultVisible>
 				<Visible>
@@ -1452,7 +1530,7 @@
 				</Visible>
 			</Item>
 			<Item>
-				<Command>2:dab6706c-e0f7-4dc9-8fac-95b1dfcbf05c</Command>
+				<Command>0</Command>
 				<Type>Auto</Type>
 				<DefaultVisible>false</DefaultVisible>
 				<Visible>
@@ -1460,7 +1538,7 @@
 				</Visible>
 			</Item>
 			<Item>
-				<Command>2:57067371-06db-46dc-a7e9-c76d28e21071</Command>
+				<Command>0</Command>
 				<Type>Auto</Type>
 				<DefaultVisible>false</DefaultVisible>
 				<Visible>
@@ -1468,7 +1546,7 @@
 				</Visible>
 			</Item>
 			<Item>
-				<Command>2:3b9d376f-cd28-4f84-b8a8-686da09f0e46</Command>
+				<Command>0</Command>
 				<Type>Auto</Type>
 				<DefaultVisible>false</DefaultVisible>
 				<Visible>
@@ -1476,7 +1554,7 @@
 				</Visible>
 			</Item>
 			<Item>
-				<Command>2:efd06081-12d1-4734-9015-bff31c9f7966</Command>
+				<Command>0</Command>
 				<Type>Auto</Type>
 				<DefaultVisible>false</DefaultVisible>
 				<Visible>
@@ -1484,7 +1562,7 @@
 				</Visible>
 			</Item>
 			<Item>
-				<Command>2:53d146b8-d85f-4cfe-b5ee-af78f4e09445</Command>
+				<Command>0</Command>
 				<Type>Auto</Type>
 				<DefaultVisible>false</DefaultVisible>
 				<Visible>
@@ -1492,7 +1570,7 @@
 				</Visible>
 			</Item>
 			<Item>
-				<Command>2:da3c04c7-1d24-4d54-9686-2c404b8ed4e8</Command>
+				<Command>0</Command>
 				<Type>Auto</Type>
 				<DefaultVisible>false</DefaultVisible>
 				<Visible>
@@ -1500,7 +1578,7 @@
 				</Visible>
 			</Item>
 			<Item>
-				<Command>2:28f131c2-f971-4a8c-bfc4-23f8606a7536</Command>
+				<Command>0</Command>
 				<Type>Auto</Type>
 				<DefaultVisible>false</DefaultVisible>
 				<Visible>
@@ -1516,7 +1594,7 @@
 				</Visible>
 			</Item>
 			<Item>
-				<Command>0:1823d37a-3b32-4031-8996-56796c8dbe41</Command>
+				<Command>0</Command>
 				<Type>Auto</Type>
 				<DefaultVisible>false</DefaultVisible>
 				<Visible>

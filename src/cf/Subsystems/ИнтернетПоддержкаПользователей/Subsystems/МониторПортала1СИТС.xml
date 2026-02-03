@@ -17,7 +17,6 @@
 			<Picture/>
 			<Content>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.МониторПортала1СИТС</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.МониторИнтернетПоддержкиКлиент</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.МониторПортала1СИТС</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.МониторПортала1СИТСПереопределяемый</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.МониторПортала1СИТС</xr:Item>
@@ -25,7 +24,6 @@
 				<xr:Item xsi:type="xr:MDObjectRef">FunctionalOption.РаботаВЛокальномРежимеМониторПортала1СИТС</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.МониторПортала1СИТСКлиентПереопределяемый</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.МониторПортала1СИТСНегативноеСобытие</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.МониторПортала1СИТСЛоготип</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.МониторПортала1СИТСПунктНеВыполнено</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.МониторПортала1СИТСГлобальный</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.МониторПортала1СИТСВызовСервера</xr:Item>
@@ -34,6 +32,11 @@
 				<xr:Item xsi:type="xr:MDObjectRef">StyleItem.ЦветГиперссылкиМониторПортала</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">StyleItem.ШрифтГиперссылкиМониторПортала</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">StyleItem.ШрифтЗаголовкаМониторПортала</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.НастройкиПолученияУведомленийПортала</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.МониторПортала1СИТСКлиентСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.СообщениеОбОпцияхИнтернетПоддержки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.ПолучениеУведомленийМонитораПортала</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.УведомленияМонитораПортала</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

@@ -12,10 +12,10 @@
 			<Comment/>
 			<MethodName>CommonModule.ОчередьЗаданийСлужебный.РегламентнаяОбработкаОчередиЗаданий</MethodName>
 			<Description>Регламентная обработка очереди задач</Description>
-			<Key>РегламентнаяОбработкаОчередиЗадач</Key>
+			<Key/>
 			<Use>false</Use>
 			<Predefined>false</Predefined>
-			<RestartCountOnFailure>3</RestartCountOnFailure>
+			<RestartCountOnFailure>0</RestartCountOnFailure>
 			<RestartIntervalOnFailure>10</RestartIntervalOnFailure>
 		</Properties>
 	</ScheduledJob>

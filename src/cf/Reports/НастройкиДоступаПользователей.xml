@@ -35,8 +35,8 @@
 		</Properties>
 		<ChildObjects>
 			<Form>ФормаОтчета</Form>
-			<Template>ОсновнаяСхемаКомпоновкиДанных</Template>
 			<Template>ОбразецОтчетаНастройкиДоступаПользователей</Template>
+			<Template>ОсновнаяСхемаКомпоновкиДанных</Template>
 		</ChildObjects>
 	</Report>
 </MetaDataObject>

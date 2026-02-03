@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
 	<AutoTitle>false</AutoTitle>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
 		<Autofill>false</Autofill>
@@ -42,6 +42,7 @@
 								</v8:item>
 							</Title>
 							<HorizontalStretch>true</HorizontalStretch>
+							<Behavior>Usual</Behavior>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="ПредупреждениеВозможногоПаденияПроизводительностиРасширеннаяПодсказка" id="260"/>
@@ -84,6 +85,7 @@
 							<TitleTextColor>style:FormTextColor</TitleTextColor>
 							<TitleFont ref="style:LargeTextFont" kind="StyleItem"/>
 							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
 							<Representation>NormalSeparation</Representation>
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="ГруппаВидЭлектроннойПодписиРасширеннаяПодсказка" id="19"/>
@@ -210,6 +212,7 @@
 								</v8:item>
 							</Title>
 							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="ГруппаПечатнаяФормаРасширеннаяПодсказка" id="201"/>
@@ -256,6 +259,7 @@
 								</v8:item>
 							</Title>
 							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
 							<Representation>NormalSeparation</Representation>
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="ГруппаВариантНастройкиРасширеннаяПодсказка" id="203"/>
@@ -363,6 +367,7 @@
 												</v8:item>
 											</Title>
 											<Group>AlwaysHorizontal</Group>
+											<Behavior>Usual</Behavior>
 											<Representation>None</Representation>
 											<ShowTitle>false</ShowTitle>
 											<ExtendedTooltip name="ГруппаОжиданиеРасширеннаяПодсказка" id="147"/>
@@ -431,6 +436,7 @@
 											<TitleTextColor>style:ButtonTextColor</TitleTextColor>
 											<HorizontalStretch>true</HorizontalStretch>
 											<HorizontalAlign>Right</HorizontalAlign>
+											<Behavior>Usual</Behavior>
 											<Representation>None</Representation>
 											<ExtendedTooltip name="ГруппаУстановкаРасширеннаяПодсказка" id="39"/>
 											<ChildItems>
@@ -455,6 +461,7 @@
 															<v8:content>Группа crypto pro</v8:content>
 														</v8:item>
 													</Title>
+													<Behavior>Usual</Behavior>
 													<Representation>None</Representation>
 													<ShowTitle>false</ShowTitle>
 													<ExtendedTooltip name="ГруппаCryptoProРасширеннаяПодсказка" id="43"/>
@@ -586,6 +593,7 @@
 											<HorizontalStretch>true</HorizontalStretch>
 											<Group>AlwaysHorizontal</Group>
 											<HorizontalAlign>Right</HorizontalAlign>
+											<Behavior>Usual</Behavior>
 											<Representation>None</Representation>
 											<ShowTitle>false</ShowTitle>
 											<ExtendedTooltip name="ГруппаДобавлениеСертификатовРасширеннаяПодсказка" id="55"/>
@@ -622,6 +630,7 @@
 												</v8:item>
 											</Title>
 											<Group>Vertical</Group>
+											<Behavior>Usual</Behavior>
 											<Representation>None</Representation>
 											<ShowTitle>false</ShowTitle>
 											<ExtendedTooltip name="ГруппаДопПоляПолучениеОжиданиеРасширеннаяПодсказка" id="76"/>
@@ -779,6 +788,7 @@
 								</v8:item>
 							</Title>
 							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="ГруппаНастройкаМаршрутаПодписанияМаршрутПодписанияРасширеннаяПодсказка" id="169"/>
@@ -927,7 +937,7 @@
 											<Title formatted="true">
 												<v8:item>
 													<v8:lang>ru</v8:lang>
-													<v8:content>&lt;font Arial&gt;&lt;fontsize 10&gt;&lt;color #807A59&gt;Оповещение подписантов о наличии документов, которые им нужно подписать, выполняется через систему взаимодействия. Обратитесь к администратору для её подключения.&lt;/&gt;&lt;/&gt;&lt;/&gt;
+													<v8:content>&lt;font Arial&gt;&lt;color #807a59&gt;&lt;fontsize 10&gt;Оповещение подписантов о наличии документов, которые им нужно подписать, выполняется через систему взаимодействия. Обратитесь к администратору для её подключения.&lt;/&gt;&lt;/&gt;&lt;/&gt;
 </v8:content>
 												</v8:item>
 											</Title>
@@ -946,32 +956,32 @@
 									<Group>AlwaysHorizontal</Group>
 									<ExtendedTooltip name="ПодключениеОбсужденийВыполненоРасширеннаяПодсказка" id="252"/>
 									<ChildItems>
-										<PictureDecoration name="КартинкаОбсужеднияПодключены" id="253">
+										<PictureDecoration name="КартинкаОбсужденияПодключены" id="253">
 											<Title formatted="false">
 												<v8:item>
 													<v8:lang>ru</v8:lang>
-													<v8:content>Картинка обсужедния подключены</v8:content>
+													<v8:content>Картинка обсуждения подключены</v8:content>
 												</v8:item>
 											</Title>
 											<Picture>
 												<xr:Ref>CommonPicture.Успешно32</xr:Ref>
 												<xr:LoadTransparent>false</xr:LoadTransparent>
 											</Picture>
-											<ContextMenu name="КартинкаОбсужеднияПодключеныКонтекстноеМеню" id="254"/>
-											<ExtendedTooltip name="КартинкаОбсужеднияПодключеныРасширеннаяПодсказка" id="255"/>
+											<ContextMenu name="КартинкаОбсужденияПодключеныКонтекстноеМеню" id="254"/>
+											<ExtendedTooltip name="КартинкаОбсужденияПодключеныРасширеннаяПодсказка" id="255"/>
 										</PictureDecoration>
-										<LabelDecoration name="ПодсказкаОбсужеднияПодключены" id="256">
+										<LabelDecoration name="ПодсказкаОбсужденияПодключены" id="256">
 											<AutoMaxWidth>false</AutoMaxWidth>
 											<TextColor>style:ПоясняющийТекст</TextColor>
 											<Title formatted="true">
 												<v8:item>
 													<v8:lang>ru</v8:lang>
-													<v8:content>&lt;font Arial&gt;&lt;fontsize 10&gt;&lt;color #807A59&gt;Подключение к системе взаимодействия выполнено. Нажмите "Готово" для завершения работы мастера настроек электронного документооборота.&lt;/&gt;&lt;/&gt;&lt;/&gt;
+													<v8:content>&lt;font Arial&gt;&lt;color #807a59&gt;&lt;fontsize 10&gt;Подключение к системе взаимодействия выполнено. Нажмите "Готово" для завершения работы мастера настроек электронного документооборота.&lt;/&gt;&lt;/&gt;&lt;/&gt;
 </v8:content>
 												</v8:item>
 											</Title>
-											<ContextMenu name="ПодсказкаОбсужеднияПодключеныКонтекстноеМеню" id="257"/>
-											<ExtendedTooltip name="ПодсказкаОбсужеднияПодключеныРасширеннаяПодсказка" id="258"/>
+											<ContextMenu name="ПодсказкаОбсужденияПодключеныКонтекстноеМеню" id="257"/>
+											<ExtendedTooltip name="ПодсказкаОбсужденияПодключеныРасширеннаяПодсказка" id="258"/>
 										</LabelDecoration>
 									</ChildItems>
 								</Page>
@@ -1005,6 +1015,7 @@
 					<v8:content>Группа кнопок мастера</v8:content>
 				</v8:item>
 			</Title>
+			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаКнопокМастераРасширеннаяПодсказка" id="105"/>

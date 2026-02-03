@@ -150,9 +150,9 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Dimension>
+			<Form>НастройкиПоВидуДокумента</Form>
 			<Form>ФормаЗаписи</Form>
 			<Form>ФормаСписка</Form>
-			<Form>НастройкиПоВидуДокумента</Form>
 			<Command uuid="94813879-1e99-4be8-b1ed-9c42ab76a883">
 				<Properties>
 					<Name>НастройкиПоВидуДокумента</Name>

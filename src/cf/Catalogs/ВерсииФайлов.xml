@@ -1905,12 +1905,12 @@
 					</Attribute>
 				</ChildObjects>
 			</TabularSection>
-			<Form>ФормаЭлемента</Form>
 			<Form>ФормаВосстановленияВерсии</Form>
-			<Form>ФормаСписка</Form>
 			<Form>ФормаВыбора</Form>
-			<Form>ФормаСпискаВерсийФайла</Form>
 			<Form>ФормаВыбораСпособаСравненияВерсий</Form>
+			<Form>ФормаСписка</Form>
+			<Form>ФормаСпискаВерсийФайла</Form>
+			<Form>ФормаЭлемента</Form>
 			<Command uuid="38368c5c-be75-4739-873c-646af4e568d7">
 				<Properties>
 					<Name>ОткрытьВерсииФайла</Name>

@@ -34,13 +34,17 @@
 			<Template>Акт501_Заказчик</Template>
 			<Template>Акт501_Исполнитель</Template>
 			<Template>АктНаПередачуПрав</Template>
-			<Template>АктОРасхождениях_2019</Template>
+			<Template>АктОРасхождениях_ДополнительныеСведения_5_01</Template>
+			<Template>АктОРасхождениях_ИнформацияОтправителя_5_01</Template>
+			<Template>АктСверкиВзаиморасчетов_ИнформацияОтправителя_5_01</Template>
+			<Template>АктСверкиВзаиморасчетов_ИнформацияПолучателя_5_01</Template>
 			<Template>ВерсииФорматовЭлектронныхДокументов</Template>
 			<Template>ЗаказТовара</Template>
 			<Template>ЗапросКоммерческихПредложений</Template>
 			<Template>ИзвещениеОПолучении</Template>
 			<Template>КарточкаПередаваемыхДанных</Template>
 			<Template>КаталогТоваров</Template>
+			<Template>КлассификаторЕдиницИзмерения</Template>
 			<Template>КоммерческоеПредложение</Template>
 			<Template>КорректировочныйСчетФактура</Template>
 			<Template>ОператорыЭДО</Template>
@@ -48,6 +52,7 @@
 			<Template>ОтчетКомиссионераОПродажах</Template>
 			<Template>ОтчетКомиссионераОСписании</Template>
 			<Template>ПередачаВозвратТоваровМеждуОрганизациями</Template>
+			<Template>ПравилоИзвлеченияСведенийРодительскойДоверенностиДляЗапросаКРеестру</Template>
 			<Template>ПрайсЛист</Template>
 			<Template>ПредложениеОбАннулировании</Template>
 			<Template>ПредложениеОформитьЗаявлениеНаПодключение_ru</Template>
@@ -57,19 +62,25 @@
 			<Template>СоглашениеОбИзмененииСтоимостиОтправитель</Template>
 			<Template>СоглашениеОбИзмененииСтоимостиПолучатель</Template>
 			<Template>СчетНаОплату</Template>
+			<Template>СчетНаОплату_1_01</Template>
+			<Template>СчетНаОплату_5_01</Template>
 			<Template>СчетФактура</Template>
 			<Template>ТОРГ12_Покупатель</Template>
 			<Template>ТОРГ12_Продавец</Template>
 			<Template>ТранспортнаяИнформация</Template>
 			<Template>УведомлениеОбУточнении</Template>
 			<Template>УКД_ИнформацияПокупателя</Template>
+			<Template>УКД_ИнформацияПокупателя_2020</Template>
 			<Template>УКД_ИнформацияПродавца</Template>
+			<Template>УКД_ИнформацияПродавца_2020</Template>
 			<Template>УПД_ИнформацияПокупателя_2019</Template>
 			<Template>УПД_ИнформацияПокупателя_5_01</Template>
+			<Template>УПД_ИнформацияПокупателя_5_02</Template>
+			<Template>УПД_ИнформацияПокупателя_5_03</Template>
 			<Template>УПД_ИнформацияПродавца_2019</Template>
 			<Template>УПД_ИнформацияПродавца_5_01</Template>
-			<Template>УКД_ИнформацияПокупателя_2020</Template>
-			<Template>УКД_ИнформацияПродавца_2020</Template>
+			<Template>УПД_ИнформацияПродавца_5_02</Template>
+			<Template>УПД_ИнформацияПродавца_5_03</Template>
 			<Template>ШтампПЭП_ru</Template>
 			<Command uuid="f2c86b3a-c320-49d0-b1d7-d83f6a92b8ee">
 				<Properties>

@@ -13,8 +13,9 @@
 			<Location>Constant.НеИспользоватьРазделениеПоОбластямДанных</Location>
 			<PrivilegedGetMode>true</PrivilegedGetMode>
 			<Content>
-				<xr:Object>CommonForm.ЗагрузкаДанныхИзСервиса</xr:Object>
 				<xr:Object>CommonCommand.ПерейтиВОблачныйСервис</xr:Object>
+				<xr:Object>CommonForm.ЗагрузкаДанныхИзСервиса</xr:Object>
+				<xr:Object>CommonCommand.ЗагрузитьДанныеИзСервиса</xr:Object>
 			</Content>
 		</Properties>
 	</FunctionalOption>

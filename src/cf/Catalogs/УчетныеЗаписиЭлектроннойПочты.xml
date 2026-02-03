@@ -1399,12 +1399,35 @@
 					</Attribute>
 				</ChildObjects>
 			</TabularSection>
-			<Form>ФормаВыбора</Form>
-			<Form>ФормаСписка</Form>
-			<Form>ФормаЭлемента</Form>
 			<Form>ПомощникНастройкиУчетнойЗаписи</Form>
 			<Form>ПроверкаДоступаКУчетнойЗаписи</Form>
 			<Form>ПроверкаНастроекУчетнойЗаписи</Form>
+			<Form>ФормаВыбора</Form>
+			<Form>ФормаСписка</Form>
+			<Form>ФормаЭлемента</Form>
+			<Command uuid="faaf994b-0b75-44c8-a11b-5c6a80d6a492">
+				<Properties>
+					<Name>ОткрытьУчетныеЗаписиПользователя</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Учетные записи</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Group>FormNavigationPanelSeeAlso</Group>
+					<CommandParameterType>
+						<v8:Type>cfg:CatalogRef.Пользователи</v8:Type>
+					</CommandParameterType>
+					<ParameterUseMode>Single</ParameterUseMode>
+					<ModifiesData>false</ModifiesData>
+					<Representation>Auto</Representation>
+					<ToolTip/>
+					<Picture/>
+					<Shortcut/>
+					<OnMainServerUnavalableBehavior>Auto</OnMainServerUnavalableBehavior>
+				</Properties>
+			</Command>
 			<Command uuid="56b570b1-93b0-468a-9672-9c71113753f3">
 				<Properties>
 					<Name>ПроверкаУчетнойЗаписи</Name>
@@ -1441,29 +1464,6 @@
 					<Group>FormNavigationPanelGoTo</Group>
 					<CommandParameterType>
 						<v8:Type>cfg:CatalogRef.УчетныеЗаписиЭлектроннойПочты</v8:Type>
-					</CommandParameterType>
-					<ParameterUseMode>Single</ParameterUseMode>
-					<ModifiesData>false</ModifiesData>
-					<Representation>Auto</Representation>
-					<ToolTip/>
-					<Picture/>
-					<Shortcut/>
-					<OnMainServerUnavalableBehavior>Auto</OnMainServerUnavalableBehavior>
-				</Properties>
-			</Command>
-			<Command uuid="faaf994b-0b75-44c8-a11b-5c6a80d6a492">
-				<Properties>
-					<Name>ОткрытьУчетныеЗаписиПользователя</Name>
-					<Synonym>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Учетные записи</v8:content>
-						</v8:item>
-					</Synonym>
-					<Comment/>
-					<Group>FormNavigationPanelSeeAlso</Group>
-					<CommandParameterType>
-						<v8:Type>cfg:CatalogRef.Пользователи</v8:Type>
 					</CommandParameterType>
 					<ParameterUseMode>Single</ParameterUseMode>
 					<ModifiesData>false</ModifiesData>

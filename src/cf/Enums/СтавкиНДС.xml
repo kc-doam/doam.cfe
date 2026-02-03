@@ -104,6 +104,18 @@
 					<Comment>Ставка НДС 20%</Comment>
 				</Properties>
 			</EnumValue>
+			<EnumValue uuid="4db28b18-8376-4022-8ed1-2c7cef036f05">
+				<Properties>
+					<Name>НДС22</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>22%</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Ставка НДС 22%</Comment>
+				</Properties>
+			</EnumValue>
 			<EnumValue uuid="73d79526-14dd-4ea6-b961-559cc9a38f15">
 				<Properties>
 					<Name>НДС18</Name>
@@ -126,6 +138,30 @@
 						</v8:item>
 					</Synonym>
 					<Comment>Ставка НДС 10%</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="c323a991-9b45-4569-b320-bea815e9cd22">
+				<Properties>
+					<Name>НДС7</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>7%</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Ставка НДС 7%</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="31a301fc-a4d8-4deb-b090-858a8636dcd4">
+				<Properties>
+					<Name>НДС5</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>5%</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Ставка НДС 5%</Comment>
 				</Properties>
 			</EnumValue>
 			<EnumValue uuid="c87b05f1-0f27-4f91-abd9-fb62891301a5">

@@ -18,7 +18,7 @@
 		</right>
 	</object>
 	<object>
-		<name>CommonCommand.ИнформационнаяПоддержкаГруппаFacebook</name>
+		<name>CommonCommand.ИнформационнаяПоддержкаГруппаTelegram</name>
 		<right>
 			<name>View</name>
 			<value>true</value>

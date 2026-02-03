@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
 	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
 	<AutoTitle>false</AutoTitle>
 	<AutoTime>CurrentOrLast</AutoTime>
@@ -15,12 +15,57 @@
 		<Event name="OnOpen">ПриОткрытии</Event>
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 		<Event name="OnWriteAtServer">ПриЗаписиНаСервере</Event>
-		<Event name="BeforeLoadDataFromSettingsAtServer">ПередЗагрузкойДанныхИзНастроекНаСервере</Event>
 	</Events>
 	<ChildItems>
+		<UsualGroup name="ГруппаДекорацииПометкиУдаления" id="709">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа1</v8:content>
+				</v8:item>
+			</Title>
+			<HorizontalStretch>true</HorizontalStretch>
+			<Group>AlwaysHorizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<BackColor>web:WhiteSmoke</BackColor>
+			<ExtendedTooltip name="ГруппаДекорацииПометкиУдаленияРасширеннаяПодсказка" id="710"/>
+			<ChildItems>
+				<PictureDecoration name="ДекорацияИнформация" id="711">
+					<Width>5</Width>
+					<TextColor>style:FormTextColor</TextColor>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Декорация информация</v8:content>
+						</v8:item>
+					</Title>
+					<Picture>
+						<xr:Ref>StdPicture.Information</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<ContextMenu name="ДекорацияИнформацияКонтекстноеМеню" id="712"/>
+					<ExtendedTooltip name="ДекорацияИнформацияРасширеннаяПодсказка" id="713"/>
+				</PictureDecoration>
+				<LabelDecoration name="ДекорацияПометкаУдаления" id="714">
+					<TextColor>style:FormTextColor</TextColor>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Входящий электронный документ помечен на удаление</v8:content>
+						</v8:item>
+					</Title>
+					<VerticalAlign>Center</VerticalAlign>
+					<ContextMenu name="ДекорацияПометкаУдаленияКонтекстноеМеню" id="715"/>
+					<ExtendedTooltip name="ДекорацияПометкаУдаленияРасширеннаяПодсказка" id="716"/>
+				</LabelDecoration>
+			</ChildItems>
+		</UsualGroup>
 		<UsualGroup name="ГруппаОсновное" id="665">
 			<Group>Vertical</Group>
 			<VerticalSpacing>None</VerticalSpacing>
+			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ThroughAlign>DontUse</ThroughAlign>
@@ -35,6 +80,7 @@
 					</Title>
 					<Group>Vertical</Group>
 					<VerticalSpacing>Half</VerticalSpacing>
+					<Behavior>Usual</Behavior>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="ГруппаШапкаРасширеннаяПодсказка" id="664"/>
@@ -46,6 +92,7 @@
 									<v8:content>Группа команды</v8:content>
 								</v8:item>
 							</Title>
+							<Behavior>Usual</Behavior>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="ГруппаКомандыРасширеннаяПодсказка" id="564"/>
@@ -57,7 +104,7 @@
 											<v8:content>Группа команд основные</v8:content>
 										</v8:item>
 									</Title>
-									<ExtendedTooltip name="ФормаГруппа1РасширеннаяПодсказка3" id="566"/>
+									<ExtendedTooltip name="ГруппаКомандОсновныеРасширеннаяПодсказка" id="566"/>
 									<ChildItems>
 										<Button name="ПодписатьОтправить" id="567">
 											<Type>CommandBarButton</Type>
@@ -100,7 +147,7 @@
 													<v8:content>Предложение об аннулировании документа</v8:content>
 												</v8:item>
 											</Title>
-											<ExtendedTooltip name="Группа1РасширеннаяПодсказка15" id="576"/>
+											<ExtendedTooltip name="ГруппаКомандАннулированиеРасширеннаяПодсказка" id="576"/>
 											<ChildItems>
 												<Button name="ПринятьАннулирование" id="577">
 													<Type>CommandBarButton</Type>
@@ -121,7 +168,7 @@
 													<v8:content>Другие действия</v8:content>
 												</v8:item>
 											</Title>
-											<ExtendedTooltip name="Группа1РасширеннаяПодсказка16" id="582"/>
+											<ExtendedTooltip name="ПодменюДругиеДействияРасширеннаяПодсказка" id="582"/>
 											<ChildItems>
 												<Button name="Аннулировать" id="585">
 													<Type>CommandBarButton</Type>
@@ -151,7 +198,7 @@
 															<v8:content>Группа создать произвольный документ</v8:content>
 														</v8:item>
 													</Title>
-													<ExtendedTooltip name="Группа1РасширеннаяПодсказка17" id="594"/>
+													<ExtendedTooltip name="ГруппаКомандСоздатьПроизвольныйДокументРасширеннаяПодсказка" id="594"/>
 													<ChildItems>
 														<Button name="СоздатьПроизвольныйДокумент" id="595">
 															<Type>CommandBarButton</Type>
@@ -304,7 +351,7 @@
 											<v8:content>Группа команд еще</v8:content>
 										</v8:item>
 									</Title>
-									<ExtendedTooltip name="ФормаГруппа1РасширеннаяПодсказка1" id="626"/>
+									<ExtendedTooltip name="ГруппаКомандЕщеРасширеннаяПодсказка" id="626"/>
 									<ChildItems>
 										<Button name="ОткрытьКарточкуЭлектронногоДокумента" id="627">
 											<Type>CommandBarButton</Type>
@@ -317,6 +364,12 @@
 											</Title>
 											<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
 											<ExtendedTooltip name="ОткрытьКарточкуЭлектронногоДокументаРасширеннаяПодсказка" id="628"/>
+										</Button>
+										<Button name="ПоказатьПротоколОбмена" id="755">
+											<Type>CommandBarButton</Type>
+											<CommandName>Form.Command.ПоказатьПротоколОбмена</CommandName>
+											<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+											<ExtendedTooltip name="ПоказатьПротоколОбменаРасширеннаяПодсказка" id="756"/>
 										</Button>
 										<Button name="Перенаправить" id="629">
 											<Type>CommandBarButton</Type>
@@ -331,7 +384,7 @@
 													<v8:content>Группа команд отправить повторно</v8:content>
 												</v8:item>
 											</Title>
-											<ExtendedTooltip name="Группа1РасширеннаяПодсказка14" id="632"/>
+											<ExtendedTooltip name="ГруппаКомандОтправитьПовторноРасширеннаяПодсказка" id="632"/>
 											<ChildItems>
 												<Button name="ОтправитьПовторно" id="633">
 													<Type>CommandBarButton</Type>
@@ -348,7 +401,7 @@
 													<v8:content>Группа команд технологические</v8:content>
 												</v8:item>
 											</Title>
-											<ExtendedTooltip name="Группа1РасширеннаяПодсказка13" id="636"/>
+											<ExtendedTooltip name="ГруппаКомандТехнологическиеРасширеннаяПодсказка" id="636"/>
 											<ChildItems>
 												<Button name="ПроверитьПодписи" id="637">
 													<Type>CommandBarButton</Type>
@@ -383,7 +436,7 @@
 													<v8:content>Настройка отображения</v8:content>
 												</v8:item>
 											</Title>
-											<ExtendedTooltip name="ФормаГруппа1РасширеннаяПодсказка" id="648"/>
+											<ExtendedTooltip name="ПодменюНастройкаОтображенияРасширеннаяПодсказка" id="648"/>
 											<ChildItems>
 												<Button name="ОтображатьДополнительнуюИнформацию" id="649">
 													<Type>CommandBarButton</Type>
@@ -403,18 +456,29 @@
 													<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
 													<ExtendedTooltip name="ОтображатьБанковскиеРеквизитыРасширеннаяПодсказка" id="654"/>
 												</Button>
+												<Button name="ВключитьПолеПредпросмотраPDFФайлов" id="800">
+													<Type>CommandBarButton</Type>
+													<CommandName>Form.Command.ВключитьПолеПредпросмотраPDFФайлов</CommandName>
+													<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+													<ExtendedTooltip name="ВключитьПолеПредпросмотраPDFФайловРасширеннаяПодсказка" id="801"/>
+												</Button>
 											</ChildItems>
 										</Popup>
-										<Button name="ПометитьСеятьПометкуУдаления" id="670">
+										<Button name="ПометкаУдаления" id="717">
 											<Type>CommandBarButton</Type>
-											<CommandName>Form.StandardCommand.SetDeletionMark</CommandName>
-											<ExtendedTooltip name="ПометитьСеятьПометкуУдаленияРасширеннаяПодсказка" id="671"/>
+											<CommandName>Form.Command.ПометкаУдаления</CommandName>
+											<Picture>
+												<xr:Ref>StdPicture.MarkToDelete</xr:Ref>
+												<xr:LoadTransparent>true</xr:LoadTransparent>
+											</Picture>
+											<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+											<ExtendedTooltip name="ПометкаУдаленияРасширеннаяПодсказка" id="718"/>
 										</Button>
 										<Button name="ИзменитьФорму" id="655">
 											<Type>CommandBarButton</Type>
 											<CommandName>Form.StandardCommand.CustomizeForm</CommandName>
 											<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
-											<ExtendedTooltip name="ФормаИзменитьФормуРасширеннаяПодсказка" id="656"/>
+											<ExtendedTooltip name="ИзменитьФормуРасширеннаяПодсказка" id="656"/>
 										</Button>
 										<Popup name="ГруппаКонтекстныхПодсказок" id="657">
 											<Title>
@@ -425,10 +489,15 @@
 											</Title>
 											<ExtendedTooltip name="ГруппаКонтекстныхПодсказокРасширеннаяПодсказка" id="658"/>
 										</Popup>
-										<Button name="Перечитать" id="659">
+										<Button name="КомандаПеречитать" id="771">
 											<Type>CommandBarButton</Type>
-											<CommandName>Form.StandardCommand.Reread</CommandName>
-											<ExtendedTooltip name="ПеречитатьРасширеннаяПодсказка" id="660"/>
+											<CommandName>Form.Command.ПеречитатьДанные</CommandName>
+											<Picture>
+												<xr:Ref>StdPicture.Refresh</xr:Ref>
+												<xr:LoadTransparent>true</xr:LoadTransparent>
+											</Picture>
+											<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+											<ExtendedTooltip name="КомандаПеречитатьРасширеннаяПодсказка" id="772"/>
 										</Button>
 									</ChildItems>
 								</CommandBar>
@@ -441,6 +510,7 @@
 									<v8:content>Новости</v8:content>
 								</v8:item>
 							</Title>
+							<Behavior>Usual</Behavior>
 							<ExtendedTooltip name="ПанельКонтекстныхНовостейРасширеннаяПодсказка" id="562"/>
 						</UsualGroup>
 						<UsualGroup name="ГруппаПредупреждений" id="493">
@@ -452,45 +522,26 @@
 							</Title>
 							<HorizontalStretch>true</HorizontalStretch>
 							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
-							<ExtendedTooltip name="ГруппаПредупрежденияРасширеннаяПодсказка" id="494"/>
+							<ExtendedTooltip name="ГруппаПредупрежденийРасширеннаяПодсказка" id="494"/>
 						</UsualGroup>
 						<UsualGroup name="ГруппаСостояние" id="48">
 							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
-							<ExtendedTooltip name="Группа1РасширеннаяПодсказка5" id="49"/>
+							<ExtendedTooltip name="ГруппаСостояниеРасширеннаяПодсказка" id="49"/>
 							<ChildItems>
 								<UsualGroup name="ГруппаСостояниеПредставление" id="552">
 									<HorizontalStretch>true</HorizontalStretch>
 									<Group>AlwaysHorizontal</Group>
+									<Behavior>Usual</Behavior>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="ГруппаСостояниеПредставлениеРасширеннаяПодсказка" id="553"/>
 									<ChildItems>
-										<LabelDecoration name="НадписьСостояние" id="19">
-											<Width>8</Width>
-											<Title formatted="false">
-												<v8:item>
-													<v8:lang>ru</v8:lang>
-													<v8:content>Состояние:</v8:content>
-												</v8:item>
-											</Title>
-											<ContextMenu name="Декорация1КонтекстноеМеню1" id="20"/>
-											<ExtendedTooltip name="Декорация1РасширеннаяПодсказка1" id="21"/>
-										</LabelDecoration>
-										<LabelDecoration name="ПредставлениеСостояния" id="22">
-											<Font ref="style:ЖирныйШрифтБЭД" kind="StyleItem"/>
-											<Title formatted="false">
-												<v8:item>
-													<v8:lang>ru</v8:lang>
-													<v8:content>На подписи (0 из 1)</v8:content>
-												</v8:item>
-											</Title>
-											<ContextMenu name="Декорация1КонтекстноеМеню2" id="23"/>
-											<ExtendedTooltip name="Декорация1РасширеннаяПодсказка2" id="24"/>
-										</LabelDecoration>
 										<InputField name="ВидДокумента" id="556">
 											<DataPath>Объект.ВидДокумента</DataPath>
 											<Title>
@@ -515,12 +566,39 @@
 										</InputField>
 									</ChildItems>
 								</UsualGroup>
-								<UsualGroup name="ГруппаСостояниеПричина" id="554">
+								<UsualGroup name="ГруппаСостояниеПричина" id="802">
+									<HorizontalSpacing>None</HorizontalSpacing>
+									<Behavior>Usual</Behavior>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
-									<ExtendedTooltip name="ГруппаСостояниеПричинаРасширеннаяПодсказка" id="555"/>
+									<ExtendedTooltip name="ГруппаСостояниеПричинаРасширеннаяПодсказка" id="803"/>
 									<ChildItems>
-										<LabelField name="ПричинаОтклонения" id="50">
+										<LabelField name="ПредставлениеСостояния" id="804">
+											<DataPath>ПредставлениеСостояния</DataPath>
+											<Font ref="style:ЖирныйШрифтБЭД" kind="StyleItem"/>
+											<ContextMenu name="ПредставлениеСостоянияКонтекстноеМеню" id="805"/>
+											<ExtendedTooltip name="ПредставлениеСостоянияРасширеннаяПодсказка" id="806"/>
+										</LabelField>
+										<PictureDecoration name="ПоказатьКомментарийСостояния" id="807">
+											<Visible>false</Visible>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Показать комментарий состояния</v8:content>
+												</v8:item>
+											</Title>
+											<Hyperlink>true</Hyperlink>
+											<Picture>
+												<xr:Ref>StdPicture.Find</xr:Ref>
+												<xr:LoadTransparent>true</xr:LoadTransparent>
+											</Picture>
+											<ContextMenu name="ПоказатьКомментарийСостоянияКонтекстноеМеню" id="808"/>
+											<ExtendedTooltip name="ПоказатьКомментарийСостоянияРасширеннаяПодсказка" id="809"/>
+											<Events>
+												<Event name="Click">ПоказатьКомментарийСостояния</Event>
+											</Events>
+										</PictureDecoration>
+										<LabelField name="ПричинаОтклонения" id="810">
 											<DataPath>ПричинаОтклонения</DataPath>
 											<Title>
 												<v8:item>
@@ -529,8 +607,8 @@
 												</v8:item>
 											</Title>
 											<AutoMaxWidth>false</AutoMaxWidth>
-											<ContextMenu name="ПолеКонтекстноеМеню5" id="51"/>
-											<ExtendedTooltip name="ПолеРасширеннаяПодсказка5" id="52"/>
+											<ContextMenu name="ПричинаОтклоненияКонтекстноеМеню" id="811"/>
+											<ExtendedTooltip name="ПричинаОтклоненияРасширеннаяПодсказка" id="812"/>
 										</LabelField>
 									</ChildItems>
 								</UsualGroup>
@@ -545,6 +623,7 @@
 							</Title>
 							<HorizontalStretch>true</HorizontalStretch>
 							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
 							<BackColor>#FFF0F0</BackColor>
@@ -578,6 +657,7 @@
 					<HorizontalStretch>true</HorizontalStretch>
 					<Group>AlwaysHorizontal</Group>
 					<VerticalSpacing>None</VerticalSpacing>
+					<Behavior>Usual</Behavior>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="ГруппаСоставПакетаРасширеннаяПодсказка" id="662"/>
@@ -592,6 +672,7 @@
 				</v8:item>
 			</Title>
 			<Group>AlwaysHorizontal</Group>
+			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаНевозможноОтразитьВУчетеРасширеннаяПодсказка" id="496"/>
@@ -641,6 +722,7 @@
 			</Title>
 			<HorizontalStretch>true</HorizontalStretch>
 			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаОтражениеВУчетеРасширеннаяПодсказка" id="504"/>
@@ -652,6 +734,7 @@
 							<v8:content>Документы учета</v8:content>
 						</v8:item>
 					</Title>
+					<Behavior>Usual</Behavior>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="ГруппаДокументыУчетаРасширеннаяПодсказка" id="511"/>
@@ -675,6 +758,7 @@
 								</v8:item>
 							</Title>
 							<Group>AlwaysHorizontal</Group>
+							<Behavior>Usual</Behavior>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="ГруппаСоздатьДокументУчетаРасширеннаяПодсказка" id="516"/>
@@ -713,6 +797,7 @@
 								</v8:item>
 							</Title>
 							<Group>AlwaysHorizontal</Group>
+							<Behavior>Usual</Behavior>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="ГруппаДокументУчета1РасширеннаяПодсказка" id="523"/>
@@ -759,6 +844,7 @@
 								</v8:item>
 							</Title>
 							<Group>AlwaysHorizontal</Group>
+							<Behavior>Usual</Behavior>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="ГруппаДокументУчета2РасширеннаяПодсказка" id="531"/>
@@ -806,6 +892,7 @@
 								</v8:item>
 							</Title>
 							<Group>AlwaysHorizontal</Group>
+							<Behavior>Usual</Behavior>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="ГруппаНастройкаОтраженияВУчетеРасширеннаяПодсказка" id="539"/>
@@ -841,6 +928,7 @@
 					</Title>
 					<HorizontalStretch>true</HorizontalStretch>
 					<HorizontalSpacing>Half</HorizontalSpacing>
+					<Behavior>Usual</Behavior>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
 					<BackColor>style:ToolTipBackColor</BackColor>
@@ -854,7 +942,7 @@
 								</v8:item>
 							</Title>
 							<Picture>
-								<xr:Ref>CommonPicture.Информация</xr:Ref>
+								<xr:Ref>CommonPicture.УдалитьИнформация</xr:Ref>
 								<xr:LoadTransparent>false</xr:LoadTransparent>
 							</Picture>
 							<FileDragMode>AsFile</FileDragMode>
@@ -881,9 +969,10 @@
 		</UsualGroup>
 		<UsualGroup name="ГруппаДанныеДокументов" id="53">
 			<Group>AlwaysHorizontal</Group>
+			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
-			<ExtendedTooltip name="Группа1РасширеннаяПодсказка6" id="54"/>
+			<ExtendedTooltip name="ГруппаДанныеДокументовРасширеннаяПодсказка" id="54"/>
 			<ChildItems>
 				<Table name="СхемаРегламента" id="201">
 					<Representation>Tree</Representation>
@@ -989,7 +1078,7 @@
 						</v8:item>
 					</Title>
 					<PagesRepresentation>TabsOnTop</PagesRepresentation>
-					<ExtendedTooltip name="Группа1РасширеннаяПодсказка7" id="56"/>
+					<ExtendedTooltip name="ГруппаСтраницыРасширеннаяПодсказка" id="56"/>
 					<ChildItems>
 						<Page name="СтраницаСодержимое" id="57">
 							<Title>
@@ -998,8 +1087,155 @@
 									<v8:content>Содержимое</v8:content>
 								</v8:item>
 							</Title>
-							<ExtendedTooltip name="Группа1РасширеннаяПодсказка8" id="58"/>
+							<ExtendedTooltip name="СтраницаСодержимоеРасширеннаяПодсказка" id="58"/>
 							<ChildItems>
+								<UsualGroup name="ГруппаРаботаСФайлом" id="769">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа работа с файлом</v8:content>
+										</v8:item>
+									</Title>
+									<Group>Vertical</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаРаботаСФайломРасширеннаяПодсказка" id="770"/>
+									<ChildItems>
+										<UsualGroup name="ГруппаПредставлениеФайла" id="82">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа вложение горизонтальная</v8:content>
+												</v8:item>
+											</Title>
+											<Height>2</Height>
+											<GroupVerticalAlign>Bottom</GroupVerticalAlign>
+											<Group>Horizontal</Group>
+											<VerticalAlign>Bottom</VerticalAlign>
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаПредставлениеФайлаРасширеннаяПодсказка" id="83"/>
+											<ChildItems>
+												<LabelDecoration name="НадписьФайл" id="84">
+													<AutoMaxWidth>false</AutoMaxWidth>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Файл:</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="НадписьФайлКонтекстноеМеню" id="85"/>
+													<ExtendedTooltip name="НадписьФайлРасширеннаяПодсказка" id="86"/>
+												</LabelDecoration>
+												<PictureField name="КартинкаФайла" id="87">
+													<DataPath>КартинкаФайла</DataPath>
+													<TitleLocation>None</TitleLocation>
+													<Width>2</Width>
+													<Height>1</Height>
+													<HorizontalStretch>false</HorizontalStretch>
+													<VerticalStretch>false</VerticalStretch>
+													<ValuesPicture>
+														<xr:Ref>CommonPicture.КоллекцияПиктограммФайлов</xr:Ref>
+														<xr:LoadTransparent>false</xr:LoadTransparent>
+													</ValuesPicture>
+													<BorderColor>style:FormBackColor</BorderColor>
+													<ContextMenu name="КартинкаФайлаКонтекстноеМеню" id="88">
+														<Autofill>false</Autofill>
+													</ContextMenu>
+													<ExtendedTooltip name="КартинкаФайлаРасширеннаяПодсказка" id="89"/>
+												</PictureField>
+												<LabelField name="НадписьИмяФайла" id="90">
+													<DataPath>ИмяФайла</DataPath>
+													<TitleLocation>None</TitleLocation>
+													<AutoMaxWidth>false</AutoMaxWidth>
+													<ContextMenu name="НадписьИмяФайлаКонтекстноеМеню" id="91"/>
+													<ExtendedTooltip name="НадписьИмяФайлаРасширеннаяПодсказка" id="92"/>
+													<Events>
+														<Event name="Click">НадписьИмяФайлаНажатие</Event>
+													</Events>
+												</LabelField>
+											</ChildItems>
+										</UsualGroup>
+										<UsualGroup name="ГруппаПодсказкаДоговорныйДокументПДФ_А3" id="727">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа подсказка (договорный документ PDF/A3)</v8:content>
+												</v8:item>
+											</Title>
+											<Width>30</Width>
+											<GroupHorizontalAlign>Left</GroupHorizontalAlign>
+											<GroupVerticalAlign>Center</GroupVerticalAlign>
+											<Group>AlwaysHorizontal</Group>
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаПодсказкаДоговорныйДокументПДФ_А3РасширеннаяПодсказка" id="728"/>
+											<ChildItems>
+												<PictureDecoration name="ДекорацияИнфо" id="740">
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Декорация инфо</v8:content>
+														</v8:item>
+													</Title>
+													<GroupVerticalAlign>Center</GroupVerticalAlign>
+													<Picture>
+														<xr:Ref>CommonPicture.Информация02</xr:Ref>
+														<xr:LoadTransparent>false</xr:LoadTransparent>
+													</Picture>
+													<ContextMenu name="ДекорацияИнфоКонтекстноеМеню" id="741"/>
+													<ExtendedTooltip name="ДекорацияИнфоРасширеннаяПодсказка" id="742"/>
+												</PictureDecoration>
+												<UsualGroup name="ПодсказкаДоговорныйДокументПДФ_А3" id="732">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Информация о договорном документе PDF/A3</v8:content>
+														</v8:item>
+													</Title>
+													<TitleTextColor>style:ГиперссылкаЦвет</TitleTextColor>
+													<TitleFont ref="style:NormalTextFont" kind="StyleItem"/>
+													<Group>AlwaysHorizontal</Group>
+													<HorizontalSpacing>None</HorizontalSpacing>
+													<VerticalSpacing>None</VerticalSpacing>
+													<Behavior>PopUp</Behavior>
+													<Collapsed>true</Collapsed>
+													<ShowLeftMargin>false</ShowLeftMargin>
+													<ExtendedTooltip name="ПодсказкаДоговорныйДокументПДФ_А3РасширеннаяПодсказка" id="733"/>
+													<ChildItems>
+														<PictureDecoration name="ДекорацияПодсказка" id="737">
+															<Picture>
+																<xr:Ref>CommonPicture.Информация32</xr:Ref>
+																<xr:LoadTransparent>false</xr:LoadTransparent>
+															</Picture>
+															<ContextMenu name="ДекорацияПодсказкаКонтекстноеМеню" id="738"/>
+															<ExtendedTooltip name="ДекорацияПодсказкаРасширеннаяПодсказка" id="739"/>
+														</PictureDecoration>
+														<LabelDecoration name="ДекорацияОтступ" id="743">
+															<Width>1</Width>
+															<ContextMenu name="ДекорацияОтступКонтекстноеМеню" id="744"/>
+															<ExtendedTooltip name="ДекорацияОтступРасширеннаяПодсказка" id="745"/>
+														</LabelDecoration>
+														<LabelDecoration name="НадписьПодсказкаДоговорныйДокументПДФ_А3" id="734">
+															<AutoMaxWidth>false</AutoMaxWidth>
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Информация о договорном документе PDF/A3</v8:content>
+																</v8:item>
+															</Title>
+															<ContextMenu name="НадписьПодсказкаДоговорныйДокументПДФ_А3КонтекстноеМеню" id="735"/>
+															<ExtendedTooltip name="НадписьПодсказкаДоговорныйДокументПДФ_А3РасширеннаяПодсказка" id="736"/>
+														</LabelDecoration>
+													</ChildItems>
+												</UsualGroup>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</UsualGroup>
 								<Pages name="СтраницыПредставленийДокумента" id="67">
 									<Title>
 										<v8:item>
@@ -1008,7 +1244,7 @@
 										</v8:item>
 									</Title>
 									<PagesRepresentation>None</PagesRepresentation>
-									<ExtendedTooltip name="СтраницыПредставленияДокументаРасширеннаяПодсказка" id="68"/>
+									<ExtendedTooltip name="СтраницыПредставленийДокументаРасширеннаяПодсказка" id="68"/>
 									<ChildItems>
 										<Page name="СтраницаТабличныйДокументИнформацияОтправителя" id="123">
 											<Title>
@@ -1025,9 +1261,6 @@
 													<BorderColor>style:FormBackColor</BorderColor>
 													<ContextMenu name="ТабличныйДокументИнформацияОтправителяКонтекстноеМеню" id="126"/>
 													<ExtendedTooltip name="ТабличныйДокументИнформацияОтправителяРасширеннаяПодсказка" id="127"/>
-													<Events>
-														<Event name="DetailProcessing">Подключаемый_ТабличныйДокументОбработкаРасшифровки</Event>
-													</Events>
 												</SpreadSheetDocumentField>
 											</ChildItems>
 										</Page>
@@ -1038,63 +1271,35 @@
 													<v8:content>Страница файл</v8:content>
 												</v8:item>
 											</Title>
-											<ExtendedTooltip name="СтраницыПредставленияДокументаРасширеннаяПодсказка1" id="70"/>
+											<ExtendedTooltip name="СтраницаФайлРасширеннаяПодсказка" id="70"/>
 											<ChildItems>
-												<UsualGroup name="ГруппаПредставлениеФайла" id="82">
+												<UsualGroup name="ГруппаPDFДокумент" id="794">
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ГруппаPDFДокументРасширеннаяПодсказка" id="795"/>
+												</UsualGroup>
+												<UsualGroup name="СодержимоеPdfДокумента" id="798">
 													<Title>
 														<v8:item>
 															<v8:lang>ru</v8:lang>
-															<v8:content>Группа вложение горизонтальная</v8:content>
+															<v8:content>Содержимое pdf документа</v8:content>
 														</v8:item>
 													</Title>
-													<Height>2</Height>
-													<GroupVerticalAlign>Bottom</GroupVerticalAlign>
-													<Group>Horizontal</Group>
-													<VerticalAlign>Bottom</VerticalAlign>
+													<Group>AlwaysHorizontal</Group>
 													<Representation>None</Representation>
 													<ShowTitle>false</ShowTitle>
-													<ExtendedTooltip name="СтраницыПредставленияДокументаРасширеннаяПодсказка2" id="83"/>
-													<ChildItems>
-														<LabelDecoration name="НадписьФайл" id="84">
-															<AutoMaxWidth>false</AutoMaxWidth>
-															<Title formatted="false">
-																<v8:item>
-																	<v8:lang>ru</v8:lang>
-																	<v8:content>Файл:</v8:content>
-																</v8:item>
-															</Title>
-															<ContextMenu name="НадписьФайлКонтекстноеМеню" id="85"/>
-															<ExtendedTooltip name="СтраницыПредставленияДокументаРасширеннаяПодсказка3" id="86"/>
-														</LabelDecoration>
-														<PictureField name="КартинкаФайла" id="87">
-															<DataPath>КартинкаФайла</DataPath>
-															<TitleLocation>None</TitleLocation>
-															<Width>2</Width>
-															<Height>1</Height>
-															<HorizontalStretch>false</HorizontalStretch>
-															<VerticalStretch>false</VerticalStretch>
-															<ValuesPicture>
-																<xr:Ref>CommonPicture.КоллекцияПиктограммФайлов</xr:Ref>
-																<xr:LoadTransparent>false</xr:LoadTransparent>
-															</ValuesPicture>
-															<BorderColor>style:FormBackColor</BorderColor>
-															<ContextMenu name="КартинкаФайлКонтекстноеМеню" id="88">
-																<Autofill>false</Autofill>
-															</ContextMenu>
-															<ExtendedTooltip name="КартинкаФайлРасширеннаяПодсказка" id="89"/>
-														</PictureField>
-														<LabelField name="НадписьИмяФайла" id="90">
-															<DataPath>ИмяФайла</DataPath>
-															<TitleLocation>None</TitleLocation>
-															<AutoMaxWidth>false</AutoMaxWidth>
-															<ContextMenu name="ТекстВложениеКонтекстноеМеню" id="91"/>
-															<ExtendedTooltip name="СтраницыПредставленияДокументаРасширеннаяПодсказка5" id="92"/>
-															<Events>
-																<Event name="Click">НадписьИмяФайлаНажатие</Event>
-															</Events>
-														</LabelField>
-													</ChildItems>
+													<ExtendedTooltip name="СодержимоеPdfДокументаРасширеннаяПодсказка" id="799"/>
 												</UsualGroup>
+												<UsualGroup name="ГруппаКомандыPDFДокумента" id="796">
+													<Group>Vertical</Group>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ГруппаКомандыPDFДокументаРасширеннаяПодсказка" id="797"/>
+												</UsualGroup>
+												<LabelDecoration name="ДекорацияПустая" id="766">
+													<ContextMenu name="ДекорацияПустаяКонтекстноеМеню" id="767"/>
+													<ExtendedTooltip name="ДекорацияПустаяРасширеннаяПодсказка" id="768"/>
+												</LabelDecoration>
 											</ChildItems>
 										</Page>
 										<Page name="СтраницаОжидание" id="71">
@@ -1104,7 +1309,7 @@
 													<v8:content>Страница ожидание</v8:content>
 												</v8:item>
 											</Title>
-											<ExtendedTooltip name="СтраницыПредставленияДокументаРасширеннаяПодсказка16" id="72"/>
+											<ExtendedTooltip name="СтраницаОжиданиеРасширеннаяПодсказка" id="72"/>
 											<ChildItems>
 												<UsualGroup name="ГруппаОжиданиеКартинкаИНадпись" id="115">
 													<Title>
@@ -1114,9 +1319,10 @@
 														</v8:item>
 													</Title>
 													<VerticalAlign>Center</VerticalAlign>
+													<Behavior>Usual</Behavior>
 													<Representation>None</Representation>
 													<ShowTitle>false</ShowTitle>
-													<ExtendedTooltip name="СтраницыПредставленияДокументаРасширеннаяПодсказка17" id="116"/>
+													<ExtendedTooltip name="ГруппаОжиданиеКартинкаИНадписьРасширеннаяПодсказка" id="116"/>
 													<ChildItems>
 														<PictureDecoration name="КартинкаДлительнаяОперация" id="117">
 															<Title formatted="false">
@@ -1130,8 +1336,8 @@
 																<xr:LoadTransparent>false</xr:LoadTransparent>
 															</Picture>
 															<FileDragMode>AsFile</FileDragMode>
-															<ContextMenu name="ДекорацияДлительнаяОперацияКонтекстноеМеню" id="118"/>
-															<ExtendedTooltip name="СтраницыПредставленияДокументаРасширеннаяПодсказка18" id="119"/>
+															<ContextMenu name="КартинкаДлительнаяОперацияКонтекстноеМеню" id="118"/>
+															<ExtendedTooltip name="КартинкаДлительнаяОперацияРасширеннаяПодсказка" id="119"/>
 														</PictureDecoration>
 														<LabelDecoration name="НадписьДлительнаяОперация" id="120">
 															<Width>30</Width>
@@ -1144,8 +1350,8 @@
 																</v8:item>
 															</Title>
 															<VerticalAlign>Center</VerticalAlign>
-															<ContextMenu name="ДекорацияПоясняющийТекстДлительнойОперацииКонтекстноеМеню" id="121"/>
-															<ExtendedTooltip name="СтраницыПредставленияДокументаРасширеннаяПодсказка19" id="122"/>
+															<ContextMenu name="НадписьДлительнаяОперацияКонтекстноеМеню" id="121"/>
+															<ExtendedTooltip name="НадписьДлительнаяОперацияРасширеннаяПодсказка" id="122"/>
 														</LabelDecoration>
 													</ChildItems>
 												</UsualGroup>
@@ -1158,14 +1364,15 @@
 													<v8:content>Страница ошибка</v8:content>
 												</v8:item>
 											</Title>
-											<ExtendedTooltip name="СтраницыПредставленияДокументаРасширеннаяПодсказка20" id="74"/>
+											<ExtendedTooltip name="СтраницаОшибкаРасширеннаяПодсказка" id="74"/>
 											<ChildItems>
 												<UsualGroup name="ГруппаОшибкаФормированияПредставления" id="78">
 													<HorizontalStretch>true</HorizontalStretch>
+													<Behavior>Usual</Behavior>
 													<Representation>None</Representation>
 													<ShowTitle>false</ShowTitle>
 													<BackColor>style:ЦветФонаПредупреждения</BackColor>
-													<ExtendedTooltip name="СтраницыПредставленияДокументаРасширеннаяПодсказка21" id="79"/>
+													<ExtendedTooltip name="ГруппаОшибкаФормированияПредставленияРасширеннаяПодсказка" id="79"/>
 													<ChildItems>
 														<LabelDecoration name="НадписьОшибкаФормированияПредставления" id="75">
 															<AutoMaxWidth>false</AutoMaxWidth>
@@ -1176,8 +1383,8 @@
 </v8:content>
 																</v8:item>
 															</Title>
-															<ContextMenu name="Декорация1КонтекстноеМеню3" id="76"/>
-															<ExtendedTooltip name="СтраницыПредставленияДокументаРасширеннаяПодсказка22" id="77"/>
+															<ContextMenu name="НадписьОшибкаФормированияПредставленияКонтекстноеМеню" id="76"/>
+															<ExtendedTooltip name="НадписьОшибкаФормированияПредставленияРасширеннаяПодсказка" id="77"/>
 															<Events>
 																<Event name="URLProcessing">НадписьОшибкаФормированияПредставленияОбработкаНавигационнойСсылки</Event>
 															</Events>
@@ -1190,6 +1397,28 @@
 								</Pages>
 							</ChildItems>
 						</Page>
+						<Page name="СтраницаСодержимоеHTMLДокумент" id="746">
+							<Visible>false</Visible>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Содержимое</v8:content>
+								</v8:item>
+							</Title>
+							<Group>HorizontalIfPossible</Group>
+							<ExtendedTooltip name="СтраницаСодержимоеHTMLДокументРасширеннаяПодсказка" id="747"/>
+							<ChildItems>
+								<HTMLDocumentField name="HTMLДокументИнформацияОтправителя" id="748">
+									<DataPath>HTMLДокументИнформацияОтправителя</DataPath>
+									<SkipOnInput>true</SkipOnInput>
+									<TitleLocation>None</TitleLocation>
+									<ToolTipRepresentation>None</ToolTipRepresentation>
+									<Output>Enable</Output>
+									<ContextMenu name="HTMLДокументИнформацияОтправителяКонтекстноеМеню" id="749"/>
+									<ExtendedTooltip name="HTMLДокументИнформацияОтправителяРасширеннаяПодсказка" id="750"/>
+								</HTMLDocumentField>
+							</ChildItems>
+						</Page>
 						<Page name="СтраницаПодписиИСтатусы" id="61">
 							<Title>
 								<v8:item>
@@ -1197,7 +1426,7 @@
 									<v8:content>Подписи и статусы</v8:content>
 								</v8:item>
 							</Title>
-							<ExtendedTooltip name="Группа1РасширеннаяПодсказка9" id="62"/>
+							<ExtendedTooltip name="СтраницаПодписиИСтатусыРасширеннаяПодсказка" id="62"/>
 							<ChildItems>
 								<UsualGroup name="ГруппаПредупрежденияЭлектронныеПодписи" id="307">
 									<Visible>false</Visible>
@@ -1208,6 +1437,7 @@
 										</v8:item>
 									</Title>
 									<HorizontalStretch>true</HorizontalStretch>
+									<Behavior>Usual</Behavior>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
 									<BackColor>style:ToolTipBackColor</BackColor>
@@ -1253,8 +1483,9 @@
 										</v8:item>
 									</Title>
 									<Group>Vertical</Group>
+									<Behavior>Usual</Behavior>
 									<Representation>None</Representation>
-									<ExtendedTooltip name="ГруппаЭПРасширеннаяПодсказка" id="318"/>
+									<ExtendedTooltip name="ГруппаПодписиРасширеннаяПодсказка" id="318"/>
 									<ChildItems>
 										<Table name="Подписи" id="319">
 											<Representation>List</Representation>
@@ -1270,11 +1501,6 @@
 											<EnableDrag>true</EnableDrag>
 											<FileDragMode>AsFile</FileDragMode>
 											<DataPath>Подписи</DataPath>
-											<RowPictureDataPath>Подписи.ОтветнаяПодпись</RowPictureDataPath>
-											<RowsPicture>
-												<xr:Ref>CommonPicture.ВидыЭлектроннойПодписиБЭД</xr:Ref>
-												<xr:LoadTransparent>false</xr:LoadTransparent>
-											</RowsPicture>
 											<Title>
 												<v8:item>
 													<v8:lang>ru</v8:lang>
@@ -1301,22 +1527,27 @@
 											<ViewStatusLocation>None</ViewStatusLocation>
 											<SearchControlLocation>None</SearchControlLocation>
 											<RowFilter xsi:nil="true"/>
-											<ContextMenu name="ТаблицаЭПКонтекстноеМеню" id="320">
+											<ContextMenu name="ПодписиКонтекстноеМеню" id="320">
 												<ChildItems>
 													<Button name="ПроверитьПодписиКонтекст" id="321">
 														<Type>CommandBarButton</Type>
 														<CommandName>Form.Command.ПроверитьПодписи</CommandName>
-														<ExtendedTooltip name="ПроверитьПодписиExtendedTooltip" id="322"/>
+														<ExtendedTooltip name="ПроверитьПодписиКонтекстРасширеннаяПодсказка" id="322"/>
 													</Button>
 													<Button name="ОткрытьСертификатКонтекст" id="323">
 														<Type>CommandBarButton</Type>
 														<CommandName>Form.Command.ОткрытьСертификат</CommandName>
-														<ExtendedTooltip name="ОткрытьСертификатExtendedTooltip" id="324"/>
+														<ExtendedTooltip name="ОткрытьСертификатКонтекстРасширеннаяПодсказка" id="324"/>
+													</Button>
+													<Button name="ПроверкаДоверенностиВыполненаВручнуюКонтекст" id="753">
+														<Type>CommandBarButton</Type>
+														<CommandName>Form.Command.ПроверкаДоверенностиВыполненаВручную</CommandName>
+														<ExtendedTooltip name="ПроверкаДоверенностиВыполненаВручнуюКонтекстРасширеннаяПодсказка" id="754"/>
 													</Button>
 												</ChildItems>
 											</ContextMenu>
-											<AutoCommandBar name="ТаблицаЭПКоманднаяПанель" id="325"/>
-											<ExtendedTooltip name="ТаблицаЭПРасширеннаяПодсказка" id="326"/>
+											<AutoCommandBar name="ПодписиКоманднаяПанель" id="325"/>
+											<ExtendedTooltip name="ПодписиРасширеннаяПодсказка" id="326"/>
 											<SearchStringAddition name="ТаблицаЭПСтрокаПоиска" id="327">
 												<AdditionSource>
 													<Item>Подписи</Item>
@@ -1344,23 +1575,43 @@
 											</SearchControlAddition>
 											<Events>
 												<Event name="Selection">ПодписиВыбор</Event>
+												<Event name="OnActivateRow">ПодписиПриАктивизацииСтроки</Event>
 											</Events>
 											<ChildItems>
-												<InputField name="ПодписиКомуВыданСертификат" id="353">
+												<InputField name="ПодписиСертификат" id="353">
 													<DataPath>Подписи.Владелец</DataPath>
 													<Title>
 														<v8:item>
 															<v8:lang>ru</v8:lang>
-															<v8:content>Кому выдан сертификат</v8:content>
+															<v8:content>Сертификат</v8:content>
 														</v8:item>
 													</Title>
-													<ContextMenu name="СписокПодписейКонтекстноеМеню" id="354"/>
-													<ExtendedTooltip name="СписокПодписейРасширеннаяПодсказка" id="355"/>
+													<ContextMenu name="ПодписиСертификатКонтекстноеМеню" id="354"/>
+													<ExtendedTooltip name="ПодписиСертификатРасширеннаяПодсказка" id="355"/>
+												</InputField>
+												<InputField name="ПодписиДоверенностьПредставление" id="706">
+													<DataPath>Подписи.ДоверенностьПредставление</DataPath>
+													<AutoCellHeight>true</AutoCellHeight>
+													<MultiLine>true</MultiLine>
+													<ContextMenu name="ПодписиДоверенностьПредставлениеКонтекстноеМеню" id="707"/>
+													<ExtendedTooltip name="ПодписиДоверенностьПредставлениеРасширеннаяПодсказка" id="708"/>
 												</InputField>
 												<InputField name="ПодписиДатаПодписи" id="356">
 													<DataPath>Подписи.ДатаПодписи</DataPath>
-													<ContextMenu name="СписокПодписейКонтекстноеМеню1" id="357"/>
-													<ExtendedTooltip name="СписокПодписейРасширеннаяПодсказка1" id="358"/>
+													<Format>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>ДФ='dd.MM.yyyy HH:mm'</v8:content>
+														</v8:item>
+													</Format>
+													<EditFormat>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>ДФ='dd.MM.yyyy HH:mm'</v8:content>
+														</v8:item>
+													</EditFormat>
+													<ContextMenu name="ПодписиДатаПодписиКонтекстноеМеню" id="357"/>
+													<ExtendedTooltip name="ПодписиДатаПодписиРасширеннаяПодсказка" id="358"/>
 												</InputField>
 												<ColumnGroup name="СписокПодписейГруппаСтатусИКартинка" id="342">
 													<Title>
@@ -1370,7 +1621,7 @@
 														</v8:item>
 													</Title>
 													<Group>InCell</Group>
-													<ExtendedTooltip name="СписокПодписейРасширеннаяПодсказка2" id="343"/>
+													<ExtendedTooltip name="СписокПодписейГруппаСтатусИКартинкаРасширеннаяПодсказка" id="343"/>
 													<ChildItems>
 														<PictureField name="ПодписиВыводКартинки" id="365">
 															<DataPath>Подписи.ВыводКартинки</DataPath>
@@ -1379,20 +1630,25 @@
 																<xr:Ref>CommonPicture.ЭлектронныйДокументОшибкаПодписи</xr:Ref>
 																<xr:LoadTransparent>false</xr:LoadTransparent>
 															</ValuesPicture>
-															<ContextMenu name="СписокПодписейКонтекстноеМеню2" id="366"/>
-															<ExtendedTooltip name="СписокПодписейРасширеннаяПодсказка3" id="367"/>
+															<ContextMenu name="ПодписиВыводКартинкиКонтекстноеМеню" id="366"/>
+															<ExtendedTooltip name="ПодписиВыводКартинкиРасширеннаяПодсказка" id="367"/>
 														</PictureField>
 														<InputField name="ПодписиПодписьВернаПредставление" id="368">
 															<DataPath>Подписи.ПодписьВернаПредставление</DataPath>
-															<ContextMenu name="СписокПодписейКонтекстноеМеню3" id="369"/>
-															<ExtendedTooltip name="СписокПодписейРасширеннаяПодсказка4" id="370"/>
+															<AutoCellHeight>true</AutoCellHeight>
+															<MultiLine>true</MultiLine>
+															<ContextMenu name="ПодписиПодписьВернаПредставлениеКонтекстноеМеню" id="369"/>
+															<ExtendedTooltip name="ПодписиПодписьВернаПредставлениеРасширеннаяПодсказка" id="370"/>
 														</InputField>
 													</ChildItems>
 												</ColumnGroup>
 												<InputField name="ПодписиУстановившийПодпись" id="383">
 													<DataPath>Подписи.УстановившийПодпись</DataPath>
-													<ContextMenu name="СписокПодписейКонтекстноеМеню4" id="384"/>
-													<ExtendedTooltip name="СписокПодписейРасширеннаяПодсказка5" id="385"/>
+													<UserVisible>
+														<xr:Common>false</xr:Common>
+													</UserVisible>
+													<ContextMenu name="ПодписиУстановившийПодписьКонтекстноеМеню" id="384"/>
+													<ExtendedTooltip name="ПодписиУстановившийПодписьРасширеннаяПодсказка" id="385"/>
 												</InputField>
 											</ChildItems>
 										</Table>
@@ -1412,7 +1668,7 @@
 								<xr:LoadTransparent>false</xr:LoadTransparent>
 							</Picture>
 							<Group>AlwaysHorizontal</Group>
-							<ExtendedTooltip name="Группа1РасширеннаяПодсказка10" id="64"/>
+							<ExtendedTooltip name="СтраницаСопроводительнаяЗапискаРасширеннаяПодсказка" id="64"/>
 							<ChildItems>
 								<InputField name="СопроводительнаяЗаписка" id="428">
 									<DataPath>СопроводительнаяЗаписка</DataPath>
@@ -1420,8 +1676,8 @@
 									<TitleLocation>None</TitleLocation>
 									<AutoMaxWidth>false</AutoMaxWidth>
 									<MultiLine>true</MultiLine>
-									<ContextMenu name="ОбъектДополнительнаяИнформацияКонтекстноеМеню" id="429"/>
-									<ExtendedTooltip name="ОбъектДополнительнаяИнформацияРасширеннаяПодсказка" id="430"/>
+									<ContextMenu name="СопроводительнаяЗапискаКонтекстноеМеню" id="429"/>
+									<ExtendedTooltip name="СопроводительнаяЗапискаРасширеннаяПодсказка" id="430"/>
 									<Events>
 										<Event name="OnChange">СопроводительнаяЗапискаПриИзменении</Event>
 									</Events>
@@ -1665,6 +1921,81 @@
 						<v8:DateQualifiers>
 							<v8:DateFractions>DateTime</v8:DateFractions>
 						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="ДоверенностьПредставление" id="86">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Доверенность</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ЭтоПодписьПоДоверенности" id="91">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Это подпись по доверенности</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="СвойстваДоверенности" id="88">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Свойства доверенности</v8:content>
+						</v8:item>
+					</Title>
+					<Type/>
+				</Column>
+				<Column name="РезультатПроверкиПоМЧД" id="96">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Результат проверки по МЧД</v8:content>
+						</v8:item>
+					</Title>
+					<Type/>
+				</Column>
+				<Column name="СвойстваПодписи" id="97">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Свойства подписи</v8:content>
+						</v8:item>
+					</Title>
+					<Type/>
+				</Column>
+				<Column name="ПодписанныйОбъект" id="99">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Подписанный объект</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.СообщениеЭДОПрисоединенныеФайлы</v8:Type>
+					</Type>
+				</Column>
+				<Column name="СообщениеЭДО" id="101">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сообщение ЭДО</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:DocumentRef.СообщениеЭДО</v8:Type>
 					</Type>
 				</Column>
 			</Columns>
@@ -2094,9 +2425,6 @@
 				<v8:Type>xs:boolean</v8:Type>
 			</Type>
 			<SavedData>true</SavedData>
-			<Save>
-				<Field>ОтключитьВыводСхемыРегламента</Field>
-			</Save>
 		</Attribute>
 		<Attribute name="ОтключитьВыводДопДанных" id="18">
 			<Title>
@@ -2109,9 +2437,6 @@
 				<v8:Type>xs:boolean</v8:Type>
 			</Type>
 			<SavedData>true</SavedData>
-			<Save>
-				<Field>ОтключитьВыводДопДанных</Field>
-			</Save>
 		</Attribute>
 		<Attribute name="ОтключитьВыводКопияВерна" id="19">
 			<Title>
@@ -2124,24 +2449,6 @@
 				<v8:Type>xs:boolean</v8:Type>
 			</Type>
 			<SavedData>true</SavedData>
-			<Save>
-				<Field>ОтключитьВыводКопияВерна</Field>
-			</Save>
-		</Attribute>
-		<Attribute name="ОтключитьТранслитерацию" id="20">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Отключить транслитерацию</v8:content>
-				</v8:item>
-			</Title>
-			<Type>
-				<v8:Type>xs:boolean</v8:Type>
-			</Type>
-			<SavedData>true</SavedData>
-			<Save>
-				<Field>ОтключитьТранслитерацию</Field>
-			</Save>
 		</Attribute>
 		<Attribute name="ВыводитьБанковскиеРеквизиты" id="21">
 			<Title>
@@ -2153,9 +2460,6 @@
 			<Type>
 				<v8:Type>xs:boolean</v8:Type>
 			</Type>
-			<Save>
-				<Field>ВыводитьБанковскиеРеквизиты</Field>
-			</Save>
 		</Attribute>
 		<Attribute name="СопроводительнаяЗаписка" id="22">
 			<Title>
@@ -2212,20 +2516,6 @@
 			</Title>
 			<Type>
 				<v8:Type>cfg:EnumRef.СостоянияДокументовЭДО</v8:Type>
-			</Type>
-		</Attribute>
-		<Attribute name="ДатаИзмененияСостоянияЭДО" id="37">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Дата изменения состояния ЭДО</v8:content>
-				</v8:item>
-			</Title>
-			<Type>
-				<v8:Type>xs:dateTime</v8:Type>
-				<v8:DateQualifiers>
-					<v8:DateFractions>Date</v8:DateFractions>
-				</v8:DateQualifiers>
 			</Type>
 		</Attribute>
 		<Attribute name="ИдентификаторТекущегоЭлемента" id="41">
@@ -2637,6 +2927,115 @@
 				<v8:Type>xs:boolean</v8:Type>
 			</Type>
 		</Attribute>
+		<Attribute name="ПредставлениеСостояния" id="83">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Состояние</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="КомментарийСостояния" id="84">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Комментарий состояния</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ОповеститьОПрочтении" id="93">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Оповестить о прочтении</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="HTMLДокументИнформацияОтправителя" id="102">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>HTML документ информация отправителя</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ЕстьПравоИзмененияМЧД" id="103">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Есть право изменения МЧД</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ИзмененаСопроводительнаяЗаписка" id="104">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Изменена сопроводительная записка</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СведенияОPdfДокументе" id="110">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сведения о pdf документе</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="ЭтоМобильныйКлиент" id="111">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Это мобильный клиент</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ЕстьПравоАдминистрирования" id="112">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Есть право администрирования</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
 	</Attributes>
 	<Commands>
 		<Command name="ОткрытьКарточкуЭлектронногоДокумента" id="2">
@@ -2810,6 +3209,9 @@
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
 			<Action>Перенаправить</Action>
+			<FunctionalOptions>
+				<Item>FunctionalOption.ИспользоватьРазделениеДокументовПоОтветственнымЭДО</Item>
+			</FunctionalOptions>
 			<Representation>Picture</Representation>
 			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
@@ -3476,6 +3878,51 @@
 			</Title>
 			<Action>ВыгрузитьДокументооборотЦеликом</Action>
 		</Command>
+		<Command name="ПометкаУдаления" id="62">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пометить на удаление / Снять пометку</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ПометкаУдаления</Action>
+		</Command>
+		<Command name="ПроверкаДоверенностиВыполненаВручную" id="63">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверка доверенности выполнена вручную</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ПроверитьПодписьПоДоверенностиВручную</Action>
+		</Command>
+		<Command name="ПоказатьПротоколОбмена" id="65">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Протокол обмена</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ПоказатьПротоколОбмена</Action>
+		</Command>
+		<Command name="ПеречитатьДанные" id="64">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перечитать</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ПеречитатьДанные</Action>
+		</Command>
+		<Command name="ВключитьПолеПредпросмотраPDFФайлов" id="66">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Включить поле предпросмотра файлов PDF</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ВключитьПолеПредпросмотраPDFФайлов</Action>
+		</Command>
 	</Commands>
 	<Parameters>
 		<Parameter name="ЭлектронныйДокумент">
@@ -3489,7 +3936,6 @@
 			<Item>
 				<Command>CommonCommand.ПрисоединенныеФайлы</Command>
 				<Type>Auto</Type>
-				<Attribute>Объект.Ref</Attribute>
 				<DefaultVisible>false</DefaultVisible>
 				<Visible>
 					<xr:Common>false</xr:Common>
@@ -3498,7 +3944,6 @@
 			<Item>
 				<Command>Document.СообщениеЭДО.Command.СообщенияДокумента</Command>
 				<Type>Auto</Type>
-				<Attribute>Объект.Ref</Attribute>
 				<DefaultVisible>false</DefaultVisible>
 				<Visible>
 					<xr:Common>false</xr:Common>
@@ -3507,7 +3952,6 @@
 			<Item>
 				<Command>InformationRegister.ЖурналДействийПоЭДО.StandardCommand.OpenByValue.ЭлектронныйДокумент</Command>
 				<Type>Auto</Type>
-				<Attribute>Объект.Ref</Attribute>
 				<DefaultVisible>false</DefaultVisible>
 				<Visible>
 					<xr:Common>false</xr:Common>
@@ -3515,15 +3959,6 @@
 			</Item>
 			<Item>
 				<Command>Document.ТранспортныйКонтейнерЭДО.Command.ТранспортныеКонтейнерыДокумента</Command>
-				<Type>Auto</Type>
-				<Attribute>Объект.Ref</Attribute>
-				<DefaultVisible>false</DefaultVisible>
-				<Visible>
-					<xr:Common>false</xr:Common>
-				</Visible>
-			</Item>
-			<Item>
-				<Command>CommonCommand.ПрисоединенныеФайлыКОбъекту</Command>
 				<Type>Auto</Type>
 				<DefaultVisible>false</DefaultVisible>
 				<Visible>

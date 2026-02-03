@@ -92,6 +92,18 @@
 			<ChoiceHistoryOnInput>DontUse</ChoiceHistoryOnInput>
 		</Properties>
 		<ChildObjects>
+			<EnumValue uuid="d4839bfe-a38f-4ad1-ae5e-490d8a101bd5">
+				<Properties>
+					<Name>АктВзаимозачета</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Акт взаимозачета</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
 			<EnumValue uuid="934f3354-8413-4dd6-ace0-071eb18b76bc">
 				<Properties>
 					<Name>АктВыполненныхРабот</Name>
@@ -128,6 +140,54 @@
 					<Comment/>
 				</Properties>
 			</EnumValue>
+			<EnumValue uuid="28ec61a5-ec31-4846-8bed-b010a6f33393">
+				<Properties>
+					<Name>АктПриемкиСтроительныхРаботУслуг</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Акт приемки строительных работ услуг</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="0be50b7a-0643-4072-8985-a00d92741eef">
+				<Properties>
+					<Name>АктСверки</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Акт сверки</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="9d288cc3-e866-4251-a2ad-e95526b7c1e6">
+				<Properties>
+					<Name>АктСверкиВзаиморасчетов</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Акт сверки взаиморасчетов</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="95cfb9a3-98df-4dd9-80e3-534dc2b290ab">
+				<Properties>
+					<Name>Ведомость</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ведомость</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
 			<EnumValue uuid="dc5ff67e-78ab-4acb-b935-4a71c14c6b03">
 				<Properties>
 					<Name>Внутренний</Name>
@@ -147,6 +207,102 @@
 						<v8:item>
 							<v8:lang>ru</v8:lang>
 							<v8:content>Возврат товаров между организациями</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="ced8fd57-a727-4f2e-8b2e-e3de6eb08947">
+				<Properties>
+					<Name>ГарантийноеПисьмо</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Гарантийное письмо</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="d15e51c4-954a-4a83-a550-55b2d9b5a7a0">
+				<Properties>
+					<Name>Договор</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Договор</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="180f4c6b-4aed-4ad3-8163-7ce3a53ca540">
+				<Properties>
+					<Name>ДоговорныйДокумент</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Договорный документ</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="cb40fb90-cc7e-448a-850d-28fcc8c529e1">
+				<Properties>
+					<Name>ДокументПредприятия</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Документ предприятия</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="6214eee8-ea6c-40cd-86b5-193eb54ed1d4">
+				<Properties>
+					<Name>ДокументПриемкиЕИСУКД</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Документ приемки ЕИС УКД</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Титул поставщика из ЕИС</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="76e3dc1f-0091-44eb-aed4-887a7459e307">
+				<Properties>
+					<Name>ДокументПриемкиЕИСУПД</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Документ приемки ЕИС УПД</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment>Титул поставщика из ЕИС</Comment>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="5b292a5c-501c-4c54-840f-972709daf93b">
+				<Properties>
+					<Name>ДополнительноеСоглашение</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дополнительное соглашение</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="7a398dab-a16e-4f75-915e-c8f05c88ab46">
+				<Properties>
+					<Name>ДопСведенияПоРезультатамПриемки</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Доп. сведения по результатам приемки</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -176,6 +332,18 @@
 					<Comment/>
 				</Properties>
 			</EnumValue>
+			<EnumValue uuid="78a88bcd-adf0-4aa0-95a2-5f4ba5d9f002">
+				<Properties>
+					<Name>ИзвещениеОбОшибкеЕИС</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Извещение об ошибке ЕИС</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
 			<EnumValue uuid="89b84fc6-ff42-4798-82fe-d4b3a621a0a9">
 				<Properties>
 					<Name>ИзвещениеОПолучении</Name>
@@ -200,6 +368,18 @@
 					<Comment/>
 				</Properties>
 			</EnumValue>
+			<EnumValue uuid="4a0fe3e0-b42f-4c8c-b055-2ef653d78846">
+				<Properties>
+					<Name>КвитанцияЕИС</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Квитанция ЕИС</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
 			<EnumValue uuid="62d09028-bcb2-431e-b772-1fb9be8a5712">
 				<Properties>
 					<Name>КоммерческоеПредложение</Name>
@@ -207,6 +387,42 @@
 						<v8:item>
 							<v8:lang>ru</v8:lang>
 							<v8:content>Коммерческое предложение</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="ef279ae1-a0e8-4ff6-b57e-a5c4028cde5b">
+				<Properties>
+					<Name>КонтрактЕИС</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Контракт ЕИС</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="c9e91cd4-b26d-4de6-bc54-d142b931627f">
+				<Properties>
+					<Name>КорректировкаСведенийОЗакупкеКомиссионером</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Корректировка сведений о закупке комиссионером</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="0fc9541a-10fe-4901-8fb3-b1f7ddbb7471">
+				<Properties>
+					<Name>КорректировкаСведенийОРеализацииКомиссионером</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Корректировка сведений о реализации комиссионером</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -224,6 +440,54 @@
 					<Comment/>
 				</Properties>
 			</EnumValue>
+			<EnumValue uuid="43e1e913-12c6-4e93-8aa1-b5f38aa7a5c1">
+				<Properties>
+					<Name>КС11</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>КС-11</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="4a70aaf7-b37d-4ebf-a83a-b7dfb5e66680">
+				<Properties>
+					<Name>КС2</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>КС-2</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="b8c03117-d734-42c3-b1ac-d8361048f29d">
+				<Properties>
+					<Name>КС3</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>КС-3</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="6d3f612f-0c91-4754-bfaf-d7e8597a8e99">
+				<Properties>
+					<Name>МашиночитаемаяДоверенность</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Машиночитаемая доверенность</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
 			<EnumValue uuid="14bd5c0f-e760-4a3a-99da-7478589f22fe">
 				<Properties>
 					<Name>ОтветНаЗаказ</Name>
@@ -231,6 +495,18 @@
 						<v8:item>
 							<v8:lang>ru</v8:lang>
 							<v8:content>Ответ на заказ</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="d30796f6-9835-4a7a-8d8f-bc723c11b556">
+				<Properties>
+					<Name>Отчет</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отчет</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -267,6 +543,18 @@
 						<v8:item>
 							<v8:lang>ru</v8:lang>
 							<v8:content>Передача товаров между организациями</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="740694ef-ce61-4c90-85c9-673bbf65b93c">
+				<Properties>
+					<Name>ПлатежноеПоручение</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Платежное поручение</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -320,6 +608,102 @@
 					<Comment/>
 				</Properties>
 			</EnumValue>
+			<EnumValue uuid="f7b69cf0-4248-4407-91fb-023b5d95ae9c">
+				<Properties>
+					<Name>ПриложениеДляЕИС</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Приложение для ЕИС</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="90dbdffd-264c-41f0-9bbb-34be1dcbc720">
+				<Properties>
+					<Name>ПриложениеКАкту</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Приложение к акту</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="6e03a685-e2f2-4ffe-83aa-9815fb0dbf06">
+				<Properties>
+					<Name>Прочее</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Прочее</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="73518099-91a8-431c-83a7-0ae9eea41adb">
+				<Properties>
+					<Name>РезультатРассмотренияАктаПриемкиЕИСУКД</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Результат рассмотрения акта приемки ЕИС УКД</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="350f751d-fd0b-4104-bfaf-c44e948c087e">
+				<Properties>
+					<Name>РезультатРассмотренияАктаПриемкиЕИСУПД</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Результат рассмотрения акта приемки ЕИС УПД</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="105ebc9f-38cb-47ea-84f4-d129d378c377">
+				<Properties>
+					<Name>РеквизитыОрганизации</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Реквизиты организации</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="b8bd974f-e45f-4228-a818-9773417f9b84">
+				<Properties>
+					<Name>СведенияОЗакупкеКомиссионером</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сведения о закупке комиссионером</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="268a2dfb-e243-4f1d-8473-f83d1b706869">
+				<Properties>
+					<Name>СведенияОРеализацииКомиссионером</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сведения о реализации комиссионером</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
 			<EnumValue uuid="b698775e-90cb-40a8-abc2-2a52f0519308">
 				<Properties>
 					<Name>СоглашениеОбИзмененииСтоимости</Name>
@@ -332,6 +716,30 @@
 					<Comment/>
 				</Properties>
 			</EnumValue>
+			<EnumValue uuid="f7bad26d-04a9-4a4f-944b-3234da022f7b">
+				<Properties>
+					<Name>СоглашениеОбЭДО</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Соглашение об ЭДО</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="11e4e515-f2d0-4354-a241-81e5708aa590">
+				<Properties>
+					<Name>Спецификация</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Спецификация</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
 			<EnumValue uuid="f1b2c7d8-708b-4934-93e4-36b076cab23d">
 				<Properties>
 					<Name>СчетНаОплату</Name>
@@ -339,6 +747,18 @@
 						<v8:item>
 							<v8:lang>ru</v8:lang>
 							<v8:content>Счет на оплату</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="25dc5f1a-4c35-4477-9321-c86f3c68de46">
+				<Properties>
+					<Name>СчетОферта</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Счет-оферта</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -368,6 +788,18 @@
 					<Comment/>
 				</Properties>
 			</EnumValue>
+			<EnumValue uuid="b6e424f0-2f8e-45f2-9929-7fcdc9a7915e">
+				<Properties>
+					<Name>Уведомление</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Уведомление</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
 			<EnumValue uuid="3c43ade1-d1c9-4d12-8fa8-baaf0c8df3e2">
 				<Properties>
 					<Name>УведомлениеОбУточнении</Name>
@@ -375,6 +807,18 @@
 						<v8:item>
 							<v8:lang>ru</v8:lang>
 							<v8:content>Уведомление об уточнении</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="5c985053-abf8-4739-9dc6-8d99b0c12c3c">
+				<Properties>
+					<Name>УведомлениеОПринятииКУчету</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Уведомление о принятии к учету</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -656,6 +1100,18 @@
 					<Comment/>
 				</Properties>
 			</EnumValue>
+			<EnumValue uuid="69578bf7-1264-4f76-9448-b35b1c3770da">
+				<Properties>
+					<Name>УниверсальноеСообщение</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Универсальное сообщение</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
 			<EnumValue uuid="2ccac090-7d18-4294-b84e-44368d5fb738">
 				<Properties>
 					<Name>УПД</Name>
@@ -668,253 +1124,73 @@
 					<Comment/>
 				</Properties>
 			</EnumValue>
-			<EnumValue uuid="d4839bfe-a38f-4ad1-ae5e-490d8a101bd5">
+			<EnumValue uuid="9ff8c22f-e28e-400a-b9a2-91af2ca752d4">
 				<Properties>
-					<Name>АктВзаимозачета</Name>
+					<Name>ЭДФ</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Акт взаимозачета</v8:content>
+							<v8:content>Электронный договор фрахтования</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
 				</Properties>
 			</EnumValue>
-			<EnumValue uuid="0be50b7a-0643-4072-8985-a00d92741eef">
+			<EnumValue uuid="ff107c33-ce04-4819-ad59-df17ffac08a2">
 				<Properties>
-					<Name>АктСверки</Name>
+					<Name>ЭЗЗ</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Акт сверки</v8:content>
+							<v8:content>Электронный заказ (заявка)</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
 				</Properties>
 			</EnumValue>
-			<EnumValue uuid="95cfb9a3-98df-4dd9-80e3-534dc2b290ab">
+			<EnumValue uuid="fc6b8a96-3212-4539-af13-af82d9bb06d5">
 				<Properties>
-					<Name>Ведомость</Name>
+					<Name>ЭЗН</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Ведомость</v8:content>
+							<v8:content>Электронный заказ-наряд</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
 				</Properties>
 			</EnumValue>
-			<EnumValue uuid="ced8fd57-a727-4f2e-8b2e-e3de6eb08947">
+			<EnumValue uuid="450aac7d-da5a-4ba3-a821-87daaa187896">
 				<Properties>
-					<Name>ГарантийноеПисьмо</Name>
+					<Name>ЭПЛ</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Гарантийное письмо</v8:content>
+							<v8:content>Электронный путевой лист</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
 				</Properties>
 			</EnumValue>
-			<EnumValue uuid="d15e51c4-954a-4a83-a550-55b2d9b5a7a0">
+			<EnumValue uuid="c2672cc0-05fe-4987-8484-eb8a359ba09b">
 				<Properties>
-					<Name>Договор</Name>
+					<Name>ЭСВ</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Договор</v8:content>
+							<v8:content>Электронная сопроводительная ведомость</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
 				</Properties>
 			</EnumValue>
-			<EnumValue uuid="5b292a5c-501c-4c54-840f-972709daf93b">
+			<EnumValue uuid="4d68900d-208f-42a6-97f3-1c36df9ad29f">
 				<Properties>
-					<Name>ДополнительноеСоглашение</Name>
+					<Name>ЭТрН</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Дополнительное соглашение</v8:content>
-						</v8:item>
-					</Synonym>
-					<Comment/>
-				</Properties>
-			</EnumValue>
-			<EnumValue uuid="43e1e913-12c6-4e93-8aa1-b5f38aa7a5c1">
-				<Properties>
-					<Name>КС11</Name>
-					<Synonym>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>КС-11</v8:content>
-						</v8:item>
-					</Synonym>
-					<Comment/>
-				</Properties>
-			</EnumValue>
-			<EnumValue uuid="4a70aaf7-b37d-4ebf-a83a-b7dfb5e66680">
-				<Properties>
-					<Name>КС2</Name>
-					<Synonym>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>КС-2</v8:content>
-						</v8:item>
-					</Synonym>
-					<Comment/>
-				</Properties>
-			</EnumValue>
-			<EnumValue uuid="b8c03117-d734-42c3-b1ac-d8361048f29d">
-				<Properties>
-					<Name>КС3</Name>
-					<Synonym>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>КС-3</v8:content>
-						</v8:item>
-					</Synonym>
-					<Comment/>
-				</Properties>
-			</EnumValue>
-			<EnumValue uuid="d30796f6-9835-4a7a-8d8f-bc723c11b556">
-				<Properties>
-					<Name>Отчет</Name>
-					<Synonym>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Отчет</v8:content>
-						</v8:item>
-					</Synonym>
-					<Comment/>
-				</Properties>
-			</EnumValue>
-			<EnumValue uuid="740694ef-ce61-4c90-85c9-673bbf65b93c">
-				<Properties>
-					<Name>ПлатежноеПоручение</Name>
-					<Synonym>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Платежное поручение</v8:content>
-						</v8:item>
-					</Synonym>
-					<Comment/>
-				</Properties>
-			</EnumValue>
-			<EnumValue uuid="90dbdffd-264c-41f0-9bbb-34be1dcbc720">
-				<Properties>
-					<Name>ПриложениеКАкту</Name>
-					<Synonym>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Приложение к акту</v8:content>
-						</v8:item>
-					</Synonym>
-					<Comment/>
-				</Properties>
-			</EnumValue>
-			<EnumValue uuid="f7bad26d-04a9-4a4f-944b-3234da022f7b">
-				<Properties>
-					<Name>СоглашениеОбЭДО</Name>
-					<Synonym>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Соглашение об ЭДО</v8:content>
-						</v8:item>
-					</Synonym>
-					<Comment/>
-				</Properties>
-			</EnumValue>
-			<EnumValue uuid="11e4e515-f2d0-4354-a241-81e5708aa590">
-				<Properties>
-					<Name>Спецификация</Name>
-					<Synonym>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Спецификация</v8:content>
-						</v8:item>
-					</Synonym>
-					<Comment/>
-				</Properties>
-			</EnumValue>
-			<EnumValue uuid="b6e424f0-2f8e-45f2-9929-7fcdc9a7915e">
-				<Properties>
-					<Name>Уведомление</Name>
-					<Synonym>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Уведомление</v8:content>
-						</v8:item>
-					</Synonym>
-					<Comment/>
-				</Properties>
-			</EnumValue>
-			<EnumValue uuid="6e03a685-e2f2-4ffe-83aa-9815fb0dbf06">
-				<Properties>
-					<Name>Прочее</Name>
-					<Synonym>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Прочее</v8:content>
-						</v8:item>
-					</Synonym>
-					<Comment/>
-				</Properties>
-			</EnumValue>
-			<EnumValue uuid="105ebc9f-38cb-47ea-84f4-d129d378c377">
-				<Properties>
-					<Name>РеквизитыОрганизации</Name>
-					<Synonym>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Реквизиты организации</v8:content>
-						</v8:item>
-					</Synonym>
-					<Comment/>
-				</Properties>
-			</EnumValue>
-			<EnumValue uuid="268a2dfb-e243-4f1d-8473-f83d1b706869">
-				<Properties>
-					<Name>СведенияОРеализацииКомиссионером</Name>
-					<Synonym>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Сведения о реализации комиссионером</v8:content>
-						</v8:item>
-					</Synonym>
-					<Comment/>
-				</Properties>
-			</EnumValue>
-			<EnumValue uuid="b8bd974f-e45f-4228-a818-9773417f9b84">
-				<Properties>
-					<Name>СведенияОЗакупкеКомиссионером</Name>
-					<Synonym>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Сведения о закупке комиссионером</v8:content>
-						</v8:item>
-					</Synonym>
-					<Comment/>
-				</Properties>
-			</EnumValue>
-			<EnumValue uuid="0fc9541a-10fe-4901-8fb3-b1f7ddbb7471">
-				<Properties>
-					<Name>КорректировкаСведенийОРеализацииКомиссионером</Name>
-					<Synonym>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Корректировка сведений о реализации комиссионером</v8:content>
-						</v8:item>
-					</Synonym>
-					<Comment/>
-				</Properties>
-			</EnumValue>
-			<EnumValue uuid="c9e91cd4-b26d-4de6-bc54-d142b931627f">
-				<Properties>
-					<Name>КорректировкаСведенийОЗакупкеКомиссионером</Name>
-					<Synonym>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Корректировка сведений о закупке комиссионером</v8:content>
+							<v8:content>Электронная транспортная накладная</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>

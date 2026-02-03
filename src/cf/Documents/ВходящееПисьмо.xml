@@ -1262,10 +1262,10 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Attribute>
-			<Form>ФормаДокумента</Form>
-			<Form>ФормаВыбора</Form>
 			<Form>ОповещенияОНовыхПисьмах</Form>
+			<Form>ФормаВыбора</Form>
 			<Form>ФормаВыбораДляСозданияСвязи</Form>
+			<Form>ФормаДокумента</Form>
 			<TabularSection uuid="90a37ae0-9778-4c9f-a55d-28076e412de0">
 				<InternalInfo>
 					<xr:GeneratedType name="DocumentTabularSection.ВходящееПисьмо.АдресаУведомленияОПрочтении" category="TabularSection">

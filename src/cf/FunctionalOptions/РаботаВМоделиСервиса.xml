@@ -12,7 +12,11 @@
 			<Comment/>
 			<Location>Constant.ИспользоватьРазделениеПоОбластямДанных</Location>
 			<PrivilegedGetMode>true</PrivilegedGetMode>
-			<Content/>
+			<Content>
+				<xr:Object>CommonCommand.ТестированиеИИсправлениеОбластиДанных</xr:Object>
+				<xr:Object>CommonCommand.ОплатаСервиса</xr:Object>
+				<xr:Object>CommonForm.РабочийСтолОператораОтправки</xr:Object>
+			</Content>
 		</Properties>
 	</FunctionalOption>
 </MetaDataObject>

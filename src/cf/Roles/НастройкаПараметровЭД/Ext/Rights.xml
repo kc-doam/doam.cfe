@@ -340,7 +340,7 @@
 		</right>
 	</object>
 	<object>
-		<name>Catalog.СертификатыКлючейЭлектроннойПодписиИШифрования.Attribute.СодержаниеЗаявления</name>
+		<name>Catalog.СертификатыКлючейЭлектроннойПодписиИШифрования.Attribute.УдалитьСодержаниеЗаявления</name>
 		<right>
 			<name>View</name>
 			<value>false</value>
@@ -1036,7 +1036,7 @@
 		</right>
 	</object>
 	<object>
-		<name>Catalog.ВнешниеПользователи.Attribute.СвойстваПользователяИБ</name>
+		<name>Catalog.ВнешниеПользователи.Attribute.УдалитьСвойстваПользователяИБ</name>
 		<right>
 			<name>View</name>
 			<value>false</value>
@@ -1305,7 +1305,7 @@
 		</right>
 	</object>
 	<object>
-		<name>Catalog.СертификатыКлючейЭлектроннойПодписиИШифрования.Attribute.СостояниеЗаявления</name>
+		<name>Catalog.СертификатыКлючейЭлектроннойПодписиИШифрования.Attribute.УдалитьСостояниеЗаявления</name>
 		<right>
 			<name>View</name>
 			<value>false</value>
@@ -1664,7 +1664,7 @@
 		</right>
 	</object>
 	<object>
-		<name>Catalog.СертификатыКлючейЭлектроннойПодписиИШифрования.Attribute.УсиленнаяЗащитаЗакрытогоКлюча</name>
+		<name>Catalog.СертификатыКлючейЭлектроннойПодписиИШифрования.Attribute.ВводитьПарольВПрограммеЭлектроннойПодписи</name>
 		<right>
 			<name>View</name>
 			<value>false</value>
@@ -2186,7 +2186,7 @@
 		</right>
 	</object>
 	<object>
-		<name>Catalog.СертификатыКлючейЭлектроннойПодписиИШифрования.Attribute.ПользовательОповещенОСрокеДействия</name>
+		<name>Catalog.СертификатыКлючейЭлектроннойПодписиИШифрования.Attribute.УдалитьПользовательОповещенОСрокеДействия</name>
 		<right>
 			<name>View</name>
 			<value>false</value>
@@ -4822,7 +4822,7 @@
 		</right>
 	</object>
 	<object>
-		<name>Catalog.Пользователи.Attribute.СвойстваПользователяИБ</name>
+		<name>Catalog.Пользователи.Attribute.УдалитьСвойстваПользователяИБ</name>
 		<right>
 			<name>View</name>
 			<value>false</value>

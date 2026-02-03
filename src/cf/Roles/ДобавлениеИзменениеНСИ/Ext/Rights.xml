@@ -1226,13 +1226,6 @@
 		</right>
 	</object>
 	<object>
-		<name>CommonCommand.СкрытьПерсональныеДанныеСубъектов</name>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
 		<name>Document.ПередачаДелВАрхив</name>
 		<right>
 			<name>Read</name>

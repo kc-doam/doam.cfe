@@ -24,9 +24,9 @@
 			<DefaultForm>Report.СтруктураСвязейДокумента.Form.ФормаОтчета</DefaultForm>
 			<AuxiliaryForm/>
 			<MainDataCompositionSchema/>
-			<DefaultSettingsForm/>
+			<DefaultSettingsForm>CommonForm.ФормаНастроекОтчета</DefaultSettingsForm>
 			<AuxiliarySettingsForm/>
-			<DefaultVariantForm/>
+			<DefaultVariantForm>CommonForm.ФормаВариантаОтчета</DefaultVariantForm>
 			<VariantsStorage>SettingsStorage.ХранилищеВариантовОтчетов</VariantsStorage>
 			<SettingsStorage/>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
@@ -34,8 +34,8 @@
 			<Explanation/>
 		</Properties>
 		<ChildObjects>
-			<Form>ФормаОтчета</Form>
 			<Form>ВыборТиповСвязи</Form>
+			<Form>ФормаОтчета</Form>
 			<Template>СтруктураСвязей</Template>
 		</ChildObjects>
 	</Report>

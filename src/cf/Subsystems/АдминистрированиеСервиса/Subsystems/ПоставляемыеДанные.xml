@@ -21,6 +21,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ПоставляемыеДанныеТребующиеОбработки</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ПоставляемыеРасширения</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ПоставляемыеДанныеТребующиеОбработкиВОбластях</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ВерсииПоставляемыхРасширений</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

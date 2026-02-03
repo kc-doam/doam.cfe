@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
 		<ChildItems>
 			<Button name="ФормаЗаписатьИЗакрыть" id="1">
@@ -63,6 +63,11 @@
 						<CommandName>Form.Command.ОткрытьЭлектронныеДокументы</CommandName>
 						<ExtendedTooltip name="ФормаОткрытьЭлектронныеДокументыРасширеннаяПодсказка" id="95"/>
 					</Button>
+					<Button name="ФормаНеПоказыватьОкноРучнойПроверкиМЧД" id="157">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.НеПоказыватьОкноРучнойПроверкиМЧД</CommandName>
+						<ExtendedTooltip name="ФормаНеПоказыватьОкноРучнойПроверкиМЧДРасширеннаяПодсказка" id="158"/>
+					</Button>
 				</ChildItems>
 			</Popup>
 			<Popup name="ГруппаКонтекстныхПодсказок" id="153">
@@ -89,6 +94,7 @@
 			<HorizontalStretch>true</HorizontalStretch>
 			<VerticalStretch>false</VerticalStretch>
 			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<BackColor>style:ToolTipBackColor</BackColor>
@@ -103,6 +109,7 @@
 			</Title>
 			<GroupVerticalAlign>Center</GroupVerticalAlign>
 			<HorizontalSpacing>Half</HorizontalSpacing>
+			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаОжиданиеРасширеннаяПодсказка" id="54"/>
@@ -144,6 +151,7 @@
 				</v8:item>
 			</Title>
 			<HorizontalSpacing>Half</HorizontalSpacing>
+			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаОжиданиеУдаленияРасширеннаяПодсказка" id="116"/>
@@ -185,6 +193,7 @@
 				</v8:item>
 			</Title>
 			<Group>AlwaysHorizontal</Group>
+			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ШапкаРасширеннаяПодсказка" id="6"/>
@@ -197,6 +206,7 @@
 						</v8:item>
 					</Title>
 					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
 					<ThroughAlign>Use</ThroughAlign>
@@ -211,6 +221,7 @@
 							</Title>
 							<VerticalStretch>true</VerticalStretch>
 							<Group>AlwaysHorizontal</Group>
+							<Behavior>Usual</Behavior>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="ГруппаОрганизацияРасширеннаяПодсказка" id="67"/>
@@ -244,6 +255,7 @@
 								</v8:item>
 							</Title>
 							<Group>AlwaysHorizontal</Group>
+							<Behavior>Usual</Behavior>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="79"/>
@@ -289,6 +301,7 @@
 								</v8:item>
 							</Title>
 							<Group>AlwaysHorizontal</Group>
+							<Behavior>Usual</Behavior>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="84"/>
@@ -325,6 +338,7 @@
 						</v8:item>
 					</Title>
 					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="ШапкаЛевоРасширеннаяПодсказка" id="10"/>
@@ -421,6 +435,7 @@
 				</v8:item>
 			</Title>
 			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ТаблицаРасширеннаяПодсказка" id="101"/>
@@ -432,6 +447,7 @@
 							<v8:content>Группа использовать</v8:content>
 						</v8:item>
 					</Title>
+					<Behavior>Usual</Behavior>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="ГруппаИспользоватьРасширеннаяПодсказка" id="103"/>
@@ -530,6 +546,9 @@
 							<CheckBoxType>Auto</CheckBoxType>
 							<ContextMenu name="ИсходящиеДокументыФормироватьКонтекстноеМеню" id="49"/>
 							<ExtendedTooltip name="ИсходящиеДокументыФормироватьРасширеннаяПодсказка" id="50"/>
+							<Events>
+								<Event name="OnChange">ИсходящиеДокументыФормироватьПриИзменении</Event>
+							</Events>
 						</CheckBoxField>
 						<LabelField name="ИсходящиеДокументыДокументУчета" id="42">
 							<DataPath>ИсходящиеДокументы.ДокументУчета</DataPath>
@@ -620,7 +639,7 @@
 				</v8:item>
 			</Title>
 			<Type>
-				<v8:TypeSet>cfg:DefinedType.КонтрагентБЭД</v8:TypeSet>
+				<v8:TypeSet>cfg:DefinedType.УчастникЭДО</v8:TypeSet>
 			</Type>
 			<SavedData>true</SavedData>
 			<FillCheck>ShowError</FillCheck>
@@ -1080,6 +1099,12 @@
 				<v8:Type>xs:boolean</v8:Type>
 			</Type>
 		</Attribute>
+		<Attribute name="Создание" id="27">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
 	</Attributes>
 	<Commands>
 		<Command name="ЗаписатьИЗакрыть" id="1">
@@ -1207,6 +1232,15 @@
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
 			<Action>Удалить</Action>
+		</Command>
+		<Command name="НеПоказыватьОкноРучнойПроверкиМЧД" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Не задавать вопрос о ручной проверке МЧД</v8:content>
+				</v8:item>
+			</Title>
+			<Action>НеПоказыватьОкноРучнойПроверкиМЧД</Action>
 		</Command>
 	</Commands>
 	<Parameters>

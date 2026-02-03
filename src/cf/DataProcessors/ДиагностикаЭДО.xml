@@ -31,7 +31,6 @@
 			<Form>ДиагностикаЭДО</Form>
 			<Form>ВводПароляСертификата</Form>
 			<Form>РасшифровкаОшибок</Form>
-			<Template>КомпонентаОбмена</Template>
 		</ChildObjects>
 	</DataProcessor>
 </MetaDataObject>

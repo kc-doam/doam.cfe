@@ -21,12 +21,12 @@
 			</Synonym>
 			<Comment/>
 			<UseStandardCommands>true</UseStandardCommands>
-			<DefaultForm>Report.Договоры.Form.ФормаОтчета</DefaultForm>
+			<DefaultForm>CommonForm.ФормаОтчета</DefaultForm>
 			<AuxiliaryForm/>
 			<MainDataCompositionSchema>Report.Договоры.Template.ОсновнаяСхемаКомпоновкиДанных</MainDataCompositionSchema>
-			<DefaultSettingsForm/>
+			<DefaultSettingsForm>CommonForm.ФормаНастроекОтчета</DefaultSettingsForm>
 			<AuxiliarySettingsForm/>
-			<DefaultVariantForm/>
+			<DefaultVariantForm>CommonForm.ФормаВариантаОтчета</DefaultVariantForm>
 			<VariantsStorage>SettingsStorage.ХранилищеВариантовОтчетов</VariantsStorage>
 			<SettingsStorage/>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
@@ -35,13 +35,13 @@
 		</Properties>
 		<ChildObjects>
 			<Form>ФормаОтчета</Form>
-			<Template>ОсновнаяСхемаКомпоновкиДанных</Template>
-			<Template>ОбразецОтчетаСписокЗаключенныхДоговоров</Template>
-			<Template>ОбразецОтчетаДоговорыСИстекающимСрокомДействия</Template>
-			<Template>ОбразецОтчетаСопроводительныеДокументыПоДоговору</Template>
 			<Template>ОбразецОтчетаДинамикаКоличестваЗаключенныхДоговоров</Template>
 			<Template>ОбразецОтчетаДинамикаСуммЗаключенныхДоговоров</Template>
+			<Template>ОбразецОтчетаДоговорыСИстекающимСрокомДействия</Template>
 			<Template>ОбразецОтчетаРасторгнутыеДоговоры</Template>
+			<Template>ОбразецОтчетаСопроводительныеДокументыПоДоговору</Template>
+			<Template>ОбразецОтчетаСписокЗаключенныхДоговоров</Template>
+			<Template>ОсновнаяСхемаКомпоновкиДанных</Template>
 		</ChildObjects>
 	</Report>
 </MetaDataObject>

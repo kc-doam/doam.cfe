@@ -1,11 +1,19 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
 	<Width>100</Width>
 	<Height>25</Height>
 	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
 	<CommandBarLocation>None</CommandBarLocation>
+	<MobileDeviceCommandBarContent>
+		<xr:Item>
+			<xr:Presentation/>
+			<xr:CheckState>0</xr:CheckState>
+			<xr:Value xsi:type="xs:string">ГруппаКоманднаяПанель</xr:Value>
+		</xr:Item>
+	</MobileDeviceCommandBarContent>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
 	<Events>
+		<Event name="OnLoadDataFromSettingsAtServer">ПриЗагрузкеДанныхИзНастроекНаСервере</Event>
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 		<Event name="BeforeLoadDataFromSettingsAtServer">ПриЗагрузкеДанныхИзНастроекНаСервере</Event>
 	</Events>
@@ -18,6 +26,7 @@
 				</v8:item>
 			</Title>
 			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаСпискиExtendedTooltip" id="41"/>
@@ -30,6 +39,7 @@
 						</v8:item>
 					</Title>
 					<Group>Horizontal</Group>
+					<Behavior>Usual</Behavior>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="ГруппаСписокСсылокExtendedTooltip" id="42"/>
@@ -65,6 +75,7 @@
 							<SearchStringLocation>None</SearchStringLocation>
 							<ViewStatusLocation>None</ViewStatusLocation>
 							<SearchControlLocation>None</SearchControlLocation>
+							<CurrentRowUse>SelectionPresentation</CurrentRowUse>
 							<ContextMenu name="СписокСсылкаИзКонтекстноеМеню" id="24"/>
 							<AutoCommandBar name="СписокСсылкаИзКоманднаяПанель" id="25"/>
 							<ExtendedTooltip name="СписокСсылкаИзExtendedTooltip" id="43"/>
@@ -142,6 +153,7 @@
 							<SearchStringLocation>None</SearchStringLocation>
 							<ViewStatusLocation>None</ViewStatusLocation>
 							<SearchControlLocation>None</SearchControlLocation>
+							<CurrentRowUse>SelectionPresentation</CurrentRowUse>
 							<ContextMenu name="СписокСсылкаНаКонтекстноеМеню" id="29"/>
 							<AutoCommandBar name="СписокСсылкаНаКоманднаяПанель" id="30"/>
 							<ExtendedTooltip name="СписокСсылкаНаExtendedTooltip" id="45"/>
@@ -214,6 +226,7 @@
 						</v8:item>
 					</Title>
 					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="ГруппаСписокExtendedTooltip" id="47"/>
@@ -226,6 +239,7 @@
 								</v8:item>
 							</Title>
 							<Group>Horizontal</Group>
+							<Behavior>Usual</Behavior>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="ГруппаЗаголовокРасширеннаяПодсказка" id="57"/>
@@ -385,42 +399,42 @@
 	НастройкаСвязей.ТипСвязи,
 	ВЫБОР
 		КОГДА НастройкаСвязей.СсылкаИз = ЗНАЧЕНИЕ(Справочник.ВидыВходящихДокументов.ПустаяСсылка)
-			ТОГДА "Входящий документ"
+			ТОГДА &amp;ВходящийДокумент
 		КОГДА НастройкаСвязей.СсылкаИз = ЗНАЧЕНИЕ(Справочник.ВидыИсходящихДокументов.ПустаяСсылка)
-			ТОГДА "Исходящий документ"
+			ТОГДА &amp;ИсходящийДокумент
 		КОГДА НастройкаСвязей.СсылкаИз = ЗНАЧЕНИЕ(Справочник.ВидыВнутреннихДокументов.ПустаяСсылка)
-			ТОГДА "Внутренний документ"
+			ТОГДА &amp;ВнутреннийДокумент
 		КОГДА НастройкаСвязей.СсылкаИз = ЗНАЧЕНИЕ(Справочник.Файлы.ПустаяСсылка)
-			ТОГДА "Файл"
+			ТОГДА &amp;Файл
 		КОГДА НастройкаСвязей.СсылкаИз = ЗНАЧЕНИЕ(Справочник.Мероприятия.ПустаяСсылка)
-			ТОГДА "Мероприятие"
+			ТОГДА &amp;Мероприятие
 		КОГДА НастройкаСвязей.СсылкаИз = ЗНАЧЕНИЕ(Справочник.Проекты.ПустаяСсылка)
-			ТОГДА "Проект"
+			ТОГДА &amp;Проект
 		КОГДА НастройкаСвязей.СсылкаИз = ЗНАЧЕНИЕ(Документ.ВходящееПисьмо.ПустаяСсылка)
-			ТОГДА "Входящее письмо"
+			ТОГДА &amp;ВходящееПисьмо
 		КОГДА НастройкаСвязей.СсылкаИз = ЗНАЧЕНИЕ(Документ.ИсходящееПисьмо.ПустаяСсылка)
-			ТОГДА "Исходящее письмо"
+			ТОГДА &amp;ИсходящееПисьмо
 		ИНАЧЕ НастройкаСвязей.СсылкаИз
 	КОНЕЦ КАК ПредставлениеСсылкаИз,
 	ВЫБОР
 		КОГДА НастройкаСвязей.СсылкаНа = ЗНАЧЕНИЕ(Справочник.ВидыВходящихДокументов.ПустаяСсылка)
-			ТОГДА "Входящий документ"
+			ТОГДА &amp;ВходящийДокумент
 		КОГДА НастройкаСвязей.СсылкаНа = ЗНАЧЕНИЕ(Справочник.ВидыИсходящихДокументов.ПустаяСсылка)
-			ТОГДА "Исходящий документ"
+			ТОГДА &amp;ИсходящийДокумент
 		КОГДА НастройкаСвязей.СсылкаНа = ЗНАЧЕНИЕ(Справочник.ВидыВнутреннихДокументов.ПустаяСсылка)
-			ТОГДА "Внутренний документ"
+			ТОГДА &amp;ВнутреннийДокумент
 		КОГДА НастройкаСвязей.СсылкаНа = ЗНАЧЕНИЕ(Справочник.Файлы.ПустаяСсылка)
-			ТОГДА "Файл"
+			ТОГДА &amp;Файл
 		КОГДА НастройкаСвязей.СсылкаНа = ЗНАЧЕНИЕ(Справочник.Мероприятия.ПустаяСсылка)
-			ТОГДА "Мероприятие"
+			ТОГДА &amp;Мероприятие
 		КОГДА НастройкаСвязей.СсылкаНа = ЗНАЧЕНИЕ(Справочник.Проекты.ПустаяСсылка)
-			ТОГДА "Проект"
+			ТОГДА &amp;Проект
 		КОГДА НастройкаСвязей.СсылкаНа = ЗНАЧЕНИЕ(Документ.ВходящееПисьмо.ПустаяСсылка)
-			ТОГДА "Входящее письмо"
+			ТОГДА &amp;ВходящееПисьмо
 		КОГДА НастройкаСвязей.СсылкаНа = ЗНАЧЕНИЕ(Документ.ИсходящееПисьмо.ПустаяСсылка)
-			ТОГДА "Исходящее письмо"
+			ТОГДА &amp;ИсходящееПисьмо
 		КОГДА НастройкаСвязей.СсылкаНа = ""
-			ТОГДА "Внешняя ссылка"
+			ТОГДА &amp;ВнешняяСсылка
 		ИНАЧЕ НастройкаСвязей.СсылкаНа
 	КОНЕЦ КАК ПредставлениеСсылкаНа,
 	НастройкаСвязей.СсылкаИз,
@@ -591,6 +605,17 @@
 			<Save>
 				<Field>ПоказатьПредопределенныеСвязи</Field>
 			</Save>
+		</Attribute>
+		<Attribute name="ЭтоМобильныйКлиент" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Это мобильный клиент</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
 		</Attribute>
 		<ConditionalAppearance>
 			<dcsset:item>

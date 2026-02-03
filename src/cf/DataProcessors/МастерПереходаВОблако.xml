@@ -28,9 +28,10 @@
 			<Explanation/>
 		</Properties>
 		<ChildObjects>
-			<Form>МастерПереходаВОблако</Form>
 			<Form>ВыборОбслуживающейОрганизации</Form>
+			<Form>ВыборРасширений</Form>
 			<Form>ДобавлениеПользователя</Form>
+			<Form>МастерПереходаВОблако</Form>
 			<Form>МиграцияПриложения</Form>
 			<Command uuid="8cbfcf16-391a-4c7d-a430-4bb8bb1e2617">
 				<Properties>

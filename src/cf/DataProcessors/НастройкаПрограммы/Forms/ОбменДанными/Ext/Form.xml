@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
 	<Title>
 		<v8:item>
 			<v8:lang>ru</v8:lang>
@@ -12,7 +12,10 @@
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
 	<Events>
 		<Event name="AfterWrite">ПослеЗаписи</Event>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="BeforeWrite">ПередЗаписью</Event>
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="OnWriteAtServer">ПриЗаписиНаСервере</Event>
 	</Events>
 	<ChildItems>
 		<CommandBar name="ОсновнаяКоманднаяПанель" id="1">
@@ -51,12 +54,14 @@
 		</CheckBoxField>
 		<UsualGroup name="ГруппаПрефиксИЗапретРедактированияСтатейДДС" id="546">
 			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаПрефиксИЗапретРедактированияСтатейДДСРасширеннаяПодсказка" id="547"/>
 			<ChildItems>
 				<UsualGroup name="ГруппаПрефиксУзлаРаспределеннойИнформационнойБазы" id="538">
 					<Group>Horizontal</Group>
+					<Behavior>Usual</Behavior>
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="ГруппаПрефиксУзлаРаспределеннойИнформационнойБазыРасширеннаяПодсказка" id="539"/>
 					<ChildItems>
@@ -74,6 +79,7 @@
 				</UsualGroup>
 				<UsualGroup name="ГруппаЗапретРедактированияСтатейДДС" id="548">
 					<Group>Horizontal</Group>
+					<Behavior>Usual</Behavior>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="ГруппаЗапретРедактированияСтатейДДСРасширеннаяПодсказка" id="549"/>
@@ -106,6 +112,7 @@
 						</v8:item>
 					</ToolTip>
 					<Group>Horizontal</Group>
+					<Behavior>Usual</Behavior>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="ГруппаЗапретРедактированияТоваровРасширеннаяПодсказка" id="572"/>
@@ -153,6 +160,7 @@
 					<v8:content>Группа обмен ЭД</v8:content>
 				</v8:item>
 			</ToolTip>
+			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаОбменЭДРасширеннаяПодсказка" id="583"/>
@@ -180,6 +188,143 @@
 				</Button>
 			</ChildItems>
 		</UsualGroup>
+		<UsualGroup name="ГруппаМЭДО" id="631">
+			<Group>AlwaysHorizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаМЭДОРасширеннаяПодсказка" id="632"/>
+			<ChildItems>
+				<CheckBoxField name="ИспользоватьМЭДО" id="633">
+					<DataPath>НаборКонстант.ИспользоватьМЭДО</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>МЭДО</v8:content>
+						</v8:item>
+					</Title>
+					<TitleLocation>Right</TitleLocation>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Межведомственный электронный документооборот</v8:content>
+						</v8:item>
+					</ToolTip>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ИспользоватьМЭДОКонтекстноеМеню" id="634"/>
+					<ExtendedTooltip name="ИспользоватьМЭДОРасширеннаяПодсказка" id="635"/>
+					<Events>
+						<Event name="OnChange">ИспользоватьМЭДОПриИзменении</Event>
+					</Events>
+				</CheckBoxField>
+				<UsualGroup name="ГруппаМЭДОНастройки" id="636">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Настроить</v8:content>
+						</v8:item>
+					</Title>
+					<TitleTextColor>style:ГиперссылкаЦвет</TitleTextColor>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Настроить МЭДО</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Behavior>PopUp</Behavior>
+					<Representation>None</Representation>
+					<ExtendedTooltip name="ГруппаМЭДОНастройкиРасширеннаяПодсказка" id="637"/>
+					<ChildItems>
+						<CheckBoxField name="АвтоматическиОтправлятьКвитанцииМЭДО" id="662">
+							<DataPath>НаборКонстант.АвтоматическиОтправлятьКвитанцииМЭДО</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Автоматически отправлять квитанции</v8:content>
+								</v8:item>
+							</Title>
+							<TitleLocation>Right</TitleLocation>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="АвтоматическиОтправлятьКвитанцииМЭДОКонтекстноеМеню" id="663"/>
+							<ExtendedTooltip name="АвтоматическиОтправлятьКвитанцииМЭДОРасширеннаяПодсказка" id="664"/>
+						</CheckBoxField>
+						<InputField name="ВариантАвтосозданияУведомленийМЭДО" id="659">
+							<DataPath>НаборКонстант.ВариантАвтосозданияУведомленийМЭДО</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Автоматическое создание уведомлений</v8:content>
+								</v8:item>
+							</Title>
+							<Width>20</Width>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<MaxWidth>20</MaxWidth>
+							<ContextMenu name="ВариантАвтосозданияУведомленийМЭДОКонтекстноеМеню" id="660"/>
+							<ExtendedTooltip name="ВариантАвтосозданияУведомленийМЭДОРасширеннаяПодсказка" id="661"/>
+						</InputField>
+						<UsualGroup name="ГруппаВремяХраненияЖурнала" id="670">
+							<Group>AlwaysHorizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаВремяХраненияЖурналаРасширеннаяПодсказка" id="671"/>
+							<ChildItems>
+								<InputField name="ВремяХраненияЖурналаСобытийМЭДО" id="644">
+									<DataPath>НаборКонстант.ВремяХраненияЖурналаСобытийМЭДО</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Время хранения журнала событий</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ВремяХраненияЖурналаСобытийМЭДОКонтекстноеМеню" id="645"/>
+									<ExtendedTooltip name="ВремяХраненияЖурналаСобытийМЭДОРасширеннаяПодсказка" id="646"/>
+								</InputField>
+								<LabelDecoration name="ДекорацияДней" id="672">
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>дней</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ДекорацияДнейКонтекстноеМеню" id="673"/>
+									<ExtendedTooltip name="ДекорацияДнейРасширеннаяПодсказка" id="674"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаРазмерПорцииОбработки" id="675">
+							<Group>AlwaysHorizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаРазмерПорцииОбработкиРасширеннаяПодсказка" id="676"/>
+							<ChildItems>
+								<InputField name="РазмерПорцииОбработкиМЭДО" id="641">
+									<DataPath>НаборКонстант.РазмерПорцииОбработкиМЭДО</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Размер порции обработки</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="РазмерПорцииОбработкиМЭДОКонтекстноеМеню" id="642"/>
+									<ExtendedTooltip name="РазмерПорцииОбработкиМЭДОРасширеннаяПодсказка" id="643"/>
+								</InputField>
+								<LabelDecoration name="ДекорацияСообщений" id="677">
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>сообщений</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ДекорацияСообщенийКонтекстноеМеню" id="678"/>
+									<ExtendedTooltip name="ДекорацияСообщенийРасширеннаяПодсказка" id="679"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
 		<UsualGroup name="ГруппаОтчетностьВКонтролирующиеОрганы" id="595">
 			<ToolTip>
 				<v8:item>
@@ -188,6 +333,7 @@
 				</v8:item>
 			</ToolTip>
 			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаОтчетностьВКонтролирующиеОрганыРасширеннаяПодсказка" id="596"/>
@@ -216,6 +362,7 @@
 						</v8:item>
 					</ToolTip>
 					<Group>AlwaysHorizontal</Group>
+					<Behavior>Usual</Behavior>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="ГруппаНастройкиОтчетностиВКОРасширеннаяПодсказка" id="606"/>
@@ -247,6 +394,130 @@
 			<ContextMenu name="ИспользоватьОтметкиВремениКонтекстноеМеню" id="593"/>
 			<ExtendedTooltip name="ИспользоватьОтметкиВремениРасширеннаяПодсказка" id="594"/>
 		</CheckBoxField>
+		<UsualGroup name="ГруппаМиграция" id="610">
+			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаМиграцияРасширеннаяПодсказка" id="611"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаМиграцияПерваяСтрока" id="620">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа1</v8:content>
+						</v8:item>
+					</Title>
+					<Group>AlwaysHorizontal</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаМиграцияПерваяСтрокаРасширеннаяПодсказка" id="621"/>
+					<ChildItems>
+						<CheckBoxField name="МиграцияНаНовуюВерсию" id="607">
+							<DataPath>НаборКонстант.МиграцияНаНовуюВерсию</DataPath>
+							<TitleLocation>Right</TitleLocation>
+							<ToolTipRepresentation>Button</ToolTipRepresentation>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="МиграцияНаНовуюВерсиюКонтекстноеМеню" id="608"/>
+							<ExtendedTooltip name="МиграцияНаНовуюВерсиюРасширеннаяПодсказка" id="609">
+								<Title formatted="false">
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Настройка включается, если требуется обновление на Документооборот версии 3.0.</v8:content>
+									</v8:item>
+								</Title>
+							</ExtendedTooltip>
+							<Events>
+								<Event name="OnChange">МиграцияНаНовуюВерсиюПриИзменении</Event>
+							</Events>
+						</CheckBoxField>
+						<Button name="НастроитьМиграциюВНовуюВерсию" id="622">
+							<Type>Hyperlink</Type>
+							<CommandName>Form.Command.НастроитьМиграциюВНовуюВерсию</CommandName>
+							<ExtendedTooltip name="НастроитьМиграциюВНовуюВерсиюРасширеннаяПодсказка" id="623"/>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаМиграцияВнешнийОбмен" id="612">
+					<Group>AlwaysHorizontal</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаМиграцияВнешнийОбменРасширеннаяПодсказка" id="613"/>
+					<ChildItems>
+						<LabelDecoration name="ОтступМиграцияВнешнийОбмен" id="614">
+							<Width>2</Width>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<HorizontalStretch>false</HorizontalStretch>
+							<ContextMenu name="ОтступМиграцияВнешнийОбменКонтекстноеМеню" id="615"/>
+							<ExtendedTooltip name="ОтступМиграцияВнешнийОбменРасширеннаяПодсказка" id="616"/>
+						</LabelDecoration>
+						<CheckBoxField name="ВнешнийОбменВНовойВерсии" id="617">
+							<DataPath>НаборКонстант.ВнешнийОбменВНовойВерсии</DataPath>
+							<TitleLocation>Right</TitleLocation>
+							<ToolTipRepresentation>Button</ToolTipRepresentation>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ВнешнийОбменВНовойВерсииКонтекстноеМеню" id="618"/>
+							<ExtendedTooltip name="ВнешнийОбменВНовойВерсииРасширеннаяПодсказка" id="619">
+								<Title formatted="false">
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Блокирует обмен, настройку обмена и взаимодействие с внешними ресурсами в текущей базе. Операции выполняются в 1С:Документообороте 3.0.
+
+Рекомендуется включать после перехода работы большинства сотрудников на новую версию.
+
+Затрагиваемые операции: ЭДО, почта, загрузка файлов, повторение процессов, распознавание файлов, обмен с 1С:Архивом.</v8:content>
+									</v8:item>
+								</Title>
+							</ExtendedTooltip>
+						</CheckBoxField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаРегистрацияВДО30" id="630">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа1</v8:content>
+						</v8:item>
+					</Title>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаРегистрацияВДО30РасширеннаяПодсказка" id="624"/>
+					<ChildItems>
+						<LabelDecoration name="ОтступРегистрацияВнешнийОбмен" id="625">
+							<Width>2</Width>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<HorizontalStretch>false</HorizontalStretch>
+							<ContextMenu name="ОтступРегистрацияВнешнийОбменКонтекстноеМеню" id="626"/>
+							<ExtendedTooltip name="ОтступРегистрацияВнешнийОбменРасширеннаяПодсказка" id="627"/>
+						</LabelDecoration>
+						<Button name="НастроитьРегистрациюВ1СДО30" id="628">
+							<Type>Hyperlink</Type>
+							<CommandName>Form.Command.НастроитьРегистрациюВ1СДО30</CommandName>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Настроить регистрацию в 1С:Документооборот 3.0</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTipRepresentation>Button</ToolTipRepresentation>
+							<ExtendedTooltip name="НастроитьРегистрациюВ1СДО30РасширеннаяПодсказка" id="629">
+								<Title formatted="false">
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Блокирует регистрацию документов в данной базе, регистрация производится в новой версии 1С:Документооборот 3.0 посредством веб-сервиса.
+
+Рекомендуется включать после перехода работы большинства сотрудников в новую версию.</v8:content>
+									</v8:item>
+								</Title>
+							</ExtendedTooltip>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
 		<UsualGroup name="ГруппаИспользованиеМобильных" id="533">
 			<Title>
 				<v8:item>
@@ -255,6 +526,7 @@
 				</v8:item>
 			</Title>
 			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
 			<Representation>NormalSeparation</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаИспользованиеМобильныхРасширеннаяПодсказка" id="534"/>
@@ -283,6 +555,7 @@
 						</v8:item>
 					</ToolTip>
 					<Group>Horizontal</Group>
+					<Behavior>Usual</Behavior>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="ГруппаИспользоватьPushУведомленияРасширеннаяПодсказка" id="554"/>
@@ -323,6 +596,7 @@
 						</v8:item>
 					</ToolTip>
 					<Group>Horizontal</Group>
+					<Behavior>Usual</Behavior>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="ГруппаАдресСервераРасширеннаяПодсказка" id="567"/>
@@ -356,19 +630,6 @@
 				</UsualGroup>
 			</ChildItems>
 		</UsualGroup>
-		<CheckBoxField name="ВыполняетсяПлавноеОбновлениеС20" id="579">
-			<DataPath>НаборКонстант.ВыполняетсяПлавноеОбновлениеС20</DataPath>
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Выполняется плавное обновление с "1С:Документооборот 2.0"</v8:content>
-				</v8:item>
-			</Title>
-			<TitleLocation>Right</TitleLocation>
-			<CheckBoxType>Auto</CheckBoxType>
-			<ContextMenu name="ВыполняетсяПлавноеОбновлениеС20КонтекстноеМеню" id="580"/>
-			<ExtendedTooltip name="ВыполняетсяПлавноеОбновлениеС20РасширеннаяПодсказка" id="581"/>
-		</CheckBoxField>
 	</ChildItems>
 	<Attributes>
 		<Attribute name="НаборКонстант" id="1">
@@ -387,6 +648,7 @@
 				<Field>НаборКонстант.АдресПубликацииНаВебСервере</Field>
 				<Field>НаборКонстант.АдресатыПолученияОтчетаПоЖурналуРегистрации</Field>
 				<Field>НаборКонстант.ВестиУчетОбращенийГраждан</Field>
+				<Field>НаборКонстант.ВнешнийОбменВНовойВерсии</Field>
 				<Field>НаборКонстант.ДатаОбновленияПовторноИспользуемыхЗначенийМРО</Field>
 				<Field>НаборКонстант.ДобавлятьРуководителямДоступПодчиненных</Field>
 				<Field>НаборКонстант.ЗаголовокСистемы</Field>
@@ -524,6 +786,24 @@
 				</v8:item>
 			</Title>
 			<Action>Настроить1СОтчетность</Action>
+		</Command>
+		<Command name="НастроитьРегистрациюВ1СДО30" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настроить регистрацию в 1С:ДО 3.0</v8:content>
+				</v8:item>
+			</Title>
+			<Action>НастроитьРегистрациюВ1СДО30</Action>
+		</Command>
+		<Command name="НастроитьМиграциюВНовуюВерсию" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настроить</v8:content>
+				</v8:item>
+			</Title>
+			<Action>НастроитьМиграциюВНовуюВерсию</Action>
 		</Command>
 	</Commands>
 </Form>

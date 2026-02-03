@@ -16,31 +16,13 @@
 			<Explanation/>
 			<Picture/>
 			<Content>
-				<xr:Item xsi:type="xr:MDObjectRef">FunctionalOption.РегламентированныйУчетОбращений</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">Constant.РегламентированныйУчетОбращений</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.ПомощникВыбораВопроса</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">CommonTemplate.КлассификаторОбращенийГраждан_2017</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">Constant.ДатаРедакцииКлассификатораОбращенийГраждан</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">Constant.АктуализироватьКлассификаторОбращенийГраждан</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ВопросыОбращений</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.РазделыОбращений</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ТематикиОбращений</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ТемыОбращений</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">Enum.РезультатыРассмотренияОбращений</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">Enum.СпособыВыборкиОбращений</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">Enum.СпособыВыгрузкиОбращений</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ВыгрузкаВССТУ</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ЗагрузкаКлассификатораОбращенийГраждан</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">Constant.ДатаПроверкиНаличияВопросов</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ПодборИзКлассификатораОбращенийГражданВызовСервера</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ПодборИзКлассификатораОбращенийГражданКлиент</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ПодборИзКлассификатораОбращенийГражданСервер</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.РаботаСОбращениямиВызовСервера</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.РаботаСОбращениямиКлиент</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">FunctionalOption.ВестиУчетОбращенийГраждан</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">CommonTemplate.КлассификаторОбращенийГражданУправленияПрезидента_2017</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Document.ВыгрузкаВССТУ</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">Enum.ВидыОбращенийГраждан</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

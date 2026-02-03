@@ -4763,10 +4763,6 @@
 			<value>true</value>
 		</right>
 		<right>
-			<name>InteractiveDelete</name>
-			<value>true</value>
-		</right>
-		<right>
 			<name>InteractiveSetDeletionMark</name>
 			<value>true</value>
 		</right>
@@ -12338,17 +12334,6 @@
 		</right>
 	</object>
 	<object>
-		<name>SessionParameter.ПравилаВыборочнойРегистрацииОбъектов</name>
-		<right>
-			<name>Get</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>Set</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
 		<name>DataProcessor.ПомощникСозданияОбменаДанными.Attribute.WSПароль</name>
 		<right>
 			<name>View</name>
@@ -14165,17 +14150,6 @@
 	</object>
 	<object>
 		<name>DataProcessor.КонвертацияОбъектовИнформационныхБаз.Attribute.КоличествоОбъектовНаТранзакцию</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
-		<name>Document.ПередачаДелВАрхив.Attribute.Ответственный</name>
 		<right>
 			<name>View</name>
 			<value>false</value>
@@ -25371,7 +25345,7 @@
 		</right>
 	</object>
 	<object>
-		<name>InformationRegister.ПравилаДляОбменаДанными.Attribute.ИспользоватьФильтрВыборочнойРегистрацииОбъектов</name>
+		<name>InformationRegister.ПравилаДляОбменаДанными.Attribute.УдалитьИспользоватьФильтрВыборочнойРегистрацииОбъектов</name>
 		<right>
 			<name>View</name>
 			<value>false</value>
@@ -35852,10 +35826,6 @@
 		</right>
 		<right>
 			<name>Edit</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>InteractiveDelete</name>
 			<value>true</value>
 		</right>
 		<right>

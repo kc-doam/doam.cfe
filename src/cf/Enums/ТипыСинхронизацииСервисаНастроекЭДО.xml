@@ -176,6 +176,42 @@
 					<Comment/>
 				</Properties>
 			</EnumValue>
+			<EnumValue uuid="36f223d3-a801-4d48-a3c7-a6ca1aaae1d1">
+				<Properties>
+					<Name>ОбновлениеКлассификатораПолномочийФНСМЧД002</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Обновление классификатора полномочий ФНС (МЧД 002)</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="6453c177-3458-466f-b41b-65b553088792">
+				<Properties>
+					<Name>ОбновлениеКлассификатораПолномочийМЧД003</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Обновление классификатора полномочий (МЧД 003)</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="63b4a2ff-ed97-4f5a-95d3-639478991926">
+				<Properties>
+					<Name>ОбновлениеПеречняСпециальныхОбстоятельств</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Обновление перечня специальных обстоятельств документа (ФНС)</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
 		</ChildObjects>
 	</Enum>
 </MetaDataObject>

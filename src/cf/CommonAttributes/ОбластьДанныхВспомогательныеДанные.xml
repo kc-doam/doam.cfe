@@ -61,6 +61,11 @@
 					<xr:ConditionalSeparation/>
 				</xr:Item>
 				<xr:Item>
+					<xr:Metadata>Constant.ИмяВидаПриложенияАвтономногоРабочегоМеста</xr:Metadata>
+					<xr:Use>Use</xr:Use>
+					<xr:ConditionalSeparation/>
+				</xr:Item>
+				<xr:Item>
 					<xr:Metadata>Constant.ИспользуетсяМиграцияПриложений</xr:Metadata>
 					<xr:Use>Use</xr:Use>
 					<xr:ConditionalSeparation/>
@@ -86,12 +91,22 @@
 					<xr:ConditionalSeparation/>
 				</xr:Item>
 				<xr:Item>
+					<xr:Metadata>InformationRegister.ВыгрузкаЗагрузкаОбъектовМетаданных</xr:Metadata>
+					<xr:Use>Use</xr:Use>
+					<xr:ConditionalSeparation/>
+				</xr:Item>
+				<xr:Item>
 					<xr:Metadata>Constant.ИспользоватьЭлектронныеПодписи</xr:Metadata>
 					<xr:Use>Use</xr:Use>
 					<xr:ConditionalSeparation/>
 				</xr:Item>
 				<xr:Item>
 					<xr:Metadata>Constant.ИспользоватьAPNS</xr:Metadata>
+					<xr:Use>Use</xr:Use>
+					<xr:ConditionalSeparation/>
+				</xr:Item>
+				<xr:Item>
+					<xr:Metadata>InformationRegister.СостоянияВыгрузкиЗагрузкиОбластейДанных</xr:Metadata>
 					<xr:Use>Use</xr:Use>
 					<xr:ConditionalSeparation/>
 				</xr:Item>
@@ -146,17 +161,17 @@
 					<xr:ConditionalSeparation/>
 				</xr:Item>
 				<xr:Item>
+					<xr:Metadata>InformationRegister.ФайлыВременногоХранилища</xr:Metadata>
+					<xr:Use>Use</xr:Use>
+					<xr:ConditionalSeparation/>
+				</xr:Item>
+				<xr:Item>
 					<xr:Metadata>Constant.ДокументооборотИспользоватьОтложенноеОбновлениеПравДоступа</xr:Metadata>
 					<xr:Use>Use</xr:Use>
 					<xr:ConditionalSeparation/>
 				</xr:Item>
 				<xr:Item>
 					<xr:Metadata>Constant.ВестиУчетОбращенийГраждан</xr:Metadata>
-					<xr:Use>Use</xr:Use>
-					<xr:ConditionalSeparation/>
-				</xr:Item>
-				<xr:Item>
-					<xr:Metadata>ScheduledJob.РассылкаОтчетов</xr:Metadata>
 					<xr:Use>Use</xr:Use>
 					<xr:ConditionalSeparation/>
 				</xr:Item>
@@ -202,6 +217,11 @@
 				</xr:Item>
 				<xr:Item>
 					<xr:Metadata>Constant.ИспользоватьСоставДокументов</xr:Metadata>
+					<xr:Use>Use</xr:Use>
+					<xr:ConditionalSeparation/>
+				</xr:Item>
+				<xr:Item>
+					<xr:Metadata>InformationRegister.ПрогрессОбновления</xr:Metadata>
 					<xr:Use>Use</xr:Use>
 					<xr:ConditionalSeparation/>
 				</xr:Item>
@@ -261,17 +281,17 @@
 					<xr:ConditionalSeparation/>
 				</xr:Item>
 				<xr:Item>
-					<xr:Metadata>Constant.ИспользоватьСертификатыОблачногоСервисаВЭДО</xr:Metadata>
-					<xr:Use>DontUse</xr:Use>
-					<xr:ConditionalSeparation/>
-				</xr:Item>
-				<xr:Item>
 					<xr:Metadata>Constant.ВестиУчетПлановыхТрудозатратВБизнесПроцессах</xr:Metadata>
 					<xr:Use>Use</xr:Use>
 					<xr:ConditionalSeparation/>
 				</xr:Item>
 				<xr:Item>
 					<xr:Metadata>Constant.ИспользоватьКатегорииДанных</xr:Metadata>
+					<xr:Use>Use</xr:Use>
+					<xr:ConditionalSeparation/>
+				</xr:Item>
+				<xr:Item>
+					<xr:Metadata>Catalog.СеансыОбменовДанными</xr:Metadata>
 					<xr:Use>Use</xr:Use>
 					<xr:ConditionalSeparation/>
 				</xr:Item>
@@ -416,6 +436,11 @@
 					<xr:ConditionalSeparation/>
 				</xr:Item>
 				<xr:Item>
+					<xr:Metadata>Constant.ПредставлениеВидаПриложенияАвтономногоРабочегоМеста</xr:Metadata>
+					<xr:Use>Use</xr:Use>
+					<xr:ConditionalSeparation/>
+				</xr:Item>
+				<xr:Item>
 					<xr:Metadata>InformationRegister.РазрешенияНаИспользованиеВнешнихРесурсовОбластейДанных</xr:Metadata>
 					<xr:Use>Use</xr:Use>
 					<xr:ConditionalSeparation/>
@@ -471,6 +496,11 @@
 					<xr:ConditionalSeparation/>
 				</xr:Item>
 				<xr:Item>
+					<xr:Metadata>InformationRegister.ОтправкиОтчетностиКОбработке</xr:Metadata>
+					<xr:Use>Use</xr:Use>
+					<xr:ConditionalSeparation/>
+				</xr:Item>
+				<xr:Item>
 					<xr:Metadata>Constant.ИспользоватьОтложеннуюОтправкуЭлектронныхДокументов</xr:Metadata>
 					<xr:Use>Use</xr:Use>
 					<xr:ConditionalSeparation/>
@@ -492,7 +522,7 @@
 				</xr:Item>
 				<xr:Item>
 					<xr:Metadata>Constant.ИспользуютсяПрофилиБезопасности</xr:Metadata>
-					<xr:Use>DontUse</xr:Use>
+					<xr:Use>Use</xr:Use>
 					<xr:ConditionalSeparation/>
 				</xr:Item>
 				<xr:Item>
@@ -536,6 +566,11 @@
 					<xr:ConditionalSeparation/>
 				</xr:Item>
 				<xr:Item>
+					<xr:Metadata>InformationRegister.ДатаОбновленияСостоянийКонтрагентов</xr:Metadata>
+					<xr:Use>Use</xr:Use>
+					<xr:ConditionalSeparation/>
+				</xr:Item>
+				<xr:Item>
 					<xr:Metadata>Constant.ИспользоватьВнешнихПользователей</xr:Metadata>
 					<xr:Use>Use</xr:Use>
 					<xr:ConditionalSeparation/>
@@ -571,8 +606,8 @@
 					<xr:ConditionalSeparation/>
 				</xr:Item>
 				<xr:Item>
-					<xr:Metadata>ScheduledJob.АвтоматическаяКатегоризацияДанных</xr:Metadata>
-					<xr:Use>DontUse</xr:Use>
+					<xr:Metadata>InformationRegister.ЧастиВыгрузкиЗагрузкиОбластейДанных</xr:Metadata>
+					<xr:Use>Use</xr:Use>
 					<xr:ConditionalSeparation/>
 				</xr:Item>
 				<xr:Item>
@@ -582,6 +617,11 @@
 				</xr:Item>
 				<xr:Item>
 					<xr:Metadata>Constant.ИспользоватьНесколькоОрганизаций</xr:Metadata>
+					<xr:Use>Use</xr:Use>
+					<xr:ConditionalSeparation/>
+				</xr:Item>
+				<xr:Item>
+					<xr:Metadata>InformationRegister.ПериодическиеСерверныеОповещения</xr:Metadata>
 					<xr:Use>Use</xr:Use>
 					<xr:ConditionalSeparation/>
 				</xr:Item>
@@ -597,6 +637,11 @@
 				</xr:Item>
 				<xr:Item>
 					<xr:Metadata>Constant.ИспользоватьТранслитерациюSMS</xr:Metadata>
+					<xr:Use>Use</xr:Use>
+					<xr:ConditionalSeparation/>
+				</xr:Item>
+				<xr:Item>
+					<xr:Metadata>Constant.УстановленаМонопольнаяБлокировка</xr:Metadata>
 					<xr:Use>Use</xr:Use>
 					<xr:ConditionalSeparation/>
 				</xr:Item>
@@ -656,17 +701,22 @@
 					<xr:ConditionalSeparation/>
 				</xr:Item>
 				<xr:Item>
+					<xr:Metadata>InformationRegister.ОтправленныеСерверныеОповещения</xr:Metadata>
+					<xr:Use>Use</xr:Use>
+					<xr:ConditionalSeparation/>
+				</xr:Item>
+				<xr:Item>
 					<xr:Metadata>Constant.СведенияОбОбновленииИБ</xr:Metadata>
 					<xr:Use>Use</xr:Use>
 					<xr:ConditionalSeparation/>
 				</xr:Item>
 				<xr:Item>
-					<xr:Metadata>InformationRegister.РейтингАктивностиОбластейДанных</xr:Metadata>
+					<xr:Metadata>InformationRegister.СводныеПриложенияСостояниеВыгрузки</xr:Metadata>
 					<xr:Use>Use</xr:Use>
 					<xr:ConditionalSeparation/>
 				</xr:Item>
 				<xr:Item>
-					<xr:Metadata>ScheduledJob.ВсеОбновленияСПАРКРискиРазделенное</xr:Metadata>
+					<xr:Metadata>InformationRegister.РейтингАктивностиОбластейДанных</xr:Metadata>
 					<xr:Use>Use</xr:Use>
 					<xr:ConditionalSeparation/>
 				</xr:Item>
@@ -696,6 +746,11 @@
 					<xr:ConditionalSeparation/>
 				</xr:Item>
 				<xr:Item>
+					<xr:Metadata>InformationRegister.ОперацииРегламентныхЗаданийОбластейДанных</xr:Metadata>
+					<xr:Use>Use</xr:Use>
+					<xr:ConditionalSeparation/>
+				</xr:Item>
+				<xr:Item>
 					<xr:Metadata>InformationRegister.ОчередьРасширенийДляОповещений</xr:Metadata>
 					<xr:Use>Use</xr:Use>
 					<xr:ConditionalSeparation/>
@@ -711,12 +766,12 @@
 					<xr:ConditionalSeparation/>
 				</xr:Item>
 				<xr:Item>
-					<xr:Metadata>ScheduledJob.ОбновлениеОбсуждений</xr:Metadata>
+					<xr:Metadata>InformationRegister.СвойстваЗаданий</xr:Metadata>
 					<xr:Use>Use</xr:Use>
 					<xr:ConditionalSeparation/>
 				</xr:Item>
 				<xr:Item>
-					<xr:Metadata>InformationRegister.СвойстваЗаданий</xr:Metadata>
+					<xr:Metadata>InformationRegister.ВидыПриложенийОбластейДанных</xr:Metadata>
 					<xr:Use>Use</xr:Use>
 					<xr:ConditionalSeparation/>
 				</xr:Item>
@@ -762,6 +817,11 @@
 				</xr:Item>
 				<xr:Item>
 					<xr:Metadata>Constant.ИспользоватьОтсутствия</xr:Metadata>
+					<xr:Use>Use</xr:Use>
+					<xr:ConditionalSeparation/>
+				</xr:Item>
+				<xr:Item>
+					<xr:Metadata>InformationRegister.СведенияОПользователяхСервиса</xr:Metadata>
 					<xr:Use>Use</xr:Use>
 					<xr:ConditionalSeparation/>
 				</xr:Item>

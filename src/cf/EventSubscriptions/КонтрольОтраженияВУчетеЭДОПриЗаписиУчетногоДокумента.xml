@@ -14,7 +14,7 @@
 				<v8:Type>cfg:CatalogObject.ИдентификаторыОбъектовМетаданных</v8:Type>
 			</Source>
 			<Event>OnWrite</Event>
-			<Handler>CommonModule.ИнтеграцияЭДО.ВыполнитьКонтрольОтраженияВУчетеПриЗаписиУчетногоДокумента</Handler>
+			<Handler>CommonModule.ОтражениеВУчетеЭДО.ВыполнитьКонтрольОтраженияВУчетеПриЗаписиУчетногоДокумента</Handler>
 		</Properties>
 	</EventSubscription>
 </MetaDataObject>

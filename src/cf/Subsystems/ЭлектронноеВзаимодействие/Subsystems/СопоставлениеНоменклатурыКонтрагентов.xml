@@ -36,6 +36,8 @@
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ОбщегоНазначенияБЭДКлиентСервер</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ЭлектронноеВзаимодействие</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.НоменклатураКонтрагентов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DefinedType.КонтрагентБЭД</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ТипыНоменклатурыФНС</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects>

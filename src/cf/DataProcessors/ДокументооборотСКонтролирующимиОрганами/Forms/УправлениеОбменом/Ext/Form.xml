@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
 	<Title>
 		<v8:item>
 			<v8:lang>ru</v8:lang>
@@ -71,6 +71,7 @@
 			</ToolTip>
 			<HorizontalStretch>true</HorizontalStretch>
 			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаОсновнаяExtendedTooltip" id="2790"/>
@@ -90,6 +91,7 @@
 					</ToolTip>
 					<HorizontalStretch>true</HorizontalStretch>
 					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
 					<ExtendedTooltip name="ГруппаУчетныеЗаписиExtendedTooltip" id="2791"/>
 					<ChildItems>
 						<Table name="УчетныеЗаписи" id="24">
@@ -212,6 +214,7 @@
 						</v8:item>
 					</ToolTip>
 					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="ГруппаДокументовExtendedTooltip" id="2797"/>
@@ -1684,6 +1687,7 @@
 																</v8:item>
 															</ToolTip>
 															<Group>Vertical</Group>
+															<Behavior>Usual</Behavior>
 															<Representation>None</Representation>
 															<ShowTitle>false</ShowTitle>
 															<ExtendedTooltip name="ГруппаКоманднаяПанельТаблицаПредставленияРасширеннаяПодсказка" id="3997"/>
@@ -1918,7 +1922,7 @@
 															<EnableStartDrag>true</EnableStartDrag>
 															<FileDragMode>AsFile</FileDragMode>
 															<DataPath>ЦиклыОбменаПредставления</DataPath>
-															<RowPictureDataPath>ЦиклыОбменаПредставления.DefaultPicture</RowPictureDataPath>
+															<RowPictureDataPath>~ЦиклыОбменаПредставления.DefaultPicture</RowPictureDataPath>
 															<SearchStringLocation>None</SearchStringLocation>
 															<ViewStatusLocation>None</ViewStatusLocation>
 															<SearchControlLocation>None</SearchControlLocation>
@@ -2443,7 +2447,7 @@
 															<EnableStartDrag>true</EnableStartDrag>
 															<FileDragMode>AsFile</FileDragMode>
 															<DataPath>ЦиклыОбменаУведомления</DataPath>
-															<RowPictureDataPath>ЦиклыОбменаУведомления.DefaultPicture</RowPictureDataPath>
+															<RowPictureDataPath>~ЦиклыОбменаУведомления.DefaultPicture</RowPictureDataPath>
 															<SearchStringLocation>None</SearchStringLocation>
 															<ViewStatusLocation>None</ViewStatusLocation>
 															<SearchControlLocation>None</SearchControlLocation>
@@ -5803,7 +5807,7 @@
 															<EnableStartDrag>true</EnableStartDrag>
 															<FileDragMode>AsFile</FileDragMode>
 															<DataPath>ЦиклыОбменаИсходящиеФСГС</DataPath>
-															<RowPictureDataPath>ЦиклыОбменаИсходящиеФСГС.DefaultPicture</RowPictureDataPath>
+															<RowPictureDataPath>~ЦиклыОбменаИсходящиеФСГС.DefaultPicture</RowPictureDataPath>
 															<SearchStringLocation>None</SearchStringLocation>
 															<ViewStatusLocation>None</ViewStatusLocation>
 															<SearchControlLocation>None</SearchControlLocation>
@@ -6117,7 +6121,7 @@
 															<EnableStartDrag>true</EnableStartDrag>
 															<FileDragMode>AsFile</FileDragMode>
 															<DataPath>ЦиклыОбменаВходящиеФСГС</DataPath>
-															<RowPictureDataPath>ЦиклыОбменаВходящиеФСГС.DefaultPicture</RowPictureDataPath>
+															<RowPictureDataPath>~ЦиклыОбменаВходящиеФСГС.DefaultPicture</RowPictureDataPath>
 															<SearchStringLocation>None</SearchStringLocation>
 															<ViewStatusLocation>None</ViewStatusLocation>
 															<SearchControlLocation>None</SearchControlLocation>
@@ -7223,7 +7227,7 @@
 															<EnableStartDrag>true</EnableStartDrag>
 															<FileDragMode>AsFile</FileDragMode>
 															<DataPath>ОтправкиОтчетностьРПН</DataPath>
-															<RowPictureDataPath>ОтправкиОтчетностьРПН.DefaultPicture</RowPictureDataPath>
+															<RowPictureDataPath>~ОтправкиОтчетностьРПН.DefaultPicture</RowPictureDataPath>
 															<SearchStringLocation>None</SearchStringLocation>
 															<ViewStatusLocation>None</ViewStatusLocation>
 															<SearchControlLocation>None</SearchControlLocation>
@@ -7594,7 +7598,7 @@
 															<EnableStartDrag>true</EnableStartDrag>
 															<FileDragMode>AsFile</FileDragMode>
 															<DataPath>ОтправкиОтчетностьФТС</DataPath>
-															<RowPictureDataPath>ОтправкиОтчетностьФТС.DefaultPicture</RowPictureDataPath>
+															<RowPictureDataPath>~ОтправкиОтчетностьФТС.DefaultPicture</RowPictureDataPath>
 															<SearchStringLocation>None</SearchStringLocation>
 															<ViewStatusLocation>None</ViewStatusLocation>
 															<SearchControlLocation>None</SearchControlLocation>
@@ -8128,7 +8132,7 @@
 											<EnableStartDrag>true</EnableStartDrag>
 											<FileDragMode>AsFile</FileDragMode>
 											<DataPath>ТранспортноеСообщение</DataPath>
-											<RowPictureDataPath>ТранспортноеСообщение.DefaultPicture</RowPictureDataPath>
+											<RowPictureDataPath>~ТранспортноеСообщение.DefaultPicture</RowPictureDataPath>
 											<SearchStringLocation>None</SearchStringLocation>
 											<ViewStatusLocation>None</ViewStatusLocation>
 											<SearchControlLocation>None</SearchControlLocation>
@@ -8279,7 +8283,7 @@
 				</v8:item>
 			</Title>
 			<Type>
-				<v8:TypeSet>cfg:AnyRef</v8:TypeSet>
+				<v8:TypeSet>cfg:AnyIBRef</v8:TypeSet>
 			</Type>
 		</Attribute>
 		<Attribute name="УчетныеЗаписи" id="3">
@@ -12168,7 +12172,7 @@
 				</v8:item>
 			</Title>
 			<Type>
-				<v8:TypeSet>cfg:AnyRef</v8:TypeSet>
+				<v8:TypeSet>cfg:AnyIBRef</v8:TypeSet>
 			</Type>
 		</Attribute>
 		<Attribute name="ПредметЗаявленийФНСПредставление" id="38">
@@ -12194,7 +12198,7 @@
 				</v8:item>
 			</Title>
 			<Type>
-				<v8:TypeSet>cfg:AnyRef</v8:TypeSet>
+				<v8:TypeSet>cfg:AnyIBRef</v8:TypeSet>
 			</Type>
 		</Attribute>
 		<Attribute name="ПредметОтчетностиПФРПредставление" id="40">
@@ -12220,7 +12224,7 @@
 				</v8:item>
 			</Title>
 			<Type>
-				<v8:TypeSet>cfg:AnyRef</v8:TypeSet>
+				<v8:TypeSet>cfg:AnyIBRef</v8:TypeSet>
 			</Type>
 		</Attribute>
 		<Attribute name="ПредметОтчетностиФНСПредставление" id="42">
@@ -12246,7 +12250,7 @@
 				</v8:item>
 			</Title>
 			<Type>
-				<v8:TypeSet>cfg:AnyRef</v8:TypeSet>
+				<v8:TypeSet>cfg:AnyIBRef</v8:TypeSet>
 			</Type>
 		</Attribute>
 		<Attribute name="ПредметОтчетностиФСГСПредставление" id="44">
@@ -12272,7 +12276,7 @@
 				</v8:item>
 			</Title>
 			<Type>
-				<v8:TypeSet>cfg:AnyRef</v8:TypeSet>
+				<v8:TypeSet>cfg:AnyIBRef</v8:TypeSet>
 			</Type>
 		</Attribute>
 		<Attribute name="ПредметОтчетностиФСРАРПредставление" id="46">
@@ -12298,7 +12302,7 @@
 				</v8:item>
 			</Title>
 			<Type>
-				<v8:TypeSet>cfg:AnyRef</v8:TypeSet>
+				<v8:TypeSet>cfg:AnyIBRef</v8:TypeSet>
 			</Type>
 		</Attribute>
 		<Attribute name="ПредметОтчетностиФССПредставление" id="48">
@@ -12453,7 +12457,7 @@
 				</v8:item>
 			</Title>
 			<Type>
-				<v8:TypeSet>cfg:AnyRef</v8:TypeSet>
+				<v8:TypeSet>cfg:AnyIBRef</v8:TypeSet>
 			</Type>
 		</Attribute>
 		<Attribute name="ПредметОтчетностиРПНПредставление" id="54">
@@ -12585,7 +12589,7 @@
 				</v8:item>
 			</Title>
 			<Type>
-				<v8:TypeSet>cfg:AnyRef</v8:TypeSet>
+				<v8:TypeSet>cfg:AnyIBRef</v8:TypeSet>
 			</Type>
 		</Attribute>
 		<Attribute name="ПредметОтчетностиФТСПредставление" id="58">

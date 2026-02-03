@@ -28,7 +28,6 @@
 				<v8:Type>cfg:CatalogObject.Проекты</v8:Type>
 				<v8:Type>cfg:CatalogObject.ПапкиФайлов</v8:Type>
 				<v8:Type>cfg:CatalogObject.СпискиАдресовЭлектроннойПочты</v8:Type>
-				<v8:Type>cfg:CatalogObject.УведомленияПрограммы</v8:Type>
 				<v8:Type>cfg:CatalogObject.УдалитьШаблоныТекстовПисем</v8:Type>
 				<v8:Type>cfg:CatalogObject.НастройкиДоступностиПоСостоянию</v8:Type>
 				<v8:Type>cfg:CatalogObject.РазделыОбращений</v8:Type>
@@ -44,6 +43,7 @@
 				<v8:Type>cfg:CatalogObject.ВидыБизнесСобытий</v8:Type>
 				<v8:Type>cfg:CatalogObject.ШаблоныУтверждения</v8:Type>
 				<v8:Type>cfg:CatalogObject.ВопросыОбращений</v8:Type>
+				<v8:Type>cfg:CatalogObject.ВидыДокументовМЭДО</v8:Type>
 				<v8:Type>cfg:CatalogObject.ВидыВходящихДокументов</v8:Type>
 				<v8:Type>cfg:BusinessProcessObject.Утверждение</v8:Type>
 				<v8:Type>cfg:CatalogObject.ПравилаОтправкиСообщенийСВД</v8:Type>
@@ -100,6 +100,7 @@
 				<v8:Type>cfg:CatalogObject.СправкиСПАРКРискиПрисоединенныеФайлы</v8:Type>
 				<v8:Type>cfg:CatalogObject.УсловияМаршрутизации</v8:Type>
 				<v8:Type>cfg:CatalogObject.СостоянияЧатБота</v8:Type>
+				<v8:Type>cfg:CatalogObject.МестаСоставленияДокументовМЭДО</v8:Type>
 				<v8:Type>cfg:CatalogObject.ПапкиПроектов</v8:Type>
 				<v8:Type>cfg:CatalogObject.ШаблоныВнутреннихДокументов</v8:Type>
 				<v8:Type>cfg:CatalogObject.ШаблоныИсполнения</v8:Type>
@@ -107,6 +108,7 @@
 				<v8:Type>cfg:BusinessProcessObject.Поручение</v8:Type>
 				<v8:Type>cfg:CatalogObject.ЗаметкиДокументооборота</v8:Type>
 				<v8:Type>cfg:CatalogObject.ПравилаЭскалацииЗадач</v8:Type>
+				<v8:Type>cfg:CatalogObject.ПричиныОтказаВРегистрацииМЭДО</v8:Type>
 				<v8:Type>cfg:CatalogObject.КоллекцииЗначенийДоступа</v8:Type>
 				<v8:Type>cfg:CatalogObject.ГрафикиРаботы</v8:Type>
 				<v8:Type>cfg:CatalogObject.ВидыРабот</v8:Type>

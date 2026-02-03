@@ -34,8 +34,8 @@
 			<Explanation/>
 		</Properties>
 		<ChildObjects>
-			<Template>ОсновнаяСхемаКомпоновкиДанных</Template>
 			<Template>ОбразецОтчетаМониторингПроцессов</Template>
+			<Template>ОсновнаяСхемаКомпоновкиДанных</Template>
 			<Command uuid="397ad574-e995-4676-9680-e6cf9a7d0951">
 				<Properties>
 					<Name>ПоказательПроцесса</Name>

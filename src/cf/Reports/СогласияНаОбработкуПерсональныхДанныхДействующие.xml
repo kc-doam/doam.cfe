@@ -39,8 +39,8 @@
 			</Explanation>
 		</Properties>
 		<ChildObjects>
-			<Template>ОсновнаяСхемаКомпоновкиДанных</Template>
 			<Template>ОбразецОтчетаДействующиеСогласия</Template>
+			<Template>ОсновнаяСхемаКомпоновкиДанных</Template>
 		</ChildObjects>
 	</Report>
 </MetaDataObject>

@@ -92,15 +92,6 @@
 			<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" minLength="1" maxLength="255"/>
 		</property>
 	</objectType>
-	<objectType name="ДолжЛицоТип">
-		<property name="Должность" lowerBound="1" form="Attribute">
-			<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" minLength="1" maxLength="128"/>
-		</property>
-		<property name="ИныеСвед" lowerBound="0" form="Attribute">
-			<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" minLength="1" maxLength="255"/>
-		</property>
-		<property xmlns:d3p1="ON_NKORSCHFDOPPR_2020" name="ФИО" type="d3p1:ФИОТип"/>
-	</objectType>
 	<objectType name="КонтактТип">
 		<property name="Тлф" lowerBound="0" form="Attribute">
 			<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" minLength="1" maxLength="255"/>
@@ -327,20 +318,20 @@
 								<property xmlns:d9p1="ON_NKORSCHFDOPPR_2020" name="ДатаСчФ" type="d9p1:ДатаТип" lowerBound="1" form="Attribute"/>
 								<property name="ИспрСчФ" lowerBound="0" upperBound="-1">
 									<typeDef xsi:type="ObjectType">
-										<property name="НомИспрСчФ" lowerBound="0" form="Attribute">
+										<property name="НомИспрСчФ" lowerBound="1" form="Attribute">
 											<typeDef xsi:type="ValueType" base="xs:integer" variety="Atomic" minInclusive="1" totalDigits="3"/>
 										</property>
-										<property xmlns:d11p1="ON_NKORSCHFDOPPR_2020" name="ДатаИспрСчФ" type="d11p1:ДатаТип" lowerBound="0" form="Attribute"/>
+										<property xmlns:d11p1="ON_NKORSCHFDOPPR_2020" name="ДатаИспрСчФ" type="d11p1:ДатаТип" lowerBound="1" form="Attribute"/>
 									</typeDef>
 								</property>
 							</typeDef>
 						</property>
 						<property name="ИспрКСчФ" lowerBound="0">
 							<typeDef xsi:type="ObjectType">
-								<property name="НомИспрКСчФ" form="Attribute">
+								<property name="НомИспрКСчФ" lowerBound="1" form="Attribute">
 									<typeDef xsi:type="ValueType" base="xs:integer" variety="Atomic" minInclusive="1" totalDigits="3"/>
 								</property>
-								<property xmlns:d9p1="ON_NKORSCHFDOPPR_2020" name="ДатаИспрКСчФ" type="d9p1:ДатаТип" form="Attribute"/>
+								<property xmlns:d9p1="ON_NKORSCHFDOPPR_2020" name="ДатаИспрКСчФ" type="d9p1:ДатаТип" lowerBound="1" form="Attribute"/>
 							</typeDef>
 						</property>
 						<property xmlns:d7p1="ON_NKORSCHFDOPPR_2020" name="СвПрод" type="d7p1:СвПродПокТип"/>
@@ -350,7 +341,7 @@
 								<property name="ИдГосКон" lowerBound="0" form="Attribute">
 									<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" minLength="20" maxLength="25"/>
 								</property>
-								<property name="НаимОКВ" lowerBound="1" form="Attribute">
+								<property name="НаимОКВ" lowerBound="0" form="Attribute">
 									<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" minLength="1" maxLength="100"/>
 								</property>
 								<property name="КурсВал" lowerBound="0" form="Attribute">
@@ -363,7 +354,7 @@
 								<property name="ИдФайлИнфПол" lowerBound="0" form="Attribute">
 									<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" length="36"/>
 								</property>
-								<property xmlns:d9p1="ON_NKORSCHFDOPPR_2020" name="ТекстИнф" type="d9p1:ТекстИнфТип" lowerBound="0" upperBound="20"/>
+								<property xmlns:d9p1="ON_NKORSCHFDOPPR_2020" name="ТекстИнф" type="d9p1:ТекстИнфТип" lowerBound="0" upperBound="-1"/>
 							</typeDef>
 						</property>
 					</typeDef>
@@ -398,9 +389,15 @@
 								<property name="НалСтДо" lowerBound="1" form="Attribute">
 									<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" minLength="1" maxLength="35">
 										<enumeration>0%</enumeration>
+										<enumeration xsi:type="xs:string">5%</enumeration>
+										<enumeration xsi:type="xs:string">7%</enumeration>
+										<enumeration xsi:type="xs:string">9,09%</enumeration>
 										<enumeration>10%</enumeration>
+										<enumeration xsi:type="xs:string">16,67%</enumeration>
 										<enumeration>18%</enumeration>
 										<enumeration>20%</enumeration>
+										<enumeration xsi:type="xs:string">5/105</enumeration>
+										<enumeration xsi:type="xs:string">7/107</enumeration>
 										<enumeration>10/110</enumeration>
 										<enumeration>18/118</enumeration>
 										<enumeration>20/120</enumeration>
@@ -411,9 +408,15 @@
 								<property name="НалСтПосле" lowerBound="1" form="Attribute">
 									<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" minLength="1" maxLength="35">
 										<enumeration>0%</enumeration>
+										<enumeration xsi:type="xs:string">5%</enumeration>
+										<enumeration xsi:type="xs:string">7%</enumeration>
+										<enumeration xsi:type="xs:string">9,09%</enumeration>
 										<enumeration>10%</enumeration>
+										<enumeration xsi:type="xs:string">16,67%</enumeration>
 										<enumeration>18%</enumeration>
 										<enumeration>20%</enumeration>
+										<enumeration xsi:type="xs:string">5/105</enumeration>
+										<enumeration xsi:type="xs:string">7/107</enumeration>
 										<enumeration>10/110</enumeration>
 										<enumeration>18/118</enumeration>
 										<enumeration>20/120</enumeration>
@@ -432,7 +435,7 @@
 								<property name="ИнфПолФХЖ2" lowerBound="0" upperBound="20">
 									<typeDef xsi:type="ObjectType">
 										<property name="Идентиф" lowerBound="1" form="Attribute">
-											<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" minLength="1" maxLength="50"/>
+											<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" minLength="1" maxLength="100"/>
 										</property>
 										<property name="Значен" lowerBound="1" form="Attribute">
 											<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" minLength="1" maxLength="2000"/>

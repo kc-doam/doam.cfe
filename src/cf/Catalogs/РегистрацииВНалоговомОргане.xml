@@ -429,13 +429,13 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Attribute>
-			<Attribute uuid="dcfe1f47-6db0-4c96-a275-79d6b9caddf9">
+			<Attribute uuid="2e45b449-8b3f-4aa3-9b7e-3333ae3c8587">
 				<Properties>
-					<Name>КодПоОКТМО</Name>
+					<Name>КодПоОКАТО</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ОКТМО налогового органа</v8:content>
+							<v8:content>ОКАТО налогового органа</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -452,7 +452,7 @@
 					<ToolTip>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Код по Общероссийскому классификатору территорий муниципальных образований</v8:content>
+							<v8:content>Код по Общероссийскому классификатору административно-территориального деления</v8:content>
 						</v8:item>
 					</ToolTip>
 					<MarkNegatives>false</MarkNegatives>
@@ -478,13 +478,13 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Attribute>
-			<Attribute uuid="2e45b449-8b3f-4aa3-9b7e-3333ae3c8587">
+			<Attribute uuid="dcfe1f47-6db0-4c96-a275-79d6b9caddf9">
 				<Properties>
-					<Name>КодПоОКАТО</Name>
+					<Name>КодПоОКТМО</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ОКАТО налогового органа</v8:content>
+							<v8:content>ОКТМО налогового органа</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -501,7 +501,7 @@
 					<ToolTip>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Код по Общероссийскому классификатору административно-территориального деления</v8:content>
+							<v8:content>Код по Общероссийскому классификатору территорий муниципальных образований</v8:content>
 						</v8:item>
 					</ToolTip>
 					<MarkNegatives>false</MarkNegatives>
@@ -749,10 +749,10 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Attribute>
-			<Form>ФормаСписка</Form>
 			<Form>ФормаВыбора</Form>
-			<Form>ФормаЭлемента</Form>
 			<Form>ФормаПредставителя</Form>
+			<Form>ФормаСписка</Form>
+			<Form>ФормаЭлемента</Form>
 			<Command uuid="63310fa4-0a9e-47c2-bfde-d35c06021096">
 				<Properties>
 					<Name>ОткрытьСписокРегистраций</Name>

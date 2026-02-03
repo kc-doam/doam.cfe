@@ -31,12 +31,17 @@
 				<xr:Item xsi:type="xr:MDObjectRef">StyleItem.ОплатаСервисаПолужирныйШрифт</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">StyleItem.ОплатаСервисаРекомендуемыеПодпискиЦвет</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">StyleItem.ОплатаСервисаТекущиеПодпискиЦвет</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ПанельАдминистрированияБТС</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.УстанавливатьПриоритетОбработкиДанныхВУказанномИнтервалеВремени</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.НачалоИнтервалаВремениПриоритетаОбработкиДанных</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ОкончаниеИнтервалаВремениПриоритетаОбработкиДанных</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects>
 			<Subsystem>АвтоматизацияПроцессов</Subsystem>
 			<Subsystem>АсинхронноеПолучениеДанных</Subsystem>
 			<Subsystem>БазоваяФункциональность</Subsystem>
+			<Subsystem>ВидыПриложений</Subsystem>
 			<Subsystem>ВнешнийПрограммныйИнтерфейс</Subsystem>
 			<Subsystem>ВыгрузкаЗагрузкаДанных</Subsystem>
 			<Subsystem>ВыгрузкаЗагрузкаОбластейДанных</Subsystem>
@@ -50,6 +55,7 @@
 			<Subsystem>ОчередьЗаданий</Subsystem>
 			<Subsystem>ОчередьЗаданийВнешнийИнтерфейс</Subsystem>
 			<Subsystem>ПередачаДанных</Subsystem>
+			<Subsystem>ПользователиСервиса</Subsystem>
 			<Subsystem>ПоставляемыеДанные</Subsystem>
 			<Subsystem>ПоставляемыеДанныеАбонентов</Subsystem>
 			<Subsystem>ПроверкаИКорректировкаДанных</Subsystem>
@@ -60,6 +66,7 @@
 			<Subsystem>УдаленноеАдминистрирование</Subsystem>
 			<Subsystem>УниверсальнаяИнтеграция</Subsystem>
 			<Subsystem>УправлениеТарифами</Subsystem>
+			<Subsystem>ФайловоеВременноеХранилище</Subsystem>
 			<Subsystem>ФайлыОбластейДанных</Subsystem>
 			<Subsystem>ЦентрКонтроляКачества</Subsystem>
 			<Subsystem>ЭлектроннаяПодписьВМоделиСервиса</Subsystem>

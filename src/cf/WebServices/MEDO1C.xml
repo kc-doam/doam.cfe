@@ -23,6 +23,24 @@
 			<SessionMaxAge>20</SessionMaxAge>
 		</Properties>
 		<ChildObjects>
+			<Operation uuid="8e50c074-0f11-4aae-8ffe-f81d96f4be9f">
+				<Properties>
+					<Name>Get</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Get</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<XDTOReturningValueType xmlns:d6p1="http://www.1c.ru/medo">d6p1:Response</XDTOReturningValueType>
+					<Nillable>true</Nillable>
+					<Transactioned>false</Transactioned>
+					<ProcedureName>Get</ProcedureName>
+					<DataLockControlMode>Managed</DataLockControlMode>
+				</Properties>
+				<ChildObjects/>
+			</Operation>
 			<Operation uuid="fe94633c-6f28-4212-83ab-a82cf77b7937">
 				<Properties>
 					<Name>Put</Name>
@@ -56,24 +74,6 @@
 						</Properties>
 					</Parameter>
 				</ChildObjects>
-			</Operation>
-			<Operation uuid="8e50c074-0f11-4aae-8ffe-f81d96f4be9f">
-				<Properties>
-					<Name>Get</Name>
-					<Synonym>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Get</v8:content>
-						</v8:item>
-					</Synonym>
-					<Comment/>
-					<XDTOReturningValueType xmlns:d6p1="http://www.1c.ru/medo">d6p1:Response</XDTOReturningValueType>
-					<Nillable>true</Nillable>
-					<Transactioned>false</Transactioned>
-					<ProcedureName>Get</ProcedureName>
-					<DataLockControlMode>Managed</DataLockControlMode>
-				</Properties>
-				<ChildObjects/>
 			</Operation>
 			<Operation uuid="eb122517-f0d0-473c-a569-4a2f93f439ba">
 				<Properties>

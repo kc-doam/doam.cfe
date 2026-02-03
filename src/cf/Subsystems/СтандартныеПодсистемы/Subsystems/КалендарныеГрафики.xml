@@ -10,16 +10,17 @@
 				</v8:item>
 			</Synonym>
 			<Comment/>
-			<IncludeHelpInContents>true</IncludeHelpInContents>
+			<IncludeHelpInContents>false</IncludeHelpInContents>
 			<IncludeInCommandInterface>false</IncludeInCommandInterface>
 			<UseOneCommand>false</UseOneCommand>
 			<Explanation/>
 			<Picture/>
 			<Content>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Календари</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.КалендарныеГрафики</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.КалендарныеГрафики</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Subsystem.СтандартныеПодсистемы.Subsystem.КалендарныеГрафики</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.КалендарныеГрафики</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.ДобавлениеИзменениеКалендарныхГрафиков</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

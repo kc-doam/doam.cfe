@@ -29,6 +29,7 @@
 		</Properties>
 		<ChildObjects>
 			<Form>НетИнформацииОКонтрагенте</Form>
+			<Form>РасшифровкаДанныхСПАРКРиски</Form>
 			<Form>РасшифровкаСтатуса</Form>
 			<Form>СправочнаяИнформация</Form>
 			<Form>Форма</Form>
@@ -37,6 +38,27 @@
 			<Form>ЧтоТакоеИндексФинансовогоРиска</Form>
 			<Form>ЧтоТакоеСводныйИндикаторРиска</Form>
 			<Template>КакНастроитьПроверкуЦифровойПодписиAdobeAcrobat_ru</Template>
+			<Command uuid="5d484cc4-ed24-457f-a029-823b08c71b17">
+				<Properties>
+					<Name>ЧтоТакоеБухгалтерскаяОтчетность</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Что такое бухгалтерская отчетность</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Group>NavigationPanelSeeAlso</Group>
+					<CommandParameterType/>
+					<ParameterUseMode>Single</ParameterUseMode>
+					<ModifiesData>false</ModifiesData>
+					<Representation>Auto</Representation>
+					<ToolTip/>
+					<Picture/>
+					<Shortcut/>
+					<OnMainServerUnavalableBehavior>Auto</OnMainServerUnavalableBehavior>
+				</Properties>
+			</Command>
 			<Command uuid="c4742761-6b99-4405-a98e-d33c1d70930f">
 				<Properties>
 					<Name>ЧтоТакоеИндексДолжнойОсмотрительности</Name>

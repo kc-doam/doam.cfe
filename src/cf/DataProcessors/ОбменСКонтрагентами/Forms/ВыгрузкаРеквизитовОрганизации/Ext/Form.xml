@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
 	<Title>
 		<v8:item>
 			<v8:lang>ru</v8:lang>
@@ -22,7 +22,7 @@
 						<v8:content>Выгрузить</v8:content>
 					</v8:item>
 				</Title>
-				<ExtendedTooltip name="ВыгрузитьExtendedTooltip" id="72"/>
+				<ExtendedTooltip name="ВыгрузитьРасширеннаяПодсказка" id="72"/>
 			</Button>
 		</ChildItems>
 	</AutoCommandBar>
@@ -40,17 +40,17 @@
 				</v8:item>
 			</Title>
 			<ContextMenu name="ОрганизацияНаименованиеПолноеКонтекстноеМеню" id="6"/>
-			<ExtendedTooltip name="ОрганизацияНаименованиеПолноеExtendedTooltip" id="73"/>
+			<ExtendedTooltip name="ОрганизацияНаименованиеПолноеРасширеннаяПодсказка" id="73"/>
 		</LabelField>
 		<LabelField name="ИНН" id="7">
 			<DataPath>ИНН</DataPath>
 			<ContextMenu name="ИННКонтекстноеМеню" id="8"/>
-			<ExtendedTooltip name="ИННExtendedTooltip" id="74"/>
+			<ExtendedTooltip name="ИННРасширеннаяПодсказка" id="74"/>
 		</LabelField>
 		<LabelField name="КПП" id="68">
 			<DataPath>КПП</DataPath>
 			<ContextMenu name="КППКонтекстноеМеню" id="69"/>
-			<ExtendedTooltip name="КППExtendedTooltip" id="75"/>
+			<ExtendedTooltip name="КППРасширеннаяПодсказка" id="75"/>
 		</LabelField>
 		<LabelField name="ОКПО" id="13">
 			<DataPath>ОКПО</DataPath>
@@ -61,7 +61,7 @@
 				</v8:item>
 			</Title>
 			<ContextMenu name="ОКПОКонтекстноеМеню" id="14"/>
-			<ExtendedTooltip name="ОКПОExtendedTooltip" id="76"/>
+			<ExtendedTooltip name="ОКПОРасширеннаяПодсказка" id="76"/>
 		</LabelField>
 		<UsualGroup name="ГруппаРуководитель" id="21">
 			<EnableContentChange>true</EnableContentChange>
@@ -72,9 +72,10 @@
 				</v8:item>
 			</Title>
 			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
 			<Representation>StrongSeparation</Representation>
 			<ChildItemsWidth>Equal</ChildItemsWidth>
-			<ExtendedTooltip name="ГруппаРуководительExtendedTooltip" id="77"/>
+			<ExtendedTooltip name="ГруппаРуководительРасширеннаяПодсказка" id="77"/>
 			<ChildItems>
 				<LabelField name="ДолжностьРуководителя" id="22">
 					<DataPath>ДолжностьРуководителя</DataPath>
@@ -85,7 +86,7 @@
 						</v8:item>
 					</Title>
 					<ContextMenu name="ДолжностьРуководителяКонтекстноеМеню" id="23"/>
-					<ExtendedTooltip name="ДолжностьРуководителяExtendedTooltip" id="78"/>
+					<ExtendedTooltip name="ДолжностьРуководителяРасширеннаяПодсказка" id="78"/>
 				</LabelField>
 				<LabelField name="Руководитель" id="15">
 					<DataPath>Руководитель</DataPath>
@@ -96,24 +97,24 @@
 						</v8:item>
 					</Title>
 					<ContextMenu name="РуководительКонтекстноеМеню" id="16"/>
-					<ExtendedTooltip name="РуководительExtendedTooltip" id="79"/>
+					<ExtendedTooltip name="РуководительРасширеннаяПодсказка" id="79"/>
 				</LabelField>
 			</ChildItems>
 		</UsualGroup>
 		<LabelField name="ЮридическийАдрес" id="24">
 			<DataPath>ЮридическийАдрес</DataPath>
 			<ContextMenu name="ЮридическийАдресКонтекстноеМеню" id="25"/>
-			<ExtendedTooltip name="ЮридическийАдресExtendedTooltip" id="80"/>
+			<ExtendedTooltip name="ЮридическийАдресРасширеннаяПодсказка" id="80"/>
 		</LabelField>
 		<LabelField name="ФактическийАдрес" id="26">
 			<DataPath>ФактическийАдрес</DataPath>
 			<ContextMenu name="ФактическийАдресКонтекстноеМеню" id="27"/>
-			<ExtendedTooltip name="ФактическийАдресExtendedTooltip" id="81"/>
+			<ExtendedTooltip name="ФактическийАдресРасширеннаяПодсказка" id="81"/>
 		</LabelField>
 		<LabelField name="Телефон" id="28">
 			<DataPath>Телефон</DataPath>
 			<ContextMenu name="ТелефонКонтекстноеМеню" id="29"/>
-			<ExtendedTooltip name="ТелефонExtendedTooltip" id="82"/>
+			<ExtendedTooltip name="ТелефонРасширеннаяПодсказка" id="82"/>
 		</LabelField>
 		<UsualGroup name="Свидетельство" id="65">
 			<Title>
@@ -123,14 +124,15 @@
 				</v8:item>
 			</Title>
 			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
 			<Representation>StrongSeparation</Representation>
-			<ExtendedTooltip name="СвидетельствоExtendedTooltip" id="83"/>
+			<ExtendedTooltip name="СвидетельствоРасширеннаяПодсказка" id="83"/>
 			<ChildItems>
 				<LabelField name="НадписьСвидетельство" id="66">
 					<DataPath>НадписьСвидетельство</DataPath>
 					<TitleLocation>None</TitleLocation>
 					<ContextMenu name="НадписьСвидетельствоКонтекстноеМеню" id="67"/>
-					<ExtendedTooltip name="НадписьСвидетельствоExtendedTooltip" id="84"/>
+					<ExtendedTooltip name="НадписьСвидетельствоРасширеннаяПодсказка" id="84"/>
 				</LabelField>
 			</ChildItems>
 		</UsualGroup>
@@ -142,8 +144,9 @@
 				</v8:item>
 			</Title>
 			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
 			<Representation>StrongSeparation</Representation>
-			<ExtendedTooltip name="ГруппаБанковскиеСчетаExtendedTooltip" id="85"/>
+			<ExtendedTooltip name="ГруппаБанковскиеСчетаРасширеннаяПодсказка" id="85"/>
 			<ChildItems>
 				<Table name="БанковскиеСчета" id="53">
 					<Representation>List</Representation>
@@ -168,7 +171,7 @@
 					<AutoCommandBar name="БанковскиеСчетаКоманднаяПанель" id="55">
 						<Autofill>false</Autofill>
 					</AutoCommandBar>
-					<ExtendedTooltip name="БанковскиеСчетаExtendedTooltip" id="86"/>
+					<ExtendedTooltip name="БанковскиеСчетаРасширеннаяПодсказка" id="86"/>
 					<SearchStringAddition name="БанковскиеСчетаСтрокаПоиска" id="96">
 						<AdditionSource>
 							<Item>БанковскиеСчета</Item>
@@ -204,7 +207,7 @@
 							<ShowInHeader>false</ShowInHeader>
 							<CheckBoxType>Auto</CheckBoxType>
 							<ContextMenu name="ВыбранКонтекстноеМеню" id="59"/>
-							<ExtendedTooltip name="ВыбранExtendedTooltip" id="87"/>
+							<ExtendedTooltip name="ВыбранРасширеннаяПодсказка" id="87"/>
 							<Events>
 								<Event name="OnChange">БанковскиеСчетаВыбранПриИзменении</Event>
 							</Events>
@@ -215,7 +218,7 @@
 							<EditMode>EnterOnInput</EditMode>
 							<OpenButton>true</OpenButton>
 							<ContextMenu name="БанковскийСчетКонтекстноеМеню" id="57"/>
-							<ExtendedTooltip name="БанковскийСчетExtendedTooltip" id="88"/>
+							<ExtendedTooltip name="БанковскийСчетРасширеннаяПодсказка" id="88"/>
 						</InputField>
 					</ChildItems>
 				</Table>
@@ -229,8 +232,9 @@
 				</v8:item>
 			</Title>
 			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
 			<Representation>StrongSeparation</Representation>
-			<ExtendedTooltip name="НастройкиВыгрузкиExtendedTooltip" id="89"/>
+			<ExtendedTooltip name="НастройкиВыгрузкиРасширеннаяПодсказка" id="89"/>
 			<ChildItems>
 				<InputField name="СпособВыгрузки" id="46">
 					<DataPath>СпособВыгрузки</DataPath>
@@ -268,7 +272,7 @@
 					</ChoiceList>
 					<ChoiceListButton>false</ChoiceListButton>
 					<ContextMenu name="СпособВыгрузкиКонтекстноеМеню" id="47"/>
-					<ExtendedTooltip name="СпособВыгрузкиExtendedTooltip" id="90"/>
+					<ExtendedTooltip name="СпособВыгрузкиРасширеннаяПодсказка" id="90"/>
 					<Events>
 						<Event name="OnChange">СпособВыгрузкиПриИзменении</Event>
 					</Events>
@@ -281,7 +285,7 @@
 						</v8:item>
 					</Title>
 					<PagesRepresentation>None</PagesRepresentation>
-					<ExtendedTooltip name="СтраницыПолучателейExtendedTooltip" id="91"/>
+					<ExtendedTooltip name="СтраницыПолучателейРасширеннаяПодсказка" id="91"/>
 					<ChildItems>
 						<Page name="СтраницаКаталог" id="61">
 							<Title>
@@ -290,7 +294,7 @@
 									<v8:content>Страница каталог</v8:content>
 								</v8:item>
 							</Title>
-							<ExtendedTooltip name="СтраницаКаталогExtendedTooltip" id="92"/>
+							<ExtendedTooltip name="СтраницаКаталогРасширеннаяПодсказка" id="92"/>
 							<ChildItems>
 								<LabelDecoration name="Декорация1" id="70">
 									<AutoMaxWidth>false</AutoMaxWidth>
@@ -301,7 +305,7 @@
 										</v8:item>
 									</Title>
 									<ContextMenu name="Декорация1КонтекстноеМеню" id="71"/>
-									<ExtendedTooltip name="Декорация1ExtendedTooltip" id="93"/>
+									<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="93"/>
 								</LabelDecoration>
 							</ChildItems>
 						</Page>
@@ -312,7 +316,7 @@
 									<v8:content>Страница письмо</v8:content>
 								</v8:item>
 							</Title>
-							<ExtendedTooltip name="СтраницаПисьмоExtendedTooltip" id="94"/>
+							<ExtendedTooltip name="СтраницаПисьмоРасширеннаяПодсказка" id="94"/>
 							<ChildItems>
 								<InputField name="УчетнаяЗапись" id="63">
 									<DataPath>АдресВыгрузки</DataPath>
@@ -327,7 +331,7 @@
 									<AutoMarkIncomplete>true</AutoMarkIncomplete>
 									<ChooseType>false</ChooseType>
 									<ContextMenu name="УчетнаяЗаписьКонтекстноеМеню" id="64"/>
-									<ExtendedTooltip name="УчетнаяЗаписьExtendedTooltip" id="95"/>
+									<ExtendedTooltip name="УчетнаяЗаписьРасширеннаяПодсказка" id="95"/>
 									<Events>
 										<Event name="StartChoice">УчетнаяЗаписьНачалоВыбора</Event>
 									</Events>

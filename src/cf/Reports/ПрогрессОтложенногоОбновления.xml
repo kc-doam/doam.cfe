@@ -34,8 +34,10 @@
 			<Explanation/>
 		</Properties>
 		<ChildObjects>
-			<Template>ОсновнаяСхемаКомпоновкиДанных</Template>
+			<Form>ЗависимостьОбработчика</Form>
+			<Form>ЗарегистрированныеДанные</Form>
 			<Template>ОбразецОтчетаПрогрессОтложенногоОбновления</Template>
+			<Template>ОсновнаяСхемаКомпоновкиДанных</Template>
 		</ChildObjects>
 	</Report>
 </MetaDataObject>

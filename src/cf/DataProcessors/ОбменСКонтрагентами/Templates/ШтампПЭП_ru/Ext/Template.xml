@@ -962,7 +962,6 @@
 	<font faceName="Arial" height="6" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
 	<font faceName="Arial" height="8" bold="true" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
 	<font faceName="Arial Cyr" height="10" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
-	<font faceName="Arial Cyr" height="6" bold="true" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
 	<font faceName="Arial" height="6" bold="true" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
 	<font faceName="Arial" height="9" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
 	<format>
@@ -1413,7 +1412,7 @@
 		<width>322</width>
 	</format>
 	<format>
-		<font>4</font>
+		<font>3</font>
 		<border>0</border>
 		<borderColor>style:ГиперссылкаЦвет</borderColor>
 		<width>471</width>
@@ -1423,7 +1422,7 @@
 		<textPlacement>Auto</textPlacement>
 	</format>
 	<format>
-		<font>4</font>
+		<font>3</font>
 		<border>0</border>
 		<borderColor>style:ГиперссылкаЦвет</borderColor>
 		<width>125</width>
@@ -1572,7 +1571,7 @@
 		<textPlacement>Auto</textPlacement>
 	</format>
 	<format>
-		<font>5</font>
+		<font>4</font>
 		<border>0</border>
 		<height>20</height>
 		<borderColor>style:ГиперссылкаЦвет</borderColor>
@@ -1583,7 +1582,7 @@
 		<textPlacement>Auto</textPlacement>
 	</format>
 	<format>
-		<font>5</font>
+		<font>4</font>
 		<border>0</border>
 		<height>20</height>
 		<borderColor>style:ГиперссылкаЦвет</borderColor>
@@ -1594,7 +1593,7 @@
 		<textPlacement>Auto</textPlacement>
 	</format>
 	<format>
-		<font>5</font>
+		<font>4</font>
 		<border>0</border>
 		<height>20</height>
 		<borderColor>style:ГиперссылкаЦвет</borderColor>
@@ -1638,7 +1637,7 @@
 		<textPlacement>Auto</textPlacement>
 	</format>
 	<format>
-		<font>5</font>
+		<font>4</font>
 		<leftBorder>0</leftBorder>
 		<topBorder>2</topBorder>
 		<rightBorder>0</rightBorder>
@@ -1652,7 +1651,7 @@
 		<textPlacement>Auto</textPlacement>
 	</format>
 	<format>
-		<font>5</font>
+		<font>4</font>
 		<leftBorder>0</leftBorder>
 		<topBorder>2</topBorder>
 		<rightBorder>0</rightBorder>
@@ -1666,7 +1665,7 @@
 		<textPlacement>Auto</textPlacement>
 	</format>
 	<format>
-		<font>5</font>
+		<font>4</font>
 		<leftBorder>0</leftBorder>
 		<topBorder>2</topBorder>
 		<rightBorder>0</rightBorder>

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
 	<Width>100</Width>
 	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
 	<VerticalScroll>useIfNecessary</VerticalScroll>
@@ -24,6 +24,7 @@
 				</v8:item>
 			</Title>
 			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаКомандыРасширеннаяПодсказка" id="66"/>
@@ -36,118 +37,72 @@
 						</v8:item>
 					</Title>
 					<Width>88</Width>
-					<HorizontalStretch>false</HorizontalStretch>
+					<HorizontalStretch>true</HorizontalStretch>
 					<ExtendedTooltip name="ГруппаКоманднаяПанельРасширеннаяПодсказка" id="68"/>
 					<ChildItems>
-						<Button name="ФормаСоздать1" id="69">
-							<Type>CommandBarButton</Type>
-							<CommandName>Form.Item.Список.StandardCommand.Create</CommandName>
-							<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
-							<ExtendedTooltip name="ФормаСоздать1РасширеннаяПодсказка" id="70"/>
-						</Button>
-						<Popup name="ГруппаСоздатьНаОсновании" id="77">
+						<ButtonGroup name="ГруппаВажныеКоманды" id="198">
 							<Title>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
-									<v8:content>Создать на основании</v8:content>
+									<v8:content>Важные команды</v8:content>
 								</v8:item>
 							</Title>
-							<ExtendedTooltip name="ГруппаСоздатьНаОснованииРасширеннаяПодсказка" id="78"/>
+							<ExtendedTooltip name="ГруппаВажныеКомандыРасширеннаяПодсказка" id="199"/>
 							<ChildItems>
-								<Button name="КомандаСоздатьЗаписьКалендаряНаОсновании" id="135">
+								<Button name="ФормаСоздать1" id="69">
 									<Type>CommandBarButton</Type>
-									<CommandName>Catalog.ЗаписиРабочегоКалендаря.Command.СоздатьЗаписьКалендаряНаОсновании</CommandName>
-									<DataPath>ТекущийКонтрагент</DataPath>
-									<ExtendedTooltip name="КомандаСоздатьЗаписьКалендаряНаОснованииРасширеннаяПодсказка" id="136"/>
+									<CommandName>Form.Item.Список.StandardCommand.Create</CommandName>
+									<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+									<ExtendedTooltip name="ФормаСоздать1РасширеннаяПодсказка" id="70"/>
 								</Button>
-								<Button name="СправочникМероприятияСоздатьНаОсновании" id="137">
-									<Type>CommandBarButton</Type>
-									<CommandName>Catalog.Мероприятия.Command.СоздатьМероприятиеНаОсновании</CommandName>
-									<DataPath>ТекущийКонтрагент</DataPath>
-									<ExtendedTooltip name="СправочникМероприятияСоздатьНаОснованииРасширеннаяПодсказка" id="138"/>
-								</Button>
-								<Button name="ОбщаяКомандаСозданиеСвязанныхОбъектов" id="141">
-									<Type>CommandBarButton</Type>
-									<CommandName>CommonCommand.СозданиеСвязанныхОбъектов</CommandName>
-									<DataPath>ТекущийКонтрагент</DataPath>
-									<ExtendedTooltip name="ОбщаяКомандаСозданиеСвязанныхОбъектовРасширеннаяПодсказка" id="142"/>
-								</Button>
-							</ChildItems>
-						</Popup>
-						<Button name="ОтправитьОбъекты" id="194">
-							<Type>CommandBarButton</Type>
-							<CommandName>CommonCommand.ОтправитьОбъекты</CommandName>
-							<DataPath>Items.Список.CurrentData.Ref</DataPath>
-							<ExtendedTooltip name="ОтправитьОбъектыРасширеннаяПодсказка" id="195"/>
-						</Button>
-						<ButtonGroup name="ГруппаПечать" id="81">
-							<Title>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Печать</v8:content>
-								</v8:item>
-							</Title>
-							<HorizontalStretch>true</HorizontalStretch>
-							<ExtendedTooltip name="ГруппаПечатьРасширеннаяПодсказка" id="82"/>
-						</ButtonGroup>
-						<Button name="ОткрытьОтчеты" id="178">
-							<Type>CommandBarButton</Type>
-							<Representation>Text</Representation>
-							<CommandName>Form.Command.ОткрытьОтчеты</CommandName>
-							<ExtendedTooltip name="ОткрытьОтчетыРасширеннаяПодсказка" id="179"/>
-						</Button>
-						<ButtonGroup name="ГруппаПоиск" id="145">
-							<Title>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Поиск</v8:content>
-								</v8:item>
-							</Title>
-							<Width>19</Width>
-							<HorizontalStretch>false</HorizontalStretch>
-							<ExtendedTooltip name="ГруппаПоискРасширеннаяПодсказка" id="146"/>
-							<ChildItems>
-								<SearchStringAddition name="ДополнениеСтрокаПоиска" id="147">
-									<AdditionSource>
-										<Item>Список</Item>
-										<Type>SearchStringRepresentation</Type>
-									</AdditionSource>
+								<Popup name="ГруппаСоздатьНаОсновании" id="77">
 									<Title>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
-											<v8:content>Дополнение строка поиска</v8:content>
+											<v8:content>Создать на основании</v8:content>
 										</v8:item>
 									</Title>
-									<ContextMenu name="ДополнениеСтрокаПоискаКонтекстноеМеню" id="148"/>
-									<ExtendedTooltip name="ДополнениеСтрокаПоискаРасширеннаяПодсказка" id="149"/>
-								</SearchStringAddition>
-								<SearchControlAddition name="ДополнениеУправлениеПоиском" id="150">
-									<AdditionSource>
-										<Item>Список</Item>
-										<Type>SearchControl</Type>
-									</AdditionSource>
-									<Title>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Дополнение управление поиском</v8:content>
-										</v8:item>
-									</Title>
-									<ContextMenu name="ДополнениеУправлениеПоискомКонтекстноеМеню" id="151"/>
-									<ExtendedTooltip name="ДополнениеУправлениеПоискомРасширеннаяПодсказка" id="152"/>
-								</SearchControlAddition>
+									<ExtendedTooltip name="ГруппаСоздатьНаОснованииРасширеннаяПодсказка" id="78"/>
+									<ChildItems>
+										<Button name="КомандаСоздатьЗаписьКалендаряНаОсновании" id="135">
+											<Type>CommandBarButton</Type>
+											<CommandName>Catalog.ЗаписиРабочегоКалендаря.Command.СоздатьЗаписьКалендаряНаОсновании</CommandName>
+											<DataPath>ТекущийКонтрагент</DataPath>
+											<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+											<ExtendedTooltip name="КомандаСоздатьЗаписьКалендаряНаОснованииРасширеннаяПодсказка" id="136"/>
+										</Button>
+										<Button name="СправочникМероприятияСоздатьНаОсновании" id="137">
+											<Type>CommandBarButton</Type>
+											<CommandName>Catalog.Мероприятия.Command.СоздатьМероприятиеНаОсновании</CommandName>
+											<DataPath>ТекущийКонтрагент</DataPath>
+											<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+											<ExtendedTooltip name="СправочникМероприятияСоздатьНаОснованииРасширеннаяПодсказка" id="138"/>
+										</Button>
+										<Button name="ОбщаяКомандаСозданиеСвязанныхОбъектов" id="141">
+											<Type>CommandBarButton</Type>
+											<CommandName>CommonCommand.СозданиеСвязанныхОбъектов</CommandName>
+											<DataPath>ТекущийКонтрагент</DataPath>
+											<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+											<ExtendedTooltip name="ОбщаяКомандаСозданиеСвязанныхОбъектовРасширеннаяПодсказка" id="142"/>
+										</Button>
+									</ChildItems>
+								</Popup>
+								<Button name="ОтправитьОбъекты" id="194">
+									<Type>CommandBarButton</Type>
+									<CommandName>CommonCommand.ОтправитьОбъекты</CommandName>
+									<DataPath>Items.Список.CurrentData.Ref</DataPath>
+									<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+									<ExtendedTooltip name="ОтправитьОбъектыРасширеннаяПодсказка" id="195"/>
+								</Button>
+								<Button name="ОткрытьОтчеты" id="178">
+									<Type>CommandBarButton</Type>
+									<Representation>PictureAndText</Representation>
+									<CommandName>Form.Command.ОткрытьОтчеты</CommandName>
+									<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+									<ExtendedTooltip name="ОткрытьОтчетыРасширеннаяПодсказка" id="179"/>
+								</Button>
 							</ChildItems>
 						</ButtonGroup>
-					</ChildItems>
-				</CommandBar>
-				<CommandBar name="ПодменюВсеДействия" id="83">
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Все действия</v8:content>
-						</v8:item>
-					</Title>
-					<ExtendedTooltip name="ПодменюВсеДействияРасширеннаяПодсказка" id="84"/>
-					<ChildItems>
 						<Popup name="ГруппаКонтрагенты" id="85">
 							<Title>
 								<v8:item>
@@ -257,6 +212,7 @@
 								<Button name="ВывестиСписок" id="156">
 									<Type>CommandBarButton</Type>
 									<CommandName>Form.Item.Список.StandardCommand.OutputList</CommandName>
+									<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
 									<ExtendedTooltip name="ВывестиСписокРасширеннаяПодсказка" id="157"/>
 								</Button>
 							</ChildItems>
@@ -300,6 +256,31 @@
 									<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
 									<ExtendedTooltip name="УровеньВнизРасширеннаяПодсказка" id="112"/>
 								</Button>
+							</ChildItems>
+						</Popup>
+						<Popup name="ГруппаСервис" id="200">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Сервис</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="ГруппаСервисРасширеннаяПодсказка" id="201"/>
+							<ChildItems>
+								<Popup name="ПодменюОтчеты" id="202">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Отчеты</v8:content>
+										</v8:item>
+									</Title>
+									<Picture>
+										<xr:Ref>StdPicture.Report</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<Representation>PictureAndText</Representation>
+									<ExtendedTooltip name="ПодменюОтчетыРасширеннаяПодсказка" id="203"/>
+								</Popup>
 							</ChildItems>
 						</Popup>
 						<Popup name="ГруппаНастройки" id="113">
@@ -349,12 +330,55 @@
 								</Button>
 							</ChildItems>
 						</Popup>
+						<Popup name="ПодменюПечать" id="210">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Печать</v8:content>
+								</v8:item>
+							</Title>
+							<Picture>
+								<xr:Ref>StdPicture.Print</xr:Ref>
+								<xr:LoadTransparent>true</xr:LoadTransparent>
+							</Picture>
+							<Representation>PictureAndText</Representation>
+							<ExtendedTooltip name="ПодменюПечатьРасширеннаяПодсказка" id="211"/>
+						</Popup>
 						<Button name="Справка" id="127">
 							<Type>CommandBarButton</Type>
 							<SkipOnInput>false</SkipOnInput>
 							<CommandName>Form.StandardCommand.Help</CommandName>
+							<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
 							<ExtendedTooltip name="СправкаExtendedTooltip" id="128"/>
 						</Button>
+						<SearchStringAddition name="ДополнениеСтрокаПоиска" id="204">
+							<AdditionSource>
+								<Item>Список</Item>
+								<Type>SearchStringRepresentation</Type>
+							</AdditionSource>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Строка поиска</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ДополнениеСтрокаПоискаКонтекстноеМеню" id="205"/>
+							<ExtendedTooltip name="ДополнениеСтрокаПоискаРасширеннаяПодсказка" id="206"/>
+						</SearchStringAddition>
+						<SearchControlAddition name="ДополнениеУправлениеПоиском" id="207">
+							<AdditionSource>
+								<Item>Список</Item>
+								<Type>SearchControl</Type>
+							</AdditionSource>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Управление поиском</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ДополнениеУправлениеПоискомКонтекстноеМеню" id="208"/>
+							<ExtendedTooltip name="ДополнениеУправлениеПоискомРасширеннаяПодсказка" id="209"/>
+						</SearchControlAddition>
 					</ChildItems>
 				</CommandBar>
 			</ChildItems>
@@ -367,6 +391,7 @@
 				</v8:item>
 			</Title>
 			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаСписокИПревьюРасширеннаяПодсказка" id="130"/>
@@ -548,12 +573,12 @@
 											</ToolTip>
 											<HeaderPicture>
 												<xr:Ref>CommonPicture.КартинкаКонтроль16</xr:Ref>
-												<xr:LoadTransparent>true</xr:LoadTransparent>
+												<xr:LoadTransparent>false</xr:LoadTransparent>
 											</HeaderPicture>
 											<Width>2</Width>
 											<ValuesPicture>
 												<xr:Ref>CommonPicture.СостоянияКонтроля16</xr:Ref>
-												<xr:LoadTransparent>true</xr:LoadTransparent>
+												<xr:LoadTransparent>false</xr:LoadTransparent>
 											</ValuesPicture>
 											<FileDragMode>AsFile</FileDragMode>
 											<ContextMenu name="СостояниеКонтроляКонтекстноеМеню" id="42"/>
@@ -579,7 +604,7 @@
 											<DataPath>Список.ЭДО</DataPath>
 											<ValuesPicture>
 												<xr:Ref>CommonPicture.ЭмблемаСервиса1СЭДО</xr:Ref>
-												<xr:LoadTransparent>true</xr:LoadTransparent>
+												<xr:LoadTransparent>false</xr:LoadTransparent>
 											</ValuesPicture>
 											<FileDragMode>AsFile</FileDragMode>
 											<ContextMenu name="ЭДОКонтекстноеМеню" id="189"/>
@@ -599,6 +624,7 @@
 						</v8:item>
 					</Title>
 					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="ПревьюРасширеннаяПодсказка" id="61"/>
@@ -820,6 +846,7 @@
 			<Type>
 				<v8:Type>v8:ValueListType</v8:Type>
 			</Type>
+			<Settings xsi:type="v8:TypeDescription"/>
 		</Attribute>
 		<Attribute name="ВключенХронометраж" id="9">
 			<Title>
@@ -1017,7 +1044,7 @@
 	<CommandInterface>
 		<CommandBar>
 			<Item>
-				<Command>2:679bd72a-4cf8-4c2e-ae00-3f01f48050c4</Command>
+				<Command>0</Command>
 				<Type>Auto</Type>
 				<DefaultVisible>false</DefaultVisible>
 				<Visible>
@@ -1025,7 +1052,7 @@
 				</Visible>
 			</Item>
 			<Item>
-				<Command>2:3b9d376f-cd28-4f84-b8a8-686da09f0e46</Command>
+				<Command>0</Command>
 				<Type>Auto</Type>
 				<DefaultVisible>false</DefaultVisible>
 				<Visible>
@@ -1033,7 +1060,7 @@
 				</Visible>
 			</Item>
 			<Item>
-				<Command>2:57067371-06db-46dc-a7e9-c76d28e21071</Command>
+				<Command>0</Command>
 				<Type>Auto</Type>
 				<DefaultVisible>false</DefaultVisible>
 				<Visible>
@@ -1041,7 +1068,7 @@
 				</Visible>
 			</Item>
 			<Item>
-				<Command>2:53d146b8-d85f-4cfe-b5ee-af78f4e09445</Command>
+				<Command>0</Command>
 				<Type>Auto</Type>
 				<DefaultVisible>false</DefaultVisible>
 				<Visible>
@@ -1049,7 +1076,7 @@
 				</Visible>
 			</Item>
 			<Item>
-				<Command>2:efd06081-12d1-4734-9015-bff31c9f7966</Command>
+				<Command>0</Command>
 				<Type>Auto</Type>
 				<DefaultVisible>false</DefaultVisible>
 				<Visible>
@@ -1057,7 +1084,7 @@
 				</Visible>
 			</Item>
 			<Item>
-				<Command>2:da3c04c7-1d24-4d54-9686-2c404b8ed4e8</Command>
+				<Command>0</Command>
 				<Type>Auto</Type>
 				<DefaultVisible>false</DefaultVisible>
 				<Visible>
@@ -1065,7 +1092,7 @@
 				</Visible>
 			</Item>
 			<Item>
-				<Command>2:dab6706c-e0f7-4dc9-8fac-95b1dfcbf05c</Command>
+				<Command>0</Command>
 				<Type>Auto</Type>
 				<DefaultVisible>false</DefaultVisible>
 				<Visible>
@@ -1073,7 +1100,7 @@
 				</Visible>
 			</Item>
 			<Item>
-				<Command>0:2baf6d7a-12ed-4f22-ad96-92bb31b747ff</Command>
+				<Command>0</Command>
 				<Type>Auto</Type>
 				<DefaultVisible>false</DefaultVisible>
 				<Visible>
@@ -1081,7 +1108,7 @@
 				</Visible>
 			</Item>
 			<Item>
-				<Command>0:e5d31d93-6cf9-4c25-9c03-555bb967fda5</Command>
+				<Command>0</Command>
 				<Type>Auto</Type>
 				<DefaultVisible>false</DefaultVisible>
 				<Visible>
@@ -1105,7 +1132,15 @@
 				</Visible>
 			</Item>
 			<Item>
-				<Command>0:1823d37a-3b32-4031-8996-56796c8dbe41</Command>
+				<Command>0</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>CommonCommand.ЗагрузитьПерезаполнитьОбъектИзФайла</Command>
 				<Type>Auto</Type>
 				<DefaultVisible>false</DefaultVisible>
 				<Visible>

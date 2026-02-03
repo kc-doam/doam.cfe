@@ -21,12 +21,12 @@
 			</Synonym>
 			<Comment/>
 			<UseStandardCommands>true</UseStandardCommands>
-			<DefaultForm/>
+			<DefaultForm>CommonForm.ФормаОтчета</DefaultForm>
 			<AuxiliaryForm/>
 			<MainDataCompositionSchema>Report.Мероприятия.Template.ОсновнаяСхемаКомпоновкиДанных</MainDataCompositionSchema>
-			<DefaultSettingsForm/>
+			<DefaultSettingsForm>CommonForm.ФормаНастроекОтчета</DefaultSettingsForm>
 			<AuxiliarySettingsForm/>
-			<DefaultVariantForm/>
+			<DefaultVariantForm>CommonForm.ФормаВариантаОтчета</DefaultVariantForm>
 			<VariantsStorage>SettingsStorage.ХранилищеВариантовОтчетов</VariantsStorage>
 			<SettingsStorage/>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
@@ -34,15 +34,15 @@
 			<Explanation/>
 		</Properties>
 		<ChildObjects>
-			<Template>ОсновнаяСхемаКомпоновкиДанных</Template>
-			<Template>ОбразецОтчетаСписокМероприятий</Template>
-			<Template>ОбразецОтчетаДинамикаМероприятий</Template>
-			<Template>ОбразецОтчетаСтатистикаПоВидамМероприятий</Template>
-			<Template>ОбразецОтчетаЗатраченноеВремяНаМероприятия</Template>
-			<Template>ОбразецОтчетаАнализДлительностиМероприятий</Template>
-			<Template>ОбразецОтчетаЯвкаНаМероприятия</Template>
 			<Template>ОбразецОтчетаАнализВремениВыступлений</Template>
+			<Template>ОбразецОтчетаАнализДлительностиМероприятий</Template>
+			<Template>ОбразецОтчетаДинамикаМероприятий</Template>
+			<Template>ОбразецОтчетаЗатраченноеВремяНаМероприятия</Template>
 			<Template>ОбразецОтчетаПринятиеРешенийПоМероприятиям</Template>
+			<Template>ОбразецОтчетаСписокМероприятий</Template>
+			<Template>ОбразецОтчетаСтатистикаПоВидамМероприятий</Template>
+			<Template>ОбразецОтчетаЯвкаНаМероприятия</Template>
+			<Template>ОсновнаяСхемаКомпоновкиДанных</Template>
 		</ChildObjects>
 	</Report>
 </MetaDataObject>

@@ -29,7 +29,6 @@
 		</Properties>
 		<ChildObjects>
 			<Form>Настройка</Form>
-			<Form>ФормаПротокола</Form>
 		</ChildObjects>
 	</DataProcessor>
 </MetaDataObject>

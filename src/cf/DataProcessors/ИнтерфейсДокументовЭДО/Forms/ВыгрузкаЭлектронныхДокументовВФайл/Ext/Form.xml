@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
 	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
 	<AutoTitle>false</AutoTitle>
 	<VerticalScroll>useIfNecessary</VerticalScroll>
@@ -12,13 +12,13 @@
 						<v8:content>Группа кнопок</v8:content>
 					</v8:item>
 				</Title>
-				<ExtendedTooltip name="ГруппаКнопокExtendedTooltip" id="177"/>
+				<ExtendedTooltip name="ГруппаКнопокРасширеннаяПодсказка" id="177"/>
 				<ChildItems>
 					<Button name="КнопкаВыполнить" id="143">
 						<Type>CommandBarButton</Type>
 						<DefaultButton>true</DefaultButton>
 						<CommandName>Form.Command.Выполнить</CommandName>
-						<ExtendedTooltip name="КнопкаВыполнитьExtendedTooltip" id="178"/>
+						<ExtendedTooltip name="КнопкаВыполнитьРасширеннаяПодсказка" id="178"/>
 					</Button>
 				</ChildItems>
 			</ButtonGroup>
@@ -37,9 +37,10 @@
 				</v8:item>
 			</Title>
 			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
-			<ExtendedTooltip name="ПанельExtendedTooltip" id="179"/>
+			<ExtendedTooltip name="ПанельРасширеннаяПодсказка" id="179"/>
 			<ChildItems>
 				<LabelDecoration name="НадписьИнформация" id="197">
 					<AutoMaxWidth>false</AutoMaxWidth>
@@ -88,7 +89,7 @@
 						</xr:Item>
 					</ChoiceList>
 					<ContextMenu name="СпособВыгрузкиКонтекстноеМеню" id="133"/>
-					<ExtendedTooltip name="СпособВыгрузкиExtendedTooltip" id="183"/>
+					<ExtendedTooltip name="СпособВыгрузкиРасширеннаяПодсказка" id="183"/>
 					<Events>
 						<Event name="OnChange">СпособВыгрузкиПриИзменении</Event>
 					</Events>
@@ -101,7 +102,7 @@
 						</v8:item>
 					</Title>
 					<PagesRepresentation>None</PagesRepresentation>
-					<ExtendedTooltip name="СтраницыПолучателейExtendedTooltip" id="184"/>
+					<ExtendedTooltip name="СтраницыПолучателейРасширеннаяПодсказка" id="184"/>
 					<ChildItems>
 						<Page name="ЕстьДоступ" id="166">
 							<Title>
@@ -110,7 +111,7 @@
 									<v8:content>Есть доступ</v8:content>
 								</v8:item>
 							</Title>
-							<ExtendedTooltip name="ЕстьДоступExtendedTooltip" id="188"/>
+							<ExtendedTooltip name="ЕстьДоступРасширеннаяПодсказка" id="188"/>
 							<ChildItems>
 								<InputField name="АдресПолучателя" id="139">
 									<DataPath>АдресПолучателя</DataPath>
@@ -118,12 +119,12 @@
 									<HorizontalStretch>false</HorizontalStretch>
 									<ChooseType>false</ChooseType>
 									<ContextMenu name="АдресПолучателяКонтекстноеМеню" id="140"/>
-									<ExtendedTooltip name="АдресПолучателяExtendedTooltip" id="189"/>
+									<ExtendedTooltip name="АдресПолучателяРасширеннаяПодсказка" id="189"/>
 								</InputField>
 								<InputField name="УчетнаяЗапись" id="141">
 									<DataPath>УчетнаяЗапись</DataPath>
 									<ContextMenu name="УчетнаяЗаписьКонтекстноеМеню" id="142"/>
-									<ExtendedTooltip name="УчетнаяЗаписьExtendedTooltip" id="190"/>
+									<ExtendedTooltip name="УчетнаяЗаписьРасширеннаяПодсказка" id="190"/>
 								</InputField>
 							</ChildItems>
 						</Page>
@@ -135,7 +136,7 @@
 								</v8:item>
 							</Title>
 							<Group>Horizontal</Group>
-							<ExtendedTooltip name="НетДоступаExtendedTooltip" id="191"/>
+							<ExtendedTooltip name="НетДоступаРасширеннаяПодсказка" id="191"/>
 							<ChildItems>
 								<UsualGroup name="ГруппаПредупреждения" id="172">
 									<Title>
@@ -145,8 +146,9 @@
 										</v8:item>
 									</Title>
 									<Group>Horizontal</Group>
+									<Behavior>Usual</Behavior>
 									<ShowTitle>false</ShowTitle>
-									<ExtendedTooltip name="ГруппаПредупрежденияExtendedTooltip" id="192"/>
+									<ExtendedTooltip name="ГруппаПредупрежденияРасширеннаяПодсказка" id="192"/>
 									<ChildItems>
 										<PictureDecoration name="ПредупреждениеКартинка" id="173">
 											<Title formatted="false">
@@ -161,7 +163,7 @@
 											</Picture>
 											<FileDragMode>AsFile</FileDragMode>
 											<ContextMenu name="ПредупреждениеКартинкаКонтекстноеМеню" id="174"/>
-											<ExtendedTooltip name="ПредупреждениеКартинкаExtendedTooltip" id="193"/>
+											<ExtendedTooltip name="ПредупреждениеКартинкаРасширеннаяПодсказка" id="193"/>
 										</PictureDecoration>
 										<LabelDecoration name="ТекстПредупреждения" id="175">
 											<AutoMaxWidth>false</AutoMaxWidth>
@@ -172,7 +174,7 @@
 												</v8:item>
 											</Title>
 											<ContextMenu name="ТекстПредупрежденияКонтекстноеМеню" id="176"/>
-											<ExtendedTooltip name="ТекстПредупрежденияExtendedTooltip" id="194"/>
+											<ExtendedTooltip name="ТекстПредупрежденияРасширеннаяПодсказка" id="194"/>
 										</LabelDecoration>
 									</ChildItems>
 								</UsualGroup>
@@ -188,9 +190,10 @@
 						</v8:item>
 					</Title>
 					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
-					<ExtendedTooltip name="ГруппаГиперссылкаExtendedTooltip" id="195"/>
+					<ExtendedTooltip name="ГруппаГиперссылкаРасширеннаяПодсказка" id="195"/>
 					<ChildItems>
 						<LabelDecoration name="ПредварительныйПросмотрДокумента" id="161">
 							<AutoMaxWidth>false</AutoMaxWidth>
@@ -202,7 +205,7 @@
 							</Title>
 							<Hyperlink>true</Hyperlink>
 							<ContextMenu name="ПредварительныйПросмотрДокументаКонтекстноеМеню" id="162"/>
-							<ExtendedTooltip name="ПредварительныйПросмотрДокументаExtendedTooltip" id="196"/>
+							<ExtendedTooltip name="ПредварительныйПросмотрДокументаРасширеннаяПодсказка" id="196"/>
 							<Events>
 								<Event name="Click">ПросмотрДокументовНажатие</Event>
 							</Events>
@@ -504,14 +507,6 @@
 	</Commands>
 	<CommandInterface>
 		<NavigationPanel>
-			<Item>
-				<Command>0</Command>
-				<Type>Auto</Type>
-				<DefaultVisible>false</DefaultVisible>
-				<Visible>
-					<xr:Common>false</xr:Common>
-				</Visible>
-			</Item>
 			<Item>
 				<Command>0</Command>
 				<Type>Auto</Type>

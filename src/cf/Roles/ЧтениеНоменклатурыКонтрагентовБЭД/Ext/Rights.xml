@@ -4,6 +4,17 @@
 	<setForAttributesByDefault>true</setForAttributesByDefault>
 	<independentRightsOfChildObjects>false</independentRightsOfChildObjects>
 	<object>
+		<name>InformationRegister.ПравилаПоискаПоЧастиНаименованияБЭД</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>InformationRegister.НоменклатураКонтрагентовБЭД</name>
 		<right>
 			<name>Read</name>
@@ -38,6 +49,13 @@
 		</right>
 		<right>
 			<name>AnalyticsSystemClient</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.ПравилаПоискаПоЧастиНаименованияБЭД.Command.ПравилаПоискаПоЧастиНаименования</name>
+		<right>
+			<name>View</name>
 			<value>true</value>
 		</right>
 	</object>

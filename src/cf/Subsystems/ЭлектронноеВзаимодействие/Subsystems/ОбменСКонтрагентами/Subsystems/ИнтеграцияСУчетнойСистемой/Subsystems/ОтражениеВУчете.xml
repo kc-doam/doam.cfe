@@ -21,6 +21,15 @@
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.КонтрольОтраженияВУчетеЭДО</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.КонтрольОтраженияВУчетеЭДО</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.КонтрольПроведенияУчетныхДокументовЭДО</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ЗапретитьФормированиеОтветногоТитулаБезДокументовУчета</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">FunctionalOption.ЗапретитьФормированиеОтветногоТитулаБезДокументовУчета</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.КонтрольСопоставленияНоменклатурыЭДО</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ОтражениеВУчетеЭДО</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ОтражениеВУчетеЭДОВызовСервера</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ОтражениеВУчетеЭДОКлиент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ОтражениеВУчетеЭДОКлиентСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ОтражениеВУчетеЭДОСобытия</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.НастройкиПолученияЭлектронныхДокументов</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

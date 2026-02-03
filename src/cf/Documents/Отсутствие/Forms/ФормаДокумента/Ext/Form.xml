@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
 	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
 	<AutoTitle>false</AutoTitle>
 	<VerticalScroll>useIfNecessary</VerticalScroll>
@@ -137,6 +137,7 @@
 				</v8:item>
 			</ToolTip>
 			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаШапкаРасширеннаяПодсказка" id="55"/>
@@ -155,6 +156,7 @@
 						</v8:item>
 					</ToolTip>
 					<Group>Horizontal</Group>
+					<Behavior>Usual</Behavior>
 					<Representation>None</Representation>
 					<United>false</United>
 					<ShowTitle>false</ShowTitle>
@@ -210,6 +212,7 @@
 						</v8:item>
 					</ToolTip>
 					<Group>Horizontal</Group>
+					<Behavior>Usual</Behavior>
 					<Representation>None</Representation>
 					<United>false</United>
 					<ShowTitle>false</ShowTitle>
@@ -229,6 +232,7 @@
 								</v8:item>
 							</ToolTip>
 							<Group>Horizontal</Group>
+							<Behavior>Usual</Behavior>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="ГруппаДатаНачалаОкончанияРасширеннаяПодсказка" id="185"/>
@@ -331,6 +335,56 @@
 								</InputField>
 							</ChildItems>
 						</UsualGroup>
+						<UsualGroup name="МК_ГруппаДатаНачалаОкончания" id="276">
+							<Visible>false</Visible>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа1</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="МК_ГруппаДатаНачалаОкончанияРасширеннаяПодсказка" id="277"/>
+							<ChildItems>
+								<UsualGroup name="МК_ГруппаДатаНачала" id="278">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа1</v8:content>
+										</v8:item>
+									</Title>
+									<GroupHorizontalAlign>Left</GroupHorizontalAlign>
+									<Group>AlwaysHorizontal</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="МК_ГруппаДатаНачалаРасширеннаяПодсказка" id="279"/>
+								</UsualGroup>
+								<LabelDecoration name="МК_ДекорацияОтступДат" id="280">
+									<HorizontalStretch>true</HorizontalStretch>
+									<VerticalStretch>false</VerticalStretch>
+									<ContextMenu name="МК_ДекорацияОтступДатКонтекстноеМеню" id="281"/>
+									<ExtendedTooltip name="МК_ДекорацияОтступДатРасширеннаяПодсказка" id="282"/>
+								</LabelDecoration>
+								<UsualGroup name="МК_ГруппаДатаОкончания" id="283">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа1</v8:content>
+										</v8:item>
+									</Title>
+									<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+									<Group>AlwaysHorizontal</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="МК_ГруппаДатаОкончанияРасширеннаяПодсказка" id="284"/>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
 						<UsualGroup name="ГруппаДлительность" id="186">
 							<Title>
 								<v8:item>
@@ -345,6 +399,7 @@
 								</v8:item>
 							</ToolTip>
 							<Group>Horizontal</Group>
+							<Behavior>Usual</Behavior>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="ГруппаДлительностьРасширеннаяПодсказка" id="187"/>
@@ -405,6 +460,7 @@
 						</v8:item>
 					</ToolTip>
 					<Group>Horizontal</Group>
+					<Behavior>Usual</Behavior>
 					<Representation>None</Representation>
 					<United>false</United>
 					<ShowTitle>false</ShowTitle>
@@ -445,6 +501,7 @@
 						</v8:item>
 					</ToolTip>
 					<Group>Horizontal</Group>
+					<Behavior>Usual</Behavior>
 					<Representation>None</Representation>
 					<United>false</United>
 					<ShowTitle>false</ShowTitle>
@@ -479,12 +536,6 @@
 		</UsualGroup>
 		<UsualGroup name="ГруппаЗаместителиЗаголовок" id="259">
 			<Visible>false</Visible>
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Группа заместители заголовок</v8:content>
-				</v8:item>
-			</Title>
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -493,6 +544,7 @@
 			</ToolTip>
 			<HorizontalStretch>true</HorizontalStretch>
 			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаЗаместителиЗаголовокРасширеннаяПодсказка" id="260"/>
@@ -528,10 +580,10 @@
 					<HorizontalLocation>Right</HorizontalLocation>
 					<ExtendedTooltip name="КоманднаяПанельЗаместителиРасширеннаяПодсказка" id="265"/>
 					<ChildItems>
-						<Button name="ДобавитьЗаместителяМК" id="266">
+						<Button name="МК_ДобавитьЗаместителя" id="266">
 							<Type>CommandBarButton</Type>
-							<CommandName>Form.Command.ДобавитьЗаместителяМК</CommandName>
-							<ExtendedTooltip name="ДобавитьЗаместителяМКРасширеннаяПодсказка" id="267"/>
+							<CommandName>Form.Command.МК_ДобавитьЗаместителя</CommandName>
+							<ExtendedTooltip name="МК_ДобавитьЗаместителяРасширеннаяПодсказка" id="267"/>
 						</Button>
 					</ChildItems>
 				</CommandBar>
@@ -587,6 +639,8 @@
 			</SearchControlAddition>
 			<Events>
 				<Event name="OnEditEnd">ЗаместителиПриОкончанииРедактирования</Event>
+				<Event name="Selection">ЗаместителиВыбор</Event>
+				<Event name="BeforeEditEnd">ЗаместителиПередОкончаниемРедактирования</Event>
 				<Event name="AfterDeleteRow">ЗаместителиПослеУдаления</Event>
 			</Events>
 			<ChildItems>
@@ -645,6 +699,7 @@
 			</ToolTip>
 			<HorizontalStretch>true</HorizontalStretch>
 			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаДанныеЗаписиКалендаряРасширеннаяПодсказка" id="194"/>
@@ -663,6 +718,7 @@
 						</v8:item>
 					</ToolTip>
 					<Group>Horizontal</Group>
+					<Behavior>Usual</Behavior>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="ГруппаЦветРасширеннаяПодсказка" id="225"/>
@@ -690,6 +746,7 @@
 									<v8:content>Группа цвет и надпись</v8:content>
 								</v8:item>
 							</ToolTip>
+							<Behavior>Usual</Behavior>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="ГруппаЦветИНадписьРасширеннаяПодсказка" id="275"/>
@@ -789,6 +846,7 @@
 						</v8:item>
 					</ToolTip>
 					<Group>Horizontal</Group>
+					<Behavior>Usual</Behavior>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="ГруппаНапоминаниеОтносительноДатыНачалаРасширеннаяПодсказка" id="246"/>
@@ -842,6 +900,7 @@
 				</v8:item>
 			</ToolTip>
 			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ChildItemsWidth>Equal</ChildItemsWidth>
 			<ShowTitle>false</ShowTitle>
@@ -882,6 +941,7 @@
 						</v8:item>
 					</ToolTip>
 					<Group>Horizontal</Group>
+					<Behavior>Usual</Behavior>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="ГруппаДатаНомерРасширеннаяПодсказка" id="50"/>
@@ -1426,6 +1486,17 @@
 				</v8:StringQualifiers>
 			</Type>
 		</Attribute>
+		<Attribute name="ЭтоМобильныйКлиент" id="42">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Это мобильный клиент</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
 	</Attributes>
 	<Commands>
 		<Command name="ДобавитьЗаместителя" id="1">
@@ -1630,11 +1701,11 @@
 			<Action>УстановитьЦветСиний</Action>
 			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
-		<Command name="ДобавитьЗаместителяМК" id="11">
+		<Command name="МК_ДобавитьЗаместителя" id="11">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Добавить заместителя МК</v8:content>
+					<v8:content>М к добавить заместителя</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>
@@ -1647,7 +1718,7 @@
 				<xr:Ref>StdPicture.CreateListItem</xr:Ref>
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
-			<Action>ДобавитьЗаместителяМК</Action>
+			<Action>МК_ДобавитьЗаместителя</Action>
 		</Command>
 	</Commands>
 	<Parameters>

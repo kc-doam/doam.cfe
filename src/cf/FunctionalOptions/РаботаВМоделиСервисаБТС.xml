@@ -17,11 +17,14 @@
 				<xr:Object>CommonCommand.ОплатаСервиса</xr:Object>
 				<xr:Object>Catalog.ШаблоныЗаданийОчереди</xr:Object>
 				<xr:Object>Catalog.ОбработчикиОчередиЗаданий</xr:Object>
+				<xr:Object>Catalog.УдалитьОчередьЗаданий</xr:Object>
 				<xr:Object>Catalog.ОчередьЗаданий</xr:Object>
 				<xr:Object>InformationRegister.ЗапущенныеОбработчикиОчередиЗаданий</xr:Object>
 				<xr:Object>Constant.МаксимальноеКоличествоИсполняющихФоновыхЗаданий</xr:Object>
 				<xr:Object>Enum.СостоянияЗаданий</xr:Object>
 				<xr:Object>Constant.МаксимальнаяДлительностьВыполненияИсполняющегоФоновогоЗадания</xr:Object>
+				<xr:Object>CommonCommand.ТестированиеИИсправлениеОбластиДанных</xr:Object>
+				<xr:Object>CommonCommand.ПерейтиНаНовыйВидПриложения</xr:Object>
 			</Content>
 		</Properties>
 	</FunctionalOption>

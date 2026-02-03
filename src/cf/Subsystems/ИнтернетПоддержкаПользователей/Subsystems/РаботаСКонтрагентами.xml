@@ -50,8 +50,6 @@
 				<xr:Item xsi:type="xr:MDObjectRef">StyleItem.ЦветТекстаКонтрагентаПрекратившегоДеятельность</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">StyleItem.ЦветТекстаНекорректногоКонтрагента</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">StyleItem.ЦветФонаДокументаСНекорректнымиКонтрагентамиВСпискеДокументов</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">StyleItem.ЦветФонаКорректногоКонтрагентаВДокументе</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">StyleItem.ЦветФонаНекорректногоКонтрагентаВДокументе</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Constant.ИспользоватьПроверкуКонтрагентов</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Enum.СостоянияПроверкиКонтрагентов</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Enum.СостоянияСуществованияКонтрагента</xr:Item>
@@ -68,6 +66,8 @@
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ПроверкаКонтрагентовФНСПовтИсп</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.ПроверкаКэшаСостоянийФНС</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.КэшСостоянийКонтрагентовФНС</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.ПроверкаДоступаКСервисамКонтрагентов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ДатаОбновленияСостоянийКонтрагентов</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

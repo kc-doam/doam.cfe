@@ -170,20 +170,20 @@
 			<ExecuteAfterWriteDataHistoryVersionProcessing>false</ExecuteAfterWriteDataHistoryVersionProcessing>
 		</Properties>
 		<ChildObjects>
-			<Resource uuid="d2c4c941-6746-41a1-a8d2-2c44c77b940d">
+			<Resource uuid="c9fc6824-955d-4dca-8be8-4202d51dc647">
 				<Properties>
-					<Name>Срок</Name>
+					<Name>ДатаПрохождения</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Срок</v8:content>
+							<v8:content>Дата прохождения</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
 					<Type>
 						<v8:Type>xs:dateTime</v8:Type>
 						<v8:DateQualifiers>
-							<v8:DateFractions>Date</v8:DateFractions>
+							<v8:DateFractions>DateTime</v8:DateFractions>
 						</v8:DateQualifiers>
 					</Type>
 					<PasswordMode>false</PasswordMode>
@@ -251,20 +251,20 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Resource>
-			<Resource uuid="c9fc6824-955d-4dca-8be8-4202d51dc647">
+			<Resource uuid="d2c4c941-6746-41a1-a8d2-2c44c77b940d">
 				<Properties>
-					<Name>ДатаПрохождения</Name>
+					<Name>Срок</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Дата прохождения</v8:content>
+							<v8:content>Срок</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
 					<Type>
 						<v8:Type>xs:dateTime</v8:Type>
 						<v8:DateQualifiers>
-							<v8:DateFractions>DateTime</v8:DateFractions>
+							<v8:DateFractions>Date</v8:DateFractions>
 						</v8:DateQualifiers>
 					</Type>
 					<PasswordMode>false</PasswordMode>

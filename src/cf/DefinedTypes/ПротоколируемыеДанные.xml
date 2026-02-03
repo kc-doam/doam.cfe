@@ -43,6 +43,7 @@
 				<v8:Type>cfg:CatalogRef.ШаблоныСоставныхБизнесПроцессов</v8:Type>
 				<v8:Type>cfg:CatalogRef.МестаХраненияДел</v8:Type>
 				<v8:Type>cfg:DocumentRef.ВходящееПисьмо</v8:Type>
+				<v8:Type>cfg:CatalogRef.МЧД003</v8:Type>
 				<v8:Type>cfg:TaskRef.ЗадачаИсполнителя</v8:Type>
 				<v8:Type>cfg:CatalogRef.КатегорииДанных</v8:Type>
 				<v8:Type>cfg:BusinessProcessRef.Приглашение</v8:Type>
@@ -50,6 +51,7 @@
 				<v8:Type>cfg:DocumentRef.СогласиеНаОбработкуПерсональныхДанных</v8:Type>
 				<v8:Type>cfg:CatalogRef.РабочиеГруппы</v8:Type>
 				<v8:Type>cfg:CatalogRef.ШаблоныТекстов</v8:Type>
+				<v8:Type>cfg:CatalogRef.МашиночитаемыеДоверенностиКонтрагентов</v8:Type>
 				<v8:Type>cfg:CatalogRef.РазделыНоменклатурыДел</v8:Type>
 				<v8:Type>cfg:CatalogRef.ТипыСвязей</v8:Type>
 				<v8:Type>cfg:CatalogRef.Файлы</v8:Type>
@@ -57,6 +59,7 @@
 				<v8:Type>cfg:BusinessProcessRef.ОбработкаИсходящегоДокумента</v8:Type>
 				<v8:Type>cfg:DocumentRef.ОтзывСогласияНаОбработкуПерсональныхДанных</v8:Type>
 				<v8:Type>cfg:DocumentRef.Бронь</v8:Type>
+				<v8:Type>cfg:CatalogRef.МашиночитаемыеДоверенностиОрганизаций</v8:Type>
 				<v8:Type>cfg:CatalogRef.ШаблоныРассмотрения</v8:Type>
 				<v8:Type>cfg:CatalogRef.ШаблоныСогласования</v8:Type>
 				<v8:Type>cfg:BusinessProcessRef.ОбработкаВнутреннегоДокумента</v8:Type>

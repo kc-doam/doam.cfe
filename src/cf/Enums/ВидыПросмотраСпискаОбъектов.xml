@@ -92,13 +92,13 @@
 			<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
 		</Properties>
 		<ChildObjects>
-			<EnumValue uuid="74ce5095-7162-464c-a0b0-1f12dff50dc1">
+			<EnumValue uuid="e797e09c-fc54-49f6-9880-059f4c2e8cdd">
 				<Properties>
-					<Name>ПланировщикомНаДень</Name>
+					<Name>Списком</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Планировщиком на день</v8:content>
+							<v8:content>Списком</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -128,6 +128,30 @@
 					<Comment/>
 				</Properties>
 			</EnumValue>
+			<EnumValue uuid="74ce5095-7162-464c-a0b0-1f12dff50dc1">
+				<Properties>
+					<Name>ПланировщикомНаДень</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Планировщиком на день</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="d1d01d1d-e4a4-4eae-8b36-52927dfd273c">
+				<Properties>
+					<Name>ПоПапкам</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>По папкам</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
 			<EnumValue uuid="fd8f9351-2f28-4071-a4ac-46f62de488c6">
 				<Properties>
 					<Name>ПоВидамДокументов</Name>
@@ -140,30 +164,6 @@
 					<Comment/>
 				</Properties>
 			</EnumValue>
-			<EnumValue uuid="843abd16-eeae-4f84-8f8b-f866b72a1e25">
-				<Properties>
-					<Name>ПоВопросамДеятельности</Name>
-					<Synonym>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>По вопросам деятельности</v8:content>
-						</v8:item>
-					</Synonym>
-					<Comment/>
-				</Properties>
-			</EnumValue>
-			<EnumValue uuid="c82d41a6-b91b-4bb6-b156-62f7d9c73f02">
-				<Properties>
-					<Name>ПоДеламТомам</Name>
-					<Synonym>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>По делам (томам)</v8:content>
-						</v8:item>
-					</Synonym>
-					<Comment/>
-				</Properties>
-			</EnumValue>
 			<EnumValue uuid="9d07d672-4306-448a-9337-6c10339abbb3">
 				<Properties>
 					<Name>ПоКатегориям</Name>
@@ -171,6 +171,18 @@
 						<v8:item>
 							<v8:lang>ru</v8:lang>
 							<v8:content>По категориям</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="843abd16-eeae-4f84-8f8b-f866b72a1e25">
+				<Properties>
+					<Name>ПоВопросамДеятельности</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>По вопросам деятельности</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -200,18 +212,6 @@
 					<Comment/>
 				</Properties>
 			</EnumValue>
-			<EnumValue uuid="d1d01d1d-e4a4-4eae-8b36-52927dfd273c">
-				<Properties>
-					<Name>ПоПапкам</Name>
-					<Synonym>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>По папкам</v8:content>
-						</v8:item>
-					</Synonym>
-					<Comment/>
-				</Properties>
-			</EnumValue>
 			<EnumValue uuid="43113180-b879-4216-b0c9-6ab33d0f4d2a">
 				<Properties>
 					<Name>ПоПользователям</Name>
@@ -236,13 +236,25 @@
 					<Comment/>
 				</Properties>
 			</EnumValue>
-			<EnumValue uuid="e797e09c-fc54-49f6-9880-059f4c2e8cdd">
+			<EnumValue uuid="c82d41a6-b91b-4bb6-b156-62f7d9c73f02">
 				<Properties>
-					<Name>Списком</Name>
+					<Name>ПоДеламТомам</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Списком</v8:content>
+							<v8:content>По делам (томам)</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="8c7af865-6817-4b31-bd48-1e782b492292">
+				<Properties>
+					<Name>ПоСтатусамОбменаСАрхивом</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>По статусам обмена с 1С:Архивом</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>

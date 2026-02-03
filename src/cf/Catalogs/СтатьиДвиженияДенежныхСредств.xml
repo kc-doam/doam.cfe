@@ -378,9 +378,9 @@
 				</Properties>
 			</Attribute>
 			<Form>ФормаВыбора</Form>
+			<Form>ФормаГруппы</Form>
 			<Form>ФормаСписка</Form>
 			<Form>ФормаЭлемента</Form>
-			<Form>ФормаГруппы</Form>
 		</ChildObjects>
 	</Catalog>
 </MetaDataObject>

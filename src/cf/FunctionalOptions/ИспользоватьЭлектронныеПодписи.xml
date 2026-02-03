@@ -18,22 +18,28 @@
 				<xr:Object>Catalog.ВерсииФайлов.TabularSection.УдалитьЭлектронныеЦифровыеПодписи</xr:Object>
 				<xr:Object>InformationRegister.УдалитьВизыСогласования.Resource.Подпись</xr:Object>
 				<xr:Object>Catalog.Файлы.Attribute.ПодписанЭП</xr:Object>
+				<xr:Object>BusinessProcess.Утверждение.Attribute.ПодписыватьЭП</xr:Object>
+				<xr:Object>Catalog.Резолюции.Attribute.Подписана</xr:Object>
 				<xr:Object>Catalog.Файлы.Attribute.Зашифрован</xr:Object>
 				<xr:Object>Catalog.ВерсииФайлов.Attribute.Зашифрован</xr:Object>
 				<xr:Object>Catalog.ВнутренниеДокументы.Attribute.ПодписанЭП</xr:Object>
 				<xr:Object>InformationRegister.УдалитьВизыСогласования.Resource.Сертификат</xr:Object>
-				<xr:Object>Catalog.НазначенияСертификатовЭП</xr:Object>
-				<xr:Object>BusinessProcess.Утверждение.Attribute.ПодписыватьЭП</xr:Object>
-				<xr:Object>Catalog.Резолюции.Attribute.Подписана</xr:Object>
 				<xr:Object>Catalog.Файлы.TabularSection.УдалитьСертификатыШифрования</xr:Object>
 				<xr:Object>InformationRegister.УдалитьВизыСогласования.Resource.УстановившийПодпись</xr:Object>
 				<xr:Object>InformationRegister.УдалитьВизыСогласования.Resource.КомуВыданСертификат</xr:Object>
 				<xr:Object>InformationRegister.УдалитьВизыСогласования.Resource.ДатаПодписи</xr:Object>
 				<xr:Object>InformationRegister.УдалитьВизыСогласования.Resource.Подписан</xr:Object>
+				<xr:Object>Catalog.НазначенияСертификатовЭП</xr:Object>
 				<xr:Object>BusinessProcess.Согласование.Attribute.ПодписыватьЭП</xr:Object>
 				<xr:Object>InformationRegister.ЭлектронныеПодписи</xr:Object>
 				<xr:Object>Catalog.ВходящиеДокументы.Attribute.ПодписанЭП</xr:Object>
 				<xr:Object>Catalog.ВизыСогласования.Attribute.Подписана</xr:Object>
+				<xr:Object>Constant.УсовершенствоватьПодписиАвтоматически</xr:Object>
+				<xr:Object>Constant.ДобавлятьМеткиВремениАвтоматически</xr:Object>
+				<xr:Object>Constant.АдресаСерверовМетокВремени</xr:Object>
+				<xr:Object>Constant.ТипПодписиКриптографииПоУмолчанию</xr:Object>
+				<xr:Object>Constant.УсовершенствоватьПодписиСДаты</xr:Object>
+				<xr:Object>Constant.РазрешенныеНеаккредитованныеУЦ</xr:Object>
 			</Content>
 		</Properties>
 	</FunctionalOption>

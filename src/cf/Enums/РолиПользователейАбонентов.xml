@@ -104,6 +104,18 @@
 					<Comment/>
 				</Properties>
 			</EnumValue>
+			<EnumValue uuid="ec27e8af-38eb-4a38-b702-42446ea2fafc">
+				<Properties>
+					<Name>АдминистраторСредствАдаптации</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Администратор средств адаптации</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
 			<EnumValue uuid="8a4af190-15a3-47a7-adb2-44400bcdde8a">
 				<Properties>
 					<Name>ВладелецАбонента</Name>

@@ -21,12 +21,12 @@
 			</Synonym>
 			<Comment/>
 			<UseStandardCommands>true</UseStandardCommands>
-			<DefaultForm/>
+			<DefaultForm>CommonForm.ФормаОтчета</DefaultForm>
 			<AuxiliaryForm/>
 			<MainDataCompositionSchema>Report.ПереносыСроковИсполненияЗадач.Template.Макет</MainDataCompositionSchema>
-			<DefaultSettingsForm/>
+			<DefaultSettingsForm>CommonForm.ФормаНастроекОтчета</DefaultSettingsForm>
 			<AuxiliarySettingsForm/>
-			<DefaultVariantForm/>
+			<DefaultVariantForm>CommonForm.ФормаВариантаОтчета</DefaultVariantForm>
 			<VariantsStorage>SettingsStorage.ХранилищеВариантовОтчетов</VariantsStorage>
 			<SettingsStorage/>
 			<IncludeHelpInContents>true</IncludeHelpInContents>
@@ -38,8 +38,8 @@
 			<Template>ОбразецОтчетаКоличествоПереносов</Template>
 			<Template>ОбразецОтчетаСкоростьСогласованияПереносаСрока</Template>
 			<Template>ОбразецОтчетаСписокЗаявокНаПереносСрока</Template>
-			<Template>ОбразецОтчетаСтатистикаЗапросовНаПереносПоСотрудникам</Template>
 			<Template>ОбразецОтчетаСтатистикаЗапросовНаПереносПоПодразделениям</Template>
+			<Template>ОбразецОтчетаСтатистикаЗапросовНаПереносПоСотрудникам</Template>
 			<Template>ОбразецОтчетаСтатистикаПоВидамПроцессов</Template>
 			<Template>ОбразецОтчетаСтатистикаПринятыхРешений</Template>
 		</ChildObjects>

@@ -53,12 +53,13 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.СтатьиДвиженияДенежныхСредств</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Номенклатура</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.НаименованияСторон</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.УничтожениеПерсональныхДанных</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects>
-			<Subsystem>Предприятие</Subsystem>
 			<Subsystem>Категории</Subsystem>
 			<Subsystem>Классификаторы</Subsystem>
+			<Subsystem>Предприятие</Subsystem>
 		</ChildObjects>
 	</Subsystem>
 </MetaDataObject>

@@ -9,61 +9,61 @@
 					<v8:content>Работа с файлами</v8:content>
 				</v8:item>
 			</Synonym>
-			<Comment/>
+			<Comment>АПК:566 синхронные вызовы в веб-клиенте разрешены; АПК:565 использование модального вызова разрешено; АПК:1348 использование платформенных методов для работы с файловой системой разрешено;</Comment>
 			<IncludeHelpInContents>true</IncludeHelpInContents>
 			<IncludeInCommandInterface>false</IncludeInCommandInterface>
 			<UseOneCommand>false</UseOneCommand>
 			<Explanation/>
 			<Picture/>
 			<Content>
-				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ОпубликоватьФайл</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.Папка</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.РаботаСФайламиВызовСервера</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.РаботаСФайламиКлиентСервер</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.РаботаСФайламиКлиент</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.НастройкаЛокальногоКэшаФайлов</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ВерсииФайлов</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Файлы</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ПапкиФайлов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.НастройкаЛокальногоКэшаФайлов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.СпособыПоворотаИзображения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ОпубликоватьФайл</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.РаботаСФайламиКлиент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.Папка</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ФорматыСканированногоИзображения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.РаботаСФайламиВызовСервера</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.УдалитьФайлыВРабочемКаталоге</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Файлы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.РаботаСФайламиКлиентСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.РазмерыФайловТомов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ВерсииФайлов</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.ПрисоединенныеФайлы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ПереносФайловВТома</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.РаботаСФайламиКлиентПовтИсп</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.РаботаСФайламиПереопределяемый</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.КомандыРаботыСФайламиКлиент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ЦветностиИзображения</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.УдалитьРабочиеКаталогиФайлов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.РаботаСФайламиПереопределяемый</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.РаботаСФайламиСлужебный</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.КомандыРаботыСФайламиКлиент</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Enum.СпособыСравненияВерсийФайлов</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.Папки</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.РазместитьФайлыНачальногоОбраза</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.СкопироватьРеквизитыВерсииФайловВФайл</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.Сканирование</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.НомераОтсканированныхФайлов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.РаботаСФайламиВызовСервераПереопределяемый</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">FilterCriterion.ФайлыВТоме</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ФорматыХраненияМногостраничныхФайлов</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.РаботаСоСканеромКлиент</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">Enum.ФорматыСканированногоИзображения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.УдалитьХранимыеФайлыВерсий</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Enum.РазрешенияСканированногоИзображения</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">Enum.ЦветностиИзображения</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">Enum.СпособыПоворотаИзображения</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Enum.РазмерыБумаги</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ИспользованиеШаблонов</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonTemplate.КомпонентаTWAIN</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.УдалитьФайлыВРабочемКаталоге</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Enum.ДействияСФайламиПоДвойномуЩелчку</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Enum.ВариантыСжатияTIFF</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">Enum.ФорматыХраненияМногостраничныхФайлов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.РаботаСФайламиСлужебныйВызовСервера</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Enum.ФорматыХраненияОдностраничныхФайлов</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.РаботаСФайлами</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.РаботаСФайламиВызовСервераПереопределяемый</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.УдалитьХранимыеФайлыВерсий</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.СкопироватьРеквизитыВерсииФайловВФайл</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ПереносФайловВТома</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.РаботаСФайламиКлиентПереопределяемый</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.РаботаСФайламиВнешнийВызов</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.РаботаСФайламиСлужебный</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.РаботаСФайламиСлужебныйВызовСервера</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.РаботаСФайламиСлужебныйКлиент</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.РаботаСФайламиСлужебныйКлиентПовтИсп</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ИспользованиеШаблонов</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.СведенияОФайлах</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.РазмерыФайловТомов</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.РаботаСКартинками</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.РаботаСКартинкамиКлиент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.СведенияОФайлахДокументооборот</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.РежимыОчисткиФайлов</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

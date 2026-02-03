@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
 	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
 	<CommandSet>
 		<ExcludedCommand>WriteAndClose</ExcludedCommand>
@@ -136,6 +136,12 @@
 					</ButtonGroup>
 				</ChildItems>
 			</Popup>
+			<Button name="ФормаВыбратьФотографию" id="445">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ВыбратьФотографию</CommandName>
+				<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+				<ExtendedTooltip name="ФормаВыбратьФотографиюРасширеннаяПодсказка" id="446"/>
+			</Button>
 		</ChildItems>
 	</AutoCommandBar>
 	<Events>
@@ -168,6 +174,7 @@
 			</ToolTip>
 			<VerticalStretch>false</VerticalStretch>
 			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
 			<ShowTitle>false</ShowTitle>
 			<BackColor>style:ОтсутствиеЦветФона</BackColor>
 			<ExtendedTooltip name="ГруппаОтсутствиеРасширеннаяПодсказка" id="429"/>
@@ -208,6 +215,7 @@
 					<HorizontalStretch>true</HorizontalStretch>
 					<GroupHorizontalAlign>Left</GroupHorizontalAlign>
 					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="ГруппаОтсутствиеОписаниеРасширеннаяПодсказка" id="434"/>
@@ -240,6 +248,7 @@
 					<v8:content>Служебный пользователь</v8:content>
 				</v8:item>
 			</Title>
+			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаСлужебныйПользовательРасширеннаяПодсказка" id="339"/>
@@ -287,6 +296,7 @@
 					<v8:content>Свойства обработка несоответствия</v8:content>
 				</v8:item>
 			</Title>
+			<Behavior>Usual</Behavior>
 			<Representation>NormalSeparation</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="СвойстваОбработкаНесоответствияРасширеннаяПодсказка" id="208"/>
@@ -315,6 +325,7 @@
 						</v8:item>
 					</Title>
 					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="СвойстваПояснениеИКомандыРасширеннаяПодсказка" id="210"/>
@@ -347,6 +358,7 @@
 									<v8:content>Свойства команды устранения различий</v8:content>
 								</v8:item>
 							</Title>
+							<Behavior>Usual</Behavior>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="СвойстваКомандыУстраненияРазличийРасширеннаяПодсказка" id="264"/>
@@ -381,6 +393,7 @@
 					<v8:content>Сопоставление обработка несоответствия</v8:content>
 				</v8:item>
 			</Title>
+			<Behavior>Usual</Behavior>
 			<Representation>NormalSeparation</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="СопоставлениеОбработкаНесоответствияРасширеннаяПодсказка" id="213"/>
@@ -432,6 +445,7 @@
 				</v8:item>
 			</ToolTip>
 			<Group>AlwaysHorizontal</Group>
+			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ВсеПоляРасширеннаяПодсказка" id="396"/>
@@ -446,6 +460,7 @@
 					<Width>65</Width>
 					<HorizontalStretch>false</HorizontalStretch>
 					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
 					<ThroughAlign>Use</ThroughAlign>
@@ -465,6 +480,7 @@
 								</v8:item>
 							</ToolTip>
 							<Group>AlwaysHorizontal</Group>
+							<Behavior>Usual</Behavior>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="ГруппаОсновныеДанныеРасширеннаяПодсказка" id="442"/>
@@ -472,6 +488,12 @@
 								<PictureField name="Фотография" id="353">
 									<DataPath>АдресФотографии</DataPath>
 									<TitleLocation>None</TitleLocation>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Выбрать фото</v8:content>
+										</v8:item>
+									</ToolTip>
 									<GroupVerticalAlign>Top</GroupVerticalAlign>
 									<Width>11</Width>
 									<Height>6</Height>
@@ -489,9 +511,20 @@
 										<ChildItems>
 											<Button name="ФормаОчиститьФотографию" id="356">
 												<Type>CommandBarButton</Type>
+												<Visible>false</Visible>
 												<CommandName>Form.Command.ОчиститьФотографию</CommandName>
 												<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
 												<ExtendedTooltip name="ФормаОчиститьФотографиюРасширеннаяПодсказка" id="357"/>
+											</Button>
+											<Button name="ФотографияКонтекстноеМенюВыбратьФотографию" id="403">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.ВыбратьФотографию</CommandName>
+												<ExtendedTooltip name="ФотографияКонтекстноеМенюВыбратьФотографиюРасширеннаяПодсказка" id="404"/>
+											</Button>
+											<Button name="ФотографияКонтекстноеМенюОчиститьФотографию" id="405">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.ОчиститьФотографию</CommandName>
+												<ExtendedTooltip name="ФотографияКонтекстноеМенюОчиститьФотографиюРасширеннаяПодсказка" id="447"/>
 											</Button>
 										</ChildItems>
 									</ContextMenu>
@@ -508,6 +541,7 @@
 										</v8:item>
 									</Title>
 									<Group>Vertical</Group>
+									<Behavior>Usual</Behavior>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
 									<ThroughAlign>Use</ThroughAlign>
@@ -520,6 +554,7 @@
 													<v8:content>Наименование</v8:content>
 												</v8:item>
 											</Title>
+											<Behavior>Usual</Behavior>
 											<Representation>None</Representation>
 											<ShowTitle>false</ShowTitle>
 											<ExtendedTooltip name="ГруппаНаименованиеРасширеннаяПодсказка" id="330"/>
@@ -621,6 +656,7 @@
 								</v8:item>
 							</ToolTip>
 							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
 							<ThroughAlign>Use</ThroughAlign>
@@ -629,6 +665,7 @@
 								<UsualGroup name="ГруппаПодразделениеИРуководитель" id="372">
 									<Width>40</Width>
 									<Group>Vertical</Group>
+									<Behavior>Usual</Behavior>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
 									<ThroughAlign>Use</ThroughAlign>
@@ -663,6 +700,7 @@
 									</Title>
 									<Width>40</Width>
 									<Group>AlwaysHorizontal</Group>
+									<Behavior>Usual</Behavior>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
 									<ThroughAlign>Use</ThroughAlign>
@@ -761,9 +799,6 @@
 									<ChoiceButton>true</ChoiceButton>
 									<ContextMenu name="КомментарийКонтекстноеМеню" id="259"/>
 									<ExtendedTooltip name="КомментарийExtendedTooltip" id="260"/>
-									<Events>
-										<Event name="StartChoice">КомментарийНачалоВыбора</Event>
-									</Events>
 								</InputField>
 							</ChildItems>
 						</UsualGroup>
@@ -777,6 +812,7 @@
 						</v8:item>
 					</Title>
 					<Width>65</Width>
+					<HorizontalStretch>false</HorizontalStretch>
 					<PagesRepresentation>TabsOnTop</PagesRepresentation>
 					<ExtendedTooltip name="СтраницыExtendedTooltip" id="219"/>
 					<Events>
@@ -801,61 +837,34 @@
 										</v8:item>
 									</Title>
 									<Group>Vertical</Group>
+									<Behavior>Usual</Behavior>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="ОсновныеСвойстваExtendedTooltip" id="221"/>
 									<ChildItems>
-										<Pages name="ИмяПереключениеОтметкиНезаполненного" id="249">
+										<UsualGroup name="ГруппаИмя" id="489">
 											<Title>
 												<v8:item>
 													<v8:lang>ru</v8:lang>
-													<v8:content>Имя (переключение отметки незаполненного)</v8:content>
+													<v8:content>Имя</v8:content>
 												</v8:item>
 											</Title>
-											<PagesRepresentation>None</PagesRepresentation>
-											<ExtendedTooltip name="ИмяПереключениеОтметкиНезаполненногоРасширеннаяПодсказка" id="250"/>
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаИмяРасширеннаяПодсказка" id="490"/>
 											<ChildItems>
-												<Page name="ИмяСОтметкойНезаполненного" id="251">
-													<Title>
-														<v8:item>
-															<v8:lang>ru</v8:lang>
-															<v8:content>Имя с отметкой незаполненного</v8:content>
-														</v8:item>
-													</Title>
-													<ExtendedTooltip name="ИмяСОтметкойНезаполненногоРасширеннаяПодсказка" id="252"/>
-													<ChildItems>
-														<InputField name="ПользовательИБИмя1" id="95">
-															<DataPath>ПользовательИБИмя</DataPath>
-															<AutoMarkIncomplete>true</AutoMarkIncomplete>
-															<ContextMenu name="ПользовательИБИмя1КонтекстноеМеню" id="96"/>
-															<ExtendedTooltip name="ПользовательИБИмя1РасширеннаяПодсказка" id="222"/>
-															<Events>
-																<Event name="OnChange">ПользовательИБИмяПриИзменении</Event>
-															</Events>
-														</InputField>
-													</ChildItems>
-												</Page>
-												<Page name="ИмяБезОтметкиНезаполненного" id="253">
-													<Title>
-														<v8:item>
-															<v8:lang>ru</v8:lang>
-															<v8:content>Имя без отметки незаполненного</v8:content>
-														</v8:item>
-													</Title>
-													<ExtendedTooltip name="ИмяБезОтметкиНезаполненногоРасширеннаяПодсказка" id="254"/>
-													<ChildItems>
-														<InputField name="ПользовательИБИмя2" id="255">
-															<DataPath>ПользовательИБИмя</DataPath>
-															<ContextMenu name="ПользовательИБИмя2КонтекстноеМеню" id="256"/>
-															<ExtendedTooltip name="ПользовательИБИмя2РасширеннаяПодсказка" id="257"/>
-															<Events>
-																<Event name="OnChange">ПользовательИБИмяПриИзменении</Event>
-															</Events>
-														</InputField>
-													</ChildItems>
-												</Page>
+												<InputField name="ПользовательИБИмя" id="491">
+													<DataPath>ПользовательИБИмя</DataPath>
+													<AutoMarkIncomplete>true</AutoMarkIncomplete>
+													<ContextMenu name="ПользовательИБИмяКонтекстноеМеню" id="492"/>
+													<ExtendedTooltip name="ПользовательИБИмяРасширеннаяПодсказка" id="493"/>
+													<Events>
+														<Event name="OnChange">ПользовательИБИмяПриИзменении</Event>
+													</Events>
+												</InputField>
 											</ChildItems>
-										</Pages>
+										</UsualGroup>
 										<UsualGroup name="ГруппаВходВПрограммуРазрешен" id="265">
 											<Title>
 												<v8:item>
@@ -863,6 +872,7 @@
 													<v8:content>Вход в программу разрешен</v8:content>
 												</v8:item>
 											</Title>
+											<Behavior>Usual</Behavior>
 											<Representation>None</Representation>
 											<ShowTitle>false</ShowTitle>
 											<ExtendedTooltip name="ГруппаВходВПрограммуРазрешенРасширеннаяПодсказка" id="266"/>
@@ -892,6 +902,7 @@
 														</v8:item>
 													</Title>
 													<Group>Vertical</Group>
+													<Behavior>Usual</Behavior>
 													<Representation>None</Representation>
 													<ShowTitle>false</ShowTitle>
 													<ExtendedTooltip name="ГруппаИзменитьОграничениеРасширеннаяПодсказка" id="332"/>
@@ -923,6 +934,145 @@
 													<ContextMenu name="РекомендуетсяПроверитьНастройкиДляВходаКонтекстноеМеню" id="268"/>
 													<ExtendedTooltip name="РекомендуетсяПроверитьНастройкиДляВходаРасширеннаяПодсказка" id="269"/>
 												</LabelDecoration>
+												<UsualGroup name="ГруппаНетПрав" id="448">
+													<Visible>false</Visible>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Нет прав</v8:content>
+														</v8:item>
+													</Title>
+													<Group>AlwaysHorizontal</Group>
+													<Behavior>Usual</Behavior>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ГруппаНетПравРасширеннаяПодсказка" id="449"/>
+													<ChildItems>
+														<PictureDecoration name="НетПравКартинка" id="450">
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Нет прав картинка</v8:content>
+																</v8:item>
+															</Title>
+															<Picture>
+																<xr:Ref>CommonPicture.Предупреждение</xr:Ref>
+																<xr:LoadTransparent>false</xr:LoadTransparent>
+															</Picture>
+															<ContextMenu name="НетПравКартинкаКонтекстноеМеню" id="451"/>
+															<ExtendedTooltip name="НетПравКартинкаРасширеннаяПодсказка" id="452"/>
+														</PictureDecoration>
+														<LabelDecoration name="НетПравНадпись" id="453">
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Нет прав</v8:content>
+																</v8:item>
+															</Title>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Пользователю не назначены права доступа (нет ни одной роли)</v8:content>
+																</v8:item>
+															</ToolTip>
+															<ContextMenu name="НетПравНадписьКонтекстноеМеню" id="454"/>
+															<ExtendedTooltip name="НетПравНадписьРасширеннаяПодсказка" id="455"/>
+														</LabelDecoration>
+													</ChildItems>
+												</UsualGroup>
+												<UsualGroup name="ГруппаНетПравНаЗапуск" id="456">
+													<Visible>false</Visible>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Нет прав на запуск</v8:content>
+														</v8:item>
+													</Title>
+													<Group>AlwaysHorizontal</Group>
+													<Behavior>Usual</Behavior>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ГруппаНетПравНаЗапускРасширеннаяПодсказка" id="457"/>
+													<ChildItems>
+														<PictureDecoration name="НетПравНаЗапускКартина" id="458">
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Нет прав на запуск картина</v8:content>
+																</v8:item>
+															</Title>
+															<Picture>
+																<xr:Ref>CommonPicture.Предупреждение</xr:Ref>
+																<xr:LoadTransparent>false</xr:LoadTransparent>
+															</Picture>
+															<ContextMenu name="НетПравНаЗапускКартинаКонтекстноеМеню" id="459"/>
+															<ExtendedTooltip name="НетПравНаЗапускКартинаРасширеннаяПодсказка" id="460"/>
+														</PictureDecoration>
+														<LabelDecoration name="НетПравНаЗапускНадпись" id="461">
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Нет прав на запуск</v8:content>
+																</v8:item>
+															</Title>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>У пользователя нет ни одного права запуска
+(например, тонкий клиент, веб-клиент)</v8:content>
+																</v8:item>
+															</ToolTip>
+															<ContextMenu name="НетПравНаЗапускНадписьКонтекстноеМеню" id="462"/>
+															<ExtendedTooltip name="НетПравНаЗапускНадписьРасширеннаяПодсказка" id="463"/>
+														</LabelDecoration>
+													</ChildItems>
+												</UsualGroup>
+												<UsualGroup name="ГруппаНетПравНаВход" id="464">
+													<Visible>false</Visible>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Нет прав на вход</v8:content>
+														</v8:item>
+													</Title>
+													<Group>AlwaysHorizontal</Group>
+													<Behavior>Usual</Behavior>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ГруппаНетПравНаВходРасширеннаяПодсказка" id="465"/>
+													<ChildItems>
+														<PictureDecoration name="НетПравНаВходКартинка" id="466">
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Нет прав на вход картинка</v8:content>
+																</v8:item>
+															</Title>
+															<Picture>
+																<xr:Ref>CommonPicture.Предупреждение</xr:Ref>
+																<xr:LoadTransparent>false</xr:LoadTransparent>
+															</Picture>
+															<ContextMenu name="НетПравНаВходКартинкаКонтекстноеМеню" id="467"/>
+															<ExtendedTooltip name="НетПравНаВходКартинкаРасширеннаяПодсказка" id="468"/>
+														</PictureDecoration>
+														<LabelDecoration name="НетПравНаВходНадпись" id="469">
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Нет прав для входа</v8:content>
+																</v8:item>
+															</Title>
+															<ToolTip>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Пользователю не назначены минимальные права для работы в программе</v8:content>
+																</v8:item>
+															</ToolTip>
+															<ContextMenu name="НетПравНаВходНадписьКонтекстноеМеню" id="470"/>
+															<ExtendedTooltip name="НетПравНаВходНадписьРасширеннаяПодсказка" id="471"/>
+														</LabelDecoration>
+													</ChildItems>
+												</UsualGroup>
 											</ChildItems>
 										</UsualGroup>
 										<UsualGroup name="СвойстваАутентификации1СПредприятия" id="10">
@@ -933,6 +1083,7 @@
 												</v8:item>
 											</Title>
 											<Group>Vertical</Group>
+											<Behavior>Usual</Behavior>
 											<Representation>NormalSeparation</Representation>
 											<ShowTitle>false</ShowTitle>
 											<ExtendedTooltip name="СвойстваАутентификации1СПредприятияExtendedTooltip" id="223"/>
@@ -962,6 +1113,7 @@
 															<v8:content>Отступ</v8:content>
 														</v8:item>
 													</Title>
+													<Behavior>Usual</Behavior>
 													<Representation>None</Representation>
 													<ShowTitle>false</ShowTitle>
 													<ExtendedTooltip name="ГруппаОтступРасширеннаяПодсказка" id="271"/>
@@ -978,6 +1130,7 @@
 																</v8:item>
 															</Title>
 															<Group>Vertical</Group>
+															<Behavior>Usual</Behavior>
 															<Representation>None</Representation>
 															<ShowTitle>false</ShowTitle>
 															<ExtendedTooltip name="ПараметрыАутентификации1СПредприятияРасширеннаяПодсказка" id="225"/>
@@ -989,6 +1142,7 @@
 																			<v8:content>Пароль</v8:content>
 																		</v8:item>
 																	</Title>
+																	<Behavior>Usual</Behavior>
 																	<Representation>None</Representation>
 																	<ShowTitle>false</ShowTitle>
 																	<ExtendedTooltip name="ГруппаПарольРасширеннаяПодсказка" id="320"/>
@@ -1078,6 +1232,7 @@
 												</v8:item>
 											</Title>
 											<Group>Vertical</Group>
+											<Behavior>Usual</Behavior>
 											<Representation>None</Representation>
 											<ShowTitle>false</ShowTitle>
 											<ExtendedTooltip name="СвойстваАутентификацииOpenIDРасширеннаяПодсказка" id="276"/>
@@ -1110,6 +1265,7 @@
 												</v8:item>
 											</Title>
 											<Group>Vertical</Group>
+											<Behavior>Usual</Behavior>
 											<Representation>None</Representation>
 											<ShowTitle>false</ShowTitle>
 											<ExtendedTooltip name="СвойстваАутентификацииОСExtendedTooltip" id="231"/>
@@ -1140,6 +1296,7 @@
 															<v8:content>Свойства параметры аутентификации ОС</v8:content>
 														</v8:item>
 													</Title>
+													<Behavior>Usual</Behavior>
 													<Representation>None</Representation>
 													<ShowTitle>false</ShowTitle>
 													<ExtendedTooltip name="СвойстваПараметрыАутентификацииОСExtendedTooltip" id="233"/>
@@ -1173,6 +1330,74 @@
 												</UsualGroup>
 											</ChildItems>
 										</UsualGroup>
+										<UsualGroup name="СвойстваАутентификации" id="472">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Свойства аутентификации</v8:content>
+												</v8:item>
+											</Title>
+											<Behavior>Usual</Behavior>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="СвойстваАутентификацииРасширеннаяПодсказка" id="473"/>
+											<ChildItems>
+												<UsualGroup name="СвойстваАутентификацииДополнительные" id="474">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Свойства аутентификации дополнительные</v8:content>
+														</v8:item>
+													</Title>
+													<Group>Vertical</Group>
+													<Behavior>Usual</Behavior>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="СвойстваАутентификацииДополнительныеРасширеннаяПодсказка" id="475"/>
+													<ChildItems>
+														<CheckBoxField name="ПользовательИБАутентификацияOpenIDConnect" id="476">
+															<DataPath>ПользовательИБАутентификацияOpenIDConnect</DataPath>
+															<TitleLocation>Right</TitleLocation>
+															<CheckBoxType>Auto</CheckBoxType>
+															<ContextMenu name="ПользовательИБАутентификацияOpenIDConnectКонтекстноеМеню" id="477"/>
+															<ExtendedTooltip name="ПользовательИБАутентификацияOpenIDConnectРасширеннаяПодсказка" id="478">
+																<Title formatted="false">
+																	<v8:item>
+																		<v8:lang>ru</v8:lang>
+																		<v8:content>OpenID Connect позволяет системе 1С:Предприятие проверить личность пользователя на основе аутентификации, выполненной сторонним провайдером. В результате, для того, чтобы получить доступ к прикладному решению 1С:Предприятия, пользователи могут использовать свои учетные данные на других сайтах, поддерживающих OpenID Connect аутентификацию. В частности, в качестве такого сайта можно использовать Единую систему идентификации и аутентификации (ЕСИА), при этом авторизация будет происходить через сайт gosuslugi.ru.
+
+Используется только при подключении через веб-сервер (адрес службы должен быть настроен).</v8:content>
+																	</v8:item>
+																</Title>
+															</ExtendedTooltip>
+															<Events>
+																<Event name="OnChange">ПользовательИБАутентификацияOpenIDConnectПриИзменении</Event>
+															</Events>
+														</CheckBoxField>
+														<CheckBoxField name="ПользовательИБАутентификацияТокеномДоступа" id="479">
+															<DataPath>ПользовательИБАутентификацияТокеномДоступа</DataPath>
+															<TitleLocation>Right</TitleLocation>
+															<CheckBoxType>Auto</CheckBoxType>
+															<ContextMenu name="ПользовательИБАутентификацияТокеномДоступаКонтекстноеМеню" id="480"/>
+															<ExtendedTooltip name="ПользовательИБАутентификацияТокеномДоступаРасширеннаяПодсказка" id="481">
+																<Title formatted="false">
+																	<v8:item>
+																		<v8:lang>ru</v8:lang>
+																		<v8:content>Аутентификация с помощью JWT-токенов (стандарт RFC 7519).
+Более продвинутая аутентификация по сравнению с OpenID и OpenID-Connect.
+
+Многие публичные сервисы используют аутентификацию через JWT-токены – например, Единая Система Авторизации И Аутентификации (ЕСИА), сервисы Министерства здравоохранения и социального развития, Национальная система цифровой маркировки "Честный знак".</v8:content>
+																	</v8:item>
+																</Title>
+															</ExtendedTooltip>
+															<Events>
+																<Event name="OnChange">ПользовательИБАутентификацияТокеномДоступаПриИзменении</Event>
+															</Events>
+														</CheckBoxField>
+													</ChildItems>
+												</UsualGroup>
+											</ChildItems>
+										</UsualGroup>
 										<UsualGroup name="СвойстваДополнительные" id="91">
 											<Title>
 												<v8:item>
@@ -1182,6 +1407,7 @@
 											</Title>
 											<HorizontalStretch>false</HorizontalStretch>
 											<Group>Vertical</Group>
+											<Behavior>Usual</Behavior>
 											<Representation>NormalSeparation</Representation>
 											<ChildItemsWidth>Equal</ChildItemsWidth>
 											<ShowTitle>false</ShowTitle>
@@ -1223,6 +1449,7 @@
 										</v8:item>
 									</Title>
 									<Group>Vertical</Group>
+									<Behavior>Usual</Behavior>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="ОтображениеРолейExtendedTooltip" id="239"/>
@@ -1307,6 +1534,30 @@
 														<CommandSource>Item.Роли</CommandSource>
 														<ExtendedTooltip name="РолиСтандартныеКомандыРасширеннаяПодсказка" id="282"/>
 													</ButtonGroup>
+													<ButtonGroup name="РолиГруппаКомандФлажки" id="482">
+														<Title>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Роли группа команд флажки</v8:content>
+															</v8:item>
+														</Title>
+														<Representation>Compact</Representation>
+														<ExtendedTooltip name="РолиГруппаКомандФлажкиРасширеннаяПодсказка" id="483"/>
+													</ButtonGroup>
+													<SearchStringAddition name="РолиСтрокаПоиск" id="484">
+														<AdditionSource>
+															<Item>Роли</Item>
+															<Type>SearchStringRepresentation</Type>
+														</AdditionSource>
+														<Title>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Поиск</v8:content>
+															</v8:item>
+														</Title>
+														<ContextMenu name="РолиСтрокаПоискКонтекстноеМеню" id="485"/>
+														<ExtendedTooltip name="РолиСтрокаПоискРасширеннаяПодсказка" id="486"/>
+													</SearchStringAddition>
 												</ChildItems>
 											</AutoCommandBar>
 											<ExtendedTooltip name="РолиExtendedTooltip" id="244"/>
@@ -1388,6 +1639,15 @@
 								</v8:item>
 							</Title>
 							<ExtendedTooltip name="СтраницаДополнительныеРеквизитыРасширеннаяПодсказка" id="293"/>
+						</Page>
+						<Page name="СтраницаКомментарий" id="279">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Комментарий</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="СтраницаКомментарийРасширеннаяПодсказка" id="280"/>
 						</Page>
 					</ChildItems>
 				</Pages>
@@ -2083,6 +2343,171 @@
 				<v8:Type>xs:boolean</v8:Type>
 			</Type>
 		</Attribute>
+		<Attribute name="ПользовательИБАутентификацияOpenIDConnect" id="65">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Аутентификация по протоколу OpenID-Connect</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="ПользовательИБАутентификацияТокеномДоступа" id="66">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Аутентификация токеном доступа</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="КонтактнаяИнформацияПолеEmailПользователя" id="67">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Электронная почта</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="КонтактнаяИнформацияПолеТелефонПользователя" id="68">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Телефон</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="НаличиеПрав" id="69">
+			<Type/>
+		</Attribute>
+		<Attribute name="ПользовательИБЗащитаОтОпасныхДействий" id="70">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="РазделениеВключено" id="71">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ОбщаяНастройкаПоказыватьВСпискеВыбора" id="72">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПараметрыСвойств" id="73">
+			<Type/>
+		</Attribute>
+		<Attribute name="КонтактнаяИнформацияОписаниеДополнительныхРеквизитов" id="74">
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="ИмяРеквизита" id="1">
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Вид" id="2">
+					<Type>
+						<v8:Type>cfg:CatalogRef.ВидыКонтактнойИнформации</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Тип" id="3">
+					<Type>
+						<v8:Type>cfg:EnumRef.ТипыКонтактнойИнформации</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ЗначенияПолей" id="4">
+					<Type>
+						<v8:Type>v8:ValueListType</v8:Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Представление" id="5">
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Комментарий" id="6">
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ЭтоРеквизитТабличнойЧасти" id="7">
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ДействуетС" id="8">
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="ЭтоИсторическаяКонтактнаяИнформация" id="9">
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ХранитьИсториюИзменений" id="11">
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Значение" id="10">
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
 	</Attributes>
 	<Commands>
 		<Command name="ПоказатьТолькоВыбранныеРоли" id="1">
@@ -2298,6 +2723,55 @@
 			</FunctionalOptions>
 			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
+		<Command name="ВыбратьФотографию" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбрать фотографию...</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ВыбратьФотографию</Action>
+		</Command>
+		<Command name="КомандаКонтактнаяИнформацияПолеEmailПользователя" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Написать письмо</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Написать письмо</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.КонтактнаяИнформацияОтправитьЭлектронноеПисьмо</xr:Ref>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
+			</Picture>
+			<Action>Подключаемый_КонтактнаяИнформацияВыполнитьКоманду</Action>
+			<Representation>Picture</Representation>
+		</Command>
+		<Command name="КомандаКонтактнаяИнформацияПолеТелефонПользователя" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Позвонить или отправить SMS</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Позвонить или отправить SMS</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.МенюДополнительныеФункции</xr:Ref>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
+			</Picture>
+			<Action>Подключаемый_КонтактнаяИнформацияВыполнитьКоманду</Action>
+			<Representation>Picture</Representation>
+		</Command>
 	</Commands>
 	<Parameters>
 		<Parameter name="ГруппаНовогоПользователя">
@@ -2322,7 +2796,15 @@
 	<CommandInterface>
 		<NavigationPanel>
 			<Item>
-				<Command>4:440d115d-a769-427e-891a-88d65fba2057</Command>
+				<Command>0</Command>
+				<Type>Auto</Type>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>0</Command>
 				<Type>Auto</Type>
 				<DefaultVisible>false</DefaultVisible>
 				<Visible>

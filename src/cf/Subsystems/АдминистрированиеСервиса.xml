@@ -30,9 +30,9 @@
 			<Subsystem>ОбластиДанных</Subsystem>
 			<Subsystem>ОчередьЗаданий</Subsystem>
 			<Subsystem>ПоставляемыеДанные</Subsystem>
+			<Subsystem>РазмерПриложений</Subsystem>
 			<Subsystem>Сообщения</Subsystem>
 			<Subsystem>Тарификация</Subsystem>
-			<Subsystem>РазмерПриложений</Subsystem>
 		</ChildObjects>
 	</Subsystem>
 </MetaDataObject>

@@ -154,6 +154,17 @@
 		</right>
 	</object>
 	<object>
+		<name>Constant.ИспользоватьСловарьСопоставленияНоменклатурыБЭД</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>DataProcessor.ЭлектронноеВзаимодействие</name>
 		<right>
 			<name>Use</name>
@@ -161,6 +172,29 @@
 		</right>
 		<right>
 			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.КэшВизуализацииДокументовЭДОПрисоединенныеФайлы</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Insert</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Update</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Edit</name>
 			<value>true</value>
 		</right>
 	</object>
@@ -261,6 +295,17 @@
 	</object>
 	<object>
 		<name>InformationRegister.ПакетыЭДОДокументооборот</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.МашиночитаемыеДоверенностиСообщений</name>
 		<right>
 			<name>Read</name>
 			<value>true</value>
@@ -494,7 +539,7 @@
 		</right>
 	</object>
 	<object>
-		<name>InformationRegister.АктуальныеДокументыЭДО</name>
+		<name>InformationRegister.УдалитьАктуальныеДокументыЭДО</name>
 		<right>
 			<name>Read</name>
 			<value>true</value>
@@ -717,6 +762,37 @@
 		<right>
 			<name>Edit</name>
 			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.КлассификаторПолномочийМЧД003</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Update</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveSetDeletionMark</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveClearDeletionMark</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InputByString</name>
+			<value>true</value>
 		</right>
 	</object>
 	<object>
@@ -1146,6 +1222,17 @@
 		</right>
 	</object>
 	<object>
+		<name>DataProcessor.РезультатыПроверкиПодписи</name>
+		<right>
+			<name>Use</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>InformationRegister.НоменклатураКонтрагентовБЭД.Resource.Упаковка</name>
 		<right>
 			<name>View</name>
@@ -1158,6 +1245,17 @@
 	</object>
 	<object>
 		<name>InformationRegister.СоставПакетовДокументовЭДО</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.ЭлектронныеПодписиПоМЧД</name>
 		<right>
 			<name>Read</name>
 			<value>true</value>
@@ -1365,15 +1463,6 @@
 		<right>
 			<name>Read</name>
 			<value>true</value>
-			<restrictionByCondition>
-				<condition>#Если &amp;ОграничениеДоступаНаУровнеЗаписейУниверсально #Тогда
-#ДляРегистра("ИдентификаторыОбъектовМетаданных.РегистрСведенийСостоянияПоОбъектамУчетаЭДО", "Организация", "", "", "", "")
-#Иначе
-#ПоЗначениям("РегистрСведений.СостоянияПоОбъектамУчетаЭДО", "","",
-"Организации", "Организация",
-"","", "","", "","", "","", "","", "","", "","", "","", "","", "","", "","", "","", "","", "","", "","")
-#КонецЕсли</condition>
-			</restrictionByCondition>
 		</right>
 		<right>
 			<name>View</name>
@@ -1561,6 +1650,17 @@
 		</right>
 		<right>
 			<name>AnalyticsSystemClient</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.ОчередьПриемаСообщенийЭДО</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
 			<value>true</value>
 		</right>
 	</object>
@@ -1941,6 +2041,25 @@
 		</right>
 	</object>
 	<object>
+		<name>InformationRegister.ЧерновикиЭлектронныхДокументовЛегкийКлиентЭДО</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Update</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>InformationRegister.СоставПакетовЭДОДокументооборот</name>
 		<right>
 			<name>Read</name>
@@ -1982,6 +2101,37 @@
 		<right>
 			<name>Edit</name>
 			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.КлассификаторПолномочийФНСМЧД002</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Update</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveSetDeletionMark</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveClearDeletionMark</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InputByString</name>
+			<value>true</value>
 		</right>
 	</object>
 	<object>

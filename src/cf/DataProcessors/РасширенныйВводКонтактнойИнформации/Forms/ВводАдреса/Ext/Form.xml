@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
 	<Title>
 		<v8:item>
 			<v8:lang>ru</v8:lang>
@@ -234,6 +234,7 @@
 			</ChildItems>
 		</CommandBar>
 		<UsualGroup name="ГруппаИнформация" id="537">
+			<Visible>false</Visible>
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -243,6 +244,7 @@
 			<HorizontalStretch>true</HorizontalStretch>
 			<Group>AlwaysHorizontal</Group>
 			<VerticalAlign>Center</VerticalAlign>
+			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<BackColor>style:ЦветФонаПредупреждения</BackColor>
@@ -292,6 +294,7 @@
 			<HorizontalStretch>false</HorizontalStretch>
 			<GroupHorizontalAlign>Left</GroupHorizontalAlign>
 			<HorizontalAlign>Left</HorizontalAlign>
+			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаИсторическийАдресРасширеннаяПодсказка" id="359"/>
@@ -307,6 +310,7 @@
 					<Group>AlwaysHorizontal</Group>
 					<ChildrenAlign>ItemsLeftTitlesLeft</ChildrenAlign>
 					<HorizontalSpacing>None</HorizontalSpacing>
+					<Behavior>Usual</Behavior>
 					<Representation>None</Representation>
 					<United>false</United>
 					<ShowTitle>false</ShowTitle>
@@ -409,6 +413,7 @@
 												</v8:item>
 											</ToolTip>
 											<Group>Vertical</Group>
+											<Behavior>Usual</Behavior>
 											<Representation>None</Representation>
 											<ShowTitle>false</ShowTitle>
 											<ExtendedTooltip name="ГруппаОсновныеПоляАдресаРасширеннаяПодсказка" id="517"/>
@@ -530,6 +535,7 @@
 											</Title>
 											<Group>AlwaysHorizontal</Group>
 											<HorizontalAlign>Left</HorizontalAlign>
+											<Behavior>Usual</Behavior>
 											<Representation>None</Representation>
 											<ShowTitle>false</ShowTitle>
 											<ThroughAlign>Use</ThroughAlign>
@@ -544,6 +550,7 @@
 													</Title>
 													<HorizontalStretch>false</HorizontalStretch>
 													<Group>Vertical</Group>
+													<Behavior>Usual</Behavior>
 													<Representation>None</Representation>
 													<ShowTitle>false</ShowTitle>
 													<ThroughAlign>DontUse</ThroughAlign>
@@ -557,6 +564,7 @@
 																</v8:item>
 															</Title>
 															<Group>AlwaysHorizontal</Group>
+															<Behavior>Usual</Behavior>
 															<Representation>None</Representation>
 															<United>false</United>
 															<ShowTitle>false</ShowTitle>
@@ -615,6 +623,7 @@
 																</v8:item>
 															</Title>
 															<Group>AlwaysHorizontal</Group>
+															<Behavior>Usual</Behavior>
 															<Representation>None</Representation>
 															<United>false</United>
 															<ShowTitle>false</ShowTitle>
@@ -675,6 +684,7 @@
 																</v8:item>
 															</Title>
 															<Group>Vertical</Group>
+															<Behavior>Usual</Behavior>
 															<Representation>None</Representation>
 															<United>false</United>
 															<ShowTitle>false</ShowTitle>
@@ -688,6 +698,7 @@
 																</v8:item>
 															</Title>
 															<Group>AlwaysHorizontal</Group>
+															<Behavior>Usual</Behavior>
 															<Representation>None</Representation>
 															<United>false</United>
 															<ShowTitle>false</ShowTitle>
@@ -744,6 +755,7 @@
 																</v8:item>
 															</Title>
 															<Group>Vertical</Group>
+															<Behavior>Usual</Behavior>
 															<Representation>None</Representation>
 															<United>false</United>
 															<ShowTitle>false</ShowTitle>
@@ -756,6 +768,7 @@
 																	<v8:content>Панель команд</v8:content>
 																</v8:item>
 															</Title>
+															<Behavior>Usual</Behavior>
 															<ShowTitle>false</ShowTitle>
 															<ExtendedTooltip name="ГруппаМобильныйКлиентРасширеннаяПодсказка" id="534"/>
 															<ChildItems>
@@ -782,6 +795,7 @@
 													<Width>32</Width>
 													<HorizontalStretch>false</HorizontalStretch>
 													<Group>AlwaysHorizontal</Group>
+													<Behavior>Usual</Behavior>
 													<Representation>None</Representation>
 													<ShowTitle>false</ShowTitle>
 													<ExtendedTooltip name="ГруппаИнформационныеСообщенияРасширеннаяПодсказка" id="529"/>
@@ -795,6 +809,7 @@
 																</v8:item>
 															</Title>
 															<Group>Horizontal</Group>
+															<Behavior>Usual</Behavior>
 															<Representation>None</Representation>
 															<ExtendedTooltip name="СервисНедоступенРасширеннаяПодсказка" id="273"/>
 															<ChildItems>
@@ -821,6 +836,7 @@
 																		</v8:item>
 																	</Title>
 																	<Group>Vertical</Group>
+																	<Behavior>Usual</Behavior>
 																	<Representation>None</Representation>
 																	<ShowTitle>false</ShowTitle>
 																	<ExtendedTooltip name="ГруппаСообщенияСервисаРасширеннаяПодсказка" id="259"/>
@@ -891,16 +907,16 @@
 																	</Title>
 																	<ExtendedTooltip name="СообщениеОбОшибкеРасширеннаяПодсказка" id="349"/>
 																	<ChildItems>
-																		<LabelDecoration name="СообщениеОбОбращенииВФИАС" id="355">
+																		<LabelDecoration name="СообщениеОбОбращенииВФНС" id="355">
 																			<Title formatted="true">
 																				<v8:item>
 																					<v8:lang>ru</v8:lang>
-																					<v8:content>Рекомендуется дополнительно &lt;link https://fias.nalog.ru/ExtendedSearch&gt;проверить адрес на сайте ФИАС&lt;/&gt;.
+																					<v8:content>Рекомендуется дополнительно &lt;link https://fias.nalog.ru/ExtendedSearch&gt;проверить адрес на сайте ФНС России&lt;/&gt;.
 О некорректных или неполных адресных сведениях рекомендуется  сообщать в службу &lt;link https://www.nalog.ru/rn77/service/service_feedback/?service=22&gt;технической  поддержки&lt;/&gt; online-сервисов ФНС России.</v8:content>
 																				</v8:item>
 																			</Title>
-																			<ContextMenu name="СообщениеОбОбращенииВФИАСКонтекстноеМеню" id="356"/>
-																			<ExtendedTooltip name="СообщениеОбОбращенииВФИАСРасширеннаяПодсказка" id="357"/>
+																			<ContextMenu name="СообщениеОбОбращенииВФНСКонтекстноеМеню" id="356"/>
+																			<ExtendedTooltip name="СообщениеОбОбращенииВФНСРасширеннаяПодсказка" id="357"/>
 																		</LabelDecoration>
 																	</ChildItems>
 																</Page>
@@ -922,6 +938,7 @@
 												</v8:item>
 											</Title>
 											<Group>Vertical</Group>
+											<Behavior>Usual</Behavior>
 											<Representation>None</Representation>
 											<ShowTitle>false</ShowTitle>
 											<ExtendedTooltip name="ГруппаДополнительныеПоляАдресаРасширеннаяПодсказка" id="525"/>
@@ -980,6 +997,7 @@
 												</v8:item>
 											</Title>
 											<Group>Vertical</Group>
+											<Behavior>Usual</Behavior>
 											<Representation>None</Representation>
 											<United>false</United>
 											<ShowTitle>false</ShowTitle>
@@ -1011,7 +1029,7 @@
 																<Title>
 																	<v8:item>
 																		<v8:lang>ru</v8:lang>
-																		<v8:content>Представление адреса контекстное меню группа 1</v8:content>
+																		<v8:content>Представление адреса</v8:content>
 																	</v8:item>
 																</Title>
 																<ExtendedTooltip name="ПредставлениеАдресаКонтекстноеМенюГруппаРасширеннаяПодсказка" id="157"/>
@@ -1049,6 +1067,7 @@
 												</v8:item>
 											</Title>
 											<Group>AlwaysHorizontal</Group>
+											<Behavior>Usual</Behavior>
 											<Representation>None</Representation>
 											<ShowTitle>false</ShowTitle>
 											<ThroughAlign>Use</ThroughAlign>
@@ -1062,6 +1081,7 @@
 														</v8:item>
 													</Title>
 													<Group>AlwaysHorizontal</Group>
+													<Behavior>Usual</Behavior>
 													<Representation>None</Representation>
 													<ShowTitle>false</ShowTitle>
 													<ExtendedTooltip name="ГруппаСтранаСвободнаяФормаЗначениеРасширеннаяПодсказка" id="473"/>
@@ -1178,6 +1198,7 @@
 			</Title>
 			<Group>AlwaysHorizontal</Group>
 			<VerticalAlign>Center</VerticalAlign>
+			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ПанельВнизуРасширеннаяПодсказка" id="492"/>
@@ -1218,7 +1239,7 @@
 												<v8:lang>ru</v8:lang>
 												<v8:content>Адреса могут быть введены в следующих форматах:
   • в историческом формате – по административно-территориальному делению;
-  • по муниципальному делению с учетом требований Федерального закона от 06.10.1999 № 131-ФЗ «Об общих принципах организации местного самоуправления в Российской Федерации».</v8:content>
+  • по муниципальному делению с учетом требований Федерального закона от 06.10.1999 № 131-ФЗ "Об общих принципах организации местного самоуправления в Российской Федерации".</v8:content>
 											</v8:item>
 										</Title>
 									</ExtendedTooltip>
@@ -1250,7 +1271,7 @@
 												<v8:lang>ru</v8:lang>
 												<v8:content>Адреса могут быть введены в следующих форматах:
   • в историческом формате – по административно-территориальному делению;
-  • по муниципальному делению с учетом требований Федерального закона от 06.10.1999 № 131-ФЗ «Об общих принципах организации местного самоуправления в Российской Федерации».</v8:content>
+  • по муниципальному делению с учетом требований Федерального закона от 06.10.1999 № 131-ФЗ "Об общих принципах организации местного самоуправления в Российской Федерации".</v8:content>
 											</v8:item>
 										</Title>
 									</ExtendedTooltip>
@@ -1293,9 +1314,9 @@
 							<Title formatted="true">
 								<v8:item>
 									<v8:lang>ru</v8:lang>
-									<v8:content>Адресные сведения предоставляются &lt;link https://fias.nalog.ru/&gt;Федеральной информационной адресной системой&lt;/&gt; (ФИАС). Ее оператор - ФНС России. 
+									<v8:content>Адресные сведения предоставляются &lt;link https://fias.nalog.ru/&gt;Государственным адресным реестром&lt;/&gt; (ГАР). Ее оператор - ФНС России. 
 
-В случае если не удалось подобрать адрес или введенный адрес не проходит проверку, следует проверить его наличие на сайте ФИАС и обратиться в &lt;link https://www.nalog.ru/rn77/service/service_feedback/?service=22&gt;службу поддержки online-сервисов&lt;/&gt; ФНС России.
+В случае если не удалось подобрать адрес или введенный адрес не проходит проверку, следует проверить его наличие на сайте ФНС России и обратиться в &lt;link https://www.nalog.ru/rn77/service/service_feedback/?service=22&gt;службу поддержки online-сервисов&lt;/&gt; ФНС России.
 
 В иных случаях обратитесь в службу поддержки фирмы "1С", предоставив &lt;link e1cib/data/РегистрСведений.АдресныеОбъекты.Форма.СведенияОбАдресномКлассификаторе&gt;технические сведения о возникшем затруднении&lt;/&gt;.</v8:content>
 								</v8:item>
@@ -1923,6 +1944,11 @@
 				</v8:StringQualifiers>
 			</Type>
 		</Attribute>
+		<Attribute name="ИсключатьГородИзМуниципальногоАдреса" id="58">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
 	</Attributes>
 	<Commands>
 		<Command name="КомандаОК" id="1">
@@ -1951,7 +1977,7 @@
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Проверить заполнение адреса в формате ФИАС</v8:content>
+					<v8:content>Проверить заполнение адреса в формате адресного классификатора</v8:content>
 				</v8:item>
 			</ToolTip>
 			<Picture>
@@ -2043,7 +2069,7 @@
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Подключить интернет поддержку</v8:content>
+					<v8:content>Подключить Интернет-поддержку пользователей</v8:content>
 				</v8:item>
 			</ToolTip>
 			<Action>АвторизацияНаСайтеПоддержкиПользователей</Action>
@@ -2103,7 +2129,7 @@
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>ФИАС</v8:content>
+					<v8:content>Адресный классификатор</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>
@@ -2235,6 +2261,12 @@
 			<Type>
 				<v8:Type>xs:boolean</v8:Type>
 			</Type>
+		</Parameter>
+		<Parameter name="ИзФормыИстории">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<KeyParameter>true</KeyParameter>
 		</Parameter>
 	</Parameters>
 </Form>

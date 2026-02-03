@@ -113,10 +113,6 @@
 		<AutoRecord>Deny</AutoRecord>
 	</Item>
 	<Item>
-		<Metadata>InformationRegister.ПроизошедшиеБизнесСобытия</Metadata>
-		<AutoRecord>Deny</AutoRecord>
-	</Item>
-	<Item>
 		<Metadata>Constant.ОграничениеКоличестваВсегоВДеньSMS</Metadata>
 		<AutoRecord>Deny</AutoRecord>
 	</Item>
@@ -173,6 +169,10 @@
 		<AutoRecord>Deny</AutoRecord>
 	</Item>
 	<Item>
+		<Metadata>Constant.СпособВставкиШтампаЭПВPDF</Metadata>
+		<AutoRecord>Deny</AutoRecord>
+	</Item>
+	<Item>
 		<Metadata>Constant.ИспользоватьВидыДокументов</Metadata>
 		<AutoRecord>Deny</AutoRecord>
 	</Item>
@@ -201,10 +201,6 @@
 		<AutoRecord>Deny</AutoRecord>
 	</Item>
 	<Item>
-		<Metadata>Catalog.УведомленияПрограммы</Metadata>
-		<AutoRecord>Deny</AutoRecord>
-	</Item>
-	<Item>
 		<Metadata>Constant.ИспользоватьМестаХранения</Metadata>
 		<AutoRecord>Deny</AutoRecord>
 	</Item>
@@ -230,6 +226,10 @@
 	</Item>
 	<Item>
 		<Metadata>Catalog.ПолныеРоли</Metadata>
+		<AutoRecord>Deny</AutoRecord>
+	</Item>
+	<Item>
+		<Metadata>Constant.ДатаРедакцииКлассификатораОбращенийГраждан</Metadata>
 		<AutoRecord>Deny</AutoRecord>
 	</Item>
 	<Item>
@@ -405,6 +405,10 @@
 		<AutoRecord>Deny</AutoRecord>
 	</Item>
 	<Item>
+		<Metadata>Constant.ВремяХраненияЖурналаСобытийМЭДО</Metadata>
+		<AutoRecord>Deny</AutoRecord>
+	</Item>
+	<Item>
 		<Metadata>Catalog.КлючевыеОперации</Metadata>
 		<AutoRecord>Deny</AutoRecord>
 	</Item>
@@ -525,6 +529,10 @@
 		<AutoRecord>Deny</AutoRecord>
 	</Item>
 	<Item>
+		<Metadata>Document.УведомлениеМЭДО</Metadata>
+		<AutoRecord>Deny</AutoRecord>
+	</Item>
+	<Item>
 		<Metadata>Constant.ИспользоватьВопросыДеятельности</Metadata>
 		<AutoRecord>Deny</AutoRecord>
 	</Item>
@@ -621,6 +629,10 @@
 		<AutoRecord>Deny</AutoRecord>
 	</Item>
 	<Item>
+		<Metadata>Constant.ВариантАвтосозданияУведомленийМЭДО</Metadata>
+		<AutoRecord>Deny</AutoRecord>
+	</Item>
+	<Item>
 		<Metadata>Catalog.Метрики</Metadata>
 		<AutoRecord>Deny</AutoRecord>
 	</Item>
@@ -713,6 +725,10 @@
 		<AutoRecord>Deny</AutoRecord>
 	</Item>
 	<Item>
+		<Metadata>InformationRegister.НастройкиКонтрагентовМЭДО</Metadata>
+		<AutoRecord>Deny</AutoRecord>
+	</Item>
+	<Item>
 		<Metadata>Catalog.УсловияМаршрутизации</Metadata>
 		<AutoRecord>Deny</AutoRecord>
 	</Item>
@@ -729,6 +745,10 @@
 		<AutoRecord>Deny</AutoRecord>
 	</Item>
 	<Item>
+		<Metadata>Catalog.ПричиныОтказаВРегистрацииМЭДО</Metadata>
+		<AutoRecord>Deny</AutoRecord>
+	</Item>
+	<Item>
 		<Metadata>Constant.ПровайдерSMS</Metadata>
 		<AutoRecord>Deny</AutoRecord>
 	</Item>
@@ -738,6 +758,10 @@
 	</Item>
 	<Item>
 		<Metadata>InformationRegister.ЭлектронныеПодписи</Metadata>
+		<AutoRecord>Deny</AutoRecord>
+	</Item>
+	<Item>
+		<Metadata>Constant.АдресПубликации1СДО30</Metadata>
 		<AutoRecord>Deny</AutoRecord>
 	</Item>
 	<Item>
@@ -777,6 +801,10 @@
 		<AutoRecord>Deny</AutoRecord>
 	</Item>
 	<Item>
+		<Metadata>Constant.ПрограммаРаспознавания</Metadata>
+		<AutoRecord>Deny</AutoRecord>
+	</Item>
+	<Item>
 		<Metadata>Catalog.Виджеты</Metadata>
 		<AutoRecord>Deny</AutoRecord>
 	</Item>
@@ -797,7 +825,7 @@
 		<AutoRecord>Deny</AutoRecord>
 	</Item>
 	<Item>
-		<Metadata>Constant.ИспользоватьInternetExplorerДляПолученияТекстаИзHTML</Metadata>
+		<Metadata>Catalog.МестаСоставленияДокументовМЭДО</Metadata>
 		<AutoRecord>Deny</AutoRecord>
 	</Item>
 	<Item>
@@ -862,6 +890,10 @@
 	</Item>
 	<Item>
 		<Metadata>Constant.ОчищатьДанныеДляПолнотекстовогоПоиска</Metadata>
+		<AutoRecord>Deny</AutoRecord>
+	</Item>
+	<Item>
+		<Metadata>InformationRegister.СвязиОбъектовИнтегрированныхСистем</Metadata>
 		<AutoRecord>Deny</AutoRecord>
 	</Item>
 	<Item>
@@ -969,6 +1001,10 @@
 		<AutoRecord>Deny</AutoRecord>
 	</Item>
 	<Item>
+		<Metadata>InformationRegister.НастройкиОрганизацийМЭДО</Metadata>
+		<AutoRecord>Deny</AutoRecord>
+	</Item>
+	<Item>
 		<Metadata>Document.Бронь</Metadata>
 		<AutoRecord>Deny</AutoRecord>
 	</Item>
@@ -1026,6 +1062,10 @@
 	</Item>
 	<Item>
 		<Metadata>Catalog.ДелегированиеПрав</Metadata>
+		<AutoRecord>Deny</AutoRecord>
+	</Item>
+	<Item>
+		<Metadata>InformationRegister.ОчередьУведомлений</Metadata>
 		<AutoRecord>Deny</AutoRecord>
 	</Item>
 	<Item>
@@ -1089,7 +1129,19 @@
 		<AutoRecord>Deny</AutoRecord>
 	</Item>
 	<Item>
+		<Metadata>Constant.АвтоматическиОтправлятьКвитанцииМЭДО</Metadata>
+		<AutoRecord>Deny</AutoRecord>
+	</Item>
+	<Item>
+		<Metadata>Document.ДанныеДокументаМЭДО</Metadata>
+		<AutoRecord>Deny</AutoRecord>
+	</Item>
+	<Item>
 		<Metadata>InformationRegister.СвязиДокументов</Metadata>
+		<AutoRecord>Deny</AutoRecord>
+	</Item>
+	<Item>
+		<Metadata>Document.КвитанцияМЭДО</Metadata>
 		<AutoRecord>Deny</AutoRecord>
 	</Item>
 	<Item>
@@ -1429,6 +1481,10 @@
 		<AutoRecord>Deny</AutoRecord>
 	</Item>
 	<Item>
+		<Metadata>InformationRegister.СостоянияДокументовМЭДО</Metadata>
+		<AutoRecord>Deny</AutoRecord>
+	</Item>
+	<Item>
 		<Metadata>InformationRegister.СведенияОПомещениях</Metadata>
 		<AutoRecord>Deny</AutoRecord>
 	</Item>
@@ -1469,11 +1525,11 @@
 		<AutoRecord>Deny</AutoRecord>
 	</Item>
 	<Item>
-		<Metadata>Constant.АдресПубликацииНаВебСервере</Metadata>
+		<Metadata>Catalog.ГрафикУчетаСамочувствияСотрудников</Metadata>
 		<AutoRecord>Deny</AutoRecord>
 	</Item>
 	<Item>
-		<Metadata>Catalog.ГрафикУчетаСамочувствияСотрудников</Metadata>
+		<Metadata>Catalog.ВидыДокументовМЭДО</Metadata>
 		<AutoRecord>Deny</AutoRecord>
 	</Item>
 	<Item>
@@ -1717,6 +1773,10 @@
 		<AutoRecord>Deny</AutoRecord>
 	</Item>
 	<Item>
+		<Metadata>Constant.РазмерПорцииОбработкиМЭДО</Metadata>
+		<AutoRecord>Deny</AutoRecord>
+	</Item>
+	<Item>
 		<Metadata>InformationRegister.ПапкиПисемБыстрогоДоступа</Metadata>
 		<AutoRecord>Deny</AutoRecord>
 	</Item>
@@ -1801,6 +1861,10 @@
 		<AutoRecord>Deny</AutoRecord>
 	</Item>
 	<Item>
+		<Metadata>Constant.АктуализироватьКлассификаторОбращенийГраждан</Metadata>
+		<AutoRecord>Deny</AutoRecord>
+	</Item>
+	<Item>
 		<Metadata>InformationRegister.ПорядокПроектныхЗадач</Metadata>
 		<AutoRecord>Deny</AutoRecord>
 	</Item>
@@ -1877,6 +1941,10 @@
 		<AutoRecord>Deny</AutoRecord>
 	</Item>
 	<Item>
+		<Metadata>Constant.РегистрацияВ1СДО30</Metadata>
+		<AutoRecord>Deny</AutoRecord>
+	</Item>
+	<Item>
 		<Metadata>Constant.СрокХраненияПротоколаРаботыПользователей</Metadata>
 		<AutoRecord>Deny</AutoRecord>
 	</Item>
@@ -1905,6 +1973,10 @@
 		<AutoRecord>Deny</AutoRecord>
 	</Item>
 	<Item>
+		<Metadata>Constant.ИмяПользователя1СДО30</Metadata>
+		<AutoRecord>Deny</AutoRecord>
+	</Item>
+	<Item>
 		<Metadata>Constant.ОграничиватьДоступЧерезВебСерверы</Metadata>
 		<AutoRecord>Deny</AutoRecord>
 	</Item>
@@ -1914,6 +1986,10 @@
 	</Item>
 	<Item>
 		<Metadata>Document.ЕженедельныйОтчет</Metadata>
+		<AutoRecord>Deny</AutoRecord>
+	</Item>
+	<Item>
+		<Metadata>Constant.ОбязательныйУчетДелПоМестамХранения</Metadata>
 		<AutoRecord>Deny</AutoRecord>
 	</Item>
 	<Item>
@@ -1946,6 +2022,10 @@
 	</Item>
 	<Item>
 		<Metadata>Catalog.АдреснаяКнига</Metadata>
+		<AutoRecord>Deny</AutoRecord>
+	</Item>
+	<Item>
+		<Metadata>Constant.ИспользоватьGhostscript</Metadata>
 		<AutoRecord>Deny</AutoRecord>
 	</Item>
 	<Item>
@@ -2002,6 +2082,10 @@
 	</Item>
 	<Item>
 		<Metadata>InformationRegister.ДвоичныеДанныеФайлов</Metadata>
+		<AutoRecord>Deny</AutoRecord>
+	</Item>
+	<Item>
+		<Metadata>Constant.ВестиУчетСканКопийОригиналовДокументов</Metadata>
 		<AutoRecord>Deny</AutoRecord>
 	</Item>
 	<Item>
@@ -2138,6 +2222,10 @@
 	</Item>
 	<Item>
 		<Metadata>Catalog.БанковскиеСчета</Metadata>
+		<AutoRecord>Deny</AutoRecord>
+	</Item>
+	<Item>
+		<Metadata>Constant.СрокХраненияУведомленийПрограммы</Metadata>
 		<AutoRecord>Deny</AutoRecord>
 	</Item>
 	<Item>

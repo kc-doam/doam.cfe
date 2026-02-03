@@ -170,18 +170,18 @@
 			<ExecuteAfterWriteDataHistoryVersionProcessing>false</ExecuteAfterWriteDataHistoryVersionProcessing>
 		</Properties>
 		<ChildObjects>
-			<Resource uuid="7862cf85-af1b-42ca-a031-9cad8c8447d8">
+			<Resource uuid="4fdbd5fb-0bea-4bee-bec3-cc63d8fd5c58">
 				<Properties>
-					<Name>СпособНумерации</Name>
+					<Name>Нумератор</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Способ нумерации</v8:content>
+							<v8:content>Нумератор</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
 					<Type>
-						<v8:Type>cfg:EnumRef.СпособыНумерации</v8:Type>
+						<v8:Type>cfg:CatalogRef.Нумераторы</v8:Type>
 					</Type>
 					<PasswordMode>false</PasswordMode>
 					<Format/>
@@ -209,18 +209,18 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Resource>
-			<Resource uuid="4fdbd5fb-0bea-4bee-bec3-cc63d8fd5c58">
+			<Resource uuid="7862cf85-af1b-42ca-a031-9cad8c8447d8">
 				<Properties>
-					<Name>Нумератор</Name>
+					<Name>СпособНумерации</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Нумератор</v8:content>
+							<v8:content>Способ нумерации</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
 					<Type>
-						<v8:Type>cfg:CatalogRef.Нумераторы</v8:Type>
+						<v8:Type>cfg:EnumRef.СпособыНумерации</v8:Type>
 					</Type>
 					<PasswordMode>false</PasswordMode>
 					<Format/>

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
 	<Title>
 		<v8:item>
 			<v8:lang>ru</v8:lang>
@@ -82,6 +82,7 @@
 			</ToolTip>
 			<Group>Vertical</Group>
 			<VerticalSpacing>Single</VerticalSpacing>
+			<Behavior>Usual</Behavior>
 			<Representation>NormalSeparation</Representation>
 			<United>false</United>
 			<ShowTitle>false</ShowTitle>
@@ -100,6 +101,7 @@
 							<v8:content>Группа встроенная почта тело1</v8:content>
 						</v8:item>
 					</ToolTip>
+					<Behavior>Usual</Behavior>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="ГруппаВстроеннаяПочтаТело1РасширеннаяПодсказка" id="839"/>
@@ -112,6 +114,7 @@
 								</v8:item>
 							</Title>
 							<Group>Horizontal</Group>
+							<Behavior>Usual</Behavior>
 							<Representation>None</Representation>
 							<United>false</United>
 							<ChildItemsWidth>Equal</ChildItemsWidth>
@@ -120,6 +123,7 @@
 							<ChildItems>
 								<UsualGroup name="ГруппаВстроеннаяПочтаЛево" id="408">
 									<Group>Vertical</Group>
+									<Behavior>Usual</Behavior>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="ГруппаВстроеннаяПочтаЛевоExtendedTooltip" id="659"/>
@@ -267,6 +271,7 @@
 												</v8:item>
 											</Title>
 											<Group>Horizontal</Group>
+											<Behavior>Usual</Behavior>
 											<Representation>None</Representation>
 											<ShowTitle>false</ShowTitle>
 											<ExtendedTooltip name="ГруппаСрокХраненияПротоколаДоставкиПочтыExtendedTooltip" id="666"/>
@@ -302,8 +307,7 @@
 											<ContextMenu name="ВыполнятьОтправкуВОтдельномРегламентномЗаданииКонтекстноеМеню" id="371"/>
 											<ExtendedTooltip name="ВыполнятьОтправкуВОтдельномРегламентномЗаданииExtendedTooltip" id="670"/>
 										</CheckBoxField>
-										<CheckBoxField name="ИспользоватьInternetExplorerДляПолученияТекстаИзHTML" id="832">
-											<DataPath>НаборКонстант.ИспользоватьInternetExplorerДляПолученияТекстаИзHTML</DataPath>
+										<InputField name="ИспользоватьInternetExplorerДляПолученияТекстаИзHTML" id="832">
 											<Title>
 												<v8:item>
 													<v8:lang>ru</v8:lang>
@@ -312,10 +316,9 @@
 											</Title>
 											<TitleLocation>Right</TitleLocation>
 											<ToolTipRepresentation>Button</ToolTipRepresentation>
-											<CheckBoxType>Auto</CheckBoxType>
 											<ContextMenu name="ИспользоватьInternetExplorerДляПолученияТекстаИзHTMLКонтекстноеМеню" id="833"/>
 											<ExtendedTooltip name="ИспользоватьInternetExplorerДляПолученияТекстаИзHTMLРасширеннаяПодсказка" id="834"/>
-										</CheckBoxField>
+										</InputField>
 										<CheckBoxField name="РазрешитьПеренаправлениеПисем" id="835">
 											<DataPath>НаборКонстант.РазрешитьПеренаправлениеПисем</DataPath>
 											<TitleLocation>Right</TitleLocation>
@@ -327,6 +330,7 @@
 								</UsualGroup>
 								<UsualGroup name="ГруппаВстроеннаяПочтаПраво" id="410">
 									<Group>Vertical</Group>
+									<Behavior>Usual</Behavior>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="ГруппаВстроеннаяПочтаПравоExtendedTooltip" id="682"/>
@@ -553,6 +557,7 @@
 												</v8:item>
 											</Title>
 											<Group>Horizontal</Group>
+											<Behavior>Usual</Behavior>
 											<Representation>None</Representation>
 											<ShowTitle>false</ShowTitle>
 											<ExtendedTooltip name="ГруппаМаксимальныйРазмерВнешнегоПисьмаExtendedTooltip" id="693"/>
@@ -650,6 +655,7 @@
 						</v8:item>
 					</Title>
 					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="ГруппаВстроеннаяПочтаПодвалExtendedTooltip" id="696"/>
@@ -679,6 +685,7 @@
 								</CheckBoxField>
 								<UsualGroup name="ГруппаСрокУстареванияHTMLПредставленияСодержанияПисем" id="376">
 									<Group>Horizontal</Group>
+									<Behavior>Usual</Behavior>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="ГруппаСрокУстареванияHTMLПредставленияСодержанияПисемExtendedTooltip" id="699"/>

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
 	<Title>
 		<v8:item>
 			<v8:lang>ru</v8:lang>
@@ -40,6 +40,7 @@
 			<Height>20</Height>
 			<VerticalStretch>true</VerticalStretch>
 			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаПолучателиИФотоExtendedTooltip" id="2"/>
@@ -78,7 +79,7 @@
 						<ChildItems>
 							<Button name="ПолучателиКонтекстноеМенюКопироватьВБуферОбмена" id="41">
 								<Type>CommandBarButton</Type>
-								<CommandName>279:88078230-1f6b-415f-99e4-ad2ff73810cf</CommandName>
+								<CommandName>Form.Item.Получатели.StandardCommand.CopyToClipboard</CommandName>
 								<ExtendedTooltip name="ПолучателиКонтекстноеМенюКопироватьВБуферОбменаExtendedTooltip" id="42"/>
 							</Button>
 							<Popup name="ПолучателиКонтекстноеМенюСохранитьКонтакт" id="43">
@@ -99,29 +100,7 @@
 									<xr:LoadTransparent>false</xr:LoadTransparent>
 								</Picture>
 								<ExtendedTooltip name="ПолучателиКонтекстноеМенюСохранитьКонтактExtendedTooltip" id="44"/>
-								<ChildItems>
-									<Button name="ПолучателиКонтекстноеМенюСоздатьЛичногоАдресата" id="45">
-										<Type>CommandBarButton</Type>
-										<CommandName>25:409b9a53-7f7e-4178-86c1-33176c7c7a7a</CommandName>
-										<ExtendedTooltip name="ПолучателиКонтекстноеМенюСоздатьЛичногоАдресатаExtendedTooltip" id="46"/>
-									</Button>
-									<Button name="ПолучателиКонтекстноеМенюСоздатьКонтрагента" id="47">
-										<Type>CommandBarButton</Type>
-										<CommandName>26:409b9a53-7f7e-4178-86c1-33176c7c7a7a</CommandName>
-										<ExtendedTooltip name="ПолучателиКонтекстноеМенюСоздатьКонтрагентаExtendedTooltip" id="48"/>
-									</Button>
-									<Button name="ПолучателиКонтекстноеМенюСоздатьКонтактноеЛицо" id="49">
-										<Type>CommandBarButton</Type>
-										<CommandName>27:409b9a53-7f7e-4178-86c1-33176c7c7a7a</CommandName>
-										<ExtendedTooltip name="ПолучателиКонтекстноеМенюСоздатьКонтактноеЛицоExtendedTooltip" id="50"/>
-									</Button>
-								</ChildItems>
 							</Popup>
-							<Button name="ПолучателиКонтекстноеМенюДобавитьВМоиКонтакты" id="51">
-								<Type>CommandBarButton</Type>
-								<CommandName>35:409b9a53-7f7e-4178-86c1-33176c7c7a7a</CommandName>
-								<ExtendedTooltip name="ПолучателиКонтекстноеМенюДобавитьВМоиКонтактыExtendedTooltip" id="52"/>
-							</Button>
 							<Popup name="ГруппаСпискиАдресов" id="53">
 								<Title>
 									<v8:item>
@@ -136,23 +115,6 @@
 									</v8:item>
 								</ToolTip>
 								<ExtendedTooltip name="ГруппаСпискиАдресовExtendedTooltip" id="54"/>
-								<ChildItems>
-									<Button name="ПолучателиКонтекстноеМенюДобавитьВСписок" id="55">
-										<Type>CommandBarButton</Type>
-										<CommandName>31:409b9a53-7f7e-4178-86c1-33176c7c7a7a</CommandName>
-										<ExtendedTooltip name="ПолучателиКонтекстноеМенюДобавитьВСписокExtendedTooltip" id="56"/>
-									</Button>
-									<Button name="ПолучателиКонтекстноеМенюДобавитьДоменВСписок" id="57">
-										<Type>CommandBarButton</Type>
-										<CommandName>32:409b9a53-7f7e-4178-86c1-33176c7c7a7a</CommandName>
-										<ExtendedTooltip name="ПолучателиКонтекстноеМенюДобавитьДоменВСписокExtendedTooltip" id="58"/>
-									</Button>
-									<Button name="ПолучателиКонтекстноеМенюСпискиАдресов" id="59">
-										<Type>CommandBarButton</Type>
-										<CommandName>33:409b9a53-7f7e-4178-86c1-33176c7c7a7a</CommandName>
-										<ExtendedTooltip name="ПолучателиКонтекстноеМенюСпискиАдресовExtendedTooltip" id="60"/>
-									</Button>
-								</ChildItems>
 							</Popup>
 						</ChildItems>
 					</ContextMenu>
@@ -265,6 +227,7 @@
 					</ToolTip>
 					<Width>30</Width>
 					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="ГруппаКарточкаИФотоРасширеннаяПодсказка" id="75"/>
@@ -306,7 +269,7 @@
 											<DataPath>Фотография</DataPath>
 											<TitleLocation>None</TitleLocation>
 											<Width>8</Width>
-											<Height>4</Height>
+											<Height>3</Height>
 											<HorizontalStretch>false</HorizontalStretch>
 											<VerticalStretch>false</VerticalStretch>
 											<PictureSize>AutoSize</PictureSize>
@@ -338,7 +301,7 @@
 									<ChildItems>
 										<PictureDecoration name="ДекорацияКартинкаПоУмолчанию" id="12">
 											<Width>8</Width>
-											<Height>4</Height>
+											<Height>3</Height>
 											<HorizontalStretch>false</HorizontalStretch>
 											<Title formatted="false">
 												<v8:item>
@@ -376,6 +339,7 @@
 								</v8:item>
 							</ToolTip>
 							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="ГруппаКарточкаРасширеннаяПодсказка" id="77"/>

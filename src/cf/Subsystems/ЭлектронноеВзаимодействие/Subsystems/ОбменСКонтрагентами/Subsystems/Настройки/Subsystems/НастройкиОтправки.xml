@@ -27,6 +27,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.НастройкиОтправкиЭДОСлужебный</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.НастройкиОтправкиЭДОСлужебныйКлиент</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.НастройкиОтправкиЭДОСлужебныйВызовСервера</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.НастройкиОтправкиЭДОСлужебныйПовтИспНаВызов</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

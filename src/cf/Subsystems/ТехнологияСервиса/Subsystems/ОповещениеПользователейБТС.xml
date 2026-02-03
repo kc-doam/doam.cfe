@@ -19,7 +19,9 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ОповещенияПользователей</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.ОбработкаОповещенийПользователей</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ОповещениеПользователейБТС</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">Enum.ВидыОповещенийПользователей</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.УдалитьВидыОповещенийПользователей</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ОповещениеПользователейБТСКлиентПереопределяемый</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ОповещениеПользователейБТСПереопределяемый</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

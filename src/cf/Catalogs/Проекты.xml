@@ -1576,38 +1576,15 @@
 					</Attribute>
 				</ChildObjects>
 			</TabularSection>
+			<Form>ДокументыПоПроекту</Form>
+			<Form>ПисьмаПоПроекту</Form>
+			<Form>ФайлыПоПроекту</Form>
 			<Form>ФормаВыбора</Form>
+			<Form>ФормаВыбораДляСозданияСвязи</Form>
 			<Form>ФормаГруппы</Form>
 			<Form>ФормаСписка</Form>
 			<Form>ФормаЭлемента</Form>
-			<Form>ФайлыПоПроекту</Form>
-			<Form>ДокументыПоПроекту</Form>
-			<Form>ПисьмаПоПроекту</Form>
-			<Form>ФормаВыбораДляСозданияСвязи</Form>
 			<Template>ПФ_MXL_Карточка</Template>
-			<Command uuid="0d314a6b-3064-4248-9fb1-cc6ea236d290">
-				<Properties>
-					<Name>ПечатьКарточки</Name>
-					<Synonym>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Карточка</v8:content>
-						</v8:item>
-					</Synonym>
-					<Comment/>
-					<Group>CommandGroup.Печать</Group>
-					<CommandParameterType>
-						<v8:Type>cfg:CatalogRef.Проекты</v8:Type>
-					</CommandParameterType>
-					<ParameterUseMode>Multiple</ParameterUseMode>
-					<ModifiesData>false</ModifiesData>
-					<Representation>Auto</Representation>
-					<ToolTip/>
-					<Picture/>
-					<Shortcut/>
-					<OnMainServerUnavalableBehavior>Auto</OnMainServerUnavalableBehavior>
-				</Properties>
-			</Command>
 			<Command uuid="90bc794e-3b57-48ad-a9d5-84e85b4c7acd">
 				<Properties>
 					<Name>ВсеПроекты</Name>
@@ -1652,29 +1629,6 @@
 					<OnMainServerUnavalableBehavior>Auto</OnMainServerUnavalableBehavior>
 				</Properties>
 			</Command>
-			<Command uuid="609e12d3-9f81-415d-8872-0514ea783a4a">
-				<Properties>
-					<Name>ФайлыПоПроекту</Name>
-					<Synonym>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Файлы</v8:content>
-						</v8:item>
-					</Synonym>
-					<Comment/>
-					<Group>FormNavigationPanelGoTo</Group>
-					<CommandParameterType>
-						<v8:Type>cfg:CatalogRef.Проекты</v8:Type>
-					</CommandParameterType>
-					<ParameterUseMode>Single</ParameterUseMode>
-					<ModifiesData>false</ModifiesData>
-					<Representation>Auto</Representation>
-					<ToolTip/>
-					<Picture/>
-					<Shortcut/>
-					<OnMainServerUnavalableBehavior>Auto</OnMainServerUnavalableBehavior>
-				</Properties>
-			</Command>
 			<Command uuid="0375a47d-f935-44ac-9f87-5083186c14d2">
 				<Properties>
 					<Name>ОтправитьПроекты</Name>
@@ -1690,6 +1644,52 @@
 						<v8:Type>cfg:CatalogRef.Проекты</v8:Type>
 					</CommandParameterType>
 					<ParameterUseMode>Multiple</ParameterUseMode>
+					<ModifiesData>false</ModifiesData>
+					<Representation>Auto</Representation>
+					<ToolTip/>
+					<Picture/>
+					<Shortcut/>
+					<OnMainServerUnavalableBehavior>Auto</OnMainServerUnavalableBehavior>
+				</Properties>
+			</Command>
+			<Command uuid="0d314a6b-3064-4248-9fb1-cc6ea236d290">
+				<Properties>
+					<Name>ПечатьКарточки</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Карточка</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Group>CommandGroup.Печать</Group>
+					<CommandParameterType>
+						<v8:Type>cfg:CatalogRef.Проекты</v8:Type>
+					</CommandParameterType>
+					<ParameterUseMode>Multiple</ParameterUseMode>
+					<ModifiesData>false</ModifiesData>
+					<Representation>Auto</Representation>
+					<ToolTip/>
+					<Picture/>
+					<Shortcut/>
+					<OnMainServerUnavalableBehavior>Auto</OnMainServerUnavalableBehavior>
+				</Properties>
+			</Command>
+			<Command uuid="609e12d3-9f81-415d-8872-0514ea783a4a">
+				<Properties>
+					<Name>ФайлыПоПроекту</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Файлы</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Group>FormNavigationPanelGoTo</Group>
+					<CommandParameterType>
+						<v8:Type>cfg:CatalogRef.Проекты</v8:Type>
+					</CommandParameterType>
+					<ParameterUseMode>Single</ParameterUseMode>
 					<ModifiesData>false</ModifiesData>
 					<Representation>Auto</Representation>
 					<ToolTip/>

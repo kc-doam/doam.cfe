@@ -217,8 +217,8 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Dimension>
-			<Form>ФормаСписка</Form>
 			<Form>ФормаЗаписи</Form>
+			<Form>ФормаСписка</Form>
 			<Command uuid="836e316c-19eb-4544-9673-88fb226d28cb">
 				<Properties>
 					<Name>РазрешенныеМобильныеПользователи</Name>

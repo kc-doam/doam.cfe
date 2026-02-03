@@ -1,16 +1,17 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
 	<Title>
 		<v8:item>
 			<v8:lang>ru</v8:lang>
 			<v8:content>Расшифровка данных</v8:content>
 		</v8:item>
 	</Title>
-	<Width>48</Width>
+	<Width>56</Width>
 	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
 	<AutoTitle>false</AutoTitle>
-	<CommandBarLocation>None</CommandBarLocation>
+	<CommandBarLocation>Bottom</CommandBarLocation>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<HorizontalAlign>Right</HorizontalAlign>
 		<Autofill>false</Autofill>
 	</AutoCommandBar>
 	<Events>
@@ -24,12 +25,14 @@
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Группа представление данных</v8:content>
+					<v8:content>Представление данных</v8:content>
 				</v8:item>
 			</Title>
-			<Group>Horizontal</Group>
+			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
 			<Representation>NormalSeparation</Representation>
 			<ShowTitle>false</ShowTitle>
+			<ThroughAlign>Use</ThroughAlign>
 			<ExtendedTooltip name="ГруппаПредставлениеДанныхРасширеннаяПодсказка" id="454"/>
 			<ChildItems>
 				<LabelField name="ПредставлениеДанных" id="18">
@@ -41,6 +44,7 @@
 						</v8:item>
 					</Title>
 					<AutoMaxWidth>false</AutoMaxWidth>
+					<HorizontalStretch>true</HorizontalStretch>
 					<Hiperlink>true</Hiperlink>
 					<ContextMenu name="ПредставлениеДанныхКонтекстноеМеню" id="19"/>
 					<ExtendedTooltip name="ПредставлениеДанныхРасширеннаяПодсказка" id="20"/>
@@ -51,326 +55,105 @@
 			</ChildItems>
 		</UsualGroup>
 		<UsualGroup name="ГруппаРасшифровка" id="378">
-			<TitleFont ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
-			<Group>Vertical</Group>
-			<Representation>None</Representation>
-			<ShowTitle>false</ShowTitle>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Введите пароль закрытого ключа сертификата</v8:content>
+				</v8:item>
+			</Title>
+			<Behavior>Usual</Behavior>
+			<ThroughAlign>Use</ThroughAlign>
 			<ExtendedTooltip name="ГруппаРасшифровкаРасширеннаяПодсказка" id="379"/>
 			<ChildItems>
-				<Pages name="СтраницыСертификаты" id="460">
+				<UsualGroup name="ГруппаПоля" id="433">
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Страницы сертификаты</v8:content>
+							<v8:content>Поля</v8:content>
 						</v8:item>
 					</Title>
-					<ToolTip>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Страницы сертификаты</v8:content>
-						</v8:item>
-					</ToolTip>
-					<PagesRepresentation>None</PagesRepresentation>
-					<ExtendedTooltip name="СтраницыСертификатыРасширеннаяПодсказка" id="461"/>
+					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаПоляРасширеннаяПодсказка" id="434"/>
 					<ChildItems>
-						<Page name="СтраницаСертификат" id="462">
-							<ExtendedTooltip name="СтраницаСертификатРасширеннаяПодсказка" id="463"/>
+						<InputField name="Сертификат" id="313">
+							<DataPath>Сертификат</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Сертификат</v8:content>
+								</v8:item>
+							</Title>
+							<DropListButton>false</DropListButton>
+							<ChoiceButton>true</ChoiceButton>
+							<ChoiceButtonRepresentation>ShowInInputField</ChoiceButtonRepresentation>
+							<OpenButton>true</OpenButton>
+							<CreateButton>false</CreateButton>
+							<QuickChoice>false</QuickChoice>
+							<ChoiceHistoryOnInput>DontUse</ChoiceHistoryOnInput>
+							<ContextMenu name="СертификатКонтекстноеМеню" id="314"/>
+							<ExtendedTooltip name="СертификатРасширеннаяПодсказка" id="315"/>
+							<Events>
+								<Event name="OnChange">СертификатПриИзменении</Event>
+								<Event name="AutoComplete">СертификатАвтоПодбор</Event>
+								<Event name="StartChoice">СертификатНачалоВыбора</Event>
+								<Event name="Opening">СертификатОткрытие</Event>
+								<Event name="TextEditEnd">СертификатОкончаниеВводаТекста</Event>
+								<Event name="ChoiceProcessing">СертификатОбработкаВыбора</Event>
+							</Events>
+						</InputField>
+						<UsualGroup name="ГруппаПароль" id="455">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Пароль</v8:content>
+								</v8:item>
+							</Title>
+							<Group>AlwaysHorizontal</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаПарольРасширеннаяПодсказка" id="456"/>
 							<ChildItems>
-								<UsualGroup name="ГруппаСертификатШапка" id="464">
+								<InputField name="Пароль" id="316">
+									<DataPath>Пароль</DataPath>
 									<Title>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
-											<v8:content>Группа сертификат шапка</v8:content>
+											<v8:content>Пароль</v8:content>
 										</v8:item>
 									</Title>
-									<ToolTip>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Группа сертификат шапка</v8:content>
-										</v8:item>
-									</ToolTip>
-									<Group>Horizontal</Group>
-									<Representation>None</Representation>
-									<ShowTitle>false</ShowTitle>
-									<ExtendedTooltip name="ГруппаСертификатШапкаРасширеннаяПодсказка" id="465"/>
-									<ChildItems>
-										<LabelDecoration name="СертификатЗаголовок" id="466">
-											<Title formatted="false">
-												<v8:item>
-													<v8:lang>ru</v8:lang>
-													<v8:content>Сертификат:</v8:content>
-												</v8:item>
-											</Title>
-											<ContextMenu name="СертификатЗаголовокКонтекстноеМеню" id="467"/>
-											<ExtendedTooltip name="СертификатЗаголовокРасширеннаяПодсказка" id="468"/>
-										</LabelDecoration>
-										<LabelDecoration name="СертификатЗаголовокОтступ" id="469">
-											<AutoMaxWidth>false</AutoMaxWidth>
-											<HorizontalStretch>true</HorizontalStretch>
-											<ContextMenu name="СертификатЗаголовокОтступКонтекстноеМеню" id="470"/>
-											<ExtendedTooltip name="СертификатЗаголовокОтступРасширеннаяПодсказка" id="471"/>
-										</LabelDecoration>
-										<Button name="ПоказатьДанныеСертификата" id="472">
-											<Type>UsualButton</Type>
-											<Representation>Picture</Representation>
-											<SkipOnInput>true</SkipOnInput>
-											<CommandName>Form.Command.ПоказатьДанныеСертификата</CommandName>
-											<ExtendedTooltip name="ПоказатьДанныеСертификатаРасширеннаяПодсказка" id="473"/>
-										</Button>
-									</ChildItems>
-								</UsualGroup>
-								<UsualGroup name="ГруппаОписаниеСертификата" id="474">
-									<VerticalStretch>false</VerticalStretch>
-									<Group>Horizontal</Group>
-									<ShowTitle>false</ShowTitle>
-									<ExtendedTooltip name="ГруппаОписаниеСертификатаРасширеннаяПодсказка" id="475"/>
-									<ChildItems>
-										<Table name="ОписаниеДанныхСертификата" id="513">
-											<Representation>List</Representation>
-											<ReadOnly>true</ReadOnly>
-											<SkipOnInput>true</SkipOnInput>
-											<Height>4</Height>
-											<RowSelectionMode>Row</RowSelectionMode>
-											<Header>false</Header>
-											<HorizontalScrollBar>DontUse</HorizontalScrollBar>
-											<HorizontalLines>false</HorizontalLines>
-											<VerticalLines>false</VerticalLines>
-											<AutoInsertNewRow>true</AutoInsertNewRow>
-											<EnableStartDrag>true</EnableStartDrag>
-											<EnableDrag>true</EnableDrag>
-											<FileDragMode>AsFile</FileDragMode>
-											<DataPath>ОписаниеДанныхСертификата</DataPath>
-											<SearchStringLocation>None</SearchStringLocation>
-											<ViewStatusLocation>None</ViewStatusLocation>
-											<SearchControlLocation>None</SearchControlLocation>
-											<RowFilter xsi:nil="true"/>
-											<ContextMenu name="ОписаниеДанныхСертификатаКонтекстноеМеню" id="514">
-												<Autofill>false</Autofill>
-											</ContextMenu>
-											<AutoCommandBar name="ОписаниеДанныхСертификатаКоманднаяПанель" id="515">
-												<Autofill>false</Autofill>
-											</AutoCommandBar>
-											<ExtendedTooltip name="ОписаниеДанныхСертификатаРасширеннаяПодсказка" id="516"/>
-											<SearchStringAddition name="ОписаниеДанныхСертификатаСтрокаПоиска" id="517">
-												<AdditionSource>
-													<Item>ОписаниеДанныхСертификата</Item>
-													<Type>SearchStringRepresentation</Type>
-												</AdditionSource>
-												<ContextMenu name="ОписаниеДанныхСертификатаСтрокаПоискаКонтекстноеМеню" id="518"/>
-												<ExtendedTooltip name="ОписаниеДанныхСертификатаСтрокаПоискаРасширеннаяПодсказка" id="519"/>
-											</SearchStringAddition>
-											<ViewStatusAddition name="ОписаниеДанныхСертификатаСостояниеПросмотра" id="520">
-												<AdditionSource>
-													<Item>ОписаниеДанныхСертификата</Item>
-													<Type>ViewStatusRepresentation</Type>
-												</AdditionSource>
-												<ContextMenu name="ОписаниеДанныхСертификатаСостояниеПросмотраКонтекстноеМеню" id="521"/>
-												<ExtendedTooltip name="ОписаниеДанныхСертификатаСостояниеПросмотраРасширеннаяПодсказка" id="522"/>
-											</ViewStatusAddition>
-											<SearchControlAddition name="ОписаниеДанныхСертификатаУправлениеПоиском" id="523">
-												<AdditionSource>
-													<Item>ОписаниеДанныхСертификата</Item>
-													<Type>SearchControl</Type>
-												</AdditionSource>
-												<ContextMenu name="ОписаниеДанныхСертификатаУправлениеПоискомКонтекстноеМеню" id="524"/>
-												<ExtendedTooltip name="ОписаниеДанныхСертификатаУправлениеПоискомРасширеннаяПодсказка" id="525"/>
-											</SearchControlAddition>
-											<ChildItems>
-												<InputField name="ОписаниеДанныхСертификатаСвойство" id="526">
-													<DataPath>ОписаниеДанныхСертификата.Свойство</DataPath>
-													<EditMode>EnterOnInput</EditMode>
-													<Width>13</Width>
-													<HorizontalStretch>false</HorizontalStretch>
-													<ContextMenu name="ОписаниеДанныхСертификатаСвойствоКонтекстноеМеню" id="527"/>
-													<ExtendedTooltip name="ОписаниеДанныхСертификатаСвойствоРасширеннаяПодсказка" id="528"/>
-												</InputField>
-												<InputField name="ОписаниеДанныхСертификатаЗначение" id="529">
-													<DataPath>ОписаниеДанныхСертификата.Значение</DataPath>
-													<EditMode>EnterOnInput</EditMode>
-													<ContextMenu name="ОписаниеДанныхСертификатаЗначениеКонтекстноеМеню" id="530"/>
-													<ExtendedTooltip name="ОписаниеДанныхСертификатаЗначениеРасширеннаяПодсказка" id="531"/>
-												</InputField>
-											</ChildItems>
-										</Table>
-									</ChildItems>
-								</UsualGroup>
-							</ChildItems>
-						</Page>
-						<Page name="СтраницаВыборСертификата" id="479">
-							<Title>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Страница выбор сертификата</v8:content>
-								</v8:item>
-							</Title>
-							<ToolTip>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Страница выбор сертификата</v8:content>
-								</v8:item>
-							</ToolTip>
-							<ExtendedTooltip name="СтраницаВыборСертификатаРасширеннаяПодсказка" id="480"/>
-							<ChildItems>
-								<UsualGroup name="ГруппаВыборСертификатаШапка" id="481">
-									<Group>Horizontal</Group>
-									<Representation>None</Representation>
-									<ShowTitle>false</ShowTitle>
-									<ExtendedTooltip name="ГруппаВыборСертификатаШапкаРасширеннаяПодсказка" id="482"/>
-									<ChildItems>
-										<LabelDecoration name="ВыборСертификатаЗаголовок" id="483">
-											<TextColor>style:ПоясняющийТекст</TextColor>
-											<Title formatted="false">
-												<v8:item>
-													<v8:lang>ru</v8:lang>
-													<v8:content>Выберите сертификат:</v8:content>
-												</v8:item>
-											</Title>
-											<ContextMenu name="ВыборСертификатаЗаголовокКонтекстноеМеню" id="484"/>
-											<ExtendedTooltip name="ВыборСертификатаЗаголовокРасширеннаяПодсказка" id="485"/>
-										</LabelDecoration>
-										<LabelDecoration name="ВыборСертификатаЗаголовокОтступ" id="486">
-											<HorizontalStretch>true</HorizontalStretch>
-											<ContextMenu name="ВыборСертификатаЗаголовокОтступКонтекстноеМеню" id="487"/>
-											<ExtendedTooltip name="ВыборСертификатаЗаголовокОтступРасширеннаяПодсказка" id="488"/>
-										</LabelDecoration>
-										<Button name="ПоказатьДанныеСертификата1" id="489">
-											<Type>UsualButton</Type>
-											<Representation>Picture</Representation>
-											<SkipOnInput>true</SkipOnInput>
-											<CommandName>Form.Command.ПоказатьДанныеСертификата</CommandName>
-											<ExtendedTooltip name="ПоказатьДанныеСертификата1РасширеннаяПодсказка" id="490"/>
-										</Button>
-									</ChildItems>
-								</UsualGroup>
-								<Table name="СертификатСписокВыбора" id="491">
-									<Representation>List</Representation>
-									<ChangeRowSet>false</ChangeRowSet>
-									<ChangeRowOrder>false</ChangeRowOrder>
-									<HeightInTableRows>3</HeightInTableRows>
-									<SelectionMode>SingleRow</SelectionMode>
-									<RowSelectionMode>Row</RowSelectionMode>
-									<Header>false</Header>
-									<HorizontalLines>false</HorizontalLines>
-									<VerticalLines>false</VerticalLines>
-									<VerticalStretch>false</VerticalStretch>
-									<FileDragMode>AsFile</FileDragMode>
-									<DataPath>СертификатСписокВыбора</DataPath>
-									<RowPictureDataPath>СертификатСписокВыбора.Picture</RowPictureDataPath>
-									<CommandSet>
-										<ExcludedCommand>Add</ExcludedCommand>
-										<ExcludedCommand>Change</ExcludedCommand>
-										<ExcludedCommand>CheckAll</ExcludedCommand>
-										<ExcludedCommand>Copy</ExcludedCommand>
-										<ExcludedCommand>CopyToClipboard</ExcludedCommand>
-										<ExcludedCommand>Delete</ExcludedCommand>
-										<ExcludedCommand>EndEdit</ExcludedCommand>
-										<ExcludedCommand>MoveDown</ExcludedCommand>
-										<ExcludedCommand>MoveUp</ExcludedCommand>
-										<ExcludedCommand>Pickup</ExcludedCommand>
-										<ExcludedCommand>SortListAsc</ExcludedCommand>
-										<ExcludedCommand>SortListDesc</ExcludedCommand>
-										<ExcludedCommand>UncheckAll</ExcludedCommand>
-									</CommandSet>
-									<ContextMenu name="СертификатСписокВыбораКонтекстноеМеню" id="492"/>
-									<AutoCommandBar name="СертификатСписокВыбораКоманднаяПанель" id="493"/>
-									<ExtendedTooltip name="СертификатСписокВыбораРасширеннаяПодсказка" id="494"/>
-									<SearchStringAddition name="СертификатСписокВыбораСтрокаПоиска" id="495">
-										<AdditionSource>
-											<Item>СертификатСписокВыбора</Item>
-											<Type>SearchStringRepresentation</Type>
-										</AdditionSource>
-										<ContextMenu name="СертификатСписокВыбораСтрокаПоискаКонтекстноеМеню" id="498"/>
-										<ExtendedTooltip name="СертификатСписокВыбораСтрокаПоискаРасширеннаяПодсказка" id="499"/>
-									</SearchStringAddition>
-									<ViewStatusAddition name="СертификатСписокВыбораСостояниеПросмотра" id="500">
-										<AdditionSource>
-											<Item>СертификатСписокВыбора</Item>
-											<Type>ViewStatusRepresentation</Type>
-										</AdditionSource>
-										<ContextMenu name="СертификатСписокВыбораСостояниеПросмотраКонтекстноеМеню" id="503"/>
-										<ExtendedTooltip name="СертификатСписокВыбораСостояниеПросмотраРасширеннаяПодсказка" id="504"/>
-									</ViewStatusAddition>
-									<SearchControlAddition name="СертификатСписокВыбораУправлениеПоиском" id="505">
-										<AdditionSource>
-											<Item>СертификатСписокВыбора</Item>
-											<Type>SearchControl</Type>
-										</AdditionSource>
-										<ContextMenu name="СертификатСписокВыбораУправлениеПоискомКонтекстноеМеню" id="508"/>
-										<ExtendedTooltip name="СертификатСписокВыбораУправлениеПоискомРасширеннаяПодсказка" id="509"/>
-									</SearchControlAddition>
-									<Events>
-										<Event name="BeforeAddRow">СертификатСписокВыбораПередНачаломДобавления</Event>
-										<Event name="BeforeDeleteRow">СертификатСписокВыбораПередУдалением</Event>
-										<Event name="OnActivateRow">СертификатСписокВыбораПриАктивизацииСтроки</Event>
-										<Event name="BeforeRowChange">СертификатСписокВыбораПередНачаломИзменения</Event>
-									</Events>
-									<ChildItems>
-										<InputField name="СертификатСписокВыбораЗначение" id="510">
-											<DataPath>СертификатСписокВыбора.Value</DataPath>
-											<EditMode>EnterOnInput</EditMode>
-											<ContextMenu name="СертификатСписокВыбораЗначениеКонтекстноеМеню" id="511"/>
-											<ExtendedTooltip name="СертификатСписокВыбораЗначениеРасширеннаяПодсказка" id="512"/>
-										</InputField>
-									</ChildItems>
-								</Table>
-							</ChildItems>
-						</Page>
-					</ChildItems>
-				</Pages>
-				<UsualGroup name="ГруппаСертификатПароль" id="458">
-					<Group>Vertical</Group>
-					<Representation>NormalSeparation</Representation>
-					<ShowTitle>false</ShowTitle>
-					<ExtendedTooltip name="ГруппаСертификатПарольРасширеннаяПодсказка" id="459"/>
-					<ChildItems>
-						<UsualGroup name="ГруппаПароль" id="546">
-							<Title>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Группа пароль</v8:content>
-								</v8:item>
-							</Title>
-							<ToolTip>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Группа пароль</v8:content>
-								</v8:item>
-							</ToolTip>
-							<Group>Vertical</Group>
-							<Representation>None</Representation>
-							<ShowTitle>false</ShowTitle>
-							<ExtendedTooltip name="ГруппаПарольРасширеннаяПодсказка" id="547"/>
-							<ChildItems>
-								<LabelDecoration name="ПарольЗаголовок" id="455">
-									<TextColor>style:ПоясняющийТекст</TextColor>
-									<Title formatted="false">
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Введите пароль к сертификату:</v8:content>
-										</v8:item>
-									</Title>
-									<ContextMenu name="ПарольЗаголовокКонтекстноеМеню" id="456"/>
-									<ExtendedTooltip name="ПарольЗаголовокРасширеннаяПодсказка" id="457"/>
-								</LabelDecoration>
-								<InputField name="Пароль" id="316">
-									<DataPath>Пароль</DataPath>
-									<TitleLocation>None</TitleLocation>
 									<HorizontalStretch>false</HorizontalStretch>
 									<Wrap>false</Wrap>
 									<PasswordMode>true</PasswordMode>
+									<ChoiceButton>true</ChoiceButton>
+									<EditTextUpdate>OnValueChange</EditTextUpdate>
+									<ChoiceButtonPicture>
+										<xr:Ref>CommonPicture.ВводимыеСимволыВидны</xr:Ref>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
+									</ChoiceButtonPicture>
 									<ContextMenu name="ПарольКонтекстноеМеню" id="317"/>
 									<ExtendedTooltip name="ПарольРасширеннаяПодсказка" id="318"/>
 									<Events>
 										<Event name="OnChange">ПарольПриИзменении</Event>
+										<Event name="StartChoice">ПарольНачалоВыбора</Event>
 									</Events>
 								</InputField>
 								<CheckBoxField name="ЗапомнитьПароль" id="324">
 									<DataPath>ЗапомнитьПароль</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Запомнить на время сеанса</v8:content>
+										</v8:item>
+									</Title>
 									<TitleLocation>Right</TitleLocation>
 									<ToolTip>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
-											<v8:content>Запомнить пароль сертификата до закрытия программы. При снятии флажка пароль стирается из памяти, если запоминался ранее.</v8:content>
+											<v8:content>Запомнить пароль сертификата до закрытия приложения. При снятии флажка пароль стирается из памяти, если запоминался ранее.</v8:content>
 										</v8:item>
 									</ToolTip>
 									<ToolTipRepresentation>Button</ToolTipRepresentation>
@@ -390,12 +173,6 @@
 									<v8:content>Страницы</v8:content>
 								</v8:item>
 							</Title>
-							<ToolTip>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Страницы</v8:content>
-								</v8:item>
-							</ToolTip>
 							<PagesRepresentation>None</PagesRepresentation>
 							<ExtendedTooltip name="СтраницыРасширеннаяПодсказка" id="417"/>
 							<ChildItems>
@@ -409,20 +186,14 @@
 									<ExtendedTooltip name="СтраницаПояснениеУсиленногоПароляРасширеннаяПодсказка" id="439"/>
 									<ChildItems>
 										<LabelDecoration name="ПояснениеУсиленногоПароля" id="440">
+											<AutoMaxWidth>false</AutoMaxWidth>
 											<TextColor>style:ПоясняющийТекст</TextColor>
 											<Title formatted="false">
 												<v8:item>
 													<v8:lang>ru</v8:lang>
-													<v8:content>Нажмите Готово, чтобы перейти к вводу пароля.</v8:content>
+													<v8:content>Нажмите Расшифровать, чтобы перейти к вводу пароля.</v8:content>
 												</v8:item>
 											</Title>
-											<ToolTip>
-												<v8:item>
-													<v8:lang>ru</v8:lang>
-													<v8:content>Пароль запрашивает программа электронной подписи, а не программа 1С:Предприятие,
-так как для выбранного сертификата указана усиленная защита закрытого ключа.</v8:content>
-												</v8:item>
-											</ToolTip>
 											<ToolTipRepresentation>Button</ToolTipRepresentation>
 											<ContextMenu name="ПояснениеУсиленногоПароляКонтекстноеМеню" id="441"/>
 											<ExtendedTooltip name="ПояснениеУсиленногоПароляРасширеннаяПодсказка" id="442"/>
@@ -455,23 +226,24 @@
 								</Page>
 							</ChildItems>
 						</Pages>
-						<UsualGroup name="ГруппаКонтейнер" id="544">
-							<Title>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Контейнер</v8:content>
-								</v8:item>
-							</Title>
-							<Group>Vertical</Group>
-							<Representation>None</Representation>
-							<ShowTitle>false</ShowTitle>
-							<ExtendedTooltip name="ГруппаКонтейнерРасширеннаяПодсказка" id="545"/>
-						</UsualGroup>
 					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаКонтейнер" id="457">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Контейнер</v8:content>
+						</v8:item>
+					</Title>
+					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаКонтейнерРасширеннаяПодсказка" id="458"/>
 				</UsualGroup>
 			</ChildItems>
 		</UsualGroup>
-		<UsualGroup name="ГруппаКоманды" id="532">
+		<UsualGroup name="ГруппаКоманды" id="459">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -480,11 +252,12 @@
 			</Title>
 			<HorizontalStretch>true</HorizontalStretch>
 			<Group>AlwaysHorizontal</Group>
+			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
-			<ExtendedTooltip name="ГруппаКомандыРасширеннаяПодсказка" id="533"/>
+			<ExtendedTooltip name="ГруппаКомандыРасширеннаяПодсказка" id="460"/>
 			<ChildItems>
-				<UsualGroup name="ГруппаКомандыПодтверждения" id="534">
+				<UsualGroup name="ГруппаКомандыПодтверждения" id="461">
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -492,11 +265,12 @@
 						</v8:item>
 					</Title>
 					<Group>AlwaysHorizontal</Group>
+					<Behavior>Usual</Behavior>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
-					<ExtendedTooltip name="ГруппаКомандыПодтвержденияРасширеннаяПодсказка" id="535"/>
+					<ExtendedTooltip name="ГруппаКомандыПодтвержденияРасширеннаяПодсказка" id="462"/>
 				</UsualGroup>
-				<CommandBar name="ГруппаОсновныеКоманды" id="536">
+				<CommandBar name="ГруппаОсновныеКоманды" id="463">
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -505,15 +279,21 @@
 					</Title>
 					<HorizontalStretch>false</HorizontalStretch>
 					<GroupHorizontalAlign>Right</GroupHorizontalAlign>
-					<ExtendedTooltip name="ГруппаОсновныеКомандыРасширеннаяПодсказка" id="537"/>
+					<ExtendedTooltip name="ГруппаОсновныеКомандыРасширеннаяПодсказка" id="464"/>
 					<ChildItems>
-						<Button name="ФормаРасшифровать" id="538">
+						<Button name="ФормаРасшифровать" id="465">
 							<Type>CommandBarButton</Type>
 							<DefaultButton>true</DefaultButton>
 							<CommandName>Form.Command.Расшифровать</CommandName>
-							<ExtendedTooltip name="ФормаРасшифроватьРасширеннаяПодсказка" id="539"/>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Расшифровать</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="ФормаРасшифроватьРасширеннаяПодсказка" id="466"/>
 						</Button>
-						<Button name="ФормаЗакрыть" id="540">
+						<Button name="ФормаЗакрыть" id="467">
 							<Type>CommandBarButton</Type>
 							<Representation>Text</Representation>
 							<CommandName>Form.StandardCommand.Close</CommandName>
@@ -523,12 +303,12 @@
 									<v8:content>Отмена</v8:content>
 								</v8:item>
 							</Title>
-							<ExtendedTooltip name="ФормаЗакрытьРасширеннаяПодсказка" id="541"/>
+							<ExtendedTooltip name="ФормаЗакрытьРасширеннаяПодсказка" id="468"/>
 						</Button>
-						<Button name="ФормаСправка" id="542">
+						<Button name="ФормаСправка" id="469">
 							<Type>CommandBarButton</Type>
 							<CommandName>Form.StandardCommand.Help</CommandName>
-							<ExtendedTooltip name="ФормаСправкаРасширеннаяПодсказка" id="543"/>
+							<ExtendedTooltip name="ФормаСправкаРасширеннаяПодсказка" id="470"/>
 						</Button>
 					</ChildItems>
 				</CommandBar>
@@ -654,7 +434,7 @@
 		<Attribute name="ОтборОтпечатков" id="17">
 			<Type/>
 		</Attribute>
-		<Attribute name="СертификатУсиленнаяЗащитаЗакрытогоКлюча" id="18">
+		<Attribute name="СертификатВводитьПарольВПрограммеЭлектроннойПодписи" id="18">
 			<Type>
 				<v8:Type>xs:boolean</v8:Type>
 			</Type>
@@ -681,64 +461,12 @@
 				</v8:StringQualifiers>
 			</Type>
 		</Attribute>
-		<Attribute name="СертификатОписаниеДанныхПредставлениеHTML" id="22">
-			<Type>
-				<v8:Type>xs:string</v8:Type>
-				<v8:StringQualifiers>
-					<v8:Length>0</v8:Length>
-					<v8:AllowedLength>Variable</v8:AllowedLength>
-				</v8:StringQualifiers>
-			</Type>
-		</Attribute>
-		<Attribute name="ОписаниеДанныхСертификата" id="24">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Описание данных сертификата</v8:content>
-				</v8:item>
-			</Title>
-			<Type>
-				<v8:Type>v8:ValueTable</v8:Type>
-			</Type>
-			<Columns>
-				<Column name="Свойство" id="1">
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Свойство</v8:content>
-						</v8:item>
-					</Title>
-					<Type>
-						<v8:Type>xs:string</v8:Type>
-						<v8:StringQualifiers>
-							<v8:Length>0</v8:Length>
-							<v8:AllowedLength>Variable</v8:AllowedLength>
-						</v8:StringQualifiers>
-					</Type>
-				</Column>
-				<Column name="Значение" id="2">
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Значение</v8:content>
-						</v8:item>
-					</Title>
-					<Type>
-						<v8:Type>xs:string</v8:Type>
-						<v8:StringQualifiers>
-							<v8:Length>0</v8:Length>
-							<v8:AllowedLength>Variable</v8:AllowedLength>
-						</v8:StringQualifiers>
-					</Type>
-				</Column>
-			</Columns>
-		</Attribute>
-		<Attribute name="ВыполнятьВМоделиСервиса" id="25">
+		<Attribute name="ВыполнятьВМоделиСервиса" id="22">
 			<Type>
 				<v8:Type>xs:boolean</v8:Type>
 			</Type>
 		</Attribute>
-		<Attribute name="ИмяПоляАктивизироватьПоУмолчанию" id="26">
+		<Attribute name="ИмяПоляАктивизироватьПоУмолчанию" id="23">
 			<Type>
 				<v8:Type>xs:string</v8:Type>
 				<v8:StringQualifiers>
@@ -747,7 +475,7 @@
 				</v8:StringQualifiers>
 			</Type>
 		</Attribute>
-		<Attribute name="ОблачныйПарольПодтвержден" id="23">
+		<Attribute name="ОблачныйПарольПодтвержден" id="24">
 			<Type>
 				<v8:Type>xs:boolean</v8:Type>
 			</Type>
@@ -762,20 +490,6 @@
 				</v8:item>
 			</Title>
 			<Action>Расшифровать</Action>
-			<CurrentRowUse>DontUse</CurrentRowUse>
-		</Command>
-		<Command name="ПоказатьДанныеСертификата" id="1">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Показать данные сертификата</v8:content>
-				</v8:item>
-			</Title>
-			<Picture>
-				<xr:Ref>CommonPicture.СертификатКлюча</xr:Ref>
-				<xr:LoadTransparent>false</xr:LoadTransparent>
-			</Picture>
-			<Action>ПоказатьДанныеСертификата</Action>
 			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 	</Commands>

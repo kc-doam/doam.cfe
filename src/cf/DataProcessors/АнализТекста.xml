@@ -28,22 +28,21 @@
 			<Explanation/>
 		</Properties>
 		<ChildObjects>
-			<Attribute uuid="b61ce5d7-92d0-4d2f-9d65-cacc65c6ee2c">
+			<Attribute uuid="bccf94ee-1f30-4554-9adf-e7d70f0bfeff">
 				<Properties>
-					<Name>ИсходныйТекст</Name>
+					<Name>ДатаИсходногоТекста</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Исходный текст</v8:content>
+							<v8:content>Дата исходного текста</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
 					<Type>
-						<v8:Type>xs:string</v8:Type>
-						<v8:StringQualifiers>
-							<v8:Length>0</v8:Length>
-							<v8:AllowedLength>Variable</v8:AllowedLength>
-						</v8:StringQualifiers>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>DateTime</v8:DateFractions>
+						</v8:DateQualifiers>
 					</Type>
 					<PasswordMode>false</PasswordMode>
 					<Format/>
@@ -66,21 +65,22 @@
 					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
 				</Properties>
 			</Attribute>
-			<Attribute uuid="bccf94ee-1f30-4554-9adf-e7d70f0bfeff">
+			<Attribute uuid="b61ce5d7-92d0-4d2f-9d65-cacc65c6ee2c">
 				<Properties>
-					<Name>ДатаИсходногоТекста</Name>
+					<Name>ИсходныйТекст</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Дата исходного текста</v8:content>
+							<v8:content>Исходный текст</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
 					<Type>
-						<v8:Type>xs:dateTime</v8:Type>
-						<v8:DateQualifiers>
-							<v8:DateFractions>DateTime</v8:DateFractions>
-						</v8:DateQualifiers>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
 					</Type>
 					<PasswordMode>false</PasswordMode>
 					<Format/>

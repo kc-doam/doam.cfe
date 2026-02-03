@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
 	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
 	<VerticalScroll>useIfNecessary</VerticalScroll>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
@@ -24,6 +24,7 @@
 				</v8:item>
 			</ToolTip>
 			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="БыстрыйОтборРасширеннаяПодсказка" id="98"/>
@@ -100,7 +101,7 @@
 				</Button>
 				<Button name="ФормаВывестиСписок" id="86">
 					<Type>CommandBarButton</Type>
-					<CommandName>50:49602716-fea6-497f-8047-726404038857</CommandName>
+					<CommandName>0</CommandName>
 					<ExtendedTooltip name="ФормаВывестиСписокРасширеннаяПодсказка" id="87"/>
 				</Button>
 				<Button name="ИзменитьФорму" id="95">
@@ -142,7 +143,6 @@
 			</AutoCommandBar>
 			<ExtendedTooltip name="ИсторияОценокРасширеннаяПодсказка" id="108"/>
 			<SearchStringAddition name="ИсторияОценокСтрокаПоиска" id="109">
-				<Enabled>false</Enabled>
 				<AdditionSource>
 					<Item>ИсторияОценок</Item>
 					<Type>SearchStringRepresentation</Type>
@@ -151,7 +151,6 @@
 				<ExtendedTooltip name="ИсторияОценокСтрокаПоискаРасширеннаяПодсказка" id="111"/>
 			</SearchStringAddition>
 			<ViewStatusAddition name="ИсторияОценокСостояниеПросмотра" id="112">
-				<Enabled>false</Enabled>
 				<AdditionSource>
 					<Item>ИсторияОценок</Item>
 					<Type>ViewStatusRepresentation</Type>
@@ -160,7 +159,6 @@
 				<ExtendedTooltip name="ИсторияОценокСостояниеПросмотраРасширеннаяПодсказка" id="114"/>
 			</ViewStatusAddition>
 			<SearchControlAddition name="ИсторияОценокУправлениеПоиском" id="115">
-				<Enabled>false</Enabled>
 				<AdditionSource>
 					<Item>ИсторияОценок</Item>
 					<Type>SearchControl</Type>
@@ -246,7 +244,7 @@
 					<HorizontalStretch>false</HorizontalStretch>
 					<ValuesPicture>
 						<xr:Ref>CommonPicture.КоллекцияСветофор</xr:Ref>
-						<xr:LoadTransparent>true</xr:LoadTransparent>
+						<xr:LoadTransparent>false</xr:LoadTransparent>
 					</ValuesPicture>
 					<FileDragMode>AsFile</FileDragMode>
 					<ContextMenu name="ИсторияОценокОценка3КонтекстноеМеню" id="143"/>
@@ -259,7 +257,7 @@
 					<HorizontalStretch>false</HorizontalStretch>
 					<ValuesPicture>
 						<xr:Ref>CommonPicture.КоллекцияСветофор</xr:Ref>
-						<xr:LoadTransparent>true</xr:LoadTransparent>
+						<xr:LoadTransparent>false</xr:LoadTransparent>
 					</ValuesPicture>
 					<FileDragMode>AsFile</FileDragMode>
 					<ContextMenu name="ИсторияОценокОценка2КонтекстноеМеню" id="146"/>
@@ -272,7 +270,7 @@
 					<HorizontalStretch>false</HorizontalStretch>
 					<ValuesPicture>
 						<xr:Ref>CommonPicture.КоллекцияСветофор</xr:Ref>
-						<xr:LoadTransparent>true</xr:LoadTransparent>
+						<xr:LoadTransparent>false</xr:LoadTransparent>
 					</ValuesPicture>
 					<FileDragMode>AsFile</FileDragMode>
 					<ContextMenu name="ИсторияОценокОценка1КонтекстноеМеню" id="149"/>

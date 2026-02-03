@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
 		<Autofill>false</Autofill>
 		<ChildItems>
@@ -18,9 +18,27 @@
 	</AutoCommandBar>
 	<Events>
 		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="BeforeClose">ПередЗакрытием</Event>
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 	</Events>
 	<ChildItems>
+		<UsualGroup name="ГруппаМиграцияНаНовуюВерсию" id="38">
+			<Visible>false</Visible>
+			<HorizontalStretch>true</HorizontalStretch>
+			<Behavior>Usual</Behavior>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<BackColor>style:ОтсутствиеЦветФона</BackColor>
+			<ExtendedTooltip name="ГруппаМиграцияНаНовуюВерсиюРасширеннаяПодсказка" id="39"/>
+			<ChildItems>
+				<LabelDecoration name="НадписьМиграцияНаНовуюВерсию" id="40">
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<HorizontalStretch>true</HorizontalStretch>
+					<ContextMenu name="НадписьМиграцияНаНовуюВерсиюКонтекстноеМеню" id="41"/>
+					<ExtendedTooltip name="НадписьМиграцияНаНовуюВерсиюРасширеннаяПодсказка" id="42"/>
+				</LabelDecoration>
+			</ChildItems>
+		</UsualGroup>
 		<UsualGroup name="ГруппаОсновное" id="36">
 			<Title>
 				<v8:item>
@@ -35,6 +53,7 @@
 				</v8:item>
 			</ToolTip>
 			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаОсновноеРасширеннаяПодсказка" id="37"/>
@@ -46,14 +65,9 @@
 							<v8:content>Шаблоны наименования и содержания</v8:content>
 						</v8:item>
 					</Title>
-					<ToolTip>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Группа строковые шаблоны</v8:content>
-						</v8:item>
-					</ToolTip>
 					<HorizontalStretch>true</HorizontalStretch>
 					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
 					<ExtendedTooltip name="ГруппаСтроковыеШаблоныРасширеннаяПодсказка" id="24"/>
 					<ChildItems>
 						<InputField name="ШаблонНаименования" id="5">
@@ -85,6 +99,7 @@
 							<ContextMenu name="ШаблонНаименованияКонтекстноеМеню" id="6"/>
 							<ExtendedTooltip name="ШаблонНаименованияРасширеннаяПодсказка" id="7"/>
 							<Events>
+								<Event name="OnChange">ШаблонНаименованияПриИзменении</Event>
 								<Event name="StartChoice">ШаблонНаименованияНачалоВыбора</Event>
 							</Events>
 						</InputField>
@@ -118,6 +133,7 @@
 							<ContextMenu name="ШаблонСодержанияКонтекстноеМеню" id="9"/>
 							<ExtendedTooltip name="ШаблонСодержанияРасширеннаяПодсказка" id="10"/>
 							<Events>
+								<Event name="OnChange">ШаблонСодержанияПриИзменении</Event>
 								<Event name="StartChoice">ШаблонСодержанияНачалоВыбора</Event>
 							</Events>
 						</InputField>
@@ -130,13 +146,8 @@
 							<v8:content>Шаблон документа</v8:content>
 						</v8:item>
 					</Title>
-					<ToolTip>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Группа шаблон документа</v8:content>
-						</v8:item>
-					</ToolTip>
 					<HorizontalStretch>true</HorizontalStretch>
+					<Behavior>Usual</Behavior>
 					<ExtendedTooltip name="ГруппаШаблонДокументаРасширеннаяПодсказка" id="26"/>
 					<ChildItems>
 						<InputField name="ШаблонДокумента" id="27">
@@ -171,16 +182,22 @@
 							<v8:content>Реквизиты документа</v8:content>
 						</v8:item>
 					</Title>
-					<ToolTip>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Группа реквизиты документа</v8:content>
-						</v8:item>
-					</ToolTip>
 					<HorizontalStretch>true</HorizontalStretch>
 					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
 					<ExtendedTooltip name="ГруппаРеквизитыДокументаРасширеннаяПодсказка" id="31"/>
 					<ChildItems>
+						<InputField name="ГрифДоступа" id="51">
+							<DataPath>ГрифДоступа</DataPath>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<HorizontalStretch>true</HorizontalStretch>
+							<AutoMarkIncomplete>true</AutoMarkIncomplete>
+							<ContextMenu name="ГрифДоступаКонтекстноеМеню" id="52"/>
+							<ExtendedTooltip name="ГрифДоступаРасширеннаяПодсказка" id="53"/>
+							<Events>
+								<Event name="OnChange">ГрифДоступаПриИзменении</Event>
+							</Events>
+						</InputField>
 						<InputField name="Папка" id="11">
 							<DataPath>Папка</DataPath>
 							<AutoMaxWidth>false</AutoMaxWidth>
@@ -449,6 +466,76 @@
 			</Title>
 			<Type>
 				<v8:Type>cfg:CatalogRef.ВидыДокументовЭДО</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ИспользоватьГрифыДоступа" id="29">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Использовать грифы доступа</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ГрифДоступа" id="30">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Гриф доступа</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.ГрифыДоступа</v8:Type>
+			</Type>
+			<SavedData>true</SavedData>
+			<FunctionalOptions>
+				<Item>FunctionalOption.ИспользоватьГрифыДоступа</Item>
+			</FunctionalOptions>
+		</Attribute>
+		<Attribute name="ГрифДоступаШаблона" id="31">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Гриф доступа шаблона</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.ГрифыДоступа</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ЗакрытьФормуССохранениемДанных" id="32">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Закрыть форму с сохранением данных</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="НеПоказыватьВопросОСохраненииПриЗакрытии" id="33">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Не показывать вопрос о сохранении при закрытии</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ПоказанВопросОНекорректностиНастроек" id="34">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показан вопрос о некорректности настроек</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
 			</Type>
 		</Attribute>
 	</Attributes>

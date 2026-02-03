@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
 	<Width>60</Width>
 	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
 	<AutoTitle>false</AutoTitle>
@@ -37,6 +37,7 @@
 			<GroupHorizontalAlign>Left</GroupHorizontalAlign>
 			<Group>AlwaysHorizontal</Group>
 			<HorizontalAlign>Left</HorizontalAlign>
+			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаДанныхИБРасширеннаяПодсказка" id="223"/>
@@ -84,6 +85,7 @@
 				</v8:item>
 			</Title>
 			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаДанныеКонтрагентаРасширеннаяПодсказка" id="127"/>
 			<ChildItems>
@@ -94,6 +96,7 @@
 							<v8:content>Группа владелец</v8:content>
 						</v8:item>
 					</Title>
+					<Behavior>Usual</Behavior>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="ГруппаВладелецРасширеннаяПодсказка" id="207"/>
@@ -117,6 +120,7 @@
 								</v8:item>
 							</Title>
 							<HorizontalSpacing>Half</HorizontalSpacing>
+							<Behavior>Usual</Behavior>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="ГруппаВыбораВладельцаРасширеннаяПодсказка" id="274"/>
@@ -159,6 +163,7 @@
 				</UsualGroup>
 				<InputField name="НаименованиеПолное" id="4">
 					<DataPath>Объект.НаименованиеПолное</DataPath>
+					<SkipOnInput>true</SkipOnInput>
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -220,6 +225,11 @@
 					<ContextMenu name="НаименованиеХарактеристикиКонтекстноеМеню" id="44"/>
 					<ExtendedTooltip name="НаименованиеХарактеристикиРасширеннаяПодсказка" id="45"/>
 				</InputField>
+				<InputField name="КодНоменклатуры" id="275">
+					<DataPath>Объект.КодНоменклатуры</DataPath>
+					<ContextMenu name="КодНоменклатурыКонтекстноеМеню" id="276"/>
+					<ExtendedTooltip name="КодНоменклатурыРасширеннаяПодсказка" id="277"/>
+				</InputField>
 				<InputField name="Артикул" id="22">
 					<DataPath>Объект.Артикул</DataPath>
 					<EditMode>EnterOnInput</EditMode>
@@ -247,6 +257,7 @@
 					</Title>
 					<Group>AlwaysHorizontal</Group>
 					<VerticalAlign>Center</VerticalAlign>
+					<Behavior>Usual</Behavior>
 					<ControlRepresentation>Picture</ControlRepresentation>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
@@ -284,7 +295,7 @@
 											<ExtendedTooltip name="НадписьУпаковкаРасширеннаяПодсказка" id="218"/>
 										</LabelDecoration>
 										<LabelDecoration name="ДекорацияОтступ" id="219">
-											<Width>7</Width>
+											<Width>8</Width>
 											<ContextMenu name="ДекорацияОтступКонтекстноеМеню" id="220"/>
 											<ExtendedTooltip name="ДекорацияОтступРасширеннаяПодсказка" id="221"/>
 										</LabelDecoration>
@@ -313,7 +324,7 @@
 											<ExtendedTooltip name="НадписьРазупаковкаРасширеннаяПодсказка" id="249"/>
 										</LabelDecoration>
 										<LabelDecoration name="ДекорацияОтступ1" id="250">
-											<Width>4</Width>
+											<Width>5</Width>
 											<ContextMenu name="ДекорацияОтступ1КонтекстноеМеню" id="251"/>
 											<ExtendedTooltip name="ДекорацияОтступ1РасширеннаяПодсказка" id="252"/>
 										</LabelDecoration>
@@ -394,6 +405,7 @@
 												</v8:item>
 											</Title>
 											<Group>AlwaysHorizontal</Group>
+											<Behavior>Usual</Behavior>
 											<Representation>None</Representation>
 											<ShowTitle>false</ShowTitle>
 											<ExtendedTooltip name="ГруппаЕдиницыИзмеренияРасширеннаяПодсказка" id="269"/>
@@ -712,6 +724,54 @@
 						</InputField>
 					</ChildItems>
 				</UsualGroup>
+				<UsualGroup name="ГруппаПрочее" id="293">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Прочее</v8:content>
+						</v8:item>
+					</Title>
+					<Group>Vertical</Group>
+					<Behavior>Collapsible</Behavior>
+					<Collapsed>true</Collapsed>
+					<ControlRepresentation>Picture</ControlRepresentation>
+					<Representation>None</Representation>
+					<ExtendedTooltip name="ГруппаПрочееРасширеннаяПодсказка" id="294"/>
+					<ChildItems>
+						<InputField name="КодТНВЭД" id="281">
+							<DataPath>Объект.КодТНВЭД</DataPath>
+							<ContextMenu name="КодТНВЭДКонтекстноеМеню" id="282"/>
+							<ExtendedTooltip name="КодТНВЭДРасширеннаяПодсказка" id="283"/>
+						</InputField>
+						<InputField name="КодПоКТРУ" id="278">
+							<DataPath>Объект.КодПоКТРУ</DataPath>
+							<ContextMenu name="КодПоКТРУКонтекстноеМеню" id="279"/>
+							<ExtendedTooltip name="КодПоКТРУРасширеннаяПодсказка" id="280"/>
+						</InputField>
+						<InputField name="ТипНоменклатурыФНС" id="284">
+							<DataPath>Объект.ТипНоменклатурыФНС</DataPath>
+							<ContextMenu name="ТипНоменклатурыФНСКонтекстноеМеню" id="285"/>
+							<ExtendedTooltip name="ТипНоменклатурыФНСРасширеннаяПодсказка" id="286"/>
+						</InputField>
+						<InputField name="СтранаПроисхожденияКод" id="295">
+							<DataPath>Объект.СтранаПроисхожденияКод</DataPath>
+							<ContextMenu name="СтранаПроисхожденияКодКонтекстноеМеню" id="296"/>
+							<ExtendedTooltip name="СтранаПроисхожденияКодРасширеннаяПодсказка" id="297"/>
+						</InputField>
+						<CheckBoxField name="ПрослеживаемыйТовар" id="287">
+							<DataPath>Объект.ПрослеживаемыйТовар</DataPath>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ПрослеживаемыйТоварКонтекстноеМеню" id="288"/>
+							<ExtendedTooltip name="ПрослеживаемыйТоварРасширеннаяПодсказка" id="289"/>
+						</CheckBoxField>
+						<CheckBoxField name="МаркируемыйТовар" id="290">
+							<DataPath>Объект.МаркируемыйТовар</DataPath>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="МаркируемыйТоварКонтекстноеМеню" id="291"/>
+							<ExtendedTooltip name="МаркируемыйТоварРасширеннаяПодсказка" id="292"/>
+						</CheckBoxField>
+					</ChildItems>
+				</UsualGroup>
 			</ChildItems>
 		</UsualGroup>
 		<UsualGroup name="ГруппаСоответствиеНоменклатуры" id="128">
@@ -722,6 +782,7 @@
 				</v8:item>
 			</Title>
 			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
 			<Representation>NormalSeparation</Representation>
 			<ExtendedTooltip name="ГруппаСоответствиеНоменклатурыРасширеннаяПодсказка" id="129"/>
 			<ChildItems>

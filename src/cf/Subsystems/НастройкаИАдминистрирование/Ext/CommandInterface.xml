@@ -66,6 +66,12 @@
 				<xr:Common>false</xr:Common>
 			</Visibility>
 		</Command>
+		<Command name="Catalog.УчетныеЗаписиЭлектроннойПочты.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.Администрирование">true</xr:Value>
+			</Visibility>
+		</Command>
 		<Command name="InformationRegister.НастройкиВерсионированияОбъектов.StandardCommand.OpenList">
 			<Visibility>
 				<xr:Common>false</xr:Common>
@@ -151,12 +157,6 @@
 				<xr:Common>false</xr:Common>
 			</Visibility>
 		</Command>
-		<Command name="Catalog.УчетныеЗаписиЭлектроннойПочты.StandardCommand.OpenList">
-			<Visibility>
-				<xr:Common>true</xr:Common>
-				<xr:Value name="Role.Администрирование">true</xr:Value>
-			</Visibility>
-		</Command>
 		<Command name="CommonCommand.ШаблоныДокументов">
 			<Visibility>
 				<xr:Common>false</xr:Common>
@@ -171,6 +171,11 @@
 			</Visibility>
 		</Command>
 		<Command name="InformationRegister.СотрудникиДляКонтроляСамочувствия.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="DataProcessor.ПанельАдминистрированияБСП.Command.НастройкиРаботыСФайлами">
 			<Visibility>
 				<xr:Common>false</xr:Common>
 			</Visibility>
@@ -215,6 +220,22 @@
 				<xr:Common>false</xr:Common>
 			</Visibility>
 		</Command>
+		<Command name="CommonCommand.РазместитьФайлыНачальногоОбраза">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="CommonCommand.СведенияОПользователе">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+				<xr:Value name="Role.БазовыеПраваДокументооборот">true</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="CommonForm.НастройкиРегистрацииСобытийДоступаКПерсональнымДанным.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
 		<Command name="DataProcessor.АвтоматическаяПроверкаЭПДокументовИзСВД.StandardCommand.Open">
 			<Visibility>
 				<xr:Common>false</xr:Common>
@@ -245,12 +266,7 @@
 				<xr:Common>false</xr:Common>
 			</Visibility>
 		</Command>
-		<Command name="DataProcessor.ЗагрузкаДанныхИз1САрхива30.StandardCommand.Open">
-			<Visibility>
-				<xr:Common>false</xr:Common>
-			</Visibility>
-		</Command>
-		<Command name="DataProcessor.ОценкаПроизводительности.Command.ИмпортЗамеровПроизводительности">
+		<Command name="DataProcessor.НастройкаПрограммы.StandardCommand.Open">
 			<Visibility>
 				<xr:Common>false</xr:Common>
 			</Visibility>
@@ -260,12 +276,7 @@
 				<xr:Common>false</xr:Common>
 			</Visibility>
 		</Command>
-		<Command name="DataProcessor.НастройкаПрограммы.StandardCommand.Open">
-			<Visibility>
-				<xr:Common>false</xr:Common>
-			</Visibility>
-		</Command>
-		<Command name="DataProcessor.ОценкаПроизводительности.Command.НастройкиОценкиПроизводительности">
+		<Command name="DataProcessor.НастройкиПользователей.Command.ОчисткаНастроекПользователей">
 			<Visibility>
 				<xr:Common>false</xr:Common>
 			</Visibility>
@@ -275,20 +286,19 @@
 				<xr:Common>false</xr:Common>
 			</Visibility>
 		</Command>
-		<Command name="CommonForm.НастройкиРегистрацииСобытийДоступаКПерсональнымДанным.StandardCommand.Open">
+		<Command name="DataProcessor.ОценкаПроизводительности.Command.ИмпортЗамеровПроизводительности">
 			<Visibility>
 				<xr:Common>false</xr:Common>
 			</Visibility>
 		</Command>
-		<Command name="CommonCommand.СведенияОПользователе">
+		<Command name="DataProcessor.ОценкаПроизводительности.Command.НастройкиОценкиПроизводительности">
 			<Visibility>
 				<xr:Common>false</xr:Common>
-				<xr:Value name="Role.БазовыеПраваДокументооборот">true</xr:Value>
 			</Visibility>
 		</Command>
-		<Command name="Report.ОценкаПроизводительности.StandardCommand.Open">
+		<Command name="DataProcessor.ОценкаПроизводительности.Command.ЭкспортЗамеровПроизводительности">
 			<Visibility>
-				<xr:Common>true</xr:Common>
+				<xr:Common>false</xr:Common>
 			</Visibility>
 		</Command>
 		<Command name="DataProcessor.ОценкаПроизводительности.StandardCommand.Open">
@@ -296,9 +306,9 @@
 				<xr:Common>false</xr:Common>
 			</Visibility>
 		</Command>
-		<Command name="DataProcessor.НастройкиПользователей.Command.ОчисткаНастроекПользователей">
+		<Command name="Report.ОценкаПроизводительности.StandardCommand.Open">
 			<Visibility>
-				<xr:Common>false</xr:Common>
+				<xr:Common>true</xr:Common>
 			</Visibility>
 		</Command>
 		<Command name="DataProcessor.ПерсональныеНастройки.StandardCommand.Open">
@@ -312,11 +322,6 @@
 			</Visibility>
 		</Command>
 		<Command name="DataProcessor.ПолнотекстовыйПоискВДанных.Command.ПолнотекстовыйПоиск">
-			<Visibility>
-				<xr:Common>false</xr:Common>
-			</Visibility>
-		</Command>
-		<Command name="CommonCommand.РазместитьФайлыНачальногоОбраза">
 			<Visibility>
 				<xr:Common>false</xr:Common>
 			</Visibility>
@@ -337,16 +342,6 @@
 			</Visibility>
 		</Command>
 		<Command name="DataProcessor.УправлениеРасчетомПрав.StandardCommand.Open">
-			<Visibility>
-				<xr:Common>false</xr:Common>
-			</Visibility>
-		</Command>
-		<Command name="DataProcessor.ОценкаПроизводительности.Command.ЭкспортЗамеровПроизводительности">
-			<Visibility>
-				<xr:Common>false</xr:Common>
-			</Visibility>
-		</Command>
-		<Command name="DataProcessor.ПанельАдминистрированияБСП.Command.НастройкиРаботыСФайлами">
 			<Visibility>
 				<xr:Common>false</xr:Common>
 			</Visibility>
@@ -514,6 +509,9 @@
 		<Command name="DataProcessor.ПанельАдминистрированияБСП.Command.НастройкиРаботыСФайлами">
 			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
 		</Command>
+		<Command name="Catalog.НаборыДополнительныхРеквизитовИСведений.Command.Метки">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
 		<Command name="Report.АнализЖурналаРегистрации.StandardCommand.Open">
 			<CommandGroup>ActionsPanelReports</CommandGroup>
 		</Command>
@@ -538,6 +536,135 @@
 		<Command name="Report.УниверсальныйОтчет.StandardCommand.Open">
 			<CommandGroup>ActionsPanelReports</CommandGroup>
 		</Command>
+		<Command name="Catalog.УведомленияПрограммы.Command.Уведомления">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="CommonCommand.ДополнительныеОбработкиАдминистрирование">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="CommonCommand.МониторПортала1СИТС">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="CommonCommand.ПерейтиВОблачныйСервис">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="CommonCommand.ПереносДанныхПриложения">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="CommonCommand.ЗагрузитьДанныеИзСервиса">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="CommonCommand.РазместитьФайлыНачальногоОбраза">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="CommonCommand.СведенияОПользователе">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="CommonCommand.СменитьПароль">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="CommonForm.НастройкиРегистрацииСобытийДоступаКПерсональнымДанным.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="CommonForm.Расширения.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.АвтоматическаяПроверкаЭПДокументовИзСВД.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.АвтоматическоеИзвлечениеТекстов.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.АвтоматическоеРаспознаваниеИзображений.Command.АвтоматическоеРаспознаваниеИзображений">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.АдминистрированиеОбсуждений.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.АктивныеПользователи.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.БлокировкаРаботыПользователей.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ГрупповоеИзменениеРеквизитов.Command.ГрупповоеИзменениеРеквизитов">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ЖурналРегистрации.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ЗагрузкаДанныхИзФайла.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.НастройкаПрограммы.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.НастройкиПользователей.Command.КопированиеНастроекПользователей">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.НастройкиПользователей.Command.ОчисткаНастроекПользователей">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.НастройкиПользователей.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.Обозреватель.Command.НаписатьОтзыв">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ОценкаПроизводительности.Command.ИмпортЗамеровПроизводительности">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ОценкаПроизводительности.Command.НастройкиОценкиПроизводительности">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ОценкаПроизводительности.Command.ЭкспортЗамеровПроизводительности">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ОценкаПроизводительности.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="Report.ОценкаПроизводительности.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ОчисткаУстаревшихВерсийФайлов.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ПерсональныеНастройки.Command.ПерсональныеНастройки">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ПерсональныеНастройки.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ПоискИУдалениеДублей.Command.ПоискИУдалениеДублей">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="InformationRegister.ПротоколРаботыССервисомРаспознавания.Command.ПротоколРаботыССервисомРаспознавания">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ПолнотекстовыйПоискВДанных.Command.ПолнотекстовыйПоиск">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.РегламентныеИФоновыеЗадания.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.УдалениеПомеченныхОбъектов.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.УничтожениеПерсональныхДанных.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.УправлениеПолнотекстовымПоиском.Command.УправлениеПолнотекстовымПоиском">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.УправлениеРасчетомПрав.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.УстановкаТиповойМетодикиДокументооборота.StandardCommand.Open">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
+		<Command name="InformationRegister.ФайлыНаРаспознавании.Command.ФайлыНаРаспознавании">
+			<CommandGroup>ActionsPanelTools</CommandGroup>
+		</Command>
 	</CommandsOrder>
 	<SubsystemsOrder>
 		<Subsystem>Subsystem.НастройкаИАдминистрирование.Subsystem.БизнесСобытия</Subsystem>
@@ -547,13 +674,16 @@
 		<Subsystem>Subsystem.НастройкаИАдминистрирование.Subsystem.СВД</Subsystem>
 		<Subsystem>Subsystem.НастройкаИАдминистрирование.Subsystem.УдалениеУстаревшихДанных</Subsystem>
 		<Subsystem>Subsystem.НастройкаИАдминистрирование.Subsystem.УправлениеДоступом</Subsystem>
-		<Subsystem>Subsystem.НастройкаИАдминистрирование.Subsystem.ОтметкиВремени</Subsystem>
+		<Subsystem>Subsystem.НастройкаИАдминистрирование.Subsystem.АдминистрированиеМЭДО</Subsystem>
 		<Subsystem>Subsystem.НастройкаИАдминистрирование.Subsystem.ЭДО</Subsystem>
 		<Subsystem>Subsystem.НастройкаИАдминистрирование.Subsystem.ЧатБот</Subsystem>
 		<Subsystem>Subsystem.НастройкаИАдминистрирование.Subsystem.РегламентированнаяОтчетностьДокументооборот</Subsystem>
+		<Subsystem>Subsystem.НастройкаИАдминистрирование.Subsystem.МиграцияДанныхИзВнешнихСистем</Subsystem>
+		<Subsystem>Subsystem.НастройкаИАдминистрирование.Subsystem.Распознавание</Subsystem>
 	</SubsystemsOrder>
 	<GroupsOrder>
 		<Group>NavigationPanelOrdinary</Group>
 		<Group>ActionsPanelReports</Group>
+		<Group>ActionsPanelTools</Group>
 	</GroupsOrder>
 </CommandInterface>

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
 	<Title>
 		<v8:item>
 			<v8:lang>ru</v8:lang>
@@ -29,6 +29,7 @@
 			<HorizontalStretch>true</HorizontalStretch>
 			<VerticalStretch>false</VerticalStretch>
 			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<BackColor>style:ToolTipBackColor</BackColor>
@@ -42,6 +43,7 @@
 				</v8:item>
 			</Title>
 			<Group>AlwaysHorizontal</Group>
+			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ОтборыРасширеннаяПодсказка" id="2"/>
@@ -320,7 +322,7 @@
 							<EnableStartDrag>true</EnableStartDrag>
 							<FileDragMode>AsFile</FileDragMode>
 							<DataPath>Интеркампани</DataPath>
-							<RowPictureDataPath>Интеркампани.DefaultPicture</RowPictureDataPath>
+							<RowPictureDataPath>~Интеркампани.DefaultPicture</RowPictureDataPath>
 							<Title>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
@@ -409,7 +411,7 @@
 							<EnableStartDrag>true</EnableStartDrag>
 							<FileDragMode>AsFile</FileDragMode>
 							<DataPath>НастройкиПолучения</DataPath>
-							<RowPictureDataPath>НастройкиПолучения.DefaultPicture</RowPictureDataPath>
+							<RowPictureDataPath>~НастройкиПолучения.DefaultPicture</RowPictureDataPath>
 							<Title>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
@@ -556,7 +558,7 @@
 							<UseAlternationRowColor>true</UseAlternationRowColor>
 							<EnableStartDrag>true</EnableStartDrag>
 							<DataPath>НастройкиВнутреннегоДО</DataPath>
-							<RowPictureDataPath>НастройкиВнутреннегоДО.DefaultPicture</RowPictureDataPath>
+							<RowPictureDataPath>~НастройкиВнутреннегоДО.DefaultPicture</RowPictureDataPath>
 							<AutoRefresh>false</AutoRefresh>
 							<AutoRefreshPeriod>60</AutoRefreshPeriod>
 							<Period>
@@ -641,6 +643,7 @@
 				</v8:item>
 			</Title>
 			<HorizontalStretch>true</HorizontalStretch>
+			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаПодвалРасширеннаяПодсказка" id="127"/>
@@ -653,15 +656,18 @@
 						</v8:item>
 					</Title>
 					<Group>Horizontal</Group>
+					<Behavior>Usual</Behavior>
 					<Representation>None</Representation>
 					<ChildItemsWidth>LeftWidest</ChildItemsWidth>
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="ГруппаКонтактовПоддержкиРасширеннаяПодсказка" id="137"/>
 					<ChildItems>
-						<LabelDecoration name="Техподдержка" id="159">
-							<ContextMenu name="ТехподдержкаКонтекстноеМеню" id="160"/>
-							<ExtendedTooltip name="ТехподдержкаРасширеннаяПодсказка" id="161"/>
-						</LabelDecoration>
+						<Button name="Техподдержка" id="210">
+							<Type>Hyperlink</Type>
+							<CommandName>Form.Command.Техподдержка</CommandName>
+							<Font ref="style:ЖирныйШрифтБЭД" kind="StyleItem"/>
+							<ExtendedTooltip name="ТехподдержкаРасширеннаяПодсказка" id="211"/>
+						</Button>
 						<InputField name="ТелефонСлужбыПоддержки2" id="138">
 							<DataPath>ТелефонСлужбыПоддержки</DataPath>
 							<Visible>false</Visible>
@@ -722,13 +728,14 @@
 						</v8:item>
 					</Title>
 					<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+					<Behavior>Usual</Behavior>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="ГруппаТекущиеДелаЭДОРасширеннаяПодсказка" id="147"/>
 					<ChildItems>
 						<Button name="ОткрытьТекущиеДела" id="148">
 							<Type>Hyperlink</Type>
-							<CommandName>0</CommandName>
+							<CommandName>CommonCommand.ТекущиеДелаЭДО</CommandName>
 							<ExtendedTooltip name="ОткрытьТекущиеДелаРасширеннаяПодсказка" id="149"/>
 						</Button>
 					</ChildItems>
@@ -779,7 +786,7 @@
 	МАКСИМУМ(НастройкиОтправкиПоВидам.ИдентификаторПолучателя) КАК ИдентификаторПолучателя,
 	КОЛИЧЕСТВО(РАЗЛИЧНЫЕ НастройкиОтправкиПоВидам.ИдентификаторОтправителя) КАК КоличествоИдентификаторовОтправителя,
 	КОЛИЧЕСТВО(РАЗЛИЧНЫЕ НастройкиОтправкиПоВидам.ИдентификаторПолучателя) КАК КоличествоИдентификаторовПолучателя,
-	ПРЕДСТАВЛЕНИЕ(МАКСИМУМ(ЕСТЬNULL(ПриглашенияКОбмену.Статус, ""))) КАК СтатусПриглашенияПредставление,
+	ПРЕДСТАВЛЕНИЕ(МАКСИМУМ(ЕСТЬNULL(ПриглашенияКОбмену.Статус, ЗНАЧЕНИЕ(Перечисление.СтатусыПриглашений.ТребуетсяОтправить)))) КАК СтатусПриглашенияПредставление,
 	МАКСИМУМ(ПриглашенияКОбмену.Статус) КАК СтатусПриглашенияСсылка,
 	СУММА(ВЫБОР
 			КОГДА ПриглашенияКОбмену.Статус = ЗНАЧЕНИЕ(Перечисление.СтатусыПриглашений.ОжидаемСогласия)
@@ -823,7 +830,10 @@
 		ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.НастройкиОтправкиЭлектронныхДокументовПоВидам КАК НастройкиОтправкиПоВидам
 		ПО НастройкиОтправки.Отправитель = НастройкиОтправкиПоВидам.Отправитель
 			И НастройкиОтправки.Получатель = НастройкиОтправкиПоВидам.Получатель
-			И НастройкиОтправки.Договор = НастройкиОтправкиПоВидам.Договор
+			И (НастройкиОтправки.Договор = НастройкиОтправкиПоВидам.Договор
+				ИЛИ НастройкиОтправки.Договор В (&amp;ПустойДоговор)
+				И НастройкиОтправкиПоВидам.Договор В (&amp;ПустойДоговор)
+			)
 		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ПриглашенияКОбменуЭлектроннымиДокументами КАК ПриглашенияКОбмену
 		ПО (НастройкиОтправкиПоВидам.ИдентификаторОтправителя = ПриглашенияКОбмену.ИдентификаторОрганизации)
 			И (НастройкиОтправкиПоВидам.ИдентификаторПолучателя = ПриглашенияКОбмену.ИдентификаторКонтрагента)
@@ -841,6 +851,176 @@
 	НастройкиОтправки.Договор,
 	НастройкиОтправки.ДатаНачалаДействия,
 	НастройкиОтправки.ЭтоПрямойОбмен</QueryText>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Организация</dcssch:dataPath>
+					<dcssch:field>Организация</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Организация</v8:content>
+						</v8:item>
+					</dcssch:title>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Контрагент</dcssch:dataPath>
+					<dcssch:field>Контрагент</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Контрагент</v8:content>
+						</v8:item>
+					</dcssch:title>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Договор</dcssch:dataPath>
+					<dcssch:field>Договор</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ДатаНачалаДействия</dcssch:dataPath>
+					<dcssch:field>ДатаНачалаДействия</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ЭтоПрямойОбмен</dcssch:dataPath>
+					<dcssch:field>ЭтоПрямойОбмен</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ИдентификаторОтправителя</dcssch:dataPath>
+					<dcssch:field>ИдентификаторОтправителя</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ИдентификаторПолучателя</dcssch:dataPath>
+					<dcssch:field>ИдентификаторПолучателя</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>КоличествоИдентификаторовОтправителя</dcssch:dataPath>
+					<dcssch:field>КоличествоИдентификаторовОтправителя</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>КоличествоИдентификаторовПолучателя</dcssch:dataPath>
+					<dcssch:field>КоличествоИдентификаторовПолучателя</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>СтатусПриглашенияПредставление</dcssch:dataPath>
+					<dcssch:field>СтатусПриглашенияПредставление</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Статус приглашения представление</v8:content>
+						</v8:item>
+					</dcssch:title>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>СтатусПриглашенияСсылка</dcssch:dataPath>
+					<dcssch:field>СтатусПриглашенияСсылка</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>КоличествоОжидаемСогласия</dcssch:dataPath>
+					<dcssch:field>КоличествоОжидаемСогласия</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Количество ожидаем согласия</v8:content>
+						</v8:item>
+					</dcssch:title>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>КоличествоНастройкаРоуминга</dcssch:dataPath>
+					<dcssch:field>КоличествоНастройкаРоуминга</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Количество настройка роуминга</v8:content>
+						</v8:item>
+					</dcssch:title>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>КоличествоОтклонено</dcssch:dataPath>
+					<dcssch:field>КоличествоОтклонено</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Количество отклонено</v8:content>
+						</v8:item>
+					</dcssch:title>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>КоличествоТребуетсяОтправить</dcssch:dataPath>
+					<dcssch:field>КоличествоТребуетсяОтправить</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Количество требуется отправить</v8:content>
+						</v8:item>
+					</dcssch:title>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>КоличествоТребуетсяСогласие</dcssch:dataPath>
+					<dcssch:field>КоличествоТребуетсяСогласие</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Количество требуется согласие</v8:content>
+						</v8:item>
+					</dcssch:title>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>КоличествоОшибка</dcssch:dataPath>
+					<dcssch:field>КоличествоОшибка</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Количество ошибка</v8:content>
+						</v8:item>
+					</dcssch:title>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>КоличествоНеТребуется</dcssch:dataPath>
+					<dcssch:field>КоличествоНеТребуется</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Количество не требуется</v8:content>
+						</v8:item>
+					</dcssch:title>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ОператорЭДО</dcssch:dataPath>
+					<dcssch:field>ОператорЭДО</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ИспользоватьУПД</dcssch:dataPath>
+					<dcssch:field>ИспользоватьУПД</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ИспользоватьУКД</dcssch:dataPath>
+					<dcssch:field>ИспользоватьУКД</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ЭтоИнтеркампани</dcssch:dataPath>
+					<dcssch:field>ЭтоИнтеркампани</dcssch:field>
+				</Field>
+				<Parameter>
+					<dcssch:name>ИспользоватьПрямойОбмен</dcssch:name>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Использовать прямой обмен</v8:content>
+						</v8:item>
+					</dcssch:title>
+					<dcssch:value xsi:nil="true"/>
+					<dcssch:useRestriction>true</dcssch:useRestriction>
+				</Parameter>
+				<Parameter>
+					<dcssch:name>ПустойДоговор</dcssch:name>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Пустой договор</v8:content>
+						</v8:item>
+					</dcssch:title>
+					<dcssch:useRestriction>true</dcssch:useRestriction>
+					<dcssch:valueListAllowed>true</dcssch:valueListAllowed>
+				</Parameter>
 				<MainTable>InformationRegister.НастройкиОтправкиЭлектронныхДокументов</MainTable>
 				<ListSettings>
 					<dcsset:filter>
@@ -1245,6 +1425,15 @@
 			</Picture>
 			<Action>СоздатьНастройкуВнутреннегоЭДО</Action>
 			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="Техподдержка" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Техподдержка</v8:content>
+				</v8:item>
+			</Title>
+			<Action>Техподдержка</Action>
 		</Command>
 	</Commands>
 	<Parameters>

@@ -34,10 +34,10 @@
 			<Explanation/>
 		</Properties>
 		<ChildObjects>
-			<Template>ОсновнаяСхемаКомпоновкиДанных</Template>
 			<Template>ОбразецОтчетаВоронкаЭскалации</Template>
-			<Template>ОбразецОтчетаСводкаЭскалацииПоСотрудникам</Template>
 			<Template>ОбразецОтчетаСводкаЭскалацииПоПравилам</Template>
+			<Template>ОбразецОтчетаСводкаЭскалацииПоСотрудникам</Template>
+			<Template>ОсновнаяСхемаКомпоновкиДанных</Template>
 		</ChildObjects>
 	</Report>
 </MetaDataObject>

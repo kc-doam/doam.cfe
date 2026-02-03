@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
 	<Title>
 		<v8:item>
 			<v8:lang>ru</v8:lang>
@@ -59,6 +59,7 @@
 				</v8:item>
 			</ToolTip>
 			<Group>AlwaysHorizontal</Group>
+			<Behavior>Usual</Behavior>
 			<Representation>NormalSeparation</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаЗаголовокРасширеннаяПодсказка" id="627"/>
@@ -93,6 +94,7 @@
 			</Title>
 			<HorizontalStretch>false</HorizontalStretch>
 			<Group>AlwaysHorizontal</Group>
+			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаКолонкиРасширеннаяПодсказка" id="625"/>
@@ -112,6 +114,7 @@
 					</ToolTip>
 					<Group>Vertical</Group>
 					<VerticalSpacing>OneAndHalf</VerticalSpacing>
+					<Behavior>Usual</Behavior>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="ЛеваяКолонкаРасширеннаяПодсказка" id="621"/>
@@ -119,6 +122,7 @@
 						<UsualGroup name="ГруппаИспользоватьБизнесСобытия" id="524">
 							<Group>Vertical</Group>
 							<VerticalSpacing>None</VerticalSpacing>
+							<Behavior>Usual</Behavior>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="ГруппаИспользоватьБизнесСобытияРасширеннаяПодсказка" id="525"/>
@@ -154,6 +158,7 @@
 										</v8:item>
 									</ToolTip>
 									<Group>Horizontal</Group>
+									<Behavior>Usual</Behavior>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="ГруппаИспользоватьБизнесСобытияДополнительноРасширеннаяПодсказка" id="383"/>
@@ -165,12 +170,14 @@
 										</LabelDecoration>
 										<UsualGroup name="Группа1" id="531">
 											<Group>Vertical</Group>
+											<Behavior>Usual</Behavior>
 											<Representation>None</Representation>
 											<ShowTitle>false</ShowTitle>
 											<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="532"/>
 											<ChildItems>
 												<UsualGroup name="ГруппаСрокХраненияБизнесСобытий" id="526">
 													<Group>Horizontal</Group>
+													<Behavior>Usual</Behavior>
 													<Representation>None</Representation>
 													<ShowTitle>false</ShowTitle>
 													<ExtendedTooltip name="ГруппаСрокХраненияБизнесСобытийРасширеннаяПодсказка" id="527"/>
@@ -201,6 +208,7 @@
 												</UsualGroup>
 												<UsualGroup name="ГруппаИспользоватьУведомления" id="522">
 													<Group>Horizontal</Group>
+													<Behavior>Usual</Behavior>
 													<Representation>None</Representation>
 													<ShowTitle>false</ShowTitle>
 													<ExtendedTooltip name="ГруппаИспользоватьУведомленияРасширеннаяПодсказка" id="523"/>
@@ -246,6 +254,7 @@
 						<UsualGroup name="ГруппаВерсионирование" id="575">
 							<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
 							<Group>Horizontal</Group>
+							<Behavior>Usual</Behavior>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="ГруппаВерсионированиеРасширеннаяПодсказка" id="576"/>
@@ -297,6 +306,7 @@
 							</ToolTip>
 							<Group>Vertical</Group>
 							<VerticalSpacing>Half</VerticalSpacing>
+							<Behavior>Usual</Behavior>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="ГруппаДопРеквизитыРасширеннаяПодсказка" id="629"/>
@@ -327,6 +337,7 @@
 							<TitleFont ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
 							<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
 							<Group>Horizontal</Group>
+							<Behavior>Usual</Behavior>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="ГруппаИнструкцииExtendedTooltip" id="374"/>
@@ -400,6 +411,7 @@
 							</ToolTip>
 							<Group>Vertical</Group>
 							<VerticalSpacing>Half</VerticalSpacing>
+							<Behavior>Usual</Behavior>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="ГруппаМероприятияРасширеннаяПодсказка" id="631"/>
@@ -424,6 +436,7 @@
 								<UsualGroup name="Группа8" id="610">
 									<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
 									<Group>Horizontal</Group>
+									<Behavior>Usual</Behavior>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="Группа8РасширеннаяПодсказка" id="611"/>
@@ -435,6 +448,7 @@
 										</LabelDecoration>
 										<UsualGroup name="Группа9" id="615">
 											<Group>Vertical</Group>
+											<Behavior>Usual</Behavior>
 											<Representation>None</Representation>
 											<ShowTitle>false</ShowTitle>
 											<ExtendedTooltip name="Группа9РасширеннаяПодсказка" id="616"/>
@@ -462,23 +476,6 @@
 								</UsualGroup>
 							</ChildItems>
 						</UsualGroup>
-						<CheckBoxField name="ИспользоватьОтсутствия" id="557">
-							<DataPath>НаборКонстант.ИспользоватьОтсутствия</DataPath>
-							<Title>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Отсутствия</v8:content>
-								</v8:item>
-							</Title>
-							<TitleLocation>Right</TitleLocation>
-							<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
-							<CheckBoxType>Auto</CheckBoxType>
-							<ContextMenu name="ИспользоватьОтсутствияКонтекстноеМеню" id="558"/>
-							<ExtendedTooltip name="ИспользоватьОтсутствияРасширеннаяПодсказка" id="559"/>
-							<Events>
-								<Event name="OnChange">ИспользоватьОтсутствияПриИзменении</Event>
-							</Events>
-						</CheckBoxField>
 						<UsualGroup name="ГруппаОбсуждения" id="583">
 							<Title>
 								<v8:item>
@@ -494,11 +491,13 @@
 							</ToolTip>
 							<ToolTipRepresentation>None</ToolTipRepresentation>
 							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="ГруппаОбсужденияРасширеннаяПодсказка" id="584"/>
 							<ChildItems>
 								<UsualGroup name="Группа2" id="679">
+									<Behavior>Usual</Behavior>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="680"/>
@@ -544,6 +543,7 @@
 									</Title>
 									<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
 									<Group>Horizontal</Group>
+									<Behavior>Usual</Behavior>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="ГруппаЧатБотРасширеннаяПодсказка" id="670"/>
@@ -561,6 +561,7 @@
 												</v8:item>
 											</Title>
 											<Group>AlwaysHorizontal</Group>
+											<Behavior>Usual</Behavior>
 											<Representation>None</Representation>
 											<ShowTitle>false</ShowTitle>
 											<ExtendedTooltip name="ГруппаЧатБотИНастройкаРасширеннаяПодсказка" id="675"/>
@@ -614,6 +615,7 @@
 					</ToolTip>
 					<Group>Vertical</Group>
 					<VerticalSpacing>OneAndHalf</VerticalSpacing>
+					<Behavior>Usual</Behavior>
 					<Representation>NormalSeparation</Representation>
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="ПраваяКолонкаРасширеннаяПодсказка" id="623"/>
@@ -630,6 +632,23 @@
 							<CheckBoxType>Auto</CheckBoxType>
 							<ContextMenu name="ВыполнятьЗамерыПроизводительностиКонтекстноеМеню" id="534"/>
 							<ExtendedTooltip name="ВыполнятьЗамерыПроизводительностиExtendedTooltip" id="535"/>
+						</CheckBoxField>
+						<CheckBoxField name="ИспользоватьОтсутствия" id="557">
+							<DataPath>НаборКонстант.ИспользоватьОтсутствия</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Отсутствия</v8:content>
+								</v8:item>
+							</Title>
+							<TitleLocation>Right</TitleLocation>
+							<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ИспользоватьОтсутствияКонтекстноеМеню" id="558"/>
+							<ExtendedTooltip name="ИспользоватьОтсутствияРасширеннаяПодсказка" id="559"/>
+							<Events>
+								<Event name="OnChange">ИспользоватьОтсутствияПриИзменении</Event>
+							</Events>
 						</CheckBoxField>
 						<CheckBoxField name="ИспользоватьПолнотекстовыйПоиск" id="31">
 							<DataPath>НаборКонстант.ИспользоватьПолнотекстовыйПоиск</DataPath>
@@ -648,6 +667,7 @@
 						<UsualGroup name="ГруппаИспользоватьСхемыПомещений" id="565">
 							<Group>Vertical</Group>
 							<VerticalSpacing>Half</VerticalSpacing>
+							<Behavior>Usual</Behavior>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="ГруппаИспользоватьСхемыПомещенийРасширеннаяПодсказка" id="566"/>
@@ -683,6 +703,7 @@
 										</v8:item>
 									</ToolTip>
 									<Group>Horizontal</Group>
+									<Behavior>Usual</Behavior>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="ГруппаИспользоватьСхемыПомещенийДополнительноРасширеннаяПодсказка" id="568"/>
@@ -713,6 +734,7 @@
 						<UsualGroup name="ГруппаИспользоватьРабочийКалендарь" id="635">
 							<Group>Vertical</Group>
 							<VerticalSpacing>Half</VerticalSpacing>
+							<Behavior>Usual</Behavior>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="ГруппаИспользоватьРабочийКалендарьРасширеннаяПодсказка" id="636"/>
@@ -747,6 +769,7 @@
 											<v8:content>Группа использовать напоминания пользователя</v8:content>
 										</v8:item>
 									</ToolTip>
+									<Behavior>Usual</Behavior>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="ГруппаИспользоватьНапоминанияПользователяРасширеннаяПодсказка" id="646"/>
@@ -785,6 +808,7 @@
 											<v8:content>Группа использовать синхронизацию календарей</v8:content>
 										</v8:item>
 									</ToolTip>
+									<Behavior>Usual</Behavior>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="ГруппаИспользоватьСинхронизациюКалендарейРасширеннаяПодсказка" id="644"/>
@@ -866,6 +890,7 @@
 							</ToolTip>
 							<Group>Vertical</Group>
 							<VerticalSpacing>Half</VerticalSpacing>
+							<Behavior>Usual</Behavior>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="ГруппаЗащитаПерсДанныхРасширеннаяПодсказка" id="592"/>
@@ -900,6 +925,7 @@
 										</v8:item>
 									</ToolTip>
 									<Group>Horizontal</Group>
+									<Behavior>Usual</Behavior>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="ГруппаЗащитаПерсДанных2РасширеннаяПодсказка" id="597"/>
@@ -923,10 +949,24 @@
 												</v8:item>
 											</ToolTip>
 											<Group>Vertical</Group>
+											<Behavior>Usual</Behavior>
 											<Representation>None</Representation>
 											<ShowTitle>false</ShowTitle>
 											<ExtendedTooltip name="ГруппаЗащитаПерсДанных3РасширеннаяПодсказка" id="602"/>
 											<ChildItems>
+												<CheckBoxField name="ИспользоватьСкрытиеПерсональныхДанныхСубъектов" id="784">
+													<DataPath>НаборКонстант.ИспользоватьСкрытиеПерсональныхДанныхСубъектов</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Уничтожать персональные данные</v8:content>
+														</v8:item>
+													</Title>
+													<TitleLocation>Right</TitleLocation>
+													<CheckBoxType>Auto</CheckBoxType>
+													<ContextMenu name="ИспользоватьСкрытиеПерсональныхДанныхСубъектовКонтекстноеМеню" id="785"/>
+													<ExtendedTooltip name="ИспользоватьСкрытиеПерсональныхДанныхСубъектовРасширеннаяПодсказка" id="786"/>
+												</CheckBoxField>
 												<Button name="СобытияДоступаКПерсональнымДанным" id="603">
 													<Type>Hyperlink</Type>
 													<CommandName>DataProcessor.ЗащитаПерсональныхДанных.Command.ЗащитаПерсональныхДанных</CommandName>
@@ -987,12 +1027,14 @@
 							<TitleFont ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
 							<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
 							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="ГруппаЭПРасширеннаяПодсказка" id="378"/>
 							<ChildItems>
 								<UsualGroup name="ГруппаЭПНастройки" id="563">
 									<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
 									<Group>Horizontal</Group>
+									<Behavior>Usual</Behavior>
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="ГруппаЭПНастройкиРасширеннаяПодсказка" id="564"/>
 									<ChildItems>
@@ -1044,130 +1086,54 @@
 										</LabelDecoration>
 									</ChildItems>
 								</UsualGroup>
-								<UsualGroup name="ГруппаЭПОблачнаяПодпись" id="684">
+								<UsualGroup name="ГруппаСертификаты" id="684">
 									<Title>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
-											<v8:content>Группа ЭПОблачная подпись</v8:content>
+											<v8:content>Группа3</v8:content>
 										</v8:item>
 									</Title>
-									<ToolTip>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Группа ЭПОблачная подпись</v8:content>
-										</v8:item>
-									</ToolTip>
 									<Group>AlwaysHorizontal</Group>
+									<Behavior>Usual</Behavior>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
-									<ExtendedTooltip name="ГруппаЭПОблачнаяПодписьРасширеннаяПодсказка" id="685"/>
+									<ExtendedTooltip name="ГруппаСертификатыРасширеннаяПодсказка" id="685"/>
 									<ChildItems>
-										<LabelDecoration name="ДекорацияОблачнаяПодписьОтступ1" id="686">
+										<LabelDecoration name="ДекорацияСертификатыОтступ" id="686">
 											<Width>2</Width>
-											<ContextMenu name="ДекорацияОблачнаяПодписьОтступ1КонтекстноеМеню" id="687"/>
-											<ExtendedTooltip name="ДекорацияОблачнаяПодписьОтступ1РасширеннаяПодсказка" id="688"/>
+											<ContextMenu name="ДекорацияСертификатыОтступКонтекстноеМеню" id="687"/>
+											<ExtendedTooltip name="ДекорацияСертификатыОтступРасширеннаяПодсказка" id="688"/>
 										</LabelDecoration>
-										<UsualGroup name="ГруппаЭПОблачнаяПодпись2" id="689">
-											<Title>
-												<v8:item>
-													<v8:lang>ru</v8:lang>
-													<v8:content>Группа ЭПОблачная подпись2</v8:content>
-												</v8:item>
-											</Title>
-											<ToolTip>
-												<v8:item>
-													<v8:lang>ru</v8:lang>
-													<v8:content>Группа ЭПОблачная подпись2</v8:content>
-												</v8:item>
-											</ToolTip>
-											<Group>Vertical</Group>
-											<Representation>None</Representation>
-											<ShowTitle>false</ShowTitle>
-											<ExtendedTooltip name="ГруппаЭПОблачнаяПодпись2РасширеннаяПодсказка" id="690"/>
-											<ChildItems>
-												<CheckBoxField name="ИспользоватьСервисОблачнойПодписи" id="691">
-													<DataPath>НаборКонстант.ИспользоватьСервисОблачнойПодписи</DataPath>
-													<Title>
-														<v8:item>
-															<v8:lang>ru</v8:lang>
-															<v8:content>Сервис облачной подписи</v8:content>
-														</v8:item>
-													</Title>
-													<TitleLocation>Right</TitleLocation>
-													<ToolTipRepresentation>Balloon</ToolTipRepresentation>
-													<CheckBoxType>Auto</CheckBoxType>
-													<ContextMenu name="ИспользоватьСервисОблачнойПодписиКонтекстноеМеню" id="692"/>
-													<ExtendedTooltip name="ИспользоватьСервисОблачнойПодписиРасширеннаяПодсказка" id="693">
-														<Title formatted="false">
-															<v8:item>
-																<v8:lang>ru</v8:lang>
-																<v8:content>Разрешить использовать для подписания сервисы облачной подписи.</v8:content>
-															</v8:item>
-														</Title>
-													</ExtendedTooltip>
-													<Events>
-														<Event name="OnChange">ИспользоватьСервисОблачнойПодписиПриИзменении</Event>
-													</Events>
-												</CheckBoxField>
-												<UsualGroup name="ГруппаЭПОблачнаяПодпись3" id="694">
-													<Title>
-														<v8:item>
-															<v8:lang>ru</v8:lang>
-															<v8:content>Группа ЭПОблачная подпись3</v8:content>
-														</v8:item>
-													</Title>
-													<ToolTip>
-														<v8:item>
-															<v8:lang>ru</v8:lang>
-															<v8:content>Группа ЭПОблачная подпись3</v8:content>
-														</v8:item>
-													</ToolTip>
-													<Group>AlwaysHorizontal</Group>
-													<Representation>None</Representation>
-													<ShowTitle>false</ShowTitle>
-													<ExtendedTooltip name="ГруппаЭПОблачнаяПодпись3РасширеннаяПодсказка" id="695"/>
-													<ChildItems>
-														<LabelDecoration name="ДекорацияОблачнаяПодписьОтступ2" id="696">
-															<Width>2</Width>
-															<ContextMenu name="ДекорацияОблачнаяПодписьОтступ2КонтекстноеМеню" id="697"/>
-															<ExtendedTooltip name="ДекорацияОблачнаяПодписьОтступ2РасширеннаяПодсказка" id="698"/>
-														</LabelDecoration>
-														<UsualGroup name="ГруппаЭПОблачнаяПодпись4" id="699">
-															<Title>
-																<v8:item>
-																	<v8:lang>ru</v8:lang>
-																	<v8:content>Группа ЭПОблачная подпись4</v8:content>
-																</v8:item>
-															</Title>
-															<ToolTip>
-																<v8:item>
-																	<v8:lang>ru</v8:lang>
-																	<v8:content>Группа ЭПОблачная подпись4</v8:content>
-																</v8:item>
-															</ToolTip>
-															<Group>Vertical</Group>
-															<Representation>None</Representation>
-															<ShowTitle>false</ShowTitle>
-															<ExtendedTooltip name="ГруппаЭПОблачнаяПодпись4РасширеннаяПодсказка" id="700"/>
-															<ChildItems>
-																<Button name="НастроитьСерверыОблачнойПодписи" id="701">
-																	<Type>Hyperlink</Type>
-																	<CommandName>Form.Command.НастроитьСерверыОблачнойПодписи</CommandName>
-																	<ToolTipRepresentation>Balloon</ToolTipRepresentation>
-																	<ExtendedTooltip name="НастроитьСерверыОблачнойПодписиРасширеннаяПодсказка" id="702"/>
-																</Button>
-																<Button name="НастроитьУчетныеЗаписиОблачнойПодписи" id="703">
-																	<Type>Hyperlink</Type>
-																	<CommandName>Form.Command.НастроитьУчетныеЗаписиОблачнойПодписи</CommandName>
-																	<ToolTipRepresentation>Balloon</ToolTipRepresentation>
-																	<ExtendedTooltip name="НастроитьУчетныеЗаписиОблачнойПодписиРасширеннаяПодсказка" id="704"/>
-																</Button>
-															</ChildItems>
-														</UsualGroup>
-													</ChildItems>
-												</UsualGroup>
-											</ChildItems>
-										</UsualGroup>
+										<Button name="СертификатыИКриптопровайдеры" id="689">
+											<Type>Hyperlink</Type>
+											<CommandName>Form.Command.СертификатыИКриптопровайдеры</CommandName>
+											<ExtendedTooltip name="СертификатыИКриптопровайдерыРасширеннаяПодсказка" id="690"/>
+										</Button>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаМЧД" id="777">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа3</v8:content>
+										</v8:item>
+									</Title>
+									<Group>AlwaysHorizontal</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаМЧДРасширеннаяПодсказка" id="778"/>
+									<ChildItems>
+										<LabelDecoration name="ДекорацияМЧДОтступ" id="779">
+											<Width>2</Width>
+											<ContextMenu name="ДекорацияМЧДОтступКонтекстноеМеню" id="780"/>
+											<ExtendedTooltip name="ДекорацияМЧДОтступРасширеннаяПодсказка" id="781"/>
+										</LabelDecoration>
+										<Button name="МашиночитаемыеДоверенности" id="782">
+											<Type>Hyperlink</Type>
+											<CommandName>Form.Command.МашиночитаемыеДоверенности</CommandName>
+											<ExtendedTooltip name="МашиночитаемыеДоверенностиРасширеннаяПодсказка" id="783"/>
+										</Button>
 									</ChildItems>
 								</UsualGroup>
 							</ChildItems>
@@ -1466,36 +1432,23 @@
 			</ToolTip>
 			<Action>НастройкаОбсуждений</Action>
 		</Command>
-		<Command name="НастроитьСерверыОблачнойПодписи" id="6">
+		<Command name="СертификатыИКриптопровайдеры" id="6">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Серверы облачной подписи</v8:content>
+					<v8:content>Сертификаты и программы электронной подписи и шифрования</v8:content>
 				</v8:item>
 			</Title>
-			<ToolTip>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Настройка серверов облачной подписи, 
-необходимо для организации подключения.</v8:content>
-				</v8:item>
-			</ToolTip>
-			<Action>НастроитьСерверыОблачнойПодписи</Action>
+			<Action>СертификатыИКриптопровайдеры</Action>
 		</Command>
-		<Command name="НастроитьУчетныеЗаписиОблачнойПодписи" id="7">
+		<Command name="МашиночитаемыеДоверенности" id="14">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Учетные записи облачной подписи</v8:content>
+					<v8:content>Машиночитаемые доверенности</v8:content>
 				</v8:item>
 			</Title>
-			<ToolTip>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Настройка учетных записей, используемых для выполнения операций.</v8:content>
-				</v8:item>
-			</ToolTip>
-			<Action>НастроитьУчетныеЗаписиОблачнойПодписи</Action>
+			<Action>МашиночитаемыеДоверенности</Action>
 		</Command>
 	</Commands>
 </Form>

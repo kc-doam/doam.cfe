@@ -38,6 +38,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ОбработкаЗапросовXDTOПочта</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ОбработкаЗапросовXDTOУчетВремени</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">ExchangePlan.ИнтегрированныеСистемы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">SessionParameter.ЗаблокированныеОбъекты</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

@@ -52,11 +52,11 @@
 			</Content>
 		</Properties>
 		<ChildObjects>
-			<Subsystem>СрокиИсполненияПроцессов</Subsystem>
+			<Subsystem>ВыполнениеЗадачПоПочте</Subsystem>
 			<Subsystem>КомплексныйПроцесс</Subsystem>
 			<Subsystem>МониторингПроцессов</Subsystem>
-			<Subsystem>ВыполнениеЗадачПоПочте</Subsystem>
 			<Subsystem>Предметы</Subsystem>
+			<Subsystem>СрокиИсполненияПроцессов</Subsystem>
 			<Subsystem>ЭскалацияЗадач</Subsystem>
 		</ChildObjects>
 	</Subsystem>

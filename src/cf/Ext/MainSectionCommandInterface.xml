@@ -298,7 +298,7 @@
 				<xr:Common>true</xr:Common>
 			</Visibility>
 		</Command>
-		<Command name="CommonCommand.ИнформационнаяПоддержкаГруппаFacebook">
+		<Command name="CommonCommand.ИнформационнаяПоддержкаГруппаTelegram">
 			<Visibility>
 				<xr:Common>true</xr:Common>
 			</Visibility>
@@ -510,7 +510,7 @@
 			<CommandGroup>CommandGroup.ИнформационнаяПоддержка</CommandGroup>
 			<Placement>Manual</Placement>
 		</Command>
-		<Command name="CommonCommand.ИнформационнаяПоддержкаГруппаFacebook">
+		<Command name="CommonCommand.ИнформационнаяПоддержкаГруппаTelegram">
 			<CommandGroup>CommandGroup.ИнформационнаяПоддержка</CommandGroup>
 			<Placement>Manual</Placement>
 		</Command>
@@ -587,7 +587,7 @@
 		<Command name="CommonCommand.ИнформационнаяПоддержкаВидеоматериалы">
 			<CommandGroup>CommandGroup.ИнформационнаяПоддержка</CommandGroup>
 		</Command>
-		<Command name="CommonCommand.ИнформационнаяПоддержкаГруппаFacebook">
+		<Command name="CommonCommand.ИнформационнаяПоддержкаГруппаTelegram">
 			<CommandGroup>CommandGroup.ИнформационнаяПоддержка</CommandGroup>
 		</Command>
 		<Command name="CommonCommand.ИнформационнаяПоддержкаГруппаВКонтакте">

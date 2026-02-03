@@ -202,8 +202,8 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Dimension>
-			<Form>ФормаСписка</Form>
 			<Form>ФормаЗаписи</Form>
+			<Form>ФормаСписка</Form>
 			<Command uuid="1e3875d5-aed4-420b-a683-ea8f2a18415d">
 				<Properties>
 					<Name>ПредставлениеВСВД</Name>

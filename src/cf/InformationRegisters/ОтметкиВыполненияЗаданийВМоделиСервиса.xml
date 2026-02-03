@@ -170,13 +170,13 @@
 			<ExecuteAfterWriteDataHistoryVersionProcessing>false</ExecuteAfterWriteDataHistoryVersionProcessing>
 		</Properties>
 		<ChildObjects>
-			<Resource uuid="6dd55bd9-052d-4789-ab66-bd6b2289d7d1">
+			<Resource uuid="5f49445c-623d-48fb-a4da-5fb65891276c">
 				<Properties>
-					<Name>Начало</Name>
+					<Name>Конец</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Начало</v8:content>
+							<v8:content>Конец</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -212,13 +212,13 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Resource>
-			<Resource uuid="5f49445c-623d-48fb-a4da-5fb65891276c">
+			<Resource uuid="6dd55bd9-052d-4789-ab66-bd6b2289d7d1">
 				<Properties>
-					<Name>Конец</Name>
+					<Name>Начало</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Конец</v8:content>
+							<v8:content>Начало</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>

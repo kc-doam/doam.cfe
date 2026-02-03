@@ -21,12 +21,12 @@
 			</Synonym>
 			<Comment/>
 			<UseStandardCommands>true</UseStandardCommands>
-			<DefaultForm/>
+			<DefaultForm>CommonForm.ФормаОтчета</DefaultForm>
 			<AuxiliaryForm/>
 			<MainDataCompositionSchema>Report.ОтчетПоСогласованиям.Template.Макет</MainDataCompositionSchema>
-			<DefaultSettingsForm/>
+			<DefaultSettingsForm>CommonForm.ФормаНастроекОтчета</DefaultSettingsForm>
 			<AuxiliarySettingsForm/>
-			<DefaultVariantForm/>
+			<DefaultVariantForm>CommonForm.ФормаВариантаОтчета</DefaultVariantForm>
 			<VariantsStorage>SettingsStorage.ХранилищеВариантовОтчетов</VariantsStorage>
 			<SettingsStorage/>
 			<IncludeHelpInContents>true</IncludeHelpInContents>
@@ -41,9 +41,9 @@
 		<ChildObjects>
 			<Template>Макет</Template>
 			<Template>ОбразецОтчетаСписокСогласований</Template>
+			<Template>ОбразецОтчетаСтатистикаДлительности</Template>
 			<Template>ОбразецОтчетаСтатистикаСогласований</Template>
 			<Template>ОбразецОтчетаСтатистикаЦикловСогласований</Template>
-			<Template>ОбразецОтчетаСтатистикаДлительности</Template>
 		</ChildObjects>
 	</Report>
 </MetaDataObject>

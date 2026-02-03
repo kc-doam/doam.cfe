@@ -33,8 +33,6 @@
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.КлиентЛицензированияКлиент</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.КлиентЛицензирования</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.КлиентЛицензированияВызовСервера</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">SessionParameter.ПараметрыКлиентаНаСервереБИП</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">Constant.СвойстваБИП</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">DefinedType.КонтрагентБИП</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">DefinedType.КонтрагентБИПОбъект</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ИнтернетПоддержкаВнимание</xr:Item>
@@ -51,7 +49,15 @@
 				<xr:Item xsi:type="xr:MDObjectRef">StyleItem.ЦветНедоступногоТекста</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">StyleItem.ЦветПодписи</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">StyleItem.ШрифтМикротекста</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">StyleItem.ШрифтЗаголовковПодключенияТестовыхПериодов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">StyleItem.ШрифтВажногоЗаголовкаБИП</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">StyleItem.ЦветФонаНекорректногоЗначенияБИП</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">StyleItem.ЦветФонаКорректногоЗначенияБИП</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">StyleItem.ЦветНеАктивнойСтроки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DefinedType.ШаблонСообщенияБИП</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.Портала1СИТСЛоготип</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ПараметрыБлокировкиРаботыССервисамиИнтернетПоддержки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.БлокировкаРаботыССервисамиИнтернетПоддержки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.КатегорииКопировать</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

@@ -14,7 +14,7 @@
 				<v8:Type>cfg:InformationRegisterRecordSet.НоменклатураКонтрагентовБЭД</v8:Type>
 			</Source>
 			<Event>OnWrite</Event>
-			<Handler>CommonModule.ИнтеграцияЭДО.ВыполнитьКонтрольОтраженияВУчетеПриЗаписиНоменклатурыКонтрагентов</Handler>
+			<Handler>CommonModule.ОтражениеВУчетеЭДО.ВыполнитьКонтрольОтраженияВУчетеПриЗаписиНоменклатурыКонтрагентов</Handler>
 		</Properties>
 	</EventSubscription>
 </MetaDataObject>

@@ -21,6 +21,12 @@
 				<xr:Object>Report.СобытияМониторингаСПАРКРиски</xr:Object>
 				<xr:Object>DataProcessor.СправкаСПАРКРиски</xr:Object>
 				<xr:Object>InformationRegister.КонтрагентыНаМониторингеСПАРКРиски</xr:Object>
+				<xr:Object>Report.НадежностьВходящегоНДССПАРКРиски</xr:Object>
+				<xr:Object>Report.НадежностьДебиторовСПАРКРиски</xr:Object>
+				<xr:Object>InformationRegister.ПереходыВВебВерсиюСПАРК</xr:Object>
+				<xr:Object>InformationRegister.ПереходыВВебВерсиюСПАРК.Command.ПереходыВВебВерсиюСПАРК</xr:Object>
+				<xr:Object>InformationRegister.ПереходыВВебВерсиюСПАРК.Command.ПереходыВВебВерсиюСПАРКПоКонтрагенту</xr:Object>
+				<xr:Object>InformationRegister.ПереходыВВебВерсиюСПАРК.Command.ПереходыВВебВерсиюСПАРКПоКонтрагентуПоказыватьОтбор</xr:Object>
 			</Content>
 		</Properties>
 	</FunctionalOption>

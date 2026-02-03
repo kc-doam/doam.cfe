@@ -21,12 +21,12 @@
 			</Synonym>
 			<Comment/>
 			<UseStandardCommands>true</UseStandardCommands>
-			<DefaultForm/>
+			<DefaultForm>CommonForm.ФормаОтчета</DefaultForm>
 			<AuxiliaryForm/>
 			<MainDataCompositionSchema>Report.ОтчетПоИсполнениям.Template.ОсновнаяСхемаКомпоновкиДанных</MainDataCompositionSchema>
-			<DefaultSettingsForm/>
+			<DefaultSettingsForm>CommonForm.ФормаНастроекОтчета</DefaultSettingsForm>
 			<AuxiliarySettingsForm/>
-			<DefaultVariantForm/>
+			<DefaultVariantForm>CommonForm.ФормаВариантаОтчета</DefaultVariantForm>
 			<VariantsStorage>SettingsStorage.ХранилищеВариантовОтчетов</VariantsStorage>
 			<SettingsStorage/>
 			<IncludeHelpInContents>true</IncludeHelpInContents>
@@ -34,12 +34,12 @@
 			<Explanation/>
 		</Properties>
 		<ChildObjects>
-			<Template>ОсновнаяСхемаКомпоновкиДанных</Template>
+			<Template>ОбразецОтчетаИстекающиеИсполнения</Template>
+			<Template>ОбразецОтчетаСводкаПоИсполнителям</Template>
 			<Template>ОбразецОтчетаСписокИсполнений</Template>
 			<Template>ОбразецОтчетаСправкаПоИсполнениям</Template>
-			<Template>ОбразецОтчетаСводкаПоИсполнителям</Template>
 			<Template>ОбразецОтчетаСредняяДлительностьИсполнения</Template>
-			<Template>ОбразецОтчетаИстекающиеИсполнения</Template>
+			<Template>ОсновнаяСхемаКомпоновкиДанных</Template>
 		</ChildObjects>
 	</Report>
 </MetaDataObject>

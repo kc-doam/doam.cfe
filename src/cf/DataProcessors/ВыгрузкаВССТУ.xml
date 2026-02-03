@@ -28,8 +28,8 @@
 			<Explanation/>
 		</Properties>
 		<ChildObjects>
-			<Form>Форма</Form>
 			<Form>ПроблемныеОбъекты</Form>
+			<Form>Форма</Form>
 			<Command uuid="72fbea67-b014-486c-8ce9-345f5fe2bb0f">
 				<Properties>
 					<Name>ВыгрузкаВССТУ</Name>

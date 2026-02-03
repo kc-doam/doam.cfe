@@ -314,20 +314,10 @@
 		<index>10</index>
 		<row>
 			<columnsID>e3f5122b-a98a-459d-a9ef-d9b6788c0769</columnsID>
-			<formatIndex>14</formatIndex>
-			<c>
-				<c>
-					<f>32</f>
-				</c>
-			</c>
+			<formatIndex>32</formatIndex>
 			<c>
 				<c>
 					<f>33</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>34</f>
 				</c>
 			</c>
 			<c>
@@ -362,12 +352,22 @@
 			</c>
 			<c>
 				<c>
-					<f>32</f>
+					<f>37</f>
 				</c>
 			</c>
 			<c>
 				<c>
 					<f>38</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>33</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>39</f>
 				</c>
 			</c>
 		</row>
@@ -376,12 +376,7 @@
 		<index>11</index>
 		<row>
 			<columnsID>e3f5122b-a98a-459d-a9ef-d9b6788c0769</columnsID>
-			<formatIndex>39</formatIndex>
-			<c>
-				<c>
-					<f>40</f>
-				</c>
-			</c>
+			<formatIndex>40</formatIndex>
 			<c>
 				<c>
 					<f>41</f>
@@ -390,39 +385,22 @@
 			<c>
 				<c>
 					<f>42</f>
-					<tl/>
 				</c>
 			</c>
 			<c>
 				<c>
 					<f>43</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>44</f>
 					<tl/>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>45</f>
-				</c>
-			</c>
-			<c>
-				<c>
 					<f>44</f>
-					<tl/>
 				</c>
 			</c>
 			<c>
 				<c>
 					<f>45</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>44</f>
 					<tl/>
 				</c>
 			</c>
@@ -433,7 +411,29 @@
 			</c>
 			<c>
 				<c>
+					<f>45</f>
+					<tl/>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>46</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>45</f>
+					<tl/>
+				</c>
+			</c>
+			<c>
+				<c>
 					<f>47</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>48</f>
 				</c>
 			</c>
 		</row>
@@ -442,15 +442,10 @@
 		<index>12</index>
 		<row>
 			<columnsID>e3f5122b-a98a-459d-a9ef-d9b6788c0769</columnsID>
-			<formatIndex>48</formatIndex>
+			<formatIndex>49</formatIndex>
 			<c>
 				<c>
-					<f>32</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>49</f>
+					<f>33</f>
 				</c>
 			</c>
 			<c>
@@ -461,18 +456,23 @@
 			<c>
 				<c>
 					<f>51</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>52</f>
 					<parameter>ДокументПодписан</parameter>
 				</c>
 			</c>
 			<c>
 				<i>9</i>
 				<c>
-					<f>52</f>
+					<f>53</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>53</f>
+					<f>54</f>
 				</c>
 			</c>
 		</row>
@@ -481,19 +481,10 @@
 		<index>13</index>
 		<row>
 			<columnsID>e3f5122b-a98a-459d-a9ef-d9b6788c0769</columnsID>
+			<formatIndex>55</formatIndex>
 			<c>
 				<c>
-					<f>32</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>54</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>55</f>
+					<f>33</f>
 				</c>
 			</c>
 			<c>
@@ -504,12 +495,6 @@
 			<c>
 				<c>
 					<f>57</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Организация, подписант</v8:content>
-						</v8:item>
-					</tl>
 				</c>
 			</c>
 			<c>
@@ -523,6 +508,22 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
+							<v8:content>Организация, подписант</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>60</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>61</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
 							<v8:content>Сертификат</v8:content>
 						</v8:item>
 					</tl>
@@ -530,12 +531,12 @@
 			</c>
 			<c>
 				<c>
-					<f>59</f>
+					<f>62</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>60</f>
+					<f>63</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -546,12 +547,13 @@
 			</c>
 			<c>
 				<c>
-					<f>61</f>
+					<f>64</f>
+					<tl/>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>38</f>
+					<f>39</f>
 				</c>
 			</c>
 		</row>
@@ -560,27 +562,10 @@
 		<index>14</index>
 		<row>
 			<columnsID>e3f5122b-a98a-459d-a9ef-d9b6788c0769</columnsID>
+			<formatIndex>55</formatIndex>
 			<c>
-				<c>
-					<f>62</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>63</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>64</f>
-					<parameter>ПредставлениеПодписи</parameter>
-				</c>
-			</c>
-			<c>
-				<i>4</i>
 				<c>
 					<f>65</f>
-					<parameter>ОрганизацияПодписант</parameter>
 				</c>
 			</c>
 			<c>
@@ -591,6 +576,24 @@
 			<c>
 				<c>
 					<f>67</f>
+					<parameter>ПредставлениеПодписи</parameter>
+				</c>
+			</c>
+			<c>
+				<i>4</i>
+				<c>
+					<f>68</f>
+					<parameter>ОрганизацияПодписант</parameter>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>69</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>70</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -602,12 +605,12 @@
 			</c>
 			<c>
 				<c>
-					<f>68</f>
+					<f>71</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>69</f>
+					<f>72</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -619,23 +622,6 @@
 			</c>
 			<c>
 				<c>
-					<f>70</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>71</f>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>15</index>
-		<row>
-			<columnsID>e3f5122b-a98a-459d-a9ef-d9b6788c0769</columnsID>
-			<formatIndex>72</formatIndex>
-			<c>
-				<c>
 					<f>73</f>
 				</c>
 			</c>
@@ -644,29 +630,16 @@
 					<f>74</f>
 				</c>
 			</c>
-			<c>
-				<c>
-					<f>75</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>75</f>
-				</c>
-			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>15</index>
+		<row>
+			<columnsID>e3f5122b-a98a-459d-a9ef-d9b6788c0769</columnsID>
+			<formatIndex>75</formatIndex>
 			<c>
 				<c>
 					<f>76</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>76</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>77</f>
 				</c>
 			</c>
 			<c>
@@ -681,6 +654,16 @@
 			</c>
 			<c>
 				<c>
+					<f>78</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>79</f>
+				</c>
+			</c>
+			<c>
+				<c>
 					<f>79</f>
 				</c>
 			</c>
@@ -689,51 +672,41 @@
 					<f>80</f>
 				</c>
 			</c>
+			<c>
+				<c>
+					<f>80</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>81</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>82</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>83</f>
+				</c>
+			</c>
 		</row>
 	</rowsItem>
 	<rowsItem>
 		<index>16</index>
 		<row>
 			<columnsID>e3f5122b-a98a-459d-a9ef-d9b6788c0769</columnsID>
-			<formatIndex>72</formatIndex>
+			<formatIndex>75</formatIndex>
 			<c>
 				<c>
-					<f>73</f>
+					<f>76</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>74</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>81</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>81</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>82</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>82</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>83</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>83</f>
+					<f>77</f>
 				</c>
 			</c>
 			<c>
@@ -743,20 +716,14 @@
 			</c>
 			<c>
 				<c>
-					<f>79</f>
+					<f>84</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>80</f>
+					<f>85</f>
 				</c>
 			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>17</index>
-		<row>
-			<columnsID>e3f5122b-a98a-459d-a9ef-d9b6788c0769</columnsID>
 			<c>
 				<c>
 					<f>85</f>
@@ -769,10 +736,30 @@
 			</c>
 			<c>
 				<c>
-					<f>87</f>
-					<parameter>ИдентификаторДокумента</parameter>
+					<f>86</f>
 				</c>
 			</c>
+			<c>
+				<c>
+					<f>87</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>82</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>83</f>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>17</index>
+		<row>
+			<columnsID>e3f5122b-a98a-459d-a9ef-d9b6788c0769</columnsID>
 			<c>
 				<c>
 					<f>88</f>
@@ -786,43 +773,12 @@
 			<c>
 				<c>
 					<f>90</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>89</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>90</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>89</f>
+					<parameter>ИдентификаторДокумента</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
 					<f>91</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>85</f>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>18</index>
-		<row>
-			<columnsID>e3f5122b-a98a-459d-a9ef-d9b6788c0769</columnsID>
-			<formatIndex>72</formatIndex>
-			<c>
-				<c>
-					<f>85</f>
 				</c>
 			</c>
 			<c>
@@ -837,12 +793,17 @@
 			</c>
 			<c>
 				<c>
+					<f>92</f>
+				</c>
+			</c>
+			<c>
+				<c>
 					<f>93</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>94</f>
+					<f>92</f>
 				</c>
 			</c>
 			<c>
@@ -852,12 +813,19 @@
 			</c>
 			<c>
 				<c>
-					<f>95</f>
+					<f>88</f>
 				</c>
 			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>18</index>
+		<row>
+			<columnsID>e3f5122b-a98a-459d-a9ef-d9b6788c0769</columnsID>
+			<formatIndex>95</formatIndex>
 			<c>
 				<c>
-					<f>95</f>
+					<f>88</f>
 				</c>
 			</c>
 			<c>
@@ -872,7 +840,42 @@
 			</c>
 			<c>
 				<c>
-					<f>85</f>
+					<f>97</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>98</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>98</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>99</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>99</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>100</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>101</f>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>88</f>
 				</c>
 			</c>
 		</row>
@@ -885,7 +888,7 @@
 		</row>
 	</rowsItem>
 	<templateMode>true</templateMode>
-	<defaultFormatIndex>98</defaultFormatIndex>
+	<defaultFormatIndex>102</defaultFormatIndex>
 	<height>20</height>
 	<vgRows>20</vgRows>
 	<merge>
@@ -943,6 +946,11 @@
 	</verticalUnmerge>
 	<verticalUnmerge>
 		<r>12</r>
+		<c>6</c>
+		<w>1</w>
+	</verticalUnmerge>
+	<verticalUnmerge>
+		<r>13</r>
 		<c>6</c>
 		<w>1</w>
 	</verticalUnmerge>
@@ -1153,6 +1161,7 @@
 	<font faceName="Arial Cyr" height="10" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
 	<font faceName="Arial Cyr" height="6" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
 	<font faceName="Arial" height="9" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
+	<font faceName="Arial" height="5" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
 	<font faceName="Arial Cyr" height="5" bold="false" italic="false" underline="false" strikeout="false" kind="Absolute" scale="100"/>
 	<format>
 		<width>16</width>
@@ -1173,13 +1182,16 @@
 		<width>60</width>
 	</format>
 	<format>
-		<width>58</width>
+		<width>50</width>
+		<widthWeightFactor>1</widthWeightFactor>
 	</format>
 	<format>
-		<width>176</width>
+		<width>192</width>
+		<widthWeightFactor>1</widthWeightFactor>
 	</format>
 	<format>
-		<width>35</width>
+		<width>27</width>
+		<widthWeightFactor>1</widthWeightFactor>
 	</format>
 	<format>
 		<height>2</height>
@@ -1345,6 +1357,10 @@
 		<protection>true</protection>
 	</format>
 	<format>
+		<height>80</height>
+		<width>2</width>
+	</format>
+	<format>
 		<font>2</font>
 		<border>0</border>
 		<borderColor>#FFFFFF</borderColor>
@@ -1403,6 +1419,7 @@
 	</format>
 	<format>
 		<height>21</height>
+		<width>2</width>
 	</format>
 	<format>
 		<font>2</font>
@@ -1487,6 +1504,7 @@
 	</format>
 	<format>
 		<height>74</height>
+		<width>2</width>
 	</format>
 	<format>
 		<font>2</font>
@@ -1552,6 +1570,9 @@
 		<width>72</width>
 	</format>
 	<format>
+		<width>2</width>
+	</format>
+	<format>
 		<font>2</font>
 		<leftBorder>2</leftBorder>
 		<topBorder>0</topBorder>
@@ -1590,7 +1611,7 @@
 		<textPlacement>Auto</textPlacement>
 	</format>
 	<format>
-		<font>3</font>
+		<font>0</font>
 		<topBorder>0</topBorder>
 		<rightBorder>0</rightBorder>
 		<bottomBorder>0</bottomBorder>
@@ -1616,7 +1637,21 @@
 	</format>
 	<format>
 		<font>0</font>
-		<border>0</border>
+		<leftBorder>0</leftBorder>
+		<topBorder>0</topBorder>
+		<bottomBorder>0</bottomBorder>
+		<borderColor>style:ГиперссылкаЦвет</borderColor>
+		<width>471</width>
+		<horizontalAlignment>Left</horizontalAlignment>
+		<verticalAlignment>Center</verticalAlignment>
+		<textColor>style:ЦветШтампаЭП</textColor>
+		<textPlacement>Auto</textPlacement>
+	</format>
+	<format>
+		<font>0</font>
+		<topBorder>0</topBorder>
+		<rightBorder>0</rightBorder>
+		<bottomBorder>0</bottomBorder>
 		<borderColor>style:ГиперссылкаЦвет</borderColor>
 		<width>471</width>
 		<horizontalAlignment>Left</horizontalAlignment>
@@ -1672,7 +1707,7 @@
 		<textPlacement>Auto</textPlacement>
 	</format>
 	<format>
-		<font>3</font>
+		<font>0</font>
 		<leftBorder>0</leftBorder>
 		<topBorder>0</topBorder>
 		<bottomBorder>0</bottomBorder>
@@ -1682,11 +1717,11 @@
 		<horizontalAlignment>Left</horizontalAlignment>
 		<verticalAlignment>Top</verticalAlignment>
 		<textColor>style:ЦветШтампаЭП</textColor>
-		<textPlacement>Auto</textPlacement>
+		<textPlacement>Wrap</textPlacement>
 		<fillType>Parameter</fillType>
 	</format>
 	<format>
-		<font>3</font>
+		<font>0</font>
 		<topBorder>0</topBorder>
 		<bottomBorder>0</bottomBorder>
 		<height>96</height>
@@ -1773,6 +1808,7 @@
 	</format>
 	<format>
 		<height>20</height>
+		<width>2</width>
 	</format>
 	<format>
 		<font>2</font>
@@ -1941,7 +1977,7 @@
 		<fillType>Parameter</fillType>
 	</format>
 	<format>
-		<font>5</font>
+		<font>6</font>
 		<border>0</border>
 		<height>32</height>
 		<borderColor>style:ЦветШтампаЭП</borderColor>
@@ -1950,13 +1986,13 @@
 		<textPlacement>Wrap</textPlacement>
 	</format>
 	<format>
-		<font>5</font>
+		<font>6</font>
 		<textColor>style:ЦветШтампаЭП</textColor>
 		<textPlacement>Wrap</textPlacement>
 		<fillType>Parameter</fillType>
 	</format>
 	<format>
-		<font>5</font>
+		<font>6</font>
 		<textColor>style:ЦветШтампаЭП</textColor>
 		<textPlacement>Wrap</textPlacement>
 	</format>
@@ -1969,6 +2005,9 @@
 		<borderColor>style:ЦветШтампаЭП</borderColor>
 		<width>16</width>
 		<textColor>style:ГиперссылкаЦвет</textColor>
+	</format>
+	<format>
+		<height>20</height>
 	</format>
 	<format>
 		<leftBorder>2</leftBorder>
@@ -2035,7 +2074,7 @@
 	</format>
 	<picture>
 		<index>0</index>
-		<picture>iVBORw0KGgoAAAANSUhEUgAAADAAAAAcCAYAAAAnbDzKAAAABGdBTUEAALGOfPtR
+		<picture t="false">iVBORw0KGgoAAAANSUhEUgAAADAAAAAcCAYAAAAnbDzKAAAABGdBTUEAALGOfPtR
 kwAAACBjSFJNAACHDwAAjA8AAP1SAACBQAAAfXkAAOmLAAA85QAAGcxzPIV3AAAK
 OWlDQ1BQaG90b3Nob3AgSUNDIHByb2ZpbGUAAEjHnZZ3VFTXFofPvXd6oc0wAlKG
 3rvAANJ7k15FYZgZYCgDDjM0sSGiAhFFRJoiSFDEgNFQJFZEsRAUVLAHJAgoMRhF
@@ -2115,7 +2154,7 @@ K/2rAAAAAElFTkSuQmCC</picture>
 	</picture>
 	<picture>
 		<index>1</index>
-		<picture>iVBORw0KGgoAAAANSUhEUgAAAEAAAAAgCAIAAAAt/+nTAAAACXBIWXMAAA7EAAAO
+		<picture t="false">iVBORw0KGgoAAAANSUhEUgAAAEAAAAAgCAIAAAAt/+nTAAAACXBIWXMAAA7EAAAO
 xAGVKw4bAAAFGmlUWHRYTUw6Y29tLmFkb2JlLnhtcAAAAAAAPD94cGFja2V0IGJl
 Z2luPSLvu78iIGlkPSJXNU0wTXBDZWhpSHpyZVN6TlRjemtjOWQiPz4gPHg6eG1w
 bWV0YSB4bWxuczp4PSJhZG9iZTpuczptZXRhLyIgeDp4bXB0az0iQWRvYmUgWE1Q

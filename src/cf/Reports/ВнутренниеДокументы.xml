@@ -21,12 +21,12 @@
 			</Synonym>
 			<Comment/>
 			<UseStandardCommands>true</UseStandardCommands>
-			<DefaultForm/>
+			<DefaultForm>CommonForm.ФормаОтчета</DefaultForm>
 			<AuxiliaryForm/>
 			<MainDataCompositionSchema>Report.ВнутренниеДокументы.Template.ОсновнаяСхемаКомпоновкиДанных</MainDataCompositionSchema>
-			<DefaultSettingsForm/>
+			<DefaultSettingsForm>CommonForm.ФормаНастроекОтчета</DefaultSettingsForm>
 			<AuxiliarySettingsForm/>
-			<DefaultVariantForm/>
+			<DefaultVariantForm>CommonForm.ФормаВариантаОтчета</DefaultVariantForm>
 			<VariantsStorage>SettingsStorage.ХранилищеВариантовОтчетов</VariantsStorage>
 			<SettingsStorage/>
 			<IncludeHelpInContents>true</IncludeHelpInContents>
@@ -39,13 +39,13 @@
 			<Explanation/>
 		</Properties>
 		<ChildObjects>
-			<Template>ОсновнаяСхемаКомпоновкиДанных</Template>
 			<Template>ОбразецОтчетаСписокВнутреннихДокументов</Template>
 			<Template>ОбразецОтчетаСписокВнутреннихДокументовСИстекающимСрокомДействия</Template>
 			<Template>ОбразецОтчетаСписокВнутреннихДокументовСИстекающимСрокомИсполнения</Template>
 			<Template>ОбразецОтчетаСписокВнутреннихДокументовСИстекшимСрокомДействия</Template>
 			<Template>ОбразецОтчетаСписокПросроченныхВнутреннихДокументов</Template>
 			<Template>ОбразецОтчетаСтатистикаПоВидамВнутренниеДокументы</Template>
+			<Template>ОсновнаяСхемаКомпоновкиДанных</Template>
 		</ChildObjects>
 	</Report>
 </MetaDataObject>

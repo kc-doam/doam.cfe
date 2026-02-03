@@ -2,6 +2,7 @@
 	"files.encoding": "utf8",
 	"files.insertFinalNewline": false,
 	"git.enableCommitSigning": true,
+	"git.statusLimit": 30000,
 	"language-1c-bsl.rootPath": "./src/cfe",
 	"workbench.tree.indent": 16
 }

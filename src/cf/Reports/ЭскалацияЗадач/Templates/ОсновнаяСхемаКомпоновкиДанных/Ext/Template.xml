@@ -161,6 +161,14 @@
 				</v8:item>
 			</title>
 		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Организация</dataPath>
+			<field>Организация</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ОтветственноеЛицо</dataPath>
+			<field>ОтветственноеЛицо</field>
+		</field>
 		<dataSource>ИсточникДанных1</dataSource>
 		<query>ВЫБРАТЬ РАЗРЕШЕННЫЕ
 	СведенияОПользователяхДокументооборот.Пользователь КАК Исполнитель,
@@ -333,11 +341,14 @@
 	<totalField>
 		<dataPath>КоличествоЭскалаций</dataPath>
 		<expression>Сумма(КоличествоЭскалаций)</expression>
+		<group>Исполнитель</group>
+		<group>ПравилоЭскалации</group>
 		<group>ОбщийИтог</group>
 	</totalField>
 	<totalField>
 		<dataPath>ВоронкаКоличество</dataPath>
 		<expression>Сумма(ВоронкаКоличество)</expression>
+		<group>ВоронкаУровеньЭскалации</group>
 		<group>ОбщийИтог</group>
 	</totalField>
 	<parameter>

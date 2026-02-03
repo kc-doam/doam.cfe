@@ -31,9 +31,11 @@
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ОбменСКонтрагентамиВызовСервера</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ОбменСКонтрагентамиИнтеграцияКлиентСобытия</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ОбменСКонтрагентамиИнтеграцияКлиент</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">DefinedType.ОснованияЭлектронныхДокументовОбъектЭДО</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DefinedType.ОснованияЭлектронныхДокументовДокументОбъектЭДО</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.ОтправитьИПолучитьЭДО</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ОбменСКонтрагентамиКлиентСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ОбменСКонтрагентамиИнтеграцияКлиентСерверСобытия</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DefinedType.ОснованияЭлектронныхДокументовСправочникОбъектЭДО</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

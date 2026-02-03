@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
 	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
 	<AutoTitle>false</AutoTitle>
 	<CommandBarLocation>Bottom</CommandBarLocation>
@@ -8,6 +8,7 @@
 	</AutoCommandBar>
 	<Events>
 		<Event name="ChoiceProcessing">ОбработкаВыбора</Event>
+		<Event name="OnOpen">ПриОткрытии</Event>
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 	</Events>
 	<ChildItems>
@@ -37,6 +38,7 @@
 									<v8:content>Выбор элементов для изменения</v8:content>
 								</v8:item>
 							</Title>
+							<Behavior>Usual</Behavior>
 							<Representation>NormalSeparation</Representation>
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="ОтборОбъектовРасширеннаяПодсказка" id="111"/>
@@ -76,44 +78,69 @@
 								</LabelDecoration>
 							</ChildItems>
 						</UsualGroup>
-						<RadioButtonField name="ТипОперации" id="268">
-							<DataPath>Объект.ТипОперации</DataPath>
-							<TitleLocation>None</TitleLocation>
-							<RadioButtonType>Tumbler</RadioButtonType>
-							<ChoiceList>
-								<xr:Item>
-									<xr:Presentation/>
-									<xr:CheckState>0</xr:CheckState>
-									<xr:Value xsi:type="FormChoiceListDesTimeValue">
-										<Presentation>
-											<v8:item>
-												<v8:lang>ru</v8:lang>
-												<v8:content>Ввести новые значения</v8:content>
-											</v8:item>
-										</Presentation>
-										<Value xsi:type="xs:string">ВвестиЗначения</Value>
-									</xr:Value>
-								</xr:Item>
-								<xr:Item>
-									<xr:Presentation/>
-									<xr:CheckState>0</xr:CheckState>
-									<xr:Value xsi:type="FormChoiceListDesTimeValue">
-										<Presentation>
-											<v8:item>
-												<v8:lang>ru</v8:lang>
-												<v8:content>Выполнить произвольный алгоритм</v8:content>
-											</v8:item>
-										</Presentation>
-										<Value xsi:type="xs:string">ВыполнитьАлгоритм</Value>
-									</xr:Value>
-								</xr:Item>
-							</ChoiceList>
-							<ContextMenu name="ТипОперацииКонтекстноеМеню" id="269"/>
-							<ExtendedTooltip name="ТипОперацииРасширеннаяПодсказка" id="270"/>
-							<Events>
-								<Event name="OnChange">ВидОперацииПриИзменении</Event>
-							</Events>
-						</RadioButtonField>
+						<UsualGroup name="ГруппаТипОперации" id="355">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа тип операции</v8:content>
+								</v8:item>
+							</Title>
+							<HorizontalStretch>true</HorizontalStretch>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаТипОперацииРасширеннаяПодсказка" id="356"/>
+							<ChildItems>
+								<RadioButtonField name="ТипОперации" id="268">
+									<DataPath>Объект.ТипОперации</DataPath>
+									<TitleLocation>None</TitleLocation>
+									<RadioButtonType>Tumbler</RadioButtonType>
+									<ChoiceList>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Ввести новые значения</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:string">ВвестиЗначения</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Выполнить произвольный алгоритм</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:string">ВыполнитьАлгоритм</Value>
+											</xr:Value>
+										</xr:Item>
+									</ChoiceList>
+									<ContextMenu name="ТипОперацииКонтекстноеМеню" id="269"/>
+									<ExtendedTooltip name="ТипОперацииРасширеннаяПодсказка" id="270"/>
+									<Events>
+										<Event name="OnChange">ВидОперацииПриИзменении</Event>
+									</Events>
+								</RadioButtonField>
+								<SearchStringAddition name="РеквизитыСтрокаПоиска" id="357">
+									<AdditionSource>
+										<Item>РеквизитыОбъекта</Item>
+										<Type>SearchStringRepresentation</Type>
+									</AdditionSource>
+									<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+									<Width>30</Width>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ContextMenu name="РеквизитыСтрокаПоискаКонтекстноеМеню" id="358"/>
+									<ExtendedTooltip name="РеквизитыСтрокаПоискаРасширеннаяПодсказка" id="359"/>
+								</SearchStringAddition>
+							</ChildItems>
+						</UsualGroup>
 						<Pages name="СтраницыВидОперации" id="271">
 							<Title>
 								<v8:item>
@@ -142,6 +169,9 @@
 											</Title>
 											<PagesRepresentation>TabsOnTop</PagesRepresentation>
 											<ExtendedTooltip name="СоставОбъектаРасширеннаяПодсказка" id="113"/>
+											<Events>
+												<Event name="OnCurrentPageChange">СоставОбъектаПриСменеСтраницы</Event>
+											</Events>
 											<ChildItems>
 												<Page name="Реквизиты" id="114">
 													<Title>
@@ -257,6 +287,7 @@
 																	<v8:content>Нет реквизитов</v8:content>
 																</v8:item>
 															</Title>
+															<Behavior>Usual</Behavior>
 															<Representation>NormalSeparation</Representation>
 															<ShowTitle>false</ShowTitle>
 															<ExtendedTooltip name="ГруппаНетРеквизитовРасширеннаяПодсказка" id="262"/>
@@ -308,6 +339,7 @@
 												</v8:item>
 											</Title>
 											<Group>AlwaysHorizontal</Group>
+											<Behavior>Usual</Behavior>
 											<Representation>None</Representation>
 											<ShowTitle>false</ShowTitle>
 											<ExtendedTooltip name="ГруппаПроизвольныйАлгоритмРасширеннаяПодсказка" id="282"/>
@@ -320,6 +352,7 @@
 														</v8:item>
 													</Title>
 													<Group>Vertical</Group>
+													<Behavior>Usual</Behavior>
 													<Representation>None</Representation>
 													<ShowTitle>false</ShowTitle>
 													<ExtendedTooltip name="ГруппаАлгоритмРасширеннаяПодсказка" id="284"/>
@@ -353,6 +386,7 @@
 														</v8:item>
 													</Title>
 													<Group>Vertical</Group>
+													<Behavior>Usual</Behavior>
 													<Representation>None</Representation>
 													<ShowTitle>false</ShowTitle>
 													<ExtendedTooltip name="ГруппаРеквизитыДляАлгоритмаРасширеннаяПодсказка" id="286"/>
@@ -374,7 +408,9 @@
 																			<v8:content>Реквизиты:</v8:content>
 																		</v8:item>
 																	</Title>
+																	<HorizontalStretch>true</HorizontalStretch>
 																	<VerticalStretch>true</VerticalStretch>
+																	<Group>HorizontalIfPossible</Group>
 																	<VerticalAlign>Center</VerticalAlign>
 																	<ExtendedTooltip name="СтраницаСНадписьюРеквизитыРасширеннаяПодсказка" id="312"/>
 																	<ChildItems>
@@ -388,6 +424,17 @@
 																			<ContextMenu name="НадписьРеквизитыКонтекстноеМеню" id="304"/>
 																			<ExtendedTooltip name="НадписьРеквизитыРасширеннаяПодсказка" id="305"/>
 																		</LabelDecoration>
+																		<SearchStringAddition name="РеквизитыАлгоритмСтрокаПоиска" id="352">
+																			<AdditionSource>
+																				<Item>РеквизитыОбъектаАлгоритм</Item>
+																				<Type>SearchStringRepresentation</Type>
+																			</AdditionSource>
+																			<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+																			<Width>20</Width>
+																			<HorizontalStretch>false</HorizontalStretch>
+																			<ContextMenu name="РеквизитыАлгоритмСтрокаПоискаКонтекстноеМеню" id="353"/>
+																			<ExtendedTooltip name="РеквизитыАлгоритмСтрокаПоискаРасширеннаяПодсказка" id="354"/>
+																		</SearchStringAddition>
 																	</ChildItems>
 																</Page>
 																<Page name="СтраницаНевидимая" id="313">
@@ -485,12 +532,13 @@
 												</v8:item>
 											</Title>
 											<Group>AlwaysHorizontal</Group>
+											<Behavior>Usual</Behavior>
 											<Representation>None</Representation>
 											<ShowTitle>false</ShowTitle>
 											<ThroughAlign>DontUse</ThroughAlign>
 											<ExtendedTooltip name="ПараметрыВыполненияАлгоритмаРасширеннаяПодсказка" id="342"/>
 											<ChildItems>
-												<RadioButtonField name="РежимЗаписиОбъекта" id="343">
+												<InputField name="РежимЗаписиОбъекта" id="343">
 													<DataPath>Объект.ВариантЗаписиОбъекта</DataPath>
 													<Title>
 														<v8:item>
@@ -500,8 +548,10 @@
 													</Title>
 													<TitleHeight>1</TitleHeight>
 													<ToolTipRepresentation>Button</ToolTipRepresentation>
-													<RadioButtonType>Auto</RadioButtonType>
-													<ColumnsCount>2</ColumnsCount>
+													<AutoMaxWidth>false</AutoMaxWidth>
+													<MaxWidth>20</MaxWidth>
+													<ListChoiceMode>true</ListChoiceMode>
+													<TextEdit>false</TextEdit>
 													<ChoiceList>
 														<xr:Item>
 															<xr:Presentation/>
@@ -541,12 +591,14 @@
 															</v8:item>
 														</Title>
 													</ExtendedTooltip>
-												</RadioButtonField>
-												<RadioButtonField name="РежимВыполнения" id="346">
+												</InputField>
+												<InputField name="РежимВыполнения" id="346">
 													<DataPath>Объект.РежимВыполнения</DataPath>
 													<ToolTipRepresentation>Button</ToolTipRepresentation>
-													<RadioButtonType>Auto</RadioButtonType>
-													<ColumnsCount>2</ColumnsCount>
+													<AutoMaxWidth>false</AutoMaxWidth>
+													<MaxWidth>12</MaxWidth>
+													<ListChoiceMode>true</ListChoiceMode>
+													<TextEdit>false</TextEdit>
 													<ChoiceList>
 														<xr:Item>
 															<xr:Presentation/>
@@ -584,7 +636,7 @@
 															</v8:item>
 														</Title>
 													</ExtendedTooltip>
-												</RadioButtonField>
+												</InputField>
 											</ChildItems>
 										</UsualGroup>
 									</ChildItems>
@@ -696,6 +748,7 @@
 								</v8:item>
 							</Title>
 							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="ГруппаОбъектыКоторыеНеУдалосьИзменитьРасширеннаяПодсказка" id="159"/>
@@ -836,6 +889,7 @@
 								</v8:item>
 							</Title>
 							<VerticalAlign>Center</VerticalAlign>
+							<Behavior>Usual</Behavior>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="ДлительнаяОперацияКартинкаИТекстРасширеннаяПодсказка" id="267"/>
@@ -888,6 +942,7 @@
 								</v8:item>
 							</Title>
 							<VerticalAlign>Center</VerticalAlign>
+							<Behavior>Usual</Behavior>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="ГруппаУспешноЗавершеноРасширеннаяПодсказка" id="218"/>
@@ -927,6 +982,7 @@
 					<v8:content>Командная панель</v8:content>
 				</v8:item>
 			</Title>
+			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="КоманднаяПанельРасширеннаяПодсказка" id="214"/>
@@ -989,41 +1045,6 @@
 				<Field>Объект.ИзменятьВТранзакции</Field>
 				<Field>Объект.ПрерыватьПриОшибке</Field>
 			</Save>
-		</Attribute>
-		<Attribute name="ТОНастройкаПорции" id="3">
-			<Type>
-				<v8:Type>xs:decimal</v8:Type>
-				<v8:NumberQualifiers>
-					<v8:Digits>1</v8:Digits>
-					<v8:FractionDigits>0</v8:FractionDigits>
-					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
-				</v8:NumberQualifiers>
-			</Type>
-		</Attribute>
-		<Attribute name="ТОЧислоОбъектовВПорции" id="5">
-			<Type>
-				<v8:Type>xs:decimal</v8:Type>
-				<v8:NumberQualifiers>
-					<v8:Digits>5</v8:Digits>
-					<v8:FractionDigits>0</v8:FractionDigits>
-					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
-				</v8:NumberQualifiers>
-			</Type>
-		</Attribute>
-		<Attribute name="ТОПроцентОбъектовВПорции" id="4">
-			<Type>
-				<v8:Type>xs:decimal</v8:Type>
-				<v8:NumberQualifiers>
-					<v8:Digits>3</v8:Digits>
-					<v8:FractionDigits>0</v8:FractionDigits>
-					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
-				</v8:NumberQualifiers>
-			</Type>
-		</Attribute>
-		<Attribute name="ЕстьФормаРазблокированияРеквизитов" id="6">
-			<Type>
-				<v8:Type>xs:boolean</v8:Type>
-			</Type>
 		</Attribute>
 		<Attribute name="ПолноеИмяФормыРаботыСБлокируемымиРеквизитами" id="7">
 			<Type>
@@ -1156,25 +1177,7 @@
 							<v8:content>Новое значение</v8:content>
 						</v8:item>
 					</Title>
-					<Type>
-						<v8:Type>xs:boolean</v8:Type>
-						<v8:Type>xs:string</v8:Type>
-						<v8:Type>xs:dateTime</v8:Type>
-						<v8:Type>xs:decimal</v8:Type>
-						<v8:TypeSet>cfg:AnyRef</v8:TypeSet>
-						<v8:NumberQualifiers>
-							<v8:Digits>30</v8:Digits>
-							<v8:FractionDigits>10</v8:FractionDigits>
-							<v8:AllowedSign>Any</v8:AllowedSign>
-						</v8:NumberQualifiers>
-						<v8:StringQualifiers>
-							<v8:Length>0</v8:Length>
-							<v8:AllowedLength>Variable</v8:AllowedLength>
-						</v8:StringQualifiers>
-						<v8:DateQualifiers>
-							<v8:DateFractions>DateTime</v8:DateFractions>
-						</v8:DateQualifiers>
-					</Type>
+					<Type/>
 				</Column>
 				<Column name="ДопустимыеТипы" id="5">
 					<Type>
@@ -1285,7 +1288,7 @@
 					</Title>
 					<Type>
 						<v8:Type>xs:string</v8:Type>
-						<v8:TypeSet>cfg:AnyRef</v8:TypeSet>
+						<v8:TypeSet>cfg:AnyIBRef</v8:TypeSet>
 						<v8:StringQualifiers>
 							<v8:Length>0</v8:Length>
 							<v8:AllowedLength>Variable</v8:AllowedLength>
@@ -1442,6 +1445,25 @@
 				<v8:Type>v8:ValueListType</v8:Type>
 			</Type>
 			<Settings xsi:type="v8:TypeDescription"/>
+		</Attribute>
+		<Attribute name="ПутьКФайлуВнешнейОбработкиНаКлиенте" id="3">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ЧислоОбъектовВПорции" id="5">
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>5</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
 		</Attribute>
 	</Attributes>
 	<Commands>

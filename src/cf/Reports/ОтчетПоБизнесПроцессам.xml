@@ -21,12 +21,12 @@
 			</Synonym>
 			<Comment/>
 			<UseStandardCommands>true</UseStandardCommands>
-			<DefaultForm/>
+			<DefaultForm>CommonForm.ФормаОтчета</DefaultForm>
 			<AuxiliaryForm/>
 			<MainDataCompositionSchema>Report.ОтчетПоБизнесПроцессам.Template.Макет</MainDataCompositionSchema>
-			<DefaultSettingsForm/>
+			<DefaultSettingsForm>CommonForm.ФормаНастроекОтчета</DefaultSettingsForm>
 			<AuxiliarySettingsForm/>
-			<DefaultVariantForm/>
+			<DefaultVariantForm>CommonForm.ФормаВариантаОтчета</DefaultVariantForm>
 			<VariantsStorage>SettingsStorage.ХранилищеВариантовОтчетов</VariantsStorage>
 			<SettingsStorage/>
 			<IncludeHelpInContents>true</IncludeHelpInContents>
@@ -40,11 +40,11 @@
 		</Properties>
 		<ChildObjects>
 			<Template>Макет</Template>
-			<Template>ОбразецОтчетаТекущиеБизнесПроцессы</Template>
 			<Template>ОбразецОтчетаВсеБизнесПроцессы</Template>
-			<Template>ОбразецОтчетаТрудозатратыПроцессов</Template>
-			<Template>ОбразецОтчетаСтатистикаПоВидамПроцессы</Template>
 			<Template>ОбразецОтчетаИсполнениеПроцессов</Template>
+			<Template>ОбразецОтчетаСтатистикаПоВидамПроцессы</Template>
+			<Template>ОбразецОтчетаТекущиеБизнесПроцессы</Template>
+			<Template>ОбразецОтчетаТрудозатратыПроцессов</Template>
 		</ChildObjects>
 	</Report>
 </MetaDataObject>

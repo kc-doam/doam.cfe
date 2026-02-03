@@ -1,7 +1,14 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
 	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
 	<CommandBarLocation>None</CommandBarLocation>
+	<MobileDeviceCommandBarContent>
+		<xr:Item>
+			<xr:Presentation/>
+			<xr:CheckState>0</xr:CheckState>
+			<xr:Value xsi:type="xs:string">ГруппаКомПанели</xr:Value>
+		</xr:Item>
+	</MobileDeviceCommandBarContent>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
 	<Events>
 		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
@@ -25,6 +32,7 @@
 				</v8:item>
 			</ToolTip>
 			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаЗаголовокExtendedTooltip" id="114"/>
@@ -70,6 +78,7 @@
 			</ToolTip>
 			<HorizontalStretch>false</HorizontalStretch>
 			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаОтборExtendedTooltip" id="117"/>
@@ -276,6 +285,18 @@
 						<Event name="TextEditEnd">ТочкаМаршрутаОкончаниеВводаТекста</Event>
 					</Events>
 				</InputField>
+				<Button name="МК_ОчиститьБыстрыеОтборы" id="297">
+					<Type>UsualButton</Type>
+					<Visible>false</Visible>
+					<CommandName>Form.Command.МК_ОчиститьБыстрыеОтборы</CommandName>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сбросить фильтры</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="МК_ОчиститьБыстрыеОтборыРасширеннаяПодсказка" id="298"/>
+				</Button>
 			</ChildItems>
 		</UsualGroup>
 		<UsualGroup name="ПользовательскиеНастройкиСписка" id="265">
@@ -286,6 +307,7 @@
 				</v8:item>
 			</Title>
 			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ПользовательскиеНастройкиСпискаРасширеннаяПодсказка" id="266"/>
@@ -304,6 +326,7 @@
 				</v8:item>
 			</ToolTip>
 			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаСостояниеExtendedTooltip" id="121"/>
@@ -323,6 +346,7 @@
 			</ToolTip>
 			<Group>Horizontal</Group>
 			<HorizontalSpacing>None</HorizontalSpacing>
+			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаКомПанелиРасширеннаяПодсказка" id="194"/>
@@ -596,6 +620,7 @@
 				<ExcludedCommand>SetDeletionMark</ExcludedCommand>
 			</CommandSet>
 			<ViewStatusLocation>Top</ViewStatusLocation>
+			<RefreshRequest>PullFromTop</RefreshRequest>
 			<AutoRefresh>false</AutoRefresh>
 			<AutoRefreshPeriod>60</AutoRefreshPeriod>
 			<Period>
@@ -671,8 +696,61 @@
 				<Event name="Selection">СписокВыбор</Event>
 				<Event name="BeforeAddRow">СписокПередНачаломДобавления</Event>
 				<Event name="BeforeRowChange">СписокПередНачаломИзменения</Event>
+				<Event name="RefreshRequestProcessing">СписокОбработкаЗапросаОбновления</Event>
 			</Events>
 			<ChildItems>
+				<ColumnGroup name="МК_ГруппаКолонок" id="286">
+					<Visible>false</Visible>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Список группа1</v8:content>
+						</v8:item>
+					</Title>
+					<Group>Horizontal</Group>
+					<ExtendedTooltip name="МК_ГруппаКолонокРасширеннаяПодсказка" id="287"/>
+					<ChildItems>
+						<ColumnGroup name="ГруппаКартинки" id="288">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа2</v8:content>
+								</v8:item>
+							</Title>
+							<FixingInTable>Left</FixingInTable>
+							<ExtendedTooltip name="ГруппаКартинкиРасширеннаяПодсказка" id="289"/>
+						</ColumnGroup>
+						<ColumnGroup name="ГруппаНаименованиеИсполнитель" id="290" DisplayImportance="High">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа2</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="ГруппаНаименованиеИсполнительРасширеннаяПодсказка" id="291"/>
+							<ChildItems>
+								<InputField name="МК_Наименование" id="294" DisplayImportance="High">
+									<DataPath>Список.МК_Наименование</DataPath>
+									<Width>15</Width>
+									<Height>3</Height>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ContextMenu name="МК_НаименованиеКонтекстноеМеню" id="295"/>
+									<ExtendedTooltip name="МК_НаименованиеРасширеннаяПодсказка" id="296"/>
+								</InputField>
+							</ChildItems>
+						</ColumnGroup>
+						<ColumnGroup name="ГруппаДатаСрок" id="292" DisplayImportance="High">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа2</v8:content>
+								</v8:item>
+							</Title>
+							<FixingInTable>Right</FixingInTable>
+							<ExtendedTooltip name="ГруппаДатаСрокРасширеннаяПодсказка" id="293"/>
+						</ColumnGroup>
+					</ChildItems>
+				</ColumnGroup>
 				<ColumnGroup name="Группа1" id="189">
 					<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="190"/>
 					<ChildItems>
@@ -867,7 +945,7 @@
 			</UseAlways>
 			<Settings xsi:type="DynamicList">
 				<ManualQuery>true</ManualQuery>
-				<DynamicDataRead>false</DynamicDataRead>
+				<DynamicDataRead>true</DynamicDataRead>
 				<QueryText>ВЫБРАТЬ
 	ЗадачаЗадачаИсполнителя.Ссылка,
 	ЗадачаЗадачаИсполнителя.ПометкаУдаления,
@@ -876,6 +954,7 @@
 	ЗадачаЗадачаИсполнителя.БизнесПроцесс,
 	ЗадачаЗадачаИсполнителя.ТочкаМаршрута,
 	ЗадачаЗадачаИсполнителя.Наименование,
+	ЗадачаЗадачаИсполнителя.Наименование КАК МК_Наименование,
 	ЗадачаЗадачаИсполнителя.Выполнена,
 	ЗадачаЗадачаИсполнителя.Важность,
 	ВЫБОР
@@ -1177,6 +1256,17 @@
 				</Column>
 			</Columns>
 		</Attribute>
+		<Attribute name="ЭтоМобильныйКлиент" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Это мобильный клиент</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
 		<ConditionalAppearance>
 			<dcsset:item>
 				<dcsset:selection>
@@ -1284,6 +1374,15 @@
 			<Action>ОткрытьОтчеты</Action>
 			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
+		<Command name="МК_ОчиститьБыстрыеОтборы" id="16">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>М к очистить быстрые отборы</v8:content>
+				</v8:item>
+			</Title>
+			<Action>МК_ОчиститьБыстрыеОтборы</Action>
+		</Command>
 	</Commands>
 	<Parameters>
 		<Parameter name="ЗаголовокФормы">
@@ -1299,7 +1398,7 @@
 	<CommandInterface>
 		<CommandBar>
 			<Item>
-				<Command>2:dab6706c-e0f7-4dc9-8fac-95b1dfcbf05c</Command>
+				<Command>0</Command>
 				<Type>Auto</Type>
 				<CommandGroup>FormCommandBarCreateBasedOn</CommandGroup>
 				<Index>1</Index>
@@ -1324,7 +1423,7 @@
 				<Index>3</Index>
 			</Item>
 			<Item>
-				<Command>0:1823d37a-3b32-4031-8996-56796c8dbe41</Command>
+				<Command>0</Command>
 				<Type>Auto</Type>
 				<CommandGroup>FormCommandBarCreateBasedOn</CommandGroup>
 				<Index>4</Index>

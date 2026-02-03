@@ -595,10 +595,10 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Attribute>
-			<Form>ФормаЭлемента</Form>
-			<Form>ФормаСписка</Form>
-			<Form>ФормаГруппы</Form>
 			<Form>ФормаВыбораГруппы</Form>
+			<Form>ФормаГруппы</Form>
+			<Form>ФормаСписка</Form>
+			<Form>ФормаЭлемента</Form>
 			<Command uuid="433ded4b-b710-4232-b03e-9e526de46a96">
 				<Properties>
 					<Name>ТомаХраненияФайлов</Name>

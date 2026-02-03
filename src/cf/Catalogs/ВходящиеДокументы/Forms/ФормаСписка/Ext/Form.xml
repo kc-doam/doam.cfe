@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
 	<Title>
 		<v8:item>
 			<v8:lang>ru</v8:lang>
@@ -10,6 +10,13 @@
 	<AutoTitle>false</AutoTitle>
 	<AutoURL>false</AutoURL>
 	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<MobileDeviceCommandBarContent>
+		<xr:Item>
+			<xr:Presentation/>
+			<xr:CheckState>0</xr:CheckState>
+			<xr:Value xsi:type="xs:string">ГруппаКоманды</xr:Value>
+		</xr:Item>
+	</MobileDeviceCommandBarContent>
 	<CommandSet>
 		<ExcludedCommand>Create</ExcludedCommand>
 	</CommandSet>
@@ -22,6 +29,7 @@
 		<Event name="OnLoadDataFromSettingsAtServer">ПриЗагрузкеДанныхИзНастроекНаСервере</Event>
 		<Event name="NavigationProcessing">ОбработкаПерехода</Event>
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="OnChangeDisplaySettings">ПриИзмененииПараметровЭкрана</Event>
 		<Event name="OnClose">ПриЗакрытии</Event>
 	</Events>
 	<ChildItems>
@@ -40,6 +48,7 @@
 			</ToolTip>
 			<Height>1</Height>
 			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаБыстрыеОтборыExtendedTooltip" id="302"/>
@@ -228,6 +237,22 @@
 						<Event name="OnChange">ОтборКатегорияПриИзменении</Event>
 					</Events>
 				</InputField>
+				<InputField name="ОтборСостояниеМЭДО" id="926">
+					<DataPath>СостояниеМЭДО</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<InputHint>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Состояние МЭДО</v8:content>
+						</v8:item>
+					</InputHint>
+					<ContextMenu name="ОтборСостояниеМЭДОКонтекстноеМеню" id="927"/>
+					<ExtendedTooltip name="ОтборСостояниеМЭДОРасширеннаяПодсказка" id="928"/>
+					<Events>
+						<Event name="OnChange">ОтборСостояниеМЭДОПриИзменении</Event>
+						<Event name="StartChoice">ОтборСостояниеМЭДОНачалоВыбора</Event>
+					</Events>
+				</InputField>
 			</ChildItems>
 		</UsualGroup>
 		<UsualGroup name="ПользовательскиеНастройкиСписка" id="817">
@@ -238,6 +263,7 @@
 				</v8:item>
 			</Title>
 			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ПользовательскиеНастройкиСпискаРасширеннаяПодсказка" id="818"/>
@@ -256,6 +282,7 @@
 				</v8:item>
 			</ToolTip>
 			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаКомандыРасширеннаяПодсказка" id="519"/>
@@ -276,149 +303,99 @@
 					<Height>1</Height>
 					<ExtendedTooltip name="ГруппаКоманднаяПанельExtendedTooltip" id="310"/>
 					<ChildItems>
-						<Button name="СоздатьДокумент" id="289">
-							<Type>CommandBarButton</Type>
-							<Representation>Text</Representation>
-							<SkipOnInput>false</SkipOnInput>
-							<CommandName>Form.Command.СоздатьДокумент</CommandName>
-							<ExtendedTooltip name="СоздатьДокументExtendedTooltip" id="311"/>
-						</Button>
-						<Button name="ОтправитьОбъекты" id="885">
-							<Type>CommandBarButton</Type>
-							<CommandName>CommonCommand.ОтправитьОбъекты</CommandName>
-							<DataPath>Items.Список.CurrentData.Ссылка</DataPath>
-							<ExtendedTooltip name="ОтправитьОбъектыРасширеннаяПодсказка" id="886"/>
-						</Button>
-						<Popup name="ГруппаСоздатьНаОсновании" id="566">
+						<ButtonGroup name="ГруппаВажныеКоманды" id="929">
 							<Title>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
-									<v8:content>Создать на основании</v8:content>
+									<v8:content>Важные команды</v8:content>
 								</v8:item>
 							</Title>
-							<ToolTip>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Создать на основании</v8:content>
-								</v8:item>
-							</ToolTip>
-							<ExtendedTooltip name="ГруппаСоздатьНаОснованииРасширеннаяПодсказка" id="567"/>
+							<ExtendedTooltip name="ГруппаВажныеКомандыРасширеннаяПодсказка" id="930"/>
 							<ChildItems>
-								<Button name="СправочникВнутренниеДокументыСозданиеНаОсновании" id="568">
+								<Button name="СоздатьДокумент" id="289">
 									<Type>CommandBarButton</Type>
-									<CommandName>Catalog.ВнутренниеДокументы.Command.СозданиеНаОсновании</CommandName>
-									<DataPath>Items.Список.CurrentData.Ссылка</DataPath>
-									<ExtendedTooltip name="СправочникВнутренниеДокументыСозданиеНаОснованииРасширеннаяПодсказка" id="569"/>
+									<Representation>Text</Representation>
+									<SkipOnInput>false</SkipOnInput>
+									<CommandName>Form.Command.СоздатьДокумент</CommandName>
+									<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+									<ExtendedTooltip name="СоздатьДокументExtendedTooltip" id="311"/>
 								</Button>
-								<Button name="СправочникИсходящиеДокументыСоздатьИсходящийДокументНаОсновании" id="570">
+								<Button name="ОтправитьОбъекты" id="885">
 									<Type>CommandBarButton</Type>
-									<CommandName>Catalog.ИсходящиеДокументы.Command.СоздатьИсходящийДокументНаОсновании</CommandName>
+									<CommandName>CommonCommand.ОтправитьОбъекты</CommandName>
 									<DataPath>Items.Список.CurrentData.Ссылка</DataPath>
-									<ExtendedTooltip name="СправочникИсходящиеДокументыСоздатьИсходящийДокументНаОснованииРасширеннаяПодсказка" id="571"/>
+									<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+									<ExtendedTooltip name="ОтправитьОбъектыРасширеннаяПодсказка" id="886"/>
 								</Button>
-								<Button name="ОбщаяКомандаСоздатьЗаписьЖурналаПередачи" id="572">
+								<Popup name="ГруппаСоздатьНаОсновании" id="566">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Создать на основании</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Создать на основании</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="ГруппаСоздатьНаОснованииРасширеннаяПодсказка" id="567"/>
+									<ChildItems>
+										<Button name="СправочникВнутренниеДокументыСозданиеНаОсновании" id="568">
+											<Type>CommandBarButton</Type>
+											<CommandName>Catalog.ВнутренниеДокументы.Command.СозданиеНаОсновании</CommandName>
+											<DataPath>Items.Список.CurrentData.Ссылка</DataPath>
+											<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+											<ExtendedTooltip name="СправочникВнутренниеДокументыСозданиеНаОснованииРасширеннаяПодсказка" id="569"/>
+										</Button>
+										<Button name="СправочникИсходящиеДокументыСоздатьИсходящийДокументНаОсновании" id="570">
+											<Type>CommandBarButton</Type>
+											<CommandName>Catalog.ИсходящиеДокументы.Command.СоздатьИсходящийДокументНаОсновании</CommandName>
+											<DataPath>Items.Список.CurrentData.Ссылка</DataPath>
+											<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+											<ExtendedTooltip name="СправочникИсходящиеДокументыСоздатьИсходящийДокументНаОснованииРасширеннаяПодсказка" id="571"/>
+										</Button>
+										<Button name="ОбщаяКомандаСоздатьЗаписьЖурналаПередачи" id="572">
+											<Type>CommandBarButton</Type>
+											<CommandName>CommonCommand.СоздатьЗаписьЖурналаПередачи</CommandName>
+											<DataPath>Items.Список.CurrentData.Ссылка</DataPath>
+											<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+											<ExtendedTooltip name="ОбщаяКомандаСоздатьЗаписьЖурналаПередачиРасширеннаяПодсказка" id="573"/>
+										</Button>
+										<Button name="СправочникЗаписиРабочегоКалендаряСоздатьЗаписьКалендаряНаОсновании" id="574">
+											<Type>CommandBarButton</Type>
+											<CommandName>Catalog.ЗаписиРабочегоКалендаря.Command.СоздатьЗаписьКалендаряНаОсновании</CommandName>
+											<DataPath>Items.Список.CurrentData.Ссылка</DataPath>
+											<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+											<ExtendedTooltip name="СправочникЗаписиРабочегоКалендаряСоздатьЗаписьКалендаряНаОснованииРасширеннаяПодсказка" id="575"/>
+										</Button>
+										<Button name="СправочникМероприятияСоздатьНаОсновании" id="576">
+											<Type>CommandBarButton</Type>
+											<CommandName>Catalog.Мероприятия.Command.СоздатьМероприятиеНаОсновании</CommandName>
+											<DataPath>Items.Список.CurrentData.Ссылка</DataPath>
+											<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+											<ExtendedTooltip name="СправочникМероприятияСоздатьНаОснованииРасширеннаяПодсказка" id="577"/>
+										</Button>
+										<Button name="ОбщаяКомандаСозданиеСвязанныхОбъектов" id="582">
+											<Type>CommandBarButton</Type>
+											<CommandName>CommonCommand.СозданиеСвязанныхОбъектов</CommandName>
+											<DataPath>Items.Список.CurrentData.Ссылка</DataPath>
+											<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+											<ExtendedTooltip name="ОбщаяКомандаСозданиеСвязанныхОбъектовРасширеннаяПодсказка" id="583"/>
+										</Button>
+									</ChildItems>
+								</Popup>
+								<Button name="ОткрытьОтчеты" id="872">
 									<Type>CommandBarButton</Type>
-									<CommandName>CommonCommand.СоздатьЗаписьЖурналаПередачи</CommandName>
-									<DataPath>Items.Список.CurrentData.Ссылка</DataPath>
-									<ExtendedTooltip name="ОбщаяКомандаСоздатьЗаписьЖурналаПередачиРасширеннаяПодсказка" id="573"/>
-								</Button>
-								<Button name="СправочникЗаписиРабочегоКалендаряСоздатьЗаписьКалендаряНаОсновании" id="574">
-									<Type>CommandBarButton</Type>
-									<CommandName>Catalog.ЗаписиРабочегоКалендаря.Command.СоздатьЗаписьКалендаряНаОсновании</CommandName>
-									<DataPath>Items.Список.CurrentData.Ссылка</DataPath>
-									<ExtendedTooltip name="СправочникЗаписиРабочегоКалендаряСоздатьЗаписьКалендаряНаОснованииРасширеннаяПодсказка" id="575"/>
-								</Button>
-								<Button name="СправочникМероприятияСоздатьНаОсновании" id="576">
-									<Type>CommandBarButton</Type>
-									<CommandName>Catalog.Мероприятия.Command.СоздатьМероприятиеНаОсновании</CommandName>
-									<DataPath>Items.Список.CurrentData.Ссылка</DataPath>
-									<ExtendedTooltip name="СправочникМероприятияСоздатьНаОснованииРасширеннаяПодсказка" id="577"/>
-								</Button>
-								<Button name="ОбщаяКомандаСозданиеСвязанныхОбъектов" id="582">
-									<Type>CommandBarButton</Type>
-									<CommandName>CommonCommand.СозданиеСвязанныхОбъектов</CommandName>
-									<DataPath>Items.Список.CurrentData.Ссылка</DataPath>
-									<ExtendedTooltip name="ОбщаяКомандаСозданиеСвязанныхОбъектовРасширеннаяПодсказка" id="583"/>
+									<Representation>PictureAndText</Representation>
+									<CommandName>Form.Command.ОткрытьОтчеты</CommandName>
+									<ToolTipRepresentation>None</ToolTipRepresentation>
+									<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+									<ExtendedTooltip name="ОткрытьОтчетыРасширеннаяПодсказка" id="873"/>
 								</Button>
 							</ChildItems>
-						</Popup>
-						<ButtonGroup name="ГруппаПечать" id="610">
-							<Title>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Группа печать</v8:content>
-								</v8:item>
-							</Title>
-							<ToolTip>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Группа печать</v8:content>
-								</v8:item>
-							</ToolTip>
-							<ExtendedTooltip name="ГруппаПечатьРасширеннаяПодсказка" id="611"/>
 						</ButtonGroup>
-						<Button name="ОткрытьОтчеты" id="872">
-							<Type>CommandBarButton</Type>
-							<Representation>Text</Representation>
-							<CommandName>Form.Command.ОткрытьОтчеты</CommandName>
-							<ToolTipRepresentation>None</ToolTipRepresentation>
-							<ExtendedTooltip name="ОткрытьОтчетыРасширеннаяПодсказка" id="873"/>
-						</Button>
-					</ChildItems>
-				</CommandBar>
-				<CommandBar name="Группа5" id="612">
-					<HorizontalLocation>Right</HorizontalLocation>
-					<ExtendedTooltip name="Группа5РасширеннаяПодсказка" id="613"/>
-					<ChildItems>
-						<SearchStringAddition name="ДополнениеСтрокаПоиска" id="614">
-							<AdditionSource>
-								<Item>Список</Item>
-								<Type>SearchStringRepresentation</Type>
-							</AdditionSource>
-							<Title>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Дополнение строка поиска</v8:content>
-								</v8:item>
-							</Title>
-							<Width>23</Width>
-							<HorizontalStretch>false</HorizontalStretch>
-							<ContextMenu name="ДополнениеСтрокаПоискаКонтекстноеМеню" id="615"/>
-							<ExtendedTooltip name="ДополнениеСтрокаПоискаРасширеннаяПодсказка" id="616"/>
-						</SearchStringAddition>
-						<SearchControlAddition name="ДополнениеУправлениеПоиском" id="617">
-							<AdditionSource>
-								<Item>Список</Item>
-								<Type>SearchControl</Type>
-							</AdditionSource>
-							<Title>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Дополнение управление поиском</v8:content>
-								</v8:item>
-							</Title>
-							<ContextMenu name="ДополнениеУправлениеПоискомКонтекстноеМеню" id="618"/>
-							<ExtendedTooltip name="ДополнениеУправлениеПоискомРасширеннаяПодсказка" id="619"/>
-						</SearchControlAddition>
-					</ChildItems>
-				</CommandBar>
-				<CommandBar name="ПодменюВсеДействия" id="528">
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Еще</v8:content>
-						</v8:item>
-					</Title>
-					<ToolTip>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Подменю все действия</v8:content>
-						</v8:item>
-					</ToolTip>
-					<Width>11</Width>
-					<HorizontalStretch>false</HorizontalStretch>
-					<ExtendedTooltip name="ПодменюВсеДействияРасширеннаяПодсказка" id="529"/>
-					<ChildItems>
 						<Popup name="ГруппаРежимПросмотра" id="584">
 							<Title>
 								<v8:item>
@@ -437,41 +414,49 @@
 								<Button name="РежимПросмотраСписком" id="586">
 									<Type>CommandBarButton</Type>
 									<CommandName>Form.Command.РежимПросмотраСписком</CommandName>
+									<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
 									<ExtendedTooltip name="РежимПросмотраСпискомРасширеннаяПодсказка" id="587"/>
 								</Button>
 								<Button name="РежимПросмотраПоВидамДокументов" id="590">
 									<Type>CommandBarButton</Type>
 									<CommandName>Form.Command.РежимПросмотраПоВидамДокументов</CommandName>
+									<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
 									<ExtendedTooltip name="РежимПросмотраПоВидамДокументовРасширеннаяПодсказка" id="591"/>
 								</Button>
 								<Button name="РежимПросмотраПоВопросамДеятельности" id="592">
 									<Type>CommandBarButton</Type>
 									<CommandName>Form.Command.РежимПросмотраПоВопросамДеятельности</CommandName>
+									<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
 									<ExtendedTooltip name="РежимПросмотраПоВопросамДеятельностиРасширеннаяПодсказка" id="593"/>
 								</Button>
 								<Button name="РежимПросмотраПоКонтрагентам" id="594">
 									<Type>CommandBarButton</Type>
 									<CommandName>Form.Command.РежимПросмотраПоКонтрагентам</CommandName>
+									<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
 									<ExtendedTooltip name="РежимПросмотраПоКонтрагентамРасширеннаяПодсказка" id="595"/>
 								</Button>
 								<Button name="РежимПросмотраПоНоменклатуреДел" id="596">
 									<Type>CommandBarButton</Type>
 									<CommandName>Form.Command.РежимПросмотраПоНоменклатуреДел</CommandName>
+									<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
 									<ExtendedTooltip name="РежимПросмотраПоНоменклатуреДелРасширеннаяПодсказка" id="597"/>
 								</Button>
 								<Button name="РежимПросмотраПоДеламТомам" id="598">
 									<Type>CommandBarButton</Type>
 									<CommandName>Form.Command.РежимПросмотраПоДеламТомам</CommandName>
+									<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
 									<ExtendedTooltip name="РежимПросмотраПоДеламТомамРасширеннаяПодсказка" id="599"/>
 								</Button>
 								<Button name="РежимПросмотраПоКатегориям" id="600">
 									<Type>CommandBarButton</Type>
 									<CommandName>Form.Command.РежимПросмотраПоКатегориям</CommandName>
+									<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
 									<ExtendedTooltip name="РежимПросмотраПоКатегориямРасширеннаяПодсказка" id="601"/>
 								</Button>
 								<Button name="РежимПросмотраПоПроектам" id="602">
 									<Type>CommandBarButton</Type>
 									<CommandName>Form.Command.РежимПросмотраПоПроектам</CommandName>
+									<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
 									<ExtendedTooltip name="РежимПросмотраПоПроектамРасширеннаяПодсказка" id="603"/>
 								</Button>
 							</ChildItems>
@@ -714,13 +699,29 @@
 								<Button name="ДобавитьВМоиДокументы" id="622">
 									<Type>CommandBarButton</Type>
 									<CommandName>Form.Command.ДобавитьВМоиДокументы</CommandName>
+									<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
 									<ExtendedTooltip name="ДобавитьВМоиДокументыРасширеннаяПодсказка" id="623"/>
 								</Button>
 								<Button name="ВыполнитьПоискПоРеквизитам" id="832">
 									<Type>CommandBarButton</Type>
 									<CommandName>Form.Command.ВыполнитьПоискПоРеквизитам</CommandName>
+									<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
 									<ExtendedTooltip name="ВыполнитьПоискПоРеквизитамРасширеннаяПодсказка" id="833"/>
 								</Button>
+								<Popup name="ПодменюОтчеты" id="939">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Отчеты</v8:content>
+										</v8:item>
+									</Title>
+									<Picture>
+										<xr:Ref>StdPicture.Report</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<Representation>PictureAndText</Representation>
+									<ExtendedTooltip name="ПодменюОтчетыРасширеннаяПодсказка" id="940"/>
+								</Popup>
 							</ChildItems>
 						</Popup>
 						<Popup name="ГруппаНастройки" id="550">
@@ -741,6 +742,7 @@
 								<Button name="ПоказыватьОбластьОбзора" id="807">
 									<Type>CommandBarButton</Type>
 									<CommandName>Form.Command.ПоказыватьОбластьОбзора</CommandName>
+									<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
 									<ExtendedTooltip name="ПоказыватьОбластьОбзораРасширеннаяПодсказка" id="808"/>
 								</Button>
 								<Button name="ПоказыватьУдаленные" id="552">
@@ -775,17 +777,82 @@
 								</Button>
 							</ChildItems>
 						</Popup>
-						<Button name="Справка" id="236">
-							<Type>CommandBarButton</Type>
-							<CommandName>Form.StandardCommand.Help</CommandName>
-							<ExtendedTooltip name="СправкаExtendedTooltip" id="319"/>
-						</Button>
+						<Popup name="ПодменюПечать" id="937">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Печать</v8:content>
+								</v8:item>
+							</Title>
+							<Picture>
+								<xr:Ref>StdPicture.Print</xr:Ref>
+								<xr:LoadTransparent>true</xr:LoadTransparent>
+							</Picture>
+							<Representation>PictureAndText</Representation>
+							<ExtendedTooltip name="ПодменюПечатьРасширеннаяПодсказка" id="938"/>
+						</Popup>
+						<SearchStringAddition name="ДополнениеСтрокаПоиска" id="931">
+							<AdditionSource>
+								<Item>Список</Item>
+								<Type>SearchStringRepresentation</Type>
+							</AdditionSource>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Строка поиска</v8:content>
+								</v8:item>
+							</Title>
+							<Width>23</Width>
+							<HorizontalStretch>false</HorizontalStretch>
+							<ContextMenu name="ДополнениеСтрокаПоискаКонтекстноеМеню" id="932"/>
+							<ExtendedTooltip name="ДополнениеСтрокаПоискаРасширеннаяПодсказка" id="933"/>
+						</SearchStringAddition>
+						<SearchControlAddition name="ДополнениеУправлениеПоиском" id="934">
+							<AdditionSource>
+								<Item>Список</Item>
+								<Type>SearchControl</Type>
+							</AdditionSource>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Управление поиском</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ДополнениеУправлениеПоискомКонтекстноеМеню" id="935"/>
+							<ExtendedTooltip name="ДополнениеУправлениеПоискомРасширеннаяПодсказка" id="936"/>
+						</SearchControlAddition>
+						<ButtonGroup name="ГруппаВсеДействия" id="528">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Еще</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Все действия</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Width>11</Width>
+							<HorizontalStretch>false</HorizontalStretch>
+							<ExtendedTooltip name="ГруппаВсеДействияРасширеннаяПодсказка" id="529"/>
+							<ChildItems>
+								<Button name="Справка" id="236">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.StandardCommand.Help</CommandName>
+									<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+									<ExtendedTooltip name="СправкаExtendedTooltip" id="319"/>
+								</Button>
+							</ChildItems>
+						</ButtonGroup>
 					</ChildItems>
 				</CommandBar>
 			</ChildItems>
 		</UsualGroup>
 		<UsualGroup name="ГруппаДеревоКатегорийИСписок" id="194">
 			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаДеревоКатегорийИСписокExtendedTooltip" id="320"/>
@@ -822,6 +889,19 @@
 							</ToolTip>
 							<ExtendedTooltip name="СтраницаКатегорииExtendedTooltip" id="322"/>
 							<ChildItems>
+								<UsualGroup name="МК_ГруппаКатегории" id="889">
+									<Visible>false</Visible>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Категории</v8:content>
+										</v8:item>
+									</Title>
+									<Group>Vertical</Group>
+									<Behavior>PopUp</Behavior>
+									<TitleDataPath>ТекущаяКатегория.Description</TitleDataPath>
+									<ExtendedTooltip name="МК_ГруппаКатегорииРасширеннаяПодсказка" id="890"/>
+								</UsualGroup>
 								<Table name="ДеревоКатегорий" id="92">
 									<Representation>Tree</Representation>
 									<SelectionMode>SingleRow</SelectionMode>
@@ -1095,6 +1175,7 @@
 										</v8:item>
 									</ToolTip>
 									<Group>Horizontal</Group>
+									<Behavior>Usual</Behavior>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="ГруппаПоискExtendedTooltip" id="339"/>
@@ -1187,6 +1268,19 @@
 							</ToolTip>
 							<ExtendedTooltip name="СтраницаВидыДокументовExtendedTooltip" id="343"/>
 							<ChildItems>
+								<UsualGroup name="МК_ГруппаВидыДокументов" id="891">
+									<Visible>false</Visible>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Виды документов</v8:content>
+										</v8:item>
+									</Title>
+									<Group>Vertical</Group>
+									<Behavior>PopUp</Behavior>
+									<TitleDataPath>ТекущийВидДокумента.Description</TitleDataPath>
+									<ExtendedTooltip name="МК_ГруппаВидыДокументовРасширеннаяПодсказка" id="892"/>
+								</UsualGroup>
 								<Table name="ВидыДокументов" id="242">
 									<Representation>Tree</Representation>
 									<CommandBarLocation>None</CommandBarLocation>
@@ -1283,6 +1377,19 @@
 							</ToolTip>
 							<ExtendedTooltip name="СтраницаВопросыДеятельностиExtendedTooltip" id="346"/>
 							<ChildItems>
+								<UsualGroup name="МК_ГруппаВопросыДеятельности" id="893">
+									<Visible>false</Visible>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Вопросы деятельности</v8:content>
+										</v8:item>
+									</Title>
+									<Group>Vertical</Group>
+									<Behavior>PopUp</Behavior>
+									<TitleDataPath>ТекущийВопросДеятельности.Description</TitleDataPath>
+									<ExtendedTooltip name="МК_ГруппаВопросыДеятельностиРасширеннаяПодсказка" id="894"/>
+								</UsualGroup>
 								<Table name="ВопросыДеятельности" id="248">
 									<Representation>Tree</Representation>
 									<CommandBarLocation>None</CommandBarLocation>
@@ -1373,6 +1480,19 @@
 							</Title>
 							<ExtendedTooltip name="СтраницаКонтрагентыРасширеннаяПодсказка" id="349"/>
 							<ChildItems>
+								<UsualGroup name="МК_ГруппаКонтрагенты" id="895">
+									<Visible>false</Visible>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Контрагенты</v8:content>
+										</v8:item>
+									</Title>
+									<Group>Vertical</Group>
+									<Behavior>PopUp</Behavior>
+									<TitleDataPath>ТекущийКонтрагент.Description</TitleDataPath>
+									<ExtendedTooltip name="МК_ГруппаКонтрагентыРасширеннаяПодсказка" id="896"/>
+								</UsualGroup>
 								<Table name="Контрагенты" id="254">
 									<Representation>Tree</Representation>
 									<CommandBarLocation>None</CommandBarLocation>
@@ -1462,6 +1582,19 @@
 							</ToolTip>
 							<ExtendedTooltip name="СтраницаНоменклатураДелExtendedTooltip" id="352"/>
 							<ChildItems>
+								<UsualGroup name="МК_ГруппаНоменклатураДел" id="897">
+									<Visible>false</Visible>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Номенклатура дел</v8:content>
+										</v8:item>
+									</Title>
+									<Group>Vertical</Group>
+									<Behavior>PopUp</Behavior>
+									<TitleDataPath>ТекущаяНоменклатураДел</TitleDataPath>
+									<ExtendedTooltip name="МК_ГруппаНоменклатураДелРасширеннаяПодсказка" id="898"/>
+								</UsualGroup>
 								<Table name="СписокНоменклатураДел" id="260">
 									<Representation>Tree</Representation>
 									<CommandBarLocation>None</CommandBarLocation>
@@ -1541,6 +1674,7 @@
 										</v8:item>
 									</ToolTip>
 									<Group>Horizontal</Group>
+									<Behavior>Usual</Behavior>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="ГруппаОрганизацияГодExtendedTooltip" id="355"/>
@@ -1602,6 +1736,19 @@
 							</ToolTip>
 							<ExtendedTooltip name="СтраницаДелаТомаExtendedTooltip" id="358"/>
 							<ChildItems>
+								<UsualGroup name="МК_ГруппаДелаТома" id="899">
+									<Visible>false</Visible>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Дела тома</v8:content>
+										</v8:item>
+									</Title>
+									<Group>Vertical</Group>
+									<Behavior>PopUp</Behavior>
+									<TitleDataPath>ТекущееДелоТом</TitleDataPath>
+									<ExtendedTooltip name="МК_ГруппаДелаТомаРасширеннаяПодсказка" id="900"/>
+								</UsualGroup>
 								<Table name="ДелаТома" id="271">
 									<Representation>Tree</Representation>
 									<CommandBarLocation>None</CommandBarLocation>
@@ -1681,6 +1828,7 @@
 										</v8:item>
 									</ToolTip>
 									<Group>Horizontal</Group>
+									<Behavior>Usual</Behavior>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="ГруппаОрганизацияГодДелТомовExtendedTooltip" id="361"/>
@@ -1742,6 +1890,19 @@
 							</ToolTip>
 							<ExtendedTooltip name="СтраницаПроектыExtendedTooltip" id="364"/>
 							<ChildItems>
+								<UsualGroup name="МК_ГруппаПроекты" id="901">
+									<Visible>false</Visible>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Проекты</v8:content>
+										</v8:item>
+									</Title>
+									<Group>Vertical</Group>
+									<Behavior>PopUp</Behavior>
+									<TitleDataPath>ТекущийПроект.Description</TitleDataPath>
+									<ExtendedTooltip name="МК_ГруппаПроектыРасширеннаяПодсказка" id="902"/>
+								</UsualGroup>
 								<Table name="Проекты" id="291">
 									<Representation>Tree</Representation>
 									<CommandBarLocation>None</CommandBarLocation>
@@ -1753,7 +1914,6 @@
 									<EnableDrag>true</EnableDrag>
 									<FileDragMode>AsFile</FileDragMode>
 									<DataPath>Проекты</DataPath>
-									<RowPictureDataPath>Проекты.DefaultPicture</RowPictureDataPath>
 									<SearchStringLocation>None</SearchStringLocation>
 									<ViewStatusLocation>Top</ViewStatusLocation>
 									<SearchControlLocation>None</SearchControlLocation>
@@ -1835,10 +1995,43 @@
 					</Title>
 					<Height>25</Height>
 					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="ГруппаСписокМиникарточкаРасширеннаяПодсказка" id="625"/>
 					<ChildItems>
+						<UsualGroup name="МК_ГруппаСписок" id="903">
+							<Visible>false</Visible>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа1</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<BackColor>style:МК_ЦветФонаГруппы</BackColor>
+							<ExtendedTooltip name="МК_ГруппаСписокРасширеннаяПодсказка" id="904"/>
+							<ChildItems>
+								<UsualGroup name="МК_ДеревоРазрезов" id="905">
+									<Visible>false</Visible>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа1</v8:content>
+										</v8:item>
+									</Title>
+									<Group>Vertical</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<BackColor>style:МК_ЦветФонаГруппы</BackColor>
+									<ExtendedTooltip name="МК_ДеревоРазрезовРасширеннаяПодсказка" id="906"/>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
 						<Table name="Список" id="1">
 							<Representation>List</Representation>
 							<CommandBarLocation>None</CommandBarLocation>
@@ -1854,6 +2047,7 @@
 							<SearchStringLocation>None</SearchStringLocation>
 							<ViewStatusLocation>Top</ViewStatusLocation>
 							<SearchControlLocation>None</SearchControlLocation>
+							<RefreshRequest>PullFromTop</RefreshRequest>
 							<AutoRefresh>false</AutoRefresh>
 							<AutoRefreshPeriod>60</AutoRefreshPeriod>
 							<Period>
@@ -2043,8 +2237,75 @@
 								<Event name="Drag">СписокПеретаскивание</Event>
 								<Event name="BeforeRowChange">СписокПередНачаломИзменения</Event>
 								<Event name="NewWriteProcessing">СписокОбработкаЗаписиНового</Event>
+								<Event name="RefreshRequestProcessing">СписокОбработкаЗапросаОбновления</Event>
 							</Events>
 							<ChildItems>
+								<ColumnGroup name="МК_ГруппаКолонок" id="911">
+									<Visible>false</Visible>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Список группа1</v8:content>
+										</v8:item>
+									</Title>
+									<Group>Horizontal</Group>
+									<ExtendedTooltip name="МК_ГруппаКолонокРасширеннаяПодсказка" id="912"/>
+									<ChildItems>
+										<ColumnGroup name="МК_ПерваяКолонка" id="913">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа1</v8:content>
+												</v8:item>
+											</Title>
+											<ExtendedTooltip name="МК_ПерваяКолонкаРасширеннаяПодсказка" id="914"/>
+											<ChildItems>
+												<ColumnGroup name="МК_Картинки" id="915">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа1</v8:content>
+														</v8:item>
+													</Title>
+													<Group>Horizontal</Group>
+													<ExtendedTooltip name="МК_КартинкиРасширеннаяПодсказка" id="916"/>
+												</ColumnGroup>
+											</ChildItems>
+										</ColumnGroup>
+										<ColumnGroup name="МК_ВтораяКолонка" id="917">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа1</v8:content>
+												</v8:item>
+											</Title>
+											<ExtendedTooltip name="МК_ВтораяКолонкаРасширеннаяПодсказка" id="918"/>
+											<ChildItems>
+												<ColumnGroup name="МК_НаименованиеПодготовил" id="919">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа1</v8:content>
+														</v8:item>
+													</Title>
+													<ExtendedTooltip name="МК_НаименованиеПодготовилРасширеннаяПодсказка" id="920"/>
+													<ChildItems>
+														<ColumnGroup name="МК_РегНомерИДата" id="921">
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа1</v8:content>
+																</v8:item>
+															</Title>
+															<Group>Horizontal</Group>
+															<ExtendedTooltip name="МК_РегНомерИДатаРасширеннаяПодсказка" id="922"/>
+														</ColumnGroup>
+													</ChildItems>
+												</ColumnGroup>
+											</ChildItems>
+										</ColumnGroup>
+									</ChildItems>
+								</ColumnGroup>
 								<ColumnGroup name="ГруппаФайлыЗадачи" id="493">
 									<Title>
 										<v8:item>
@@ -2560,6 +2821,17 @@
 									<ContextMenu name="СостояниеКонтекстноеМеню" id="67"/>
 									<ExtendedTooltip name="СостояниеExtendedTooltip" id="400"/>
 								</LabelField>
+								<InputField name="СостояниеМЭДО" id="923">
+									<DataPath>Список.СостояниеМЭДО</DataPath>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Состояние по истории прохождения документа по МЭДО</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ContextMenu name="СостояниеМЭДОКонтекстноеМеню" id="924"/>
+									<ExtendedTooltip name="СостояниеМЭДОРасширеннаяПодсказка" id="925"/>
+								</InputField>
 								<LabelField name="Ссылка" id="83">
 									<DataPath>Список.Ссылка</DataPath>
 									<UserVisible>
@@ -2586,6 +2858,7 @@
 							</ToolTip>
 							<Height>10</Height>
 							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="ГруппаМиникарточкаРасширеннаяПодсказка" id="627"/>
@@ -3106,6 +3379,18 @@
 												</Table>
 											</ChildItems>
 										</Page>
+										<Page name="МК_ГруппаСвязи" id="907">
+											<Visible>false</Visible>
+											<TitleDataPath>ЗаголовокСвязиМК</TitleDataPath>
+											<BackColor>style:МК_ЦветФонаГруппы</BackColor>
+											<ExtendedTooltip name="МК_ГруппаСвязиРасширеннаяПодсказка" id="908"/>
+										</Page>
+										<Page name="МК_ГруппаФайлы" id="909">
+											<Visible>false</Visible>
+											<TitleDataPath>ЗаголовокФайлыМК</TitleDataPath>
+											<BackColor>style:МК_ЦветФонаГруппы</BackColor>
+											<ExtendedTooltip name="МК_ГруппаФайлыРасширеннаяПодсказка" id="910"/>
+										</Page>
 									</ChildItems>
 								</Pages>
 							</ChildItems>
@@ -3245,7 +3530,8 @@
 				КОНЕЦ
 		ИНАЧЕ 0
 	КОНЕЦ КАК СостояниеКонтроля,
-	ВходящиеДокументы.Создал КАК Создал
+	ВходящиеДокументы.Создал КАК Создал,
+	ВходящиеДокументы.СостояниеМЭДО
 ИЗ
 	РегистрСведений.ДанныеВходящихДокументов КАК ВходящиеДокументы
 		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.ВидыВходящихДокументов КАК ВидыВходящихДокументов
@@ -3440,7 +3726,8 @@
 			ИЗ
 				РегистрСведений.КатегорииОбъектов КАК Регистр
 			ГДЕ
-				Регистр.КатегорияДанных В ИЕРАРХИИ (&amp;КатегорияИИ10)))}</QueryText>
+				Регистр.КатегорияДанных В ИЕРАРХИИ (&amp;КатегорияИИ10))),
+	(ВходящиеДокументы.СостояниеМЭДО = &amp;СостояниеМЭДО)}</QueryText>
 				<MainTable>InformationRegister.ДанныеВходящихДокументов</MainTable>
 				<ListSettings>
 					<dcsset:filter>
@@ -3845,7 +4132,7 @@
 				</v8:item>
 			</Title>
 			<Type>
-				<v8:TypeSet>cfg:AnyRef</v8:TypeSet>
+				<v8:TypeSet>cfg:AnyIBRef</v8:TypeSet>
 			</Type>
 			<Save>
 				<Field>ТекущаяНоменклатураДел</Field>
@@ -3859,7 +4146,7 @@
 				</v8:item>
 			</Title>
 			<Type>
-				<v8:TypeSet>cfg:AnyRef</v8:TypeSet>
+				<v8:TypeSet>cfg:AnyIBRef</v8:TypeSet>
 			</Type>
 			<Save>
 				<Field>ТекущееДелоТом</Field>
@@ -4727,7 +5014,7 @@
 						</v8:item>
 					</Title>
 					<Type>
-						<v8:TypeSet>cfg:AnyRef</v8:TypeSet>
+						<v8:TypeSet>cfg:AnyIBRef</v8:TypeSet>
 					</Type>
 				</Column>
 				<Column name="Представление" id="4">
@@ -5112,6 +5399,70 @@
 			</Title>
 			<Type/>
 		</Attribute>
+		<Attribute name="ЭтоМобильныйКлиент" id="80">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Это мобильный клиент</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ЗаголовокСвязиМК" id="81">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заголовок связи МК</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ЗаголовокФайлыМК" id="82">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заголовок файлы МК</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="СостояниеМЭДО" id="83">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Состояние МЭДО</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:EnumRef.СостоянияДокументовМЭДО</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ВозможныеСостоянияДокументовМЭДО" id="84">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Возможные состояния документов МЭДО - для выбора в отборе</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+			<Settings xsi:type="v8:TypeDescription"/>
+		</Attribute>
 		<ConditionalAppearance>
 			<dcsset:item>
 				<dcsset:use>false</dcsset:use>
@@ -5225,86 +5576,6 @@
 				<dcsset:filter>
 					<dcsset:item xsi:type="dcsset:FilterItemComparison">
 						<dcsset:left xsi:type="dcscor:Field">ДеревоКатегорий.ПометкаУдаления</dcsset:left>
-						<dcsset:comparisonType>Equal</dcsset:comparisonType>
-						<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
-					</dcsset:item>
-				</dcsset:filter>
-				<dcsset:appearance>
-					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-						<dcscor:parameter>Шрифт</dcscor:parameter>
-						<dcscor:value xsi:type="v8ui:Font" ref="style:NormalTextFont" bold="false" italic="false" underline="false" strikeout="true" kind="StyleItem"/>
-					</dcscor:item>
-				</dcsset:appearance>
-			</dcsset:item>
-			<dcsset:item>
-				<dcsset:selection>
-					<dcsset:item>
-						<dcsset:field>Список</dcsset:field>
-					</dcsset:item>
-				</dcsset:selection>
-				<dcsset:filter>
-					<dcsset:item xsi:type="dcsset:FilterItemComparison">
-						<dcsset:left xsi:type="dcscor:Field">Список.ПометкаУдаления</dcsset:left>
-						<dcsset:comparisonType>Equal</dcsset:comparisonType>
-						<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
-					</dcsset:item>
-				</dcsset:filter>
-				<dcsset:appearance>
-					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-						<dcscor:parameter>Шрифт</dcscor:parameter>
-						<dcscor:value xsi:type="v8ui:Font" ref="style:NormalTextFont" bold="false" italic="false" underline="false" strikeout="true" kind="StyleItem"/>
-					</dcscor:item>
-				</dcsset:appearance>
-			</dcsset:item>
-			<dcsset:item>
-				<dcsset:selection>
-					<dcsset:item>
-						<dcsset:field>ВидыДокументов</dcsset:field>
-					</dcsset:item>
-				</dcsset:selection>
-				<dcsset:filter>
-					<dcsset:item xsi:type="dcsset:FilterItemComparison">
-						<dcsset:left xsi:type="dcscor:Field">ВидыДокументов.ПометкаУдаления</dcsset:left>
-						<dcsset:comparisonType>Equal</dcsset:comparisonType>
-						<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
-					</dcsset:item>
-				</dcsset:filter>
-				<dcsset:appearance>
-					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-						<dcscor:parameter>Шрифт</dcscor:parameter>
-						<dcscor:value xsi:type="v8ui:Font" ref="style:NormalTextFont" bold="false" italic="false" underline="false" strikeout="true" kind="StyleItem"/>
-					</dcscor:item>
-				</dcsset:appearance>
-			</dcsset:item>
-			<dcsset:item>
-				<dcsset:selection>
-					<dcsset:item>
-						<dcsset:field>ВопросыДеятельности</dcsset:field>
-					</dcsset:item>
-				</dcsset:selection>
-				<dcsset:filter>
-					<dcsset:item xsi:type="dcsset:FilterItemComparison">
-						<dcsset:left xsi:type="dcscor:Field">ВопросыДеятельности.ПометкаУдаления</dcsset:left>
-						<dcsset:comparisonType>Equal</dcsset:comparisonType>
-						<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
-					</dcsset:item>
-				</dcsset:filter>
-				<dcsset:appearance>
-					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-						<dcscor:parameter>Шрифт</dcscor:parameter>
-						<dcscor:value xsi:type="v8ui:Font" ref="style:NormalTextFont" bold="false" italic="false" underline="false" strikeout="true" kind="StyleItem"/>
-					</dcscor:item>
-				</dcsset:appearance>
-			</dcsset:item>
-			<dcsset:item>
-				<dcsset:selection>
-					<dcsset:item>
-						<dcsset:field>Контрагенты</dcsset:field>
-					</dcsset:item>
-				</dcsset:selection>
-				<dcsset:filter>
-					<dcsset:item xsi:type="dcsset:FilterItemComparison">
-						<dcsset:left xsi:type="dcscor:Field">Контрагенты.ПометкаУдаления</dcsset:left>
 						<dcsset:comparisonType>Equal</dcsset:comparisonType>
 						<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
 					</dcsset:item>
@@ -6195,7 +6466,7 @@
 				</Visible>
 			</Item>
 			<Item>
-				<Command>2:da3c04c7-1d24-4d54-9686-2c404b8ed4e8</Command>
+				<Command>0</Command>
 				<Type>Auto</Type>
 				<Index>5</Index>
 				<DefaultVisible>false</DefaultVisible>
@@ -6204,13 +6475,13 @@
 				</Visible>
 			</Item>
 			<Item>
-				<Command>3:017baf6e-d210-4362-b7ae-cbe8236aa7c4</Command>
+				<Command>0</Command>
 				<Type>Auto</Type>
 				<CommandGroup>FormCommandBarCreateBasedOn</CommandGroup>
 				<Index>3</Index>
 			</Item>
 			<Item>
-				<Command>2:679bd72a-4cf8-4c2e-ae00-3f01f48050c4</Command>
+				<Command>0</Command>
 				<Type>Auto</Type>
 				<CommandGroup>FormCommandBarCreateBasedOn</CommandGroup>
 				<Index>8</Index>
@@ -6220,12 +6491,12 @@
 				</Visible>
 			</Item>
 			<Item>
-				<Command>3:c239fbd7-9454-4830-aa13-a9fe409cd195</Command>
+				<Command>0</Command>
 				<Type>Auto</Type>
 				<CommandGroup>FormCommandBarCreateBasedOn</CommandGroup>
 			</Item>
 			<Item>
-				<Command>2:3b9d376f-cd28-4f84-b8a8-686da09f0e46</Command>
+				<Command>0</Command>
 				<Type>Auto</Type>
 				<CommandGroup>FormCommandBarCreateBasedOn</CommandGroup>
 				<Index>9</Index>
@@ -6235,7 +6506,7 @@
 				</Visible>
 			</Item>
 			<Item>
-				<Command>2:57067371-06db-46dc-a7e9-c76d28e21071</Command>
+				<Command>0</Command>
 				<Type>Auto</Type>
 				<CommandGroup>FormCommandBarCreateBasedOn</CommandGroup>
 				<Index>10</Index>
@@ -6245,7 +6516,7 @@
 				</Visible>
 			</Item>
 			<Item>
-				<Command>2:53d146b8-d85f-4cfe-b5ee-af78f4e09445</Command>
+				<Command>0</Command>
 				<Type>Auto</Type>
 				<CommandGroup>FormCommandBarCreateBasedOn</CommandGroup>
 				<Index>7</Index>
@@ -6255,25 +6526,25 @@
 				</Visible>
 			</Item>
 			<Item>
-				<Command>2:efd06081-12d1-4734-9015-bff31c9f7966</Command>
+				<Command>0</Command>
 				<Type>Auto</Type>
 				<CommandGroup>FormCommandBarCreateBasedOn</CommandGroup>
 				<Index>5</Index>
 			</Item>
 			<Item>
-				<Command>0:ce356ab6-6b35-47b2-bbc0-6c5f2f40436d</Command>
+				<Command>0</Command>
 				<Type>Auto</Type>
 				<CommandGroup>FormCommandBarCreateBasedOn</CommandGroup>
 				<Index>1</Index>
 			</Item>
 			<Item>
-				<Command>0:54719576-4adf-4145-9998-6a202abb3297</Command>
+				<Command>0</Command>
 				<Type>Auto</Type>
 				<CommandGroup>FormCommandBarCreateBasedOn</CommandGroup>
 				<Index>2</Index>
 			</Item>
 			<Item>
-				<Command>0:2baf6d7a-12ed-4f22-ad96-92bb31b747ff</Command>
+				<Command>0</Command>
 				<Type>Auto</Type>
 				<DefaultVisible>false</DefaultVisible>
 				<Visible>
@@ -6281,12 +6552,12 @@
 				</Visible>
 			</Item>
 			<Item>
-				<Command>0:648a4b16-e9e5-4b6f-9c56-e3300cea440a</Command>
+				<Command>0</Command>
 				<Type>Auto</Type>
 				<CommandGroup>CommandGroup.Печать</CommandGroup>
 			</Item>
 			<Item>
-				<Command>2:568a53ba-d7d8-4cd6-96cb-f1f1beb185da</Command>
+				<Command>0</Command>
 				<Type>Auto</Type>
 				<CommandGroup>FormCommandBarCreateBasedOn</CommandGroup>
 				<Index>11</Index>
@@ -6327,7 +6598,7 @@
 				</Visible>
 			</Item>
 			<Item>
-				<Command>2:28f131c2-f971-4a8c-bfc4-23f8606a7536</Command>
+				<Command>0</Command>
 				<Type>Auto</Type>
 				<CommandGroup>FormCommandBarCreateBasedOn</CommandGroup>
 				<Index>12</Index>
@@ -6337,19 +6608,19 @@
 				</Visible>
 			</Item>
 			<Item>
-				<Command>0:1823d37a-3b32-4031-8996-56796c8dbe41</Command>
+				<Command>0</Command>
 				<Type>Auto</Type>
 				<CommandGroup>FormCommandBarCreateBasedOn</CommandGroup>
 				<Index>19</Index>
 			</Item>
 			<Item>
-				<Command>3:fb475df2-d71c-43ca-808b-fd458f938153</Command>
+				<Command>0</Command>
 				<Type>Auto</Type>
 				<CommandGroup>FormCommandBarCreateBasedOn</CommandGroup>
 				<Index>17</Index>
 			</Item>
 			<Item>
-				<Command>2:dab6706c-e0f7-4dc9-8fac-95b1dfcbf05c</Command>
+				<Command>0</Command>
 				<Type>Auto</Type>
 				<CommandGroup>FormCommandBarCreateBasedOn</CommandGroup>
 				<Index>16</Index>
@@ -6375,7 +6646,7 @@
 				<Index>18</Index>
 			</Item>
 			<Item>
-				<Command>2:36a6810c-733e-490c-bae7-1271266f0d95</Command>
+				<Command>0</Command>
 				<Type>Auto</Type>
 				<DefaultVisible>false</DefaultVisible>
 				<Visible>

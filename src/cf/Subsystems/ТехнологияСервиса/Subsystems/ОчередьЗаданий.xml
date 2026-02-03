@@ -23,6 +23,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Enum.СостоянияЗаданий</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.ПланированиеОбработкиЗаданий</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ШаблоныЗаданийОчереди</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.УдалитьОчередьЗаданий</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.УдалитьОбработкаОчередиЗаданийБТС</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ОбработчикиОчередиЗаданий</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.РегламентнаяОбработкаОчередиЗадачОбластейДанных</xr:Item>

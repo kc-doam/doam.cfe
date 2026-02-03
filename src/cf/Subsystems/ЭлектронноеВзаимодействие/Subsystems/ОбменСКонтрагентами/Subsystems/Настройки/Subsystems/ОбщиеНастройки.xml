@@ -11,7 +11,7 @@
 			</Synonym>
 			<Comment/>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
-			<IncludeInCommandInterface>false</IncludeInCommandInterface>
+			<IncludeInCommandInterface>true</IncludeInCommandInterface>
 			<UseOneCommand>false</UseOneCommand>
 			<Explanation/>
 			<Picture/>
@@ -28,6 +28,15 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Constant.СоздаватьКонтрагентовАвтоматическиБЭД</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Constant.СрокХраненияТранспортногоКонтейнераЭДО</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.КонтрольНеразделенныхОбъектовПриЗаписиБЭД</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ИспользоватьСервис1СШтамп</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">FunctionalOption.ИспользоватьСервис1СШтамп</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ВариантыИспользованияСервиса1СШтамп</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ИспользоватьПросмотрPDFДокументовЭДО</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ИспользоватьРазделениеДокументовПоОтветственнымЭДО</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">FunctionalOption.ИспользоватьРазделениеДокументовПоОтветственнымЭДО</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ПриниматьПриглашенияЭДОАвтоматически</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">FunctionalOption.ИспользоватьКонтрольОтраженияВУчетеЭДО</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ИспользоватьКонтрольОтраженияВУчетеЭДО</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

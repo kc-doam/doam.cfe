@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
 	<Width>55</Width>
 	<Height>20</Height>
 	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
@@ -73,6 +73,12 @@
 			<ChildItems>
 				<PictureField name="ОшибкиКартинка" id="66">
 					<DataPath>Ошибки.Картинка</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Картинка</v8:content>
+						</v8:item>
+					</Title>
 					<TitleLocation>None</TitleLocation>
 					<EditMode>EnterOnInput</EditMode>
 					<ContextMenu name="ОшибкиКартинкаКонтекстноеМеню" id="67"/>
@@ -81,6 +87,12 @@
 				<InputField name="ОшибкиПричина" id="48">
 					<DataPath>Ошибки.Причина</DataPath>
 					<ReadOnly>true</ReadOnly>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Причина</v8:content>
+						</v8:item>
+					</Title>
 					<EditMode>EnterOnInput</EditMode>
 					<AutoCellHeight>true</AutoCellHeight>
 					<HorizontalStretch>true</HorizontalStretch>
@@ -90,6 +102,12 @@
 				<InputField name="ОшибкиПодробнее" id="51">
 					<DataPath>Ошибки.Подробнее</DataPath>
 					<ReadOnly>true</ReadOnly>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Подробнее</v8:content>
+						</v8:item>
+					</Title>
 					<EditMode>EnterOnInput</EditMode>
 					<CellHyperlink>true</CellHyperlink>
 					<AutoCellHeight>true</AutoCellHeight>
@@ -110,6 +128,7 @@
 				</v8:item>
 			</Title>
 			<Group>AlwaysHorizontal</Group>
+			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаПодвалРасширеннаяПодсказка" id="63"/>
@@ -125,28 +144,17 @@
 					<Behavior>PopUp</Behavior>
 					<ExtendedTooltip name="ИнструкцияРасширеннаяПодсказка" id="55"/>
 					<ChildItems>
-						<LabelDecoration name="ТипичныеПроблемы" id="56">
+						<LabelDecoration name="ИнформацияДляПоддержки" id="69">
 							<Title formatted="true">
 								<v8:item>
 									<v8:lang>ru</v8:lang>
-									<v8:content>При возникновении затруднений ознакомьтесь со списком &lt;link ТипичныеПроблемы&gt;типичных проблем при работе с программой электронной подписи и их решений&lt;/&gt;.</v8:content>
+									<v8:content>При возникновении затруднений ознакомьтесь со списком &lt;link %1&gt;типичных проблем при работе с приложениями электронной подписи и их решений&lt;/&gt;.
+
+В иных случаях обратитесь в службу поддержки фирмы "1С", предоставив &lt;link %2&gt;техническую информацию о возникшей проблеме&lt;/&gt;.</v8:content>
 								</v8:item>
 							</Title>
-							<ContextMenu name="ТипичныеПроблемыКонтекстноеМеню" id="57"/>
-							<ExtendedTooltip name="ТипичныеПроблемыРасширеннаяПодсказка" id="58"/>
-							<Events>
-								<Event name="URLProcessing">ТипичныеПроблемыОбработкаНавигационнойСсылки</Event>
-							</Events>
-						</LabelDecoration>
-						<LabelDecoration name="ИнформацияДляПоддержки" id="59">
-							<Title formatted="true">
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>В иных случаях обратитесь в службу поддержки фирмы "1С", предоставив &lt;link Ссылка&gt;техническую информацию о возникшей проблеме&lt;/&gt;.</v8:content>
-								</v8:item>
-							</Title>
-							<ContextMenu name="ИнформацияДляПоддержкиКонтекстноеМеню" id="60"/>
-							<ExtendedTooltip name="ИнформацияДляПоддержкиРасширеннаяПодсказка" id="61"/>
+							<ContextMenu name="ИнформацияДляПоддержкиКонтекстноеМеню" id="70"/>
+							<ExtendedTooltip name="ИнформацияДляПоддержкиРасширеннаяПодсказка" id="71"/>
 							<Events>
 								<Event name="URLProcessing">ИнформацияДляПоддержкиОбработкаНавигационнойСсылки</Event>
 							</Events>
@@ -166,11 +174,23 @@
 						<Button name="ФормаУстановитьРасширение" id="15">
 							<Type>CommandBarButton</Type>
 							<CommandName>Form.Command.УстановитьРасширение</CommandName>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Установить расширение</v8:content>
+								</v8:item>
+							</Title>
 							<ExtendedTooltip name="ФормаУстановитьРасширениеРасширеннаяПодсказка" id="16"/>
 						</Button>
 						<Button name="ФормаПерейтиКНастройкеПрограмм" id="11">
 							<Type>CommandBarButton</Type>
 							<CommandName>Form.Command.ПерейтиКНастройкеПрограмм</CommandName>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Перейти к настройке приложений</v8:content>
+								</v8:item>
+							</Title>
 							<ExtendedTooltip name="ФормаПерейтиКНастройкеПрограммРасширеннаяПодсказка" id="12"/>
 						</Button>
 						<Button name="ФормаЗакрыть" id="13">
@@ -294,7 +314,7 @@
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Перейти к настройке программ</v8:content>
+					<v8:content>Перейти к настройке приложений</v8:content>
 				</v8:item>
 			</Title>
 			<Action>ПерейтиКНастройкеПрограмм</Action>

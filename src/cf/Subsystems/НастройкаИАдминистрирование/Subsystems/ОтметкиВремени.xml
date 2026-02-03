@@ -16,13 +16,33 @@
 			<Explanation/>
 			<Picture/>
 			<Content>
-				<xr:Item xsi:type="xr:MDObjectRef">DefinedType.СсылкиДляОтметокВремени</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ОтметкиВремени</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">a74e3834-ab78-4445-ba11-5edd4cf1185f</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ОтметкиВремениСобытия</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.ОтметкиВремениПередУдалениемСсылочныхОбъектов</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.ОтметкиВремениПриЗаписиСсылочныхОбъектов</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">fa640551-605e-4bcb-8ccc-aa5290eddc97</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.ОтметкиВремениСсылочныеОбъектыПередУдалением</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.ОтметкиВремениСсылочныеОбъектыПриЗаписи</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonAttribute.ОтметкиВремениИдентификаторНабораЗаписей</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.ОтметкиВремениИзмененияМаксимальногоРазмераФайла</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.ОтметкиВремениИзмененияПисем</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.ОтметкиВремениИзмененияСведенийПисем</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.ОтметкиВремениИзмененияСостоянийПриглашенияНаМероприятие</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.ОтметкиВремениИзмененияТрудозатрат</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.ОтметкиВремениИзмененияЦветаИФлага</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ИспользоватьОтметкиВремени</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">FunctionalOption.ИспользоватьОтметкиВремени</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DefinedType.ОтметкиВремениСсылочныеОбъекты</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DefinedType.ОтметкаВремени</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ОтметкиВремениИзмененияСведенийПисем</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ОтметкиВремениСсылочныхОбъектов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ОтметкиВремениОчередь3</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ОтметкиВремениОчередь2</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ОтметкиВремениОчередь1</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ОтметкиВремениРегистровНезависимых</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.ОтметкиВремениОбработка</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.ОтметкиВремениКонстантыПриЗаписи</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.ОтметкиВремениРегистрыПередЗаписью</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DefinedType.ОтметкиВремениРегистры</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DefinedType.ОтметкиВремениКонстанты</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ОтметкиВремениРегистровПодчиненных</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

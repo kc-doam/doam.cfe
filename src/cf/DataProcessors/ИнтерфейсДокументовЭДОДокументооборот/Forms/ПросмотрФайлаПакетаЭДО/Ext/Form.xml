@@ -1,192 +1,107 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
 	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
 	<AutoTitle>false</AutoTitle>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
 		<ChildItems>
-			<ButtonGroup name="ФормаГруппаКомандыДокумента" id="123">
+			<Button name="ФормаПринятьДокументЭДО" id="35">
+				<Type>CommandBarButton</Type>
+				<Visible>false</Visible>
+				<CommandName>Form.Command.ПринятьДокументЭДО</CommandName>
 				<Title>
 					<v8:item>
 						<v8:lang>ru</v8:lang>
-						<v8:content>Форма группа команды документа</v8:content>
+						<v8:content>Принять документ</v8:content>
 					</v8:item>
 				</Title>
-				<ExtendedTooltip name="ФормаГруппаКомандыДокументаРасширеннаяПодсказка" id="124"/>
-				<ChildItems>
-					<ButtonGroup name="ФормаГруппаКомандыВходящегоДокумента" id="125">
-						<Title>
-							<v8:item>
-								<v8:lang>ru</v8:lang>
-								<v8:content>Форма группа команды входящего документа</v8:content>
-							</v8:item>
-						</Title>
-						<ExtendedTooltip name="ФормаГруппаКомандыВходящегоДокументаРасширеннаяПодсказка" id="126"/>
-						<ChildItems>
-							<ButtonGroup name="ФормаГруппаКомандыВходящегоОсновные" id="127">
-								<Title>
-									<v8:item>
-										<v8:lang>ru</v8:lang>
-										<v8:content>Форма группа команды входящего основные</v8:content>
-									</v8:item>
-								</Title>
-								<ExtendedTooltip name="ФормаГруппаКомандыВходящегоОсновныеРасширеннаяПодсказка" id="128"/>
-								<ChildItems>
-									<Button name="ФормаПринятьДокументЭДО" id="35">
-										<Type>CommandBarButton</Type>
-										<Visible>false</Visible>
-										<CommandName>Form.Command.ПринятьДокументЭДО</CommandName>
-										<ExtendedTooltip name="ФормаПринятьДокументЭДОРасширеннаяПодсказка" id="36"/>
-									</Button>
-									<Button name="ФормаОтклонитьДокументЭДО" id="37">
-										<Type>CommandBarButton</Type>
-										<Visible>false</Visible>
-										<CommandName>Form.Command.ОтклонитьДокументЭДО</CommandName>
-										<ExtendedTooltip name="ФормаОтклонитьДокументЭДОРасширеннаяПодсказка" id="38"/>
-									</Button>
-								</ChildItems>
-							</ButtonGroup>
-							<ButtonGroup name="ФормаГруппаКомандыВходящегоДополнительные" id="129">
-								<Title>
-									<v8:item>
-										<v8:lang>ru</v8:lang>
-										<v8:content>Форма группа команды входящего дополнительные</v8:content>
-									</v8:item>
-								</Title>
-								<ExtendedTooltip name="ФормаГруппаКомандыВходящегоДополнительныеРасширеннаяПодсказка" id="130"/>
-							</ButtonGroup>
-						</ChildItems>
-					</ButtonGroup>
-					<ButtonGroup name="ФормаГруппаКомандыИсходящегоДокумента" id="137">
-						<Title>
-							<v8:item>
-								<v8:lang>ru</v8:lang>
-								<v8:content>Форма группа команды исходящего документа</v8:content>
-							</v8:item>
-						</Title>
-						<ExtendedTooltip name="ФормаГруппаКомандыИсходящегоДокументаРасширеннаяПодсказка" id="138"/>
-						<ChildItems>
-							<Button name="ФормаПодписатьДокументЭДО" id="33">
-								<Type>CommandBarButton</Type>
-								<CommandName>Form.Command.ПодписатьДокументЭДО</CommandName>
-								<ExtendedTooltip name="ФормаПодписатьДокументЭДОРасширеннаяПодсказка" id="34"/>
-							</Button>
-							<Button name="ФормаПодписатьИОтправитьПоЭДО" id="43">
-								<Type>CommandBarButton</Type>
-								<CommandName>Form.Command.ПодписатьИОтправитьПоЭДО</CommandName>
-								<ExtendedTooltip name="ФормаПодписатьИОтправитьПоЭДОРасширеннаяПодсказка" id="44"/>
-							</Button>
-							<Button name="ФормаОтправитьПоЭДО" id="45">
-								<Type>CommandBarButton</Type>
-								<Visible>false</Visible>
-								<CommandName>Form.Command.ОтправитьПоЭДО</CommandName>
-								<ExtendedTooltip name="ФормаОтправитьПоЭДОРасширеннаяПодсказка" id="46"/>
-							</Button>
-							<Button name="ФормаПоставитьВОчередьЭДОНаОтправку" id="39">
-								<Type>CommandBarButton</Type>
-								<Visible>false</Visible>
-								<CommandName>Form.Command.ПоставитьВОчередьЭДОНаОтправку</CommandName>
-								<ExtendedTooltip name="ФормаПоставитьВОчередьЭДОНаОтправкуРасширеннаяПодсказка" id="40"/>
-							</Button>
-							<Button name="ФормаЗакрытьОбменПоЭДОПринудительно" id="41">
-								<Type>CommandBarButton</Type>
-								<Visible>false</Visible>
-								<CommandName>Form.Command.ЗакрытьОбменПоЭДОПринудительно</CommandName>
-								<ExtendedTooltip name="ФормаЗакрытьОбменПоЭДОПринудительноРасширеннаяПодсказка" id="42"/>
-							</Button>
-						</ChildItems>
-					</ButtonGroup>
-				</ChildItems>
-			</ButtonGroup>
-			<ButtonGroup name="ФормаГруппаКомандыПакета" id="115">
+				<ExtendedTooltip name="ФормаПринятьДокументЭДОРасширеннаяПодсказка" id="36"/>
+			</Button>
+			<Button name="ФормаОтклонитьДокументЭДО" id="37">
+				<Type>CommandBarButton</Type>
+				<Visible>false</Visible>
+				<CommandName>Form.Command.ОтклонитьДокументЭДО</CommandName>
 				<Title>
 					<v8:item>
 						<v8:lang>ru</v8:lang>
-						<v8:content>Форма группа команды пакета</v8:content>
+						<v8:content>Отклонить документ</v8:content>
 					</v8:item>
 				</Title>
-				<ExtendedTooltip name="ФормаГруппаКомандыПакетаРасширеннаяПодсказка" id="116"/>
-				<ChildItems>
-					<ButtonGroup name="ФормаГруппаКомандыВходящегоПакета" id="117">
-						<Title>
-							<v8:item>
-								<v8:lang>ru</v8:lang>
-								<v8:content>Форма группа команды входящего пакета</v8:content>
-							</v8:item>
-						</Title>
-						<ExtendedTooltip name="ФормаГруппаКомандыВходящегоПакетаРасширеннаяПодсказка" id="118"/>
-						<ChildItems>
-							<Button name="ФормаПринятьВходящийПакет" id="107">
-								<Type>CommandBarButton</Type>
-								<Visible>false</Visible>
-								<CommandName>Form.Command.ПринятьВходящийПакет</CommandName>
-								<ExtendedTooltip name="ФормаПринятьВходящийПакетРасширеннаяПодсказка" id="108"/>
-							</Button>
-							<Button name="ФормаОтклонитьВходящийПакет" id="109">
-								<Type>CommandBarButton</Type>
-								<Visible>false</Visible>
-								<CommandName>Form.Command.ОтклонитьВходящийПакет</CommandName>
-								<ExtendedTooltip name="ФормаОтклонитьВходящийПакетРасширеннаяПодсказка" id="110"/>
-							</Button>
-						</ChildItems>
-					</ButtonGroup>
-					<ButtonGroup name="ФормаГруппаКомандыИсходящегоПакета" id="119">
-						<Title>
-							<v8:item>
-								<v8:lang>ru</v8:lang>
-								<v8:content>Форма группа команды исходящего пакета</v8:content>
-							</v8:item>
-						</Title>
-						<ExtendedTooltip name="ФормаГруппаКомандыИсходящегоПакетаРасширеннаяПодсказка" id="120"/>
-						<ChildItems>
-							<Button name="ФормаПодписатьПакет" id="101">
-								<Type>CommandBarButton</Type>
-								<Visible>false</Visible>
-								<CommandName>Form.Command.ПодписатьПакет</CommandName>
-								<ExtendedTooltip name="ФормаПодписатьПакетРасширеннаяПодсказка" id="102"/>
-							</Button>
-							<Button name="ФормаПодписатьИОтправитьПакет" id="103">
-								<Type>CommandBarButton</Type>
-								<Visible>false</Visible>
-								<CommandName>Form.Command.ПодписатьИОтправитьПакет</CommandName>
-								<ExtendedTooltip name="ФормаПодписатьИОтправитьПакетРасширеннаяПодсказка" id="104"/>
-							</Button>
-							<Button name="ФормаОтправитьПакет" id="105">
-								<Type>CommandBarButton</Type>
-								<Visible>false</Visible>
-								<CommandName>Form.Command.ОтправитьПакет</CommandName>
-								<ExtendedTooltip name="ФормаОтправитьПакетРасширеннаяПодсказка" id="106"/>
-							</Button>
-						</ChildItems>
-					</ButtonGroup>
-					<ButtonGroup name="ФормаГруппаУправлениеСоставомПакета" id="121">
-						<Title>
-							<v8:item>
-								<v8:lang>ru</v8:lang>
-								<v8:content>Форма группа управление составом пакета</v8:content>
-							</v8:item>
-						</Title>
-						<ExtendedTooltip name="ФормаГруппаУправлениеСоставомПакетаРасширеннаяПодсказка" id="122"/>
-						<ChildItems>
-							<Button name="ФормаИзменитьСоставПакетаЭДО" id="47">
-								<Type>CommandBarButton</Type>
-								<Visible>false</Visible>
-								<CommandName>Form.Command.ИзменитьСоставПакетаЭДО</CommandName>
-								<ExtendedTooltip name="ФормаИзменитьСоставПакетаЭДОРасширеннаяПодсказка" id="48"/>
-							</Button>
-							<Button name="ФормаСоздатьПакетЭДО" id="111">
-								<Type>CommandBarButton</Type>
-								<CommandName>Form.Command.СоздатьПакетЭДО</CommandName>
-								<ExtendedTooltip name="ФормаСоздатьПакетЭДОРасширеннаяПодсказка" id="112"/>
-							</Button>
-							<Button name="ФормаДобавитьКПакетуЭДО" id="113">
-								<Type>CommandBarButton</Type>
-								<CommandName>Form.Command.ДобавитьКПакетуЭДО</CommandName>
-								<ExtendedTooltip name="ФормаДобавитьКПакетуЭДОРасширеннаяПодсказка" id="114"/>
-							</Button>
-						</ChildItems>
-					</ButtonGroup>
-				</ChildItems>
-			</ButtonGroup>
+				<ExtendedTooltip name="ФормаОтклонитьДокументЭДОРасширеннаяПодсказка" id="38"/>
+			</Button>
+			<Button name="ФормаПодписатьДокументЭДО" id="33">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ПодписатьДокументЭДО</CommandName>
+				<ExtendedTooltip name="ФормаПодписатьДокументЭДОРасширеннаяПодсказка" id="34"/>
+			</Button>
+			<Button name="ФормаПодписатьИОтправитьПоЭДО" id="43">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ПодписатьИОтправитьПоЭДО</CommandName>
+				<ExtendedTooltip name="ФормаПодписатьИОтправитьПоЭДОРасширеннаяПодсказка" id="44"/>
+			</Button>
+			<Button name="ФормаОтправитьПоЭДО" id="45">
+				<Type>CommandBarButton</Type>
+				<Visible>false</Visible>
+				<CommandName>Form.Command.ОтправитьПоЭДО</CommandName>
+				<ExtendedTooltip name="ФормаОтправитьПоЭДОРасширеннаяПодсказка" id="46"/>
+			</Button>
+			<Button name="ФормаПоставитьВОчередьЭДОНаОтправку" id="39">
+				<Type>CommandBarButton</Type>
+				<Visible>false</Visible>
+				<CommandName>Form.Command.ПоставитьВОчередьЭДОНаОтправку</CommandName>
+				<ExtendedTooltip name="ФормаПоставитьВОчередьЭДОНаОтправкуРасширеннаяПодсказка" id="40"/>
+			</Button>
+			<Button name="ФормаЗакрытьОбменПоЭДОПринудительно" id="41">
+				<Type>CommandBarButton</Type>
+				<Visible>false</Visible>
+				<CommandName>Form.Command.ЗакрытьОбменПоЭДОПринудительно</CommandName>
+				<ExtendedTooltip name="ФормаЗакрытьОбменПоЭДОПринудительноРасширеннаяПодсказка" id="42"/>
+			</Button>
+			<Button name="ФормаПринятьВходящийПакет" id="107">
+				<Type>CommandBarButton</Type>
+				<Visible>false</Visible>
+				<CommandName>Form.Command.ПринятьВходящийПакет</CommandName>
+				<ExtendedTooltip name="ФормаПринятьВходящийПакетРасширеннаяПодсказка" id="108"/>
+			</Button>
+			<Button name="ФормаОтклонитьВходящийПакет" id="109">
+				<Type>CommandBarButton</Type>
+				<Visible>false</Visible>
+				<CommandName>Form.Command.ОтклонитьВходящийПакет</CommandName>
+				<ExtendedTooltip name="ФормаОтклонитьВходящийПакетРасширеннаяПодсказка" id="110"/>
+			</Button>
+			<Button name="ФормаПодписатьПакет" id="101">
+				<Type>CommandBarButton</Type>
+				<Visible>false</Visible>
+				<CommandName>Form.Command.ПодписатьПакет</CommandName>
+				<ExtendedTooltip name="ФормаПодписатьПакетРасширеннаяПодсказка" id="102"/>
+			</Button>
+			<Button name="ФормаПодписатьИОтправитьПакет" id="103">
+				<Type>CommandBarButton</Type>
+				<Visible>false</Visible>
+				<CommandName>Form.Command.ПодписатьИОтправитьПакет</CommandName>
+				<ExtendedTooltip name="ФормаПодписатьИОтправитьПакетРасширеннаяПодсказка" id="104"/>
+			</Button>
+			<Button name="ФормаОтправитьПакет" id="105">
+				<Type>CommandBarButton</Type>
+				<Visible>false</Visible>
+				<CommandName>Form.Command.ОтправитьПакет</CommandName>
+				<ExtendedTooltip name="ФормаОтправитьПакетРасширеннаяПодсказка" id="106"/>
+			</Button>
+			<Button name="ФормаИзменитьСоставПакетаЭДО" id="47">
+				<Type>CommandBarButton</Type>
+				<Visible>false</Visible>
+				<CommandName>Form.Command.ИзменитьСоставПакетаЭДО</CommandName>
+				<ExtendedTooltip name="ФормаИзменитьСоставПакетаЭДОРасширеннаяПодсказка" id="48"/>
+			</Button>
+			<Button name="ФормаСоздатьПакетЭДО" id="111">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.СоздатьПакетЭДО</CommandName>
+				<ExtendedTooltip name="ФормаСоздатьПакетЭДОРасширеннаяПодсказка" id="112"/>
+			</Button>
+			<Button name="ФормаДобавитьКПакетуЭДО" id="113">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ДобавитьКПакетуЭДО</CommandName>
+				<ExtendedTooltip name="ФормаДобавитьКПакетуЭДОРасширеннаяПодсказка" id="114"/>
+			</Button>
 			<ButtonGroup name="ФормаГруппаКомандыДокументаДополнительные" id="139">
 				<Title>
 					<v8:item>
@@ -274,6 +189,7 @@
 				</v8:item>
 			</Title>
 			<Group>AlwaysHorizontal</Group>
+			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаОсновнаяОбластьРасширеннаяПодсказка" id="66"/>
@@ -286,6 +202,7 @@
 						</v8:item>
 					</Title>
 					<Width>30</Width>
+					<Behavior>Usual</Behavior>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="ГруппаДокументыПакетаЭДОРасширеннаяПодсказка" id="68"/>
@@ -331,16 +248,16 @@
 								<Event name="OnActivateRow">ДокументыПакетаЭДОПриАктивизацииСтроки</Event>
 							</Events>
 							<ChildItems>
-								<InputField name="ДокументыПакетаЭДОДокументДО" id="82">
-									<DataPath>ДокументыПакетаЭДО.ДокументДО</DataPath>
+								<InputField name="ДокументыПакетаЭДОПредставлениеДокумента" id="141">
+									<DataPath>ДокументыПакетаЭДО.ПредставлениеДокумента</DataPath>
 									<Title>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
-											<v8:content>Документы</v8:content>
+											<v8:content>Документ</v8:content>
 										</v8:item>
 									</Title>
-									<ContextMenu name="ДокументыПакетаЭДОДокументДОКонтекстноеМеню" id="83"/>
-									<ExtendedTooltip name="ДокументыПакетаЭДОДокументДОРасширеннаяПодсказка" id="84"/>
+									<ContextMenu name="ДокументыПакетаЭДОПредставлениеДокументаКонтекстноеМеню" id="142"/>
+									<ExtendedTooltip name="ДокументыПакетаЭДОПредставлениеДокументаРасширеннаяПодсказка" id="143"/>
 								</InputField>
 							</ChildItems>
 						</Table>
@@ -353,6 +270,7 @@
 							<v8:content>Группа представления документа</v8:content>
 						</v8:item>
 					</Title>
+					<Behavior>Usual</Behavior>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="ГруппаПредставленияДокументаРасширеннаяПодсказка" id="95"/>
@@ -388,6 +306,21 @@
 									</ToolTip>
 									<ExtendedTooltip name="СтраницаТабличныйДокументРасширеннаяПодсказка" id="4"/>
 									<ChildItems>
+										<LabelDecoration name="НадписьДокументДОНеСоздан" id="147">
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<Title formatted="true">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>По выбранному документу ЭДО не создан документ 1С:Документооборот. Перед выполнением действий с пакетом необходимо &lt;link СоздатьДокументДО&gt;создать&lt;/&gt;&lt;link СоздатьДокументДО&gt; &lt;/&gt;&lt;link СоздатьДокументДО&gt;документ&lt;/&gt;.</v8:content>
+												</v8:item>
+											</Title>
+											<BackColor>style:ОшибкаПолнотекстовыйПоискФон</BackColor>
+											<ContextMenu name="НадписьДокументДОНеСозданКонтекстноеМеню" id="148"/>
+											<ExtendedTooltip name="НадписьДокументДОНеСозданРасширеннаяПодсказка" id="149"/>
+											<Events>
+												<Event name="URLProcessing">НадписьДокументДОНеСозданОбработкаНавигационнойСсылки</Event>
+											</Events>
+										</LabelDecoration>
 										<SpreadSheetDocumentField name="ТабличныйДокументПредставления" id="9">
 											<DataPath>ТабличныйДокументПредставления</DataPath>
 											<TitleLocation>None</TitleLocation>
@@ -421,6 +354,7 @@
 												</v8:item>
 											</Title>
 											<HorizontalStretch>true</HorizontalStretch>
+											<Behavior>Usual</Behavior>
 											<Representation>None</Representation>
 											<ShowTitle>false</ShowTitle>
 											<BackColor>style:ЦветФонаПредупреждения</BackColor>
@@ -450,6 +384,7 @@
 													<v8:content>Группа ошибка формирования с описанием</v8:content>
 												</v8:item>
 											</Title>
+											<Behavior>Usual</Behavior>
 											<Representation>None</Representation>
 											<ShowTitle>false</ShowTitle>
 											<ExtendedTooltip name="ГруппаОшибкаФормированияСОписаниемРасширеннаяПодсказка" id="100"/>
@@ -494,6 +429,7 @@
 												</v8:item>
 											</Title>
 											<VerticalAlign>Center</VerticalAlign>
+											<Behavior>Usual</Behavior>
 											<Representation>None</Representation>
 											<ShowTitle>false</ShowTitle>
 											<ExtendedTooltip name="СтраницыПредставленияДокументаРасширеннаяПодсказка17" id="13"/>
@@ -540,6 +476,21 @@
 									</Title>
 									<ExtendedTooltip name="СтраницаФайлРасширеннаяПодсказка" id="50"/>
 									<ChildItems>
+										<LabelDecoration name="НадписьДокументДОНеСозданФайл" id="144">
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<Title formatted="true">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>По выбранному документу ЭДО не создан документ 1С:Документооборот. Перед выполением действий с пакетом необходимо &lt;link СоздатьДокументДО&gt;создать документ&lt;/&gt;.</v8:content>
+												</v8:item>
+											</Title>
+											<BackColor>style:ОшибкаПолнотекстовыйПоискФон</BackColor>
+											<ContextMenu name="НадписьДокументДОНеСозданФайлКонтекстноеМеню" id="145"/>
+											<ExtendedTooltip name="НадписьДокументДОНеСозданФайлРасширеннаяПодсказка" id="146"/>
+											<Events>
+												<Event name="URLProcessing">НадписьДокументДОНеСозданОбработкаНавигационнойСсылки</Event>
+											</Events>
+										</LabelDecoration>
 										<UsualGroup name="ГруппаНадписьФайла" id="57">
 											<Title>
 												<v8:item>
@@ -548,6 +499,7 @@
 												</v8:item>
 											</Title>
 											<Group>AlwaysHorizontal</Group>
+											<Behavior>Usual</Behavior>
 											<Representation>None</Representation>
 											<ShowTitle>false</ShowTitle>
 											<ExtendedTooltip name="ГруппаНадписьФайлаРасширеннаяПодсказка" id="58"/>
@@ -576,15 +528,15 @@
 													<ContextMenu name="КартинкаФайлаКонтекстноеМеню" id="55"/>
 													<ExtendedTooltip name="КартинкаФайлаРасширеннаяПодсказка" id="56"/>
 												</PictureField>
-												<LabelField name="ИмяФайлаДО" id="62">
-													<DataPath>ИмяФайлаДО</DataPath>
+												<LabelField name="ИмяФайла" id="62">
+													<DataPath>ИмяФайла</DataPath>
 													<TitleLocation>None</TitleLocation>
 													<AutoMaxWidth>false</AutoMaxWidth>
 													<Hiperlink>true</Hiperlink>
-													<ContextMenu name="ИмяФайлаДОКонтекстноеМеню" id="63"/>
-													<ExtendedTooltip name="ИмяФайлаДОРасширеннаяПодсказка" id="64"/>
+													<ContextMenu name="ИмяФайлаКонтекстноеМеню" id="63"/>
+													<ExtendedTooltip name="ИмяФайлаРасширеннаяПодсказка" id="64"/>
 													<Events>
-														<Event name="Click">ИмяФайлаДОНажатие</Event>
+														<Event name="Click">ИмяФайлаНажатие</Event>
 													</Events>
 												</LabelField>
 											</ChildItems>
@@ -607,7 +559,7 @@
 				</v8:item>
 			</Title>
 			<Type>
-				<v8:Type>cfg:CatalogRef.ВнутренниеДокументы</v8:Type>
+				<v8:TypeSet>cfg:DefinedType.ДокументДОДляЭДО</v8:TypeSet>
 			</Type>
 		</Attribute>
 		<Attribute name="ФайлДО" id="3">
@@ -870,6 +822,17 @@
 						<v8:Type>xs:boolean</v8:Type>
 					</Type>
 				</Column>
+				<Column name="Доверенность" id="39">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Доверенность</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:TypeSet>cfg:DefinedType.МашиночитаемаяДоверенность</v8:TypeSet>
+					</Type>
+				</Column>
 			</Columns>
 		</Attribute>
 		<Attribute name="ИдентификаторПакетаЭДО" id="20">
@@ -910,11 +873,11 @@
 				</v8:NumberQualifiers>
 			</Type>
 		</Attribute>
-		<Attribute name="ИмяФайлаДО" id="23">
+		<Attribute name="ИмяФайла" id="23">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Имя файла ДО</v8:content>
+					<v8:content>Имя файла</v8:content>
 				</v8:item>
 			</Title>
 			<Type>
@@ -944,7 +907,7 @@
 						</v8:item>
 					</Title>
 					<Type>
-						<v8:Type>cfg:CatalogRef.ВнутренниеДокументы</v8:Type>
+						<v8:TypeSet>cfg:DefinedType.ДокументДОДляЭДО</v8:TypeSet>
 					</Type>
 				</Column>
 				<Column name="ФайлДО" id="26">
@@ -981,6 +944,32 @@
 						<v8:Type>cfg:DocumentRef.ЭлектронныйДокументИсходящийЭДО</v8:Type>
 					</Type>
 				</Column>
+				<Column name="ДокументДОНеСоздан" id="33">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Документ ДОНе создан</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ПредставлениеДокумента" id="35">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Представление документа</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
 			</Columns>
 		</Attribute>
 		<Attribute name="ПоддерживаетсяПакетнаяОбработкаЭДО" id="31">
@@ -992,6 +981,92 @@
 			</Title>
 			<Type>
 				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="КлючТекущейСтрокиПакета" id="34">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ключ текущей строки пакета</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ФайлЭДО" id="36">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Файл ЭДО</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.СообщениеЭДОПрисоединенныеФайлы</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ЭтоВизуализацияФайлаЭДО" id="37">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Это визуализация файла ЭДО</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ПакетЭДОНеОтражен" id="38">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пакет ЭДОНе отражен</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="НаправлениеЭДО" id="40">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Направление ЭДО</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:EnumRef.НаправленияЭДО</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ДокументЭДО" id="41">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Документ ЭДО</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DocumentRef.ЭлектронныйДокументВходящийЭДО</v8:Type>
+				<v8:Type>cfg:DocumentRef.ЭлектронныйДокументИсходящийЭДО</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="УчетнаяЗаписьЭДО" id="42">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Учетная запись ЭДО</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>70</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
 			</Type>
 		</Attribute>
 	</Attributes>
@@ -1153,7 +1228,7 @@
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Подписать и отправить документ оператору ЭДО</v8:content>
+					<v8:content>Подписать и отправить документ контрагенту по ЭДО</v8:content>
 				</v8:item>
 			</ToolTip>
 			<Picture>
@@ -1173,7 +1248,7 @@
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Отправить документ оператору ЭДО</v8:content>
+					<v8:content>Отправить документ контрагенту по ЭДО</v8:content>
 				</v8:item>
 			</ToolTip>
 			<Picture>
@@ -1233,7 +1308,7 @@
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Подписать и отправить пакет документов оператору ЭДО</v8:content>
+					<v8:content>Подписать и отправить пакет документов контрагенту по ЭДО</v8:content>
 				</v8:item>
 			</ToolTip>
 			<Picture>
@@ -1253,7 +1328,7 @@
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Отправить пакет документов оператору ЭДО</v8:content>
+					<v8:content>Отправить пакет документов контрагенту по ЭДО</v8:content>
 				</v8:item>
 			</ToolTip>
 			<Picture>
@@ -1333,7 +1408,7 @@
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Добавить документ к существующему пакету ЭДО</v8:content>
+					<v8:content>Добавить документ к существующему исходящему пакету ЭДО</v8:content>
 				</v8:item>
 			</ToolTip>
 			<Picture>

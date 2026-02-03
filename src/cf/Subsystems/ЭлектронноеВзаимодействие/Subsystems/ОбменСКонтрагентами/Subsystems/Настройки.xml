@@ -26,13 +26,18 @@
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.НастройкиЭДОСлужебный</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.НастройкиЭДОСлужебныйКлиент</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.НастройкиЭДОСобытия</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ТипПодписиЭД</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.НастройкиЭДОВызовСервера</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.НастройкиЭДОКлиентПовтИсп</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ТипПодписиМЧД</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ЗапретитьФормированиеФормализованныхЭДИзФайлов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">FunctionalOption.ЗапретитьФормированиеФормализованныхЭДИзФайлов</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects>
-			<Subsystem>НастройкиОтправки</Subsystem>
-			<Subsystem>НастройкиОтраженияВУчете</Subsystem>
-			<Subsystem>ОбщиеНастройки</Subsystem>
 			<Subsystem>НастройкиВнутреннегоЭДО</Subsystem>
+			<Subsystem>НастройкиОтправки</Subsystem>
+			<Subsystem>ОбщиеНастройки</Subsystem>
 		</ChildObjects>
 	</Subsystem>
 </MetaDataObject>

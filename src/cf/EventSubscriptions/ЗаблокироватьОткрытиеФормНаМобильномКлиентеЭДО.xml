@@ -20,14 +20,16 @@
 				<v8:Type>cfg:InformationRegisterManager.СовместимостьОператоровЭДО</v8:Type>
 				<v8:Type>cfg:InformationRegisterManager.ПравилаПреобразованияФорматов</v8:Type>
 				<v8:Type>cfg:InformationRegisterManager.ФорматыЭлектронныхДокументов</v8:Type>
+				<v8:Type>cfg:DataProcessorManager.ПанельАдминистрированияБИП</v8:Type>
 				<v8:Type>cfg:CatalogManager.МаршрутыПодписания</v8:Type>
 				<v8:Type>cfg:CatalogManager.УдалитьСоглашенияОбИспользованииЭД</v8:Type>
+				<v8:Type>cfg:DataProcessorManager.ПанельАдминистрированияБТС</v8:Type>
+				<v8:Type>cfg:DataProcessorManager.ПанельАдминистрированияБСПВМоделиСервиса</v8:Type>
 				<v8:Type>cfg:InformationRegisterManager.УдалитьИдентификаторыДокументовОснованийВладельцевЭД</v8:Type>
 				<v8:Type>cfg:InformationRegisterManager.УдалитьУчастникиОбменовЭДЧерезОператоровЭДО</v8:Type>
 				<v8:Type>cfg:InformationRegisterManager.УчетныеЗаписиЭДО</v8:Type>
 				<v8:Type>cfg:InformationRegisterManager.АбонентыЭДО</v8:Type>
 				<v8:Type>cfg:InformationRegisterManager.СертификатыУчетныхЗаписейЭДО</v8:Type>
-				<v8:Type>cfg:InformationRegisterManager.ПриглашенияКОбменуЭлектроннымиДокументами</v8:Type>
 				<v8:Type>cfg:InformationRegisterManager.КонтрольСопоставленияНоменклатурыЭДО</v8:Type>
 				<v8:Type>cfg:CatalogManager.НастройкиЭДО</v8:Type>
 				<v8:Type>cfg:DataProcessorManager.ОбменСКонтрагентами</v8:Type>

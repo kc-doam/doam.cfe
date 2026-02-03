@@ -1,4 +1,4 @@
-﻿<package xmlns="http://v8.1c.ru/8.1/xdto" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" targetNamespace="DP_PRANNUL_01_02" elementFormQualified="true" attributeFormQualified="true">
+﻿<package xmlns="http://v8.1c.ru/8.1/xdto" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" targetNamespace="DP_PRANNUL_01_02" elementFormQualified="true" attributeFormQualified="false">
 	<property xmlns:d2p1="DP_PRANNUL_01_02" name="Файл" type="d2p1:Файл"/>
 	<valueType name="ДатаВремяUTC" base="xs:dateTime">
 		<pattern>.+T.+Z</pattern>
@@ -31,7 +31,7 @@
 		<property name="Имя" form="Attribute">
 			<typeDef xsi:type="ValueType" base="xs:string" minLength="1" maxLength="60"/>
 		</property>
-		<property name="Отчество" form="Attribute">
+		<property name="Отчество" lowerBound="0" form="Attribute">
 			<typeDef xsi:type="ValueType" base="xs:string" minLength="1" maxLength="60"/>
 		</property>
 	</objectType>

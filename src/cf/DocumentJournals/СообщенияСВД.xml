@@ -213,27 +213,6 @@
 			</Column>
 			<Form>ФормаСписка</Form>
 			<Form>ФормаСпискаПоДокументу</Form>
-			<Command uuid="a037b8d4-daba-45fe-9365-e252a606e083">
-				<Properties>
-					<Name>СообщенияСВД</Name>
-					<Synonym>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Сообщения</v8:content>
-						</v8:item>
-					</Synonym>
-					<Comment/>
-					<Group>NavigationPanelOrdinary</Group>
-					<CommandParameterType/>
-					<ParameterUseMode>Single</ParameterUseMode>
-					<ModifiesData>false</ModifiesData>
-					<Representation>Auto</Representation>
-					<ToolTip/>
-					<Picture/>
-					<Shortcut/>
-					<OnMainServerUnavalableBehavior>Auto</OnMainServerUnavalableBehavior>
-				</Properties>
-			</Command>
 			<Command uuid="fc9b307b-3a71-4e5b-a938-90b686f1fc9f">
 				<Properties>
 					<Name>ОткрытьСписокПоДокументу</Name>
@@ -249,6 +228,27 @@
 						<v8:Type>cfg:CatalogRef.ВходящиеДокументы</v8:Type>
 						<v8:Type>cfg:CatalogRef.ИсходящиеДокументы</v8:Type>
 					</CommandParameterType>
+					<ParameterUseMode>Single</ParameterUseMode>
+					<ModifiesData>false</ModifiesData>
+					<Representation>Auto</Representation>
+					<ToolTip/>
+					<Picture/>
+					<Shortcut/>
+					<OnMainServerUnavalableBehavior>Auto</OnMainServerUnavalableBehavior>
+				</Properties>
+			</Command>
+			<Command uuid="a037b8d4-daba-45fe-9365-e252a606e083">
+				<Properties>
+					<Name>СообщенияСВД</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сообщения</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Group>NavigationPanelOrdinary</Group>
+					<CommandParameterType/>
 					<ParameterUseMode>Single</ParameterUseMode>
 					<ModifiesData>false</ModifiesData>
 					<Representation>Auto</Representation>

@@ -1,7 +1,6 @@
 ﻿<package xmlns="http://v8.1c.ru/8.1/xdto" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" targetNamespace="http://www.1c.ru/1cFresh/Application/Permissions/Management/1.0.0.1">
 	<import namespace="http://www.1c.ru/1cFresh/Application/Permissions/1.0.0.1"/>
 	<import namespace="http://v8.1c.ru/8.1/data/core"/>
-	<import namespace="http://www.1c.ru/SaaS/ServiceCommon"/>
 	<valueType name="ExternalModuleTypes" base="xs:string">
 		<enumeration xsi:type="xs:string">ApplicationExtension</enumeration>
 	</valueType>

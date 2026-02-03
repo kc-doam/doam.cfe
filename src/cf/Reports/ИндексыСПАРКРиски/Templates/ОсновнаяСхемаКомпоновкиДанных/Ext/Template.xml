@@ -93,26 +93,6 @@
 			</role>
 		</field>
 		<field xsi:type="DataSetFieldField">
-			<dataPath>ИННИндексы</dataPath>
-			<field>ИННИндексы</field>
-			<title xsi:type="v8:LocalStringType">
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>ИНН (из кэша)</v8:content>
-				</v8:item>
-			</title>
-		</field>
-		<field xsi:type="DataSetFieldField">
-			<dataPath>ДатаОбновления</dataPath>
-			<field>ДатаОбновления</field>
-			<title xsi:type="v8:LocalStringType">
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Дата обновления</v8:content>
-				</v8:item>
-			</title>
-		</field>
-		<field xsi:type="DataSetFieldField">
 			<dataPath>ЭтоКорректныйИНН</dataPath>
 			<field>ЭтоКорректныйИНН</field>
 			<title xsi:type="v8:LocalStringType">
@@ -169,52 +149,58 @@
 		<field xsi:type="DataSetFieldField">
 			<dataPath>Активен</dataPath>
 			<field>Активен</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Активен</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ВидКонтрагента</dataPath>
+			<field>ВидКонтрагента</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ДатаСтатуса</dataPath>
+			<field>ДатаСтатуса</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата статуса</v8:content>
+				</v8:item>
+			</title>
 		</field>
 		<dataSource>ИсточникДанныхИндексыСПАРКРиски</dataSource>
-		<query>//# Начало запроса с выборкой разрешенных контрагентов.
-ВЫБРАТЬ РАЗРЕШЕННЫЕ РАЗЛИЧНЫЕ
-	Рег.Контрагент    КАК Контрагент,
-	Рег.ИНН           КАК ИНН,
+		<query>ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	Рег.Контрагент КАК Контрагент,
+	Рег.ИНН КАК ИНН,
 	Рег.ИННКорректный КАК ИННКорректный,
+	Рег.ВидКонтрагента КАК ВидКонтрагента,
 	Рег.СвояОрганизация КАК СвояОрганизация
-ПОМЕСТИТЬ ВТ_Контрагенты // ПОМЕЩЕНИЕ ВО ВРЕМЕННУЮ ТАБЛИЦУ
+ПОМЕСТИТЬ ВТ_Контрагенты
 ИЗ
 	РегистрСведений.СвойстваКонтрагентовСПАРКРиски КАК Рег
-	//# ВНУТРЕННЕЕ СОЕДИНЕНИЕ С КОНТРАГЕНТАМИ // НЕ ИЗМЕНЯТЬ ТЕКСТ ЭТОЙ СТРОКИ
 ГДЕ
-	Рег.ИННКорректный
-	И Рег.Контрагент.ПометкаУдаления = ЛОЖЬ // АПК:1377 Составной тип значения - 2..3 значения
-	И ((&amp;ПоВсемКонтрагентам = ИСТИНА) ИЛИ (Рег.Контрагент В (&amp;Контрагенты)) ИЛИ (Рег.Контрагент В ИЕРАРХИИ (&amp;Контрагенты))) // НЕ ИЗМЕНЯТЬ ТЕКСТ ЭТОЙ СТРОКИ
-//# Конец запроса с выборкой разрешенных контрагентов.
+	Рег.Контрагент В ИЕРАРХИИ(&amp;Контрагенты)
+	И Рег.ВидКонтрагента = &amp;ВидКонтрагента
+	И Рег.ИННКорректный
 ;
 
+////////////////////////////////////////////////////////////////////////////////
 ВЫБРАТЬ
-	ВТ_Контрагенты.Контрагент    КАК Контрагент,
-	ВТ_Контрагенты.ИНН           КАК ИНН,
+	ВТ_Контрагенты.Контрагент КАК Контрагент,
+	ВТ_Контрагенты.ИНН КАК ИНН,
 	ВТ_Контрагенты.ИННКорректный КАК ЭтоКорректныйИНН,
 	ВТ_Контрагенты.СвояОрганизация КАК СвояОрганизация,
-	ЕСТЬNULL(РегИндексы.ИНН, "") КАК ИННИндексы,
-	ЕСТЬNULL(РегИндексы.ДатаОбновления, &amp;ПустаяДата) КАК ДатаОбновления,
-
+	ВТ_Контрагенты.ВидКонтрагента КАК ВидКонтрагента,
+	ЕСТЬNULL(РегИндексы.ИндексДолжнойОсмотрительности, -1) КАК ИндексДолжнойОсмотрительностиЧисло,
+	ЕСТЬNULL(РегИндексы.ИндексПлатежнойДисциплины, -1) КАК ИндексПлатежнойДисциплиныЧисло,
+	ЕСТЬNULL(РегИндексы.ИндексФинансовогоРиска, -1) КАК ИндексФинансовогоРискаЧисло,
+	ЕСТЬNULL(РегИндексы.СводныйИндикатор, -1) КАК СводныйИндикаторЧисло,
+	ЕСТЬNULL(РегИндексы.Активен, ЛОЖЬ) КАК Активен,
 	ВЫБОР
-		КОГДА РегИндексы.ИндексДолжнойОсмотрительности ЕСТЬ NULL Тогда -1
-		ИНАЧЕ РегИндексы.ИндексДолжнойОсмотрительности
-	КОНЕЦ                        КАК ИндексДолжнойОсмотрительностиЧисло,
-	ВЫБОР
-		КОГДА РегИндексы.ИндексПлатежнойДисциплины ЕСТЬ NULL Тогда -1
-		ИНАЧЕ РегИндексы.ИндексПлатежнойДисциплины
-	КОНЕЦ                        КАК ИндексПлатежнойДисциплиныЧисло,
-	ВЫБОР
-		КОГДА РегИндексы.ИндексФинансовогоРиска ЕСТЬ NULL Тогда -1
-		ИНАЧЕ РегИндексы.ИндексФинансовогоРиска
-	КОНЕЦ                        КАК ИндексФинансовогоРискаЧисло,
-	ВЫБОР
-		КОГДА РегИндексы.СводныйИндикатор ЕСТЬ NULL Тогда -1
-		ИНАЧЕ РегИндексы.СводныйИндикатор
-	КОНЕЦ                        КАК СводныйИндикаторЧисло,
-
-	// Определение интервалов индексов СПАРК Риски.
-	ВЫБОР
+		КОГДА РегИндексы.ИндексДолжнойОсмотрительности ЕСТЬ NULL
+			ТОГДА ""
 		КОГДА РегИндексы.ИндексДолжнойОсмотрительности &gt;= 0
 				И РегИндексы.ИндексДолжнойОсмотрительности &lt;= 40
 			ТОГДА ЗНАЧЕНИЕ(Перечисление.ГрадацияИндексовСПАРКРиски.Низкий)
@@ -225,8 +211,10 @@
 				И РегИндексы.ИндексДолжнойОсмотрительности &lt;= 100
 			ТОГДА ЗНАЧЕНИЕ(Перечисление.ГрадацияИндексовСПАРКРиски.Высокий)
 		ИНАЧЕ ""
-	КОНЕЦ                        КАК ИндексДолжнойОсмотрительностиГрадация,
+	КОНЕЦ КАК ИндексДолжнойОсмотрительностиГрадация,
 	ВЫБОР
+		КОГДА РегИндексы.ИндексПлатежнойДисциплины ЕСТЬ NULL
+			ТОГДА ""
 		КОГДА РегИндексы.ИндексПлатежнойДисциплины &gt;= 0
 				И РегИндексы.ИндексПлатежнойДисциплины &lt;= 49
 			ТОГДА ЗНАЧЕНИЕ(Перечисление.ГрадацияИндексовСПАРКРиски.Высокий)
@@ -237,64 +225,57 @@
 				И РегИндексы.ИндексПлатежнойДисциплины &lt;= 100
 			ТОГДА ЗНАЧЕНИЕ(Перечисление.ГрадацияИндексовСПАРКРиски.Низкий)
 		ИНАЧЕ ""
-	КОНЕЦ                        КАК ИндексПлатежнойДисциплиныГрадация,
+	КОНЕЦ КАК ИндексПлатежнойДисциплиныГрадация,
 	ВЫБОР
+		КОГДА РегИндексы.ИндексФинансовогоРиска ЕСТЬ NULL
+			ТОГДА ""
 		КОГДА РегИндексы.ИндексФинансовогоРиска &gt;= 0
-				И РегИндексы.ИндексФинансовогоРиска &lt;= 14
+				И РегИндексы.ИндексФинансовогоРиска &lt;= 30
 			ТОГДА ЗНАЧЕНИЕ(Перечисление.ГрадацияИндексовСПАРКРиски.Низкий)
-		КОГДА РегИндексы.ИндексФинансовогоРиска &gt;= 15
-				И РегИндексы.ИндексФинансовогоРиска &lt;= 85
+		КОГДА РегИндексы.ИндексФинансовогоРиска &gt;= 31
+				И РегИндексы.ИндексФинансовогоРиска &lt;= 70
 			ТОГДА ЗНАЧЕНИЕ(Перечисление.ГрадацияИндексовСПАРКРиски.Средний)
-		КОГДА РегИндексы.ИндексФинансовогоРиска &gt;= 86
+		КОГДА РегИндексы.ИндексФинансовогоРиска &gt;= 71
 				И РегИндексы.ИндексФинансовогоРиска &lt;= 100
 			ТОГДА ЗНАЧЕНИЕ(Перечисление.ГрадацияИндексовСПАРКРиски.Высокий)
 		ИНАЧЕ ""
-	КОНЕЦ                        КАК ИндексФинансовогоРискаГрадация,
-		ВЫБОР
+	КОНЕЦ КАК ИндексФинансовогоРискаГрадация,
+	ВЫБОР
+		КОГДА РегИндексы.СводныйИндикатор ЕСТЬ NULL
+			ТОГДА ""
 		КОГДА РегИндексы.СводныйИндикатор = 1
 			ТОГДА ЗНАЧЕНИЕ(Перечисление.ГрадацияИндексовСПАРКРиски.Низкий)
-		КОГДА РегИндексы.СводныйИндикатор = 2 ТОГДА
-			ЗНАЧЕНИЕ(Перечисление.ГрадацияИндексовСПАРКРиски.Средний)
-		КОГДА РегИндексы.СводныйИндикатор = 3 ТОГДА
-			ЗНАЧЕНИЕ(Перечисление.ГрадацияИндексовСПАРКРиски.Высокий)
+		КОГДА РегИндексы.СводныйИндикатор = 2
+			ТОГДА ЗНАЧЕНИЕ(Перечисление.ГрадацияИндексовСПАРКРиски.Средний)
+		КОГДА РегИндексы.СводныйИндикатор = 3
+			ТОГДА ЗНАЧЕНИЕ(Перечисление.ГрадацияИндексовСПАРКРиски.Высокий)
 		ИНАЧЕ ""
-	КОНЕЦ                        КАК СводныйИндикаторГрадация,
-
+	КОНЕЦ КАК СводныйИндикаторГрадация,
 	ВЫБОР
+		КОГДА РегИндексы.Активен ЕСТЬ NULL
+			ТОГДА &amp;КонтрагентПрекратилДеятельность
 		КОГДА РегИндексы.Активен
 			ТОГДА РегИндексы.СтатусНазвание
 		ИНАЧЕ &amp;КонтрагентПрекратилДеятельность
 	КОНЕЦ КАК СтатусНазвание,
 	ВЫБОР
+		КОГДА РегИндексы.Активен ЕСТЬ NULL
+			ТОГДА ЗНАЧЕНИЕ(Справочник.ТипыСобытийСПАРКРиски.ПустаяСсылка)
 		КОГДА РегИндексы.Активен
 			ТОГДА РегИндексы.Статус
 		ИНАЧЕ ЗНАЧЕНИЕ(Справочник.ТипыСобытийСПАРКРиски.ПустаяСсылка)
 	КОНЕЦ КАК Статус,
-	РегИндексы.Активен
+	ВЫБОР
+		КОГДА РегИндексы.Активен ЕСТЬ NULL
+			ТОГДА ДАТАВРЕМЯ(1, 1, 1)
+		КОГДА РегИндексы.Активен
+			ТОГДА РегИндексы.ДатаСтатуса
+		ИНАЧЕ ДАТАВРЕМЯ(1, 1, 1)
+	КОНЕЦ КАК ДатаСтатуса
 ИЗ
-	ВТ_Контрагенты
-	ЛЕВОЕ СОЕДИНЕНИЕ
-	РегистрСведений.ИндексыСПАРКРиски КАК РегИндексы
-		ПО ВТ_Контрагенты.Контрагент = РегИндексы.Контрагент
-
-//ГДЕ
-	// Если данных по индексам нет, то выводить строку не нужно.
-	// Это условие необходимо добавлять отбором, т.к. в противном случае не рассчитается список контрагентов, необходимых для обновления.
-	//(
-	//	(НЕ РегИндексы.ИндексДолжнойОсмотрительности ЕСТЬ NULL
-	//		И РегИндексы.ИндексДолжнойОсмотрительности &gt;= 0
-	//		И РегИндексы.ИндексДолжнойОсмотрительности &lt;= 100)
-	//	ИЛИ (НЕ РегИндексы.ИндексПлатежнойДисциплины ЕСТЬ NULL
-	//		И РегИндексы.ИндексПлатежнойДисциплины &gt;= 0
-	//		И РегИндексы.ИндексПлатежнойДисциплины &lt;= 100)
-	//	ИЛИ (НЕ РегИндексы.ИндексФинансовогоРиска ЕСТЬ NULL
-	//		И РегИндексы.ИндексФинансовогоРиска &gt;= 0
-	//		И РегИндексы.ИндексФинансовогоРиска &lt;= 100)
-	//	ИЛИ (НЕ РегИндексы.СводныйИндикатор ЕСТЬ NULL
-	//		И РегИндексы.СводныйИндикатор &gt;= 1
-	//		И РегИндексы.СводныйИндикатор &lt;= 3)
-	//) ИЛИ РегИндексы.Статус = Значение(Справочник.ТипыСобытийСПАРКРиски.ПустаяСсылка)
-</query>
+	ВТ_Контрагенты КАК ВТ_Контрагенты
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ИндексыСПАРКРиски КАК РегИндексы
+		ПО ВТ_Контрагенты.Контрагент = РегИндексы.Контрагент</query>
 	</dataSet>
 	<calculatedField>
 		<dataPath>ИндексФинансовогоРиска</dataPath>
@@ -305,7 +286,7 @@
 		<title xsi:type="v8:LocalStringType">
 			<v8:item>
 				<v8:lang>ru</v8:lang>
-				<v8:content>ИФР</v8:content>
+				<v8:content>Финансовый риск</v8:content>
 			</v8:item>
 		</title>
 		<useRestriction>
@@ -330,7 +311,7 @@
 		<title xsi:type="v8:LocalStringType">
 			<v8:item>
 				<v8:lang>ru</v8:lang>
-				<v8:content>ИДО</v8:content>
+				<v8:content>Должная осмотрительность</v8:content>
 			</v8:item>
 		</title>
 		<useRestriction>
@@ -354,7 +335,7 @@
 		<title xsi:type="v8:LocalStringType">
 			<v8:item>
 				<v8:lang>ru</v8:lang>
-				<v8:content>ИПД</v8:content>
+				<v8:content>Платежная дисциплина</v8:content>
 			</v8:item>
 		</title>
 		<useRestriction>
@@ -416,6 +397,20 @@
 		</inputParameters>
 	</parameter>
 	<parameter>
+		<name>ВидКонтрагента</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Вид контрагента</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:EnumRef.ВидыКонтрагентовСПАРКРиски</v8:Type>
+		</valueType>
+		<value xsi:nil="true"/>
+		<useRestriction>false</useRestriction>
+	</parameter>
+	<parameter>
 		<name>СводныйИндикатор</name>
 		<title xsi:type="v8:LocalStringType">
 			<v8:item>
@@ -441,7 +436,7 @@
 		<title xsi:type="v8:LocalStringType">
 			<v8:item>
 				<v8:lang>ru</v8:lang>
-				<v8:content>ИДО</v8:content>
+				<v8:content>Должная осмотрительность</v8:content>
 			</v8:item>
 		</title>
 		<valueType>
@@ -462,7 +457,7 @@
 		<title xsi:type="v8:LocalStringType">
 			<v8:item>
 				<v8:lang>ru</v8:lang>
-				<v8:content>ИПД</v8:content>
+				<v8:content>Платежная дисциплина</v8:content>
 			</v8:item>
 		</title>
 		<valueType>
@@ -483,7 +478,7 @@
 		<title xsi:type="v8:LocalStringType">
 			<v8:item>
 				<v8:lang>ru</v8:lang>
-				<v8:content>ИФР</v8:content>
+				<v8:content>Финансовый риск</v8:content>
 			</v8:item>
 		</title>
 		<valueType>
@@ -515,39 +510,6 @@
 		</valueType>
 		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
 		<useRestriction>true</useRestriction>
-	</parameter>
-	<parameter>
-		<name>ПустаяДата</name>
-		<title xsi:type="v8:LocalStringType">
-			<v8:item>
-				<v8:lang>ru</v8:lang>
-				<v8:content>Пустая дата</v8:content>
-			</v8:item>
-		</title>
-		<valueType>
-			<v8:Type>xs:dateTime</v8:Type>
-			<v8:DateQualifiers>
-				<v8:DateFractions>DateTime</v8:DateFractions>
-			</v8:DateQualifiers>
-		</valueType>
-		<value xsi:type="xs:dateTime">0001-01-01T00:00:00</value>
-		<useRestriction>true</useRestriction>
-		<availableAsField>false</availableAsField>
-	</parameter>
-	<parameter>
-		<name>ПоВсемКонтрагентам</name>
-		<title xsi:type="v8:LocalStringType">
-			<v8:item>
-				<v8:lang>ru</v8:lang>
-				<v8:content>По всем контрагентам</v8:content>
-			</v8:item>
-		</title>
-		<valueType>
-			<v8:Type>xs:boolean</v8:Type>
-		</valueType>
-		<value xsi:type="xs:boolean">true</value>
-		<useRestriction>true</useRestriction>
-		<availableAsField>false</availableAsField>
 	</parameter>
 	<parameter>
 		<name>СтатусНазвание</name>
@@ -584,11 +546,11 @@
 		<valueType>
 			<v8:Type>xs:string</v8:Type>
 			<v8:StringQualifiers>
-				<v8:Length>0</v8:Length>
+				<v8:Length>1000</v8:Length>
 				<v8:AllowedLength>Variable</v8:AllowedLength>
 			</v8:StringQualifiers>
 		</valueType>
-		<value xsi:nil="true"/>
+		<value xsi:type="xs:string"/>
 		<useRestriction>true</useRestriction>
 	</parameter>
 	<settingsVariant>
@@ -775,32 +737,43 @@
 				</dcscor:item>
 				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>ВидКонтрагента</dcscor:parameter>
+					<dcscor:value xsi:nil="true"/>
+					<dcsset:userSettingID>027f92ff-f20a-435f-b67a-b84d84ef4d82</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
 					<dcscor:parameter>СводныйИндикатор</dcscor:parameter>
 					<dcscor:value xsi:nil="true"/>
-					<dcsset:userSettingID>938cdc50-0860-4a75-8a47-40a13c97c37b</dcsset:userSettingID>
+					<dcsset:viewMode>Normal</dcsset:viewMode>
+					<dcsset:userSettingID>8984fbaf-0e57-4ba3-abaa-4e36a6501bfe</dcsset:userSettingID>
 				</dcscor:item>
 				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 					<dcscor:use>false</dcscor:use>
 					<dcscor:parameter>ИндексДолжнойОсмотрительности</dcscor:parameter>
 					<dcscor:value xsi:nil="true"/>
-					<dcsset:userSettingID>05c719a8-cbaf-49b0-915a-8321cdefdfd1</dcsset:userSettingID>
+					<dcsset:viewMode>Normal</dcsset:viewMode>
+					<dcsset:userSettingID>16da2b0f-2eef-4311-ba96-b7623aaba4af</dcsset:userSettingID>
 				</dcscor:item>
 				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 					<dcscor:use>false</dcscor:use>
 					<dcscor:parameter>ИндексПлатежнойДисциплины</dcscor:parameter>
 					<dcscor:value xsi:nil="true"/>
+					<dcsset:viewMode>Normal</dcsset:viewMode>
 					<dcsset:userSettingID>f4bf5c22-bce7-40f2-8dcf-7d9773671296</dcsset:userSettingID>
 				</dcscor:item>
 				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 					<dcscor:use>false</dcscor:use>
 					<dcscor:parameter>ИндексФинансовогоРиска</dcscor:parameter>
 					<dcscor:value xsi:nil="true"/>
+					<dcsset:viewMode>Normal</dcsset:viewMode>
 					<dcsset:userSettingID>58180ad3-dc17-4a66-921c-7c6e5e3aeae8</dcsset:userSettingID>
 				</dcscor:item>
 				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 					<dcscor:use>false</dcscor:use>
 					<dcscor:parameter>СтатусНазвание</dcscor:parameter>
 					<dcscor:value xsi:type="xs:string"/>
+					<dcsset:viewMode>Normal</dcsset:viewMode>
 					<dcsset:userSettingID>319e00c2-0681-4715-b021-b0977c69ee05</dcsset:userSettingID>
 				</dcscor:item>
 			</dcsset:dataParameters>
@@ -1358,246 +1331,6 @@
 						<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
 					</dcscor:item>
 				</dcsset:outputParameters>
-			</dcsset:item>
-		</dcsset:settings>
-	</settingsVariant>
-	<settingsVariant>
-		<dcsset:name>СписокКонтрагентовДляОбновления</dcsset:name>
-		<dcsset:presentation xsi:type="v8:LocalStringType">
-			<v8:item>
-				<v8:lang>ru</v8:lang>
-				<v8:content>Список данных для обновления</v8:content>
-			</v8:item>
-		</dcsset:presentation>
-		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
-			<dcsset:selection>
-				<dcsset:item xsi:type="dcsset:SelectedItemField">
-					<dcsset:field>Контрагент</dcsset:field>
-				</dcsset:item>
-				<dcsset:item xsi:type="dcsset:SelectedItemField">
-					<dcsset:field>ИНН</dcsset:field>
-				</dcsset:item>
-				<dcsset:item xsi:type="dcsset:SelectedItemField">
-					<dcsset:field>ИННИндексы</dcsset:field>
-				</dcsset:item>
-				<dcsset:item xsi:type="dcsset:SelectedItemField">
-					<dcsset:field>ДатаОбновления</dcsset:field>
-				</dcsset:item>
-				<dcsset:item xsi:type="dcsset:SelectedItemField">
-					<dcsset:field>ПараметрыДанных.СрокГодности</dcsset:field>
-				</dcsset:item>
-				<dcsset:item xsi:type="dcsset:SelectedItemField">
-					<dcsset:field>ЭтоКорректныйИНН</dcsset:field>
-				</dcsset:item>
-			</dcsset:selection>
-			<dcsset:filter>
-				<dcsset:item xsi:type="dcsset:FilterItemComparison">
-					<dcsset:left xsi:type="dcscor:Field">ЭтоКорректныйИНН</dcsset:left>
-					<dcsset:comparisonType>Equal</dcsset:comparisonType>
-					<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
-					<dcsset:presentation xsi:type="v8:LocalStringType">
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Только контрагентов с корректным ИНН</v8:content>
-						</v8:item>
-					</dcsset:presentation>
-					<dcsset:viewMode>Inaccessible</dcsset:viewMode>
-				</dcsset:item>
-				<dcsset:item xsi:type="dcsset:FilterItemGroup">
-					<dcsset:groupType>OrGroup</dcsset:groupType>
-					<dcsset:item xsi:type="dcsset:FilterItemComparison">
-						<dcsset:left xsi:type="dcscor:Field">ИНН</dcsset:left>
-						<dcsset:comparisonType>NotEqual</dcsset:comparisonType>
-						<dcsset:right xsi:type="dcscor:Field">ИННИндексы</dcsset:right>
-						<dcsset:presentation xsi:type="v8:LocalStringType">
-							<v8:item>
-								<v8:lang>ru</v8:lang>
-								<v8:content>Изменился ИНН</v8:content>
-							</v8:item>
-						</dcsset:presentation>
-						<dcsset:viewMode>Inaccessible</dcsset:viewMode>
-					</dcsset:item>
-					<dcsset:item xsi:type="dcsset:FilterItemComparison">
-						<dcsset:left xsi:type="dcscor:Field">ДатаОбновления</dcsset:left>
-						<dcsset:comparisonType>LessOrEqual</dcsset:comparisonType>
-						<dcsset:right xsi:type="dcscor:Field">ПараметрыДанных.СрокГодности</dcsset:right>
-						<dcsset:presentation xsi:type="v8:LocalStringType">
-							<v8:item>
-								<v8:lang>ru</v8:lang>
-								<v8:content>Просроченные на 12 часов данные</v8:content>
-							</v8:item>
-						</dcsset:presentation>
-						<dcsset:viewMode>Inaccessible</dcsset:viewMode>
-					</dcsset:item>
-					<dcsset:viewMode>Inaccessible</dcsset:viewMode>
-				</dcsset:item>
-			</dcsset:filter>
-			<dcsset:dataParameters>
-				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-					<dcscor:use>false</dcscor:use>
-					<dcscor:parameter>Контрагенты</dcscor:parameter>
-					<dcscor:value xsi:nil="true"/>
-					<dcsset:viewMode>Normal</dcsset:viewMode>
-					<dcsset:userSettingID>637f1e2d-2886-4983-b59f-aa82e2a14c99</dcsset:userSettingID>
-				</dcscor:item>
-				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-					<dcscor:use>false</dcscor:use>
-					<dcscor:parameter>ИндексДолжнойОсмотрительности</dcscor:parameter>
-					<dcscor:value xsi:nil="true"/>
-					<dcsset:userSettingID>086d791b-3653-4031-b32c-b59121ebf57d</dcsset:userSettingID>
-				</dcscor:item>
-				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-					<dcscor:use>false</dcscor:use>
-					<dcscor:parameter>ИндексПлатежнойДисциплины</dcscor:parameter>
-					<dcscor:value xsi:nil="true"/>
-					<dcsset:userSettingID>11ca8408-626b-4df0-82d3-7006daf5a0e8</dcsset:userSettingID>
-				</dcscor:item>
-				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-					<dcscor:use>false</dcscor:use>
-					<dcscor:parameter>ИндексФинансовогоРиска</dcscor:parameter>
-					<dcscor:value xsi:nil="true"/>
-					<dcsset:userSettingID>78b3aaa9-2b0c-4cb2-80c0-ef1d615140e1</dcsset:userSettingID>
-				</dcscor:item>
-				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-					<dcscor:parameter>СрокГодности</dcscor:parameter>
-					<dcscor:value xsi:type="xs:dateTime">0001-01-01T00:00:00</dcscor:value>
-					<dcsset:userSettingID>f58347f9-858d-4653-8567-b9e68abb0e40</dcsset:userSettingID>
-				</dcscor:item>
-				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-					<dcscor:use>false</dcscor:use>
-					<dcscor:parameter>ПоВсемКонтрагентам</dcscor:parameter>
-					<dcscor:value xsi:type="xs:boolean">true</dcscor:value>
-					<dcsset:viewMode>Normal</dcsset:viewMode>
-					<dcsset:userSettingID>d78b3749-b1b1-43da-b3b4-cf35b9379b78</dcsset:userSettingID>
-				</dcscor:item>
-			</dcsset:dataParameters>
-			<dcsset:order>
-				<dcsset:item xsi:type="dcsset:OrderItemField">
-					<dcsset:field>Контрагент.Наименование</dcsset:field>
-					<dcsset:orderType>Asc</dcsset:orderType>
-				</dcsset:item>
-			</dcsset:order>
-			<dcsset:outputParameters>
-				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-					<dcscor:use>false</dcscor:use>
-					<dcscor:parameter>МакетОформления</dcscor:parameter>
-					<dcscor:value xsi:type="xs:string">Основной</dcscor:value>
-				</dcscor:item>
-				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-					<dcscor:parameter>ГоризонтальноеРасположениеОбщихИтогов</dcscor:parameter>
-					<dcscor:value xsi:type="dcscor:DataCompositionTotalPlacement">None</dcscor:value>
-				</dcscor:item>
-				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-					<dcscor:parameter>ВертикальноеРасположениеОбщихИтогов</dcscor:parameter>
-					<dcscor:value xsi:type="dcscor:DataCompositionTotalPlacement">None</dcscor:value>
-				</dcscor:item>
-				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-					<dcscor:parameter>ВыводитьЗаголовок</dcscor:parameter>
-					<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">Auto</dcscor:value>
-				</dcscor:item>
-				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-					<dcscor:parameter>Заголовок</dcscor:parameter>
-					<dcscor:value xsi:type="v8:LocalStringType">
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Список контрагентов с индексами, требующими обновления</v8:content>
-						</v8:item>
-					</dcscor:value>
-				</dcscor:item>
-				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-					<dcscor:parameter>ВыводитьПараметрыДанных</dcscor:parameter>
-					<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">Output</dcscor:value>
-				</dcscor:item>
-				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-					<dcscor:parameter>ВыводитьОтбор</dcscor:parameter>
-					<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">Output</dcscor:value>
-				</dcscor:item>
-			</dcsset:outputParameters>
-			<dcsset:item xsi:type="dcsset:StructureItemGroup">
-				<dcsset:order>
-					<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
-				</dcsset:order>
-				<dcsset:selection>
-					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
-				</dcsset:selection>
-				<dcsset:conditionalAppearance>
-					<dcsset:item>
-						<dcsset:selection>
-							<dcsset:item>
-								<dcsset:field>ИНН</dcsset:field>
-							</dcsset:item>
-							<dcsset:item>
-								<dcsset:field>ИННИндексы</dcsset:field>
-							</dcsset:item>
-						</dcsset:selection>
-						<dcsset:filter>
-							<dcsset:item xsi:type="dcsset:FilterItemComparison">
-								<dcsset:left xsi:type="dcscor:Field">ИНН</dcsset:left>
-								<dcsset:comparisonType>NotEqual</dcsset:comparisonType>
-								<dcsset:right xsi:type="dcscor:Field">ИННИндексы</dcsset:right>
-							</dcsset:item>
-						</dcsset:filter>
-						<dcsset:appearance>
-							<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-								<dcscor:parameter>ЦветТекста</dcscor:parameter>
-								<dcscor:value xsi:type="v8ui:Color">style:SpecialTextColor</dcscor:value>
-							</dcscor:item>
-						</dcsset:appearance>
-					</dcsset:item>
-					<dcsset:item>
-						<dcsset:selection>
-							<dcsset:item>
-								<dcsset:field>ДатаОбновления</dcsset:field>
-							</dcsset:item>
-							<dcsset:item>
-								<dcsset:field>ПараметрыДанных.СрокГодности</dcsset:field>
-							</dcsset:item>
-							<dcsset:item>
-								<dcsset:field>ИндексДолжнойОсмотрительности</dcsset:field>
-							</dcsset:item>
-							<dcsset:item>
-								<dcsset:field>ИндексПлатежнойДисциплины</dcsset:field>
-							</dcsset:item>
-							<dcsset:item>
-								<dcsset:field>ИндексФинансовогоРиска</dcsset:field>
-							</dcsset:item>
-							<dcsset:item>
-								<dcsset:field>ИндексДолжнойОсмотрительностиГрадация</dcsset:field>
-							</dcsset:item>
-							<dcsset:item>
-								<dcsset:field>ИндексДолжнойОсмотрительностиЧисло</dcsset:field>
-							</dcsset:item>
-							<dcsset:item>
-								<dcsset:field>ИндексПлатежнойДисциплиныГрадация</dcsset:field>
-							</dcsset:item>
-							<dcsset:item>
-								<dcsset:field>ИндексПлатежнойДисциплиныЧисло</dcsset:field>
-							</dcsset:item>
-							<dcsset:item>
-								<dcsset:field>ИндексФинансовогоРискаГрадация</dcsset:field>
-							</dcsset:item>
-							<dcsset:item>
-								<dcsset:field>ИндексФинансовогоРискаЧисло</dcsset:field>
-							</dcsset:item>
-							<dcsset:item>
-								<dcsset:field>Контрагент</dcsset:field>
-							</dcsset:item>
-						</dcsset:selection>
-						<dcsset:filter>
-							<dcsset:item xsi:type="dcsset:FilterItemComparison">
-								<dcsset:left xsi:type="dcscor:Field">ДатаОбновления</dcsset:left>
-								<dcsset:comparisonType>LessOrEqual</dcsset:comparisonType>
-								<dcsset:right xsi:type="dcscor:Field">ДатаОбновления</dcsset:right>
-							</dcsset:item>
-						</dcsset:filter>
-						<dcsset:appearance>
-							<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-								<dcscor:parameter>ЦветТекста</dcscor:parameter>
-								<dcscor:value xsi:type="v8ui:Color">style:ЦветНедоступногоТекста</dcscor:value>
-							</dcscor:item>
-						</dcsset:appearance>
-					</dcsset:item>
-				</dcsset:conditionalAppearance>
 			</dcsset:item>
 		</dcsset:settings>
 	</settingsVariant>

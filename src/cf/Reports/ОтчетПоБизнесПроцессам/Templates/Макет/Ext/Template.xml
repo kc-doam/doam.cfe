@@ -101,20 +101,55 @@
 			<dataPath>СрокИсполнения</dataPath>
 			<field>СрокИсполнения</field>
 		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Предмет</dataPath>
+			<field>Предмет</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Предмет</v8:content>
+				</v8:item>
+			</title>
+			<presentationExpression>Представление(Выбор
+Когда Предмет = "Нет предметов" Тогда "Нет"
+Когда  ТипПредмета = Тип("Строка") И Предмет &lt;&gt; "Нет предметов" Тогда Предмет
+Иначе СтрШаблон("%1 (%2)", Предмет,  ТипПредмета)
+Конец)</presentationExpression>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ТипПредмета</dataPath>
+			<field>ТипПредмета</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тип предмета</v8:content>
+				</v8:item>
+			</title>
+		</field>
 		<dataSource>ИсточникДанных1</dataSource>
 		<query>ВЫБРАТЬ РАЗРЕШЕННЫЕ
-	ДанныеБизнесПроцессов.БизнесПроцесс,
-	ДанныеБизнесПроцессов.Дата,
-	ДанныеБизнесПроцессов.Завершен,
-	ДанныеБизнесПроцессов.Стартован,
-	ДанныеБизнесПроцессов.Автор,
-	ДанныеБизнесПроцессов.ДатаЗавершения,
-	ДанныеБизнесПроцессов.Наименование,
-	ДанныеБизнесПроцессов.Проект,
+	ДанныеБизнесПроцессов.БизнесПроцесс КАК БизнесПроцесс,
+	ДанныеБизнесПроцессов.Дата КАК Дата,
+	ДанныеБизнесПроцессов.Завершен КАК Завершен,
+	ДанныеБизнесПроцессов.Стартован КАК Стартован,
+	ДанныеБизнесПроцессов.Автор КАК Автор,
+	ДанныеБизнесПроцессов.ДатаЗавершения КАК ДатаЗавершения,
+	ДанныеБизнесПроцессов.Наименование КАК Наименование,
+	ДанныеБизнесПроцессов.Проект КАК Проект,
 	ТИПЗНАЧЕНИЯ(ДанныеБизнесПроцессов.БизнесПроцесс) КАК ВидБизнесПроцесса,
 	ДанныеБизнесПроцессов.ТрудозатратыПлан КАК ТрудозатратыПлан,
 	Таблица1.ТрудозатратыФакт КАК ТрудозатратыФакт,
-	ДанныеБизнесПроцессов.СрокИсполнения
+	ДанныеБизнесПроцессов.СрокИсполнения КАК СрокИсполнения,
+	ДанныеБизнесПроцессов.ОсновнойПредмет КАК Предмет,
+	ТИПЗНАЧЕНИЯ(ДанныеБизнесПроцессов.ОсновнойПредмет) КАК ТипПредмета
+{ГДЕ
+	(ДанныеБизнесПроцессов.Состояние = &amp;Состояние),
+	(ДанныеБизнесПроцессов.Дата &lt;= &amp;ПериодОкончание
+	И (ДанныеБизнесПроцессов.ДатаЗавершения &gt;= &amp;ПериодНачало
+	ИЛИ ДанныеБизнесПроцессов.ДатаЗавершения = ДАТАВРЕМЯ(1, 1, 1))),
+	(ЕСТЬNULL(ПроцессыДляЗапуска.Состояние,
+		ЗНАЧЕНИЕ(Перечисление.СостоянияБизнесПроцессов.ПустаяСсылка)) &lt;&gt; &amp;СостояниеОтложенногоСтарта
+	ИЛИ ЕСТЬNULL(ПроцессыДляЗапуска.ДатаОтложенногоСтарта, ДАТАВРЕМЯ(1, 1, 1)) = ДАТАВРЕМЯ(1, 1, 1))}
 ИЗ
 	РегистрСведений.ДанныеБизнесПроцессов КАК ДанныеБизнесПроцессов
 		ЛЕВОЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
@@ -124,8 +159,7 @@
 			РегистрСведений.ФактическиеТрудозатраты КАК ФактическиеТрудозатраты
 				ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ДанныеБизнесПроцессов КАК ДанныеБизнесПроцессов
 				ПО (ТИПЗНАЧЕНИЯ(ФактическиеТрудозатраты.Источник) = ТИП(Задача.ЗадачаИсполнителя))
-					И (ДанныеБизнесПроцессов.БизнесПроцесс = ФактическиеТрудозатраты.Источник.БизнесПроцесс)
-		
+				И (ДанныеБизнесПроцессов.БизнесПроцесс = ФактическиеТрудозатраты.Источник.БизнесПроцесс)
 		СГРУППИРОВАТЬ ПО
 			ДанныеБизнесПроцессов.БизнесПроцесс) КАК Таблица1
 		ПО ДанныеБизнесПроцессов.БизнесПроцесс = Таблица1.БизнесПроцесс
@@ -133,14 +167,7 @@
 		ПО ДанныеБизнесПроцессов.БизнесПроцесс = ПроцессыДляЗапуска.БизнесПроцесс
 ГДЕ
 	(ТИПЗНАЧЕНИЯ(ДанныеБизнесПроцессов.БизнесПроцесс) &lt;&gt; ТИП(БизнесПроцесс.Поручение)
-			ИЛИ ДанныеБизнесПроцессов.БизнесПроцесс.ЗадачаИсточник = ЗНАЧЕНИЕ(Задача.ЗадачаИсполнителя.ПустаяСсылка))
-{ГДЕ
-	(ДанныеБизнесПроцессов.Состояние = &amp;Состояние),
-	(ДанныеБизнесПроцессов.Дата &lt;= &amp;ПериодОкончание
-			И (ДанныеБизнесПроцессов.ДатаЗавершения &gt;= &amp;ПериодНачало
-				ИЛИ ДанныеБизнесПроцессов.ДатаЗавершения = ДАТАВРЕМЯ(1, 1, 1))),
-	(ЕСТЬNULL(ПроцессыДляЗапуска.Состояние, ЗНАЧЕНИЕ(Перечисление.СостоянияБизнесПроцессов.ПустаяСсылка)) &lt;&gt; &amp;СостояниеОтложенногоСтарта
-			ИЛИ ЕСТЬNULL(ПроцессыДляЗапуска.ДатаОтложенногоСтарта, ДАТАВРЕМЯ(1, 1, 1)) = ДАТАВРЕМЯ(1, 1, 1))}</query>
+	ИЛИ ДанныеБизнесПроцессов.БизнесПроцесс.ЗадачаИсточник = ЗНАЧЕНИЕ(Задача.ЗадачаИсполнителя.ПустаяСсылка))</query>
 	</dataSet>
 	<calculatedField>
 		<dataPath>Количество</dataPath>
@@ -272,6 +299,9 @@
 				</dcsset:item>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
 					<dcsset:field>БизнесПроцесс</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Предмет</dcsset:field>
 				</dcsset:item>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
 					<dcsset:field>Автор</dcsset:field>
@@ -522,6 +552,9 @@
 				</dcsset:item>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
 					<dcsset:field>БизнесПроцесс</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Предмет</dcsset:field>
 				</dcsset:item>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
 					<dcsset:field>Автор</dcsset:field>
@@ -970,6 +1003,9 @@
 					<dcsset:field>БизнесПроцесс</dcsset:field>
 				</dcsset:item>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Предмет</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
 					<dcsset:field>Автор</dcsset:field>
 				</dcsset:item>
 				<dcsset:item xsi:type="dcsset:SelectedItemField">
@@ -1284,6 +1320,17 @@
 					</dcsset:userSettingPresentation>
 				</dcscor:item>
 			</dcsset:dataParameters>
+			<dcsset:outputParameters>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>Заголовок</dcscor:parameter>
+					<dcscor:value xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Исполнение процессов</v8:content>
+						</v8:item>
+					</dcscor:value>
+				</dcscor:item>
+			</dcsset:outputParameters>
 			<dcsset:item xsi:type="dcsset:StructureItemGroup">
 				<dcsset:groupItems>
 					<dcsset:item xsi:type="dcsset:GroupItemField">
@@ -1331,6 +1378,9 @@
 					<dcsset:selection>
 						<dcsset:item xsi:type="dcsset:SelectedItemField">
 							<dcsset:field>БизнесПроцесс</dcsset:field>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:SelectedItemField">
+							<dcsset:field>Предмет</dcsset:field>
 						</dcsset:item>
 						<dcsset:item xsi:type="dcsset:SelectedItemField">
 							<dcsset:field>Автор</dcsset:field>

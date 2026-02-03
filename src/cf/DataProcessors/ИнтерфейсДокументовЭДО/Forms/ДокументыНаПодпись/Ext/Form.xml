@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
 	<AutoTitle>false</AutoTitle>
 	<CommandBarLocation>Top</CommandBarLocation>
 	<VerticalScroll>useIfNecessary</VerticalScroll>
@@ -29,7 +29,7 @@
 							<v8:content>Страница сводки</v8:content>
 						</v8:item>
 					</Title>
-					<ExtendedTooltip name="СтраницаСводкиExtendedTooltip" id="97"/>
+					<ExtendedTooltip name="СтраницаСводкиРасширеннаяПодсказка" id="97"/>
 					<ChildItems>
 						<UsualGroup name="ГруппаДоступныеСертификаты" id="16">
 							<Title>
@@ -40,9 +40,10 @@
 							</Title>
 							<Height>6</Height>
 							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
-							<ExtendedTooltip name="ГруппаДоступныеСертификатыExtendedTooltip" id="98"/>
+							<ExtendedTooltip name="ГруппаДоступныеСертификатыРасширеннаяПодсказка" id="98"/>
 							<ChildItems>
 								<Table name="ТаблицаСертификатов" id="3">
 									<Representation>List</Representation>
@@ -90,7 +91,7 @@
 													<xr:Ref>StdPicture.CheckSyntax</xr:Ref>
 													<xr:LoadTransparent>true</xr:LoadTransparent>
 												</Picture>
-												<ExtendedTooltip name="ПодписатьВсеExtendedTooltip" id="99"/>
+												<ExtendedTooltip name="ПодписатьВсеРасширеннаяПодсказка" id="99"/>
 											</Button>
 										</ChildItems>
 									</ContextMenu>
@@ -105,13 +106,13 @@
 													<xr:Ref>StdPicture.CheckSyntax</xr:Ref>
 													<xr:LoadTransparent>true</xr:LoadTransparent>
 												</Picture>
-												<ExtendedTooltip name="ПодписатьВсеДокументыExtendedTooltip" id="100"/>
+												<ExtendedTooltip name="ПодписатьВсеДокументыРасширеннаяПодсказка" id="100"/>
 											</Button>
 											<Button name="ТаблицаСертификатовОбновитьСписокСертификатов" id="60">
 												<Type>CommandBarButton</Type>
 												<Representation>PictureAndText</Representation>
 												<CommandName>Form.Command.Обновить</CommandName>
-												<ExtendedTooltip name="ТаблицаСертификатовОбновитьСписокСертификатовExtendedTooltip" id="101"/>
+												<ExtendedTooltip name="ТаблицаСертификатовОбновитьСписокСертификатовРасширеннаяПодсказка" id="101"/>
 											</Button>
 											<ButtonGroup name="ГруппаКомандыФормыСертификаты" id="74">
 												<Title>
@@ -121,16 +122,16 @@
 													</v8:item>
 												</Title>
 												<CommandSource>Form</CommandSource>
-												<ExtendedTooltip name="ГруппаКомандыФормыСертификатыExtendedTooltip" id="102"/>
+												<ExtendedTooltip name="ГруппаКомандыФормыСертификатыРасширеннаяПодсказка" id="102"/>
 											</ButtonGroup>
 											<Button name="ТаблицаСертификатовСправка" id="92">
 												<Type>CommandBarButton</Type>
 												<CommandName>Form.StandardCommand.Help</CommandName>
-												<ExtendedTooltip name="ТаблицаСертификатовСправкаExtendedTooltip" id="103"/>
+												<ExtendedTooltip name="ТаблицаСертификатовСправкаРасширеннаяПодсказка" id="103"/>
 											</Button>
 										</ChildItems>
 									</AutoCommandBar>
-									<ExtendedTooltip name="ТаблицаСертификатовExtendedTooltip" id="104"/>
+									<ExtendedTooltip name="ТаблицаСертификатовРасширеннаяПодсказка" id="104"/>
 									<SearchStringAddition name="ТаблицаСертификатовСтрокаПоиска" id="139">
 										<AdditionSource>
 											<Item>ТаблицаСертификатов</Item>
@@ -173,7 +174,7 @@
 											<ChoiceButton>true</ChoiceButton>
 											<ChoiceButtonRepresentation>ShowInInputField</ChoiceButtonRepresentation>
 											<ContextMenu name="ТаблицаСертификатовСертификатКонтекстноеМеню" id="43"/>
-											<ExtendedTooltip name="ТаблицаСертификатовСертификатExtendedTooltip" id="105"/>
+											<ExtendedTooltip name="ТаблицаСертификатовСертификатРасширеннаяПодсказка" id="105"/>
 										</InputField>
 										<InputField name="ТаблицаСертификатовКоличествоДокументов" id="44">
 											<DataPath>ТаблицаСертификатов.КоличествоДокументов</DataPath>
@@ -198,7 +199,7 @@
 												</v8:item>
 											</EditFormat>
 											<ContextMenu name="ТаблицаСертификатовКоличествоДокументовКонтекстноеМеню" id="45"/>
-											<ExtendedTooltip name="ТаблицаСертификатовКоличествоДокументовExtendedTooltip" id="106"/>
+											<ExtendedTooltip name="ТаблицаСертификатовКоличествоДокументовРасширеннаяПодсказка" id="106"/>
 										</InputField>
 									</ChildItems>
 								</Table>
@@ -212,7 +213,7 @@
 								</v8:item>
 							</Title>
 							<HorizontalLocation>Right</HorizontalLocation>
-							<ExtendedTooltip name="ГруппаКнопкиВпередExtendedTooltip" id="107"/>
+							<ExtendedTooltip name="ГруппаКнопкиВпередРасширеннаяПодсказка" id="107"/>
 							<ChildItems>
 								<Button name="ПерейтиКСпискуДокументов" id="53">
 									<Type>CommandBarButton</Type>
@@ -222,7 +223,7 @@
 										<xr:Ref>StdPicture.MoveRight</xr:Ref>
 										<xr:LoadTransparent>true</xr:LoadTransparent>
 									</Picture>
-									<ExtendedTooltip name="ПерейтиКСпискуДокументовExtendedTooltip" id="108"/>
+									<ExtendedTooltip name="ПерейтиКСпискуДокументовРасширеннаяПодсказка" id="108"/>
 								</Button>
 							</ChildItems>
 						</CommandBar>
@@ -235,7 +236,7 @@
 							<v8:content>Страница детализации</v8:content>
 						</v8:item>
 					</Title>
-					<ExtendedTooltip name="СтраницаДетализацииExtendedTooltip" id="109"/>
+					<ExtendedTooltip name="СтраницаДетализацииРасширеннаяПодсказка" id="109"/>
 					<ChildItems>
 						<UsualGroup name="ГруппаБыстрыеОтборы" id="82">
 							<Title>
@@ -245,9 +246,10 @@
 								</v8:item>
 							</Title>
 							<Group>Horizontal</Group>
+							<Behavior>Usual</Behavior>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
-							<ExtendedTooltip name="ГруппаБыстрыеОтборыExtendedTooltip" id="110"/>
+							<ExtendedTooltip name="ГруппаБыстрыеОтборыРасширеннаяПодсказка" id="110"/>
 							<ChildItems>
 								<InputField name="Контрагент" id="83">
 									<DataPath>Контрагент</DataPath>
@@ -255,7 +257,7 @@
 									<ClearButton>true</ClearButton>
 									<OpenButton>false</OpenButton>
 									<ContextMenu name="КонтрагентКонтекстноеМеню" id="84"/>
-									<ExtendedTooltip name="КонтрагентExtendedTooltip" id="111"/>
+									<ExtendedTooltip name="КонтрагентРасширеннаяПодсказка" id="111"/>
 									<Events>
 										<Event name="OnChange">КонтрагентПриИзменении</Event>
 									</Events>
@@ -267,88 +269,6 @@
 									<OpenButton>false</OpenButton>
 									<ListChoiceMode>true</ListChoiceMode>
 									<QuickChoice>true</QuickChoice>
-									<ChoiceList>
-										<xr:Item>
-											<xr:Presentation/>
-											<xr:CheckState>0</xr:CheckState>
-											<xr:Value xsi:type="FormChoiceListDesTimeValue">
-												<Presentation/>
-												<Value xsi:type="xr:DesignTimeRef">Enum.ТипыДокументовЭДО.EnumValue.ПрайсЛист</Value>
-											</xr:Value>
-										</xr:Item>
-										<xr:Item>
-											<xr:Presentation/>
-											<xr:CheckState>0</xr:CheckState>
-											<xr:Value xsi:type="FormChoiceListDesTimeValue">
-												<Presentation/>
-												<Value xsi:type="xr:DesignTimeRef">Enum.ТипыДокументовЭДО.EnumValue.ЗаказТовара</Value>
-											</xr:Value>
-										</xr:Item>
-										<xr:Item>
-											<xr:Presentation/>
-											<xr:CheckState>0</xr:CheckState>
-											<xr:Value xsi:type="FormChoiceListDesTimeValue">
-												<Presentation/>
-												<Value xsi:type="xr:DesignTimeRef">Enum.ТипыДокументовЭДО.EnumValue.ОтветНаЗаказ</Value>
-											</xr:Value>
-										</xr:Item>
-										<xr:Item>
-											<xr:Presentation/>
-											<xr:CheckState>0</xr:CheckState>
-											<xr:Value xsi:type="FormChoiceListDesTimeValue">
-												<Presentation/>
-												<Value xsi:type="xr:DesignTimeRef">Enum.ТипыДокументовЭДО.EnumValue.СчетНаОплату</Value>
-											</xr:Value>
-										</xr:Item>
-										<xr:Item>
-											<xr:Presentation/>
-											<xr:CheckState>0</xr:CheckState>
-											<xr:Value xsi:type="FormChoiceListDesTimeValue">
-												<Presentation/>
-												<Value xsi:type="xr:DesignTimeRef">Enum.ТипыДокументовЭДО.EnumValue.УдалитьТОРГ12</Value>
-											</xr:Value>
-										</xr:Item>
-										<xr:Item>
-											<xr:Presentation/>
-											<xr:CheckState>0</xr:CheckState>
-											<xr:Value xsi:type="FormChoiceListDesTimeValue">
-												<Presentation/>
-												<Value xsi:type="xr:DesignTimeRef">Enum.ТипыДокументовЭДО.EnumValue.ОтчетОПродажахКомиссионногоТовара</Value>
-											</xr:Value>
-										</xr:Item>
-										<xr:Item>
-											<xr:Presentation/>
-											<xr:CheckState>0</xr:CheckState>
-											<xr:Value xsi:type="FormChoiceListDesTimeValue">
-												<Presentation/>
-												<Value xsi:type="xr:DesignTimeRef">Enum.ТипыДокументовЭДО.EnumValue.ОтчетОСписанииКомиссионногоТовара</Value>
-											</xr:Value>
-										</xr:Item>
-										<xr:Item>
-											<xr:Presentation/>
-											<xr:CheckState>0</xr:CheckState>
-											<xr:Value xsi:type="FormChoiceListDesTimeValue">
-												<Presentation/>
-												<Value xsi:type="xr:DesignTimeRef">Enum.ТипыДокументовЭДО.EnumValue.УдалитьАктИсполнитель</Value>
-											</xr:Value>
-										</xr:Item>
-										<xr:Item>
-											<xr:Presentation/>
-											<xr:CheckState>0</xr:CheckState>
-											<xr:Value xsi:type="FormChoiceListDesTimeValue">
-												<Presentation/>
-												<Value xsi:type="xr:DesignTimeRef">Enum.ТипыДокументовЭДО.EnumValue.ПередачаТоваровМеждуОрганизациями</Value>
-											</xr:Value>
-										</xr:Item>
-										<xr:Item>
-											<xr:Presentation/>
-											<xr:CheckState>0</xr:CheckState>
-											<xr:Value xsi:type="FormChoiceListDesTimeValue">
-												<Presentation/>
-												<Value xsi:type="xr:DesignTimeRef">Enum.ТипыДокументовЭДО.EnumValue.ВозвратТоваровМеждуОрганизациями</Value>
-											</xr:Value>
-										</xr:Item>
-									</ChoiceList>
 									<ContextMenu name="ВидДокументаКонтекстноеМеню" id="86"/>
 									<ExtendedTooltip name="ВидДокументаРасширеннаяПодсказка" id="112"/>
 									<Events>
@@ -362,7 +282,7 @@
 									<OpenButton>false</OpenButton>
 									<QuickChoice>true</QuickChoice>
 									<ContextMenu name="НаправлениеЭДКонтекстноеМеню" id="88"/>
-									<ExtendedTooltip name="НаправлениеЭДExtendedTooltip" id="113"/>
+									<ExtendedTooltip name="НаправлениеЭДРасширеннаяПодсказка" id="113"/>
 									<Events>
 										<Event name="OnChange">НаправлениеЭДПриИзменении</Event>
 									</Events>
@@ -402,12 +322,12 @@
 									<Button name="КонтекстноеМенюПодписать" id="28">
 										<Type>CommandBarButton</Type>
 										<CommandName>Form.Command.Подписать</CommandName>
-										<ExtendedTooltip name="КонтекстноеМенюПодписатьExtendedTooltip" id="114"/>
+										<ExtendedTooltip name="КонтекстноеМенюПодписатьРасширеннаяПодсказка" id="114"/>
 									</Button>
 									<Button name="КонтекстноеМенюОбновить" id="38">
 										<Type>CommandBarButton</Type>
 										<CommandName>Form.Command.Обновить</CommandName>
-										<ExtendedTooltip name="КонтекстноеМенюОбновитьExtendedTooltip" id="115"/>
+										<ExtendedTooltip name="КонтекстноеМенюОбновитьРасширеннаяПодсказка" id="115"/>
 									</Button>
 								</ChildItems>
 							</ContextMenu>
@@ -418,7 +338,7 @@
 										<Type>CommandBarButton</Type>
 										<DefaultItem>true</DefaultItem>
 										<CommandName>Form.Command.Подписать</CommandName>
-										<ExtendedTooltip name="ПодписатьExtendedTooltip" id="116"/>
+										<ExtendedTooltip name="ПодписатьРасширеннаяПодсказка" id="116"/>
 									</Button>
 									<ButtonGroup name="ГруппаКомандФлажков" id="89">
 										<Title>
@@ -427,18 +347,18 @@
 												<v8:content>Группа команд флажков</v8:content>
 											</v8:item>
 										</Title>
-										<ExtendedTooltip name="ГруппаКомандФлажковExtendedTooltip" id="117"/>
+										<ExtendedTooltip name="ГруппаКомандФлажковРасширеннаяПодсказка" id="117"/>
 										<ChildItems>
 											<Button name="ОтметитьВыделенные" id="58">
 												<Type>CommandBarButton</Type>
 												<Representation>PictureAndText</Representation>
 												<CommandName>Form.Command.ОтметитьВыделенные</CommandName>
-												<ExtendedTooltip name="ОтметитьВыделенныеExtendedTooltip" id="118"/>
+												<ExtendedTooltip name="ОтметитьВыделенныеРасширеннаяПодсказка" id="118"/>
 											</Button>
 											<Button name="СнятьОтметкуСоВсехСтрок" id="59">
 												<Type>CommandBarButton</Type>
 												<CommandName>Form.Command.СнятьОтметкуСоВсехСтрок</CommandName>
-												<ExtendedTooltip name="СнятьОтметкуСоВсехСтрокExtendedTooltip" id="119"/>
+												<ExtendedTooltip name="СнятьОтметкуСоВсехСтрокРасширеннаяПодсказка" id="119"/>
 											</Button>
 										</ChildItems>
 									</ButtonGroup>
@@ -446,7 +366,7 @@
 										<Type>CommandBarButton</Type>
 										<Representation>PictureAndText</Representation>
 										<CommandName>Form.Command.Обновить</CommandName>
-										<ExtendedTooltip name="ОбновитьExtendedTooltip" id="120"/>
+										<ExtendedTooltip name="ОбновитьРасширеннаяПодсказка" id="120"/>
 									</Button>
 									<ButtonGroup name="ГруппаКомандСписка" id="75">
 										<Title>
@@ -456,17 +376,17 @@
 											</v8:item>
 										</Title>
 										<CommandSource>Item.ТаблицаДокументов</CommandSource>
-										<ExtendedTooltip name="ГруппаКомандСпискаExtendedTooltip" id="121"/>
+										<ExtendedTooltip name="ГруппаКомандСпискаРасширеннаяПодсказка" id="121"/>
 										<ChildItems>
 											<Button name="ТаблицаДокументовНайти" id="76">
 												<Type>CommandBarButton</Type>
 												<CommandName>Form.Item.ТаблицаДокументов.StandardCommand.Find</CommandName>
-												<ExtendedTooltip name="ТаблицаДокументовНайтиExtendedTooltip" id="122"/>
+												<ExtendedTooltip name="ТаблицаДокументовНайтиРасширеннаяПодсказка" id="122"/>
 											</Button>
 											<Button name="ТаблицаДокументовОтменитьПоиск" id="77">
 												<Type>CommandBarButton</Type>
 												<CommandName>Form.Item.ТаблицаДокументов.StandardCommand.CancelSearch</CommandName>
-												<ExtendedTooltip name="ТаблицаДокументовОтменитьПоискExtendedTooltip" id="123"/>
+												<ExtendedTooltip name="ТаблицаДокументовОтменитьПоискРасширеннаяПодсказка" id="123"/>
 											</Button>
 										</ChildItems>
 									</ButtonGroup>
@@ -478,16 +398,16 @@
 											</v8:item>
 										</Title>
 										<CommandSource>Form</CommandSource>
-										<ExtendedTooltip name="ГруппаКомандыФормыExtendedTooltip" id="124"/>
+										<ExtendedTooltip name="ГруппаКомандыФормыРасширеннаяПодсказка" id="124"/>
 									</ButtonGroup>
 									<Button name="ТаблицаДокументовСправка" id="93">
 										<Type>CommandBarButton</Type>
 										<CommandName>Form.StandardCommand.Help</CommandName>
-										<ExtendedTooltip name="ТаблицаДокументовСправкаExtendedTooltip" id="125"/>
+										<ExtendedTooltip name="ТаблицаДокументовСправкаРасширеннаяПодсказка" id="125"/>
 									</Button>
 								</ChildItems>
 							</AutoCommandBar>
-							<ExtendedTooltip name="ТаблицаДокументовExtendedTooltip" id="126"/>
+							<ExtendedTooltip name="ТаблицаДокументовРасширеннаяПодсказка" id="126"/>
 							<SearchStringAddition name="ТаблицаДокументовСтрокаПоиска" id="148">
 								<AdditionSource>
 									<Item>ТаблицаДокументов</Item>
@@ -524,7 +444,7 @@
 									<ShowInFooter>false</ShowInFooter>
 									<CheckBoxType>Auto</CheckBoxType>
 									<ContextMenu name="ТаблицаДокументовВыбратьКонтекстноеМеню" id="57"/>
-									<ExtendedTooltip name="ТаблицаДокументовВыбратьExtendedTooltip" id="127"/>
+									<ExtendedTooltip name="ТаблицаДокументовВыбратьРасширеннаяПодсказка" id="127"/>
 								</CheckBoxField>
 								<InputField name="ТаблицаДокументовЭлектронныйДокументВидДокумента" id="61">
 									<DataPath>ТаблицаДокументов.ВидДокумента</DataPath>
@@ -551,7 +471,7 @@
 									</Title>
 									<EditMode>EnterOnInput</EditMode>
 									<ContextMenu name="ТаблицаДокументовЭлектронныйДокументНаправлениеЭДКонтекстноеМеню" id="79"/>
-									<ExtendedTooltip name="ТаблицаДокументовЭлектронныйДокументНаправлениеЭДExtendedTooltip" id="129"/>
+									<ExtendedTooltip name="ТаблицаДокументовЭлектронныйДокументНаправлениеЭДРасширеннаяПодсказка" id="129"/>
 								</InputField>
 								<InputField name="ТаблицаДокументовЭлектронныйДокументНомерДокументаОтправителя" id="63">
 									<DataPath>ТаблицаДокументов.НомерДокумента</DataPath>
@@ -564,14 +484,14 @@
 									<EditMode>EnterOnInput</EditMode>
 									<Width>20</Width>
 									<ContextMenu name="ТаблицаДокументовЭлектронныйДокументНомерДокументаОтправителяКонтекстноеМеню" id="64"/>
-									<ExtendedTooltip name="ТаблицаДокументовЭлектронныйДокументНомерДокументаОтправителяExtendedTooltip" id="130"/>
+									<ExtendedTooltip name="ТаблицаДокументовЭлектронныйДокументНомерДокументаОтправителяРасширеннаяПодсказка" id="130"/>
 								</InputField>
 								<InputField name="ТаблицаДокументовДатаДокумента" id="90">
 									<DataPath>ТаблицаДокументов.ДатаДокумента</DataPath>
 									<EditMode>EnterOnInput</EditMode>
 									<Width>8</Width>
 									<ContextMenu name="ТаблицаДокументовДатаДокументаКонтекстноеМеню" id="91"/>
-									<ExtendedTooltip name="ТаблицаДокументовДатаДокументаExtendedTooltip" id="131"/>
+									<ExtendedTooltip name="ТаблицаДокументовДатаДокументаРасширеннаяПодсказка" id="131"/>
 								</InputField>
 								<InputField name="ТаблицаДокументовСуммаДокумента" id="80">
 									<DataPath>ТаблицаДокументов.СуммаДокумента</DataPath>
@@ -583,7 +503,7 @@
 									</Title>
 									<EditMode>EnterOnInput</EditMode>
 									<ContextMenu name="ТаблицаДокументовСуммаДокументаКонтекстноеМеню" id="81"/>
-									<ExtendedTooltip name="ТаблицаДокументовСуммаДокументаExtendedTooltip" id="133"/>
+									<ExtendedTooltip name="ТаблицаДокументовСуммаДокументаРасширеннаяПодсказка" id="133"/>
 								</InputField>
 								<InputField name="ТаблицаДокументовЭлектронныйДокумент" id="21">
 									<DataPath>ТаблицаДокументов.ЭлектронныйДокумент</DataPath>
@@ -601,7 +521,7 @@
 									<OpenButton>true</OpenButton>
 									<ChoiceListButton>false</ChoiceListButton>
 									<ContextMenu name="ТаблицаДокументовЭлектронныйДокументКонтекстноеМеню" id="22"/>
-									<ExtendedTooltip name="ТаблицаДокументовЭлектронныйДокументExtendedTooltip" id="136"/>
+									<ExtendedTooltip name="ТаблицаДокументовЭлектронныйДокументРасширеннаяПодсказка" id="136"/>
 								</InputField>
 							</ChildItems>
 						</Table>
@@ -612,12 +532,12 @@
 									<v8:content>Группа кнопки назад</v8:content>
 								</v8:item>
 							</Title>
-							<ExtendedTooltip name="ГруппаКнопкиНазадExtendedTooltip" id="137"/>
+							<ExtendedTooltip name="ГруппаКнопкиНазадРасширеннаяПодсказка" id="137"/>
 							<ChildItems>
 								<Button name="ВернутьсяКСпискуСертификатов" id="47">
 									<Type>CommandBarButton</Type>
 									<CommandName>Form.Command.ВернутьсяКСпискуСертификатов</CommandName>
-									<ExtendedTooltip name="ВернутьсяКСпискуСертификатовExtendedTooltip" id="138"/>
+									<ExtendedTooltip name="ВернутьсяКСпискуСертификатовРасширеннаяПодсказка" id="138"/>
 								</Button>
 							</ChildItems>
 						</CommandBar>

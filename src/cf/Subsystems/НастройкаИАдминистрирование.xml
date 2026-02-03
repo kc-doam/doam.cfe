@@ -48,7 +48,6 @@
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ЖурналРегистрации48</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.УправлениеНастройкамиФорм48</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.РазместитьФайлыНачальногоОбраза</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ЗагрузкаДанныхИз1САрхива30</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.СведенияОПользователе</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.НастройкиСинхронизацииДанных</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">FilterCriterion.КонтрагентыПоГруппеДоступа</xr:Item>
@@ -148,20 +147,24 @@
 				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.ПереносДанныхПриложения</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.АдминистрированиеОбсуждений</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ПротоколРаботыССервисомРаспознавания</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.УничтожениеПерсональныхДанных</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects>
+			<Subsystem>АдминистрированиеМЭДО</Subsystem>
 			<Subsystem>БизнесСобытия</Subsystem>
 			<Subsystem>Метрики</Subsystem>
+			<Subsystem>МиграцияДанныхИзВнешнихСистем</Subsystem>
 			<Subsystem>МобильныйДокументооборот</Subsystem>
+			<Subsystem>ОтметкиВремени</Subsystem>
 			<Subsystem>Почта</Subsystem>
+			<Subsystem>Распознавание</Subsystem>
+			<Subsystem>РегламентированнаяОтчетностьДокументооборот</Subsystem>
 			<Subsystem>СВД</Subsystem>
 			<Subsystem>УдалениеУстаревшихДанных</Subsystem>
 			<Subsystem>УправлениеДоступом</Subsystem>
-			<Subsystem>ОтметкиВремени</Subsystem>
 			<Subsystem>ЧатБот</Subsystem>
 			<Subsystem>ЭДО</Subsystem>
-			<Subsystem>РегламентированнаяОтчетностьДокументооборот</Subsystem>
 		</ChildObjects>
 	</Subsystem>
 </MetaDataObject>

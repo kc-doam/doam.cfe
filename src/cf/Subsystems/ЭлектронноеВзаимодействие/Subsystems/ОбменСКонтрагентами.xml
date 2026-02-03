@@ -24,21 +24,38 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Enum.СпособыОбменаЭД</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Enum.ТипОбъектаСопоставленияНоменклатурыБЭД</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ДлительнаяОперация32БЭД</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ОбменСКонтрагентамиИнтеграцияКлиентСерверСобытия</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ОбменСКонтрагентамиГлобальный</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.КонтрольНеразделенныхНаборовЗаписейПриЗаписиЭДО</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DefinedType.ПартнерБЭД</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DefinedType.КонтрагентБЭД</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DefinedType.КонтрагентОбъектБЭД</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.МашиночитаемыеДоверенностиКонтрагентов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.МашиночитаемыеДоверенностиЭД</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.ТекущиеДелаЭДО</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.Логотип1СБольшойЭДО</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ПереченьСпециальныхОбстоятельствДокументаЭДО</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DefinedType.ВладелецФайлаВизуализацииЭДО</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ОчередьЗапросовВизуализацииЭДО</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.НастройкиЭлектроннойПодписиИШифрованияБЭД</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects>
-			<Subsystem>КонтекстныеПодсказкиБЭД</Subsystem>
+			<Subsystem>АвтоматическоеПолучениеЭДО</Subsystem>
+			<Subsystem>ВизуализацияЭДО</Subsystem>
 			<Subsystem>Диагностика</Subsystem>
 			<Subsystem>ИнтеграцияБРО</Subsystem>
+			<Subsystem>ИнтеграцияОблачногоЭДО</Subsystem>
+			<Subsystem>ИнтеграцияСРутокенМобильныйЭДО</Subsystem>
 			<Subsystem>ИнтеграцияСУчетнойСистемой</Subsystem>
-			<Subsystem>ИнтерфейсыЭДО</Subsystem>
+			<Subsystem>ИнтерфейсДокументовЭДО</Subsystem>
+			<Subsystem>КонтекстныеПодсказкиБЭД</Subsystem>
+			<Subsystem>МашиночитаемыеДоверенности</Subsystem>
 			<Subsystem>Настройки</Subsystem>
-			<Subsystem>РабочиеМеста</Subsystem>
-			<Subsystem>Синхронизация</Subsystem>
+			<Subsystem>Подключение1сТакском</Subsystem>
+			<Subsystem>Приглашения</Subsystem>
+			<Subsystem>СинхронизацияСлужебный</Subsystem>
 			<Subsystem>УстаревшиеОбъекты</Subsystem>
+			<Subsystem>УчетныеЗаписи</Subsystem>
 			<Subsystem>ЭлектронныеДокументы</Subsystem>
 		</ChildObjects>
 	</Subsystem>

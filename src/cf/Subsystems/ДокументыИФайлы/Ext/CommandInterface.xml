@@ -252,11 +252,6 @@
 				<xr:Common>false</xr:Common>
 			</Visibility>
 		</Command>
-		<Command name="InformationRegister.КонтрагентыНаМониторингеСПАРКРиски.Command.КонтрагентыНаМониторинге">
-			<Visibility>
-				<xr:Common>true</xr:Common>
-			</Visibility>
-		</Command>
 		<Command name="Constant.ИспользоватьМестаХранения.StandardCommand.Open">
 			<Visibility>
 				<xr:Common>false</xr:Common>
@@ -267,7 +262,7 @@
 				<xr:Common>false</xr:Common>
 			</Visibility>
 		</Command>
-		<Command name="DataProcessor.ИнтерфейсДокументовЭДОДокументооборот.StandardCommand.Open">
+		<Command name="InformationRegister.КонтрагентыНаМониторингеСПАРКРиски.Command.КонтрагентыНаМониторинге">
 			<Visibility>
 				<xr:Common>false</xr:Common>
 			</Visibility>
@@ -279,6 +274,10 @@
 			<Placement>Auto</Placement>
 		</Command>
 		<Command name="DataProcessor.ОбменСКонтрагентами.Command.ОткрытьТекущиеДелаЭДО">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="DataProcessor.ТекущиеДелаМЭДО.Command.ОткрытьТекущиеДелаМЭДО">
 			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
 			<Placement>Auto</Placement>
 		</Command>
@@ -350,11 +349,72 @@
 		<Command name="DataProcessor.ИнтерфейсДокументовЭДОДокументооборот.Command.ДокументыКОтправкеПоЭДО">
 			<CommandGroup>ActionsPanelTools</CommandGroup>
 		</Command>
-		<Command name="DataProcessor.ИнтерфейсДокументовЭДОДокументооборот.StandardCommand.Open">
-			<CommandGroup>ActionsPanelTools</CommandGroup>
+		<Command name="Catalog.ВопросыДеятельности.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Catalog.ДелаХраненияДокументов.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Catalog.Инструкции.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Catalog.КатегорииДанных.Command.ПроверкаКатегорий">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Catalog.КатегорииДанных.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Catalog.Контрагенты.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Catalog.НоменклатураДел.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Catalog.Файлы.Command.ВсеФайлы">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Catalog.Файлы.Command.ЗанятыеФайлы">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="CommonCommand.ВсеОтчетыДокументыИФайлы">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="CommonCommand.ПроверкаЗагруженныхДанных">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="CommonCommand.ШаблоныДокументов">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ОбменСКонтрагентами.Command.ОткрытьТекущиеДелаЭДО">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ОтправкаДокументовПоСВД.Command.ОтправкаДокументовПоСВД">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="DataProcessor.ТекущиеДелаМЭДО.Command.ОткрытьТекущиеДелаМЭДО">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Document.ПередачаДелВАрхив.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Document.УничтожениеДел.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="Document.АктОбУничтоженииПерсональныхДанных.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="DocumentJournal.СогласияНаОбработкуПерсональныхДанных.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="InformationRegister.ЖурналПередачиДокументов.Command.ОткрытьФормуСписка">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
+		</Command>
+		<Command name="InformationRegister.ФайлыДокументовГотовыхКОтправкеПоСВД.StandardCommand.OpenList">
+			<CommandGroup>NavigationPanelOrdinary</CommandGroup>
 		</Command>
 	</CommandsOrder>
 	<GroupsOrder>
 		<Group>ActionsPanelTools</Group>
+		<Group>NavigationPanelOrdinary</Group>
 	</GroupsOrder>
 </CommandInterface>

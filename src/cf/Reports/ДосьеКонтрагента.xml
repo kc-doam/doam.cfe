@@ -35,15 +35,17 @@
 		</Properties>
 		<ChildObjects>
 			<Form>Форма</Form>
+			<Template>АнализОтчетности</Template>
+			<Template>БухгалтерскаяОтчетность</Template>
 			<Template>Главное</Template>
 			<Template>ДанныеГосРеестров</Template>
-			<Template>БухгалтерскаяОтчетность</Template>
-			<Template>АнализОтчетности</Template>
-			<Template>ФинансовыйАнализ</Template>
 			<Template>ДанныеПрограммы</Template>
+			<Template>Налоги</Template>
+			<Template>ОшибкиОтчета</Template>
+			<Template>ПредельныеЗначенияРентабельности2017</Template>
 			<Template>ПредельныеЗначенияРентабельностиИНалоговойНагрузки</Template>
 			<Template>Проверки</Template>
-			<Template>ПредельныеЗначенияРентабельности2017</Template>
+			<Template>ФинансовыйАнализ</Template>
 			<Command uuid="17bc1760-fcd9-4c86-a7bd-89c7883f1abe">
 				<Properties>
 					<Name>Досье</Name>

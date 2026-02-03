@@ -30,6 +30,7 @@
 		<ChildObjects>
 			<Form>Форма</Form>
 			<Form>ВыборИсправлений</Form>
+			<Form>НастройкаЗагрузкиИсправлений</Form>
 			<Template>СозданиеРезервнойКопииИнформационнойБазы_ru</Template>
 		</ChildObjects>
 	</DataProcessor>

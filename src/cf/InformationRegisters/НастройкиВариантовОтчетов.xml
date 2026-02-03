@@ -170,13 +170,13 @@
 			<ExecuteAfterWriteDataHistoryVersionProcessing>false</ExecuteAfterWriteDataHistoryVersionProcessing>
 		</Properties>
 		<ChildObjects>
-			<Resource uuid="4f10e5f9-6cfd-4fa9-9c72-d19a484a796c">
+			<Resource uuid="b94e805f-e1ab-4870-b855-98aa401864b2">
 				<Properties>
-					<Name>Видимость</Name>
+					<Name>БыстрыйДоступ</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Видимость</v8:content>
+							<v8:content>Быстрый доступ</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -189,7 +189,7 @@
 					<ToolTip>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Видимость варианта отчета в указанном разделе для указанного пользователя.</v8:content>
+							<v8:content>Показывать указанный вариант отчета в группе быстрого доступа в указанном разделе для указанного пользователя.</v8:content>
 						</v8:item>
 					</ToolTip>
 					<MarkNegatives>false</MarkNegatives>
@@ -214,13 +214,13 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Resource>
-			<Resource uuid="b94e805f-e1ab-4870-b855-98aa401864b2">
+			<Resource uuid="4f10e5f9-6cfd-4fa9-9c72-d19a484a796c">
 				<Properties>
-					<Name>БыстрыйДоступ</Name>
+					<Name>Видимость</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Быстрый доступ</v8:content>
+							<v8:content>Видимость</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -233,7 +233,7 @@
 					<ToolTip>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Показывать указанный вариант отчета в группе быстрого доступа в указанном разделе для указанного пользователя.</v8:content>
+							<v8:content>Видимость варианта отчета в указанном разделе для указанного пользователя.</v8:content>
 						</v8:item>
 					</ToolTip>
 					<MarkNegatives>false</MarkNegatives>

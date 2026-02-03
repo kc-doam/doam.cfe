@@ -11,6 +11,16 @@
 		</right>
 	</object>
 	<object>
+		<name>Catalog.ВнутренниеДокументы</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>#ПоНаличиюЗадач("")</condition>
+			</restrictionByCondition>
+		</right>
+	</object>
+	<object>
 		<name>InformationRegister.ДанныеБизнесПроцессов.Resource.Дата</name>
 		<right>
 			<name>View</name>
@@ -30,6 +40,26 @@
 		<right>
 			<name>View</name>
 			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Document.ИсходящееПисьмо</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>#ПоНаличиюЗадач("")</condition>
+			</restrictionByCondition>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.ВходящиеДокументы</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>#ПоНаличиюЗадач("")</condition>
+			</restrictionByCondition>
 		</right>
 	</object>
 	<object>
@@ -731,6 +761,13 @@
 		</right>
 	</object>
 	<object>
+		<name>Catalog.ВидыВходящихДокументов</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>InformationRegister.ДанныеБизнесПроцессов.Resource.Состояние</name>
 		<right>
 			<name>View</name>
@@ -786,10 +823,13 @@
 		</right>
 	</object>
 	<object>
-		<name>Catalog.ВнутренниеДокументы.Attribute.ДатаРегистрации</name>
+		<name>Catalog.Контрагенты</name>
 		<right>
-			<name>Edit</name>
-			<value>false</value>
+			<name>Read</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>#ПоНаличиюЗадач("")</condition>
+			</restrictionByCondition>
 		</right>
 	</object>
 	<object>
@@ -1314,13 +1354,6 @@
 			<name>View</name>
 			<value>false</value>
 		</right>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
-		<name>Catalog.ВнутренниеДокументы.Attribute.РегистрационныйНомер</name>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
@@ -1992,6 +2025,13 @@
 		</right>
 	</object>
 	<object>
+		<name>Catalog.ВидыВнутреннихДокументов</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>BusinessProcess.Согласование.Attribute.Описание</name>
 		<right>
 			<name>View</name>
@@ -2182,6 +2222,26 @@
 		</right>
 	</object>
 	<object>
+		<name>Catalog.ИсходящиеДокументы</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>#ПоНаличиюЗадач("")</condition>
+			</restrictionByCondition>
+		</right>
+	</object>
+	<object>
+		<name>Document.ВходящееПисьмо</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>#ПоНаличиюЗадач("")</condition>
+			</restrictionByCondition>
+		</right>
+	</object>
+	<object>
 		<name>BusinessProcess.Исполнение.TabularSection.Исполнители.Attribute.УдалитьИсполнитель</name>
 		<right>
 			<name>View</name>
@@ -2204,6 +2264,13 @@
 		</right>
 	</object>
 	<object>
+		<name>Catalog.ВидыИсходящихДокументов</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>BusinessProcess.Поручение.Attribute.УдалитьИсполнитель</name>
 		<right>
 			<name>View</name>
@@ -2215,10 +2282,13 @@
 		</right>
 	</object>
 	<object>
-		<name>Catalog.ИсходящиеДокументы.Attribute.РегистрационныйНомер</name>
+		<name>Catalog.СообщенияОбсуждений</name>
 		<right>
-			<name>Edit</name>
-			<value>false</value>
+			<name>Read</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>#ПоНаличиюЗадач("")</condition>
+			</restrictionByCondition>
 		</right>
 	</object>
 	<object>
@@ -2581,6 +2651,20 @@
 		</right>
 	</object>
 	<object>
+		<name>Catalog.Файлы</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>#ПоНаличиюЗадач("ВладелецФайла")</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>InformationRegister.ДанныеБизнесПроцессов.Resource.Номер</name>
 		<right>
 			<name>View</name>
@@ -2600,6 +2684,20 @@
 		<right>
 			<name>Edit</name>
 			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.ВерсииФайлов</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>#ПоНаличиюЗадач("Владелец.ВладелецФайла")</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
 		</right>
 	</object>
 	<object>
@@ -2786,13 +2884,6 @@
 		</right>
 	</object>
 	<object>
-		<name>Catalog.ИсходящиеДокументы.Attribute.ДатаРегистрации</name>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
 		<name>BusinessProcess.Согласование.TabularSection.Исполнители</name>
 		<right>
 			<name>View</name>
@@ -2815,6 +2906,16 @@
 		</right>
 	</object>
 	<object>
+		<name>Catalog.Мероприятия</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>#ПоНаличиюЗадач("")</condition>
+			</restrictionByCondition>
+		</right>
+	</object>
+	<object>
 		<name>BusinessProcess.Согласование.Attribute.УдалитьСрокИсполнения</name>
 		<right>
 			<name>View</name>
@@ -2823,6 +2924,13 @@
 		<right>
 			<name>Edit</name>
 			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.ВидыМероприятий</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
 		</right>
 	</object>
 	<object>
@@ -2951,6 +3059,31 @@
 
 #Если "#Параметр(6)" = "" #Тогда
 #КонецЕсли
+</condition>
+	</restrictionTemplate>
+	<restrictionTemplate>
+		<name>ПоНаличиюЗадач</name>
+		<condition>// Должно быть право на файлы предметов, если по ним есть задачи, т.к. они видны и открываются из карточек задач.
+//
+// Параметр(1) - имя поля, указывающее на объект, чьи права будут проанализированы
+//	по умолчанию "Ссылка"
+//
+// Примеры использования шаблона:
+//
+// #ПоНаличиюЗадач("") // Большинство случаев.
+// #ПоНаличиюЗадач("ВладелецФайла") // Для файлов.
+// #ПоНаличиюЗадач("Владелец.ВладелецФайла") // Для версий файлов.
+
+ТекущаяТаблица ИЗ #ТекущаяТаблица КАК ТекущаяТаблица
+ЛЕВОЕ СОЕДИНЕНИЕ
+Задача.ЗадачаИсполнителя.Предметы КАК ПредметыТЧ
+	#Если "#Параметр(1)" = "" #Тогда
+	ПО ПредметыТЧ.Предмет = ТекущаяТаблица.Ссылка
+	#Иначе
+	ПО ПредметыТЧ.Предмет = ТекущаяТаблица.#Параметр(1)
+	#КонецЕсли
+ГДЕ
+	НЕ ПредметыТЧ.Предмет ЕСТЬ NULL
 </condition>
 	</restrictionTemplate>
 </Rights>

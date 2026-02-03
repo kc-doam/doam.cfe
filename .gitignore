@@ -1,15 +1,17 @@
-build/
-src/**/ConfigDumpInfo.xml
-*Signature.bin
+/.VSCodeCounter/
+/build/
+# Информационная база
+*.dt
+*.n1
 # Конфигурация
 *.cf
 # Расширение конфигурации, исправления, обновления
 *.cf[eu]
-# Информационная база
-*.dt
-*.n1
-# Внешняя обработка
-*.epf
 
 *.rar
 *.zip
+*Signature.bin
+!/src/**/Picture/Picture.zip
+/src/**/ConfigDumpInfo.xml
+# Внешняя обработка
+*.epf

@@ -42,23 +42,23 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Enum.ПричиныОстановкиЭДО</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ВидыДокументовЭДО</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.СостоянияДокументовЭДО</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ПакетыДокументовЭДО</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.СоставПакетовДокументовЭДО</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ЭлектронныеДокументыЭДОВызовСервера</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ЭлектронныеДокументыЭДОКлиент</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ЭлектронныеДокументыЭДОКлиентСервер</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Enum.СостоянияСообщенийЭДО</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ПростыеЭлектронныеПодписи</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.РезультатыПроверкиМЧДОператором</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ЭлектронныеДокументыЭДОКлиентСобытия</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ЭлектронныеДокументыЭДОПовтИспНаВызов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ТипыДокументовЭДО</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects>
-			<Subsystem>МенеджерРегламентов</Subsystem>
+			<Subsystem>ИнтерфейсДокументовЭДО</Subsystem>
 			<Subsystem>МенеджерФорматов</Subsystem>
-			<Subsystem>МенеджерВидовДокументов</Subsystem>
-			<Subsystem>ОбработкаДополнительныхДанных</Subsystem>
-			<Subsystem>КонвертацияЭлектронныхДокументов</Subsystem>
 			<Subsystem>ПодключаемыеКоманды</Subsystem>
-			<Subsystem>ВнутренниеДокументы</Subsystem>
+			<Subsystem>ПрочтенностьДокументовЭДО</Subsystem>
+			<Subsystem>ЭлектронныеДокументыСлужебный</Subsystem>
 		</ChildObjects>
 	</Subsystem>
 </MetaDataObject>

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
 	<Width>87</Width>
 	<CommandSet>
 		<ExcludedCommand>Copy</ExcludedCommand>
@@ -201,18 +201,6 @@
 									</Button>
 								</ChildItems>
 							</ButtonGroup>
-							<Button name="ФормаПросмотретьТекстовыйОбраз" id="154">
-								<Type>CommandBarButton</Type>
-								<CommandName>Form.Command.ОткрытьТекстовыйОбраз</CommandName>
-								<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
-								<ExtendedTooltip name="ФормаПросмотретьТекстовыйОбразExtendedTooltip" id="359"/>
-							</Button>
-							<Button name="ФормаРаспознать" id="155">
-								<Type>CommandBarButton</Type>
-								<CommandName>Form.Command.Распознать</CommandName>
-								<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
-								<ExtendedTooltip name="ФормаРаспознатьExtendedTooltip" id="360"/>
-							</Button>
 						</ChildItems>
 					</Popup>
 				</ChildItems>
@@ -331,6 +319,35 @@
 					</Button>
 				</ChildItems>
 			</ButtonGroup>
+			<Popup name="ГруппаРаспознавание" id="742">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Распознавание</v8:content>
+					</v8:item>
+				</Title>
+				<ToolTip>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Группа распознавание</v8:content>
+					</v8:item>
+				</ToolTip>
+				<ExtendedTooltip name="ГруппаРаспознаваниеРасширеннаяПодсказка" id="743"/>
+				<ChildItems>
+					<Button name="ФормаРаспознать" id="155">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.Распознать</CommandName>
+						<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+						<ExtendedTooltip name="ФормаРаспознатьExtendedTooltip" id="360"/>
+					</Button>
+					<Button name="ФормаПросмотретьТекстовыйОбраз" id="154">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ОткрытьТекстовыйОбраз</CommandName>
+						<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+						<ExtendedTooltip name="ФормаПросмотретьТекстовыйОбразExtendedTooltip" id="359"/>
+					</Button>
+				</ChildItems>
+			</Popup>
 			<Popup name="ГруппаШтрихкоды" id="262">
 				<Title>
 					<v8:item>
@@ -461,6 +478,7 @@
 				</v8:item>
 			</ToolTip>
 			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаОсновнаяExtendedTooltip" id="379"/>
@@ -479,6 +497,7 @@
 						</v8:item>
 					</ToolTip>
 					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="ГруппаОсновныеДанныеExtendedTooltip" id="380"/>
@@ -548,6 +567,7 @@
 				</v8:item>
 			</ToolTip>
 			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаКнопкиИИконкиРасширеннаяПодсказка" id="517"/>
@@ -566,6 +586,7 @@
 						</v8:item>
 					</ToolTip>
 					<Group>Horizontal</Group>
+					<Behavior>Usual</Behavior>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="ГруппаКнопокРасширеннаяПодсказка" id="519"/>
@@ -705,6 +726,7 @@
 								</v8:item>
 							</ToolTip>
 							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="ГруппаКолонкаЛевоРасширеннаяПодсказка" id="539"/>
@@ -723,6 +745,7 @@
 										</v8:item>
 									</ToolTip>
 									<Group>Horizontal</Group>
+									<Behavior>Usual</Behavior>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="ГруппаИконкаОтступРасширеннаяПодсказка" id="541"/>
@@ -816,6 +839,7 @@
 								</v8:item>
 							</ToolTip>
 							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="ГруппаКолонкаПравоРасширеннаяПодсказка" id="549"/>
@@ -834,6 +858,7 @@
 										</v8:item>
 									</ToolTip>
 									<Group>Horizontal</Group>
+									<Behavior>Usual</Behavior>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="ГруппаИмяИПолныйПутьРасширеннаяПодсказка" id="642"/>
@@ -861,6 +886,7 @@
 										</v8:item>
 									</ToolTip>
 									<Group>Vertical</Group>
+									<Behavior>Usual</Behavior>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="ГруппаРазмерФайлаРасширеннаяПодсказка" id="613"/>
@@ -887,6 +913,7 @@
 												</v8:item>
 											</ToolTip>
 											<Group>Horizontal</Group>
+											<Behavior>Usual</Behavior>
 											<Representation>None</Representation>
 											<ShowTitle>false</ShowTitle>
 											<ExtendedTooltip name="ГруппаВладелецРасширеннаяПодсказка" id="653"/>
@@ -972,6 +999,7 @@
 										</v8:item>
 									</ToolTip>
 									<Group>Horizontal</Group>
+									<Behavior>Usual</Behavior>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="ГруппаСостоянияExtendedTooltip" id="593"/>
@@ -1121,6 +1149,7 @@
 								</v8:item>
 							</ToolTip>
 							<Group>Horizontal</Group>
+							<Behavior>Usual</Behavior>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="ГруппаКатегорииExtendedTooltip" id="422"/>
@@ -1139,6 +1168,7 @@
 										</v8:item>
 									</ToolTip>
 									<Group>Vertical</Group>
+									<Behavior>Usual</Behavior>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="ГруппаСписокИПояснениеExtendedTooltip" id="423"/>
@@ -1299,6 +1329,7 @@
 												</v8:item>
 											</ToolTip>
 											<Group>Horizontal</Group>
+											<Behavior>Usual</Behavior>
 											<Representation>None</Representation>
 											<ShowTitle>false</ShowTitle>
 											<ExtendedTooltip name="ГруппаСтатусыExtendedTooltip" id="431"/>
@@ -1779,6 +1810,11 @@
 										<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
 										<ExtendedTooltip name="ТаблицаПодписейОбновитьСписокПодписейРасширеннаяПодсказка" id="673"/>
 									</Button>
+									<Button name="ТаблицаПодписейПродлитьДействиеПодписей" id="737">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ПродлитьДействиеПодписей</CommandName>
+										<ExtendedTooltip name="ТаблицаПодписейПродлитьДействиеПодписейРасширеннаяПодсказка" id="738"/>
+									</Button>
 								</ChildItems>
 							</AutoCommandBar>
 							<ExtendedTooltip name="ЭлектронныеПодписиРасширеннаяПодсказка" id="462"/>
@@ -1813,13 +1849,12 @@
 								<Event name="BeforeRowChange">ТаблицаПодписейПередНачаломИзменения</Event>
 							</Events>
 							<ChildItems>
-								<InputField name="ТаблицаПодписейКомуВыданСертификат" id="162">
-									<DataPath>ЭлектронныеПодписи.КомуВыданСертификат</DataPath>
-									<EditMode>EnterOnInput</EditMode>
+								<InputField name="ТаблицаПодписейАвторПодписи" id="739">
+									<DataPath>ЭлектронныеПодписи.АвторПодписи</DataPath>
 									<Width>19</Width>
 									<HorizontalStretch>false</HorizontalStretch>
-									<ContextMenu name="ТаблицаПодписейКомуВыданСертификатКонтекстноеМеню" id="163"/>
-									<ExtendedTooltip name="ТаблицаПодписейКомуВыданСертификатExtendedTooltip" id="463"/>
+									<ContextMenu name="ТаблицаПодписейАвторПодписиКонтекстноеМеню" id="740"/>
+									<ExtendedTooltip name="ТаблицаПодписейАвторПодписиРасширеннаяПодсказка" id="741"/>
 								</InputField>
 								<InputField name="ТаблицаПодписейДатаПодписи" id="164">
 									<DataPath>ЭлектронныеПодписи.ДатаПодписи</DataPath>
@@ -1975,6 +2010,7 @@
 							</ToolTip>
 							<HorizontalStretch>false</HorizontalStretch>
 							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
 							<Representation>NormalSeparation</Representation>
 							<ExtendedTooltip name="ГруппаСведенияExtendedTooltip" id="395"/>
 							<ChildItems>
@@ -2015,6 +2051,7 @@
 										</v8:item>
 									</ToolTip>
 									<Group>Horizontal</Group>
+									<Behavior>Usual</Behavior>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="ГруппаРедактируетExtendedTooltip" id="398"/>
@@ -2083,6 +2120,7 @@
 										</v8:item>
 									</ToolTip>
 									<Group>Horizontal</Group>
+									<Behavior>Usual</Behavior>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="ГруппаРасширениеExtendedTooltip" id="404"/>
@@ -2146,6 +2184,7 @@
 										</v8:item>
 									</ToolTip>
 									<Group>Horizontal</Group>
+									<Behavior>Usual</Behavior>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="ГруппаИзвлеченРаспознанРасширеннаяПодсказка" id="655"/>
@@ -2236,6 +2275,7 @@
 								</v8:item>
 							</ToolTip>
 							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
 							<Representation>NormalSeparation</Representation>
 							<ExtendedTooltip name="ГруппаВерсияExtendedTooltip" id="410"/>
 							<ChildItems>
@@ -2278,6 +2318,7 @@
 										</v8:item>
 									</ToolTip>
 									<Group>Vertical</Group>
+									<Behavior>Usual</Behavior>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="ГруппаДатExtendedTooltip" id="413"/>
@@ -2331,6 +2372,7 @@
 										</v8:item>
 									</ToolTip>
 									<Group>Horizontal</Group>
+									<Behavior>Usual</Behavior>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="ГруппаРазмерExtendedTooltip" id="416"/>
@@ -2727,6 +2769,57 @@
 					</Title>
 					<Type>
 						<v8:Type>v8:UUID</v8:Type>
+					</Type>
+				</Column>
+				<Column name="АвторПодписи" id="70">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Автор</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Доверенность" id="71">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Доверенность</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:TypeSet>cfg:DefinedType.МашиночитаемаяДоверенность</v8:TypeSet>
+					</Type>
+				</Column>
+				<Column name="ДоверенностьВерна" id="72">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Доверенность верна</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="СрокДействияПоследнейМеткиВремени" id="73">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Срок действия последней метки времени</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>DateTime</v8:DateFractions>
+						</v8:DateQualifiers>
 					</Type>
 				</Column>
 			</Columns>
@@ -4098,7 +4191,7 @@
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Открыть текстовый образ</v8:content>
+					<v8:content>Открыть распознанный текст</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>
@@ -4123,10 +4216,15 @@
 					<v8:content>Распознать</v8:content>
 				</v8:item>
 			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.РаспознаваниеДокументов</xr:Ref>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
+			</Picture>
 			<Action>Распознать</Action>
 			<FunctionalOptions>
 				<Item>FunctionalOption.ИспользоватьРаспознавание</Item>
 			</FunctionalOptions>
+			<Representation>TextPicture</Representation>
 			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
 		<Command name="ОткрытьПодпись" id="15">
@@ -4599,7 +4697,18 @@
 			</Picture>
 			<Action>Удалить</Action>
 			<ModifiesSavedData>true</ModifiesSavedData>
-			<AssociatedTableElementId xsi:type="xs:string">2:02023637-7868-4a5f-8576-835a76e0c9ba</AssociatedTableElementId>
+		</Command>
+		<Command name="ПродлитьДействиеПодписей" id="38">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Продлить действие</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ПродлитьДействиеПодписей</Action>
+			<FunctionalOptions>
+				<Item>FunctionalOption.ИспользоватьЭлектронныеПодписи</Item>
+			</FunctionalOptions>
 		</Command>
 	</Commands>
 	<Parameters>
@@ -4673,7 +4782,7 @@
 				<DefaultVisible>false</DefaultVisible>
 			</Item>
 			<Item>
-				<Command>4:eb3dfdc7-58b8-4b1f-b079-368c262364c9</Command>
+				<Command>0</Command>
 				<Type>Auto</Type>
 				<DefaultVisible>false</DefaultVisible>
 			</Item>
@@ -4724,7 +4833,7 @@
 				</Visible>
 			</Item>
 			<Item>
-				<Command>2:679bd72a-4cf8-4c2e-ae00-3f01f48050c4</Command>
+				<Command>0</Command>
 				<Type>Auto</Type>
 				<CommandGroup>FormCommandBarCreateBasedOn</CommandGroup>
 				<Index>2</Index>
@@ -4734,7 +4843,7 @@
 				</Visible>
 			</Item>
 			<Item>
-				<Command>2:3b9d376f-cd28-4f84-b8a8-686da09f0e46</Command>
+				<Command>0</Command>
 				<Type>Auto</Type>
 				<CommandGroup>FormCommandBarCreateBasedOn</CommandGroup>
 				<Index>4</Index>
@@ -4744,7 +4853,7 @@
 				</Visible>
 			</Item>
 			<Item>
-				<Command>2:57067371-06db-46dc-a7e9-c76d28e21071</Command>
+				<Command>0</Command>
 				<Type>Auto</Type>
 				<CommandGroup>FormCommandBarCreateBasedOn</CommandGroup>
 				<Index>5</Index>
@@ -4754,7 +4863,7 @@
 				</Visible>
 			</Item>
 			<Item>
-				<Command>2:efd06081-12d1-4734-9015-bff31c9f7966</Command>
+				<Command>0</Command>
 				<Type>Auto</Type>
 				<CommandGroup>FormCommandBarCreateBasedOn</CommandGroup>
 				<Index>9</Index>
@@ -4764,7 +4873,7 @@
 				</Visible>
 			</Item>
 			<Item>
-				<Command>2:28f131c2-f971-4a8c-bfc4-23f8606a7536</Command>
+				<Command>0</Command>
 				<Type>Auto</Type>
 				<CommandGroup>FormCommandBarCreateBasedOn</CommandGroup>
 				<Index>6</Index>
@@ -4791,13 +4900,13 @@
 				<Index>3</Index>
 			</Item>
 			<Item>
-				<Command>3:fb475df2-d71c-43ca-808b-fd458f938153</Command>
+				<Command>0</Command>
 				<Type>Auto</Type>
 				<CommandGroup>FormCommandBarCreateBasedOn</CommandGroup>
 				<Index>7</Index>
 			</Item>
 			<Item>
-				<Command>2:dab6706c-e0f7-4dc9-8fac-95b1dfcbf05c</Command>
+				<Command>0</Command>
 				<Type>Auto</Type>
 				<DefaultVisible>false</DefaultVisible>
 				<Visible>
@@ -4823,7 +4932,7 @@
 				</Visible>
 			</Item>
 			<Item>
-				<Command>0:1823d37a-3b32-4031-8996-56796c8dbe41</Command>
+				<Command>0</Command>
 				<Type>Auto</Type>
 				<DefaultVisible>false</DefaultVisible>
 				<Visible>

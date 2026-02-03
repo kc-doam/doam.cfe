@@ -21,12 +21,12 @@
 			</Synonym>
 			<Comment/>
 			<UseStandardCommands>true</UseStandardCommands>
-			<DefaultForm>Report.ЖурналПередачи.Form.ФормаОтчета</DefaultForm>
+			<DefaultForm>CommonForm.ФормаОтчета</DefaultForm>
 			<AuxiliaryForm/>
 			<MainDataCompositionSchema>Report.ЖурналПередачи.Template.ОсновнаяСхемаКомпоновкиДанных</MainDataCompositionSchema>
-			<DefaultSettingsForm/>
+			<DefaultSettingsForm>CommonForm.ФормаНастроекОтчета</DefaultSettingsForm>
 			<AuxiliarySettingsForm/>
-			<DefaultVariantForm/>
+			<DefaultVariantForm>CommonForm.ФормаВариантаОтчета</DefaultVariantForm>
 			<VariantsStorage>SettingsStorage.ХранилищеВариантовОтчетов</VariantsStorage>
 			<SettingsStorage/>
 			<IncludeHelpInContents>true</IncludeHelpInContents>
@@ -40,13 +40,13 @@
 		</Properties>
 		<ChildObjects>
 			<Form>ФормаОтчета</Form>
-			<Template>ОсновнаяСхемаКомпоновкиДанных</Template>
-			<Template>ОбразецОтчетаДокументыУИсполнителей</Template>
 			<Template>ОбразецОтчетаДокументыНеВозвращенныеВСрок</Template>
-			<Template>ОбразецОтчетаДокументыУКонтрагентов</Template>
 			<Template>ОбразецОтчетаДокументыНеВозвращенныеВСрокКонтрагентами</Template>
-			<Template>ОбразецОтчетаСотрудникиЧастоЗадерживающиеДокументы</Template>
+			<Template>ОбразецОтчетаДокументыУИсполнителей</Template>
+			<Template>ОбразецОтчетаДокументыУКонтрагентов</Template>
 			<Template>ОбразецОтчетаКонтрагентыЧастоЗадерживающиеДокументы</Template>
+			<Template>ОбразецОтчетаСотрудникиЧастоЗадерживающиеДокументы</Template>
+			<Template>ОсновнаяСхемаКомпоновкиДанных</Template>
 		</ChildObjects>
 	</Report>
 </MetaDataObject>

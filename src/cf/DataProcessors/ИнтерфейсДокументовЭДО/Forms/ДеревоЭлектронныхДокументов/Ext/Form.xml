@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
 	<Title>
 		<v8:item>
 			<v8:lang>ru</v8:lang>
@@ -21,7 +21,7 @@
 					<xr:Ref>StdPicture.Refresh</xr:Ref>
 					<xr:LoadTransparent>true</xr:LoadTransparent>
 				</Picture>
-				<ExtendedTooltip name="ОбновитьExtendedTooltip" id="46"/>
+				<ExtendedTooltip name="ОбновитьРасширеннаяПодсказка" id="46"/>
 			</Button>
 			<Button name="ФормаУстановитьАктуальныйДокументооборот" id="74">
 				<Type>CommandBarButton</Type>
@@ -45,14 +45,14 @@
 				</Title>
 				<RepresentationInContextMenu>OnlyInContextMenu</RepresentationInContextMenu>
 				<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
-				<ExtendedTooltip name="ЖурналСобытийExtendedTooltip" id="47"/>
+				<ExtendedTooltip name="ЖурналСобытийРасширеннаяПодсказка" id="47"/>
 			</Button>
 			<Button name="ФормаОбработкаЭлектронныеДокументыОтправитьИПолучитьЭД" id="43">
 				<Type>CommandBarButton</Type>
 				<CommandName>Form.Command.ОтправитьПолучитьЭлектронныеДокументы</CommandName>
 				<RepresentationInContextMenu>OnlyInContextMenu</RepresentationInContextMenu>
 				<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
-				<ExtendedTooltip name="ФормаОбработкаЭлектронныеДокументыОтправитьИПолучитьЭДExtendedTooltip" id="48"/>
+				<ExtendedTooltip name="ФормаОбработкаЭлектронныеДокументыОтправитьИПолучитьЭДРасширеннаяПодсказка" id="48"/>
 			</Button>
 		</ChildItems>
 	</AutoCommandBar>
@@ -83,9 +83,10 @@
 				</v8:item>
 			</Title>
 			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
-			<ExtendedTooltip name="ГруппаОтчетExtendedTooltip" id="49"/>
+			<ExtendedTooltip name="ГруппаОтчетРасширеннаяПодсказка" id="49"/>
 			<ChildItems>
 				<Table name="ДеревоПодчиненныеЭД" id="19">
 					<Representation>Tree</Representation>
@@ -119,7 +120,7 @@
 					<AutoCommandBar name="ДеревоПодчиненныеЭДКоманднаяПанель" id="21">
 						<Autofill>false</Autofill>
 					</AutoCommandBar>
-					<ExtendedTooltip name="ДеревоПодчиненныеЭДExtendedTooltip" id="50"/>
+					<ExtendedTooltip name="ДеревоПодчиненныеЭДРасширеннаяПодсказка" id="50"/>
 					<SearchStringAddition name="ДеревоПодчиненныеЭДСтрокаПоиска" id="59">
 						<AdditionSource>
 							<Item>ДеревоПодчиненныеЭД</Item>
@@ -159,14 +160,14 @@
 								</v8:item>
 							</Title>
 							<EditMode>EnterOnInput</EditMode>
-							<ContextMenu name="ДеревоПодчиненныеЭДПредставлениеКонтекстноеМеню" id="23"/>
-							<ExtendedTooltip name="ДеревоПодчиненныеЭДПредставлениеExtendedTooltip" id="51"/>
+							<ContextMenu name="ДеревоПодчиненныеЭДНаименованиеКонтекстноеМеню" id="23"/>
+							<ExtendedTooltip name="ДеревоПодчиненныеЭДНаименованиеРасширеннаяПодсказка" id="51"/>
 						</InputField>
 						<InputField name="ДеревоПодчиненныеЭДВерсия" id="44">
 							<DataPath>ДеревоПодчиненныеЭД.Версия</DataPath>
 							<EditMode>EnterOnInput</EditMode>
 							<ContextMenu name="ДеревоПодчиненныеЭДВерсияКонтекстноеМеню" id="45"/>
-							<ExtendedTooltip name="ДеревоПодчиненныеЭДВерсияExtendedTooltip" id="52"/>
+							<ExtendedTooltip name="ДеревоПодчиненныеЭДВерсияРасширеннаяПодсказка" id="52"/>
 						</InputField>
 						<ColumnGroup name="ГруппаСтатус" id="38">
 							<Title>
@@ -176,7 +177,7 @@
 								</v8:item>
 							</Title>
 							<Group>InCell</Group>
-							<ExtendedTooltip name="ГруппаСтатусExtendedTooltip" id="53"/>
+							<ExtendedTooltip name="ГруппаСтатусРасширеннаяПодсказка" id="53"/>
 							<ChildItems>
 								<InputField name="ДеревоПодчиненныеЭДСтатус" id="36">
 									<DataPath>ДеревоПодчиненныеЭД.Статус</DataPath>
@@ -187,8 +188,8 @@
 										</v8:item>
 									</Title>
 									<EditMode>EnterOnInput</EditMode>
-									<ContextMenu name="ДеревоПодчиненныеЭДСтатусЭДКонтекстноеМеню" id="37"/>
-									<ExtendedTooltip name="ДеревоПодчиненныеЭДСтатусЭДExtendedTooltip" id="54"/>
+									<ContextMenu name="ДеревоПодчиненныеЭДСтатусКонтекстноеМеню" id="37"/>
+									<ExtendedTooltip name="ДеревоПодчиненныеЭДСтатусРасширеннаяПодсказка" id="54"/>
 								</InputField>
 								<InputField name="ДеревоПодчиненныеЭДДатаИзмененияСтатуса" id="39">
 									<DataPath>ДеревоПодчиненныеЭД.ДатаИзмененияСтатуса</DataPath>
@@ -200,8 +201,8 @@
 									</Title>
 									<TitleLocation>None</TitleLocation>
 									<EditMode>EnterOnInput</EditMode>
-									<ContextMenu name="ДеревоПодчиненныеЭДДатаИзмененияСтатусаЭДКонтекстноеМеню" id="40"/>
-									<ExtendedTooltip name="ДеревоПодчиненныеЭДДатаИзмененияСтатусаЭДExtendedTooltip" id="55"/>
+									<ContextMenu name="ДеревоПодчиненныеЭДДатаИзмененияСтатусаКонтекстноеМеню" id="40"/>
+									<ExtendedTooltip name="ДеревоПодчиненныеЭДДатаИзмененияСтатусаРасширеннаяПодсказка" id="55"/>
 								</InputField>
 							</ChildItems>
 						</ColumnGroup>
@@ -259,7 +260,7 @@
 						</v8:item>
 					</Title>
 					<Type>
-						<v8:TypeSet>cfg:AnyRef</v8:TypeSet>
+						<v8:TypeSet>cfg:AnyIBRef</v8:TypeSet>
 					</Type>
 				</Column>
 				<Column name="ПометкаУдаления" id="6">

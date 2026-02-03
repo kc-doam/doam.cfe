@@ -34,8 +34,8 @@
 			<Explanation/>
 		</Properties>
 		<ChildObjects>
-			<Template>ОсновнаяСхемаКомпоновкиДанных</Template>
 			<Template>ОписаниеОшибок</Template>
+			<Template>ОсновнаяСхемаКомпоновкиДанных</Template>
 			<Command uuid="8f8c15e6-5a84-41cb-9b08-ea199db65391">
 				<Properties>
 					<Name>СобытияМониторингаСПАРКРискиКонтрагент</Name>

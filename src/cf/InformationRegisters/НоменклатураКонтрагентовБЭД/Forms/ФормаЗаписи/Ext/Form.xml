@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
 	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
 	<AutoTitle>false</AutoTitle>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
@@ -29,6 +29,7 @@
 					<v8:content>Данные контрагента</v8:content>
 				</v8:item>
 			</Title>
+			<Behavior>Usual</Behavior>
 			<ThroughAlign>Use</ThroughAlign>
 			<ExtendedTooltip name="ГруппаДанныеВладельцаРасширеннаяПодсказка" id="38"/>
 			<ChildItems>
@@ -56,6 +57,7 @@
 						</v8:item>
 					</Title>
 					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="ГруппаРеквизитыРасширеннаяПодсказка" id="44"/>
@@ -93,6 +95,11 @@
 							<AutoMaxWidth>false</AutoMaxWidth>
 							<ContextMenu name="ЕдиницаИзмеренияКодКонтекстноеМеню" id="48"/>
 							<ExtendedTooltip name="ЕдиницаИзмеренияКодРасширеннаяПодсказка" id="49"/>
+						</InputField>
+						<InputField name="КодНоменклатуры" id="74">
+							<DataPath>Запись.КодНоменклатуры</DataPath>
+							<ContextMenu name="КодНоменклатурыКонтекстноеМеню" id="75"/>
+							<ExtendedTooltip name="КодНоменклатурыРасширеннаяПодсказка" id="76"/>
 						</InputField>
 						<InputField name="Артикул" id="16">
 							<DataPath>Запись.Артикул</DataPath>
@@ -145,6 +152,7 @@
 				</v8:item>
 			</Title>
 			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
 			<ThroughAlign>Use</ThroughAlign>
 			<ExtendedTooltip name="ГруппаДанныеИБРасширеннаяПодсказка" id="40"/>
 			<ChildItems>
@@ -302,6 +310,85 @@
 					<ToolTipRepresentation>Button</ToolTipRepresentation>
 					<ContextMenu name="ИдентификаторУпаковкиКонтекстноеМеню" id="60"/>
 					<ExtendedTooltip name="ИдентификаторУпаковкиРасширеннаяПодсказка" id="61"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаПрочее" id="92">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Прочее</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Vertical</Group>
+			<Behavior>Collapsible</Behavior>
+			<Collapsed>true</Collapsed>
+			<ControlRepresentation>Picture</ControlRepresentation>
+			<Representation>None</Representation>
+			<ShowLeftMargin>false</ShowLeftMargin>
+			<ExtendedTooltip name="ГруппаПрочееРасширеннаяПодсказка" id="93"/>
+			<ChildItems>
+				<InputField name="КодТНВЭД" id="80">
+					<DataPath>Запись.КодТНВЭД</DataPath>
+					<ContextMenu name="КодТНВЭДКонтекстноеМеню" id="81"/>
+					<ExtendedTooltip name="КодТНВЭДРасширеннаяПодсказка" id="82"/>
+				</InputField>
+				<InputField name="КодПоКТРУ" id="77">
+					<DataPath>Запись.КодПоКТРУ</DataPath>
+					<ContextMenu name="КодПоКТРУКонтекстноеМеню" id="78"/>
+					<ExtendedTooltip name="КодПоКТРУРасширеннаяПодсказка" id="79"/>
+				</InputField>
+				<InputField name="ТипНоменклатурыФНС" id="83">
+					<DataPath>Запись.ТипНоменклатурыФНС</DataPath>
+					<ContextMenu name="ТипНоменклатурыФНСКонтекстноеМеню" id="84"/>
+					<ExtendedTooltip name="ТипНоменклатурыФНСРасширеннаяПодсказка" id="85"/>
+				</InputField>
+				<InputField name="СтранаПроисхожденияКод" id="94">
+					<DataPath>Запись.СтранаПроисхожденияКод</DataPath>
+					<ContextMenu name="СтранаПроисхожденияКодКонтекстноеМеню" id="95"/>
+					<ExtendedTooltip name="СтранаПроисхожденияКодРасширеннаяПодсказка" id="96"/>
+				</InputField>
+				<CheckBoxField name="ПрослеживаемыйТовар" id="86">
+					<DataPath>Запись.ПрослеживаемыйТовар</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ПрослеживаемыйТоварКонтекстноеМеню" id="87"/>
+					<ExtendedTooltip name="ПрослеживаемыйТоварРасширеннаяПодсказка" id="88"/>
+				</CheckBoxField>
+				<CheckBoxField name="МаркируемыйТовар" id="89">
+					<DataPath>Запись.МаркируемыйТовар</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="МаркируемыйТоварКонтекстноеМеню" id="90"/>
+					<ExtendedTooltip name="МаркируемыйТоварРасширеннаяПодсказка" id="91"/>
+				</CheckBoxField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаХешиНатуральныхКлючей" id="123">
+			<UserVisible>
+				<xr:Common>false</xr:Common>
+			</UserVisible>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаХешиНатуральныхКлючейРасширеннаяПодсказка" id="124"/>
+			<ChildItems>
+				<InputField name="ХешНаименования" id="125">
+					<DataPath>Запись.ХешНаименования</DataPath>
+					<ContextMenu name="ХешНаименованияКонтекстноеМеню" id="126"/>
+					<ExtendedTooltip name="ХешНаименованияРасширеннаяПодсказка" id="127"/>
+				</InputField>
+				<InputField name="ХешАртикула" id="128">
+					<DataPath>Запись.ХешАртикула</DataPath>
+					<ContextMenu name="ХешАртикулаКонтекстноеМеню" id="129"/>
+					<ExtendedTooltip name="ХешАртикулаРасширеннаяПодсказка" id="130"/>
+				</InputField>
+				<InputField name="ХешКодаНоменклатуры" id="131">
+					<DataPath>Запись.ХешКодаНоменклатуры</DataPath>
+					<ContextMenu name="ХешКодаНоменклатурыКонтекстноеМеню" id="132"/>
+					<ExtendedTooltip name="ХешКодаНоменклатурыРасширеннаяПодсказка" id="133"/>
+				</InputField>
+				<InputField name="ХешШтрихкода" id="134">
+					<DataPath>Запись.ХешШтрихкода</DataPath>
+					<ContextMenu name="ХешШтрихкодаКонтекстноеМеню" id="135"/>
+					<ExtendedTooltip name="ХешШтрихкодаРасширеннаяПодсказка" id="136"/>
 				</InputField>
 			</ChildItems>
 		</UsualGroup>

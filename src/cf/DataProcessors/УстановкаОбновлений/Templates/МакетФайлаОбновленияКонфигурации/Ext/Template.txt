@@ -17,24 +17,32 @@ var removeFixNames = [ИменаУдаляемыхИсправлений] // И�
 var v8conf = [ИмяИсполняемогоФайлаКонфигуратора] // Путь к исполняемому файлу 1С:Предприятия 8
 var v8client = [ИмяИсполняемогоФайлаКлиента] // Путь к исполняемому файлу 1С:Предприятия 8
 var v8comcntr = [ПутьКCOMСоединителю] // Путь к comcntr.dll
+var v8logEncoding = '[КодировкаЛогФайла]'
+
 var infoBasePath = [ПараметрПутиКИнформационнойБазе]
 var BaseFileName = [СтрокаПутиКФайлуИнформационнойБазы]
 var unlockCode = '[КодРазблокировки]'
 var connectionString = [СтрокаСоединенияИнформационнойБазы] + ';UC=[КодРазблокировки]'
+
 var backupFileName = [КаталогРезервнойКопии] + '1Cv8' + now.valueOf() + '.1CD' // Файл резервной копии
 var UseRestore = [ВосстанавливатьИнформационнуюБазу] // Использовать восстановление ИБ в случае падения
 var createBackup = [СоздаватьРезервнуюКопию] // создавать резервную копию
+
 var eventLogID = [СобытиеЖурналаРегистрации]
 var emailAddress = [АдресЭлектроннойПочты] // адрес электронной почты для отправки уведомления
 var adminName = [ИмяАдминистратораОбновления] // имя администратора, инициировавшего обновление
+
 var doBlockUsers = [БлокироватьСоединенияИБ] // устанавливать блокировку соединений перед обновлением
 var comConnectorName = [ИмяCOMСоединителя] // имя COM-класса для работы с 1С:Предприятием 8 через COM-соединение
 var useComConnector = [ИспользоватьCOMСоединитель] // флаг использования COM-соединения для работы с 1С:Предприятием 8
+
 var startEnterprise = [ЗапускСеансаПослеОбновления] // выполнять запуск предприятия после обновления
 var makeCompression = [ВыполнятьСжатиеТаблицИБ] // запускать сжатие таблиц информационной базы
 var executeDeferredHandlers = [ВыполнитьОтложенныеОбработчики] // выполнить отложенные обработчики обновления
-var tempLogFileName = 'templog.txt'
-var errorFileName = 'error.txt'
+
+var tempLogFileName = 'templog.txt' // временный лог-файл платформы с параметром /out 
+var errorFileName = 'error.txt' // имя файла-маркера ошибок для параметров /C ВыполнитьОбновлениеИЗавершитьРаботу и ВыполнитьЗагрузкуРасширенийИЗавершитьРаботу
+
 var taskNameScheduleService = [ИмяЗадачиПланировщикаЗадач] // Если указано, то задача, которой запущен скрипт.
 var runAppAdditionalParams = [ПараметрыЗапускаПредприятия] // Аргументы командной строки, которые следует добавить к запуску 1С:Предприятия в режиме клиента.
 var updateConfiguration = [ВыполнитьОбновлениеКонфигурации]
@@ -127,7 +135,17 @@ function logFile (text, failed) {
 }
 
 // Записать текст из временного лог-файла
-function appendLog () {
+function appendLog (logEncoding) {
+  if (logEncoding == 'ASCII' || v8logEncoding == 'ASCII') { 
+    return appendLogASCII()
+  } else if (logEncoding == 'unicode') {
+    return appendLogUnicode()
+  } else {
+    return appendLogUTF8()
+  }
+}
+
+function appendLogASCII () {
   var f = null
   var outf
   var text
@@ -147,6 +165,52 @@ function appendLog () {
       f.Close()
       outf.Close()
     } catch (e) { return }
+  }
+  return (text && text.length > 0)
+}
+
+function appendLogUTF8 () {
+  try {
+    oADODBStream.Open()
+    oADODBStream.LoadFromFile(tempLogFileName)
+    text = oADODBStream.ReadText()
+  } finally {
+    try {
+      oADODBStream.Close()
+    } catch (e) { return } 
+  }
+  try { 
+    outf = oFileSystemObject.OpenTextFile(outFileName, ForAppending, true, TristateTrue)
+    outf.WriteLine('')
+    outf.WriteLine(text)
+    outf.WriteLine('')
+    } finally {
+    try {
+      outf.Close()
+    } catch (e) { return } 
+  }
+  return (text && text.length > 0)
+}
+
+function appendLogUnicode () {
+  try {
+    oADODBStreamUnicode.Open()
+    oADODBStreamUnicode.LoadFromFile(tempLogFileName)
+    text = oADODBStreamUnicode.ReadText()
+  } finally {
+    try {
+      oADODBStreamUnicode.Close()
+    } catch (e) { return } 
+  }
+  try { 
+    outf = oFileSystemObject.OpenTextFile(outFileName, ForAppending, true, TristateTrue)
+    outf.WriteLine('')
+    outf.WriteLine(text)
+    outf.WriteLine('')
+    } finally {
+    try {
+      outf.Close()
+    } catch (e) { return } 
   }
   return (text && text.length > 0)
 }
@@ -290,7 +354,7 @@ function backupDB () {
     }
     
     if (oFileSystemObject.FileExists(backupFileName)) {
-      var ThisFile = oFileSystemObject.GetFile(BaseFileName)
+      var ThisFile = oFileSystemObject.GetFile(backupFileName)
       throw new Error(
         format('[СообщениеПараметрыФайлаРезервнойКопии]',
           backupFileName,
@@ -320,10 +384,25 @@ function backupDB () {
       throw new Error(format('[СообщениеДискНедоступен]', backupFileName))
     }
     
+    var waitBaseFile = true
+    while (waitBaseFile) {
+      try {
+        var oFile = oFileSystemObject.OpenTextFile(BaseFileName, ForAppending, true, TristateFalse)
+      } catch (ex) {
+        if (oHTA != null) {
+          return -1
+        } else {
+          WScript.Echo(ex.message) 
+          WScript.Sleep(18 * 1000) // Ждем и повторяем проверку, освободился ли файл ИБ.
+        }
+        continue;
+      }
+      oFile.Close()
+      waitBaseFile = false
+    }
+
     var fileDB = oFileSystemObject.GetFile(BaseFileName)
-    
-    requiredFreeSize = fileDB.size * 2
-    
+    var requiredFreeSize = fileDB.size * 2
     if (drive.FreeSpace < requiredFreeSize) {
       throw new Error(
        format('[СообщениеДисковогоПространстваНедостаточно]',
@@ -334,11 +413,18 @@ function backupDB () {
           DriveTypeName(drive.DriveType)
         )
       )
+    } else {
+      log(format('[СообщениеДисковогоПространстваДостаточно]',
+          drive.DriveLetter,
+          drive.FreeSpace / 1024 / 1024,
+          fileDB.size / 1024 / 1024,
+          DriveTypeName(drive.DriveType)
+        ), 
+        false)
     }
     
     oFileSystemObject.CopyFile(BaseFileName, backupFileName, true)
-    
-    log(format('[СообщениеРезультатСозданияРезервнойКопииБазы]', ret), ret !== 0)
+    log('[СообщениеРезультатСозданияРезервнойКопииБазы]', false)
     
   } catch (e) {
     CollectGarbage()
@@ -494,7 +580,7 @@ function doExecuteUpdate (lastVersion) {
       true)
     if (result === 0 && oFileSystemObject.FileExists(errorFileName)) {
       log('[СообщениеОтказОбновленияБазыОбщее]', true)
-      appendLog()
+      appendLog('ASCII')
       result = 1
     }
     return result
@@ -624,12 +710,12 @@ function doDisconnectAndBlockUsers () {
 
     var interval = connection.СоединенияИБ.ПараметрыБлокировкиСеансов().ИнтервалОжиданияЗавершенияРаботыПользователей * 1000
 
-    var startDateTime = connection.ПолучитьБлокировкуУстановкиСоединений().Начало
+    var startDateTime = connection.ПолучитьБлокировкуСеансов().Начало
     var now = new Date()
 
     if (connection.ЗначениеЗаполнено(startDateTime)) {
       while (now - interval <= startDateTime) {
-        if (!connection.ПолучитьБлокировкуУстановкиСоединений().Установлена) {
+        if (!connection.ПолучитьБлокировкуСеансов().Установлена) {
           break
         }
         connectionsNum = connection.СоединенияИБ.КоличествоСеансовИнформационнойБазы(false)
@@ -642,9 +728,9 @@ function doDisconnectAndBlockUsers () {
       }
     }
 
-    var locked = connection.ПолучитьБлокировкуУстановкиСоединений().Установлена
+    var locked = connection.ПолучитьБлокировкуСеансов().Установлена
     log(format('[СообщениеРезультатБлокировкиСеансов]', locked))
-    if (!connection.ПолучитьБлокировкуУстановкиСоединений().Установлена) {
+    if (!connection.ПолучитьБлокировкуСеансов().Установлена) {
       log('[СообщениеОтказЗавершенияРаботыПользователей]', true)
       return 3
     }
@@ -865,6 +951,8 @@ function addDeletePatches() {
   var fixFileNamesString = fixFileNames.join('\n')
   var removeFixNamesString = removeFixNames.join('\n')
 
+  registerCOM()
+  
   var result = runApp('wscript.exe',
     format('"{0}\\add-delete-patches.js" /ConnectionString:"{1}" /COMConnectorName:"{2}" /FixFileNames:"{3}" /RemoveFixNames:"{4}" /Out:"{5}\\{6}"',
       thisFileDir,
@@ -876,7 +964,7 @@ function addDeletePatches() {
       tempLogFileName
     ),
     SW_HIDE, true)
-  appendLog()
+  appendLog('unicode')
   return result
 }
 
@@ -887,6 +975,8 @@ function DeletePatches() {
   }
  
  var Action = 'RemoveAll'
+ 
+ registerCOM()
  
  try {
    var result = runApp('wscript.exe',
@@ -899,7 +989,7 @@ function DeletePatches() {
         tempLogFileName
       ),
       SW_HIDE, true)
-    appendLog()
+    appendLog('unicode')
 
   } catch (e) {
     log(format('[СообщениеОтказВызоваУдалитьИсправленияИзСкрипта]', e.name, e.message), true)
@@ -940,11 +1030,26 @@ function doExecuteLoadExt() {
   
   if (result === 0 && oFileSystemObject.FileExists(errorFileName)) {
     log('[СообщениеОтказОбновленияБазыОбщее]', true)
-    appendLog()
+    appendLog('ASCII')
     result = 1
   }  
   
   return result
+}
+
+
+function ClearTempFiles () {
+  var tempFiles = ['main.js', 'helpers.js', 'add-delete-patches.js', 'templog.txt', // общие файлы
+    'addsheduletask.js', 'updater.js',                         // неинтерактивный запуск
+    'splash.png', 'splash.ico', 'progress.gif', 'splash.hta']; // интерактивный запуск
+  
+  for (var i = 0; i < tempFiles.length; i++) {
+    try {
+      if (oFileSystemObject.FileExists(thisFileDir + '\\' + tempFiles[i])) {
+        oFileSystemObject.DeleteFile(thisFileDir + '\\' + tempFiles[i])
+      }
+    } catch (e) { }
+  }
 }
 
 if (oHTA != null) {
@@ -964,9 +1069,14 @@ var oShell = new ActiveXObject('WScript.Shell')
 oShell.CurrentDirectory = thisFileDir
 
 var oFileSystemObject = new ActiveXObject('Scripting.FileSystemObject')
+var oADODBStream = new ActiveXObject('ADODB.Stream')
+oADODBStream.CharSet = 'utf-8'
+
+var oADODBStreamUnicode = new ActiveXObject('ADODB.Stream')
+oADODBStreamUnicode.CharSet = 'unicode'
 
 clearLogFile()
-appendLog()
+appendLog('ASCII')
 
 log(format('[СообщениеПараметрыCOMСоединителя]', useComConnector))
 

@@ -19,6 +19,16 @@
 				<xr:Object>Catalog.Контрагенты.Attribute.ЭтоКонтролирующийОрган</xr:Object>
 				<xr:Object>Catalog.Контрагенты.Attribute.КодКонтролирующегоОргана</xr:Object>
 				<xr:Object>Subsystem.ДокументыИФайлы.Subsystem.РегламентированнаяОтчетность</xr:Object>
+				<xr:Object>Catalog.Организации.Attribute.РегистрацияВНалоговомОргане</xr:Object>
+				<xr:Object>Catalog.Организации.Attribute.КодОрганаФСГС</xr:Object>
+				<xr:Object>Catalog.Организации.Attribute.РегистрационныйНомерПФР</xr:Object>
+				<xr:Object>Catalog.Организации.Attribute.КодОрганаПФР</xr:Object>
+				<xr:Object>Catalog.Организации.Attribute.КрупнейшийНалогоплательщик</xr:Object>
+				<xr:Object>Catalog.Организации.Attribute.КодНалоговогоОрганаПолучателя</xr:Object>
+				<xr:Object>Catalog.Организации.Attribute.ВидОбменаСКонтролирующимиОрганами</xr:Object>
+				<xr:Object>Catalog.Организации.Attribute.КодНалоговогоОргана</xr:Object>
+				<xr:Object>Catalog.Организации.Attribute.ОбменКаталогОтправкиДанныхОтчетности</xr:Object>
+				<xr:Object>Catalog.Организации.Attribute.ОбменКаталогПрограммыЭлектроннойПочты</xr:Object>
 			</Content>
 		</Properties>
 	</FunctionalOption>

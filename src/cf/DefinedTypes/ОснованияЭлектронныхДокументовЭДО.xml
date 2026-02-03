@@ -21,6 +21,9 @@
 				<v8:Type>cfg:DocumentRef.ЭлектронныйДокументИсходящийЭДО</v8:Type>
 				<v8:Type>cfg:DocumentRef.УдалитьПроизвольныйЭД</v8:Type>
 				<v8:Type>cfg:DocumentRef.ТранспортныйКонтейнерЭДО</v8:Type>
+				<v8:Type>cfg:CatalogRef.МЧД003</v8:Type>
+				<v8:Type>cfg:CatalogRef.МашиночитаемыеДоверенностиКонтрагентов</v8:Type>
+				<v8:Type>cfg:CatalogRef.МашиночитаемыеДоверенностиОрганизаций</v8:Type>
 				<v8:Type>cfg:CatalogRef.УдалитьСоглашенияОбИспользованииЭД</v8:Type>
 				<v8:Type>cfg:CatalogRef.НастройкиЭДО</v8:Type>
 				<v8:Type>cfg:CatalogRef.ВерсииФайлов</v8:Type>

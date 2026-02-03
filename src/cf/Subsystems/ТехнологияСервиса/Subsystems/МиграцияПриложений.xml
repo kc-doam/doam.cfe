@@ -26,7 +26,6 @@
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.МиграцияПриложенийПереопределяемый</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.МиграцияПриложенийКлиент</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.МиграцияПриложенийКлиентСервер</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.МиграцияПриложенийВызовСервера</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Enum.СостоянияМиграцииПриложения</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">ExchangePlan.МиграцияПриложений</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.МиграцияПриложенийПередЗаписьюДокумента</xr:Item>

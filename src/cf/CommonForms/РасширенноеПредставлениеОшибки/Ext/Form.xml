@@ -1,11 +1,12 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
 	<Width>55</Width>
 	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
 	<AutoTitle>false</AutoTitle>
 	<CommandBarLocation>None</CommandBarLocation>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
 	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 	</Events>
 	<ChildItems>
@@ -17,6 +18,7 @@
 				</v8:item>
 			</Title>
 			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ОшибкаКлиентРасширеннаяПодсказка" id="23"/>
@@ -30,6 +32,7 @@
 					</Title>
 					<Group>AlwaysHorizontal</Group>
 					<VerticalAlign>Center</VerticalAlign>
+					<Behavior>Usual</Behavior>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="ЗаголовокКлиентРасширеннаяПодсказка" id="2"/>
@@ -51,6 +54,7 @@
 							<ExtendedTooltip name="ЗаголовокКлиентКартинкаРасширеннаяПодсказка" id="5"/>
 						</PictureDecoration>
 						<LabelDecoration name="ЗаголовокКлиентНадпись" id="6">
+							<Font ref="style:ВажнаяНадписьШрифт" kind="StyleItem"/>
 							<Title formatted="false">
 								<v8:item>
 									<v8:lang>ru</v8:lang>
@@ -65,9 +69,16 @@
 				<InputField name="ТекстОшибкиКлиент" id="9">
 					<DataPath>ТекстОшибкиКлиент</DataPath>
 					<ReadOnly>true</ReadOnly>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Текст ошибки клиент</v8:content>
+						</v8:item>
+					</Title>
 					<TitleLocation>None</TitleLocation>
 					<AutoMaxWidth>false</AutoMaxWidth>
 					<MultiLine>true</MultiLine>
+					<BorderColor>style:FormBackColor</BorderColor>
 					<ContextMenu name="ТекстОшибкиКлиентКонтекстноеМеню" id="10"/>
 					<ExtendedTooltip name="ТекстОшибкиКлиентРасширеннаяПодсказка" id="11"/>
 				</InputField>
@@ -79,6 +90,7 @@
 						</v8:item>
 					</Title>
 					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="ВозможныеПричиныИРешенияКлиентРасширеннаяПодсказка" id="54"/>
@@ -90,6 +102,7 @@
 									<v8:content>Возможные причины</v8:content>
 								</v8:item>
 							</Title>
+							<Behavior>Usual</Behavior>
 							<Representation>None</Representation>
 							<ExtendedTooltip name="ВозможныеПричиныКлиентРасширеннаяПодсказка" id="13"/>
 							<ChildItems>
@@ -103,6 +116,9 @@
 									</Title>
 									<ContextMenu name="ПричиныКлиентТекстКонтекстноеМеню" id="15"/>
 									<ExtendedTooltip name="ПричиныКлиентТекстРасширеннаяПодсказка" id="16"/>
+									<Events>
+										<Event name="URLProcessing">ПричиныКлиентТекстОбработкаНавигационнойСсылки</Event>
+									</Events>
 								</LabelDecoration>
 							</ChildItems>
 						</UsualGroup>
@@ -113,6 +129,7 @@
 									<v8:content>Возможные способы устранения</v8:content>
 								</v8:item>
 							</Title>
+							<Behavior>Usual</Behavior>
 							<Representation>None</Representation>
 							<ExtendedTooltip name="ВозможныеРешенияКлиентРасширеннаяПодсказка" id="18"/>
 							<ChildItems>
@@ -126,6 +143,9 @@
 									</Title>
 									<ContextMenu name="РешенияКлиентТекстКонтекстноеМеню" id="20"/>
 									<ExtendedTooltip name="РешенияКлиентТекстРасширеннаяПодсказка" id="21"/>
+									<Events>
+										<Event name="URLProcessing">РешенияКлиентТекстОбработкаНавигационнойСсылки</Event>
+									</Events>
 								</LabelDecoration>
 							</ChildItems>
 						</UsualGroup>
@@ -136,7 +156,7 @@
 					<Title formatted="false">
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Типичные проблемы при работе с программой электронной подписи и шифрования</v8:content>
+							<v8:content>Типичные проблемы при работе с приложениями электронной подписи и шифрования</v8:content>
 						</v8:item>
 					</Title>
 					<Hyperlink>true</Hyperlink>
@@ -161,6 +181,7 @@
 				</v8:item>
 			</Title>
 			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ОшибкаСерверРасширеннаяПодсказка" id="28"/>
@@ -174,6 +195,7 @@
 					</Title>
 					<Group>AlwaysHorizontal</Group>
 					<VerticalAlign>Center</VerticalAlign>
+					<Behavior>Usual</Behavior>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="ЗаголовокСерверРасширеннаяПодсказка" id="30"/>
@@ -195,6 +217,7 @@
 							<ExtendedTooltip name="ЗаголовокСерверКартинкаРасширеннаяПодсказка" id="33"/>
 						</PictureDecoration>
 						<LabelDecoration name="ЗаголовокСерверНадпись" id="34">
+							<Font ref="style:ВажнаяНадписьШрифт" kind="StyleItem"/>
 							<Title formatted="false">
 								<v8:item>
 									<v8:lang>ru</v8:lang>
@@ -209,9 +232,16 @@
 				<InputField name="ТекстОшибкиСервер" id="37">
 					<DataPath>ТекстОшибкиСервер</DataPath>
 					<ReadOnly>true</ReadOnly>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Текст ошибки сервер</v8:content>
+						</v8:item>
+					</Title>
 					<TitleLocation>None</TitleLocation>
 					<AutoMaxWidth>false</AutoMaxWidth>
 					<MultiLine>true</MultiLine>
+					<BorderColor>style:FormBackColor</BorderColor>
 					<ContextMenu name="ТекстОшибкиСерверКонтекстноеМеню" id="38"/>
 					<ExtendedTooltip name="ТекстОшибкиСерверРасширеннаяПодсказка" id="39"/>
 				</InputField>
@@ -223,6 +253,7 @@
 						</v8:item>
 					</Title>
 					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="ВозможныеПричиныИРешенияСерверРасширеннаяПодсказка" id="56"/>
@@ -234,6 +265,7 @@
 									<v8:content>Возможные причины</v8:content>
 								</v8:item>
 							</Title>
+							<Behavior>Usual</Behavior>
 							<Representation>None</Representation>
 							<ExtendedTooltip name="ВозможныеПричиныСерверРасширеннаяПодсказка" id="41"/>
 							<ChildItems>
@@ -247,6 +279,9 @@
 									</Title>
 									<ContextMenu name="ПричиныСерверТекстКонтекстноеМеню" id="43"/>
 									<ExtendedTooltip name="ПричиныСерверТекстРасширеннаяПодсказка" id="44"/>
+									<Events>
+										<Event name="URLProcessing">ПричиныСерверТекстОбработкаНавигационнойСсылки</Event>
+									</Events>
 								</LabelDecoration>
 							</ChildItems>
 						</UsualGroup>
@@ -257,6 +292,7 @@
 									<v8:content>Возможные способы устранения</v8:content>
 								</v8:item>
 							</Title>
+							<Behavior>Usual</Behavior>
 							<Representation>None</Representation>
 							<ExtendedTooltip name="ВозможныеРешенияСерверРасширеннаяПодсказка" id="46"/>
 							<ChildItems>
@@ -270,6 +306,9 @@
 									</Title>
 									<ContextMenu name="РешенияСерверТекстКонтекстноеМеню" id="48"/>
 									<ExtendedTooltip name="РешенияСерверТекстРасширеннаяПодсказка" id="49"/>
+									<Events>
+										<Event name="URLProcessing">РешенияСерверТекстОбработкаНавигационнойСсылки</Event>
+									</Events>
 								</LabelDecoration>
 							</ChildItems>
 						</UsualGroup>
@@ -280,12 +319,128 @@
 					<Title formatted="false">
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Типичные проблемы при работе с программой электронной подписи и шифрования</v8:content>
+							<v8:content>Типичные проблемы при работе с приложениями электронной подписи и шифрования</v8:content>
 						</v8:item>
 					</Title>
 					<Hyperlink>true</Hyperlink>
 					<ContextMenu name="ИнструкцияСерверКонтекстноеМеню" id="51"/>
 					<ExtendedTooltip name="ИнструкцияСерверРасширеннаяПодсказка" id="52"/>
+					<Events>
+						<Event name="Click">ИнструкцияНажатие</Event>
+					</Events>
+				</LabelDecoration>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Ошибка" id="81">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ошибка</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Vertical</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ОшибкаРасширеннаяПодсказка" id="82"/>
+			<ChildItems>
+				<UsualGroup name="ВозможныеПричиныИРешения" id="99">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Возможные причины и решения</v8:content>
+						</v8:item>
+					</Title>
+					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ВозможныеПричиныИРешенияРасширеннаяПодсказка" id="100"/>
+					<ChildItems>
+						<UsualGroup name="ВозможныеПричины" id="86">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Возможные причины</v8:content>
+								</v8:item>
+							</Title>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ExtendedTooltip name="ВозможныеПричиныРасширеннаяПодсказка" id="87"/>
+							<ChildItems>
+								<InputField name="ПричиныТекст" id="101">
+									<DataPath>ПричиныТекст</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Причины текст</v8:content>
+										</v8:item>
+									</Title>
+									<TitleLocation>None</TitleLocation>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<MultiLine>true</MultiLine>
+									<ContextMenu name="ПричиныТекстКонтекстноеМеню" id="102"/>
+									<ExtendedTooltip name="ПричиныТекстРасширеннаяПодсказка" id="103"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ВозможныеРешения" id="91">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Возможные способы устранения</v8:content>
+								</v8:item>
+							</Title>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ExtendedTooltip name="ВозможныеРешенияРасширеннаяПодсказка" id="92"/>
+							<ChildItems>
+								<LabelDecoration name="РешенияТекст" id="93">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<Title formatted="true">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Возможные способы устранения</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="РешенияТекстКонтекстноеМеню" id="94"/>
+									<ExtendedTooltip name="РешенияТекстРасширеннаяПодсказка" id="95"/>
+									<Events>
+										<Event name="URLProcessing">РешенияКлиентТекстОбработкаНавигационнойСсылки</Event>
+									</Events>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<InputField name="ТекстОшибки" id="83">
+					<DataPath>ТекстОшибки</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<SkipOnInput>true</SkipOnInput>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Технические подробности</v8:content>
+						</v8:item>
+					</Title>
+					<TitleLocation>Top</TitleLocation>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<MultiLine>true</MultiLine>
+					<BorderColor>style:FormBackColor</BorderColor>
+					<ContextMenu name="ТекстОшибкиКонтекстноеМеню" id="84"/>
+					<ExtendedTooltip name="ТекстОшибкиРасширеннаяПодсказка" id="85"/>
+				</InputField>
+				<LabelDecoration name="Инструкция" id="96">
+					<Visible>false</Visible>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Типичные проблемы при работе с приложениями</v8:content>
+						</v8:item>
+					</Title>
+					<Hyperlink>true</Hyperlink>
+					<ContextMenu name="ИнструкцияКонтекстноеМеню" id="97"/>
+					<ExtendedTooltip name="ИнструкцияРасширеннаяПодсказка" id="98"/>
 					<Events>
 						<Event name="Click">ИнструкцияНажатие</Event>
 					</Events>
@@ -305,11 +460,12 @@
 				</v8:item>
 			</Title>
 			<Group>AlwaysHorizontal</Group>
+			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаПодвалРасширеннаяПодсказка" id="61"/>
 			<ChildItems>
-				<UsualGroup name="Инструкция" id="62">
+				<UsualGroup name="Помощь" id="62">
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -318,26 +474,15 @@
 					</Title>
 					<Group>Vertical</Group>
 					<Behavior>PopUp</Behavior>
-					<ExtendedTooltip name="ИнструкцияРасширеннаяПодсказка" id="63"/>
+					<ExtendedTooltip name="ПомощьРасширеннаяПодсказка" id="63"/>
 					<ChildItems>
-						<LabelDecoration name="ТипичныеПроблемы" id="64">
-							<Title formatted="true">
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>При возникновении затруднений ознакомьтесь со списком &lt;link ТипичныеПроблемы&gt;типичных проблем при &lt;/&gt;&lt;link ИнструкцияНажатие&gt;работе&lt;/&gt;&lt;link ТипичныеПроблемы&gt; с программой электронной подписи и их решений&lt;/&gt;.</v8:content>
-								</v8:item>
-							</Title>
-							<ContextMenu name="ТипичныеПроблемыКонтекстноеМеню" id="65"/>
-							<ExtendedTooltip name="ТипичныеПроблемыРасширеннаяПодсказка" id="66"/>
-							<Events>
-								<Event name="URLProcessing">ТипичныеПроблемыОбработкаНавигационнойСсылки</Event>
-							</Events>
-						</LabelDecoration>
 						<LabelDecoration name="ИнформацияДляПоддержки" id="67">
 							<Title formatted="true">
 								<v8:item>
 									<v8:lang>ru</v8:lang>
-									<v8:content>В иных случаях обратитесь в службу поддержки фирмы "1С", предоставив &lt;link Ссылка&gt;техническую информацию о возникшей проблеме&lt;/&gt;.</v8:content>
+									<v8:content>При возникновении затруднений ознакомьтесь со списком &lt;link %1&gt;типичных проблем при работе с приложениями электронной подписи и их решений&lt;/&gt;.
+
+В иных случаях обратитесь в службу поддержки фирмы "1С", предоставив &lt;link %2&gt;техническую информацию о возникшей проблеме&lt;/&gt;.</v8:content>
 								</v8:item>
 							</Title>
 							<ContextMenu name="ИнформацияДляПоддержкиКонтекстноеМеню" id="68"/>
@@ -361,11 +506,23 @@
 						<Button name="ФормаУстановитьРасширение" id="72">
 							<Type>CommandBarButton</Type>
 							<CommandName>Form.Command.УстановитьРасширение</CommandName>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Установить расширение</v8:content>
+								</v8:item>
+							</Title>
 							<ExtendedTooltip name="ФормаУстановитьРасширениеРасширеннаяПодсказка" id="73"/>
 						</Button>
 						<Button name="ФормаПерейтиКНастройкеПрограмм" id="74">
 							<Type>CommandBarButton</Type>
 							<CommandName>Form.Command.ПерейтиКНастройкеПрограмм</CommandName>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Перейти к настройке приложений</v8:content>
+								</v8:item>
+							</Title>
 							<ExtendedTooltip name="ФормаПерейтиКНастройкеПрограммРасширеннаяПодсказка" id="75"/>
 						</Button>
 						<Button name="ФормаЗакрыть" id="76">
@@ -448,13 +605,60 @@
 		<Attribute name="ДополнительныеДанные" id="6">
 			<Type/>
 		</Attribute>
+		<Attribute name="ТекстОшибки" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текст ошибки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ЯкорьОшибки" id="8">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПричиныТекст" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Причины текст</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ОшибкаПроверкиПодписи" id="10">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ПараметрыДополненияТекстаРешенияОшибкиКлассификатора" id="11">
+			<Type/>
+		</Attribute>
 	</Attributes>
 	<Commands>
 		<Command name="ПерейтиКНастройкеПрограмм" id="1">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Перейти к настройке программ</v8:content>
+					<v8:content>Перейти к настройке приложений</v8:content>
 				</v8:item>
 			</Title>
 			<Action>ПерейтиКНастройкеПрограмм</Action>
@@ -536,6 +740,20 @@
 		</Parameter>
 		<Parameter name="ДополнительныеДанные">
 			<Type/>
+		</Parameter>
+		<Parameter name="ИнформацияДляПоддержки">
+			<Type>
+				<v8:Type>v8ui:FormattedString</v8:Type>
+			</Type>
+		</Parameter>
+		<Parameter name="ТекстОшибки">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
 		</Parameter>
 	</Parameters>
 </Form>

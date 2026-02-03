@@ -16,9 +16,9 @@
 			<Explanation/>
 			<Picture/>
 			<Content>
-				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.ПриЗаписиОбъектаУчетаДокументаЭДО</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.ПередЗаписьюОбъектаУчетаДокументаЭДО</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.СохранитьРезультатПроверкиКонтрагентаБЭД</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.ПриЗаписиДокументаОбъектаУчетаЭДО</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.ПередЗаписьюДокументаОбъектаУчетаЭДО</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.СохранитьРезультатПроверкиКонтрагентаЭДО</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.ВыгрузитьДанныеВФайл</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ВыгрузитьДанныеИзИнформационнойБазыВXMLФайл</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ЗагрузитьXMLФайлВИнформационнуюБазу</xr:Item>
@@ -31,16 +31,18 @@
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ИнтеграцияЭДОКлиентСервер</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ИнтеграцияЭДОВызовСервера</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ОбъектыУчетаДокументовЭДО</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.АктуальныеДокументыЭДО</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.УдалитьАктуальныеДокументыЭДО</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ИнтеграцияЭДОСобытия</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ИнтеграцияЭДОПовтИсп</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ИнтеграцияЭДОСобытияКлиент</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.ПриЗаписиКонтрагентаЭДО</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.ПередЗаписьюСправочникаОбъектаУчетаЭДО</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.ПриЗаписиСправочникаОбъектаУчетаЭДО</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.СвязанныеДокументыБЭД</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects>
 			<Subsystem>ВнешнийИнтерфейс</Subsystem>
-			<Subsystem>СопоставлениеНоменклатуры</Subsystem>
 			<Subsystem>ОтражениеВУчете</Subsystem>
 		</ChildObjects>
 	</Subsystem>

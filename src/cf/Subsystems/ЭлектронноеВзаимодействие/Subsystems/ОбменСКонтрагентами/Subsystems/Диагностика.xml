@@ -22,7 +22,6 @@
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ДиагностикаЭДОКлиент</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ДиагностикаЭДОКлиентСервер</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ДиагностикаЭДОВызовСервера</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ДиагностикаЭДОСлужебныйКлиент</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ДиагностикаЭДОСлужебный</xr:Item>
 			</Content>
 		</Properties>

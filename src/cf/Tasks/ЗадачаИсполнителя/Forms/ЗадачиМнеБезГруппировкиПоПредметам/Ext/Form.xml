@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
 	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
 	<AutoTitle>false</AutoTitle>
 	<Group>Horizontal</Group>
@@ -898,6 +898,7 @@
 				</v8:item>
 			</ToolTip>
 			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаСпискиЗадачИКомпанельРуководителяРасширеннаяПодсказка" id="2687"/>
@@ -2675,6 +2676,7 @@
 											</Title>
 											<Group>Horizontal</Group>
 											<HorizontalSpacing>Half</HorizontalSpacing>
+											<Behavior>Usual</Behavior>
 											<Representation>None</Representation>
 											<ShowTitle>false</ShowTitle>
 											<ExtendedTooltip name="ГруппаИсполнениеКнопкиРасширеннаяПодсказка" id="2009"/>
@@ -2771,6 +2773,7 @@
 											</Title>
 											<Group>Horizontal</Group>
 											<HorizontalSpacing>Half</HorizontalSpacing>
+											<Behavior>Usual</Behavior>
 											<Representation>None</Representation>
 											<ShowTitle>false</ShowTitle>
 											<ExtendedTooltip name="ГруппаИсполнениеОтвИсполнительКнопкиРасширеннаяПодсказка" id="2015"/>
@@ -2879,6 +2882,7 @@
 											</Title>
 											<Group>Horizontal</Group>
 											<HorizontalSpacing>Half</HorizontalSpacing>
+											<Behavior>Usual</Behavior>
 											<Representation>None</Representation>
 											<ShowTitle>false</ShowTitle>
 											<ExtendedTooltip name="ГруппаСогласованиеКнопкиРасширеннаяПодсказка" id="1586"/>
@@ -3066,6 +3070,7 @@
 											</Title>
 											<Group>Horizontal</Group>
 											<HorizontalSpacing>Half</HorizontalSpacing>
+											<Behavior>Usual</Behavior>
 											<Representation>None</Representation>
 											<ShowTitle>false</ShowTitle>
 											<ExtendedTooltip name="ГруппаОзнакомлениеКнопкиРасширеннаяПодсказка" id="1608"/>
@@ -3136,6 +3141,7 @@
 											</Title>
 											<Group>Horizontal</Group>
 											<HorizontalSpacing>Half</HorizontalSpacing>
+											<Behavior>Usual</Behavior>
 											<Representation>None</Representation>
 											<ShowTitle>false</ShowTitle>
 											<ExtendedTooltip name="ГруппаУтверждениеКнопкиРасширеннаяПодсказка" id="1615"/>
@@ -3366,6 +3372,7 @@
 											</ToolTip>
 											<Group>Horizontal</Group>
 											<HorizontalSpacing>Half</HorizontalSpacing>
+											<Behavior>Usual</Behavior>
 											<Representation>None</Representation>
 											<ShowTitle>false</ShowTitle>
 											<ExtendedTooltip name="ГруппаРассмотрениеКнопкиРасширеннаяПодсказка" id="1636"/>
@@ -3531,6 +3538,7 @@
 											</ToolTip>
 											<Group>Horizontal</Group>
 											<HorizontalSpacing>Half</HorizontalSpacing>
+											<Behavior>Usual</Behavior>
 											<Representation>None</Representation>
 											<ShowTitle>false</ShowTitle>
 											<ExtendedTooltip name="ГруппаРассмотрениеОбработаноКнопкиРасширеннаяПодсказка" id="1645"/>
@@ -3598,6 +3606,7 @@
 											</ToolTip>
 											<Group>Vertical</Group>
 											<VerticalSpacing>Half</VerticalSpacing>
+											<Behavior>Usual</Behavior>
 											<Representation>None</Representation>
 											<ShowTitle>false</ShowTitle>
 											<ExtendedTooltip name="ГруппаДатаМестоПроведенияКомментарийРасширеннаяПодсказка" id="2545"/>
@@ -3616,6 +3625,7 @@
 														</v8:item>
 													</ToolTip>
 													<Group>Horizontal</Group>
+													<Behavior>Usual</Behavior>
 													<Representation>None</Representation>
 													<ShowTitle>false</ShowTitle>
 													<ExtendedTooltip name="ГруппаПриглашениеДатаНачалаРасширеннаяПодсказка" id="1652"/>
@@ -3739,6 +3749,7 @@
 											<HorizontalStretch>true</HorizontalStretch>
 											<Group>Horizontal</Group>
 											<HorizontalSpacing>Half</HorizontalSpacing>
+											<Behavior>Usual</Behavior>
 											<Representation>None</Representation>
 											<ShowTitle>false</ShowTitle>
 											<ExtendedTooltip name="ГруппаПриглашениеКнопкиРасширеннаяПодсказка" id="1659"/>
@@ -4075,6 +4086,7 @@
 											</ToolTip>
 											<Group>Horizontal</Group>
 											<HorizontalSpacing>Half</HorizontalSpacing>
+											<Behavior>Usual</Behavior>
 											<Representation>None</Representation>
 											<ShowTitle>false</ShowTitle>
 											<ExtendedTooltip name="ГруппаПриглашениеОповеститьКнопкиРасширеннаяПодсказка" id="1685"/>
@@ -4155,6 +4167,7 @@
 											</ToolTip>
 											<Group>Horizontal</Group>
 											<HorizontalSpacing>Half</HorizontalSpacing>
+											<Behavior>Usual</Behavior>
 											<Representation>None</Representation>
 											<ShowTitle>false</ShowTitle>
 											<ExtendedTooltip name="ГруппаРегистрацияКнопкиРасширеннаяПодсказка" id="1692"/>
@@ -4411,6 +4424,7 @@
 											</ToolTip>
 											<Group>Horizontal</Group>
 											<HorizontalSpacing>Half</HorizontalSpacing>
+											<Behavior>Usual</Behavior>
 											<Representation>None</Representation>
 											<ShowTitle>false</ShowTitle>
 											<ExtendedTooltip name="ГруппаПоручениеКнопкиРасширеннаяПодсказка" id="1718"/>
@@ -4519,6 +4533,7 @@
 											</ToolTip>
 											<Group>Horizontal</Group>
 											<HorizontalSpacing>Half</HorizontalSpacing>
+											<Behavior>Usual</Behavior>
 											<Representation>None</Representation>
 											<ShowTitle>false</ShowTitle>
 											<ExtendedTooltip name="ГруппаПоручениеПроверяющийКнопкиРасширеннаяПодсказка" id="1732"/>
@@ -4622,6 +4637,7 @@
 											</ToolTip>
 											<Group>Horizontal</Group>
 											<HorizontalSpacing>Half</HorizontalSpacing>
+											<Behavior>Usual</Behavior>
 											<Representation>None</Representation>
 											<ShowTitle>false</ShowTitle>
 											<ExtendedTooltip name="ГруппаРешениеВопросовАвторКнопкиРасширеннаяПодсказка" id="1740"/>
@@ -4716,6 +4732,7 @@
 											</ToolTip>
 											<Group>Horizontal</Group>
 											<HorizontalSpacing>Half</HorizontalSpacing>
+											<Behavior>Usual</Behavior>
 											<Representation>None</Representation>
 											<ShowTitle>false</ShowTitle>
 											<ExtendedTooltip name="ГруппаРешениеВопросовИсполнительКнопкиРасширеннаяПодсказка" id="1747"/>
@@ -4776,6 +4793,7 @@
 											</ToolTip>
 											<Group>Vertical</Group>
 											<VerticalSpacing>Half</VerticalSpacing>
+											<Behavior>Usual</Behavior>
 											<Representation>None</Representation>
 											<ShowTitle>false</ShowTitle>
 											<ExtendedTooltip name="ГруппаПредметРассмотренияСрокиКомментарийРасширеннаяПодсказка" id="2547"/>
@@ -4794,6 +4812,7 @@
 														</v8:item>
 													</ToolTip>
 													<Group>Horizontal</Group>
+													<Behavior>Usual</Behavior>
 													<Representation>None</Representation>
 													<ShowTitle>false</ShowTitle>
 													<ExtendedTooltip name="ГруппаПредметРассмотренияИСтарыйСрокРасширеннаяПодсказка" id="1996"/>
@@ -4901,6 +4920,7 @@
 													</ToolTip>
 													<HorizontalStretch>true</HorizontalStretch>
 													<Group>Horizontal</Group>
+													<Behavior>Usual</Behavior>
 													<Representation>None</Representation>
 													<ShowTitle>false</ShowTitle>
 													<ExtendedTooltip name="ГруппаНовыйСрокРасширеннаяПодсказка" id="1753"/>
@@ -5008,6 +5028,7 @@
 											</ToolTip>
 											<Group>Horizontal</Group>
 											<HorizontalSpacing>Half</HorizontalSpacing>
+											<Behavior>Usual</Behavior>
 											<Representation>None</Representation>
 											<ShowTitle>false</ShowTitle>
 											<ExtendedTooltip name="ГруппаРешениеВопросовПереносСрокаКнопкиРасширеннаяПодсказка" id="1760"/>
@@ -5241,7 +5262,7 @@
 						</v8:item>
 					</Title>
 					<Type>
-						<v8:TypeSet>cfg:AnyRef</v8:TypeSet>
+						<v8:TypeSet>cfg:AnyIBRef</v8:TypeSet>
 					</Type>
 				</Column>
 				<Column name="Проект" id="13">
@@ -5615,7 +5636,7 @@
 					</Title>
 					<Type>
 						<v8:Type>xs:string</v8:Type>
-						<v8:TypeSet>cfg:AnyRef</v8:TypeSet>
+						<v8:TypeSet>cfg:AnyIBRef</v8:TypeSet>
 						<v8:StringQualifiers>
 							<v8:Length>0</v8:Length>
 							<v8:AllowedLength>Variable</v8:AllowedLength>
@@ -6276,7 +6297,7 @@
 						</v8:item>
 					</Title>
 					<Type>
-						<v8:TypeSet>cfg:AnyRef</v8:TypeSet>
+						<v8:TypeSet>cfg:AnyIBRef</v8:TypeSet>
 					</Type>
 				</Column>
 				<Column name="Проект" id="13">
@@ -6725,7 +6746,7 @@
 				</v8:item>
 			</Title>
 			<Type>
-				<v8:TypeSet>cfg:AnyRef</v8:TypeSet>
+				<v8:TypeSet>cfg:AnyIBRef</v8:TypeSet>
 			</Type>
 		</Attribute>
 		<Attribute name="Объект" id="55">
@@ -7277,7 +7298,7 @@
 						</v8:item>
 					</Title>
 					<Type>
-						<v8:TypeSet>cfg:AnyRef</v8:TypeSet>
+						<v8:TypeSet>cfg:AnyIBRef</v8:TypeSet>
 					</Type>
 				</Column>
 				<Column name="РегистрационныйНомер" id="2">

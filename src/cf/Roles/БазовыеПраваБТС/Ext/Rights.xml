@@ -44,6 +44,13 @@
 		</right>
 	</object>
 	<object>
+		<name>Constant.ИмяПользователяУчетнойСистемы</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>Catalog.ОбщиеДанныеИнформационногоЦентра.Attribute.Идентификатор</name>
 		<right>
 			<name>View</name>
@@ -355,6 +362,28 @@
 		</right>
 	</object>
 	<object>
+		<name>InformationRegister.АвторизацияВСервисе1СФреш</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+			<restrictionByCondition>
+				<condition>ГДЕ Пользователь = &amp;ТекущийПользователь</condition>
+			</restrictionByCondition>
+		</right>
+		<right>
+			<name>Update</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>Catalog.ИнформационныеСсылкиДляФорм.Attribute.Адрес</name>
 		<right>
 			<name>View</name>
@@ -404,6 +433,13 @@
 		</right>
 	</object>
 	<object>
+		<name>Constant.ЗавершатьСеансыБезПредупрежденияПоУмолчаниюВМоделиСервиса</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>Catalog.УслугиСервиса</name>
 		<right>
 			<name>Read</name>
@@ -419,6 +455,13 @@
 		<right>
 			<name>Edit</name>
 			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Constant.АдресСервиса1СФреш</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
 		</right>
 	</object>
 	<object>

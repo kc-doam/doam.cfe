@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
 	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
 		<ChildItems>
@@ -160,6 +160,7 @@
 								</v8:item>
 							</Title>
 							<Group>Horizontal</Group>
+							<Behavior>Usual</Behavior>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="ГруппаНаименованиеАвторРасширеннаяПодсказка" id="681"/>
@@ -224,6 +225,7 @@
 								</v8:item>
 							</Title>
 							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="ГруппаДоступРасширеннаяПодсказка" id="728"/>
@@ -236,6 +238,7 @@
 										</v8:item>
 									</Title>
 									<Group>Horizontal</Group>
+									<Behavior>Usual</Behavior>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="КоманднаяПанельПользователиРасширеннаяПодсказка" id="744"/>
@@ -277,18 +280,6 @@
 													<CommandName>Form.Item.Пользователи.StandardCommand.Delete</CommandName>
 													<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
 													<ExtendedTooltip name="ПользователиУдалитьExtendedTooltip" id="736"/>
-												</Button>
-												<Button name="ПользователиСортироватьСписокПоВозрастанию" id="737">
-													<Type>CommandBarButton</Type>
-													<CommandName>631:2bbe4e12-06d2-409b-a972-eea585125d83</CommandName>
-													<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
-													<ExtendedTooltip name="ПользователиСортироватьСписокПоВозрастаниюExtendedTooltip" id="738"/>
-												</Button>
-												<Button name="ПользователиСортироватьСписокПоУбыванию" id="739">
-													<Type>CommandBarButton</Type>
-													<CommandName>631:58b2a785-23f6-4b0e-a324-9a1323285595</CommandName>
-													<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
-													<ExtendedTooltip name="ПользователиСортироватьСписокПоУбываниюExtendedTooltip" id="740"/>
 												</Button>
 											</ChildItems>
 										</CommandBar>
@@ -386,6 +377,7 @@
 								</v8:item>
 							</Title>
 							<Group>Horizontal</Group>
+							<Behavior>Usual</Behavior>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="ГруппаТелоШаблонаРасширеннаяПодсказка" id="657"/>
@@ -398,6 +390,7 @@
 										</v8:item>
 									</Title>
 									<Group>Vertical</Group>
+									<Behavior>Usual</Behavior>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="ГруппаПолучателиИТекстРасширеннаяПодсказка" id="175"/>
@@ -598,7 +591,7 @@
 															<EditMode>EnterOnInput</EditMode>
 															<ValuesPicture>
 																<xr:Ref>CommonPicture.Адресаты16</xr:Ref>
-																<xr:LoadTransparent>true</xr:LoadTransparent>
+																<xr:LoadTransparent>false</xr:LoadTransparent>
 															</ValuesPicture>
 															<FileDragMode>AsFile</FileDragMode>
 															<ContextMenu name="ПолучателиВнешнийКонтекстноеМеню" id="41"/>
@@ -639,6 +632,7 @@
 											</ToolTip>
 											<HorizontalStretch>true</HorizontalStretch>
 											<Group>Vertical</Group>
+											<Behavior>Usual</Behavior>
 											<Representation>None</Representation>
 											<ShowTitle>false</ShowTitle>
 											<ExtendedTooltip name="ГруппаТемаExtendedTooltip" id="47"/>
@@ -684,6 +678,7 @@
 											</Title>
 											<HorizontalStretch>true</HorizontalStretch>
 											<Group>Vertical</Group>
+											<Behavior>Usual</Behavior>
 											<Representation>None</Representation>
 											<ShowTitle>false</ShowTitle>
 											<ExtendedTooltip name="ГруппаТекстРасширеннаяПодсказка" id="52"/>
@@ -732,7 +727,7 @@
 																		<ChildItems>
 																			<Button name="ТекстПисьмаКонтекстноеМенюПроверитьОрфографию" id="60">
 																				<Type>CommandBarButton</Type>
-																				<CommandName>68:409b9a53-7f7e-4178-86c1-33176c7c7a7a</CommandName>
+																				<CommandName>Form.Command.ПроверитьОрфографию</CommandName>
 																				<ExtendedTooltip name="ТекстПисьмаКонтекстноеМенюПроверитьОрфографиюExtendedTooltip" id="61"/>
 																			</Button>
 																		</ChildItems>
@@ -766,7 +761,7 @@
 																		<ChildItems>
 																			<Button name="ТекстПисьмаКакТекстовыйДокументКонтекстноеМенюПроверитьОрфографию" id="67">
 																				<Type>CommandBarButton</Type>
-																				<CommandName>68:409b9a53-7f7e-4178-86c1-33176c7c7a7a</CommandName>
+																				<CommandName>Form.Command.ПроверитьОрфографию</CommandName>
 																				<ExtendedTooltip name="ТекстПисьмаКакТекстовыйДокументКонтекстноеМенюПроверитьОрфографиюExtendedTooltip" id="68"/>
 																			</Button>
 																		</ChildItems>
@@ -1216,6 +1211,7 @@
 										</v8:item>
 									</Title>
 									<Group>Horizontal</Group>
+									<Behavior>Usual</Behavior>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="ГруппаВложенияИОтступРасширеннаяПодсказка" id="177"/>
@@ -1249,6 +1245,7 @@
 											<HorizontalStretch>true</HorizontalStretch>
 											<VerticalStretch>true</VerticalStretch>
 											<Group>Vertical</Group>
+											<Behavior>Usual</Behavior>
 											<Representation>None</Representation>
 											<ShowTitle>false</ShowTitle>
 											<ExtendedTooltip name="ГруппаВложенияРеквизитыExtendedTooltip" id="182"/>
@@ -1267,6 +1264,7 @@
 														</v8:item>
 													</ToolTip>
 													<Group>Vertical</Group>
+													<Behavior>Usual</Behavior>
 													<Representation>None</Representation>
 													<ShowTitle>false</ShowTitle>
 													<ExtendedTooltip name="ГруппаФайлыИКнопкаExtendedTooltip" id="184"/>
@@ -1467,7 +1465,7 @@
 																			<Height>1</Height>
 																			<ValuesPicture>
 																				<xr:Ref>CommonPicture.КоллекцияПиктограммФайлов</xr:Ref>
-																				<xr:LoadTransparent>true</xr:LoadTransparent>
+																				<xr:LoadTransparent>false</xr:LoadTransparent>
 																			</ValuesPicture>
 																			<FileDragMode>AsFile</FileDragMode>
 																			<ContextMenu name="ВложенияИндексКартинкиКонтекстноеМеню" id="597"/>
@@ -2025,6 +2023,7 @@
 			<Type>
 				<v8:Type>v8:ValueListType</v8:Type>
 			</Type>
+			<Settings xsi:type="v8:TypeDescription"/>
 		</Attribute>
 		<Attribute name="СписокВыбораКому" id="13">
 			<Title>
@@ -2036,6 +2035,7 @@
 			<Type>
 				<v8:Type>v8:ValueListType</v8:Type>
 			</Type>
+			<Settings xsi:type="v8:TypeDescription"/>
 		</Attribute>
 		<Attribute name="СписокВыбораСкрытаяКопия" id="14">
 			<Title>
@@ -2047,6 +2047,7 @@
 			<Type>
 				<v8:Type>v8:ValueListType</v8:Type>
 			</Type>
+			<Settings xsi:type="v8:TypeDescription"/>
 		</Attribute>
 		<Attribute name="СписокВыбораКопия" id="15">
 			<Title>
@@ -2058,6 +2059,7 @@
 			<Type>
 				<v8:Type>v8:ValueListType</v8:Type>
 			</Type>
+			<Settings xsi:type="v8:TypeDescription"/>
 		</Attribute>
 		<Attribute name="ЗаполненыПараметрыEmailУчетнойЗаписи" id="21">
 			<Title>
@@ -2080,6 +2082,7 @@
 			<Type>
 				<v8:Type>v8:ValueListType</v8:Type>
 			</Type>
+			<Settings xsi:type="v8:TypeDescription"/>
 		</Attribute>
 		<Attribute name="ПриложениеЯвляетсяВебКлиентом" id="23">
 			<Title>
@@ -2135,6 +2138,7 @@
 			<Type>
 				<v8:Type>v8:ValueListType</v8:Type>
 			</Type>
+			<Settings xsi:type="v8:TypeDescription"/>
 		</Attribute>
 		<Attribute name="СписокОшибокПриЗаписи" id="29">
 			<Title>
@@ -2146,6 +2150,7 @@
 			<Type>
 				<v8:Type>v8:ValueListType</v8:Type>
 			</Type>
+			<Settings xsi:type="v8:TypeDescription"/>
 		</Attribute>
 		<Attribute name="ТекстПисьмаПриОткрытии" id="30">
 			<Title>
@@ -2442,6 +2447,7 @@
 			<Type>
 				<v8:Type>v8:ValueListType</v8:Type>
 			</Type>
+			<Settings xsi:type="v8:TypeDescription"/>
 		</Attribute>
 		<Attribute name="ИдентификаторыКартинокПисьма" id="39">
 			<Title>
@@ -2453,6 +2459,7 @@
 			<Type>
 				<v8:Type>v8:ValueListType</v8:Type>
 			</Type>
+			<Settings xsi:type="v8:TypeDescription"/>
 		</Attribute>
 		<Attribute name="ТекстОшибкиДобавленияПолучателя" id="40">
 			<Title>
@@ -2478,6 +2485,17 @@
 			</Title>
 			<Type>
 				<v8:Type>v8ui:Font</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ЭтоМобильныйКлиент" id="42">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Это мобильный клиент</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
 			</Type>
 		</Attribute>
 		<ConditionalAppearance>
@@ -3082,7 +3100,7 @@
 			</ToolTip>
 			<Picture>
 				<xr:Ref>CommonPicture.ОчиститьФормат</xr:Ref>
-				<xr:LoadTransparent>true</xr:LoadTransparent>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
 			</Picture>
 			<Action>ОчиститьФормат</Action>
 			<CurrentRowUse>DontUse</CurrentRowUse>
@@ -3145,7 +3163,7 @@
 			<Shortcut>Ctrl+Shift+1</Shortcut>
 			<Picture>
 				<xr:Ref>CommonPicture.УвеличитьШрифт</xr:Ref>
-				<xr:LoadTransparent>true</xr:LoadTransparent>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
 			</Picture>
 			<Action>УвеличитьШрифт</Action>
 			<Representation>Picture</Representation>
@@ -3167,7 +3185,7 @@
 			<Shortcut>Ctrl+Shift+9</Shortcut>
 			<Picture>
 				<xr:Ref>CommonPicture.УменьшитьШрифт</xr:Ref>
-				<xr:LoadTransparent>true</xr:LoadTransparent>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
 			</Picture>
 			<Action>УменьшитьШрифт</Action>
 			<Representation>Picture</Representation>

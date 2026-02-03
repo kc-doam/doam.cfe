@@ -131,7 +131,7 @@
 								<property name="ИдФайлИнфПол" lowerBound="0" form="Attribute">
 									<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" length="36"/>
 								</property>
-								<property name="ТекстИнф" lowerBound="0" upperBound="20">
+								<property name="ТекстИнф" lowerBound="0" upperBound="-1">
 									<typeDef xsi:type="ObjectType">
 										<property name="Идентиф" lowerBound="1" form="Attribute">
 											<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" minLength="1" maxLength="50"/>
@@ -152,6 +152,7 @@
 								<enumeration>0</enumeration>
 								<enumeration>3</enumeration>
 								<enumeration>6</enumeration>
+								<enumeration>29</enumeration>
 							</typeDef>
 						</property>
 						<property name="Статус" lowerBound="1" form="Attribute">

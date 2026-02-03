@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
 	<CommandSet>
 		<ExcludedCommand>Copy</ExcludedCommand>
 		<ExcludedCommand>SetDeletionMark</ExcludedCommand>
@@ -49,6 +49,7 @@
 				</v8:item>
 			</Title>
 			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаШапкаРасширеннаяПодсказка" id="203"/>
@@ -61,6 +62,7 @@
 						</v8:item>
 					</Title>
 					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
 					<Representation>None</Representation>
 					<United>false</United>
 					<ShowTitle>false</ShowTitle>
@@ -74,6 +76,7 @@
 								</v8:item>
 							</Title>
 							<Group>Horizontal</Group>
+							<Behavior>Usual</Behavior>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="ГруппаНомерДатаРасширеннаяПодсказка" id="137"/>
@@ -174,6 +177,19 @@
 							<ContextMenu name="ИдентификаторДокументооборотаКонтекстноеМеню" id="77"/>
 							<ExtendedTooltip name="ИдентификаторДокументооборотаРасширеннаяПодсказка" id="78"/>
 						</InputField>
+						<InputField name="ИдентификаторДокумента" id="359">
+							<DataPath>Объект.ИдентификаторДокумента</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Идентификатор 
+документа</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ИдентификаторДокументаКонтекстноеМеню" id="360"/>
+							<ExtendedTooltip name="ИдентификаторДокументаРасширеннаяПодсказка" id="361"/>
+						</InputField>
 						<InputField name="ТипРегламента" id="351">
 							<DataPath>Объект.ТипРегламента</DataPath>
 							<ReadOnly>true</ReadOnly>
@@ -186,6 +202,19 @@
 							<ContextMenu name="СпособОбменаЭДКонтекстноеМеню" id="346"/>
 							<ExtendedTooltip name="СпособОбменаЭДРасширеннаяПодсказка" id="347"/>
 						</InputField>
+						<InputField name="УчетнаяЗаписьОблачногоЭДО" id="362">
+							<DataPath>УчетнаяЗаписьОблачногоЭДО</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Учетная запись
+облачного ЭДО</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="УчетнаяЗаписьОблачногоЭДОКонтекстноеМеню" id="363"/>
+							<ExtendedTooltip name="УчетнаяЗаписьОблачногоЭДОРасширеннаяПодсказка" id="364"/>
+						</InputField>
 					</ChildItems>
 				</UsualGroup>
 				<UsualGroup name="ГруппаШапкаПраво" id="91">
@@ -196,6 +225,7 @@
 						</v8:item>
 					</Title>
 					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
 					<Representation>None</Representation>
 					<United>false</United>
 					<ShowTitle>false</ShowTitle>
@@ -209,6 +239,7 @@
 								</v8:item>
 							</Title>
 							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="ГруппаНомерДатаДокументаРасширеннаяПодсказка" id="252"/>
@@ -221,6 +252,7 @@
 										</v8:item>
 									</Title>
 									<Group>Horizontal</Group>
+									<Behavior>Usual</Behavior>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="ГруппаДатаНомерОтправителяРасширеннаяПодсказка" id="139"/>
@@ -346,6 +378,7 @@
 				</v8:item>
 			</Title>
 			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаПодвалРасширеннаяПодсказка" id="311"/>
@@ -358,6 +391,7 @@
 						</v8:item>
 					</Title>
 					<Group>Horizontal</Group>
+					<Behavior>Usual</Behavior>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="ГруппаКомментарийОтветственныйРасширеннаяПодсказка" id="313"/>
@@ -366,7 +400,7 @@
 							<DataPath>Объект.Комментарий</DataPath>
 							<ReadOnly>true</ReadOnly>
 							<ContextMenu name="КомментарийКонтекстноеМеню" id="320"/>
-							<ExtendedTooltip name="КомментарийExtendedTooltip" id="321"/>
+							<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="321"/>
 						</InputField>
 						<InputField name="Ответственный" id="322">
 							<DataPath>Объект.Ответственный</DataPath>
@@ -401,13 +435,23 @@
 				<v8:Type>cfg:EnumRef.СостоянияДокументовЭДО</v8:Type>
 			</Type>
 		</Attribute>
+		<Attribute name="УчетнаяЗаписьОблачногоЭДО" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Учетная запись облачного ЭДО</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.УчетныеЗаписиОблачногоЭДО</v8:Type>
+			</Type>
+		</Attribute>
 	</Attributes>
 	<CommandInterface>
 		<NavigationPanel>
 			<Item>
 				<Command>CommonCommand.ПрисоединенныеФайлы</Command>
 				<Type>Auto</Type>
-				<Attribute>Объект.Ref</Attribute>
 				<DefaultVisible>false</DefaultVisible>
 				<Visible>
 					<xr:Common>false</xr:Common>
@@ -416,14 +460,12 @@
 			<Item>
 				<Command>Document.СообщениеЭДО.Command.СообщенияДокумента</Command>
 				<Type>Auto</Type>
-				<Attribute>Объект.Ref</Attribute>
 				<CommandGroup>FormNavigationPanelGoTo</CommandGroup>
 				<Index>1</Index>
 			</Item>
 			<Item>
 				<Command>InformationRegister.ЖурналДействийПоЭДО.StandardCommand.OpenByValue.ЭлектронныйДокумент</Command>
 				<Type>Auto</Type>
-				<Attribute>Объект.Ref</Attribute>
 				<CommandGroup>FormNavigationPanelGoTo</CommandGroup>
 			</Item>
 		</NavigationPanel>
@@ -447,7 +489,6 @@
 			<Item>
 				<Command>DataProcessor.ИнтерфейсДокументовЭДО.Command.ДеревоЭД</Command>
 				<Type>Auto</Type>
-				<Attribute>Объект.Ref</Attribute>
 				<DefaultVisible>false</DefaultVisible>
 				<Visible>
 					<xr:Common>false</xr:Common>

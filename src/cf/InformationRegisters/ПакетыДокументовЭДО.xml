@@ -414,6 +414,7 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Dimension>
+			<Form>ДобавлениеДокументовВПакет</Form>
 		</ChildObjects>
 	</InformationRegister>
 </MetaDataObject>

@@ -18,7 +18,9 @@
 			<Comment/>
 			<Type>
 				<v8:Type>cfg:CatalogObject.ТранспортныйКонтейнерЭДОПрисоединенныеФайлы</v8:Type>
+				<v8:Type>cfg:CatalogObject.КэшВизуализацииДокументовЭДОПрисоединенныеФайлы</v8:Type>
 				<v8:Type>cfg:CatalogObject.ТранспортноеСообщениеКонтейнерыПрисоединенныеФайлы</v8:Type>
+				<v8:Type>cfg:CatalogObject.ИсторияПроверкиИКорректировкиДанныхПрисоединенныеФайлы</v8:Type>
 				<v8:Type>cfg:CatalogObject.СообщениеЭДОПрисоединенныеФайлы</v8:Type>
 				<v8:Type>cfg:CatalogObject.СправкиСПАРКРискиПрисоединенныеФайлы</v8:Type>
 				<v8:Type>cfg:CatalogObject.ТранспортноеСообщениеПрисоединенныеФайлы</v8:Type>

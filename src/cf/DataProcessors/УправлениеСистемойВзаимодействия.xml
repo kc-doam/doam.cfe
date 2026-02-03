@@ -29,9 +29,9 @@
 		</Properties>
 		<ChildObjects>
 			<Form>Форма</Form>
-			<Form>ФормаСвязиПриложений</Form>
 			<Form>ФормаВводаДанныхДляУправления</Form>
 			<Form>ФормаОтменыРегистрации</Form>
+			<Form>ФормаСвязиПриложений</Form>
 			<Command uuid="d9194594-0f9b-424d-910a-7c7e709c2924">
 				<Properties>
 					<Name>УправлениеСистемойВзаимодействия</Name>

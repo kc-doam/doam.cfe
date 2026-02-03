@@ -276,8 +276,8 @@
 					</Attribute>
 				</ChildObjects>
 			</TabularSection>
-			<Form>ФормаЭлемента</Form>
 			<Form>ФормаСписка</Form>
+			<Form>ФормаЭлемента</Form>
 			<Command uuid="4f9452f1-1312-4b19-904e-053134645978">
 				<Properties>
 					<Name>КомандаОткрытьСпискиРассылки</Name>

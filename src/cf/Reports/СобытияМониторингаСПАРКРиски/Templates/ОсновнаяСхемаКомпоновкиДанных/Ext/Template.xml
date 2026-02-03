@@ -132,9 +132,21 @@
         //#ПО (СправочникКонтрагенты.Ссылка = СобытияМониторингаСПАРКРиски.Контрагент)
 //#ГДЕ СобытияМониторингаСПАРКРиски.Контрагент ССЫЛКА Справочник.%ИмяСправочникаКонтрагенты
 {ГДЕ
-    (СобытияМониторингаСПАРКРиски.Контрагент = &amp;Контрагент)}
+    (СобытияМониторингаСПАРКРиски.Контрагент В (&amp;Контрагент))}
 {ГДЕ
-    (ТипыСобытийСПАРКРиски.Название = &amp;ТипСобытия)}</query>
+    (ТипыСобытийСПАРКРиски.Название В (&amp;ТипСобытия))}
+{ГДЕ
+    ВЫБОР
+     КОГДА &amp;ТолькоКритичныеСобытия
+       ТОГДА ТипыСобытийСПАРКРиски.Критичное
+       ИНАЧЕ ИСТИНА
+     КОНЕЦ}
+{ГДЕ
+   ВЫБОР
+     КОГДА &amp;ИсполнительныеПроизводства
+       ТОГДА ИСТИНА
+       ИНАЧЕ Не ТипыСобытийСПАРКРиски.ИсполнительноеПроизводство
+     КОНЕЦ}</query>
 	</dataSet>
 	<parameter>
 		<name>Контрагент</name>
@@ -147,8 +159,8 @@
 		<valueType>
 			<v8:TypeId>f2c1f683-1fd4-4123-8416-d7ea4637e29d</v8:TypeId>
 		</valueType>
-		<value xsi:nil="true"/>
 		<useRestriction>false</useRestriction>
+		<valueListAllowed>true</valueListAllowed>
 	</parameter>
 	<parameter>
 		<name>НадписьНаПортале</name>
@@ -183,8 +195,38 @@
 				<v8:AllowedLength>Variable</v8:AllowedLength>
 			</v8:StringQualifiers>
 		</valueType>
-		<value xsi:type="xs:string"/>
 		<useRestriction>false</useRestriction>
+		<valueListAllowed>true</valueListAllowed>
+	</parameter>
+	<parameter>
+		<name>ИсполнительныеПроизводства</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Исполнительные производства</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:boolean</v8:Type>
+		</valueType>
+		<value xsi:type="xs:boolean">true</value>
+		<useRestriction>false</useRestriction>
+		<use>Always</use>
+	</parameter>
+	<parameter>
+		<name>ТолькоКритичныеСобытия</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Только критичные события</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:boolean</v8:Type>
+		</valueType>
+		<value xsi:type="xs:boolean">false</value>
+		<useRestriction>false</useRestriction>
+		<use>Always</use>
 	</parameter>
 	<template>
 		<name>Макет1</name>
@@ -308,6 +350,18 @@
 					<dcscor:value xsi:type="xs:string"/>
 					<dcsset:userSettingID>e49e5459-ba0a-4f57-b992-b56eae9149f4</dcsset:userSettingID>
 				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>ИсполнительныеПроизводства</dcscor:parameter>
+					<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					<dcsset:userSettingID>709ef468-b1d3-406a-b470-4adf709b7c37</dcsset:userSettingID>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>ТолькоКритичныеСобытия</dcscor:parameter>
+					<dcscor:value xsi:type="xs:boolean">false</dcscor:value>
+					<dcsset:userSettingID>ab61122c-fcc1-4a9a-9ade-4dcf43df4300</dcsset:userSettingID>
+				</dcscor:item>
 			</dcsset:dataParameters>
 			<dcsset:order>
 				<dcsset:item xsi:type="dcsset:OrderItemField">
@@ -373,6 +427,10 @@
 							<v8:content>События мониторинга 1СПАРК Риски</v8:content>
 						</v8:item>
 					</dcscor:value>
+				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:parameter>ВыводитьПараметрыДанных</dcscor:parameter>
+					<dcscor:value xsi:type="dcsset:DataCompositionTextOutputType">DontOutput</dcscor:value>
 				</dcscor:item>
 			</dcsset:outputParameters>
 			<dcsset:item xsi:type="dcsset:StructureItemGroup">

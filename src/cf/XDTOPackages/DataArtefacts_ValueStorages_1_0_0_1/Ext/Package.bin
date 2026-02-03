@@ -7,6 +7,7 @@
 	<objectType name="ValueStorageData" abstract="true"/>
 	<objectType xmlns:d2p1="http://www.1c.ru/1cFresh/Data/Artefacts/ValueStorage/1.0.0.1" name="BinaryValueStorageData" base="d2p1:ValueStorageData">
 		<property name="RelativeFilePath" type="xs:string"/>
+		<property name="OriginType" type="d2p1:OriginType" lowerBound="0"/>
 	</objectType>
 	<objectType xmlns:d2p1="http://www.1c.ru/1cFresh/Data/Artefacts/ValueStorage/1.0.0.1" name="SerializableValueStorageData" base="d2p1:ValueStorageData">
 		<property name="Data" type="xs:anyType"/>
@@ -24,4 +25,8 @@
 		<property name="LineNumber" type="xs:long"/>
 	</objectType>
 	<objectType xmlns:d2p1="http://www.1c.ru/1cFresh/Data/Artefacts/ValueStorage/1.0.0.1" name="OwnerBody" base="d2p1:OwnerAbstract"/>
+	<objectType name="OriginType">
+		<property name="URI" type="xs:string"/>
+		<property name="Type" type="xs:string"/>
+	</objectType>
 </package>

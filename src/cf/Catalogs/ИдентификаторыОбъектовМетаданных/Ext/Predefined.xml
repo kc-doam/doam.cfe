@@ -1140,4 +1140,40 @@
 		<Description/>
 		<IsFolder>false</IsFolder>
 	</Item>
+	<Item id="d1baeb33-925f-442e-855c-53bc19babf9e">
+		<Name>РегистрНакопленияОстаткиДенежныхСредств</Name>
+		<Code/>
+		<Description/>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="6cbb6b5a-a23c-48fd-b1ad-16d9c37a2912">
+		<Name>РегистрСведенийСводныеПриложенияОчередьЗагрузки</Name>
+		<Code/>
+		<Description/>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="782b8ab7-8deb-4b2d-8b1e-5a7ee0f174cb">
+		<Name>РегистрСведенийСводныеПриложенияСостояниеВыгрузки</Name>
+		<Code/>
+		<Description/>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="4055a786-dbb3-42c0-a15c-b857bf2dc2dd">
+		<Name>РегистрСведенийСводныеПриложенияСостояниеЗагрузки</Name>
+		<Code/>
+		<Description/>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="35f68337-e265-4ad4-998d-7e9e9890a063">
+		<Name>РегистрСведенийЦеныНоменклатуры</Name>
+		<Code/>
+		<Description/>
+		<IsFolder>false</IsFolder>
+	</Item>
+	<Item id="0405403b-dc8f-4335-bc31-99751a5199dc">
+		<Name>РегистрСведенийСнимкиОтчетов</Name>
+		<Code/>
+		<Description/>
+		<IsFolder>false</IsFolder>
+	</Item>
 </PredefinedData>

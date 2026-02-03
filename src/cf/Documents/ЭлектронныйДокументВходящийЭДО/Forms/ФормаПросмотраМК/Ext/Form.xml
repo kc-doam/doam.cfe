@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
 	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
 	<AutoTitle>false</AutoTitle>
 	<AutoTime>CurrentOrLast</AutoTime>
@@ -15,7 +15,7 @@
 						<v8:content>Группа команд еще</v8:content>
 					</v8:item>
 				</Title>
-				<ExtendedTooltip name="ФормаГруппа1РасширеннаяПодсказка1" id="254"/>
+				<ExtendedTooltip name="ГруппаКомандЕщеРасширеннаяПодсказка" id="254"/>
 				<ChildItems>
 					<ButtonGroup name="ГруппаКомандОтправитьПовторно" id="277">
 						<Title>
@@ -24,7 +24,7 @@
 								<v8:content>Группа команд отправить повторно</v8:content>
 							</v8:item>
 						</Title>
-						<ExtendedTooltip name="Группа1РасширеннаяПодсказка14" id="278"/>
+						<ExtendedTooltip name="ГруппаКомандОтправитьПовторноРасширеннаяПодсказка" id="278"/>
 						<ChildItems>
 							<Button name="ОтправитьПовторно" id="255">
 								<Type>CommandBarButton</Type>
@@ -40,12 +40,12 @@
 								<v8:content>Группа команд технологические</v8:content>
 							</v8:item>
 						</Title>
-						<ExtendedTooltip name="Группа1РасширеннаяПодсказка13" id="258"/>
+						<ExtendedTooltip name="ГруппаКомандТехнологическиеРасширеннаяПодсказка" id="258"/>
 					</ButtonGroup>
 					<Button name="ИзменитьФорму" id="243">
 						<Type>CommandBarButton</Type>
 						<CommandName>Form.StandardCommand.CustomizeForm</CommandName>
-						<ExtendedTooltip name="ФормаИзменитьФормуРасширеннаяПодсказка" id="244"/>
+						<ExtendedTooltip name="ИзменитьФормуРасширеннаяПодсказка" id="244"/>
 					</Button>
 				</ChildItems>
 			</ButtonGroup>
@@ -67,14 +67,16 @@
 			</Title>
 			<HorizontalStretch>true</HorizontalStretch>
 			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
-			<ExtendedTooltip name="ГруппаПредупрежденияРасширеннаяПодсказка" id="494"/>
+			<ExtendedTooltip name="ГруппаПредупрежденийРасширеннаяПодсказка" id="494"/>
 		</UsualGroup>
 		<UsualGroup name="ГруппаСостояние" id="48">
+			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
-			<ExtendedTooltip name="Группа1РасширеннаяПодсказка5" id="49"/>
+			<ExtendedTooltip name="ГруппаСостояниеРасширеннаяПодсказка" id="49"/>
 			<ChildItems>
 				<LabelDecoration name="НадписьСостояние" id="19">
 					<Width>8</Width>
@@ -84,8 +86,8 @@
 							<v8:content>Состояние:</v8:content>
 						</v8:item>
 					</Title>
-					<ContextMenu name="Декорация1КонтекстноеМеню1" id="20"/>
-					<ExtendedTooltip name="Декорация1РасширеннаяПодсказка1" id="21"/>
+					<ContextMenu name="НадписьСостояниеКонтекстноеМеню" id="20"/>
+					<ExtendedTooltip name="НадписьСостояниеРасширеннаяПодсказка" id="21"/>
 				</LabelDecoration>
 				<LabelDecoration name="ПредставлениеСостояния" id="22">
 					<Font ref="style:ЖирныйШрифтБЭД" kind="StyleItem"/>
@@ -95,15 +97,15 @@
 							<v8:content>На подписи (0 из 1)</v8:content>
 						</v8:item>
 					</Title>
-					<ContextMenu name="Декорация1КонтекстноеМеню2" id="23"/>
-					<ExtendedTooltip name="Декорация1РасширеннаяПодсказка2" id="24"/>
+					<ContextMenu name="ПредставлениеСостоянияКонтекстноеМеню" id="23"/>
+					<ExtendedTooltip name="ПредставлениеСостоянияРасширеннаяПодсказка" id="24"/>
 				</LabelDecoration>
 				<LabelField name="ПричинаОтклонения" id="50">
 					<DataPath>ПричинаОтклонения</DataPath>
 					<Visible>false</Visible>
 					<TitleLocation>None</TitleLocation>
-					<ContextMenu name="ПолеКонтекстноеМеню5" id="51"/>
-					<ExtendedTooltip name="ПолеРасширеннаяПодсказка5" id="52"/>
+					<ContextMenu name="ПричинаОтклоненияКонтекстноеМеню" id="51"/>
+					<ExtendedTooltip name="ПричинаОтклоненияРасширеннаяПодсказка" id="52"/>
 				</LabelField>
 				<PictureDecoration name="КартинкаОбновить" id="16">
 					<Title formatted="false">
@@ -117,8 +119,8 @@
 						<xr:Ref>StdPicture.Refresh</xr:Ref>
 						<xr:LoadTransparent>true</xr:LoadTransparent>
 					</Picture>
-					<ContextMenu name="Декорация1КонтекстноеМеню" id="17"/>
-					<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="18"/>
+					<ContextMenu name="КартинкаОбновитьКонтекстноеМеню" id="17"/>
+					<ExtendedTooltip name="КартинкаОбновитьРасширеннаяПодсказка" id="18"/>
 					<Events>
 						<Event name="Click">ВыполнитьОтправкуПолучениеЭД</Event>
 					</Events>
@@ -133,15 +135,17 @@
 				</v8:item>
 			</Title>
 			<Group>AlwaysHorizontal</Group>
+			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаШапкаДокументаРасширеннаяПодсказка" id="26"/>
 		</UsualGroup>
 		<UsualGroup name="ГруппаДанныеДокументов" id="53">
 			<Group>AlwaysHorizontal</Group>
+			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
-			<ExtendedTooltip name="Группа1РасширеннаяПодсказка6" id="54"/>
+			<ExtendedTooltip name="ГруппаДанныеДокументовРасширеннаяПодсказка" id="54"/>
 			<ChildItems>
 				<Pages name="ГруппаСтраницы" id="55">
 					<Title>
@@ -151,7 +155,7 @@
 						</v8:item>
 					</Title>
 					<PagesRepresentation>TabsOnTop</PagesRepresentation>
-					<ExtendedTooltip name="Группа1РасширеннаяПодсказка7" id="56"/>
+					<ExtendedTooltip name="ГруппаСтраницыРасширеннаяПодсказка" id="56"/>
 					<ChildItems>
 						<Page name="СтраницаДанныеДокумента" id="57">
 							<Title>
@@ -164,6 +168,7 @@
 							<ChildItems>
 								<UsualGroup name="ГруппаШапка" id="29">
 									<Group>Vertical</Group>
+									<Behavior>Usual</Behavior>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="ГруппаШапкаРасширеннаяПодсказка" id="30"/>
@@ -171,14 +176,14 @@
 										<InputField name="Организация" id="43">
 											<DataPath>Объект.Организация</DataPath>
 											<ReadOnly>true</ReadOnly>
-											<ContextMenu name="ПолеКонтекстноеМеню4" id="44"/>
-											<ExtendedTooltip name="ПолеРасширеннаяПодсказка4" id="45"/>
+											<ContextMenu name="ОрганизацияКонтекстноеМеню" id="44"/>
+											<ExtendedTooltip name="ОрганизацияРасширеннаяПодсказка" id="45"/>
 										</InputField>
 										<InputField name="Контрагент" id="34">
 											<DataPath>Объект.Контрагент</DataPath>
 											<ReadOnly>true</ReadOnly>
-											<ContextMenu name="ПолеКонтекстноеМеню1" id="35"/>
-											<ExtendedTooltip name="ПолеРасширеннаяПодсказка1" id="36"/>
+											<ContextMenu name="КонтрагентКонтекстноеМеню" id="35"/>
+											<ExtendedTooltip name="КонтрагентРасширеннаяПодсказка" id="36"/>
 										</InputField>
 										<InputField name="СуммаДокумента" id="458">
 											<DataPath>СуммаДокумента</DataPath>
@@ -186,8 +191,8 @@
 											<AutoMaxWidth>false</AutoMaxWidth>
 											<MaxWidth>14</MaxWidth>
 											<ChoiceButton>false</ChoiceButton>
-											<ContextMenu name="ПолеКонтекстноеМеню8" id="459"/>
-											<ExtendedTooltip name="ПолеРасширеннаяПодсказка8" id="460"/>
+											<ContextMenu name="СуммаДокументаКонтекстноеМеню" id="459"/>
+											<ExtendedTooltip name="СуммаДокументаРасширеннаяПодсказка" id="460"/>
 										</InputField>
 									</ChildItems>
 								</UsualGroup>
@@ -205,7 +210,7 @@
 									<v8:content>Подписи и статусы</v8:content>
 								</v8:item>
 							</Title>
-							<ExtendedTooltip name="Группа1РасширеннаяПодсказка9" id="62"/>
+							<ExtendedTooltip name="СтраницаПодписиИСтатусыРасширеннаяПодсказка" id="62"/>
 							<ChildItems>
 								<UsualGroup name="ГруппаПодписи" id="317">
 									<Title>
@@ -215,8 +220,9 @@
 										</v8:item>
 									</Title>
 									<Group>Vertical</Group>
+									<Behavior>Usual</Behavior>
 									<Representation>None</Representation>
-									<ExtendedTooltip name="ГруппаЭПРасширеннаяПодсказка" id="318"/>
+									<ExtendedTooltip name="ГруппаПодписиРасширеннаяПодсказка" id="318"/>
 									<ChildItems>
 										<Table name="Подписи" id="319">
 											<Representation>List</Representation>
@@ -263,17 +269,17 @@
 											<ViewStatusLocation>None</ViewStatusLocation>
 											<SearchControlLocation>None</SearchControlLocation>
 											<RowFilter xsi:nil="true"/>
-											<ContextMenu name="ТаблицаЭПКонтекстноеМеню" id="320">
+											<ContextMenu name="ПодписиКонтекстноеМеню" id="320">
 												<ChildItems>
 													<Button name="ОткрытьСертификатКонтекст" id="323">
 														<Type>CommandBarButton</Type>
 														<CommandName>Form.Command.ОткрытьСертификат</CommandName>
-														<ExtendedTooltip name="ОткрытьСертификатExtendedTooltip" id="324"/>
+														<ExtendedTooltip name="ОткрытьСертификатКонтекстРасширеннаяПодсказка" id="324"/>
 													</Button>
 												</ChildItems>
 											</ContextMenu>
-											<AutoCommandBar name="ТаблицаЭПКоманднаяПанель" id="325"/>
-											<ExtendedTooltip name="ТаблицаЭПРасширеннаяПодсказка" id="326"/>
+											<AutoCommandBar name="ПодписиКоманднаяПанель" id="325"/>
+											<ExtendedTooltip name="ПодписиРасширеннаяПодсказка" id="326"/>
 											<SearchStringAddition name="ТаблицаЭПСтрокаПоиска" id="327">
 												<AdditionSource>
 													<Item>Подписи</Item>
@@ -311,13 +317,13 @@
 															<v8:content>Кому выдан сертификат</v8:content>
 														</v8:item>
 													</Title>
-													<ContextMenu name="СписокПодписейКонтекстноеМеню" id="354"/>
-													<ExtendedTooltip name="СписокПодписейРасширеннаяПодсказка" id="355"/>
+													<ContextMenu name="ПодписиКомуВыданСертификатКонтекстноеМеню" id="354"/>
+													<ExtendedTooltip name="ПодписиКомуВыданСертификатРасширеннаяПодсказка" id="355"/>
 												</InputField>
 												<InputField name="ПодписиДатаПодписи" id="356">
 													<DataPath>Подписи.ДатаПодписи</DataPath>
-													<ContextMenu name="СписокПодписейКонтекстноеМеню1" id="357"/>
-													<ExtendedTooltip name="СписокПодписейРасширеннаяПодсказка1" id="358"/>
+													<ContextMenu name="ПодписиДатаПодписиКонтекстноеМеню" id="357"/>
+													<ExtendedTooltip name="ПодписиДатаПодписиРасширеннаяПодсказка" id="358"/>
 												</InputField>
 												<ColumnGroup name="СписокПодписейГруппаСтатусИКартинка" id="342">
 													<Title>
@@ -327,7 +333,7 @@
 														</v8:item>
 													</Title>
 													<Group>InCell</Group>
-													<ExtendedTooltip name="СписокПодписейРасширеннаяПодсказка2" id="343"/>
+													<ExtendedTooltip name="СписокПодписейГруппаСтатусИКартинкаРасширеннаяПодсказка" id="343"/>
 													<ChildItems>
 														<PictureField name="ПодписиВыводКартинки" id="365">
 															<DataPath>Подписи.ВыводКартинки</DataPath>
@@ -336,20 +342,20 @@
 																<xr:Ref>CommonPicture.ЭлектронныйДокументОшибкаПодписи</xr:Ref>
 																<xr:LoadTransparent>false</xr:LoadTransparent>
 															</ValuesPicture>
-															<ContextMenu name="СписокПодписейКонтекстноеМеню2" id="366"/>
-															<ExtendedTooltip name="СписокПодписейРасширеннаяПодсказка3" id="367"/>
+															<ContextMenu name="ПодписиВыводКартинкиКонтекстноеМеню" id="366"/>
+															<ExtendedTooltip name="ПодписиВыводКартинкиРасширеннаяПодсказка" id="367"/>
 														</PictureField>
 														<InputField name="ПодписиПодписьВернаПредставление" id="368">
 															<DataPath>Подписи.ПодписьВернаПредставление</DataPath>
-															<ContextMenu name="СписокПодписейКонтекстноеМеню3" id="369"/>
-															<ExtendedTooltip name="СписокПодписейРасширеннаяПодсказка4" id="370"/>
+															<ContextMenu name="ПодписиПодписьВернаПредставлениеКонтекстноеМеню" id="369"/>
+															<ExtendedTooltip name="ПодписиПодписьВернаПредставлениеРасширеннаяПодсказка" id="370"/>
 														</InputField>
 													</ChildItems>
 												</ColumnGroup>
 												<InputField name="ПодписиУстановившийПодпись" id="383">
 													<DataPath>Подписи.УстановившийПодпись</DataPath>
-													<ContextMenu name="СписокПодписейКонтекстноеМеню4" id="384"/>
-													<ExtendedTooltip name="СписокПодписейРасширеннаяПодсказка5" id="385"/>
+													<ContextMenu name="ПодписиУстановившийПодписьКонтекстноеМеню" id="384"/>
+													<ExtendedTooltip name="ПодписиУстановившийПодписьРасширеннаяПодсказка" id="385"/>
 												</InputField>
 											</ChildItems>
 										</Table>
@@ -369,7 +375,7 @@
 								<xr:LoadTransparent>false</xr:LoadTransparent>
 							</Picture>
 							<Group>AlwaysHorizontal</Group>
-							<ExtendedTooltip name="Группа1РасширеннаяПодсказка10" id="64"/>
+							<ExtendedTooltip name="СтраницаСопроводительнаяЗапискаРасширеннаяПодсказка" id="64"/>
 							<ChildItems>
 								<InputField name="СопроводительнаяЗаписка" id="428">
 									<DataPath>СопроводительнаяЗаписка</DataPath>
@@ -377,8 +383,8 @@
 									<TitleLocation>None</TitleLocation>
 									<AutoMaxWidth>false</AutoMaxWidth>
 									<MultiLine>true</MultiLine>
-									<ContextMenu name="ОбъектДополнительнаяИнформацияКонтекстноеМеню" id="429"/>
-									<ExtendedTooltip name="ОбъектДополнительнаяИнформацияРасширеннаяПодсказка" id="430"/>
+									<ContextMenu name="СопроводительнаяЗапискаКонтекстноеМеню" id="429"/>
+									<ExtendedTooltip name="СопроводительнаяЗапискаРасширеннаяПодсказка" id="430"/>
 								</InputField>
 							</ChildItems>
 						</Page>
@@ -398,6 +404,7 @@
 			<Group>Vertical</Group>
 			<VerticalSpacing>Double</VerticalSpacing>
 			<VerticalAlign>Bottom</VerticalAlign>
+			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<United>false</United>
 			<ShowTitle>false</ShowTitle>
@@ -710,6 +717,81 @@
 						<v8:DateQualifiers>
 							<v8:DateFractions>DateTime</v8:DateFractions>
 						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="ДоверенностьПредставление" id="58">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Доверенность</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ПодписанныйОбъект" id="59">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Подписанный объект</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.СообщениеЭДОПрисоединенныеФайлы</v8:Type>
+					</Type>
+				</Column>
+				<Column name="РезультатПроверкиПоМЧД" id="60">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Результат проверки по МЧД</v8:content>
+						</v8:item>
+					</Title>
+					<Type/>
+				</Column>
+				<Column name="СвойстваДоверенности" id="61">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Свойства доверенности</v8:content>
+						</v8:item>
+					</Title>
+					<Type/>
+				</Column>
+				<Column name="СвойстваПодписи" id="62">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Свойства подписи</v8:content>
+						</v8:item>
+					</Title>
+					<Type/>
+				</Column>
+				<Column name="СообщениеЭДО" id="63">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сообщение ЭДО</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:DocumentRef.СообщениеЭДО</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ЭтоПодписьПоДоверенности" id="64">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Это подпись по доверенности</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
 					</Type>
 				</Column>
 			</Columns>
@@ -1071,6 +1153,17 @@
 						<v8:Type>cfg:EnumRef.ТипыДокументовЭДО</v8:Type>
 					</Type>
 				</Column>
+				<Column name="РаспознаниеВыполнено" id="57">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Распознание выполнено</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
 			</Columns>
 		</Attribute>
 		<Attribute name="ОтключитьВыводСхемыДокументооборота" id="17">
@@ -1321,20 +1414,6 @@
 			</Title>
 			<Type>
 				<v8:Type>cfg:EnumRef.СостоянияДокументовЭДО</v8:Type>
-			</Type>
-		</Attribute>
-		<Attribute name="ДатаИзмененияСостоянияЭДО" id="37">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Дата изменения состояния ЭДО</v8:content>
-				</v8:item>
-			</Title>
-			<Type>
-				<v8:Type>xs:dateTime</v8:Type>
-				<v8:DateQualifiers>
-					<v8:DateFractions>Date</v8:DateFractions>
-				</v8:DateQualifiers>
 			</Type>
 		</Attribute>
 		<Attribute name="ИдентификаторТекущегоЭлемента" id="41">
@@ -1721,7 +1800,6 @@
 			<Item>
 				<Command>CommonCommand.ПрисоединенныеФайлы</Command>
 				<Type>Auto</Type>
-				<Attribute>Объект.Ref</Attribute>
 				<DefaultVisible>false</DefaultVisible>
 				<Visible>
 					<xr:Common>false</xr:Common>
@@ -1730,7 +1808,6 @@
 			<Item>
 				<Command>Document.СообщениеЭДО.Command.СообщенияДокумента</Command>
 				<Type>Auto</Type>
-				<Attribute>Объект.Ref</Attribute>
 				<DefaultVisible>false</DefaultVisible>
 				<Visible>
 					<xr:Common>false</xr:Common>
@@ -1739,7 +1816,6 @@
 			<Item>
 				<Command>InformationRegister.ЖурналДействийПоЭДО.StandardCommand.OpenByValue.ЭлектронныйДокумент</Command>
 				<Type>Auto</Type>
-				<Attribute>Объект.Ref</Attribute>
 				<DefaultVisible>false</DefaultVisible>
 				<Visible>
 					<xr:Common>false</xr:Common>
@@ -1748,7 +1824,6 @@
 			<Item>
 				<Command>Document.ТранспортныйКонтейнерЭДО.Command.ТранспортныеКонтейнерыДокумента</Command>
 				<Type>Auto</Type>
-				<Attribute>Объект.Ref</Attribute>
 				<DefaultVisible>false</DefaultVisible>
 				<Visible>
 					<xr:Common>false</xr:Common>

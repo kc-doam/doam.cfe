@@ -102,7 +102,7 @@
 	<Item name="StyleItem.ЗакрытыеНеактуальныеЗаписи">
 		<Color>style:FormBackColor</Color>
 	</Item>
-	<Item name="StyleItem.ЗапрещенноеПравоДоступа">
+	<Item name="StyleItem.ЗапрещенноеПравоДоступаЦвет">
 		<Color>style:FormBackColor</Color>
 	</Item>
 	<Item name="StyleItem.ИзбранныйЭлемент">
@@ -132,6 +132,9 @@
 	<Item name="StyleItem.НеЗаполненныйПредмет">
 		<Color>style:FormBackColor</Color>
 	</Item>
+	<Item name="StyleItem.НеназначенноеПравоДоступаЦвет">
+		<Color>style:FormBackColor</Color>
+	</Item>
 	<Item name="StyleItem.НепринятаяВерсия">
 		<Color>style:FormBackColor</Color>
 	</Item>
@@ -139,9 +142,6 @@
 		<Font ref="style:TextFont" kind="StyleItem"/>
 	</Item>
 	<Item name="StyleItem.НеСтартованныйБизнесПроцесс">
-		<Color>style:FormBackColor</Color>
-	</Item>
-	<Item name="StyleItem.НеустановленноеПравоДоступа">
 		<Color>style:FormBackColor</Color>
 	</Item>
 	<Item name="StyleItem.ОтметкаОтрицательногоВыполненияЗадачи">
@@ -180,7 +180,7 @@
 	<Item name="StyleItem.ПросроченныеДанныеЦвет">
 		<Color>style:FormBackColor</Color>
 	</Item>
-	<Item name="StyleItem.РазрешенноеПравоДоступа">
+	<Item name="StyleItem.РазрешенноеПравоДоступаЦвет">
 		<Color>style:FormBackColor</Color>
 	</Item>
 	<Item name="StyleItem.РезультатУспехЦвет">

@@ -25,7 +25,7 @@
 			</Synonym>
 			<Comment/>
 			<Type>
-				<v8:Type>cfg:EnumRef.ВариантыПечатиШтампаЭП</v8:Type>
+				<v8:Type>cfg:EnumRef.МестаВставкиКартинки</v8:Type>
 			</Type>
 			<UseStandardCommands>true</UseStandardCommands>
 			<DefaultForm/>

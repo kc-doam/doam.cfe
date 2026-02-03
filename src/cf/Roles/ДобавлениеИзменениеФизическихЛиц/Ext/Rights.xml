@@ -6219,7 +6219,7 @@
 		</right>
 	</object>
 	<object>
-		<name>InformationRegister.ПравилаДляОбменаДанными.Attribute.ИспользоватьФильтрВыборочнойРегистрацииОбъектов</name>
+		<name>InformationRegister.ПравилаДляОбменаДанными.Attribute.УдалитьИспользоватьФильтрВыборочнойРегистрацииОбъектов</name>
 		<right>
 			<name>View</name>
 			<value>false</value>

@@ -192,9 +192,9 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Dimension>
+			<Form>ФормаЗаписи</Form>
 			<Form>ФормаСписка</Form>
 			<Form>ФормаСпискаДокумента</Form>
-			<Form>ФормаЗаписи</Form>
 			<Command uuid="f47d32e8-ee99-4a6b-a46c-aa7ecae23d01">
 				<Properties>
 					<Name>ОткрытьФормуСпискаДокумента</Name>

@@ -19,7 +19,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Role.БазовыеПраваЭД</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.ЗаблокироватьОткрытиеФормНаМобильномКлиентеЭДО</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.ПереопределитьПолучаемуюФормуПрисоединенногоФайлаБЭД</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.УстановитьПометкуУдаленияПрисоединенныхФайловДокументовЭД</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.УстановитьПометкуУдаленияПрисоединенныхФайловДокументовБЭД</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">FunctionalOption.ИспользоватьНесколькоОрганизацийБЭД</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ЖелтыйШарБЭД</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ЗеленыйШарБЭД</xr:Item>
@@ -62,23 +62,30 @@
 				<xr:Item xsi:type="xr:MDObjectRef">StyleItem.НаклонныйШрифтБЭД</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Enum.СтатусыТранспортныхСообщенийБЭД</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">DefinedType.ВидыЭлектронныхДокументовБЭД</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">DefinedType.КонтрагентОбъектБЭД</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ФлажокБЭД</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">StyleItem.ПодчеркнутыйШрифтДиалоговБЭД</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">StyleItem.ОбычныйШрифтДиалоговБЭД</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ОбщегоНазначенияБЭДГлобальный</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">StyleItem.НедоступныйДляВыбораЭлементБЭД</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.РаспределенныйРеестрФНС</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ИнтеграцияПодсистемБЭД</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ИнтеграцияПодсистемБЭДКлиент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">StyleItem.ОченьМелкийШрифтБЭД</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects>
-			<Subsystem>РаботаCФайлами</Subsystem>
-			<Subsystem>ОбщегоНазначения</Subsystem>
+			<Subsystem>ВнешнийИнтерфейс</Subsystem>
+			<Subsystem>ДанныеЭлектронногоДокумента</Subsystem>
+			<Subsystem>ИнтеграцияБИП</Subsystem>
+			<Subsystem>ИнтеграцияБСП</Subsystem>
 			<Subsystem>ИнтернетСоединение</Subsystem>
 			<Subsystem>Криптография</Subsystem>
-			<Subsystem>ОбработкаНеисправностей</Subsystem>
 			<Subsystem>МаршрутыПодписания</Subsystem>
-			<Subsystem>ДанныеЭлектронногоДокумента</Subsystem>
-			<Subsystem>ВнешнийИнтерфейс</Subsystem>
-			<Subsystem>ИнтеграцияБИП</Subsystem>
 			<Subsystem>НастройкиБЭД</Subsystem>
+			<Subsystem>ОбработкаНеисправностей</Subsystem>
+			<Subsystem>ОбщегоНазначения</Subsystem>
+			<Subsystem>РаботаCФайлами</Subsystem>
 			<Subsystem>СлужебныеОбъекты</Subsystem>
-			<Subsystem>ИнтеграцияБСП</Subsystem>
 		</ChildObjects>
 	</Subsystem>
 </MetaDataObject>

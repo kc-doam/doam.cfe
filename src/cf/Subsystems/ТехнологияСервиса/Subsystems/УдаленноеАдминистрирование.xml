@@ -25,6 +25,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.УдаленноеАдминистрированиеБТСКлиент</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.УдаленноеАдминистрированиеБТССлужебный</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.УдаленноеАдминистрированиеСлужебный</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ЗавершатьСеансыБезПредупрежденияПоУмолчаниюВМоделиСервиса</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

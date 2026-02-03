@@ -35,8 +35,8 @@
 		</Properties>
 		<ChildObjects>
 			<Template>Макет</Template>
-			<Template>ОбразецОтчетаЗависшиеСообщения</Template>
 			<Template>ОбразецОтчетаВсеСообщения</Template>
+			<Template>ОбразецОтчетаЗависшиеСообщения</Template>
 		</ChildObjects>
 	</Report>
 </MetaDataObject>

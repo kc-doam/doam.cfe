@@ -2712,8 +2712,8 @@
 			</TabularSection>
 			<Form>ФормаБизнесПроцесса</Form>
 			<Form>ФормаЗадачиКонтролера</Form>
-			<Form>ФормаСхемаПроцесса</Form>
 			<Form>ФормаПросмотрБизнесПроцессаМК</Form>
+			<Form>ФормаСхемаПроцесса</Form>
 			<Command uuid="08657660-23c1-45c3-bc7e-12e92e2112f8">
 				<Properties>
 					<Name>СхемаПроцесса</Name>

@@ -19,9 +19,17 @@
 		</Properties>
 		<ChildObjects>
 			<Subsystem>БазоваяФункциональностьБИП</Subsystem>
-			<Subsystem>РаботаСКонтрагентами</Subsystem>
-			<Subsystem>СПАРКРиски</Subsystem>
+			<Subsystem>ДанныеНагрузкиИРентабельности</Subsystem>
+			<Subsystem>Новости</Subsystem>
+			<Subsystem>ПодборФИО</Subsystem>
+			<Subsystem>ПолучениеВнешнихКомпонент</Subsystem>
 			<Subsystem>ПолучениеОбновленийПрограммы</Subsystem>
+			<Subsystem>ПолучениеРегламентированныхОтчетов</Subsystem>
+			<Subsystem>РаботаСКлассификаторами</Subsystem>
+			<Subsystem>РаботаСКонтрагентами</Subsystem>
+			<Subsystem>РасписанияРегламентныхЗаданий</Subsystem>
+			<Subsystem>СистемаБыстрыхПлатежей</Subsystem>
+			<Subsystem>СПАРКРиски</Subsystem>
 		</ChildObjects>
 	</Subsystem>
 </MetaDataObject>

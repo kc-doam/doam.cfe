@@ -15,6 +15,7 @@
 				<v8:Type>cfg:ConstantValueManager.СообщениеБлокировкиПриОбновленииКонфигурации</v8:Type>
 				<v8:Type>cfg:ConstantValueManager.АдресСервисаЦентраИдей</v8:Type>
 				<v8:Type>cfg:ConstantValueManager.КонечнаяТочкаМенеджераСервиса</v8:Type>
+				<v8:Type>cfg:ConstantValueManager.ОкончаниеИнтервалаВремениПриоритетаОбработкиДанных</v8:Type>
 				<v8:Type>cfg:ConstantValueManager.ЛогироватьЗапускиЗаданийОчереди</v8:Type>
 				<v8:Type>cfg:CatalogObject.СообщенияСистемы</v8:Type>
 				<v8:Type>cfg:ConstantValueManager.РазмерБлокаПередачиФайла</v8:Type>
@@ -22,6 +23,8 @@
 				<v8:Type>cfg:ConstantValueManager.ВнешнийАдресУправляющегоПриложения</v8:Type>
 				<v8:Type>cfg:CatalogObject.ПоставляемыеДополнительныеОтчетыИОбработки</v8:Type>
 				<v8:Type>cfg:ConstantValueManager.КаталогРасширенийОтправлятьПревьюПриЗапросеСписка</v8:Type>
+				<v8:Type>cfg:ConstantValueManager.УстанавливатьПриоритетОбработкиДанныхВУказанномИнтервалеВремени</v8:Type>
+				<v8:Type>cfg:ConstantValueManager.АдресПровайдераАутентификации</v8:Type>
 				<v8:Type>cfg:CatalogObject.ОбщиеДанныеИнформационногоЦентра</v8:Type>
 				<v8:Type>cfg:ConstantValueManager.ПериодХраненияИсторииЗапусковЗаданийОчереди</v8:Type>
 				<v8:Type>cfg:ConstantValueManager.КаталогОбменаФайламиВМоделиСервиса</v8:Type>
@@ -37,6 +40,9 @@
 				<v8:Type>cfg:ConstantValueManager.ПоддержкаРезервногоКопирования</v8:Type>
 				<v8:Type>cfg:CatalogObject.ОповещенияПользователей</v8:Type>
 				<v8:Type>cfg:ConstantValueManager.НезависимоеИспользованиеРасширенийВМоделиСервиса</v8:Type>
+				<v8:Type>cfg:ConstantValueManager.НачалоИнтервалаВремениПриоритетаОбработкиДанных</v8:Type>
+				<v8:Type>cfg:ConstantValueManager.ЗавершатьСеансыБезПредупрежденияПоУмолчаниюВМоделиСервиса</v8:Type>
+				<v8:Type>cfg:ConstantValueManager.МаксимальныйРазмерПриложенияДляВыгрузкиБезРасширенияРаботыСФайлами</v8:Type>
 				<v8:Type>cfg:ConstantValueManager.АдресСервисаПодключенияЭлектроннойПодписиВМоделиСервиса</v8:Type>
 				<v8:Type>cfg:ConstantValueManager.ИспользоватьКонтрольТарификации</v8:Type>
 				<v8:Type>cfg:ConstantValueManager.АдресУправленияКонференцией</v8:Type>
@@ -47,8 +53,11 @@
 				<v8:Type>cfg:CatalogObject.ПоставляемыеДанные</v8:Type>
 				<v8:Type>cfg:CatalogObject.ПолныеПутиКФормам</v8:Type>
 				<v8:Type>cfg:ConstantValueManager.ИспользоватьДифференциальноеРезервноеКопирование</v8:Type>
+				<v8:Type>cfg:CatalogObject.ВерсииПоставляемыхРасширений</v8:Type>
 				<v8:Type>cfg:CatalogObject.ИнформационныеСсылкиДляФорм</v8:Type>
+				<v8:Type>cfg:ConstantValueManager.ИспользоватьОбщиеНастройкиВходаПользователейСервиса</v8:Type>
 				<v8:Type>cfg:CatalogObject.ОбработчикиОчередиЗаданий</v8:Type>
+				<v8:Type>cfg:ConstantValueManager.АутентификацияТокеномДоступаВнутреннихВызововПрограммногоИнтерфейса</v8:Type>
 				<v8:Type>cfg:ConstantValueManager.ВнутреннийАдресМенеджераСервиса</v8:Type>
 				<v8:Type>cfg:ConstantValueManager.АдресСервисаНовостей</v8:Type>
 				<v8:Type>cfg:CatalogObject.ПоставляемыеРасширения</v8:Type>

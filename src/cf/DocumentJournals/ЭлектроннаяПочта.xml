@@ -497,6 +497,7 @@
 			</Column>
 			<Form>ВсеАдресатыПисьма</Form>
 			<Form>ИсторияПереписки</Form>
+			<Form>МКФормаСписка</Form>
 			<Form>НастройкаБыстрогоПоиска</Form>
 			<Form>НастройкаПроверкиНовыхПисем</Form>
 			<Form>НастройкаСпискаПапок</Form>
@@ -504,6 +505,7 @@
 			<Form>ПечатьПисьма</Form>
 			<Form>ПросмотрВложенногоПисьма</Form>
 			<Form>ПросмотрОшибкиСоединения</Form>
+			<Form>ПросмотрПриглашений</Form>
 			<Form>РеквизитыПисьма</Form>
 			<Form>СохранениеПисьма</Form>
 			<Form>ФормаВыбора</Form>
@@ -511,7 +513,30 @@
 			<Form>ФормаОтчетаОбОшибках</Form>
 			<Form>ФормаСписка</Form>
 			<Form>ФормаСпискаДвустрочная</Form>
-			<Form>МКФормаСписка</Form>
+			<Command uuid="e8a6f170-b7c5-4c24-94a5-508deb5e82e1">
+				<Properties>
+					<Name>ОткрытьПечатнуюФорму</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Открыть печатную форму</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Group>FormCommandBarImportant</Group>
+					<CommandParameterType>
+						<v8:Type>cfg:DocumentRef.ВходящееПисьмо</v8:Type>
+						<v8:Type>cfg:DocumentRef.ИсходящееПисьмо</v8:Type>
+					</CommandParameterType>
+					<ParameterUseMode>Single</ParameterUseMode>
+					<ModifiesData>false</ModifiesData>
+					<Representation>Auto</Representation>
+					<ToolTip/>
+					<Picture/>
+					<Shortcut/>
+					<OnMainServerUnavalableBehavior>Auto</OnMainServerUnavalableBehavior>
+				</Properties>
+			</Command>
 			<Command uuid="0f151992-f77c-48f9-aa02-b267149d9096">
 				<Properties>
 					<Name>ПечатьПисьма</Name>
@@ -541,30 +566,6 @@
 						<xr:LoadTransparent>true</xr:LoadTransparent>
 					</Picture>
 					<Shortcut>Alt+P</Shortcut>
-					<OnMainServerUnavalableBehavior>Auto</OnMainServerUnavalableBehavior>
-				</Properties>
-			</Command>
-			<Command uuid="e8a6f170-b7c5-4c24-94a5-508deb5e82e1">
-				<Properties>
-					<Name>ОткрытьПечатнуюФорму</Name>
-					<Synonym>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Открыть печатную форму</v8:content>
-						</v8:item>
-					</Synonym>
-					<Comment/>
-					<Group>FormCommandBarImportant</Group>
-					<CommandParameterType>
-						<v8:Type>cfg:DocumentRef.ВходящееПисьмо</v8:Type>
-						<v8:Type>cfg:DocumentRef.ИсходящееПисьмо</v8:Type>
-					</CommandParameterType>
-					<ParameterUseMode>Single</ParameterUseMode>
-					<ModifiesData>false</ModifiesData>
-					<Representation>Auto</Representation>
-					<ToolTip/>
-					<Picture/>
-					<Shortcut/>
 					<OnMainServerUnavalableBehavior>Auto</OnMainServerUnavalableBehavior>
 				</Properties>
 			</Command>

@@ -18,7 +18,7 @@
 			<Content>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.ИнформационнаяПоддержкаСайт</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.ИнформационнаяПоддержкаГруппаВКонтакте</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.ИнформационнаяПоддержкаГруппаFacebook</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.ИнформационнаяПоддержкаГруппаTelegram</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.ИнформационнаяПоддержкаВидеоматериалы</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.ИнформационнаяПоддержкаОписаниеИзменений</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Role.РаботаССоцсетямиИYouTube</xr:Item>

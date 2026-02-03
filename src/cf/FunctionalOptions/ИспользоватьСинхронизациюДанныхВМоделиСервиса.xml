@@ -14,6 +14,7 @@
 			<PrivilegedGetMode>true</PrivilegedGetMode>
 			<Content>
 				<xr:Object>CommonForm.МониторСинхронизацииДанныхВМоделиСервиса</xr:Object>
+				<xr:Object>Catalog.СценарииОбменовДанными</xr:Object>
 			</Content>
 		</Properties>
 	</FunctionalOption>

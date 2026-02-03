@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
 	<Title>
 		<v8:item>
 			<v8:lang>ru</v8:lang>
@@ -76,7 +76,6 @@
 				<ExcludedCommand>Refresh</ExcludedCommand>
 				<ExcludedCommand>SaveDynamicListSettings</ExcludedCommand>
 				<ExcludedCommand>SearchEverywhere</ExcludedCommand>
-				<ExcludedCommand>SearchHistory</ExcludedCommand>
 				<ExcludedCommand>SetDateInterval</ExcludedCommand>
 			</CommandSet>
 			<SearchStringLocation>FormCaption</SearchStringLocation>
@@ -449,6 +448,7 @@
 			<VerticalStretch>true</VerticalStretch>
 			<GroupVerticalAlign>Bottom</GroupVerticalAlign>
 			<ChildrenAlign>ItemsRightTitlesLeft</ChildrenAlign>
+			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаОтборРасширеннаяПодсказка" id="143"/>
@@ -476,6 +476,7 @@
 							<v8:content>Группа отбор адресат</v8:content>
 						</v8:item>
 					</ToolTip>
+					<Behavior>Usual</Behavior>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="ГруппаОтборАдресатРасширеннаяПодсказка" id="145"/>
@@ -506,6 +507,7 @@
 							<v8:content>Группа отбор непрочтенные</v8:content>
 						</v8:item>
 					</ToolTip>
+					<Behavior>Usual</Behavior>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="ГруппаОтборНепрочтенныеРасширеннаяПодсказка" id="147"/>
@@ -541,6 +543,7 @@
 							<v8:content>Группа отбор флаг</v8:content>
 						</v8:item>
 					</ToolTip>
+					<Behavior>Usual</Behavior>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="ГруппаОтборФлагРасширеннаяПодсказка" id="149"/>
@@ -579,119 +582,47 @@
 			</ToolTip>
 			<GroupVerticalAlign>Bottom</GroupVerticalAlign>
 			<Group>AlwaysHorizontal</Group>
+			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="НижнийБлокРасширеннаяПодсказка" id="70"/>
 			<ChildItems>
-				<UsualGroup name="ГруппаВыборПапки" id="71">
+				<Button name="ВыбратьПапку" id="73">
+					<Type>UsualButton</Type>
+					<Representation>PictureAndText</Representation>
+					<HorizontalStretch>true</HorizontalStretch>
+					<CommandName>Form.Command.ВыбратьПапку</CommandName>
+					<TextColor>web:Black</TextColor>
+					<BorderColor>web:Black</BorderColor>
+					<Picture>
+						<xr:Ref>CommonPicture.Папка</xr:Ref>
+						<xr:LoadTransparent>false</xr:LoadTransparent>
+					</Picture>
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Группа выбор папки</v8:content>
+							<v8:content>Сменить папку</v8:content>
 						</v8:item>
 					</Title>
-					<ToolTip>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Группа выбор папки</v8:content>
-						</v8:item>
-					</ToolTip>
+					<PictureLocation>Left</PictureLocation>
+					<CommandUniqueness>false</CommandUniqueness>
+					<ExtendedTooltip name="ВыбратьПапкуРасширеннаяПодсказка" id="74"/>
+				</Button>
+				<Button name="ПоказатьОтборПисем" id="92">
+					<Type>UsualButton</Type>
+					<Representation>PictureAndText</Representation>
 					<HorizontalStretch>true</HorizontalStretch>
-					<VerticalStretch>false</VerticalStretch>
-					<Group>Vertical</Group>
-					<Representation>None</Representation>
-					<ShowTitle>false</ShowTitle>
-					<ExtendedTooltip name="ГруппаВыборПапкиРасширеннаяПодсказка" id="72"/>
-					<ChildItems>
-						<Button name="ВыбратьПапку" id="73">
-							<Type>UsualButton</Type>
-							<Representation>Picture</Representation>
-							<HorizontalStretch>true</HorizontalStretch>
-							<CommandName>Form.Command.ВыбратьПапку</CommandName>
-							<TextColor>style:FormTextColor</TextColor>
-							<CommandUniqueness>false</CommandUniqueness>
-							<ExtendedTooltip name="ВыбратьПапкуРасширеннаяПодсказка" id="74"/>
-						</Button>
-						<PictureDecoration name="ДекорацияВыбратьПапку" id="75">
-							<Height>1</Height>
-							<AutoMaxHeight>false</AutoMaxHeight>
-							<HorizontalStretch>true</HorizontalStretch>
-							<VerticalStretch>false</VerticalStretch>
-							<TextColor>style:FormTextColor</TextColor>
-							<Title formatted="false">
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Декорация выбрать папку</v8:content>
-								</v8:item>
-							</Title>
-							<Hyperlink>true</Hyperlink>
-							<NonselectedPictureText>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Выбрать папку</v8:content>
-								</v8:item>
-							</NonselectedPictureText>
-							<ContextMenu name="ДекорацияВыбратьПапкуКонтекстноеМеню" id="76"/>
-							<ExtendedTooltip name="ДекорацияВыбратьПапкуРасширеннаяПодсказка" id="77"/>
-							<Events>
-								<Event name="Click">ДекорацияВыбратьПапкуНажатие</Event>
-							</Events>
-						</PictureDecoration>
-					</ChildItems>
-				</UsualGroup>
-				<UsualGroup name="ГруппаПоказатьОтбор" id="85">
+					<CommandName>Form.Command.ПоказатьОтборПисем</CommandName>
+					<TextColor>web:Black</TextColor>
+					<BorderColor>web:Black</BorderColor>
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Группа показать отбор</v8:content>
+							<v8:content>Быстрый поиск</v8:content>
 						</v8:item>
 					</Title>
-					<ToolTip>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Группа показать отбор</v8:content>
-						</v8:item>
-					</ToolTip>
-					<HorizontalStretch>true</HorizontalStretch>
-					<VerticalStretch>false</VerticalStretch>
-					<Group>Vertical</Group>
-					<Representation>None</Representation>
-					<ShowTitle>false</ShowTitle>
-					<ExtendedTooltip name="ГруппаПоказатьОтборРасширеннаяПодсказка" id="86"/>
-					<ChildItems>
-						<Button name="ПоказатьОтборПисем" id="92">
-							<Type>UsualButton</Type>
-							<HorizontalStretch>true</HorizontalStretch>
-							<CommandName>Form.Command.ПоказатьОтборПисем</CommandName>
-							<TextColor>style:FormTextColor</TextColor>
-							<ExtendedTooltip name="ПоказатьОтборПисемРасширеннаяПодсказка" id="93"/>
-						</Button>
-						<PictureDecoration name="ДекорацияОтбор" id="89">
-							<Height>1</Height>
-							<AutoMaxHeight>false</AutoMaxHeight>
-							<HorizontalStretch>true</HorizontalStretch>
-							<VerticalStretch>false</VerticalStretch>
-							<TextColor>style:FormTextColor</TextColor>
-							<Title formatted="false">
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Декорация отбор</v8:content>
-								</v8:item>
-							</Title>
-							<NonselectedPictureText>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Быстрый поиск</v8:content>
-								</v8:item>
-							</NonselectedPictureText>
-							<ContextMenu name="ДекорацияОтборКонтекстноеМеню" id="90"/>
-							<ExtendedTooltip name="ДекорацияОтборРасширеннаяПодсказка" id="91"/>
-							<Events>
-								<Event name="Click">ДекорацияОтборНажатие</Event>
-							</Events>
-						</PictureDecoration>
-					</ChildItems>
-				</UsualGroup>
+					<ExtendedTooltip name="ПоказатьОтборПисемРасширеннаяПодсказка" id="93"/>
+				</Button>
 			</ChildItems>
 		</UsualGroup>
 	</ChildItems>

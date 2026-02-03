@@ -497,11 +497,11 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Attribute>
-			<Form>ФормаЭлемента</Form>
-			<Form>ФормаСписка</Form>
 			<Form>ФормаГруппы</Form>
-			<Template>Условия</Template>
+			<Form>ФормаСписка</Form>
+			<Form>ФормаЭлемента</Form>
 			<Template>ЗадачаИсполнителя</Template>
+			<Template>Условия</Template>
 		</ChildObjects>
 	</Catalog>
 </MetaDataObject>

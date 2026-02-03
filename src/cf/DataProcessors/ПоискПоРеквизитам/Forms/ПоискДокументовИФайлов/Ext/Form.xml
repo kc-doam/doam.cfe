@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
 	<Width>100</Width>
 	<EnterKeyBehavior>DefaultButton</EnterKeyBehavior>
 	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
@@ -31,6 +31,7 @@
 				</v8:item>
 			</ToolTip>
 			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаСписокСохраненныхПоисковИПараметрыExtendedTooltip" id="1336"/>
@@ -80,6 +81,7 @@
 										</v8:item>
 									</ToolTip>
 									<Group>Horizontal</Group>
+									<Behavior>Usual</Behavior>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="ГруппаПараметрыИСохраненныеПоискиExtendedTooltip" id="1339"/>
@@ -249,6 +251,7 @@
 											<Width>69</Width>
 											<HorizontalStretch>true</HorizontalStretch>
 											<Group>Vertical</Group>
+											<Behavior>Usual</Behavior>
 											<Representation>None</Representation>
 											<ShowTitle>false</ShowTitle>
 											<ExtendedTooltip name="ГруппаТолькоПараметрыExtendedTooltip" id="1350"/>
@@ -269,6 +272,7 @@
 													<Width>69</Width>
 													<HorizontalStretch>true</HorizontalStretch>
 													<Group>Horizontal</Group>
+													<Behavior>Usual</Behavior>
 													<Representation>None</Representation>
 													<ShowTitle>false</ShowTitle>
 													<ExtendedTooltip name="ГруппаВидПоискаExtendedTooltip" id="1351"/>
@@ -1306,12 +1310,6 @@
 																		<DataPath>Items.ВнутренниеДокументыСписок.CurrentData.Ссылка__</DataPath>
 																		<ExtendedTooltip name="ВнутренниеДокументыСписокСправочникИсходящиеДокументыСоздатьИсходящийДокументНаОснованииExtendedTooltip" id="1412"/>
 																	</Button>
-																	<Button name="ВнутренниеДокументыСписокОбщаяКомандаСоздатьБизнесПроцесс" id="1324">
-																		<Type>CommandBarButton</Type>
-																		<CommandName>0</CommandName>
-																		<DataPath>Items.ВнутренниеДокументыСписок.CurrentData.Ссылка__</DataPath>
-																		<ExtendedTooltip name="ВнутренниеДокументыСписокОбщаяКомандаСоздатьБизнесПроцессExtendedTooltip" id="1413"/>
-																	</Button>
 																</ChildItems>
 															</Popup>
 															<Popup name="ПечатьВн" id="1130">
@@ -1333,12 +1331,6 @@
 																</Picture>
 																<ExtendedTooltip name="ПечатьВнExtendedTooltip" id="1414"/>
 																<ChildItems>
-																	<Button name="ВнутренниеДокументыСписокСправочникВнутренниеДокументыПечатьКарточки" id="1131">
-																		<Type>CommandBarButton</Type>
-																		<CommandName>0</CommandName>
-																		<DataPath>Items.ВнутренниеДокументыСписок.CurrentData.СодержитОригинал</DataPath>
-																		<ExtendedTooltip name="ВнутренниеДокументыСписокСправочникВнутренниеДокументыПечатьКарточкиExtendedTooltip" id="1415"/>
-																	</Button>
 																	<Button name="ВнутренниеДокументыСписокОбщаяКомандаПечатьРегистрационногоШтампа" id="1132">
 																		<Type>CommandBarButton</Type>
 																		<CommandName>CommonCommand.ПечатьРегистрационногоШтампа</CommandName>
@@ -2037,12 +2029,6 @@
 																		<DataPath>Items.ВходящиеДокументыСписок.CurrentData.Ссылка__</DataPath>
 																		<ExtendedTooltip name="ВходящиеДокументыСписокСправочникИсходящиеДокументыСоздатьИсходящийДокументНаОснованииExtendedTooltip" id="1473"/>
 																	</Button>
-																	<Button name="ВходящиеДокументыСписокОбщаяКомандаСоздатьБизнесПроцесс" id="1325">
-																		<Type>CommandBarButton</Type>
-																		<CommandName>0</CommandName>
-																		<DataPath>Items.ВходящиеДокументыСписок.CurrentData.Ссылка__</DataPath>
-																		<ExtendedTooltip name="ВходящиеДокументыСписокОбщаяКомандаСоздатьБизнесПроцессExtendedTooltip" id="1474"/>
-																	</Button>
 																</ChildItems>
 															</Popup>
 															<Popup name="ПечатьВх" id="1175">
@@ -2064,12 +2050,6 @@
 																</Picture>
 																<ExtendedTooltip name="ПечатьВхExtendedTooltip" id="1475"/>
 																<ChildItems>
-																	<Button name="ВходящиеДокументыСписокСправочникВходящиеДокументыПечатьКарточки" id="1176">
-																		<Type>CommandBarButton</Type>
-																		<CommandName>0</CommandName>
-																		<DataPath>Items.ВходящиеДокументыСписок.CurrentData.Ссылка__</DataPath>
-																		<ExtendedTooltip name="ВходящиеДокументыСписокСправочникВходящиеДокументыПечатьКарточкиExtendedTooltip" id="1476"/>
-																	</Button>
 																	<Button name="ВходящиеДокументыСписокОбщаяКомандаПечатьРегистрационногоШтампа" id="1177">
 																		<Type>CommandBarButton</Type>
 																		<CommandName>CommonCommand.ПечатьРегистрационногоШтампа</CommandName>
@@ -2795,12 +2775,6 @@
 																		<DataPath>Items.ИсходящиеДокументыСписок.CurrentData.Ссылка__</DataPath>
 																		<ExtendedTooltip name="ИсходящиеДокументыСписокСправочникВходящиеДокументыСоздатьВходящийДокументНаОснованииExtendedTooltip" id="1529"/>
 																	</Button>
-																	<Button name="ИсходящиеДокументыСписокОбщаяКомандаСоздатьБизнесПроцесс" id="1326">
-																		<Type>CommandBarButton</Type>
-																		<CommandName>0</CommandName>
-																		<DataPath>Items.ИсходящиеДокументыСписок.CurrentData.Ссылка__</DataPath>
-																		<ExtendedTooltip name="ИсходящиеДокументыСписокОбщаяКомандаСоздатьБизнесПроцессExtendedTooltip" id="1530"/>
-																	</Button>
 																</ChildItems>
 															</Popup>
 															<Popup name="ИсходящиеДокументыПечать" id="1307">
@@ -2822,12 +2796,6 @@
 																</Picture>
 																<ExtendedTooltip name="ИсходящиеДокументыПечатьExtendedTooltip" id="1531"/>
 																<ChildItems>
-																	<Button name="ИсходящиеДокументыСписокСправочникИсходящиеДокументыПечатьКарточки" id="1308">
-																		<Type>CommandBarButton</Type>
-																		<CommandName>0</CommandName>
-																		<DataPath>Items.ИсходящиеДокументыСписок.CurrentData.СодержитОригинал</DataPath>
-																		<ExtendedTooltip name="ИсходящиеДокументыСписокСправочникИсходящиеДокументыПечатьКарточкиExtendedTooltip" id="1532"/>
-																	</Button>
 																	<Button name="ИсходящиеДокументыСписокОбщаяКомандаПечатьРегистрационногоШтампа" id="1309">
 																		<Type>CommandBarButton</Type>
 																		<CommandName>CommonCommand.ПечатьРегистрационногоШтампа</CommandName>
@@ -3322,15 +3290,6 @@
 													<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
 													<ContextMenu name="ФайлыСписокКонтекстноеМеню" id="282">
 														<ChildItems>
-															<Button name="ФайлыСписокКонтекстноеМенюВыгрузитьФайлыНаДискКонтекст" id="981">
-																<Type>CommandBarButton</Type>
-																<CommandName>0</CommandName>
-																<Picture>
-																	<xr:Ref>CommonPicture.ЭкспортФайловВПапку</xr:Ref>
-																	<xr:LoadTransparent>false</xr:LoadTransparent>
-																</Picture>
-																<ExtendedTooltip name="ФайлыСписокКонтекстноеМенюВыгрузитьФайлыНаДискКонтекстExtendedTooltip" id="1565"/>
-															</Button>
 															<Button name="ФайлыСписокКонтекстноеМенюОткрытьФайл" id="1068">
 																<Type>CommandBarButton</Type>
 																<CommandName>Form.Command.ОткрытьФайл</CommandName>
@@ -3547,11 +3506,6 @@
 																</ToolTip>
 																<ExtendedTooltip name="ГруппаКомандФайловExtendedTooltip" id="1593"/>
 																<ChildItems>
-																	<Button name="ФайлыСписокВыгрузитьФайлыНаДиск" id="979">
-																		<Type>CommandBarButton</Type>
-																		<CommandName>0</CommandName>
-																		<ExtendedTooltip name="ФайлыСписокВыгрузитьФайлыНаДискExtendedTooltip" id="1594"/>
-																	</Button>
 																	<Button name="ФайлыСписокОткрытьФайл" id="1066">
 																		<Type>CommandBarButton</Type>
 																		<Representation>PictureAndText</Representation>
@@ -3813,12 +3767,6 @@
 																		<CommandName>Catalog.ИсходящиеДокументы.Command.СоздатьИсходящийДокументНаОсновании</CommandName>
 																		<DataPath>Items.ФайлыСписок.CurrentData.Ссылка__</DataPath>
 																		<ExtendedTooltip name="ФайлыСписокСправочникИсходящиеДокументыСоздатьИсходящийДокументНаОснованииExtendedTooltip" id="1624"/>
-																	</Button>
-																	<Button name="ФайлыСписокОбщаяКомандаСоздатьБизнесПроцесс" id="1327">
-																		<Type>CommandBarButton</Type>
-																		<CommandName>0</CommandName>
-																		<DataPath>Items.ФайлыСписок.CurrentData.Ссылка__</DataPath>
-																		<ExtendedTooltip name="ФайлыСписокОбщаяКомандаСоздатьБизнесПроцессExtendedTooltip" id="1625"/>
 																	</Button>
 																</ChildItems>
 															</Popup>
@@ -4117,6 +4065,7 @@
 										</v8:item>
 									</ToolTip>
 									<Group>Horizontal</Group>
+									<Behavior>Usual</Behavior>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="ГруппаПояснениеExtendedTooltip" id="1647"/>

@@ -28,22 +28,22 @@
 			<Explanation/>
 		</Properties>
 		<ChildObjects>
-			<Form>МойАбонент</Form>
-			<Form>МоиПриложения</Form>
-			<Form>Приложение</Form>
-			<Form>ДобавлениеПриложения</Form>
+			<Form>АктивироватьПромокод</Form>
 			<Form>ДобавлениеПользователя</Form>
+			<Form>ДобавлениеПриложения</Form>
+			<Form>МоиПриложения</Form>
+			<Form>МойАбонент</Form>
 			<Form>ПользователиАбонента</Form>
 			<Form>Пользователь</Form>
-			<Form>АктивироватьПромокод</Form>
+			<Form>Приложение</Form>
 			<Form>Форма</Form>
-			<Command uuid="2a02a3cc-cbee-4bec-8b75-f68e6c4649af">
+			<Command uuid="fea9013e-bdc4-4d05-90b0-461c13abf419">
 				<Properties>
-					<Name>МойАбонент</Name>
+					<Name>АктивироватьПромокод</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Мой абонент</v8:content>
+							<v8:content>Активировать промокод</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -79,13 +79,13 @@
 					<OnMainServerUnavalableBehavior>Auto</OnMainServerUnavalableBehavior>
 				</Properties>
 			</Command>
-			<Command uuid="06d0a338-e2a7-4f78-a5cd-c6924b48c7ff">
+			<Command uuid="2a02a3cc-cbee-4bec-8b75-f68e6c4649af">
 				<Properties>
-					<Name>ПользователиАбонента</Name>
+					<Name>МойАбонент</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Пользователи абонента</v8:content>
+							<v8:content>Мой абонент</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -100,13 +100,13 @@
 					<OnMainServerUnavalableBehavior>Auto</OnMainServerUnavalableBehavior>
 				</Properties>
 			</Command>
-			<Command uuid="fea9013e-bdc4-4d05-90b0-461c13abf419">
+			<Command uuid="06d0a338-e2a7-4f78-a5cd-c6924b48c7ff">
 				<Properties>
-					<Name>АктивироватьПромокод</Name>
+					<Name>ПользователиАбонента</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Активировать промокод</v8:content>
+							<v8:content>Пользователи абонента</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>

@@ -58,6 +58,11 @@
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ВыгрузкаЗагрузкаДанныхКлиент</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Constant.ИнформацияОПроцедуреЗагрузки</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Constant.ПараметрыЗапускаИнтерактивнойПроцедурыЗагрузки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.АнализСхемКонфигурации</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ВыгрузкаЗагрузкаДанныхДополнительныхОтчетовИОбработок</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.СостоянияВыгрузкиЗагрузкиОбластейДанных</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ВыгрузкаЗагрузкаОбъектовМетаданных</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.МаксимальныйРазмерПриложенияДляВыгрузкиБезРасширенияРаботыСФайлами</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

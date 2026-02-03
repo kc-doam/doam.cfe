@@ -4,11 +4,29 @@
 	<setForAttributesByDefault>true</setForAttributesByDefault>
 	<independentRightsOfChildObjects>false</independentRightsOfChildObjects>
 	<object>
+		<name>InformationRegister.ПереходыВВебВерсиюСПАРК</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>DataProcessor.СправкаСПАРКРиски</name>
 		<right>
 			<name>Use</name>
 			<value>true</value>
 		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.ПереходыВВебВерсиюСПАРК.Command.ПереходыВВебВерсиюСПАРКПоКонтрагенту</name>
 		<right>
 			<name>View</name>
 			<value>true</value>
@@ -49,6 +67,13 @@
 			<name>Read</name>
 			<value>true</value>
 		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>DataProcessor.СправкаСПАРКРиски.Command.ЧтоТакоеБухгалтерскаяОтчетность</name>
 		<right>
 			<name>View</name>
 			<value>true</value>
@@ -111,6 +136,13 @@
 		</right>
 	</object>
 	<object>
+		<name>InformationRegister.ПереходыВВебВерсиюСПАРК.Command.ПереходыВВебВерсиюСПАРК</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>DataProcessor.СправкаСПАРКРиски.Command.ЧтоТакоеИндексФинансовогоРиска</name>
 		<right>
 			<name>View</name>
@@ -130,6 +162,13 @@
 			<name>Use</name>
 			<value>true</value>
 		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.ПереходыВВебВерсиюСПАРК.Command.ПереходыВВебВерсиюСПАРКПоКонтрагентуПоказыватьОтбор</name>
 		<right>
 			<name>View</name>
 			<value>true</value>

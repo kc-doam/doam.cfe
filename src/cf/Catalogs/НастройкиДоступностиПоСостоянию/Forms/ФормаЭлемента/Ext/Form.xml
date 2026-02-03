@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
 	<Width>120</Width>
 	<CommandSet>
 		<ExcludedCommand>WriteAndClose</ExcludedCommand>
@@ -67,6 +67,7 @@
 				</v8:item>
 			</ToolTip>
 			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаНаименованиеExtendedTooltip" id="99"/>
@@ -155,6 +156,7 @@
 								</v8:item>
 							</ToolTip>
 							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
 							<Representation>NormalSeparation</Representation>
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="ГруппаНастройкиExtendedTooltip" id="105"/>
@@ -448,6 +450,7 @@
 									</ToolTip>
 									<ToolTipRepresentation>None</ToolTipRepresentation>
 									<Group>Horizontal</Group>
+									<Behavior>Usual</Behavior>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="ЛегендаРасширеннаяПодсказка" id="189">
@@ -455,10 +458,10 @@
 											<v8:item>
 												<v8:lang>ru</v8:lang>
 												<v8:content>&lt;fontsize 12&gt;&lt;color #008000&gt;✔&lt;/&gt;&lt;/&gt;&lt;fontsize 12&gt;&lt;color #008000&gt; &lt;/&gt;&lt;/&gt;&lt;fontsize 10&gt;&lt;colorstyle -3&gt;в указанном состоянии п&lt;/&gt;&lt;/&gt;&lt;fontsize 10&gt;&lt;colorstyle -3&gt;оле доступно &lt;/&gt;&lt;/&gt;
-&lt;fontsize 12&gt;&lt;color #B22222&gt;✘&lt;/&gt;&lt;/&gt;&lt;fontsize 12&gt;&lt;colorstyle 0:0c44fdea-7b81-45be-87f5-d64456a9d379&gt; &lt;/&gt;&lt;/&gt;&lt;fontsize 10&gt;&lt;colorstyle -3&gt;поле не&lt;/&gt;&lt;/&gt;&lt;fontsize 10&gt;&lt;colorstyle -3&gt; &lt;/&gt;&lt;/&gt;&lt;fontstyle -20&gt;&lt;fontsize 10&gt;&lt;colorstyle -3&gt;доступно&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;fontstyle -20&gt;&lt;fontsize 10&gt;&lt;colorstyle -3&gt;, даже если в других состояниях&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;fontsize 10&gt;&lt;colorstyle -3&gt; &lt;/&gt;&lt;/&gt;&lt;fontsize 10&gt;&lt;colorstyle -3&gt;есть доступ&lt;/&gt;&lt;/&gt;
-&lt;b&gt;&lt;fontsize 12&gt;&lt;colorstyle 0:106dad2d-31bf-491c-924b-145107110aae&gt;●&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;fontsize 12&gt;&lt;colorstyle 0:0a83f9ec-eabe-4e8f-9fa9-0067acad6fc4&gt; &lt;/&gt;&lt;/&gt;&lt;fontsize 10&gt;&lt;colorstyle -3&gt;н&lt;/&gt;&lt;/&gt;&lt;fontsize 10&gt;&lt;colorstyle -3&gt;е разрешает доступ, но и не запрещает&lt;/&gt;&lt;/&gt;
+&lt;fontsize 12&gt;&lt;color #b22222&gt;✘&lt;/&gt;&lt;/&gt;&lt;fontsize 12&gt;&lt;colorstyle 0:0c44fdea-7b81-45be-87f5-d64456a9d379&gt; &lt;/&gt;&lt;/&gt;&lt;fontsize 10&gt;&lt;colorstyle -3&gt;поле не&lt;/&gt;&lt;/&gt;&lt;fontsize 10&gt;&lt;colorstyle -3&gt; &lt;/&gt;&lt;/&gt;&lt;fontstyle -20&gt;&lt;fontsize 10&gt;&lt;colorstyle -3&gt;доступно&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;fontstyle -20&gt;&lt;fontsize 10&gt;&lt;colorstyle -3&gt;, даже если в других состояниях&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;fontsize 10&gt;&lt;colorstyle -3&gt; &lt;/&gt;&lt;/&gt;&lt;fontsize 10&gt;&lt;colorstyle -3&gt;есть доступ&lt;/&gt;&lt;/&gt;
+&lt;fontsize 12&gt;&lt;b&gt;&lt;colorstyle 0:106dad2d-31bf-491c-924b-145107110aae&gt;●&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;fontsize 12&gt;&lt;colorstyle 0:0a83f9ec-eabe-4e8f-9fa9-0067acad6fc4&gt; &lt;/&gt;&lt;/&gt;&lt;fontsize 10&gt;&lt;colorstyle -3&gt;н&lt;/&gt;&lt;/&gt;&lt;fontsize 10&gt;&lt;colorstyle -3&gt;е разрешает доступ, но и не запрещает&lt;/&gt;&lt;/&gt;
 
-&lt;fontsize 10&gt;Таким образом, п&lt;/&gt;&lt;fontsize 10&gt;ользователь &lt;/&gt;&lt;fontsize 10&gt;получит доступ к полю, если &lt;/&gt;&lt;fontsize 10&gt;в соответствующих&lt;/&gt;&lt;fontsize 10&gt; с&lt;/&gt;&lt;fontsize 10&gt;остояниях&lt;/&gt;&lt;fontsize 10&gt; &lt;/&gt;&lt;fontsize 10&gt;установлено хотя бы одно разрешение &lt;/&gt;&lt;fontsize 12&gt;&lt;color #008000&gt;✔&lt;/&gt;&lt;/&gt;&lt;fontsize 12&gt;&lt;color #008000&gt; &lt;/&gt;&lt;/&gt;&lt;fontsize 10&gt;и не установлено ни одного запрета &lt;/&gt;&lt;fontsize 12&gt;&lt;color #B22222&gt;✘&lt;/&gt;&lt;/&gt;&lt;fontsize 12&gt;&lt;color #000000&gt;.&lt;/&gt;&lt;/&gt;</v8:content>
+&lt;fontsize 10&gt;Таким образом, п&lt;/&gt;&lt;fontsize 10&gt;ользователь &lt;/&gt;&lt;fontsize 10&gt;получит доступ к полю, если &lt;/&gt;&lt;fontsize 10&gt;в соответствующих&lt;/&gt;&lt;fontsize 10&gt; с&lt;/&gt;&lt;fontsize 10&gt;остояниях&lt;/&gt;&lt;fontsize 10&gt; &lt;/&gt;&lt;fontsize 10&gt;установлено хотя бы одно разрешение &lt;/&gt;&lt;fontsize 12&gt;&lt;color #008000&gt;✔&lt;/&gt;&lt;/&gt;&lt;fontsize 12&gt;&lt;color #008000&gt; &lt;/&gt;&lt;/&gt;&lt;fontsize 10&gt;и не установлено ни одного запрета &lt;/&gt;&lt;fontsize 12&gt;&lt;color #b22222&gt;✘&lt;/&gt;&lt;/&gt;&lt;fontsize 12&gt;&lt;color #000000&gt;.&lt;/&gt;&lt;/&gt;</v8:content>
 											</v8:item>
 										</Title>
 									</ExtendedTooltip>
@@ -471,12 +474,13 @@
 												</v8:item>
 											</Title>
 											<Group>Horizontal</Group>
+											<Behavior>Usual</Behavior>
 											<Representation>None</Representation>
 											<ShowTitle>false</ShowTitle>
 											<ExtendedTooltip name="ЛегендаПравоРазрешеноРасширеннаяПодсказка" id="191"/>
 											<ChildItems>
 												<LabelDecoration name="КартинкаПравоРазрешено" id="192">
-													<TextColor>style:РазрешенноеПравоДоступа</TextColor>
+													<TextColor>style:РазрешенноеПравоДоступаЦвет</TextColor>
 													<Font ref="style:TextFont" height="12" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
 													<Title formatted="false">
 														<v8:item>
@@ -520,12 +524,13 @@
 												</v8:item>
 											</Title>
 											<Group>Horizontal</Group>
+											<Behavior>Usual</Behavior>
 											<Representation>None</Representation>
 											<ShowTitle>false</ShowTitle>
 											<ExtendedTooltip name="ЛегендаПравоЗапрещеноРасширеннаяПодсказка" id="199"/>
 											<ChildItems>
 												<LabelDecoration name="КартинкаПравоЗапрещено" id="200">
-													<TextColor>style:ЗапрещенноеПравоДоступа</TextColor>
+													<TextColor>style:ЗапрещенноеПравоДоступаЦвет</TextColor>
 													<Font ref="style:TextFont" height="12" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem"/>
 													<Title formatted="false">
 														<v8:item>
@@ -569,12 +574,13 @@
 												</v8:item>
 											</Title>
 											<Group>Horizontal</Group>
+											<Behavior>Usual</Behavior>
 											<Representation>None</Representation>
 											<ShowTitle>false</ShowTitle>
 											<ExtendedTooltip name="ЛегендаПравоНеОпределеноРасширеннаяПодсказка" id="207"/>
 											<ChildItems>
 												<LabelDecoration name="КартинкаПравоНеОпределено" id="208">
-													<TextColor>style:НеустановленноеПравоДоступа</TextColor>
+													<TextColor>style:НеназначенноеПравоДоступаЦвет</TextColor>
 													<Font ref="style:TextFont" kind="StyleItem"/>
 													<Title formatted="false">
 														<v8:item>
@@ -871,6 +877,7 @@
 								</v8:item>
 							</ToolTip>
 							<Group>Horizontal</Group>
+							<Behavior>Usual</Behavior>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="ГруппаВыбранныеВидыДокументовExtendedTooltip" id="139"/>
@@ -1736,7 +1743,7 @@
 	<CommandInterface>
 		<NavigationPanel>
 			<Item>
-				<Command>0:136e2d82-80bf-465a-9178-87ea05eee759</Command>
+				<Command>0</Command>
 				<Type>Auto</Type>
 				<CommandGroup>FormNavigationPanelGoTo</CommandGroup>
 				<DefaultVisible>false</DefaultVisible>

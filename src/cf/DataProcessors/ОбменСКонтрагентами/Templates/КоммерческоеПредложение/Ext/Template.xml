@@ -5042,12 +5042,6 @@
 				<i>10</i>
 				<c>
 					<f>77</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Массив строк, содержащих значения штрихкодов, длиной до 200 символов.</v8:content>
-						</v8:item>
-					</tl>
 				</c>
 			</c>
 			<c>
@@ -5072,7 +5066,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Массив</v8:content>
+							<v8:content>Строка</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -5085,6 +5079,12 @@
 			<c>
 				<c>
 					<f>10</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>100</v8:content>
+						</v8:item>
+					</tl>
 				</c>
 			</c>
 			<c>
@@ -5157,7 +5157,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Реквизиты товара, специфичные для номенклатуры по данным покупателя.</v8:content>
+							<v8:content>Массив строк, содержащих значения штрихкодов, длиной до 200 символов.</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -5176,12 +5176,6 @@
 			<c>
 				<c>
 					<f>67</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Таблица</v8:content>
-						</v8:item>
-					</tl>
 				</c>
 			</c>
 			<c>
@@ -5190,7 +5184,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Число</v8:content>
+							<v8:content>Массив</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -5198,12 +5192,6 @@
 			<c>
 				<c>
 					<f>10</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>10,, Неотрицательный</v8:content>
-						</v8:item>
-					</tl>
 				</c>
 			</c>
 			<c>
@@ -5277,7 +5265,13 @@
 			<c>
 				<i>10</i>
 				<c>
-					<f>62</f>
+					<f>77</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Реквизиты товара, специфичные для номенклатуры по данным покупателя.</v8:content>
+						</v8:item>
+					</tl>
 				</c>
 			</c>
 			<c>
@@ -5293,7 +5287,13 @@
 			</c>
 			<c>
 				<c>
-					<f>8</f>
+					<f>67</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Таблица</v8:content>
+						</v8:item>
+					</tl>
 				</c>
 			</c>
 			<c>

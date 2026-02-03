@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
 	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
 	<Group>Horizontal</Group>
 	<VerticalScroll>useIfNecessary</VerticalScroll>
@@ -361,6 +361,7 @@
 	<ChildItems>
 		<UsualGroup name="ГруппаРеквизитыЗадачи" id="633">
 			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаРеквизитыЗадачиРасширеннаяПодсказка" id="634"/>
@@ -414,6 +415,7 @@
 									</ToolTip>
 									<HorizontalStretch>true</HorizontalStretch>
 									<Group>Horizontal</Group>
+									<Behavior>Usual</Behavior>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="ГруппаОписаниеЗадачиExtendedTooltip" id="421"/>
@@ -430,6 +432,7 @@
 										</HTMLDocumentField>
 										<UsualGroup name="ГруппаПредметыИОсновныеРеквизиты" id="658">
 											<Group>Vertical</Group>
+											<Behavior>Usual</Behavior>
 											<Representation>None</Representation>
 											<ShowTitle>false</ShowTitle>
 											<ExtendedTooltip name="ГруппаПредметыИОсновныеРеквизитыРасширеннаяПодсказка" id="659"/>
@@ -720,6 +723,7 @@
 														</v8:item>
 													</ToolTip>
 													<Group>Vertical</Group>
+													<Behavior>Usual</Behavior>
 													<Representation>None</Representation>
 													<ShowTitle>false</ShowTitle>
 													<ExtendedTooltip name="ГруппаДополнительныеРеквизитыExtendedTooltip" id="461"/>
@@ -743,6 +747,7 @@
 									</ToolTip>
 									<Group>Vertical</Group>
 									<VerticalSpacing>Half</VerticalSpacing>
+									<Behavior>Usual</Behavior>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="ГруппаРезолюцияРасширеннаяПодсказка" id="582"/>
@@ -755,6 +760,7 @@
 												</v8:item>
 											</ToolTip>
 											<Group>Horizontal</Group>
+											<Behavior>Usual</Behavior>
 											<ShowTitle>false</ShowTitle>
 											<ExtendedTooltip name="ГруппаЗаголовокРезолюцииИШаблоныРасширеннаяПодсказка" id="721"/>
 											<ChildItems>
@@ -836,6 +842,7 @@
 									</ToolTip>
 									<Group>Horizontal</Group>
 									<HorizontalSpacing>OneAndHalf</HorizontalSpacing>
+									<Behavior>Usual</Behavior>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="ГруппаЗаголовокИсполненияИЗаполнитьПоШаблонуРасширеннаяПодсказка" id="594"/>
@@ -855,6 +862,7 @@
 											</ToolTip>
 											<Group>Horizontal</Group>
 											<HorizontalSpacing>Single</HorizontalSpacing>
+											<Behavior>Usual</Behavior>
 											<Representation>None</Representation>
 											<ShowTitle>false</ShowTitle>
 											<ExtendedTooltip name="ГруппаЗаголовокИсполненияРасширеннаяПодсказка" id="799"/>
@@ -994,10 +1002,12 @@
 										</v8:item>
 									</ToolTip>
 									<Group>Vertical</Group>
+									<Behavior>Usual</Behavior>
 									<ExtendedTooltip name="ИсполнителиИсполненияМКРасширеннаяПодсказка" id="878"/>
 								</UsualGroup>
 								<UsualGroup name="КП_ИсполнителиИсполненияИВариантИсполнения" id="736">
 									<Group>Horizontal</Group>
+									<Behavior>Usual</Behavior>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="КП_ИсполнителиИсполненияИВариантИсполненияРасширеннаяПодсказка" id="737"/>
@@ -1294,6 +1304,7 @@
 									</ToolTip>
 									<Group>Horizontal</Group>
 									<HorizontalSpacing>Double</HorizontalSpacing>
+									<Behavior>Usual</Behavior>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="ГруппаГруппаПроверяющийИКонтролерИСрокОбработкиРезультатовПредставлениеРасширеннаяПодсказка" id="810"/>
@@ -1314,6 +1325,7 @@
 											<Width>45</Width>
 											<HorizontalStretch>false</HorizontalStretch>
 											<Group>Vertical</Group>
+											<Behavior>Usual</Behavior>
 											<Representation>None</Representation>
 											<ShowTitle>false</ShowTitle>
 											<ExtendedTooltip name="ГруппаПроверяющийСрокОбработкиРезультатовКонтрольныйСрокПроцессаРасширеннаяПодсказка" id="812"/>
@@ -1333,6 +1345,7 @@
 													</ToolTip>
 													<Group>Vertical</Group>
 													<VerticalSpacing>Half</VerticalSpacing>
+													<Behavior>Usual</Behavior>
 													<Representation>None</Representation>
 													<ShowTitle>false</ShowTitle>
 													<ExtendedTooltip name="ГруппаПроверяющийСрокОбработкиРезультатовРасширеннаяПодсказка" id="814"/>
@@ -1401,6 +1414,7 @@
 													<Group>Vertical</Group>
 													<HorizontalSpacing>Single</HorizontalSpacing>
 													<VerticalSpacing>Half</VerticalSpacing>
+													<Behavior>Usual</Behavior>
 													<Representation>None</Representation>
 													<ExtendedTooltip name="ГруппаКонтрольныйСрокПроцессаРасширеннаяПодсказка" id="822"/>
 													<ChildItems>
@@ -1436,6 +1450,7 @@
 															</ToolTip>
 															<Group>Horizontal</Group>
 															<HorizontalSpacing>Half</HorizontalSpacing>
+															<Behavior>Usual</Behavior>
 															<Representation>None</Representation>
 															<ShowTitle>false</ShowTitle>
 															<ExtendedTooltip name="ГруппаКоличествоИтерацийСрокПроцессаРасширеннаяПодсказка" id="840"/>
@@ -1487,6 +1502,7 @@
 												</v8:item>
 											</ToolTip>
 											<Group>Vertical</Group>
+											<Behavior>Usual</Behavior>
 											<Representation>None</Representation>
 											<ShowTitle>false</ShowTitle>
 											<ExtendedTooltip name="ГруппаКонтролерТрудозатратыРасширеннаяПодсказка" id="830"/>
@@ -1506,6 +1522,7 @@
 													</ToolTip>
 													<Group>Vertical</Group>
 													<VerticalSpacing>Half</VerticalSpacing>
+													<Behavior>Usual</Behavior>
 													<ShowTitle>false</ShowTitle>
 													<ExtendedTooltip name="ГруппаТрудозатратыРасширеннаяПодсказка" id="805"/>
 													<ChildItems>
@@ -1563,6 +1580,7 @@
 									</ToolTip>
 									<Group>Horizontal</Group>
 									<HorizontalSpacing>OneAndHalf</HorizontalSpacing>
+									<Behavior>Usual</Behavior>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="ГруппаЗаголовокОзнакомленияИЗаполнитьПоШаблонуРасширеннаяПодсказка" id="602"/>
@@ -1582,6 +1600,7 @@
 											</ToolTip>
 											<Group>Horizontal</Group>
 											<HorizontalSpacing>Single</HorizontalSpacing>
+											<Behavior>Usual</Behavior>
 											<Representation>None</Representation>
 											<ShowTitle>false</ShowTitle>
 											<ExtendedTooltip name="ГруппаЗаголовокОзнакомленияРасширеннаяПодсказка" id="803"/>
@@ -1718,6 +1737,7 @@
 											<v8:content>Исполнители ознакомления МК</v8:content>
 										</v8:item>
 									</ToolTip>
+									<Behavior>Usual</Behavior>
 									<ExtendedTooltip name="ИсполнителиОзнакомленияМКРасширеннаяПодсказка" id="880"/>
 								</UsualGroup>
 								<Table name="ИсполнителиОзнакомления" id="168">
@@ -1889,6 +1909,7 @@
 										</v8:item>
 									</ToolTip>
 									<Group>Horizontal</Group>
+									<Behavior>Usual</Behavior>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="ГруппаНаименованиеСрокОзнакомленияExtendedTooltip" id="507"/>
@@ -1926,6 +1947,7 @@
 									<Width>45</Width>
 									<HorizontalStretch>false</HorizontalStretch>
 									<Group>Horizontal</Group>
+									<Behavior>Usual</Behavior>
 									<Representation>NormalSeparation</Representation>
 									<ExtendedTooltip name="ГруппаКонтрольныйСрокПроцессаОзнакомленияРасширеннаяПодсказка" id="835"/>
 									<ChildItems>
@@ -1963,6 +1985,7 @@
 						</v8:item>
 					</ToolTip>
 					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="ГруппаОбластьВыполненияРасширеннаяПодсказка" id="719"/>
@@ -2086,6 +2109,7 @@
 				</v8:item>
 			</ToolTip>
 			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаИнструкцииExtendedTooltip" id="540"/>
@@ -2778,7 +2802,7 @@
 					</Title>
 					<Type>
 						<v8:Type>xs:string</v8:Type>
-						<v8:TypeSet>cfg:AnyRef</v8:TypeSet>
+						<v8:TypeSet>cfg:AnyIBRef</v8:TypeSet>
 						<v8:StringQualifiers>
 							<v8:Length>0</v8:Length>
 							<v8:AllowedLength>Variable</v8:AllowedLength>
@@ -3761,6 +3785,7 @@
 					</Title>
 					<Type>
 						<v8:Type>cfg:CatalogRef.РолиИсполнителей</v8:Type>
+						<v8:Type>cfg:CatalogRef.ПолныеРоли</v8:Type>
 						<v8:Type>cfg:CatalogRef.Пользователи</v8:Type>
 					</Type>
 				</Column>
@@ -4488,7 +4513,7 @@
 				</v8:item>
 			</ToolTip>
 			<Picture>
-				<xr:Ref>CommonPicture.Информация</xr:Ref>
+				<xr:Ref>CommonPicture.УдалитьИнформация</xr:Ref>
 				<xr:LoadTransparent>false</xr:LoadTransparent>
 			</Picture>
 			<Action>ПоказыватьИнструкции</Action>
@@ -4797,7 +4822,7 @@
 	<CommandInterface>
 		<NavigationPanel>
 			<Item>
-				<Command>0:794659a4-5346-4595-be6b-409f6c685c14</Command>
+				<Command>0</Command>
 				<Type>Auto</Type>
 				<DefaultVisible>false</DefaultVisible>
 				<Visible>
@@ -4853,7 +4878,7 @@
 				</Visible>
 			</Item>
 			<Item>
-				<Command>0:29624fb4-c0e4-4355-a04a-1344eedb945a</Command>
+				<Command>0</Command>
 				<Type>Auto</Type>
 				<DefaultVisible>false</DefaultVisible>
 				<Visible>
@@ -4887,30 +4912,30 @@
 				</Visible>
 			</Item>
 			<Item>
-				<Command>2:679bd72a-4cf8-4c2e-ae00-3f01f48050c4</Command>
+				<Command>0</Command>
 				<Type>Auto</Type>
 				<Index>1</Index>
 				<DefaultVisible>false</DefaultVisible>
 			</Item>
 			<Item>
-				<Command>2:3b9d376f-cd28-4f84-b8a8-686da09f0e46</Command>
+				<Command>0</Command>
 				<Type>Auto</Type>
 				<Index>3</Index>
 				<DefaultVisible>false</DefaultVisible>
 			</Item>
 			<Item>
-				<Command>2:57067371-06db-46dc-a7e9-c76d28e21071</Command>
+				<Command>0</Command>
 				<Type>Auto</Type>
 				<DefaultVisible>false</DefaultVisible>
 			</Item>
 			<Item>
-				<Command>2:efd06081-12d1-4734-9015-bff31c9f7966</Command>
+				<Command>0</Command>
 				<Type>Auto</Type>
 				<Index>2</Index>
 				<DefaultVisible>false</DefaultVisible>
 			</Item>
 			<Item>
-				<Command>2:da3c04c7-1d24-4d54-9686-2c404b8ed4e8</Command>
+				<Command>0</Command>
 				<Type>Auto</Type>
 				<Index>5</Index>
 				<DefaultVisible>false</DefaultVisible>
@@ -4925,7 +4950,7 @@
 				</Visible>
 			</Item>
 			<Item>
-				<Command>2:36a6810c-733e-490c-bae7-1271266f0d95</Command>
+				<Command>0</Command>
 				<Type>Auto</Type>
 				<Index>6</Index>
 				<DefaultVisible>false</DefaultVisible>
@@ -4943,13 +4968,13 @@
 				<DefaultVisible>false</DefaultVisible>
 			</Item>
 			<Item>
-				<Command>2:53d146b8-d85f-4cfe-b5ee-af78f4e09445</Command>
+				<Command>0</Command>
 				<Type>Auto</Type>
 				<Index>4</Index>
 				<DefaultVisible>false</DefaultVisible>
 			</Item>
 			<Item>
-				<Command>2:dab6706c-e0f7-4dc9-8fac-95b1dfcbf05c</Command>
+				<Command>0</Command>
 				<Type>Auto</Type>
 				<Index>1</Index>
 				<DefaultVisible>false</DefaultVisible>
@@ -4973,7 +4998,7 @@
 				<Index>2</Index>
 			</Item>
 			<Item>
-				<Command>0:1823d37a-3b32-4031-8996-56796c8dbe41</Command>
+				<Command>0</Command>
 				<Type>Auto</Type>
 				<CommandGroup>FormCommandBarCreateBasedOn</CommandGroup>
 				<Index>3</Index>

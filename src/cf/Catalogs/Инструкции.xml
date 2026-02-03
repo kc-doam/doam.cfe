@@ -1313,10 +1313,10 @@
 					</Attribute>
 				</ChildObjects>
 			</TabularSection>
-			<Form>ФормаСписка</Form>
-			<Form>ФормаЭлемента</Form>
 			<Form>ФормаДерева</Form>
 			<Form>ФормаПросмотра</Form>
+			<Form>ФормаСписка</Form>
+			<Form>ФормаЭлемента</Form>
 			<Template>СлужебныйСтильОформления</Template>
 		</ChildObjects>
 	</Catalog>

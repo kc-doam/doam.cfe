@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Width>100</Width>
 	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
 	<AutoTitle>false</AutoTitle>
 	<CommandBarLocation>None</CommandBarLocation>
@@ -7,7 +8,7 @@
 		<xr:Item>
 			<xr:Presentation/>
 			<xr:CheckState>0</xr:CheckState>
-			<xr:Value xsi:type="xs:string">ФормаСоздать</xr:Value>
+			<xr:Value xsi:type="xs:string">ГруппаКоманднаяПанель</xr:Value>
 		</xr:Item>
 	</MobileDeviceCommandBarContent>
 	<CommandSet>
@@ -21,12 +22,15 @@
 		<Autofill>false</Autofill>
 	</AutoCommandBar>
 	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
 		<Event name="OnLoadDataFromSettingsAtServer">ПриЗагрузкеДанныхИзНастроекНаСервере</Event>
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="OnChangeDisplaySettings">ПриИзмененииПараметровЭкрана</Event>
 	</Events>
 	<ChildItems>
 		<UsualGroup name="ГруппаБыстрыеОтборы" id="284">
 			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаБыстрыеОтборыExtendedTooltip" id="285"/>
@@ -44,6 +48,7 @@
 							<v8:content>Группа вариант отбора по дате</v8:content>
 						</v8:item>
 					</ToolTip>
+					<Behavior>Usual</Behavior>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="ГруппаВариантОтбораПоДатеРасширеннаяПодсказка" id="325"/>
@@ -280,6 +285,7 @@
 				</v8:item>
 			</Title>
 			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ПользовательскиеНастройкиСпискаРасширеннаяПодсказка" id="290"/>
@@ -314,6 +320,12 @@
 					</ToolTip>
 					<ExtendedTooltip name="ФормаГруппаОсновныеРасширеннаяПодсказка" id="97"/>
 					<ChildItems>
+						<Button name="Выбрать" id="332">
+							<Type>CommandBarButton</Type>
+							<DefaultButton>true</DefaultButton>
+							<CommandName>Form.Item.Список.StandardCommand.Choose</CommandName>
+							<ExtendedTooltip name="ВыбратьРасширеннаяПодсказка" id="333"/>
+						</Button>
 						<Button name="ФормаСоздать" id="277">
 							<Type>CommandBarButton</Type>
 							<CommandName>Form.Item.Список.StandardCommand.Create</CommandName>
@@ -522,6 +534,7 @@
 				</v8:item>
 			</ToolTip>
 			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаСписокИДополнительныеДанныеРасширеннаяПодсказка" id="173"/>
@@ -541,6 +554,7 @@
 					</ToolTip>
 					<HorizontalStretch>false</HorizontalStretch>
 					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="ГруппаДополнительныеДанныеРасширеннаяПодсказка" id="175"/>
@@ -570,9 +584,279 @@
 						</HTMLDocumentField>
 					</ChildItems>
 				</UsualGroup>
+				<UsualGroup name="МК_ГруппаОтборыСписок" id="334">
+					<Visible>false</Visible>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа1</v8:content>
+						</v8:item>
+					</Title>
+					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<BackColor>style:МК_ЦветФонаГруппы</BackColor>
+					<ExtendedTooltip name="МК_ГруппаОтборыСписокРасширеннаяПодсказка" id="335"/>
+					<ChildItems>
+						<UsualGroup name="МК_ГруппаБыстрыеОтборы" id="336">
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<BackColor>style:МК_ЦветФонаГруппы</BackColor>
+							<ExtendedTooltip name="МК_ГруппаБыстрыеОтборыРасширеннаяПодсказка" id="337"/>
+							<ChildItems>
+								<UsualGroup name="МК_ГруппаВариантОтбораПоДате" id="338">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа1</v8:content>
+										</v8:item>
+									</Title>
+									<Group>AlwaysHorizontal</Group>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="МК_ГруппаВариантОтбораПоДатеРасширеннаяПодсказка" id="339"/>
+									<ChildItems>
+										<InputField name="МК_ВариантОтбора" id="340">
+											<DataPath>ВариантОтбора</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Поле1</v8:content>
+												</v8:item>
+											</Title>
+											<TitleLocation>None</TitleLocation>
+											<HorizontalAlign>Left</HorizontalAlign>
+											<GroupHorizontalAlign>Left</GroupHorizontalAlign>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<MaxWidth>24</MaxWidth>
+											<HorizontalStretch>true</HorizontalStretch>
+											<ListChoiceMode>true</ListChoiceMode>
+											<ChoiceList>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Все отсутствия</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:string">Все</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>За день</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:string">ЗаДень</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>За неделю</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:string">ЗаНеделю</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>За месяц</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:string">ЗаМесяц</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>За год</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:string">ЗаГод</Value>
+													</xr:Value>
+												</xr:Item>
+											</ChoiceList>
+											<InputHint>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Период</v8:content>
+												</v8:item>
+											</InputHint>
+											<ContextMenu name="МК_ВариантОтбораКонтекстноеМеню" id="341"/>
+											<ExtendedTooltip name="МК_ВариантОтбораРасширеннаяПодсказка" id="342"/>
+											<Events>
+												<Event name="OnChange">ВариантОтбораПриИзменении</Event>
+											</Events>
+										</InputField>
+										<InputField name="МК_ОтборДатаОтсутствияПолеВвода" id="343">
+											<DataPath>ОтборДатаОтсутствия</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Поле1</v8:content>
+												</v8:item>
+											</Title>
+											<TitleLocation>None</TitleLocation>
+											<HorizontalAlign>Right</HorizontalAlign>
+											<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+											<HorizontalStretch>true</HorizontalStretch>
+											<ContextMenu name="МК_ОтборДатаОтсутствияПолеВводаКонтекстноеМеню" id="344"/>
+											<ExtendedTooltip name="МК_ОтборДатаОтсутствияПолеВводаРасширеннаяПодсказка" id="345"/>
+											<Events>
+												<Event name="OnChange">ОтборДатаОтсутствияПриИзменении</Event>
+											</Events>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="МК_ПрочиеОтборы" id="346">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Фильтры</v8:content>
+										</v8:item>
+									</Title>
+									<HorizontalStretch>true</HorizontalStretch>
+									<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+									<Group>Vertical</Group>
+									<Behavior>Collapsible</Behavior>
+									<CollapsedRepresentationTitle>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Фильтры</v8:content>
+										</v8:item>
+									</CollapsedRepresentationTitle>
+									<Collapsed>true</Collapsed>
+									<Representation>None</Representation>
+									<BackColor>style:МК_ЦветФонаГруппы</BackColor>
+									<ExtendedTooltip name="МК_ПрочиеОтборыРасширеннаяПодсказка" id="347"/>
+									<ChildItems>
+										<InputField name="МК_ОтборУдаленнаяРабота" id="348">
+											<DataPath>ОтборУдаленнаяРабота</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<HorizontalStretch>true</HorizontalStretch>
+											<ListChoiceMode>true</ListChoiceMode>
+											<ChoiceList>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Все</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:string">Все</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Только работающие удаленно</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:string">ТолькоРаботающиеУдаленно</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>Только не работающие удаленно</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xs:string">ТолькоНеРаботающиеУдаленно</Value>
+													</xr:Value>
+												</xr:Item>
+											</ChoiceList>
+											<InputHint>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Все</v8:content>
+												</v8:item>
+											</InputHint>
+											<ContextMenu name="МК_ОтборУдаленнаяРаботаКонтекстноеМеню" id="349"/>
+											<ExtendedTooltip name="МК_ОтборУдаленнаяРаботаРасширеннаяПодсказка" id="350"/>
+											<Events>
+												<Event name="OnChange">ОтборУдаленнаяРаботаПриИзменении</Event>
+											</Events>
+										</InputField>
+										<InputField name="МК_ОтборПричина" id="351">
+											<DataPath>ОтборПричина</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<HorizontalStretch>true</HorizontalStretch>
+											<QuickChoice>true</QuickChoice>
+											<InputHint>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Причина</v8:content>
+												</v8:item>
+											</InputHint>
+											<ContextMenu name="МК_ОтборПричинаКонтекстноеМеню" id="352"/>
+											<ExtendedTooltip name="МК_ОтборПричинаРасширеннаяПодсказка" id="353"/>
+											<Events>
+												<Event name="OnChange">ОтборПричинаПриИзменении</Event>
+											</Events>
+										</InputField>
+										<InputField name="МК_ОтборПодразделение" id="354">
+											<DataPath>ОтборПодразделение</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<HorizontalStretch>true</HorizontalStretch>
+											<InputHint>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Подразделение</v8:content>
+												</v8:item>
+											</InputHint>
+											<ContextMenu name="МК_ОтборПодразделениеКонтекстноеМеню" id="355"/>
+											<ExtendedTooltip name="МК_ОтборПодразделениеРасширеннаяПодсказка" id="356"/>
+											<Events>
+												<Event name="OnChange">ОтборПодразделениеПриИзменении</Event>
+											</Events>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
 				<Table name="Список" id="3">
 					<Representation>List</Representation>
 					<DefaultItem>true</DefaultItem>
+					<ChoiceMode>true</ChoiceMode>
 					<UseAlternationRowColor>true</UseAlternationRowColor>
 					<InitialTreeView>ExpandTopLevel</InitialTreeView>
 					<EnableStartDrag>true</EnableStartDrag>
@@ -585,6 +869,7 @@
 						<ExcludedCommand>ShowMultipleSelection</ExcludedCommand>
 						<ExcludedCommand>UndoPosting</ExcludedCommand>
 					</CommandSet>
+					<RefreshRequest>PullFromTop</RefreshRequest>
 					<AutoRefresh>false</AutoRefresh>
 					<AutoRefreshPeriod>60</AutoRefreshPeriod>
 					<Period>
@@ -633,8 +918,43 @@
 						<Event name="BeforeAddRow">СписокПередНачаломДобавления</Event>
 						<Event name="OnActivateRow">СписокПриАктивизацииСтроки</Event>
 						<Event name="OnGetDataAtServer">СписокПриПолученииДанныхНаСервере</Event>
+						<Event name="RefreshRequestProcessing">СписокОбработкаЗапросаОбновления</Event>
 					</Events>
 					<ChildItems>
+						<ColumnGroup name="МК_ГруппаКолонок" id="357">
+							<Visible>false</Visible>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Список группа1</v8:content>
+								</v8:item>
+							</Title>
+							<Group>Horizontal</Group>
+							<ExtendedTooltip name="МК_ГруппаКолонокРасширеннаяПодсказка" id="358"/>
+							<ChildItems>
+								<ColumnGroup name="МК_ГруппаСотрудник" id="359">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа1</v8:content>
+										</v8:item>
+									</Title>
+									<FixingInTable>Left</FixingInTable>
+									<ExtendedTooltip name="МК_ГруппаСотрудникРасширеннаяПодсказка" id="360"/>
+								</ColumnGroup>
+								<ColumnGroup name="МК_ГруппаПериод" id="361">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа1</v8:content>
+										</v8:item>
+									</Title>
+									<Group>InCell</Group>
+									<FixingInTable>Right</FixingInTable>
+									<ExtendedTooltip name="МК_ГруппаПериодРасширеннаяПодсказка" id="362"/>
+								</ColumnGroup>
+							</ChildItems>
+						</ColumnGroup>
 						<LabelField name="Сотрудник" id="28">
 							<DataPath>Список.Сотрудник</DataPath>
 							<Title>
@@ -1800,6 +2120,17 @@
 			<Save>
 				<Field>ОтборУдаленнаяРабота</Field>
 			</Save>
+		</Attribute>
+		<Attribute name="ЭтоМобильныйКлиент" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Это мобильный клиент</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
 		</Attribute>
 	</Attributes>
 	<Commands>

@@ -889,8 +889,8 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Attribute>
-			<Form>ШаблонКТОбъекта</Form>
 			<Form>ФормаЭлемента</Form>
+			<Form>ШаблонКТОбъекта</Form>
 		</ChildObjects>
 	</Catalog>
 </MetaDataObject>

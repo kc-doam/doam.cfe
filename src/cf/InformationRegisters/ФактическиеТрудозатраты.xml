@@ -108,13 +108,13 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Resource>
-			<Resource uuid="1c1834ca-394e-4bd4-a44f-b1508cd8fc31">
+			<Resource uuid="21728e2b-4b90-4fed-9563-74e5227149db">
 				<Properties>
-					<Name>ДлительностьСверхурочно</Name>
+					<Name>ДлительностьВВыходные</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Длительность сверхурочно</v8:content>
+							<v8:content>Длительность в выходные</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -152,13 +152,13 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Resource>
-			<Resource uuid="21728e2b-4b90-4fed-9563-74e5227149db">
+			<Resource uuid="1c1834ca-394e-4bd4-a44f-b1508cd8fc31">
 				<Properties>
-					<Name>ДлительностьВВыходные</Name>
+					<Name>ДлительностьСверхурочно</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Длительность в выходные</v8:content>
+							<v8:content>Длительность сверхурочно</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -450,7 +450,7 @@
 					<ChoiceForm/>
 					<LinkByType/>
 					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
-					<Master>false</Master>
+					<Master>true</Master>
 					<MainFilter>true</MainFilter>
 					<DenyIncompleteValues>false</DenyIncompleteValues>
 					<Indexing>DontIndex</Indexing>
@@ -841,6 +841,48 @@
 			<Form>ФормаСписка</Form>
 			<Form>ФормаСпискаИсточника</Form>
 			<Form>ФормаСпискаПроектаЗадачи</Form>
+			<Command uuid="6707b616-a149-452b-80c9-2803f15dc657">
+				<Properties>
+					<Name>МоиТрудозатраты</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Мои трудозатраты</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Group>NavigationPanelOrdinary</Group>
+					<CommandParameterType/>
+					<ParameterUseMode>Single</ParameterUseMode>
+					<ModifiesData>false</ModifiesData>
+					<Representation>Auto</Representation>
+					<ToolTip/>
+					<Picture/>
+					<Shortcut/>
+					<OnMainServerUnavalableBehavior>Auto</OnMainServerUnavalableBehavior>
+				</Properties>
+			</Command>
+			<Command uuid="5a7cc856-01f7-4d18-bc9e-289795e3b05b">
+				<Properties>
+					<Name>ТрудозатратыПодчиненных</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Трудозатраты подчиненных</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Group>NavigationPanelOrdinary</Group>
+					<CommandParameterType/>
+					<ParameterUseMode>Single</ParameterUseMode>
+					<ModifiesData>false</ModifiesData>
+					<Representation>Auto</Representation>
+					<ToolTip/>
+					<Picture/>
+					<Shortcut/>
+					<OnMainServerUnavalableBehavior>Auto</OnMainServerUnavalableBehavior>
+				</Properties>
+			</Command>
 			<Command uuid="bc474b66-df2d-4787-acff-fc31a4a1fdf6">
 				<Properties>
 					<Name>ТрудозатратыПоИсточнику</Name>
@@ -886,48 +928,6 @@
 						<v8:Type>cfg:CatalogRef.Проекты</v8:Type>
 						<v8:Type>cfg:CatalogRef.ПроектныеЗадачи</v8:Type>
 					</CommandParameterType>
-					<ParameterUseMode>Single</ParameterUseMode>
-					<ModifiesData>false</ModifiesData>
-					<Representation>Auto</Representation>
-					<ToolTip/>
-					<Picture/>
-					<Shortcut/>
-					<OnMainServerUnavalableBehavior>Auto</OnMainServerUnavalableBehavior>
-				</Properties>
-			</Command>
-			<Command uuid="6707b616-a149-452b-80c9-2803f15dc657">
-				<Properties>
-					<Name>МоиТрудозатраты</Name>
-					<Synonym>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Мои трудозатраты</v8:content>
-						</v8:item>
-					</Synonym>
-					<Comment/>
-					<Group>NavigationPanelOrdinary</Group>
-					<CommandParameterType/>
-					<ParameterUseMode>Single</ParameterUseMode>
-					<ModifiesData>false</ModifiesData>
-					<Representation>Auto</Representation>
-					<ToolTip/>
-					<Picture/>
-					<Shortcut/>
-					<OnMainServerUnavalableBehavior>Auto</OnMainServerUnavalableBehavior>
-				</Properties>
-			</Command>
-			<Command uuid="5a7cc856-01f7-4d18-bc9e-289795e3b05b">
-				<Properties>
-					<Name>ТрудозатратыПодчиненных</Name>
-					<Synonym>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Трудозатраты подчиненных</v8:content>
-						</v8:item>
-					</Synonym>
-					<Comment/>
-					<Group>NavigationPanelOrdinary</Group>
-					<CommandParameterType/>
 					<ParameterUseMode>Single</ParameterUseMode>
 					<ModifiesData>false</ModifiesData>
 					<Representation>Auto</Representation>

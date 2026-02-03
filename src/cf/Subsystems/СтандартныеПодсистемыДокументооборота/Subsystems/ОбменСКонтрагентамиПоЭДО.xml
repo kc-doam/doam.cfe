@@ -35,6 +35,21 @@
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ПакетыЭДОДокументооборот</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.СоставПакетовЭДОДокументооборот</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.СозданиеОбъектовЭДОПоДокументамДО</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ОбменСКонтрагентамиДО</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ОбменСКонтрагентамиДОСлужебныйКлиентСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ИнтерфейсДокументовЭДОДокументооборот</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ОбменСКонтрагентамиДОКлиентПовтИсп</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ОбменСКонтрагентамиДОМиграция</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ОбменСКонтрагентамиДОМиграцияКлиент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ОбменСКонтрагентамиДОМиграцияКлиентСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ОбменСКонтрагентамиДОСобытия</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ОбменСКонтрагентамиДОСобытияКлиент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.МашиночитаемыеДоверенностиДокументооборот</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ИнтерфейсЭДОДокументооборот</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DefinedType.ДокументДОДляЭДО</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DefinedType.ДокументДООбъектДляЭДО</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ФорматыЭДОДокументооборот</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ФорматыЭДОДокументооборотКлиентСервер</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

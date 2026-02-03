@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
 	<Title>
 		<v8:item>
 			<v8:lang>ru</v8:lang>
@@ -124,6 +124,7 @@
 						</CommandBar>
 						<UsualGroup name="Группа6" id="275">
 							<Group>Horizontal</Group>
+							<Behavior>Usual</Behavior>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="Группа6РасширеннаяПодсказка" id="276"/>
@@ -201,7 +202,7 @@
 													<DataPath>Папки.ИндексКартинки</DataPath>
 													<ValuesPicture>
 														<xr:Ref>CommonPicture.Папки</xr:Ref>
-														<xr:LoadTransparent>true</xr:LoadTransparent>
+														<xr:LoadTransparent>false</xr:LoadTransparent>
 													</ValuesPicture>
 													<FileDragMode>AsFile</FileDragMode>
 													<ContextMenu name="КартинкаГруппыКонтекстноеМеню" id="294"/>
@@ -276,12 +277,12 @@
 													<TitleLocation>None</TitleLocation>
 													<HeaderPicture>
 														<xr:Ref>CommonPicture.ТолькоСкрепка</xr:Ref>
-														<xr:LoadTransparent>true</xr:LoadTransparent>
+														<xr:LoadTransparent>false</xr:LoadTransparent>
 													</HeaderPicture>
 													<Width>2</Width>
 													<ValuesPicture>
 														<xr:Ref>CommonPicture.КоллекцияСкрепка</xr:Ref>
-														<xr:LoadTransparent>true</xr:LoadTransparent>
+														<xr:LoadTransparent>false</xr:LoadTransparent>
 													</ValuesPicture>
 													<FileDragMode>AsFile</FileDragMode>
 													<ContextMenu name="ФайлыВнутренниеКонтекстноеМеню" id="213"/>
@@ -292,12 +293,12 @@
 													<TitleLocation>None</TitleLocation>
 													<HeaderPicture>
 														<xr:Ref>CommonPicture.ВзаимодействиеСотрудников</xr:Ref>
-														<xr:LoadTransparent>true</xr:LoadTransparent>
+														<xr:LoadTransparent>false</xr:LoadTransparent>
 													</HeaderPicture>
 													<Width>2</Width>
 													<ValuesPicture>
 														<xr:Ref>CommonPicture.ВзаимодействиеСотрудников</xr:Ref>
-														<xr:LoadTransparent>true</xr:LoadTransparent>
+														<xr:LoadTransparent>false</xr:LoadTransparent>
 													</ValuesPicture>
 													<FileDragMode>AsFile</FileDragMode>
 													<ContextMenu name="ЗадачиВнутренниеКонтекстноеМеню" id="216"/>
@@ -316,12 +317,12 @@
 													<TitleLocation>None</TitleLocation>
 													<HeaderPicture>
 														<xr:Ref>CommonPicture.ПодписанЭП</xr:Ref>
-														<xr:LoadTransparent>true</xr:LoadTransparent>
+														<xr:LoadTransparent>false</xr:LoadTransparent>
 													</HeaderPicture>
 													<Width>2</Width>
 													<ValuesPicture>
 														<xr:Ref>CommonPicture.СтатусПроверкиЭП</xr:Ref>
-														<xr:LoadTransparent>true</xr:LoadTransparent>
+														<xr:LoadTransparent>false</xr:LoadTransparent>
 													</ValuesPicture>
 													<FileDragMode>AsFile</FileDragMode>
 													<ContextMenu name="ПодписанЭПВнутренниеКонтекстноеМеню" id="221"/>
@@ -335,12 +336,12 @@
 													<TitleLocation>None</TitleLocation>
 													<HeaderPicture>
 														<xr:Ref>CommonPicture.Категории</xr:Ref>
-														<xr:LoadTransparent>true</xr:LoadTransparent>
+														<xr:LoadTransparent>false</xr:LoadTransparent>
 													</HeaderPicture>
 													<Width>2</Width>
 													<ValuesPicture>
 														<xr:Ref>CommonPicture.Категории</xr:Ref>
-														<xr:LoadTransparent>true</xr:LoadTransparent>
+														<xr:LoadTransparent>false</xr:LoadTransparent>
 													</ValuesPicture>
 													<FileDragMode>AsFile</FileDragMode>
 													<ContextMenu name="ЕстьКатегорииВнутренниеКонтекстноеМеню" id="224"/>
@@ -353,12 +354,12 @@
 											<TitleLocation>None</TitleLocation>
 											<HeaderPicture>
 												<xr:Ref>CommonPicture.КартинкаКонтроль16</xr:Ref>
-												<xr:LoadTransparent>true</xr:LoadTransparent>
+												<xr:LoadTransparent>false</xr:LoadTransparent>
 											</HeaderPicture>
 											<Width>2</Width>
 											<ValuesPicture>
 												<xr:Ref>CommonPicture.СостоянияКонтроля16</xr:Ref>
-												<xr:LoadTransparent>true</xr:LoadTransparent>
+												<xr:LoadTransparent>false</xr:LoadTransparent>
 											</ValuesPicture>
 											<FileDragMode>AsFile</FileDragMode>
 											<ContextMenu name="СостояниеКонтроляВнутренниеКонтекстноеМеню" id="229"/>
@@ -486,7 +487,7 @@
 									<Button name="СписокКонтекстноеМенюСоздать" id="118">
 										<Type>CommandBarButton</Type>
 										<SkipOnInput>false</SkipOnInput>
-										<CommandName>1:0f8d6d98-2f8b-405a-b8b3-0538e9d95da5</CommandName>
+										<CommandName>0</CommandName>
 										<ExtendedTooltip name="СписокКонтекстноеМенюСоздатьExtendedTooltip" id="119"/>
 									</Button>
 									<ButtonGroup name="ГруппаСтандартныхКоманд" id="120">
@@ -507,23 +508,23 @@
 									</ButtonGroup>
 									<Button name="ФормаВыбратьКатегорииКонтекст" id="122">
 										<Type>CommandBarButton</Type>
-										<CommandName>9:409b9a53-7f7e-4178-86c1-33176c7c7a7a</CommandName>
+										<CommandName>0</CommandName>
 										<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
 										<ExtendedTooltip name="ФормаВыбратьКатегорииКонтекстExtendedTooltip" id="123"/>
 									</Button>
 									<Button name="СписокКонтекстноеМенюПодписать" id="124">
 										<Type>CommandBarButton</Type>
-										<CommandName>7:409b9a53-7f7e-4178-86c1-33176c7c7a7a</CommandName>
+										<CommandName>0</CommandName>
 										<ExtendedTooltip name="СписокКонтекстноеМенюПодписатьExtendedTooltip" id="125"/>
 									</Button>
 									<Button name="СписокКонтекстноеМенюДобавитьВКомплект" id="126">
 										<Type>CommandBarButton</Type>
-										<CommandName>11:409b9a53-7f7e-4178-86c1-33176c7c7a7a</CommandName>
+										<CommandName>0</CommandName>
 										<ExtendedTooltip name="СписокКонтекстноеМенюДобавитьВКомплектExtendedTooltip" id="127"/>
 									</Button>
 									<Button name="СписокКонтекстноеМенюАвтообновление" id="128">
 										<Type>CommandBarButton</Type>
-										<CommandName>10:409b9a53-7f7e-4178-86c1-33176c7c7a7a</CommandName>
+										<CommandName>0</CommandName>
 										<ExtendedTooltip name="СписокКонтекстноеМенюАвтообновлениеExtendedTooltip" id="129"/>
 									</Button>
 								</ChildItems>
@@ -587,14 +588,12 @@
 											</ToolTip>
 											<HeaderPicture>
 												<xr:Ref>CommonPicture.ТолькоСкрепка</xr:Ref>
-												<xr:LoadTransparent>true</xr:LoadTransparent>
-												<xr:TransparentPixel x="12" y="3"/>
+												<xr:LoadTransparent>false</xr:LoadTransparent>
 											</HeaderPicture>
 											<Width>2</Width>
 											<ValuesPicture>
 												<xr:Ref>CommonPicture.КоллекцияСкрепка</xr:Ref>
-												<xr:LoadTransparent>true</xr:LoadTransparent>
-												<xr:TransparentPixel x="12" y="3"/>
+												<xr:LoadTransparent>false</xr:LoadTransparent>
 											</ValuesPicture>
 											<FileDragMode>AsFile</FileDragMode>
 											<ContextMenu name="ФайлыВходящиеКонтекстноеМеню" id="31"/>
@@ -653,8 +652,7 @@
 											</ToolTip>
 											<HeaderPicture>
 												<xr:Ref>CommonPicture.ПодписанЭП</xr:Ref>
-												<xr:LoadTransparent>true</xr:LoadTransparent>
-												<xr:TransparentPixel x="10" y="2"/>
+												<xr:LoadTransparent>false</xr:LoadTransparent>
 											</HeaderPicture>
 											<Width>2</Width>
 											<ValuesPicture>
@@ -684,7 +682,7 @@
 											<Width>2</Width>
 											<ValuesPicture>
 												<xr:Ref>CommonPicture.Категории</xr:Ref>
-												<xr:LoadTransparent>true</xr:LoadTransparent>
+												<xr:LoadTransparent>false</xr:LoadTransparent>
 											</ValuesPicture>
 											<FileDragMode>AsFile</FileDragMode>
 											<ContextMenu name="ЕстьКатегорииВходящиеКонтекстноеМеню" id="42"/>
@@ -731,12 +729,12 @@
 											</ToolTip>
 											<HeaderPicture>
 												<xr:Ref>CommonPicture.КартинкаКонтроль16</xr:Ref>
-												<xr:LoadTransparent>true</xr:LoadTransparent>
+												<xr:LoadTransparent>false</xr:LoadTransparent>
 											</HeaderPicture>
 											<Width>2</Width>
 											<ValuesPicture>
 												<xr:Ref>CommonPicture.СостоянияКонтроля16</xr:Ref>
-												<xr:LoadTransparent>true</xr:LoadTransparent>
+												<xr:LoadTransparent>false</xr:LoadTransparent>
 											</ValuesPicture>
 											<FileDragMode>AsFile</FileDragMode>
 											<ContextMenu name="СостояниеКонтроляВходящиеКонтекстноеМеню" id="50"/>
@@ -917,12 +915,12 @@
 											<TitleLocation>None</TitleLocation>
 											<HeaderPicture>
 												<xr:Ref>CommonPicture.ТолькоСкрепка</xr:Ref>
-												<xr:LoadTransparent>true</xr:LoadTransparent>
+												<xr:LoadTransparent>false</xr:LoadTransparent>
 											</HeaderPicture>
 											<Width>2</Width>
 											<ValuesPicture>
 												<xr:Ref>CommonPicture.КоллекцияСкрепка</xr:Ref>
-												<xr:LoadTransparent>true</xr:LoadTransparent>
+												<xr:LoadTransparent>false</xr:LoadTransparent>
 											</ValuesPicture>
 											<FileDragMode>AsFile</FileDragMode>
 											<ContextMenu name="ФайлыИсходящиеКонтекстноеМеню" id="159"/>
@@ -933,12 +931,12 @@
 											<TitleLocation>None</TitleLocation>
 											<HeaderPicture>
 												<xr:Ref>CommonPicture.ВзаимодействиеСотрудников</xr:Ref>
-												<xr:LoadTransparent>true</xr:LoadTransparent>
+												<xr:LoadTransparent>false</xr:LoadTransparent>
 											</HeaderPicture>
 											<Width>2</Width>
 											<ValuesPicture>
 												<xr:Ref>CommonPicture.ВзаимодействиеСотрудников</xr:Ref>
-												<xr:LoadTransparent>true</xr:LoadTransparent>
+												<xr:LoadTransparent>false</xr:LoadTransparent>
 											</ValuesPicture>
 											<FileDragMode>AsFile</FileDragMode>
 											<ContextMenu name="ЗадачиИсходящиеКонтекстноеМеню" id="162"/>
@@ -969,12 +967,12 @@
 											<TitleLocation>None</TitleLocation>
 											<HeaderPicture>
 												<xr:Ref>CommonPicture.ПодписанЭП</xr:Ref>
-												<xr:LoadTransparent>true</xr:LoadTransparent>
+												<xr:LoadTransparent>false</xr:LoadTransparent>
 											</HeaderPicture>
 											<Width>2</Width>
 											<ValuesPicture>
 												<xr:Ref>CommonPicture.СтатусПроверкиЭП</xr:Ref>
-												<xr:LoadTransparent>true</xr:LoadTransparent>
+												<xr:LoadTransparent>false</xr:LoadTransparent>
 											</ValuesPicture>
 											<FileDragMode>AsFile</FileDragMode>
 											<ContextMenu name="ПодписанЭПИсходящиеКонтекстноеМеню" id="165"/>
@@ -988,12 +986,12 @@
 											<TitleLocation>None</TitleLocation>
 											<HeaderPicture>
 												<xr:Ref>CommonPicture.Категории</xr:Ref>
-												<xr:LoadTransparent>true</xr:LoadTransparent>
+												<xr:LoadTransparent>false</xr:LoadTransparent>
 											</HeaderPicture>
 											<Width>2</Width>
 											<ValuesPicture>
 												<xr:Ref>CommonPicture.Категории</xr:Ref>
-												<xr:LoadTransparent>true</xr:LoadTransparent>
+												<xr:LoadTransparent>false</xr:LoadTransparent>
 											</ValuesPicture>
 											<FileDragMode>AsFile</FileDragMode>
 											<ContextMenu name="ЕстьКатегорииИсходящиеКонтекстноеМеню" id="168"/>
@@ -1024,12 +1022,12 @@
 											<TitleLocation>None</TitleLocation>
 											<HeaderPicture>
 												<xr:Ref>CommonPicture.ПроцессОбменаСВД</xr:Ref>
-												<xr:LoadTransparent>true</xr:LoadTransparent>
+												<xr:LoadTransparent>false</xr:LoadTransparent>
 											</HeaderPicture>
 											<Width>2</Width>
 											<ValuesPicture>
 												<xr:Ref>CommonPicture.СостояниеОперацииСВД</xr:Ref>
-												<xr:LoadTransparent>true</xr:LoadTransparent>
+												<xr:LoadTransparent>false</xr:LoadTransparent>
 											</ValuesPicture>
 											<FileDragMode>AsFile</FileDragMode>
 											<ContextMenu name="СостояниеСВДИсходящиеКонтекстноеМеню" id="171"/>
@@ -1040,12 +1038,12 @@
 											<TitleLocation>None</TitleLocation>
 											<HeaderPicture>
 												<xr:Ref>CommonPicture.КартинкаКонтроль16</xr:Ref>
-												<xr:LoadTransparent>true</xr:LoadTransparent>
+												<xr:LoadTransparent>false</xr:LoadTransparent>
 											</HeaderPicture>
 											<Width>2</Width>
 											<ValuesPicture>
 												<xr:Ref>CommonPicture.СостоянияКонтроля16</xr:Ref>
-												<xr:LoadTransparent>true</xr:LoadTransparent>
+												<xr:LoadTransparent>false</xr:LoadTransparent>
 											</ValuesPicture>
 											<FileDragMode>AsFile</FileDragMode>
 											<ContextMenu name="СостояниеКонтроляИсходящиеКонтекстноеМеню" id="174"/>

@@ -21,12 +21,12 @@
 			</Synonym>
 			<Comment/>
 			<UseStandardCommands>true</UseStandardCommands>
-			<DefaultForm/>
+			<DefaultForm>CommonForm.ФормаОтчета</DefaultForm>
 			<AuxiliaryForm/>
 			<MainDataCompositionSchema>Report.ВходящиеДокументы.Template.ОсновнаяСхемаКомпоновкиДанных</MainDataCompositionSchema>
-			<DefaultSettingsForm/>
+			<DefaultSettingsForm>CommonForm.ФормаНастроекОтчета</DefaultSettingsForm>
 			<AuxiliarySettingsForm/>
-			<DefaultVariantForm/>
+			<DefaultVariantForm>CommonForm.ФормаВариантаОтчета</DefaultVariantForm>
 			<VariantsStorage>SettingsStorage.ХранилищеВариантовОтчетов</VariantsStorage>
 			<SettingsStorage/>
 			<IncludeHelpInContents>true</IncludeHelpInContents>
@@ -39,16 +39,16 @@
 			<Explanation/>
 		</Properties>
 		<ChildObjects>
-			<Template>ОсновнаяСхемаКомпоновкиДанных</Template>
-			<Template>ОбразецОтчетаСписокВходящихДокументов</Template>
 			<Template>ОбразецОтчетаДокументыПолученныеПриПереадресации</Template>
+			<Template>ОбразецОтчетаДокументыТребующиеОтветПереадресовавшему</Template>
+			<Template>ОбразецОтчетаСписокВходящихДокументов</Template>
+			<Template>ОбразецОтчетаСписокПереадресованныхДокументов</Template>
+			<Template>ОбразецОтчетаСписокПросроченныхВходящихДокументов</Template>
+			<Template>ОбразецОтчетаСтатистикаДокументовПолученныхПриПереадресации</Template>
+			<Template>ОбразецОтчетаСтатистикаПереадресованныхДокументов</Template>
 			<Template>ОбразецОтчетаСтатистикаПоВидамВходящиеДокументы</Template>
 			<Template>ОбразецОтчетаСтатистикаПоИнициативнымИОтветным</Template>
-			<Template>ОбразецОтчетаСтатистикаДокументовПолученныхПриПереадресации</Template>
-			<Template>ОбразецОтчетаДокументыТребующиеОтветПереадресовавшему</Template>
-			<Template>ОбразецОтчетаСписокПереадресованныхДокументов</Template>
-			<Template>ОбразецОтчетаСтатистикаПереадресованныхДокументов</Template>
-			<Template>ОбразецОтчетаСписокПросроченныхВходящихДокументов</Template>
+			<Template>ОсновнаяСхемаКомпоновкиДанных</Template>
 		</ChildObjects>
 	</Report>
 </MetaDataObject>

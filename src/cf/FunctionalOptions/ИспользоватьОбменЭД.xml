@@ -13,15 +13,15 @@
 			<Location>Constant.ИспользоватьОбменЭД</Location>
 			<PrivilegedGetMode>true</PrivilegedGetMode>
 			<Content>
-				<xr:Object>Enum.СтатусыСообщенийЭДО</xr:Object>
-				<xr:Object>Enum.СпособыОбменаЭД</xr:Object>
 				<xr:Object>InformationRegister.ФорматыЭлектронныхДокументов</xr:Object>
-				<xr:Object>Catalog.УдалитьСертификатыЭП</xr:Object>
+				<xr:Object>Enum.СпособыОбменаЭД</xr:Object>
+				<xr:Object>Enum.СтатусыСообщенийЭДО</xr:Object>
 				<xr:Object>InformationRegister.УдалитьЖурналСобытийЭД</xr:Object>
+				<xr:Object>Catalog.УдалитьСертификатыЭП</xr:Object>
 				<xr:Object>Enum.ТипыЭлементовРегламентаЭДО</xr:Object>
-				<xr:Object>Enum.СостоянияДокументовЭДО</xr:Object>
-				<xr:Object>Document.ЭлектронныйДокументИсходящийЭДО</xr:Object>
 				<xr:Object>InformationRegister.ПоддерживаемыеФорматыЭлектронныхДокументов</xr:Object>
+				<xr:Object>Document.ЭлектронныйДокументИсходящийЭДО</xr:Object>
+				<xr:Object>Enum.СостоянияДокументовЭДО</xr:Object>
 				<xr:Object>Enum.СостоянияСоглашенийЭД</xr:Object>
 				<xr:Object>Catalog.СообщениеЭДОПрисоединенныеФайлы</xr:Object>
 				<xr:Object>InformationRegister.НастройкиОтправкиЭлектронныхДокументов</xr:Object>
@@ -31,6 +31,7 @@
 				<xr:Object>InformationRegister.УдалитьУчастникиОбменовЭДЧерезОператоровЭДО</xr:Object>
 				<xr:Object>DataProcessor.ОбменСКонтрагентами</xr:Object>
 				<xr:Object>Catalog.УдалитьСоглашенияОбИспользованииЭД</xr:Object>
+				<xr:Object>CommonCommand.ОтправитьИПолучитьЭДО</xr:Object>
 				<xr:Object>InformationRegister.СостоянияОбменовЭДЧерезОператоровЭДО</xr:Object>
 				<xr:Object>Enum.ВерсииРегламентаОбмена1С</xr:Object>
 				<xr:Object>Enum.УдалитьКонтекстыРаботыСЭД</xr:Object>
@@ -41,13 +42,16 @@
 				<xr:Object>InformationRegister.УдалитьИдентификаторыДокументовОснованийВладельцевЭД</xr:Object>
 				<xr:Object>CommonCommand.ЗаписатьПарольСертификата</xr:Object>
 				<xr:Object>InformationRegister.НастройкиПолученияЭлектронныхДокументов</xr:Object>
+				<xr:Object>Constant.ПриниматьПриглашенияЭДОАвтоматически</xr:Object>
 				<xr:Object>Constant.СоздаватьКонтрагентовАвтоматическиБЭД</xr:Object>
 				<xr:Object>InformationRegister.УчетныеЗаписиЭДО</xr:Object>
 				<xr:Object>Enum.ТипыСинхронизацииСервисаНастроекЭДО</xr:Object>
 				<xr:Object>InformationRegister.СовместимостьОператоровЭДО</xr:Object>
+				<xr:Object>InformationRegister.ПакетыЭДОДокументооборот</xr:Object>
 				<xr:Object>InformationRegister.АбонентыЭДО</xr:Object>
 				<xr:Object>InformationRegister.НастройкиОтправкиЭлектронныхДокументовПоВидам</xr:Object>
 				<xr:Object>InformationRegister.ОператорыЭДО</xr:Object>
+				<xr:Object>CommonCommand.СформироватьДокументыДООбъектыЭДО</xr:Object>
 				<xr:Object>InformationRegister.СвязьВидовИФорматовДокументовЭДО</xr:Object>
 				<xr:Object>InformationRegister.СертификатыУчетныхЗаписейЭДО</xr:Object>
 				<xr:Object>InformationRegister.СостояниеОрганизацийБЭД</xr:Object>
@@ -55,7 +59,9 @@
 				<xr:Object>InformationRegister.ПриглашенияКОбменуЭлектроннымиДокументами</xr:Object>
 				<xr:Object>InformationRegister.ДанныеКонтрагентовСоздаваемыхБезусловно</xr:Object>
 				<xr:Object>InformationRegister.СоставПакетовЭДОДокументооборот</xr:Object>
-				<xr:Object>InformationRegister.ПакетыЭДОДокументооборот</xr:Object>
+				<xr:Object>CommonCommand.НастройкиЭДО</xr:Object>
+				<xr:Object>DataProcessor.ИнтерфейсДокументовЭДОДокументооборот</xr:Object>
+				<xr:Object>InformationRegister.ОшибкиЭДОКИсправлению</xr:Object>
 			</Content>
 		</Properties>
 	</FunctionalOption>

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
 	<ConversationsRepresentation>DontShow</ConversationsRepresentation>
 	<CommandSet>
 		<ExcludedCommand>Copy</ExcludedCommand>
@@ -176,6 +176,7 @@
 				</v8:item>
 			</ToolTip>
 			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаТемаРасширеннаяПодсказка" id="411"/>
@@ -196,7 +197,7 @@
 					<GroupVerticalAlign>Center</GroupVerticalAlign>
 					<Picture>
 						<xr:Ref>CommonPicture.ЗнакСтоп</xr:Ref>
-						<xr:LoadTransparent>true</xr:LoadTransparent>
+						<xr:LoadTransparent>false</xr:LoadTransparent>
 					</Picture>
 					<FileDragMode>AsFile</FileDragMode>
 					<ContextMenu name="ТемаЗакрытаКонтекстноеМеню" id="554"/>
@@ -421,6 +422,7 @@
 								</v8:item>
 							</ToolTip>
 							<Group>Horizontal</Group>
+							<Behavior>Usual</Behavior>
 							<ExtendedTooltip name="ГруппаФайлExtendedTooltip" id="335"/>
 							<ChildItems>
 								<PictureField name="ФайлИндексКартинки" id="533">
@@ -432,7 +434,7 @@
 									<VerticalStretch>false</VerticalStretch>
 									<ValuesPicture>
 										<xr:Ref>CommonPicture.КоллекцияПиктограммФайлов</xr:Ref>
-										<xr:LoadTransparent>true</xr:LoadTransparent>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
 									</ValuesPicture>
 									<Border width="1">
 										<v8ui:style xsi:type="v8ui:ControlBorderType">WithoutBorder</v8ui:style>
@@ -584,6 +586,7 @@
 										</v8:item>
 									</ToolTip>
 									<Group>Horizontal</Group>
+									<Behavior>Usual</Behavior>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="ГруппаЗаголовокНаЧтоОтвечаемРасширеннаяПодсказка" id="497"/>
@@ -1291,6 +1294,7 @@
 								</v8:item>
 							</ToolTip>
 							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
 							<Representation>NormalSeparation</Representation>
 							<ExtendedTooltip name="ГруппаГолосованиеExtendedTooltip" id="352"/>
 							<ChildItems>
@@ -1514,7 +1518,7 @@
 											<HorizontalStretch>false</HorizontalStretch>
 											<ValuesPicture>
 												<xr:Ref>CommonPicture.УчастникиРабочейГруппы</xr:Ref>
-												<xr:LoadTransparent>true</xr:LoadTransparent>
+												<xr:LoadTransparent>false</xr:LoadTransparent>
 											</ValuesPicture>
 											<FileDragMode>AsFile</FileDragMode>
 											<ContextMenu name="РабочаяГруппаТаблицаИконкаКонтекстноеМеню" id="451"/>
@@ -1639,18 +1643,17 @@
 				<v8:Type>cfg:DynamicList</v8:Type>
 			</Type>
 			<UseAlways>
-				<Field>~Файлы.Code</Field>
-				<Field>~Файлы.DeletionMark</Field>
-				<Field>~Файлы.Description</Field>
-				<Field>~Файлы.Ref</Field>
 				<Field>Файлы.DefaultPicture</Field>
 				<Field>Файлы.Автор</Field>
 				<Field>Файлы.ДатаСоздания</Field>
 				<Field>Файлы.Зашифрован</Field>
 				<Field>Файлы.ИндексКартинки</Field>
+				<Field>Файлы.Код</Field>
 				<Field>Файлы.Кодировка</Field>
+				<Field>Файлы.Наименование</Field>
 				<Field>Файлы.Описание</Field>
 				<Field>Файлы.ПодписанЭП</Field>
+				<Field>Файлы.ПометкаУдаления</Field>
 				<Field>Файлы.Расширение</Field>
 				<Field>Файлы.Редактирует</Field>
 				<Field>Файлы.РедактируетТекущийПользователь</Field>
@@ -2066,7 +2069,7 @@
 						</v8:item>
 					</Title>
 					<Type>
-						<v8:TypeSet>cfg:AnyRef</v8:TypeSet>
+						<v8:TypeSet>cfg:AnyIBRef</v8:TypeSet>
 					</Type>
 				</Column>
 				<Column name="Изменение" id="4">
@@ -2181,6 +2184,17 @@
 				</v8:StringQualifiers>
 			</Type>
 		</Attribute>
+		<Attribute name="ЭтоМобильныйКлиент" id="40">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Это мобильный клиент</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
 	</Attributes>
 	<Commands>
 		<Command name="Ответить" id="6">
@@ -2216,7 +2230,7 @@
 			</ToolTip>
 			<Picture>
 				<xr:Ref>CommonPicture.Цитировать</xr:Ref>
-				<xr:LoadTransparent>true</xr:LoadTransparent>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
 			</Picture>
 			<Action>Цитировать</Action>
 			<ModifiesSavedData>true</ModifiesSavedData>
@@ -2467,7 +2481,7 @@
 			</ToolTip>
 			<Picture>
 				<xr:Ref>CommonPicture.Скрепка</xr:Ref>
-				<xr:LoadTransparent>true</xr:LoadTransparent>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
 			</Picture>
 			<Action>ДобавитьФайл</Action>
 			<CurrentRowUse>DontUse</CurrentRowUse>
@@ -2625,7 +2639,7 @@
 			</ToolTip>
 			<Picture>
 				<xr:Ref>CommonPicture.Голосование</xr:Ref>
-				<xr:LoadTransparent>true</xr:LoadTransparent>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
 			</Picture>
 			<Action>ДобавитьГолосование</Action>
 			<ModifiesSavedData>true</ModifiesSavedData>
@@ -2678,7 +2692,7 @@
 			</ToolTip>
 			<Picture>
 				<xr:Ref>CommonPicture.Замок</xr:Ref>
-				<xr:LoadTransparent>true</xr:LoadTransparent>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
 			</Picture>
 			<Action>ДобавитьРабочуюГруппу</Action>
 			<FunctionalOptions>
@@ -2702,7 +2716,7 @@
 			</ToolTip>
 			<Picture>
 				<xr:Ref>CommonPicture.ЗнакСтоп</xr:Ref>
-				<xr:LoadTransparent>true</xr:LoadTransparent>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
 			</Picture>
 			<Action>ЗакрытьТему</Action>
 			<ModifiesSavedData>true</ModifiesSavedData>
@@ -2723,7 +2737,7 @@
 			</ToolTip>
 			<Picture>
 				<xr:Ref>CommonPicture.ЗнакСтопЧБ</xr:Ref>
-				<xr:LoadTransparent>true</xr:LoadTransparent>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
 			</Picture>
 			<Action>ОткрытьТему</Action>
 			<ModifiesSavedData>true</ModifiesSavedData>
@@ -2796,7 +2810,7 @@
 			<Shortcut>Ctrl+Shift+V</Shortcut>
 			<Picture>
 				<xr:Ref>CommonPicture.ВставитьИзБуфераОбмена</xr:Ref>
-				<xr:LoadTransparent>true</xr:LoadTransparent>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
 			</Picture>
 			<Action>ВставитьСтроки</Action>
 			<CurrentRowUse>DontUse</CurrentRowUse>
@@ -2817,7 +2831,7 @@
 			<Shortcut>Ctrl+Shift+C</Shortcut>
 			<Picture>
 				<xr:Ref>CommonPicture.СкопироватьВБуферОбмена</xr:Ref>
-				<xr:LoadTransparent>true</xr:LoadTransparent>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
 			</Picture>
 			<Action>СкопироватьСтроки</Action>
 			<CurrentRowUse>DontUse</CurrentRowUse>
@@ -2875,7 +2889,7 @@
 	<CommandInterface>
 		<NavigationPanel>
 			<Item>
-				<Command>3:492354ee-ddee-4f48-befb-a6c04dac800f</Command>
+				<Command>0</Command>
 				<Type>Auto</Type>
 				<DefaultVisible>false</DefaultVisible>
 				<Visible>
@@ -2917,7 +2931,7 @@
 		</NavigationPanel>
 		<CommandBar>
 			<Item>
-				<Command>2:679bd72a-4cf8-4c2e-ae00-3f01f48050c4</Command>
+				<Command>0</Command>
 				<Type>Auto</Type>
 				<DefaultVisible>false</DefaultVisible>
 				<Visible>
@@ -2925,7 +2939,7 @@
 				</Visible>
 			</Item>
 			<Item>
-				<Command>2:dab6706c-e0f7-4dc9-8fac-95b1dfcbf05c</Command>
+				<Command>0</Command>
 				<Type>Auto</Type>
 				<DefaultVisible>false</DefaultVisible>
 				<Visible>
@@ -2933,7 +2947,7 @@
 				</Visible>
 			</Item>
 			<Item>
-				<Command>2:3b9d376f-cd28-4f84-b8a8-686da09f0e46</Command>
+				<Command>0</Command>
 				<Type>Auto</Type>
 				<DefaultVisible>false</DefaultVisible>
 				<Visible>
@@ -2941,7 +2955,7 @@
 				</Visible>
 			</Item>
 			<Item>
-				<Command>2:57067371-06db-46dc-a7e9-c76d28e21071</Command>
+				<Command>0</Command>
 				<Type>Auto</Type>
 				<DefaultVisible>false</DefaultVisible>
 				<Visible>
@@ -2949,7 +2963,7 @@
 				</Visible>
 			</Item>
 			<Item>
-				<Command>2:28f131c2-f971-4a8c-bfc4-23f8606a7536</Command>
+				<Command>0</Command>
 				<Type>Auto</Type>
 				<DefaultVisible>false</DefaultVisible>
 				<Visible>
@@ -2957,7 +2971,7 @@
 				</Visible>
 			</Item>
 			<Item>
-				<Command>2:53d146b8-d85f-4cfe-b5ee-af78f4e09445</Command>
+				<Command>0</Command>
 				<Type>Auto</Type>
 				<DefaultVisible>false</DefaultVisible>
 				<Visible>
@@ -2965,7 +2979,7 @@
 				</Visible>
 			</Item>
 			<Item>
-				<Command>2:efd06081-12d1-4734-9015-bff31c9f7966</Command>
+				<Command>0</Command>
 				<Type>Auto</Type>
 				<DefaultVisible>false</DefaultVisible>
 				<Visible>
@@ -2973,7 +2987,7 @@
 				</Visible>
 			</Item>
 			<Item>
-				<Command>2:da3c04c7-1d24-4d54-9686-2c404b8ed4e8</Command>
+				<Command>0</Command>
 				<Type>Auto</Type>
 				<DefaultVisible>false</DefaultVisible>
 				<Visible>
@@ -2981,7 +2995,7 @@
 				</Visible>
 			</Item>
 			<Item>
-				<Command>0:1823d37a-3b32-4031-8996-56796c8dbe41</Command>
+				<Command>0</Command>
 				<Type>Auto</Type>
 				<DefaultVisible>false</DefaultVisible>
 				<Visible>

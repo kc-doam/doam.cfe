@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
 	<Title>
 		<v8:item>
 			<v8:lang>ru</v8:lang>
@@ -9,6 +9,13 @@
 	<Width>90</Width>
 	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
 	<AutoTitle>false</AutoTitle>
+	<MobileDeviceCommandBarContent>
+		<xr:Item>
+			<xr:Presentation/>
+			<xr:CheckState>0</xr:CheckState>
+			<xr:Value xsi:type="xs:string">ГруппаКоманднаяПанель</xr:Value>
+		</xr:Item>
+	</MobileDeviceCommandBarContent>
 	<CommandSet>
 		<ExcludedCommand>Abort</ExcludedCommand>
 		<ExcludedCommand>Cancel</ExcludedCommand>
@@ -44,6 +51,7 @@
 				</v8:item>
 			</ToolTip>
 			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаШапкаExtendedTooltip" id="36"/>
@@ -116,6 +124,7 @@
 			<EnableStartDrag>true</EnableStartDrag>
 			<FileDragMode>AsFile</FileDragMode>
 			<DataPath>Список</DataPath>
+			<RefreshRequest>PullFromTop</RefreshRequest>
 			<AutoRefresh>false</AutoRefresh>
 			<AutoRefreshPeriod>60</AutoRefreshPeriod>
 			<Period>
@@ -161,8 +170,40 @@
 			</SearchControlAddition>
 			<Events>
 				<Event name="BeforeDeleteRow">СписокПередУдалением</Event>
+				<Event name="RefreshRequestProcessing">СписокОбработкаЗапросаОбновления</Event>
 			</Events>
 			<ChildItems>
+				<ColumnGroup name="МК_ГруппаКолонок" id="64">
+					<Visible>false</Visible>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Список группа1</v8:content>
+						</v8:item>
+					</Title>
+					<Group>Horizontal</Group>
+					<ExtendedTooltip name="МК_ГруппаКолонокРасширеннаяПодсказка" id="65"/>
+					<ChildItems>
+						<ColumnGroup name="ГруппаОписаниеВидРабот" id="66">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа1</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="ГруппаОписаниеВидРаботРасширеннаяПодсказка" id="67"/>
+						</ColumnGroup>
+						<ColumnGroup name="ГруппаДлительностьДата" id="68">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа1</v8:content>
+								</v8:item>
+							</Title>
+							<ExtendedTooltip name="ГруппаДлительностьДатаРасширеннаяПодсказка" id="69"/>
+						</ColumnGroup>
+					</ChildItems>
+				</ColumnGroup>
 				<LabelField name="ОписаниеРаботы" id="16">
 					<DataPath>Список.ОписаниеРаботы</DataPath>
 					<DefaultItem>true</DefaultItem>
@@ -178,7 +219,7 @@
 					<Format>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ДФ='dd.MM.yyyy ЧЧ:мм'</v8:content>
+							<v8:content>ДФ='ЧЧ:мм'</v8:content>
 						</v8:item>
 					</Format>
 					<ContextMenu name="НачалоКонтекстноеМеню" id="19"/>
@@ -191,7 +232,7 @@
 					<Format>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ДФ='dd.MM.yyyy ЧЧ:мм'</v8:content>
+							<v8:content>ДФ='ЧЧ:мм'</v8:content>
 						</v8:item>
 					</Format>
 					<ContextMenu name="ОкончаниеКонтекстноеМеню" id="21"/>
@@ -365,6 +406,17 @@
 			<Save>
 				<Field>ПериодОтбора</Field>
 			</Save>
+		</Attribute>
+		<Attribute name="ЭтоМобильныйКлиент" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Это мобильный клиент</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
 		</Attribute>
 	</Attributes>
 </Form>

@@ -624,7 +624,7 @@
 					<Master>false</Master>
 					<MainFilter>true</MainFilter>
 					<DenyIncompleteValues>false</DenyIncompleteValues>
-					<Indexing>DontIndex</Indexing>
+					<Indexing>Index</Indexing>
 					<FullTextSearch>Use</FullTextSearch>
 					<DataHistory>Use</DataHistory>
 				</Properties>
@@ -714,7 +714,7 @@
 					<Master>false</Master>
 					<MainFilter>true</MainFilter>
 					<DenyIncompleteValues>false</DenyIncompleteValues>
-					<Indexing>DontIndex</Indexing>
+					<Indexing>Index</Indexing>
 					<FullTextSearch>Use</FullTextSearch>
 					<DataHistory>Use</DataHistory>
 				</Properties>
@@ -818,20 +818,21 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Dimension>
-			<Form>Форма</Form>
-			<Form>ОбработкаПредупрежденийПоДатеЗапретаЗагрузки</Form>
 			<Form>ОбработкаПредупрежденийКоллизии</Form>
+			<Form>ОбработкаПредупрежденийПоДатеЗапретаЗагрузки</Form>
 			<Form>ОбработкаПредупрежденийПроведения</Form>
 			<Form>ОтборПредупрежденийПоТипам</Form>
 			<Form>ОтборСинхронизаций</Form>
+			<Form>ПредупреждениеАдминистрированияПриложения</Form>
+			<Form>ПредупреждениеКонвертацииОбъектаПриОтправке</Form>
 			<Form>ПредупреждениеНезаполненногоРеквизита</Form>
 			<Form>ПредупреждениеНепроведенногоДокумента</Form>
-			<Form>ПредупрежденияОбработчиковОтправкиПолучения</Form>
 			<Form>ПредупреждениеОКоллизии</Form>
 			<Form>ПредупреждениеПоДатеЗапретаЗагрузки</Form>
-			<Form>ПредупреждениеКонвертацииОбъектаПриОтправке</Form>
+			<Form>ПредупрежденияОбработчиковОтправкиПолучения</Form>
 			<Form>ПредупрежденияСинхронизаций</Form>
 			<Form>УдалениеУстаревшихПредупреждений</Form>
+			<Form>Форма</Form>
 		</ChildObjects>
 	</InformationRegister>
 </MetaDataObject>

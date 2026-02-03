@@ -21,6 +21,7 @@
 			<Subsystem>БазоваяФункциональность</Subsystem>
 			<Subsystem>ОбменСКонтрагентами</Subsystem>
 			<Subsystem>СопоставлениеНоменклатурыКонтрагентов</Subsystem>
+			<Subsystem>СервисШтампированияФайлов</Subsystem>
 		</ChildObjects>
 	</Subsystem>
 </MetaDataObject>

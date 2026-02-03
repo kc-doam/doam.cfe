@@ -21,12 +21,12 @@
 			</Synonym>
 			<Comment/>
 			<UseStandardCommands>true</UseStandardCommands>
-			<DefaultForm>Report.ОтчетПоЗадачам.Form.ФормаОтчета</DefaultForm>
+			<DefaultForm>CommonForm.ФормаОтчета</DefaultForm>
 			<AuxiliaryForm/>
 			<MainDataCompositionSchema>Report.ОтчетПоЗадачам.Template.Макет</MainDataCompositionSchema>
-			<DefaultSettingsForm/>
+			<DefaultSettingsForm>CommonForm.ФормаНастроекОтчета</DefaultSettingsForm>
 			<AuxiliarySettingsForm/>
-			<DefaultVariantForm/>
+			<DefaultVariantForm>CommonForm.ФормаВариантаОтчета</DefaultVariantForm>
 			<VariantsStorage>SettingsStorage.ХранилищеВариантовОтчетов</VariantsStorage>
 			<SettingsStorage/>
 			<IncludeHelpInContents>true</IncludeHelpInContents>
@@ -36,40 +36,17 @@
 		<ChildObjects>
 			<Form>ФормаОтчета</Form>
 			<Template>Макет</Template>
-			<Template>ОбразецОтчетаСписокТекущихЗадач</Template>
-			<Template>ОбразецОтчетаСписокИстекающихЗадач</Template>
-			<Template>ОбразецОтчетаСписокМоихИстекающихЗадач</Template>
-			<Template>ОбразецОтчетаСписокИстекающихЗадачПодчиненных</Template>
-			<Template>ОбразецОтчетаСписокНарушенийСроков</Template>
-			<Template>ОбразецОтчетаСтатистикаКоличестваЗадач</Template>
 			<Template>ОбразецОтчетаСписокВсехЗадач</Template>
-			<Template>ОбразецОтчетаСписокНепринятыхЗадач</Template>
+			<Template>ОбразецОтчетаСписокИстекающихЗадач</Template>
+			<Template>ОбразецОтчетаСписокИстекающихЗадачПодчиненных</Template>
+			<Template>ОбразецОтчетаСписокМоихИстекающихЗадач</Template>
 			<Template>ОбразецОтчетаСписокМоихНепринятыхЗадач</Template>
+			<Template>ОбразецОтчетаСписокНарушенийСроков</Template>
+			<Template>ОбразецОтчетаСписокНепринятыхЗадач</Template>
 			<Template>ОбразецОтчетаСписокНепринятыхЗадачПодчиненными</Template>
+			<Template>ОбразецОтчетаСписокТекущихЗадач</Template>
 			<Template>ОбразецОтчетаСтатистикаДлительностиПринятияКИсполнению</Template>
-			<Command uuid="e650822a-9efd-46d6-9caa-55da069cb2d1">
-				<Properties>
-					<Name>ПолучитьСписокТекущихЗадачПодразделения</Name>
-					<Synonym>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Текущие задачи подразделения</v8:content>
-						</v8:item>
-					</Synonym>
-					<Comment/>
-					<Group>FormNavigationPanelSeeAlso</Group>
-					<CommandParameterType>
-						<v8:Type>cfg:CatalogRef.СтруктураПредприятия</v8:Type>
-					</CommandParameterType>
-					<ParameterUseMode>Single</ParameterUseMode>
-					<ModifiesData>false</ModifiesData>
-					<Representation>Auto</Representation>
-					<ToolTip/>
-					<Picture/>
-					<Shortcut/>
-					<OnMainServerUnavalableBehavior>Auto</OnMainServerUnavalableBehavior>
-				</Properties>
-			</Command>
+			<Template>ОбразецОтчетаСтатистикаКоличестваЗадач</Template>
 			<Command uuid="9d0c2159-2c06-4e6f-993a-0a53913650b8">
 				<Properties>
 					<Name>ПолучитьСписокИстекающихЗадачПодразделения</Name>
@@ -100,6 +77,29 @@
 						<v8:item>
 							<v8:lang>ru</v8:lang>
 							<v8:content>Непринятые задачи подразделения</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Group>FormNavigationPanelSeeAlso</Group>
+					<CommandParameterType>
+						<v8:Type>cfg:CatalogRef.СтруктураПредприятия</v8:Type>
+					</CommandParameterType>
+					<ParameterUseMode>Single</ParameterUseMode>
+					<ModifiesData>false</ModifiesData>
+					<Representation>Auto</Representation>
+					<ToolTip/>
+					<Picture/>
+					<Shortcut/>
+					<OnMainServerUnavalableBehavior>Auto</OnMainServerUnavalableBehavior>
+				</Properties>
+			</Command>
+			<Command uuid="e650822a-9efd-46d6-9caa-55da069cb2d1">
+				<Properties>
+					<Name>ПолучитьСписокТекущихЗадачПодразделения</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Текущие задачи подразделения</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>

@@ -15,8 +15,11 @@
 				<v8:Type>cfg:DocumentObject.ЕженедельныйОтчет</v8:Type>
 				<v8:Type>cfg:DocumentObject.ПередачаДелВАрхив</v8:Type>
 				<v8:Type>cfg:DocumentObject.ВходящееПисьмо</v8:Type>
+				<v8:Type>cfg:DocumentObject.КвитанцияМЭДО</v8:Type>
+				<v8:Type>cfg:DocumentObject.ДанныеДокументаМЭДО</v8:Type>
 				<v8:Type>cfg:DocumentObject.ЕжедневныйОтчет</v8:Type>
 				<v8:Type>cfg:DocumentObject.ОтзывСогласияНаОбработкуПерсональныхДанных</v8:Type>
+				<v8:Type>cfg:DocumentObject.УведомлениеМЭДО</v8:Type>
 				<v8:Type>cfg:DocumentObject.ИсходящееПисьмо</v8:Type>
 				<v8:Type>cfg:DocumentObject.ВыгрузкаВССТУ</v8:Type>
 				<v8:Type>cfg:DocumentObject.Отсутствие</v8:Type>

@@ -18,6 +18,7 @@
 			<Content>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.РейтингАктивностиОбластейДанных</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ОбластиДанных</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.СостоянияВыгрузкиЗагрузкиОбластейДанных</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

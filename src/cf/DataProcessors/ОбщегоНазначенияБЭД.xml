@@ -28,11 +28,12 @@
 			<Explanation/>
 		</Properties>
 		<ChildObjects>
-			<Form>ВводСтроки</Form>
-			<Form>СписокДанных</Form>
-			<Form>ОжиданиеОперации</Form>
-			<Form>КонструкторФормул</Form>
 			<Form>ВводПароля</Form>
+			<Form>ВводСтроки</Form>
+			<Form>ВыводФорматированнойСтроки</Form>
+			<Form>КонструкторФормул</Form>
+			<Form>ОжиданиеОперации</Form>
+			<Form>СписокДанных</Form>
 		</ChildObjects>
 	</DataProcessor>
 </MetaDataObject>

@@ -24961,15 +24961,153 @@
 	<rowsItem>
 		<index>240</index>
 		<row>
-			<empty>true</empty>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ДанныеЭлектронногоАктированияЕИС</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<i>8</i>
+				<c>
+					<f>5</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Данные для электронного актирования ЕИС в сфере закупок</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<i>10</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Булево</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
 		</row>
 	</rowsItem>
 	<rowsItem>
 		<index>241</index>
 		<row>
 			<c>
+				<i>1</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Подписанты</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<i>8</i>
 				<c>
 					<f>204</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Подписанты для ЛК ЕИС</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>242</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ДанныеПриложения</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<i>8</i>
+				<c>
+					<f>204</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Данные приложения для ЕИС к титулу</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>243</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ДанныеБД</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<i>8</i>
+				<c>
+					<f>204</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Данные базы данных для целей актирования</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>244</index>
+		<row>
+			<empty>true</empty>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>245</index>
+		<row>
+			<c>
+				<c>
+					<f>205</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -24993,7 +25131,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>242</index>
+		<index>246</index>
 		<row>
 			<c>
 				<i>1</i>
@@ -25055,7 +25193,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>243</index>
+		<index>247</index>
 		<row>
 			<c>
 				<i>2</i>
@@ -25100,7 +25238,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>244</index>
+		<index>248</index>
 		<row>
 			<c>
 				<i>3</i>
@@ -25146,7 +25284,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>245</index>
+		<index>249</index>
 		<row>
 			<c>
 				<i>1</i>
@@ -25208,7 +25346,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>246</index>
+		<index>250</index>
 		<row>
 			<c>
 				<i>2</i>
@@ -25248,7 +25386,7 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>247</index>
+		<index>251</index>
 		<row>
 			<c>
 				<i>3</i>
@@ -25301,9 +25439,9 @@
 	</rowsItem>
 	<templateMode>true</templateMode>
 	<defaultFormatIndex>18</defaultFormatIndex>
-	<height>248</height>
+	<height>252</height>
 	<vgLevels>3</vgLevels>
-	<vgRows>248</vgRows>
+	<vgRows>252</vgRows>
 	<vg>
 		<b>28</b>
 		<e>32</e>
@@ -25388,6 +25526,10 @@
 		<b>234</b>
 		<e>238</e>
 	</vg>
+	<vg>
+		<b>241</b>
+		<e>243</e>
+	</vg>
 	<merge>
 		<r>0</r>
 		<c>0</c>
@@ -25432,8 +25574,8 @@
 		<name>СведенияОМаркировке</name>
 		<area>
 			<type>Rows</type>
-			<beginRow>241</beginRow>
-			<endRow>247</endRow>
+			<beginRow>245</beginRow>
+			<endRow>251</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -26567,6 +26709,10 @@
 		<format/>
 		<editFormat/>
 		<mask/>
+	</format>
+	<format>
+		<width>367</width>
+		<hidden>false</hidden>
 	</format>
 	<format>
 		<backColor>#CCFFCC</backColor>

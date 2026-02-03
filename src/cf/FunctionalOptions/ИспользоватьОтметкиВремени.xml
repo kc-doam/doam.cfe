@@ -14,7 +14,7 @@
 			<PrivilegedGetMode>true</PrivilegedGetMode>
 			<Content>
 				<xr:Object>Subsystem.НастройкаИАдминистрирование.Subsystem.ОтметкиВремени</xr:Object>
-				<xr:Object>InformationRegister.ОтметкиВремениСсылочныхДанных</xr:Object>
+				<xr:Object>InformationRegister.ОтметкиВремениСсылочныхОбъектов</xr:Object>
 			</Content>
 		</Properties>
 	</FunctionalOption>

@@ -483,6 +483,7 @@
 		<property name="chronometrationSettings" type="d2p1:DMChronometrationSettings" lowerBound="0"/>
 		<property name="projectTask" type="d2p1:DMProjectTask" lowerBound="0"/>
 		<property name="targets" type="d2p1:DMBusinessProcessTaskTargetCollection" lowerBound="0"/>
+		<property name="fillableTargets" type="d2p1:DMBusinessProcessTaskFillableTargetCollection" lowerBound="0"/>
 		<property name="additionalProperties" type="d2p1:DMAdditionalProperty" lowerBound="0" upperBound="-1"/>
 		<property name="htmlView" type="xs:string" lowerBound="0"/>
 	</objectType>
@@ -496,6 +497,15 @@
 		<property name="dueDateDays" type="xs:integer" lowerBound="0"/>
 		<property name="dueDateHours" type="xs:integer" lowerBound="0"/>
 		<property name="dueDateMinutes" type="xs:integer" lowerBound="0"/>
+	</objectType>
+	<objectType name="DMBusinessProcessTaskFillableTarget">
+		<property xmlns:d3p1="http://www.1c.ru/dm" name="role" type="d3p1:DMBusinessProcessTargetRole"/>
+		<property name="name" type="xs:string"/>
+		<property name="allowDeletion" type="xs:boolean"/>
+		<property name="requiredField" type="xs:boolean"/>
+	</objectType>
+	<objectType name="DMBusinessProcessTaskFillableTargetCollection">
+		<property xmlns:d3p1="http://www.1c.ru/dm" name="items" type="d3p1:DMBusinessProcessTaskFillableTarget" lowerBound="0" upperBound="-1"/>
 	</objectType>
 	<objectType xmlns:d2p1="http://www.1c.ru/dm" name="DMBusinessProcessTaskImportance" base="d2p1:DMObject"/>
 	<objectType name="DMBusinessProcessTaskTarget">
@@ -750,6 +760,7 @@
 		<property name="caseFilesCatalog" type="d2p1:DMCaseFilesCatalog" lowerBound="0"/>
 		<property name="caseFileDossier" type="d2p1:DMCaseFilesDossiers" lowerBound="0"/>
 		<property name="useCaseFiles" type="xs:boolean" lowerBound="0"/>
+		<property name="updateSignatures" type="xs:boolean" lowerBound="0"/>
 	</objectType>
 	<objectType xmlns:d2p1="http://www.1c.ru/dm" name="DMDocumentRegistrationRequest" base="d2p1:DMRequest">
 		<property name="document" type="d2p1:DMDocument"/>

@@ -24,7 +24,7 @@
 			<DefaultForm>Report.ИсторияРазмераПриложения.Form.ФормаОтчета</DefaultForm>
 			<AuxiliaryForm/>
 			<MainDataCompositionSchema>Report.ИсторияРазмераПриложения.Template.ОсновнаяСхемаКомпоновкиДанных</MainDataCompositionSchema>
-			<DefaultSettingsForm/>
+			<DefaultSettingsForm>Report.ИсторияРазмераПриложения.Form.ФормаНастроек</DefaultSettingsForm>
 			<AuxiliarySettingsForm/>
 			<DefaultVariantForm/>
 			<VariantsStorage/>
@@ -34,6 +34,7 @@
 			<Explanation/>
 		</Properties>
 		<ChildObjects>
+			<Form>ФормаНастроек</Form>
 			<Form>ФормаОтчета</Form>
 			<Template>ОсновнаяСхемаКомпоновкиДанных</Template>
 			<Command uuid="9dd4004f-eff6-4405-8aae-1e6416d6ad9d">

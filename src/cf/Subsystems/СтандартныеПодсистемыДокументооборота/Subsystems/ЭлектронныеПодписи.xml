@@ -19,8 +19,25 @@
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ЭлектронныеПодписи</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">FunctionalOption.ИспользоватьЭлектронныеПодписи</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ПрофилиГруппДоступа</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">492fbe71-dc7b-4b1d-82e5-4df8aef3a49b</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.МашиночитаемыеДоверенностиДокументооборот</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.РаботаСЭПКлиент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ЭлектроннаяПодписьДокументооборотКлиентСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.АвтовизуализацияЭП</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.РаботаСЭППереопределяемый</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ЭлектроннаяПодписьДокументооборотСобытияКлиент</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.УдалитьСертификатыЭП</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ДоверенностиЭлектронныхПодписей</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.РаботаСЭПВызовСервера</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.РаботаСЭП</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.РаботаСЭПКлиентСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.СтраницаВставкиКартинки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.РаботаСМЧДДокументооборот</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ЭлектроннаяПодписьДокументооборотВызовСервера</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ЭлектроннаяПодписьДокументооборотСобытия</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ЭлектроннаяПодписьДокументооборотКлиент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ЭлектроннаяПодписьДокументооборот</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">SessionParameter.ЗавершенПереходНаНовыйФорматХраненияЭП</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ЗавершенПереходНаНовыйФорматХраненияЭП</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

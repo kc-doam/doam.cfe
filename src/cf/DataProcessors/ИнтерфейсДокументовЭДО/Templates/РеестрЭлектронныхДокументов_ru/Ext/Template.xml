@@ -799,7 +799,7 @@
 		<rightBorder>0</rightBorder>
 		<bottomBorder>1</bottomBorder>
 		<verticalAlignment>Top</verticalAlignment>
-		<textPlacement>Auto</textPlacement>
+		<textPlacement>Wrap</textPlacement>
 		<fillType>Parameter</fillType>
 		<indent>1</indent>
 	</format>

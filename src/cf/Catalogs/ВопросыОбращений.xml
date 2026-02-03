@@ -372,18 +372,21 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Attribute>
-			<Attribute uuid="8a92273f-f555-4a4f-9881-3e840be3032c">
+			<Attribute uuid="e1da6e76-0d0e-49cb-be61-382a00e055ec">
 				<Properties>
-					<Name>Тема</Name>
+					<Name>РедакцияКлассификатора</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Тема</v8:content>
+							<v8:content>Редакция классификатора</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
 					<Type>
-						<v8:Type>cfg:CatalogRef.ТемыОбращений</v8:Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
 					</Type>
 					<PasswordMode>false</PasswordMode>
 					<Format/>
@@ -407,26 +410,23 @@
 					<LinkByType/>
 					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
 					<Use>ForItem</Use>
-					<Indexing>DontIndex</Indexing>
+					<Indexing>Index</Indexing>
 					<FullTextSearch>Use</FullTextSearch>
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Attribute>
-			<Attribute uuid="e1da6e76-0d0e-49cb-be61-382a00e055ec">
+			<Attribute uuid="8a92273f-f555-4a4f-9881-3e840be3032c">
 				<Properties>
-					<Name>РедакцияКлассификатора</Name>
+					<Name>Тема</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Редакция классификатора</v8:content>
+							<v8:content>Тема</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
 					<Type>
-						<v8:Type>xs:dateTime</v8:Type>
-						<v8:DateQualifiers>
-							<v8:DateFractions>Date</v8:DateFractions>
-						</v8:DateQualifiers>
+						<v8:Type>cfg:CatalogRef.ТемыОбращений</v8:Type>
 					</Type>
 					<PasswordMode>false</PasswordMode>
 					<Format/>

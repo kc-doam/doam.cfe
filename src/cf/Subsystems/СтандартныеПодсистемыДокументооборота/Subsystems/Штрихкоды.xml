@@ -19,7 +19,6 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Constant.ПрефиксИБвШтрихкоде</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.Штрихкоды</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonTemplate.ДрайверСканераШтрихкодов</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">Enum.ВариантыРасположенияШтрихкода</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Constant.ИспользоватьШтрихкоды</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.ПечатьНаклейкиШтрихкод</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.ПечатьРегистрационногоШтампа</xr:Item>
@@ -55,6 +54,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">CommonTemplate.ВставкаРегистрационногоШтампаВDocxБезШтрихкода</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.РаботаСТорговымОборудованием</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.НераспознанныеИзображения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.МестаВставкиКартинки</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

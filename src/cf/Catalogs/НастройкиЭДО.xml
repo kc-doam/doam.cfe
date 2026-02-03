@@ -329,18 +329,18 @@
 			<ExecuteAfterWriteDataHistoryVersionProcessing>false</ExecuteAfterWriteDataHistoryVersionProcessing>
 		</Properties>
 		<ChildObjects>
-			<Attribute uuid="26b0f5c6-863b-4428-ada3-801fcdca7c70">
+			<Attribute uuid="208baeb9-9832-4737-865d-41364a6fd470">
 				<Properties>
-					<Name>Организация</Name>
+					<Name>ДоговорКонтрагента</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Организация</v8:content>
+							<v8:content>Договор контрагента</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
 					<Type>
-						<v8:TypeSet>cfg:DefinedType.Организация</v8:TypeSet>
+						<v8:TypeSet>cfg:DefinedType.ДоговорСКонтрагентомЭДО</v8:TypeSet>
 					</Type>
 					<PasswordMode>false</PasswordMode>
 					<Format/>
@@ -409,18 +409,18 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Attribute>
-			<Attribute uuid="208baeb9-9832-4737-865d-41364a6fd470">
+			<Attribute uuid="26b0f5c6-863b-4428-ada3-801fcdca7c70">
 				<Properties>
-					<Name>ДоговорКонтрагента</Name>
+					<Name>Организация</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Договор контрагента</v8:content>
+							<v8:content>Организация</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
 					<Type>
-						<v8:TypeSet>cfg:DefinedType.ДоговорСКонтрагентомЭДО</v8:TypeSet>
+						<v8:TypeSet>cfg:DefinedType.Организация</v8:TypeSet>
 					</Type>
 					<PasswordMode>false</PasswordMode>
 					<Format/>

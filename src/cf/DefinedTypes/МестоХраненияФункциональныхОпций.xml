@@ -21,56 +21,36 @@
 				<v8:Type>cfg:ConstantValueManager.ОбсужденияПодключены</v8:Type>
 				<v8:Type>cfg:ConstantValueManager.ИспользоватьСинхронизациюДанныхВМоделиСервиса</v8:Type>
 				<v8:Type>cfg:ConstantValueManager.НеИспользоватьРазделениеПоОбластямДанных</v8:Type>
-				<v8:Type>cfg:ConstantValueManager.ИспользоватьКонтрольныеТочки</v8:Type>
 				<v8:Type>cfg:ConstantValueManager.ИспользоватьСинхронизациюДанных</v8:Type>
-				<v8:Type>cfg:ConstantValueManager.ИспользоватьСервисСПАРКРиски</v8:Type>
-				<v8:Type>cfg:ConstantValueManager.ИспользоватьМониторингПроцессов</v8:Type>
+				<v8:Type>cfg:ConstantValueManager.ИспользоватьГруппыВнешнихПользователей</v8:Type>
 				<v8:Type>cfg:ConstantValueManager.ИспользоватьДатуНачалаЗадач</v8:Type>
 				<v8:Type>cfg:ConstantValueManager.ИспользоватьУведомления</v8:Type>
 				<v8:Type>cfg:ConstantValueManager.ИспользоватьБизнесСобытия</v8:Type>
 				<v8:Type>cfg:ConstantValueManager.ИзменятьЗаданияЗаднимЧислом</v8:Type>
-				<v8:Type>cfg:ConstantValueManager.ИспользоватьАвтоматическуюКатегоризациюДанных</v8:Type>
 				<v8:Type>cfg:ConstantValueManager.ИспользоватьПолнотекстовыйПоиск</v8:Type>
 				<v8:Type>cfg:ConstantValueManager.РаздельныйУчетДокументов</v8:Type>
-				<v8:Type>cfg:ConstantValueManager.ИспользоватьСинхронизациюКалендарей</v8:Type>
 				<v8:Type>cfg:ConstantValueManager.ИспользоватьСинхронизациюДанныхВЛокальномРежиме</v8:Type>
-				<v8:Type>cfg:ConstantValueManager.ЯвляетсяСерверомСВД</v8:Type>
 				<v8:Type>cfg:ConstantValueManager.УчетСамочувствияСотрудников</v8:Type>
-				<v8:Type>cfg:ConstantValueManager.ИспользоватьВыполнениеЗадачПоПочте</v8:Type>
 				<v8:Type>cfg:ConstantValueManager.ОграничиватьДоступНаУровнеЗаписей</v8:Type>
-				<v8:Type>cfg:ConstantValueManager.ИспользоватьСВД</v8:Type>
 				<v8:Type>cfg:ConstantValueManager.ПроверятьЭлектронныеПодписиНаСервере</v8:Type>
-				<v8:Type>cfg:ConstantValueManager.ИспользоватьМобильныеКлиенты</v8:Type>
-				<v8:Type>cfg:ConstantValueManager.ИспользоватьЕжедневныеОтчеты</v8:Type>
 				<v8:Type>cfg:ConstantValueManager.ИсточникДанныхАдресногоКлассификатора</v8:Type>
 				<v8:Type>cfg:ConstantValueManager.ХранитьФайлыВТомахНаДиске</v8:Type>
 				<v8:Type>cfg:ConstantValueManager.ИспользоватьШифрование</v8:Type>
 				<v8:Type>cfg:ConstantValueManager.ИспользоватьРаспознавание</v8:Type>
-				<v8:Type>cfg:ConstantValueManager.ИспользоватьНесколькоОрганизаций</v8:Type>
 				<v8:Type>cfg:ConstantValueManager.ИспользоватьЭлектронныеПодписи</v8:Type>
 				<v8:Type>cfg:ConstantValueManager.ИспользоватьДатуИВремяВСрокахЗадач</v8:Type>
 				<v8:Type>cfg:ConstantValueManager.ИспользоватьВнешнихПользователей</v8:Type>
-				<v8:Type>cfg:ConstantValueManager.ИспользоватьПроверкуКонтрагентов</v8:Type>
 				<v8:Type>cfg:ConstantValueManager.ИспользуютсяПрофилиБезопасности</v8:Type>
 				<v8:Type>cfg:ConstantValueManager.ЭтоАвтономноеРабочееМесто</v8:Type>
 				<v8:Type>cfg:ConstantValueManager.ДокументооборотИспользоватьОтложенноеОбновлениеПравДоступа</v8:Type>
 				<v8:Type>cfg:ConstantValueManager.ИспользоватьДополнительныеОтчетыИОбработки</v8:Type>
-				<v8:Type>cfg:ConstantValueManager.ИспользоватьЭскалациюЗадач</v8:Type>
-				<v8:Type>cfg:ConstantValueManager.ИспользоватьКонтрольОбъектов</v8:Type>
 				<v8:Type>cfg:ConstantValueManager.ИспользоватьДополнительныеРеквизитыИСведения</v8:Type>
 				<v8:Type>cfg:ConstantValueManager.ДатаОбновленияПовторноИспользуемыхЗначенийМРО</v8:Type>
-				<v8:Type>cfg:ConstantValueManager.ИспользоватьЕженедельныеОтчеты</v8:Type>
 				<v8:Type>cfg:ConstantValueManager.ИспользоватьРазделениеПоОбластямДанных</v8:Type>
 				<v8:Type>cfg:ConstantValueManager.ДокументооборотИспользоватьОграничениеПравДоступа</v8:Type>
 				<v8:Type>cfg:ConstantValueManager.ИспользоватьГруппыПользователей</v8:Type>
-				<v8:Type>cfg:ConstantValueManager.НеИспользоватьНесколькоОрганизаций</v8:Type>
-				<v8:Type>cfg:ConstantValueManager.ИспользоватьМестаХранения</v8:Type>
-				<v8:Type>cfg:ConstantValueManager.ИспользоватьВстроеннуюПочту</v8:Type>
-				<v8:Type>cfg:ConstantValueManager.ИспользоватьОбменЭД</v8:Type>
-				<v8:Type>cfg:ConstantValueManager.ИспользоватьPushУведомления</v8:Type>
 				<v8:Type>cfg:ConstantValueManager.ПрефиксУзлаРаспределеннойИнформационнойБазы</v8:Type>
 				<v8:Type>cfg:ConstantValueManager.ИспользоватьБизнесПроцессыИЗадачи</v8:Type>
-				<v8:Type>cfg:ConstantValueManager.ИспользоватьВидыВнутреннихДокументов</v8:Type>
 				<v8:Type>cfg:ConstantValueManager.ИспользоватьВерсионированиеОбъектов</v8:Type>
 				<v8:Type>cfg:ConstantValueManager.ИспользоватьСкрытиеПерсональныхДанныхСубъектов</v8:Type>
 			</Type>

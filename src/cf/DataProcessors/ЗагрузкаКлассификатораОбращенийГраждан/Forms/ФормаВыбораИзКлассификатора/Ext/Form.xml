@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
 	<Width>70</Width>
 	<Height>25</Height>
 	<AutoTitle>false</AutoTitle>
@@ -16,30 +16,18 @@
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Группа командная панель шапка</v8:content>
+					<v8:content>Командная панель шапка</v8:content>
 				</v8:item>
 			</Title>
-			<ToolTip>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Группа командная панель шапка</v8:content>
-				</v8:item>
-			</ToolTip>
 			<ExtendedTooltip name="ГруппаКоманднаяПанельШапкаРасширеннаяПодсказка" id="88"/>
 			<ChildItems>
 				<Popup name="ГруппаКнопкиОтметки" id="97">
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Группа кнопки отметки</v8:content>
+							<v8:content>Кнопки отметки</v8:content>
 						</v8:item>
 					</Title>
-					<ToolTip>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Группа кнопки отметки</v8:content>
-						</v8:item>
-					</ToolTip>
 					<ExtendedTooltip name="ГруппаКнопкиОтметкиРасширеннаяПодсказка" id="98"/>
 				</Popup>
 			</ChildItems>
@@ -48,15 +36,10 @@
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Группа колонки</v8:content>
+					<v8:content>Колонки</v8:content>
 				</v8:item>
 			</Title>
-			<ToolTip>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Группа колонки</v8:content>
-				</v8:item>
-			</ToolTip>
+			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаКолонкиРасширеннаяПодсказка" id="124"/>
@@ -65,16 +48,11 @@
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Группа колонка левая</v8:content>
+							<v8:content>Колонка левая</v8:content>
 						</v8:item>
 					</Title>
-					<ToolTip>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Группа колонка левая</v8:content>
-						</v8:item>
-					</ToolTip>
 					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="ГруппаКолонкаЛеваяРасширеннаяПодсказка" id="126"/>
@@ -91,11 +69,23 @@
 						<Button name="УстановитьОтметки" id="91">
 							<Type>UsualButton</Type>
 							<CommandName>Form.Command.УстановитьОтметки</CommandName>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Установить отметки</v8:content>
+								</v8:item>
+							</Title>
 							<ExtendedTooltip name="УстановитьОтметкиРасширеннаяПодсказка" id="92"/>
 						</Button>
 						<Button name="СнятьВсеОтметки" id="93">
 							<Type>UsualButton</Type>
 							<CommandName>Form.Command.СнятьВсеОтметки</CommandName>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Снять все отметки</v8:content>
+								</v8:item>
+							</Title>
 							<ExtendedTooltip name="СнятьВсеОтметкиРасширеннаяПодсказка" id="94"/>
 						</Button>
 					</ChildItems>
@@ -104,16 +94,11 @@
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Группа колонка правая</v8:content>
+							<v8:content>Колонка правая</v8:content>
 						</v8:item>
 					</Title>
-					<ToolTip>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Группа колонка правая</v8:content>
-						</v8:item>
-					</ToolTip>
 					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="ГруппаКолонкаПраваяРасширеннаяПодсказка" id="128"/>
@@ -134,12 +119,6 @@
 									<v8:content>Элементы классификатора</v8:content>
 								</v8:item>
 							</Title>
-							<ToolTip>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Элементы классификатора</v8:content>
-								</v8:item>
-							</ToolTip>
 							<PagesRepresentation>None</PagesRepresentation>
 							<ExtendedTooltip name="ГруппаЭлементыКлассификатораРасширеннаяПодсказка" id="4"/>
 							<ChildItems>
@@ -214,12 +193,6 @@
 															<v8:content>Разделы группа раздел код наименование</v8:content>
 														</v8:item>
 													</Title>
-													<ToolTip>
-														<v8:item>
-															<v8:lang>ru</v8:lang>
-															<v8:content>Разделы группа раздел код наименование</v8:content>
-														</v8:item>
-													</ToolTip>
 													<Group>Horizontal</Group>
 													<ExtendedTooltip name="РазделыГруппаРазделКодНаименованиеРасширеннаяПодсказка" id="80"/>
 												</ColumnGroup>
@@ -230,17 +203,17 @@
 															<v8:content>Разделы группа разделы отметка элемент</v8:content>
 														</v8:item>
 													</Title>
-													<ToolTip>
-														<v8:item>
-															<v8:lang>ru</v8:lang>
-															<v8:content>Разделы группа разделы отметка элемент</v8:content>
-														</v8:item>
-													</ToolTip>
 													<Group>InCell</Group>
 													<ExtendedTooltip name="РазделыГруппаРазделыОтметкаЭлементРасширеннаяПодсказка" id="78"/>
 													<ChildItems>
 														<CheckBoxField name="РазделыВыбран" id="52">
 															<DataPath>Разделы.Выбран</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Выбран</v8:content>
+																</v8:item>
+															</Title>
 															<VerticalAlign>Top</VerticalAlign>
 															<EditMode>EnterOnInput</EditMode>
 															<CheckBoxType>Auto</CheckBoxType>
@@ -249,6 +222,12 @@
 														</CheckBoxField>
 														<LabelField name="РазделыКод" id="46">
 															<DataPath>Разделы.Код</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Код</v8:content>
+																</v8:item>
+															</Title>
 															<VerticalAlign>Top</VerticalAlign>
 															<EditMode>EnterOnInput</EditMode>
 															<ContextMenu name="РазделыКодКонтекстноеМеню" id="47"/>
@@ -258,6 +237,12 @@
 												</ColumnGroup>
 												<LabelField name="РазделыНаименование" id="49">
 													<DataPath>Разделы.Наименование</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Наименование</v8:content>
+														</v8:item>
+													</Title>
 													<EditMode>EnterOnInput</EditMode>
 													<AutoCellHeight>true</AutoCellHeight>
 													<ContextMenu name="РазделыНаименованиеКонтекстноеМеню" id="50"/>
@@ -337,12 +322,6 @@
 															<v8:content>Разделы группа тематики и темы отметка элемент</v8:content>
 														</v8:item>
 													</Title>
-													<ToolTip>
-														<v8:item>
-															<v8:lang>ru</v8:lang>
-															<v8:content>Разделы группа тематики и темы отметка элемент</v8:content>
-														</v8:item>
-													</ToolTip>
 													<Group>InCell</Group>
 													<ExtendedTooltip name="РазделыГруппаТематикиИТемыОтметкаЭлементРасширеннаяПодсказка" id="82"/>
 													<ChildItems>
@@ -359,6 +338,12 @@
 														</CheckBoxField>
 														<LabelField name="ТематикиИТемыКод" id="68">
 															<DataPath>ТематикиИТемы.Код</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Код</v8:content>
+																</v8:item>
+															</Title>
 															<VerticalAlign>Top</VerticalAlign>
 															<EditMode>EnterOnInput</EditMode>
 															<Width>4</Width>
@@ -371,6 +356,12 @@
 												</ColumnGroup>
 												<LabelField name="ТематикиИТемыНаименование" id="71">
 													<DataPath>ТематикиИТемы.Наименование</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Наименование</v8:content>
+														</v8:item>
+													</Title>
 													<EditMode>EnterOnInput</EditMode>
 													<AutoCellHeight>true</AutoCellHeight>
 													<AutoMaxWidth>false</AutoMaxWidth>
@@ -453,17 +444,17 @@
 															<v8:content>Разделы группа вопросы отметка элемент</v8:content>
 														</v8:item>
 													</Title>
-													<ToolTip>
-														<v8:item>
-															<v8:lang>ru</v8:lang>
-															<v8:content>Разделы группа вопросы отметка элемент</v8:content>
-														</v8:item>
-													</ToolTip>
 													<Group>InCell</Group>
 													<ExtendedTooltip name="РазделыГруппаВопросыОтметкаЭлементРасширеннаяПодсказка" id="84"/>
 													<ChildItems>
 														<CheckBoxField name="ВопросыВыбран" id="30">
 															<DataPath>Вопросы.Выбран</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Выбран</v8:content>
+																</v8:item>
+															</Title>
 															<VerticalAlign>Top</VerticalAlign>
 															<EditMode>EnterOnInput</EditMode>
 															<CheckBoxType>Auto</CheckBoxType>
@@ -472,6 +463,12 @@
 														</CheckBoxField>
 														<LabelField name="ВопросыКод" id="24">
 															<DataPath>Вопросы.Код</DataPath>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Код</v8:content>
+																</v8:item>
+															</Title>
 															<VerticalAlign>Top</VerticalAlign>
 															<EditMode>EnterOnInput</EditMode>
 															<ContextMenu name="ВопросыКодКонтекстноеМеню" id="25"/>
@@ -481,6 +478,12 @@
 												</ColumnGroup>
 												<LabelField name="ВопросыНаименование" id="27">
 													<DataPath>Вопросы.Наименование</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Наименование</v8:content>
+														</v8:item>
+													</Title>
 													<EditMode>EnterOnInput</EditMode>
 													<AutoCellHeight>true</AutoCellHeight>
 													<ContextMenu name="ВопросыНаименованиеКонтекстноеМеню" id="28"/>
@@ -496,16 +499,11 @@
 							<Title>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
-									<v8:content>Группа команды формы</v8:content>
+									<v8:content>Команды формы</v8:content>
 								</v8:item>
 							</Title>
-							<ToolTip>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Группа команды формы</v8:content>
-								</v8:item>
-							</ToolTip>
 							<Group>Horizontal</Group>
+							<Behavior>Usual</Behavior>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="ГруппаКомандыФормыРасширеннаяПодсказка" id="116"/>
@@ -516,6 +514,12 @@
 									<AutoMaxWidth>false</AutoMaxWidth>
 									<MaxWidth>10</MaxWidth>
 									<CommandName>Form.Command.Назад</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>&lt; Назад</v8:content>
+										</v8:item>
+									</Title>
 									<ExtendedTooltip name="НазадРасширеннаяПодсказка" id="108"/>
 								</Button>
 								<LabelDecoration name="ДекорацияПружина1" id="117">
@@ -532,6 +536,12 @@
 									<AutoMaxWidth>false</AutoMaxWidth>
 									<MaxWidth>10</MaxWidth>
 									<CommandName>Form.Command.Вперед</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Вперед &gt;</v8:content>
+										</v8:item>
+									</Title>
 									<ExtendedTooltip name="ВпередРасширеннаяПодсказка" id="110"/>
 								</Button>
 							</ChildItems>
@@ -590,6 +600,12 @@
 					</Type>
 				</Column>
 				<Column name="Выбран" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выбран</v8:content>
+						</v8:item>
+					</Title>
 					<Type>
 						<v8:Type>xs:boolean</v8:Type>
 					</Type>
@@ -638,6 +654,12 @@
 					</Type>
 				</Column>
 				<Column name="Выбран" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выбран</v8:content>
+						</v8:item>
+					</Title>
 					<Type>
 						<v8:Type>xs:boolean</v8:Type>
 					</Type>
@@ -696,12 +718,6 @@
 					</Type>
 				</Column>
 				<Column name="ЭлементовНаУровне" id="4">
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Элементов на уровне</v8:content>
-						</v8:item>
-					</Title>
 					<Type>
 						<v8:Type>xs:decimal</v8:Type>
 						<v8:NumberQualifiers>
@@ -712,12 +728,6 @@
 					</Type>
 				</Column>
 				<Column name="ЭлементовВыбрано" id="5">
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Элементов выбрано</v8:content>
-						</v8:item>
-					</Title>
 					<Type>
 						<v8:Type>xs:decimal</v8:Type>
 						<v8:NumberQualifiers>

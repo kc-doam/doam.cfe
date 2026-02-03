@@ -170,13 +170,13 @@
 			<ExecuteAfterWriteDataHistoryVersionProcessing>false</ExecuteAfterWriteDataHistoryVersionProcessing>
 		</Properties>
 		<ChildObjects>
-			<Attribute uuid="52c8c57c-af15-413b-9b54-7058b54d26cf">
+			<Attribute uuid="a18a748b-8706-4bfc-9e10-2142b26d562f">
 				<Properties>
-					<Name>ТелоРазрешения</Name>
+					<Name>ПредставлениеВладельца</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Тело разрешения</v8:content>
+							<v8:content>Представление владельца</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -256,13 +256,13 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Attribute>
-			<Attribute uuid="a18a748b-8706-4bfc-9e10-2142b26d562f">
+			<Attribute uuid="52c8c57c-af15-413b-9b54-7058b54d26cf">
 				<Properties>
-					<Name>ПредставлениеВладельца</Name>
+					<Name>ТелоРазрешения</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Представление владельца</v8:content>
+							<v8:content>Тело разрешения</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>

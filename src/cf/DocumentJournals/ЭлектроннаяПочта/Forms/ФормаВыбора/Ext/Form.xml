@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
 	<Title>
 		<v8:item>
 			<v8:lang>ru</v8:lang>
@@ -34,6 +34,7 @@
 				</v8:item>
 			</ToolTip>
 			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="КоманднаяПанельПереносExtendedTooltip" id="76"/>
@@ -75,6 +76,7 @@
 				</v8:item>
 			</ToolTip>
 			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаПапкиИСписокРасширеннаяПодсказка" id="89"/>
@@ -168,7 +170,7 @@
 									<EditMode>EnterOnInput</EditMode>
 									<ValuesPicture>
 										<xr:Ref>CommonPicture.КоллекцияПапкиПисем</xr:Ref>
-										<xr:LoadTransparent>true</xr:LoadTransparent>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
 									</ValuesPicture>
 									<FileDragMode>AsFile</FileDragMode>
 									<ContextMenu name="ПапкиНомерКартинкиКонтекстноеМеню" id="348"/>
@@ -272,13 +274,13 @@
 							<TitleLocation>None</TitleLocation>
 							<HeaderPicture>
 								<xr:Ref>CommonPicture.ВосклицательныйЗнакСерый</xr:Ref>
-								<xr:LoadTransparent>true</xr:LoadTransparent>
+								<xr:LoadTransparent>false</xr:LoadTransparent>
 							</HeaderPicture>
 							<Width>2</Width>
 							<HorizontalStretch>false</HorizontalStretch>
 							<ValuesPicture>
 								<xr:Ref>CommonPicture.КоллекцияВариантыВажности</xr:Ref>
-								<xr:LoadTransparent>true</xr:LoadTransparent>
+								<xr:LoadTransparent>false</xr:LoadTransparent>
 							</ValuesPicture>
 							<FileDragMode>AsFile</FileDragMode>
 							<ContextMenu name="ВажностьКонтекстноеМеню" id="354"/>
@@ -309,13 +311,13 @@
 							<TitleLocation>None</TitleLocation>
 							<HeaderPicture>
 								<xr:Ref>CommonPicture.Скрепка</xr:Ref>
-								<xr:LoadTransparent>true</xr:LoadTransparent>
+								<xr:LoadTransparent>false</xr:LoadTransparent>
 							</HeaderPicture>
 							<Width>2</Width>
 							<HorizontalStretch>false</HorizontalStretch>
 							<ValuesPicture>
 								<xr:Ref>CommonPicture.Скрепка</xr:Ref>
-								<xr:LoadTransparent>true</xr:LoadTransparent>
+								<xr:LoadTransparent>false</xr:LoadTransparent>
 							</ValuesPicture>
 							<FileDragMode>AsFile</FileDragMode>
 							<ContextMenu name="ЕстьВложенияКонтекстноеМеню" id="357"/>
@@ -326,13 +328,13 @@
 							<TitleLocation>None</TitleLocation>
 							<HeaderPicture>
 								<xr:Ref>CommonPicture.ЗаголовокСостоянияПисем</xr:Ref>
-								<xr:LoadTransparent>true</xr:LoadTransparent>
+								<xr:LoadTransparent>false</xr:LoadTransparent>
 							</HeaderPicture>
 							<Width>2</Width>
 							<HorizontalStretch>false</HorizontalStretch>
 							<ValuesPicture>
 								<xr:Ref>CommonPicture.КоллекцияСостоянийПисем</xr:Ref>
-								<xr:LoadTransparent>true</xr:LoadTransparent>
+								<xr:LoadTransparent>false</xr:LoadTransparent>
 							</ValuesPicture>
 							<FileDragMode>AsFile</FileDragMode>
 							<ContextMenu name="СостояниеКонтекстноеМеню" id="360"/>
@@ -343,13 +345,13 @@
 							<TitleLocation>None</TitleLocation>
 							<HeaderPicture>
 								<xr:Ref>CommonPicture.ПустойФлаг</xr:Ref>
-								<xr:LoadTransparent>true</xr:LoadTransparent>
+								<xr:LoadTransparent>false</xr:LoadTransparent>
 							</HeaderPicture>
 							<Width>2</Width>
 							<HorizontalStretch>false</HorizontalStretch>
 							<ValuesPicture>
 								<xr:Ref>CommonPicture.КоллекцияФлаговПисем</xr:Ref>
-								<xr:LoadTransparent>true</xr:LoadTransparent>
+								<xr:LoadTransparent>false</xr:LoadTransparent>
 							</ValuesPicture>
 							<FileDragMode>AsFile</FileDragMode>
 							<ContextMenu name="ФлагКонтекстноеМеню" id="363"/>
@@ -436,9 +438,6 @@
 			</Type>
 			<MainAttribute>true</MainAttribute>
 			<UseAlways>
-				<Field>~Список.DeletionMark</Field>
-				<Field>~Список.Ref</Field>
-				<Field>~Список.Type</Field>
 				<Field>~Список.ЕстьОшибкиОтправкиПочты</Field>
 				<Field>~Список.ЕстьУведомлениеОПрочтении</Field>
 				<Field>~Список.Ответственный</Field>
@@ -466,6 +465,7 @@
 				<Field>Список.РазмерКб</Field>
 				<Field>Список.Ссылка</Field>
 				<Field>Список.Тема</Field>
+				<Field>Список.Тип</Field>
 				<Field>Список.УчетнаяЗапись</Field>
 			</UseAlways>
 			<Settings xsi:type="DynamicList">

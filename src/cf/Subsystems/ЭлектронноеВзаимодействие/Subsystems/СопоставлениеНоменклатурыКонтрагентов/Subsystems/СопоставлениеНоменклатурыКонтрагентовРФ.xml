@@ -29,6 +29,18 @@
 				<xr:Item xsi:type="xr:MDObjectRef">DefinedType.ДокументСопоставленияБЭД</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">DefinedType.ОбъектДанныхСопоставленияБЭД</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">StyleItem.ЦветТекстаПодсказкиВвода</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ТипыНоменклатурыФНС</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ИспользоватьСловарьСопоставленияНоменклатурыБЭД</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">FunctionalOption.ИспользоватьСловарьСопоставленияНоменклатурыБЭД</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.ОбновлениеСловаряСопоставленияНоменклатурыБЭД</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.СопоставлениеНоменклатурыКонтрагентовПовтИсп</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ПравилоПоискаДобавитьБЭД</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ПравилоПоискаПримененоБЭД</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ПравилоПоискаИзменитьБЭД</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ПравилаПоискаПоЧастиНаименованияБЭД</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.СопоставлениеНоменклатурыКонтрагентовКлиентСерверПереопределяемый</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.ДобавлениеИзменениеНоменклатурыКонтрагентовБЭД</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.ЧтениеНоменклатурыКонтрагентовБЭД</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

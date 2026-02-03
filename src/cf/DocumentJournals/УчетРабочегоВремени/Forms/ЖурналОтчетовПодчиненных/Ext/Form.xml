@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
 	<Title>
 		<v8:item>
 			<v8:lang>ru</v8:lang>
@@ -16,6 +16,7 @@
 		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
 		<Event name="OnLoadDataFromSettingsAtServer">ПриЗагрузкеДанныхИзНастроекНаСервере</Event>
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="OnChangeDisplaySettings">ПриИзмененииПараметровЭкрана</Event>
 	</Events>
 	<ChildItems>
 		<UsualGroup name="ГруппаШапка" id="45">
@@ -31,6 +32,7 @@
 					<v8:content>Группа шапка</v8:content>
 				</v8:item>
 			</ToolTip>
+			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаШапкаРасширеннаяПодсказка" id="46"/>
@@ -90,6 +92,7 @@
 								</v8:item>
 							</ToolTip>
 							<Group>AlwaysHorizontal</Group>
+							<Behavior>Usual</Behavior>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="ГруппаКалендарьОтчетыРасширеннаяПодсказка" id="2"/>
@@ -107,6 +110,7 @@
 											<v8:content>Группа календарь</v8:content>
 										</v8:item>
 									</ToolTip>
+									<Behavior>Usual</Behavior>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="ГруппаКалендарьРасширеннаяПодсказка" id="4"/>
@@ -146,6 +150,7 @@
 											<v8:content>Группа отчеты</v8:content>
 										</v8:item>
 									</ToolTip>
+									<Behavior>Usual</Behavior>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="ГруппаОтчетыРасширеннаяПодсказка" id="6"/>
@@ -174,7 +179,6 @@
 												<ExcludedCommand>MoveUp</ExcludedCommand>
 												<ExcludedCommand>OutputList</ExcludedCommand>
 												<ExcludedCommand>SearchEverywhere</ExcludedCommand>
-												<ExcludedCommand>SearchHistory</ExcludedCommand>
 												<ExcludedCommand>SelectAll</ExcludedCommand>
 												<ExcludedCommand>ShowMultipleSelection</ExcludedCommand>
 												<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
@@ -430,6 +434,7 @@
 									<v8:content>Группа список</v8:content>
 								</v8:item>
 							</ToolTip>
+							<Behavior>Usual</Behavior>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="ГруппаСписокРасширеннаяПодсказка" id="66"/>
@@ -510,6 +515,37 @@
 										<Event name="OnActivateRow">СписокОтчетовПриАктивизацииСтроки</Event>
 									</Events>
 									<ChildItems>
+										<ColumnGroup name="МК_СписокОтчетовГруппаКолонок" id="124">
+											<Visible>false</Visible>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Список отчетов группа1</v8:content>
+												</v8:item>
+											</Title>
+											<Group>Horizontal</Group>
+											<ExtendedTooltip name="МК_СписокОтчетовГруппаКолонокРасширеннаяПодсказка" id="125"/>
+											<ChildItems>
+												<ColumnGroup name="ГруппаДатаСотрудник" id="126">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа1</v8:content>
+														</v8:item>
+													</Title>
+													<ExtendedTooltip name="ГруппаДатаСотрудникРасширеннаяПодсказка" id="127"/>
+												</ColumnGroup>
+												<ColumnGroup name="ГруппаДлительность" id="128">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа1</v8:content>
+														</v8:item>
+													</Title>
+													<ExtendedTooltip name="ГруппаДлительностьРасширеннаяПодсказка" id="129"/>
+												</ColumnGroup>
+											</ChildItems>
+										</ColumnGroup>
 										<LabelField name="СписокОтчетовПользователь" id="80">
 											<DataPath>СписокОтчетов.Пользователь</DataPath>
 											<Width>20</Width>
@@ -966,6 +1002,17 @@
 			<Settings xsi:type="v8:TypeDescription">
 				<v8:Type>cfg:CatalogRef.СтруктураПредприятия</v8:Type>
 			</Settings>
+		</Attribute>
+		<Attribute name="ЭтоМобильныйКлиент" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Это мобильный клиент</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
 		</Attribute>
 		<ConditionalAppearance>
 			<dcsset:item>

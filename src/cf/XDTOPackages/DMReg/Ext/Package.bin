@@ -1,0 +1,29 @@
+﻿<package xmlns="http://v8.1c.ru/8.1/xdto" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" targetNamespace="http://www.1c.ru/DMReg">
+	<objectType name="DMDocumentInfo">
+		<property name="DocumentID" type="xs:string"/>
+		<property name="DocumentTypeID" type="xs:string"/>
+		<property name="CaseFileCatalogID" type="xs:string" lowerBound="0"/>
+		<property name="RegisteredByID" type="xs:string"/>
+		<property name="CompanyID" type="xs:string" lowerBound="0"/>
+		<property name="DepartmentID" type="xs:string" lowerBound="0"/>
+		<property name="QuestionActivityByID" type="xs:string" lowerBound="0"/>
+		<property name="CounterpartyByID" type="xs:string" lowerBound="0"/>
+		<property name="ProjectByID" type="xs:string" lowerBound="0"/>
+		<property name="DocumentTypeIndex" type="xs:string"/>
+		<property name="CaseFileCatalogIndex" type="xs:string" lowerBound="0"/>
+		<property name="RegisteredByIndex" type="xs:string"/>
+		<property name="CompanyIndex" type="xs:string" lowerBound="0"/>
+		<property name="QuestionActivityIndex" type="xs:string" lowerBound="0"/>
+		<property name="CounterpartyIndex" type="xs:string" lowerBound="0"/>
+		<property name="ProjectByIndex" type="xs:string" lowerBound="0"/>
+		<property name="DepartmentIndex" type="xs:string" lowerBound="0"/>
+		<property name="DocumentName"/>
+		<property name="DocumentHeader" type="xs:string"/>
+		<property name="ResponsibleID" type="xs:string" lowerBound="0"/>
+		<property name="ResponsibleIndex" type="xs:string" lowerBound="0"/>
+		<property name="RelatedDocumentID" type="xs:string" lowerBound="0"/>
+		<property name="RelatedDocumentNumber" type="xs:string" lowerBound="0"/>
+		<property name="Date" type="xs:dateTime"/>
+		<property name="DocumentClass" type="xs:string"/>
+	</objectType>
+</package>

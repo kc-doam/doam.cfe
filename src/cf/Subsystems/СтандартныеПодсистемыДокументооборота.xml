@@ -21,6 +21,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Constant.СостояниеОбновленияПравДоступаПослеОбновления</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.РасчетПравДоступаПослеОбновления</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.СоставСубъектовПравДоступа</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ДелопроизводствоВызовСервера</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects>
@@ -28,22 +29,26 @@
 			<Subsystem>БизнесСобытия</Subsystem>
 			<Subsystem>БронированиеПомещений</Subsystem>
 			<Subsystem>ВстроеннаяПочта</Subsystem>
-			<Subsystem>ИнформационнаяПоддержка</Subsystem>
+			<Subsystem>ДокументооборотПраваДоступа</Subsystem>
 			<Subsystem>ИнтеграцияСМобильнымКлиентом</Subsystem>
+			<Subsystem>ИнформационнаяПоддержка</Subsystem>
 			<Subsystem>КомплектыДокументов</Subsystem>
-			<Subsystem>ЛегкаяПочта</Subsystem>
 			<Subsystem>Контроль</Subsystem>
-			<Subsystem>ПомощникОтправить</Subsystem>
+			<Subsystem>ЛегкаяПочта</Subsystem>
 			<Subsystem>Мероприятия</Subsystem>
+			<Subsystem>МЭДО</Subsystem>
+			<Subsystem>МЭДОДокументооборот</Subsystem>
 			<Subsystem>Напоминания</Subsystem>
 			<Subsystem>ОбменСКонтрагентамиПоЭДО</Subsystem>
+			<Subsystem>ОбращенияГраждан</Subsystem>
 			<Subsystem>Отсутствия</Subsystem>
 			<Subsystem>Планировщик</Subsystem>
+			<Subsystem>ПомощникОтправить</Subsystem>
 			<Subsystem>Почта</Subsystem>
-			<Subsystem>РабочиеГруппы</Subsystem>
 			<Subsystem>Проекты</Subsystem>
-			<Subsystem>ДокументооборотПраваДоступа</Subsystem>
+			<Subsystem>РабочиеГруппы</Subsystem>
 			<Subsystem>РабочийКалендарь</Subsystem>
+			<Subsystem>СамочувствиеСотрудников</Subsystem>
 			<Subsystem>СВД</Subsystem>
 			<Subsystem>СинхронизацияDAV</Subsystem>
 			<Subsystem>СинхронизацияGoogle</Subsystem>
@@ -56,7 +61,6 @@
 			<Subsystem>ЧатБот</Subsystem>
 			<Subsystem>Штрихкоды</Subsystem>
 			<Subsystem>ЭлектронныеПодписи</Subsystem>
-			<Subsystem>СамочувствиеСотрудников</Subsystem>
 		</ChildObjects>
 	</Subsystem>
 </MetaDataObject>

@@ -92,18 +92,18 @@
 			<ExecuteAfterWriteDataHistoryVersionProcessing>false</ExecuteAfterWriteDataHistoryVersionProcessing>
 		</Properties>
 		<ChildObjects>
-			<Attribute uuid="b4eb8c0e-7718-4b28-8597-83fbeb710ada">
+			<Attribute uuid="4fb90a2c-e104-4960-a47f-cd6d2d70b111">
 				<Properties>
-					<Name>ТипДокумента</Name>
+					<Name>ВариантНастройкиДляВидовДокументов</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Тип документа</v8:content>
+							<v8:content>Вариант настройки для видов документов</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
 					<Type>
-						<v8:Type>cfg:EnumRef.ТипыОбъектов</v8:Type>
+						<v8:Type>cfg:EnumRef.ВариантыНастройкиДоступностиДляВидовДокументов</v8:Type>
 					</Type>
 					<PasswordMode>false</PasswordMode>
 					<Format/>
@@ -115,9 +115,9 @@
 					<ExtendedEdit>false</ExtendedEdit>
 					<MinValue xsi:nil="true"/>
 					<MaxValue xsi:nil="true"/>
-					<FillFromFillingValue>true</FillFromFillingValue>
+					<FillFromFillingValue>false</FillFromFillingValue>
 					<FillValue xsi:nil="true"/>
-					<FillChecking>ShowError</FillChecking>
+					<FillChecking>DontCheck</FillChecking>
 					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
 					<ChoiceParameterLinks/>
 					<ChoiceParameters/>
@@ -126,7 +126,7 @@
 					<ChoiceForm/>
 					<LinkByType/>
 					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
-					<Use>ForFolderAndItem</Use>
+					<Use>ForItem</Use>
 					<Indexing>DontIndex</Indexing>
 					<FullTextSearch>Use</FullTextSearch>
 					<DataHistory>Use</DataHistory>
@@ -176,18 +176,18 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Attribute>
-			<Attribute uuid="4fb90a2c-e104-4960-a47f-cd6d2d70b111">
+			<Attribute uuid="b4eb8c0e-7718-4b28-8597-83fbeb710ada">
 				<Properties>
-					<Name>ВариантНастройкиДляВидовДокументов</Name>
+					<Name>ТипДокумента</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Вариант настройки для видов документов</v8:content>
+							<v8:content>Тип документа</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
 					<Type>
-						<v8:Type>cfg:EnumRef.ВариантыНастройкиДоступностиДляВидовДокументов</v8:Type>
+						<v8:Type>cfg:EnumRef.ТипыОбъектов</v8:Type>
 					</Type>
 					<PasswordMode>false</PasswordMode>
 					<Format/>
@@ -199,9 +199,9 @@
 					<ExtendedEdit>false</ExtendedEdit>
 					<MinValue xsi:nil="true"/>
 					<MaxValue xsi:nil="true"/>
-					<FillFromFillingValue>false</FillFromFillingValue>
+					<FillFromFillingValue>true</FillFromFillingValue>
 					<FillValue xsi:nil="true"/>
-					<FillChecking>DontCheck</FillChecking>
+					<FillChecking>ShowError</FillChecking>
 					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
 					<ChoiceParameterLinks/>
 					<ChoiceParameters/>
@@ -210,7 +210,7 @@
 					<ChoiceForm/>
 					<LinkByType/>
 					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
-					<Use>ForItem</Use>
+					<Use>ForFolderAndItem</Use>
 					<Indexing>DontIndex</Indexing>
 					<FullTextSearch>Use</FullTextSearch>
 					<DataHistory>Use</DataHistory>
@@ -556,11 +556,11 @@
 					</Attribute>
 				</ChildObjects>
 			</TabularSection>
-			<Form>ФормаЭлемента</Form>
 			<Form>ФормаСписка</Form>
+			<Form>ФормаЭлемента</Form>
+			<Template>НастройкиПолейКомандВнутреннийДокумент</Template>
 			<Template>НастройкиПолейКомандВходящийДокумент</Template>
 			<Template>НастройкиПолейКомандИсходящийДокумент</Template>
-			<Template>НастройкиПолейКомандВнутреннийДокумент</Template>
 		</ChildObjects>
 	</Catalog>
 </MetaDataObject>

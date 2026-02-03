@@ -150,9 +150,15 @@
 		<property name="НалСт" lowerBound="0" form="Attribute">
 			<typeDef xsi:type="ValueType" base="xs:string" variety="Atomic" minLength="1" maxLength="35">
 				<enumeration>0%</enumeration>
+				<enumeration xsi:type="xs:string">5%</enumeration>
+				<enumeration xsi:type="xs:string">7%</enumeration>
+				<enumeration xsi:type="xs:string">9,09%</enumeration>
 				<enumeration>10%</enumeration>
+				<enumeration xsi:type="xs:string">16,67%</enumeration>
 				<enumeration>18%</enumeration>
 				<enumeration xsi:type="xs:string">20%</enumeration>
+				<enumeration xsi:type="xs:string">5/105</enumeration>
+				<enumeration xsi:type="xs:string">7/107</enumeration>
 				<enumeration>10/110</enumeration>
 				<enumeration>18/118</enumeration>
 				<enumeration xsi:type="xs:string">20/120</enumeration>

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
 	<CommandSet>
 		<ExcludedCommand>CancelSearch</ExcludedCommand>
 		<ExcludedCommand>Find</ExcludedCommand>
@@ -21,9 +21,19 @@
 				</ToolTip>
 				<ExtendedTooltip name="ГруппаПечатьРасширеннаяПодсказка" id="33"/>
 			</ButtonGroup>
+			<ButtonGroup name="ГруппаПоказыватьСоСкрытымиПДн" id="37">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Группа1</v8:content>
+					</v8:item>
+				</Title>
+				<ExtendedTooltip name="ГруппаПоказыватьСоСкрытымиПДнРасширеннаяПодсказка" id="38"/>
+			</ButtonGroup>
 		</ChildItems>
 	</AutoCommandBar>
 	<Events>
+		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 	</Events>
 	<ChildItems>
@@ -86,10 +96,11 @@
 			</SearchControlAddition>
 			<Events>
 				<Event name="OnActivateRow">СписокПриАктивизацииСтроки</Event>
+				<Event name="OnGetDataAtServer">СписокПриПолученииДанныхНаСервере</Event>
 			</Events>
 			<ChildItems>
 				<LabelField name="Наименование" id="4">
-					<DataPath>Список.Description</DataPath>
+					<DataPath>Список.Наименование</DataPath>
 					<DefaultItem>true</DefaultItem>
 					<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
 					<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="26"/>
@@ -159,13 +170,39 @@
 					<ExtendedTooltip name="ДомашнийАдресРасширеннаяПодсказка" id="31"/>
 				</LabelField>
 				<LabelField name="Ссылка" id="34">
-					<DataPath>Список.Ref</DataPath>
+					<DataPath>Список.Ссылка</DataPath>
 					<UserVisible>
 						<xr:Common>false</xr:Common>
 					</UserVisible>
 					<ContextMenu name="СсылкаКонтекстноеМеню" id="35"/>
 					<ExtendedTooltip name="СсылкаРасширеннаяПодсказка" id="36"/>
 				</LabelField>
+				<PictureField name="ОтсутствуетСогласие" id="39">
+					<DataPath>Список.ОтсутствуетСогласие</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отсутствует согласие</v8:content>
+						</v8:item>
+					</Title>
+					<TitleLocation>None</TitleLocation>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отсутствует согласие на обработку ПДн</v8:content>
+						</v8:item>
+					</ToolTip>
+					<HeaderPicture>
+						<xr:Ref>CommonPicture.ОтсутствуетСогласие</xr:Ref>
+						<xr:LoadTransparent>false</xr:LoadTransparent>
+					</HeaderPicture>
+					<ValuesPicture>
+						<xr:Ref>CommonPicture.КоллекцияОтсутствуетСогласие</xr:Ref>
+						<xr:LoadTransparent>false</xr:LoadTransparent>
+					</ValuesPicture>
+					<ContextMenu name="ОтсутствуетСогласиеКонтекстноеМеню" id="40"/>
+					<ExtendedTooltip name="ОтсутствуетСогласиеРасширеннаяПодсказка" id="41"/>
+				</PictureField>
 			</ChildItems>
 		</Table>
 	</ChildItems>
@@ -176,7 +213,7 @@
 			</Type>
 			<MainAttribute>true</MainAttribute>
 			<UseAlways>
-				<Field>Список.Ref</Field>
+				<Field>Список.Ссылка</Field>
 			</UseAlways>
 			<Settings xsi:type="DynamicList">
 				<ManualQuery>true</ManualQuery>
@@ -194,28 +231,36 @@
 	МАКСИМУМ(КонтактнаяИнформацияEmail.Представление) КАК Email,
 	МАКСИМУМ(КонтактнаяИнформацияДомашнийАдрес.Представление) КАК ДомашнийАдрес,
 	МАКСИМУМ(КонтактнаяИнформацияДомашнийТелефон.Представление) КАК ДомашнийТелефон,
-	МАКСИМУМ(КонтактнаяИнформацияМобильныйТелефон.Представление) КАК МобильныйТелефон
+	МАКСИМУМ(КонтактнаяИнформацияМобильныйТелефон.Представление) КАК МобильныйТелефон,
+	ВЫРАЗИТЬ(NULL КАК ЧИСЛО(1, 0)) КАК ОтсутствуетСогласие,
+	МИНИМУМ(ВЫБОР
+		КОГДА СубъектыСоКрытымиПДн.Субъект ЕСТЬ NULL
+			ТОГДА ЛОЖЬ
+		ИНАЧЕ ИСТИНА
+	КОНЕЦ) КАК ПДнСкрыты
 ИЗ
 	Справочник.ФизическиеЛица КАК ФизическиеЛица
-		
 		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.ФизическиеЛица.КонтактнаяИнформация КАК КонтактнаяИнформацияEmail
 		ПО ФизическиеЛица.Ссылка = КонтактнаяИнформацияEmail.Ссылка
-			И (КонтактнаяИнформацияEmail.Вид = ЗНАЧЕНИЕ(Справочник.ВидыКонтактнойИнформации.EmailФизическогоЛица))
-		
+		И (КонтактнаяИнформацияEmail.Вид = ЗНАЧЕНИЕ(Справочник.ВидыКонтактнойИнформации.EmailФизическогоЛица))
 		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.ФизическиеЛица.КонтактнаяИнформация КАК КонтактнаяИнформацияДомашнийАдрес
 		ПО ФизическиеЛица.Ссылка = КонтактнаяИнформацияДомашнийАдрес.Ссылка
-			И (КонтактнаяИнформацияДомашнийАдрес.Вид = ЗНАЧЕНИЕ(Справочник.ВидыКонтактнойИнформации.ДомашнийАдресФизическогоЛица))
-		
+		И
+			(КонтактнаяИнформацияДомашнийАдрес.Вид = ЗНАЧЕНИЕ(Справочник.ВидыКонтактнойИнформации.ДомашнийАдресФизическогоЛица))
 		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.ФизическиеЛица.КонтактнаяИнформация КАК КонтактнаяИнформацияДомашнийТелефон
 		ПО ФизическиеЛица.Ссылка = КонтактнаяИнформацияДомашнийТелефон.Ссылка
-			И (КонтактнаяИнформацияДомашнийТелефон.Вид = ЗНАЧЕНИЕ(Справочник.ВидыКонтактнойИнформации.ДомашнийТелефонФизическогоЛица))
-		
+		И
+			(КонтактнаяИнформацияДомашнийТелефон.Вид = ЗНАЧЕНИЕ(Справочник.ВидыКонтактнойИнформации.ДомашнийТелефонФизическогоЛица))
 		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.ФизическиеЛица.КонтактнаяИнформация КАК КонтактнаяИнформацияМобильныйТелефон
 		ПО ФизическиеЛица.Ссылка = КонтактнаяИнформацияМобильныйТелефон.Ссылка
-			И (КонтактнаяИнформацияМобильныйТелефон.Вид = ЗНАЧЕНИЕ(Справочник.ВидыКонтактнойИнформации.МобильныйТелефонФизическогоЛица))
-
+		И
+			(КонтактнаяИнформацияМобильныйТелефон.Вид = ЗНАЧЕНИЕ(Справочник.ВидыКонтактнойИнформации.МобильныйТелефонФизическогоЛица))
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.СубъектыДляСкрытияПерсональныхДанных КАК СубъектыСоКрытымиПДн
+		ПО ФизическиеЛица.Ссылка = СубъектыСоКрытымиПДн.Субъект
+ГДЕ
+	(СубъектыСоКрытымиПДн.Субъект ЕСТЬ NULL
+	ИЛИ &amp;ПоказыватьСоСкрытымиПДн)
 СГРУППИРОВАТЬ ПО
-			
 	ФизическиеЛица.Ссылка,
 	ФизическиеЛица.ПометкаУдаления,
 	ФизическиеЛица.Предопределенный,
@@ -224,8 +269,109 @@
 	ФизическиеЛица.Наименование,
 	ФизическиеЛица.ДатаРождения,
 	ФизическиеЛица.Пол,
-	ВЫРАЗИТЬ(ФизическиеЛица.Комментарий КАК Строка(1000))
-</QueryText>
+	ВЫРАЗИТЬ(ФизическиеЛица.Комментарий КАК Строка(1000))</QueryText>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Комментарий</dcssch:dataPath>
+					<dcssch:field>Комментарий</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Ссылка</dcssch:dataPath>
+					<dcssch:field>Ссылка</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ПометкаУдаления</dcssch:dataPath>
+					<dcssch:field>ПометкаУдаления</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Предопределенный</dcssch:dataPath>
+					<dcssch:field>Предопределенный</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Родитель</dcssch:dataPath>
+					<dcssch:field>Родитель</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ЭтоГруппа</dcssch:dataPath>
+					<dcssch:field>ЭтоГруппа</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Наименование</dcssch:dataPath>
+					<dcssch:field>Наименование</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ДатаРождения</dcssch:dataPath>
+					<dcssch:field>ДатаРождения</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Пол</dcssch:dataPath>
+					<dcssch:field>Пол</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ОтсутствуетСогласие</dcssch:dataPath>
+					<dcssch:field>ОтсутствуетСогласие</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отсутствует согласие</v8:content>
+						</v8:item>
+					</dcssch:title>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ПДнСкрыты</dcssch:dataPath>
+					<dcssch:field>ПДнСкрыты</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>П дн скрыты</v8:content>
+						</v8:item>
+					</dcssch:title>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Email</dcssch:dataPath>
+					<dcssch:field>Email</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ДомашнийАдрес</dcssch:dataPath>
+					<dcssch:field>ДомашнийАдрес</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ДомашнийТелефон</dcssch:dataPath>
+					<dcssch:field>ДомашнийТелефон</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>МобильныйТелефон</dcssch:dataPath>
+					<dcssch:field>МобильныйТелефон</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ГруппаДоступа</dcssch:dataPath>
+					<dcssch:field>ГруппаДоступа</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ФайлФотографии</dcssch:dataPath>
+					<dcssch:field>ФайлФотографии</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>КонтактнаяИнформация</dcssch:dataPath>
+					<dcssch:field>КонтактнаяИнформация</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ИмяПредопределенныхДанных</dcssch:dataPath>
+					<dcssch:field>ИмяПредопределенныхДанных</dcssch:field>
+				</Field>
+				<Parameter>
+					<dcssch:name>ПоказыватьСоСкрытымиПДн</dcssch:name>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Показывать со скрытыми п дн</v8:content>
+						</v8:item>
+					</dcssch:title>
+					<dcssch:valueType>
+						<v8:Type>xs:boolean</v8:Type>
+					</dcssch:valueType>
+					<dcssch:value xsi:nil="true"/>
+					<dcssch:useRestriction>true</dcssch:useRestriction>
+				</Parameter>
 				<MainTable>Catalog.ФизическиеЛица</MainTable>
 				<ListSettings>
 					<dcsset:filter>
@@ -258,7 +404,7 @@
 	<CommandInterface>
 		<CommandBar>
 			<Item>
-				<Command>0:2baf6d7a-12ed-4f22-ad96-92bb31b747ff</Command>
+				<Command>0</Command>
 				<Type>Auto</Type>
 				<CommandGroup>CommandGroup.Печать</CommandGroup>
 				<DefaultVisible>false</DefaultVisible>

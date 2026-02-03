@@ -1228,9 +1228,9 @@
 					</Attribute>
 				</ChildObjects>
 			</TabularSection>
-			<Form>ФормаЭлемента</Form>
-			<Form>ФормаСписка</Form>
 			<Form>ВыборКонтрагентаКонтактноеЛицо</Form>
+			<Form>ФормаСписка</Form>
+			<Form>ФормаЭлемента</Form>
 			<Command uuid="c56956bd-61cb-4b2e-9d6c-b5da157c7900">
 				<Properties>
 					<Name>МоиКонтакты</Name>

@@ -1892,29 +1892,29 @@
 					</Attribute>
 				</ChildObjects>
 			</TabularSection>
+			<Form>МК_ФормаПланаПроекта</Form>
 			<Form>ФормаВыбора</Form>
+			<Form>ФормаПланаПроекта</Form>
 			<Form>ФормаПодбора</Form>
+			<Form>ФормаПодбораИсполнителей</Form>
 			<Form>ФормаСписка</Form>
 			<Form>ФормаЭлемента</Form>
-			<Form>ФормаПланаПроекта</Form>
-			<Form>ФормаПодбораИсполнителей</Form>
 			<Template>ПФ_MXL_Карточка</Template>
-			<Command uuid="459d8cf2-472f-430b-a8f9-81b896a1a0d4">
+			<Command uuid="ca653bc4-3170-4f13-a039-c81dc007648b">
 				<Properties>
-					<Name>СоздатьПроектнуюЗадачуНаОсновании</Name>
+					<Name>ОтправитьПроектныеЗадачи</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Проектная задача</v8:content>
+							<v8:content>Отправить...</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
-					<Group>FormCommandBarCreateBasedOn</Group>
+					<Group>FormCommandBarImportant</Group>
 					<CommandParameterType>
-						<v8:Type>cfg:DocumentRef.ВходящееПисьмо</v8:Type>
-						<v8:Type>cfg:DocumentRef.ИсходящееПисьмо</v8:Type>
+						<v8:Type>cfg:CatalogRef.ПроектныеЗадачи</v8:Type>
 					</CommandParameterType>
-					<ParameterUseMode>Single</ParameterUseMode>
+					<ParameterUseMode>Multiple</ParameterUseMode>
 					<ModifiesData>false</ModifiesData>
 					<Representation>Auto</Representation>
 					<ToolTip/>
@@ -1946,21 +1946,22 @@
 					<OnMainServerUnavalableBehavior>Auto</OnMainServerUnavalableBehavior>
 				</Properties>
 			</Command>
-			<Command uuid="ca653bc4-3170-4f13-a039-c81dc007648b">
+			<Command uuid="459d8cf2-472f-430b-a8f9-81b896a1a0d4">
 				<Properties>
-					<Name>ОтправитьПроектныеЗадачи</Name>
+					<Name>СоздатьПроектнуюЗадачуНаОсновании</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Отправить...</v8:content>
+							<v8:content>Проектная задача</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
-					<Group>FormCommandBarImportant</Group>
+					<Group>FormCommandBarCreateBasedOn</Group>
 					<CommandParameterType>
-						<v8:Type>cfg:CatalogRef.ПроектныеЗадачи</v8:Type>
+						<v8:Type>cfg:DocumentRef.ВходящееПисьмо</v8:Type>
+						<v8:Type>cfg:DocumentRef.ИсходящееПисьмо</v8:Type>
 					</CommandParameterType>
-					<ParameterUseMode>Multiple</ParameterUseMode>
+					<ParameterUseMode>Single</ParameterUseMode>
 					<ModifiesData>false</ModifiesData>
 					<Representation>Auto</Representation>
 					<ToolTip/>

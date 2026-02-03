@@ -26,7 +26,7 @@
 			<MainDataCompositionSchema>Report.ПланФактныйАнализСогласования.Template.ОсновнаяСхемаКомпоновкиДанных</MainDataCompositionSchema>
 			<DefaultSettingsForm>Report.ПланФактныйАнализСогласования.Form.ФормаНастроек</DefaultSettingsForm>
 			<AuxiliarySettingsForm/>
-			<DefaultVariantForm/>
+			<DefaultVariantForm>CommonForm.ФормаВариантаОтчета</DefaultVariantForm>
 			<VariantsStorage>SettingsStorage.ХранилищеВариантовОтчетов</VariantsStorage>
 			<SettingsStorage/>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
@@ -34,15 +34,15 @@
 			<Explanation/>
 		</Properties>
 		<ChildObjects>
-			<Form>ФормаОтчета</Form>
 			<Form>ФормаНастроек</Form>
-			<Template>ОсновнаяСхемаКомпоновкиДанных</Template>
-			<Template>ОбразецОтчетаПоИсполнителям</Template>
-			<Template>ОбразецОтчетаПоИсполнителямИРолям</Template>
+			<Form>ФормаОтчета</Form>
+			<Template>ОбразецОтчетаДлительностьЗадачСогласования</Template>
 			<Template>ОбразецОтчетаПоАвторам</Template>
 			<Template>ОбразецОтчетаПоВидамДокументов</Template>
+			<Template>ОбразецОтчетаПоИсполнителям</Template>
+			<Template>ОбразецОтчетаПоИсполнителямИРолям</Template>
 			<Template>ОбразецОтчетаПоШаблонам</Template>
-			<Template>ОбразецОтчетаДлительностьЗадачСогласования</Template>
+			<Template>ОсновнаяСхемаКомпоновкиДанных</Template>
 		</ChildObjects>
 	</Report>
 </MetaDataObject>

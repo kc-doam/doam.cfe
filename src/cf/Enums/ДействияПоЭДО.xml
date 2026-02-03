@@ -128,6 +128,18 @@
 					<Comment/>
 				</Properties>
 			</EnumValue>
+			<EnumValue uuid="a2f3e8f3-306a-48e2-a656-02a1a5dbc1fa">
+				<Properties>
+					<Name>ЗагрузитьПриглашения</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Загрузить приглашения</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
 			<EnumValue uuid="21b48995-ccec-4bfd-96a7-37585c788062">
 				<Properties>
 					<Name>ЗакрытьПринудительно</Name>
@@ -351,6 +363,18 @@
 						<v8:item>
 							<v8:lang>ru</v8:lang>
 							<v8:content>Утвердить</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+				</Properties>
+			</EnumValue>
+			<EnumValue uuid="7501be82-83bb-43c3-b3c3-b03dadf75792">
+				<Properties>
+					<Name>ПринятьПриглашения</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Принять приглашения</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>

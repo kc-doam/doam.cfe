@@ -34,6 +34,7 @@
 			<Subsystem>ЗапретРедактированияРеквизитовОбъектов</Subsystem>
 			<Subsystem>ЗащитаПерсональныхДанных</Subsystem>
 			<Subsystem>КалендарныеГрафики</Subsystem>
+			<Subsystem>КонструкторФормул</Subsystem>
 			<Subsystem>КонтактнаяИнформация</Subsystem>
 			<Subsystem>Мультиязычность</Subsystem>
 			<Subsystem>НапоминанияПользователя</Subsystem>
@@ -63,12 +64,12 @@
 			<Subsystem>РезервноеКопированиеИБ</Subsystem>
 			<Subsystem>Свойства</Subsystem>
 			<Subsystem>СклонениеПредставленийОбъектов</Subsystem>
-			<Subsystem>УправлениеДоступом</Subsystem>
 			<Subsystem>ФайловыеФункции</Subsystem>
 			<Subsystem>ФизическиеЛица</Subsystem>
+			<Subsystem>УправлениеДоступом</Subsystem>
 			<Subsystem>ЦентрМониторинга</Subsystem>
-			<Subsystem>ЭлектроннаяОблачнаяПодпись</Subsystem>
 			<Subsystem>ЭлектроннаяПодпись</Subsystem>
+			<Subsystem>ЭлектроннаяПодписьСервисаDSS</Subsystem>
 		</ChildObjects>
 	</Subsystem>
 </MetaDataObject>

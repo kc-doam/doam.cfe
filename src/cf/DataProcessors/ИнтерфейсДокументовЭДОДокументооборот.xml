@@ -20,7 +20,7 @@
 				</v8:item>
 			</Synonym>
 			<Comment/>
-			<UseStandardCommands>true</UseStandardCommands>
+			<UseStandardCommands>false</UseStandardCommands>
 			<DefaultForm>DataProcessor.ИнтерфейсДокументовЭДОДокументооборот.Form.ПросмотрОшибокЭДО</DefaultForm>
 			<AuxiliaryForm/>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
@@ -28,11 +28,11 @@
 			<Explanation/>
 		</Properties>
 		<ChildObjects>
-			<Form>ОтправкаДокументовПоЭДО</Form>
-			<Form>ПросмотрФайлаПакетаЭДО</Form>
-			<Form>ИзменениеСоставаПакета</Form>
 			<Form>ВыборИсходящегоПакетаЭДО</Form>
+			<Form>ИзменениеСоставаПакета</Form>
+			<Form>ОтправкаДокументовПоЭДО</Form>
 			<Form>ПросмотрОшибокЭДО</Form>
+			<Form>ПросмотрФайлаПакетаЭДО</Form>
 			<Command uuid="ac12df64-1fee-46f7-80fe-a2ad4191b848">
 				<Properties>
 					<Name>ДокументыКОтправкеПоЭДО</Name>
@@ -48,7 +48,12 @@
 					<ParameterUseMode>Single</ParameterUseMode>
 					<ModifiesData>false</ModifiesData>
 					<Representation>Auto</Representation>
-					<ToolTip/>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Список документов 1С:Документооборот, которые ожидают подписания и отправки по ЭДО.</v8:content>
+						</v8:item>
+					</ToolTip>
 					<Picture/>
 					<Shortcut/>
 					<OnMainServerUnavalableBehavior>Auto</OnMainServerUnavalableBehavior>

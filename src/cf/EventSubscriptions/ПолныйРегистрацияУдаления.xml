@@ -28,7 +28,6 @@
 				<v8:Type>cfg:CatalogObject.Проекты</v8:Type>
 				<v8:Type>cfg:CatalogObject.ПапкиФайлов</v8:Type>
 				<v8:Type>cfg:CatalogObject.СпискиАдресовЭлектроннойПочты</v8:Type>
-				<v8:Type>cfg:CatalogObject.УведомленияПрограммы</v8:Type>
 				<v8:Type>cfg:CatalogObject.УдалитьШаблоныТекстовПисем</v8:Type>
 				<v8:Type>cfg:DocumentObject.УничтожениеДел</v8:Type>
 				<v8:Type>cfg:CatalogObject.НастройкиДоступностиПоСостоянию</v8:Type>
@@ -45,6 +44,7 @@
 				<v8:Type>cfg:CatalogObject.ВидыБизнесСобытий</v8:Type>
 				<v8:Type>cfg:CatalogObject.ШаблоныУтверждения</v8:Type>
 				<v8:Type>cfg:CatalogObject.ВопросыОбращений</v8:Type>
+				<v8:Type>cfg:CatalogObject.ВидыДокументовМЭДО</v8:Type>
 				<v8:Type>cfg:CatalogObject.ВидыВходящихДокументов</v8:Type>
 				<v8:Type>cfg:BusinessProcessObject.Утверждение</v8:Type>
 				<v8:Type>cfg:CatalogObject.ПравилаОтправкиСообщенийСВД</v8:Type>
@@ -87,6 +87,7 @@
 				<v8:Type>cfg:CatalogObject.НазначенияСертификатовЭП</v8:Type>
 				<v8:Type>cfg:DocumentObject.ВходящееПисьмо</v8:Type>
 				<v8:Type>cfg:CatalogObject.СообщенияОбсуждений</v8:Type>
+				<v8:Type>cfg:DocumentObject.КвитанцияМЭДО</v8:Type>
 				<v8:Type>cfg:CatalogObject.ПолныеРоли</v8:Type>
 				<v8:Type>cfg:CatalogObject.ТерриторииИПомещения</v8:Type>
 				<v8:Type>cfg:CatalogObject.АдреснаяКнига</v8:Type>
@@ -104,6 +105,7 @@
 				<v8:Type>cfg:CatalogObject.СправкиСПАРКРискиПрисоединенныеФайлы</v8:Type>
 				<v8:Type>cfg:CatalogObject.УсловияМаршрутизации</v8:Type>
 				<v8:Type>cfg:CatalogObject.СостоянияЧатБота</v8:Type>
+				<v8:Type>cfg:CatalogObject.МестаСоставленияДокументовМЭДО</v8:Type>
 				<v8:Type>cfg:CatalogObject.ПапкиПроектов</v8:Type>
 				<v8:Type>cfg:CatalogObject.ШаблоныВнутреннихДокументов</v8:Type>
 				<v8:Type>cfg:CatalogObject.ШаблоныИсполнения</v8:Type>
@@ -111,11 +113,13 @@
 				<v8:Type>cfg:BusinessProcessObject.Поручение</v8:Type>
 				<v8:Type>cfg:CatalogObject.ЗаметкиДокументооборота</v8:Type>
 				<v8:Type>cfg:CatalogObject.ПравилаЭскалацииЗадач</v8:Type>
+				<v8:Type>cfg:CatalogObject.ПричиныОтказаВРегистрацииМЭДО</v8:Type>
 				<v8:Type>cfg:CatalogObject.КоллекцииЗначенийДоступа</v8:Type>
 				<v8:Type>cfg:CatalogObject.ГрафикиРаботы</v8:Type>
 				<v8:Type>cfg:CatalogObject.ВидыРабот</v8:Type>
 				<v8:Type>cfg:CatalogObject.АдресатыПочтовыхСообщений</v8:Type>
 				<v8:Type>cfg:CatalogObject.ГруппыКонтрольныхТочек</v8:Type>
+				<v8:Type>cfg:DocumentObject.ДанныеДокументаМЭДО</v8:Type>
 				<v8:Type>cfg:CatalogObject.ШаблоныРегистрации</v8:Type>
 				<v8:Type>cfg:CatalogObject.ГруппыДоступаКонтрагентов</v8:Type>
 				<v8:Type>cfg:CatalogObject.ГруппыДоступа</v8:Type>
@@ -134,6 +138,7 @@
 				<v8:Type>cfg:CatalogObject.СпискиРассылкиПоКонтрагентам</v8:Type>
 				<v8:Type>cfg:ChartOfCharacteristicTypesObject.ДополнительныеРеквизитыИСведения</v8:Type>
 				<v8:Type>cfg:CatalogObject.ДополнительныеОтчетыИОбработки</v8:Type>
+				<v8:Type>cfg:DocumentObject.УведомлениеМЭДО</v8:Type>
 				<v8:Type>cfg:CatalogObject.Нумераторы</v8:Type>
 				<v8:Type>cfg:CatalogObject.ПроектныеЗадачи</v8:Type>
 				<v8:Type>cfg:CatalogObject.НастройкиВариантовОтчетовДокументооборот</v8:Type>

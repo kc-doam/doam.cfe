@@ -923,7 +923,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Указывается одно из значений: Invoice, CorrectiveInvoice, Account, Statement, StatementAppendix, Consignment, PaymentOrder, Contract, ComplexStatementAndInvoice, GuaranteeLetter, Other, SendingTimeConfirmation, ReceiveNotification, SpecificationNotice, FormalizedConsignmentVendor, FormalizedConsignmentCustomer, FormalizedStatementVendor, FormalizedStatementCustomer</v8:content>
+							<v8:content>Указывается одно из значений: Invoice, CorrectiveInvoice, Account, Statement, StatementAppendix, Consignment, PaymentOrder, Contract, ComplexStatementAndInvoice, GuaranteeLetter, Other, SendingTimeConfirmation, ReceiveNotification, SpecificationNotice, FormalizedConsignmentVendor, FormalizedConsignmentCustomer, FormalizedStatementVendor, FormalizedStatementCustomer, FormalizedDocumentOnAdditionalInformation</v8:content>
 						</v8:item>
 					</tl>
 				</c>

@@ -587,11 +587,11 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Attribute>
-			<Form>ФормаЭлемента</Form>
-			<Form>ФормаМоиЗаметки</Form>
-			<Form>ФормаВыбораТем</Form>
-			<Form>ФормаПоиска</Form>
 			<Form>ФормаВсеЗаметки</Form>
+			<Form>ФормаВыбораТем</Form>
+			<Form>ФормаМоиЗаметки</Form>
+			<Form>ФормаПоиска</Form>
+			<Form>ФормаЭлемента</Form>
 			<Command uuid="e465d949-ca90-4d67-a7ab-57c6681892b4">
 				<Properties>
 					<Name>Заметки</Name>

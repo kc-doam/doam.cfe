@@ -22,6 +22,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.НастройкиБЭДПовтИсп</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.НастройкиБЭДСобытия</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.НастройкиБЭДКлиентСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.ПередЗаписьюКонстантыБЭД</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

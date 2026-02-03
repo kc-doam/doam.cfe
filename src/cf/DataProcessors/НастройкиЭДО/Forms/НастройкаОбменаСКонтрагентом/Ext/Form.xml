@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
 	<Title>
 		<v8:item>
 			<v8:lang>ru</v8:lang>
@@ -34,6 +34,7 @@
 			<HorizontalStretch>true</HorizontalStretch>
 			<VerticalStretch>false</VerticalStretch>
 			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<BackColor>style:ToolTipBackColor</BackColor>
@@ -47,6 +48,7 @@
 				</v8:item>
 			</Title>
 			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаТолькоПросмотрРасширеннаяПодсказка" id="575"/>
@@ -59,6 +61,7 @@
 						</v8:item>
 					</Title>
 					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="ГруппаШапкаРасширеннаяПодсказка" id="100"/>
@@ -80,6 +83,7 @@
 						</v8:item>
 					</Title>
 					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="ОжиданиеПроверкиРасширеннаяПодсказка" id="161"/>
 					<ChildItems>
@@ -95,6 +99,7 @@
 									<v8:content>Группа ожидание</v8:content>
 								</v8:item>
 							</Title>
+							<Behavior>Usual</Behavior>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="ГруппаОжиданиеРасширеннаяПодсказка" id="283"/>
@@ -149,6 +154,7 @@
 					</Title>
 					<VerticalStretch>false</VerticalStretch>
 					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="ПредварительнаяНастройкаРасширеннаяПодсказка" id="5"/>
@@ -161,6 +167,7 @@
 								</v8:item>
 							</Title>
 							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="ПроверкаВыполненаРасширеннаяПодсказка" id="163"/>
@@ -173,6 +180,7 @@
 										</v8:item>
 									</Title>
 									<Group>AlwaysHorizontal</Group>
+									<Behavior>Usual</Behavior>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="ГруппаУстановкаКриптопровайдераРасширеннаяПодсказка" id="7"/>
@@ -185,6 +193,7 @@
 												</v8:item>
 											</Title>
 											<Group>AlwaysHorizontal</Group>
+											<Behavior>Usual</Behavior>
 											<ShowTitle>false</ShowTitle>
 											<ExtendedTooltip name="УстановкаКриптопровайдераТребуетсяРасширеннаяПодсказка" id="17"/>
 											<ChildItems>
@@ -212,6 +221,7 @@
 														</v8:item>
 													</Title>
 													<Group>Vertical</Group>
+													<Behavior>Usual</Behavior>
 													<Representation>None</Representation>
 													<ShowTitle>false</ShowTitle>
 													<ExtendedTooltip name="ГруппаДопПоляРасширеннаяПодсказка" id="145"/>
@@ -251,6 +261,7 @@
 															<HorizontalStretch>true</HorizontalStretch>
 															<Group>AlwaysHorizontal</Group>
 															<HorizontalAlign>Right</HorizontalAlign>
+															<Behavior>Usual</Behavior>
 															<Representation>None</Representation>
 															<ExtendedTooltip name="ГруппаУстановкаРасширеннаяПодсказка" id="27"/>
 															<ChildItems>
@@ -275,6 +286,7 @@
 																			<v8:content>Группа crypto pro</v8:content>
 																		</v8:item>
 																	</Title>
+																	<Behavior>Usual</Behavior>
 																	<Representation>None</Representation>
 																	<ShowTitle>false</ShowTitle>
 																	<ExtendedTooltip name="ГруппаCryptoProРасширеннаяПодсказка" id="36"/>
@@ -309,6 +321,7 @@
 													<v8:content>Установка криптопровайдера ошибка</v8:content>
 												</v8:item>
 											</Title>
+											<Behavior>Usual</Behavior>
 											<Representation>None</Representation>
 											<ShowTitle>false</ShowTitle>
 											<ExtendedTooltip name="УстановкаКриптопровайдераОшибкаРасширеннаяПодсказка" id="137"/>
@@ -337,6 +350,7 @@
 														</v8:item>
 													</Title>
 													<Group>Vertical</Group>
+													<Behavior>Usual</Behavior>
 													<Representation>None</Representation>
 													<ShowTitle>false</ShowTitle>
 													<ExtendedTooltip name="ГруппаДопПоляУстановкаРасширеннаяПодсказка" id="150"/>
@@ -371,6 +385,7 @@
 												</v8:item>
 											</Title>
 											<Group>AlwaysHorizontal</Group>
+											<Behavior>Usual</Behavior>
 											<Representation>None</Representation>
 											<ShowTitle>false</ShowTitle>
 											<ExtendedTooltip name="УстановкаКриптопровайдераВыполненоРасширеннаяПодсказка" id="154"/>
@@ -412,6 +427,7 @@
 												</v8:item>
 											</Title>
 											<Group>AlwaysHorizontal</Group>
+											<Behavior>Usual</Behavior>
 											<ShowTitle>false</ShowTitle>
 											<ExtendedTooltip name="ЕстьОблачныйКриптопровайдерРасширеннаяПодсказка" id="775"/>
 											<ChildItems>
@@ -439,6 +455,7 @@
 														</v8:item>
 													</Title>
 													<Group>Vertical</Group>
+													<Behavior>Usual</Behavior>
 													<Representation>None</Representation>
 													<ShowTitle>false</ShowTitle>
 													<ExtendedTooltip name="ДополнительнаяГруппаРасширеннаяПодсказка" id="780"/>
@@ -477,6 +494,7 @@
 															<TitleTextColor>style:ButtonTextColor</TitleTextColor>
 															<HorizontalStretch>true</HorizontalStretch>
 															<HorizontalAlign>Right</HorizontalAlign>
+															<Behavior>Usual</Behavior>
 															<Representation>None</Representation>
 															<ExtendedTooltip name="ГруппаУстановкаЖелтыйРасширеннаяПодсказка" id="788"/>
 															<ChildItems>
@@ -501,6 +519,7 @@
 																			<v8:content>Группа crypto pro</v8:content>
 																		</v8:item>
 																	</Title>
+																	<Behavior>Usual</Behavior>
 																	<Representation>None</Representation>
 																	<ShowTitle>false</ShowTitle>
 																	<ExtendedTooltip name="ГруппаCryptoProЖелтыйРасширеннаяПодсказка" id="792"/>
@@ -538,6 +557,7 @@
 										</v8:item>
 									</Title>
 									<Group>AlwaysHorizontal</Group>
+									<Behavior>Usual</Behavior>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="ГруппаПолучениеСертификатовРасширеннаяПодсказка" id="297"/>
@@ -550,6 +570,7 @@
 												</v8:item>
 											</Title>
 											<Group>AlwaysHorizontal</Group>
+											<Behavior>Usual</Behavior>
 											<ShowTitle>false</ShowTitle>
 											<ExtendedTooltip name="ПолучениеСертификатовТребуетсяРасширеннаяПодсказка" id="299"/>
 											<ChildItems>
@@ -577,6 +598,7 @@
 														</v8:item>
 													</Title>
 													<Group>Vertical</Group>
+													<Behavior>Usual</Behavior>
 													<Representation>None</Representation>
 													<ShowTitle>false</ShowTitle>
 													<ExtendedTooltip name="ГруппаДопПоляПолучениеРасширеннаяПодсказка" id="304"/>
@@ -591,53 +613,102 @@
 															<ContextMenu name="ПолучениеСертификатовЭлектроннойПодписиКонтекстноеМеню" id="306"/>
 															<ExtendedTooltip name="ПолучениеСертификатовЭлектроннойПодписиРасширеннаяПодсказка" id="307"/>
 														</LabelDecoration>
-														<LabelDecoration name="ДекорацияПояснениеПолучение" id="308">
-															<AutoMaxWidth>false</AutoMaxWidth>
-															<TextColor>style:ПоясняющийТекст</TextColor>
-															<Title formatted="true">
-																<v8:item>
-																	<v8:lang>ru</v8:lang>
-																	<v8:content>Закажите сертификат через сервис &lt;b&gt;&lt;font Arial&gt;&lt;fontsize 10&gt;1С-Подпись&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;fontsize 10&gt; &lt;/&gt;или получите его в любом сертифицированном удостоверяющем центре и установите готовый сертификат.</v8:content>
-																</v8:item>
-															</Title>
-															<ContextMenu name="ДекорацияПояснениеПолучениеКонтекстноеМеню" id="309"/>
-															<ExtendedTooltip name="ДекорацияПояснениеПолучениеРасширеннаяПодсказка" id="310"/>
-														</LabelDecoration>
-														<UsualGroup name="ГруппаДобавлениеСертификатов" id="314">
+														<UsualGroup name="ГруппаДопПоляПолучениеЮЛ" id="799">
 															<Title>
 																<v8:item>
 																	<v8:lang>ru</v8:lang>
-																	<v8:content>Добавление сертификатов</v8:content>
+																	<v8:content>Группа1</v8:content>
 																</v8:item>
 															</Title>
-															<HorizontalStretch>true</HorizontalStretch>
-															<HorizontalAlign>Right</HorizontalAlign>
+															<Group>Vertical</Group>
 															<Representation>None</Representation>
 															<ShowTitle>false</ShowTitle>
-															<ExtendedTooltip name="ГруппаДобавлениеСертификатовРасширеннаяПодсказка" id="315"/>
+															<ExtendedTooltip name="ГруппаДопПоляПолучениеЮЛРасширеннаяПодсказка" id="800"/>
 															<ChildItems>
-																<Button name="ЗаказатьСертификат" id="316">
+																<LabelDecoration name="ДекорацияПояснениеПолученияЮЛ" id="801">
+																	<AutoMaxWidth>false</AutoMaxWidth>
+																	<TextColor>style:ПоясняющийТекст</TextColor>
+																	<Title formatted="true">
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Руководители и ИП могут получить сертификаты электронной подписи только в аккредитованных удостоверяющих центрах. &lt;link https://its.1c.ru/db/elreps#content:143:hdoc&gt;Получение электронной подписи руководителя и ИП&lt;/&gt;
+</v8:content>
+																		</v8:item>
+																	</Title>
+																	<ContextMenu name="ДекорацияПояснениеПолученияЮЛКонтекстноеМеню" id="802"/>
+																	<ExtendedTooltip name="ДекорацияПояснениеПолученияЮЛРасширеннаяПодсказка" id="803"/>
+																</LabelDecoration>
+																<Button name="ДобавитьСертификат1" id="804">
 																	<Type>UsualButton</Type>
-																	<GroupHorizontalAlign>Left</GroupHorizontalAlign>
-																	<CommandName>Form.Command.ЗаказатьСертификат</CommandName>
-																	<ExtendedTooltip name="ЗаказатьСертификатРасширеннаяПодсказка" id="317"/>
+																	<CommandName>Form.Command.ДобавитьСертификат</CommandName>
+																	<ExtendedTooltip name="ДобавитьСертификат1РасширеннаяПодсказка" id="805"/>
 																</Button>
-																<UsualGroup name="ГруппаДобавитьСертификатПраво" id="318">
+															</ChildItems>
+														</UsualGroup>
+														<UsualGroup name="ГруппаДопПоляПолучениеФЛ" id="797">
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Группа1</v8:content>
+																</v8:item>
+															</Title>
+															<Group>Vertical</Group>
+															<Representation>None</Representation>
+															<ShowTitle>false</ShowTitle>
+															<ExtendedTooltip name="ГруппаДопПоляПолучениеФЛРасширеннаяПодсказка" id="798"/>
+															<ChildItems>
+																<LabelDecoration name="ДекорацияПояснениеПолучениеФЛ" id="308">
+																	<AutoMaxWidth>false</AutoMaxWidth>
+																	<TextColor>style:ПоясняющийТекст</TextColor>
+																	<Title formatted="true">
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Закажите сертификат через сервис &lt;font Arial&gt;&lt;fontsize 10&gt;&lt;b&gt;1С-Подпись&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;fontsize 10&gt; &lt;/&gt;или получите его в любом сертифицированном удостоверяющем центре и установите готовый сертификат.</v8:content>
+																		</v8:item>
+																	</Title>
+																	<ContextMenu name="ДекорацияПояснениеПолучениеФЛКонтекстноеМеню" id="309"/>
+																	<ExtendedTooltip name="ДекорацияПояснениеПолучениеФЛРасширеннаяПодсказка" id="310"/>
+																</LabelDecoration>
+																<UsualGroup name="ГруппаДобавлениеСертификатовФЛ" id="314">
 																	<Title>
 																		<v8:item>
 																			<v8:lang>ru</v8:lang>
-																			<v8:content>Группа crypto pro</v8:content>
+																			<v8:content>Добавление сертификатов</v8:content>
 																		</v8:item>
 																	</Title>
+																	<HorizontalStretch>true</HorizontalStretch>
+																	<Group>AlwaysHorizontal</Group>
+																	<HorizontalAlign>Right</HorizontalAlign>
+																	<Behavior>Usual</Behavior>
 																	<Representation>None</Representation>
 																	<ShowTitle>false</ShowTitle>
-																	<ExtendedTooltip name="ГруппаДобавитьСертификатПравоРасширеннаяПодсказка" id="319"/>
+																	<ExtendedTooltip name="ГруппаДобавлениеСертификатовФЛРасширеннаяПодсказка" id="315"/>
 																	<ChildItems>
-																		<Button name="ДобавитьСертификат" id="320">
+																		<Button name="ЗаказатьСертификат" id="316">
 																			<Type>UsualButton</Type>
-																			<CommandName>Form.Command.ДобавитьСертификат</CommandName>
-																			<ExtendedTooltip name="ДобавитьСертификатРасширеннаяПодсказка" id="321"/>
+																			<GroupHorizontalAlign>Left</GroupHorizontalAlign>
+																			<CommandName>Form.Command.ЗаказатьСертификат</CommandName>
+																			<ExtendedTooltip name="ЗаказатьСертификатРасширеннаяПодсказка" id="317"/>
 																		</Button>
+																		<UsualGroup name="ГруппаДобавитьСертификатПраво" id="318">
+																			<Title>
+																				<v8:item>
+																					<v8:lang>ru</v8:lang>
+																					<v8:content>Группа crypto pro</v8:content>
+																				</v8:item>
+																			</Title>
+																			<Behavior>Usual</Behavior>
+																			<Representation>None</Representation>
+																			<ShowTitle>false</ShowTitle>
+																			<ExtendedTooltip name="ГруппаДобавитьСертификатПравоРасширеннаяПодсказка" id="319"/>
+																			<ChildItems>
+																				<Button name="ДобавитьСертификат" id="320">
+																					<Type>UsualButton</Type>
+																					<CommandName>Form.Command.ДобавитьСертификат</CommandName>
+																					<ExtendedTooltip name="ДобавитьСертификатРасширеннаяПодсказка" id="321"/>
+																				</Button>
+																			</ChildItems>
+																		</UsualGroup>
 																	</ChildItems>
 																</UsualGroup>
 															</ChildItems>
@@ -654,6 +725,7 @@
 													<v8:content>Получение сертификатов выполнено</v8:content>
 												</v8:item>
 											</Title>
+											<Behavior>Usual</Behavior>
 											<Representation>None</Representation>
 											<ShowTitle>false</ShowTitle>
 											<ExtendedTooltip name="ПолучениеСертификатовВыполненоРасширеннаяПодсказка" id="323"/>
@@ -694,6 +766,7 @@
 												</v8:item>
 											</Title>
 											<Group>AlwaysHorizontal</Group>
+											<Behavior>Usual</Behavior>
 											<ShowTitle>false</ShowTitle>
 											<ExtendedTooltip name="ПолучениеСертификатовОжиданиеРасширеннаяПодсказка" id="331"/>
 											<ChildItems>
@@ -721,6 +794,7 @@
 														</v8:item>
 													</Title>
 													<Group>Vertical</Group>
+													<Behavior>Usual</Behavior>
 													<Representation>None</Representation>
 													<ShowTitle>false</ShowTitle>
 													<ExtendedTooltip name="ГруппаДопПоляПолучениеОжиданиеРасширеннаяПодсказка" id="336"/>
@@ -741,7 +815,7 @@
 															<Title formatted="true">
 																<v8:item>
 																	<v8:lang>ru</v8:lang>
-																	<v8:content>Ожидается выпуск сертификата через сервис &lt;b&gt;&lt;fontsize 10&gt;1С:Подпись. &lt;/&gt;&lt;/&gt;Проверьте текущее состояние выпуска сертификата.</v8:content>
+																	<v8:content>Ожидается выпуск сертификата через сервис &lt;fontsize 10&gt;&lt;b&gt;1С:Подпись. &lt;/&gt;&lt;/&gt;Проверьте текущее состояние выпуска сертификата.</v8:content>
 																</v8:item>
 															</Title>
 															<ContextMenu name="ДекорацияПояснениеСписокСертификатовКонтекстноеМеню" id="341"/>
@@ -772,6 +846,7 @@
 										</v8:item>
 									</Title>
 									<Group>AlwaysHorizontal</Group>
+									<Behavior>Usual</Behavior>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="ГруппаРегистрацияУОператораРасширеннаяПодсказка" id="347"/>
@@ -784,6 +859,7 @@
 												</v8:item>
 											</Title>
 											<Group>AlwaysHorizontal</Group>
+											<Behavior>Usual</Behavior>
 											<ShowTitle>false</ShowTitle>
 											<ExtendedTooltip name="РегистрацияУОператораТребуетсяРасширеннаяПодсказка" id="349"/>
 											<ChildItems>
@@ -811,6 +887,7 @@
 														</v8:item>
 													</Title>
 													<Group>Vertical</Group>
+													<Behavior>Usual</Behavior>
 													<Representation>None</Representation>
 													<ShowTitle>false</ShowTitle>
 													<ExtendedTooltip name="ГруппаДопПоляРегистрацияРасширеннаяПодсказка" id="354"/>
@@ -831,7 +908,7 @@
 															<Title formatted="true">
 																<v8:item>
 																	<v8:lang>ru</v8:lang>
-																	<v8:content>Нажмите &lt;b&gt;&lt;fontsize 10&gt;"Зарегистрироваться", &lt;/&gt;&lt;/&gt;чтобы пройти регистрацию у любого из поддерживаемых операторов</v8:content>
+																	<v8:content>Нажмите &lt;fontsize 10&gt;&lt;b&gt;"Зарегистрироваться", &lt;/&gt;&lt;/&gt;чтобы пройти регистрацию у любого из поддерживаемых операторов</v8:content>
 																</v8:item>
 															</Title>
 															<ContextMenu name="ДекорацияПояснениеРегистрацияКонтекстноеМеню" id="359"/>
@@ -846,6 +923,7 @@
 															</Title>
 															<HorizontalStretch>true</HorizontalStretch>
 															<HorizontalAlign>Left</HorizontalAlign>
+															<Behavior>Usual</Behavior>
 															<Representation>None</Representation>
 															<ShowTitle>false</ShowTitle>
 															<ExtendedTooltip name="РегистрацияУОператораСертификатовРасширеннаяПодсказка" id="362"/>
@@ -869,6 +947,7 @@
 												</v8:item>
 											</Title>
 											<Group>AlwaysHorizontal</Group>
+											<Behavior>Usual</Behavior>
 											<Representation>None</Representation>
 											<ShowTitle>false</ShowTitle>
 											<ExtendedTooltip name="РегистрацияУОператораВыполненоРасширеннаяПодсказка" id="366"/>
@@ -897,6 +976,7 @@
 														</v8:item>
 													</Title>
 													<Group>Vertical</Group>
+													<Behavior>Usual</Behavior>
 													<Representation>None</Representation>
 													<ShowTitle>false</ShowTitle>
 													<ExtendedTooltip name="ГруппаДопПоляРегистрацияВыполненоРасширеннаяПодсказка" id="371"/>
@@ -919,6 +999,7 @@
 																</v8:item>
 															</Title>
 															<Group>AlwaysHorizontal</Group>
+															<Behavior>Usual</Behavior>
 															<Representation>None</Representation>
 															<ShowTitle>false</ShowTitle>
 															<ExtendedTooltip name="ГруппаУчетнаяЗаписьОтправителяРасширеннаяПодсказка" id="714"/>
@@ -953,6 +1034,7 @@
 																</v8:item>
 															</Title>
 															<Group>Vertical</Group>
+															<Behavior>Usual</Behavior>
 															<Representation>None</Representation>
 															<ShowTitle>false</ShowTitle>
 															<ExtendedTooltip name="ГруппаВУчетнойЗаписиНетАктуальныхСертификатовРасширеннаяПодсказка" id="606"/>
@@ -963,7 +1045,7 @@
 																	<Title formatted="true">
 																		<v8:item>
 																			<v8:lang>ru</v8:lang>
-																			<v8:content>В учетной записи отсутствуют актуальные сертификаты. Нажмите &lt;b&gt;&lt;fontsize 10&gt;"Зарегистрировать", &lt;/&gt;&lt;/&gt;чтобы подключить новый сертификат.</v8:content>
+																			<v8:content>В учетной записи отсутствуют актуальные сертификаты. Нажмите &lt;fontsize 10&gt;&lt;b&gt;"Зарегистрировать", &lt;/&gt;&lt;/&gt;чтобы подключить новый сертификат.</v8:content>
 																		</v8:item>
 																	</Title>
 																	<ContextMenu name="ДекорацияПояснениеНетАктуальныхСертификатовКонтекстноеМеню" id="599"/>
@@ -978,6 +1060,7 @@
 																	</Title>
 																	<HorizontalStretch>true</HorizontalStretch>
 																	<HorizontalAlign>Left</HorizontalAlign>
+																	<Behavior>Usual</Behavior>
 																	<Representation>None</Representation>
 																	<ShowTitle>false</ShowTitle>
 																	<ExtendedTooltip name="РегистрацияСертификатаУОператораСертификатовРасширеннаяПодсказка" id="602"/>
@@ -1005,6 +1088,7 @@
 										</v8:item>
 									</Title>
 									<Group>Vertical</Group>
+									<Behavior>Usual</Behavior>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="ГруппаПриглашенияКонтрагентаРасширеннаяПодсказка" id="379"/>
@@ -1017,6 +1101,7 @@
 												</v8:item>
 											</Title>
 											<Group>AlwaysHorizontal</Group>
+											<Behavior>Usual</Behavior>
 											<Representation>None</Representation>
 											<ShowTitle>false</ShowTitle>
 											<ExtendedTooltip name="ГруппаДопПоляПриглашенияРасширеннаяПодсказка" id="381"/>
@@ -1029,6 +1114,7 @@
 														</v8:item>
 													</Title>
 													<Group>AlwaysHorizontal</Group>
+													<Behavior>Usual</Behavior>
 													<ShowTitle>false</ShowTitle>
 													<ExtendedTooltip name="ПриглашениеКонтрагентаТребуетсяРасширеннаяПодсказка" id="383"/>
 													<ChildItems>
@@ -1056,6 +1142,7 @@
 																</v8:item>
 															</Title>
 															<Group>Vertical</Group>
+															<Behavior>Usual</Behavior>
 															<Representation>None</Representation>
 															<ShowTitle>false</ShowTitle>
 															<ExtendedTooltip name="ГруппаДопПоляПриглашенияТребуетсяРасширеннаяПодсказка" id="388"/>
@@ -1096,6 +1183,7 @@
 														</v8:item>
 													</Title>
 													<Group>Vertical</Group>
+													<Behavior>Usual</Behavior>
 													<Representation>None</Representation>
 													<ShowTitle>false</ShowTitle>
 													<ExtendedTooltip name="ПриглашениеКонтрагентаВыполненоРасширеннаяПодсказка" id="396"/>
@@ -1108,6 +1196,7 @@
 																</v8:item>
 															</Title>
 															<Group>AlwaysHorizontal</Group>
+															<Behavior>Usual</Behavior>
 															<Representation>None</Representation>
 															<ShowTitle>false</ShowTitle>
 															<ExtendedTooltip name="ГруппаДопПоляПриглашениеВыполненоРасширеннаяПодсказка" id="398"/>
@@ -1136,6 +1225,7 @@
 																		</v8:item>
 																	</Title>
 																	<Group>Vertical</Group>
+																	<Behavior>Usual</Behavior>
 																	<Representation>None</Representation>
 																	<ShowTitle>false</ShowTitle>
 																	<ExtendedTooltip name="ГруппаДопПоляПриглашениеВыполненоДополнительноРасширеннаяПодсказка" id="403"/>
@@ -1158,6 +1248,7 @@
 																				</v8:item>
 																			</Title>
 																			<Group>AlwaysHorizontal</Group>
+																			<Behavior>Usual</Behavior>
 																			<Representation>None</Representation>
 																			<ShowTitle>false</ShowTitle>
 																			<ExtendedTooltip name="ГруппаПодробнееРасширеннаяПодсказка" id="408"/>
@@ -1177,6 +1268,7 @@
 														</v8:item>
 													</Title>
 													<Group>AlwaysHorizontal</Group>
+													<Behavior>Usual</Behavior>
 													<ShowTitle>false</ShowTitle>
 													<ExtendedTooltip name="ПриглашениеКонтрагентаОжидаетсяРасширеннаяПодсказка" id="410"/>
 													<ChildItems>
@@ -1204,6 +1296,7 @@
 																</v8:item>
 															</Title>
 															<Group>Vertical</Group>
+															<Behavior>Usual</Behavior>
 															<Representation>None</Representation>
 															<ShowTitle>false</ShowTitle>
 															<ExtendedTooltip name="ГруппаДопПоляПриглашениеОжиданиеРасширеннаяПодсказка" id="415"/>
@@ -1259,6 +1352,7 @@
 												</v8:item>
 											</Title>
 											<Group>AlwaysHorizontal</Group>
+											<Behavior>Usual</Behavior>
 											<Representation>None</Representation>
 											<ShowTitle>false</ShowTitle>
 											<ExtendedTooltip name="УправлениеОтправкойПриглашенийРасширеннаяПодсказка" id="727"/>
@@ -1307,6 +1401,7 @@
 												</v8:item>
 											</Title>
 											<Group>AlwaysHorizontal</Group>
+											<Behavior>Usual</Behavior>
 											<Representation>None</Representation>
 											<ShowTitle>false</ShowTitle>
 											<ExtendedTooltip name="УчетнаяЗаписьАбонентаРасширеннаяПодсказка" id="437"/>
@@ -1333,6 +1428,7 @@
 														</v8:item>
 													</Title>
 													<Group>Vertical</Group>
+													<Behavior>Usual</Behavior>
 													<Representation>None</Representation>
 													<ShowTitle>false</ShowTitle>
 													<ExtendedTooltip name="ГруппаИдентификаторПолучателяРасширеннаяПодсказка" id="760"/>
@@ -1364,6 +1460,7 @@
 																</v8:item>
 															</Title>
 															<Width>36</Width>
+															<Behavior>Usual</Behavior>
 															<Representation>None</Representation>
 															<ShowTitle>false</ShowTitle>
 															<ExtendedTooltip name="ГруппаНадписьИдентификаторПолучателяНекорректныйРасширеннаяПодсказка" id="765"/>
@@ -1407,6 +1504,7 @@
 																	<v8:content>Группа статус приглашения</v8:content>
 																</v8:item>
 															</Title>
+															<Behavior>Usual</Behavior>
 															<Representation>None</Representation>
 															<ShowTitle>false</ShowTitle>
 															<ExtendedTooltip name="ГруппаСтатусПриглашенияРасширеннаяПодсказка" id="749"/>
@@ -1478,6 +1576,7 @@
 												</v8:item>
 											</Title>
 											<Group>AlwaysHorizontal</Group>
+											<Behavior>Usual</Behavior>
 											<Representation>None</Representation>
 											<ShowTitle>false</ShowTitle>
 											<ExtendedTooltip name="ГруппаОписаниеРоумингаРасширеннаяПодсказка" id="453"/>
@@ -1491,6 +1590,7 @@
 													</Title>
 													<HorizontalSpacing>Half</HorizontalSpacing>
 													<VerticalAlign>Top</VerticalAlign>
+													<Behavior>Usual</Behavior>
 													<Representation>None</Representation>
 													<ShowTitle>false</ShowTitle>
 													<ExtendedTooltip name="ГруппаТребуетсяНастройкаРасширеннаяПодсказка" id="455"/>
@@ -1537,6 +1637,7 @@
 													</Title>
 													<VerticalSpacing>Half</VerticalSpacing>
 													<VerticalAlign>Center</VerticalAlign>
+													<Behavior>Usual</Behavior>
 													<Representation>None</Representation>
 													<ShowTitle>false</ShowTitle>
 													<ExtendedTooltip name="ГруппаРоумингДоступенРасширеннаяПодсказка" id="463"/>
@@ -1579,6 +1680,7 @@
 													</Title>
 													<VerticalSpacing>Half</VerticalSpacing>
 													<VerticalAlign>Top</VerticalAlign>
+													<Behavior>Usual</Behavior>
 													<Representation>None</Representation>
 													<ShowTitle>false</ShowTitle>
 													<ExtendedTooltip name="ГруппаОбратитьВниманиеРасширеннаяПодсказка" id="471"/>
@@ -1624,6 +1726,7 @@
 													</Title>
 													<VerticalSpacing>Half</VerticalSpacing>
 													<VerticalAlign>Top</VerticalAlign>
+													<Behavior>Usual</Behavior>
 													<Representation>None</Representation>
 													<ShowTitle>false</ShowTitle>
 													<ExtendedTooltip name="ГруппаОшибкаРоумингаРасширеннаяПодсказка" id="479"/>
@@ -1670,6 +1773,7 @@
 													</Title>
 													<HorizontalStretch>true</HorizontalStretch>
 													<Group>AlwaysHorizontal</Group>
+													<Behavior>Usual</Behavior>
 													<Representation>None</Representation>
 													<ShowTitle>false</ShowTitle>
 													<ExtendedTooltip name="ГруппаПриглашениеУжеОтправленоРасширеннаяПодсказка" id="738"/>
@@ -1718,6 +1822,7 @@
 											</Title>
 											<HorizontalSpacing>Half</HorizontalSpacing>
 											<VerticalAlign>Top</VerticalAlign>
+											<Behavior>Usual</Behavior>
 											<Representation>None</Representation>
 											<ShowTitle>false</ShowTitle>
 											<ExtendedTooltip name="ГруппаОжиданиеНастройкиРоумингаРасширеннаяПодсказка" id="767"/>
@@ -1768,6 +1873,7 @@
 						</v8:item>
 					</Title>
 					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="РедактированиеНастроекРасширеннаяПодсказка" id="487"/>
@@ -1791,6 +1897,7 @@
 											<v8:content>Группа формат ЭД</v8:content>
 										</v8:item>
 									</Title>
+									<Behavior>Usual</Behavior>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="ГруппаФорматЭДРасширеннаяПодсказка" id="529"/>
@@ -1830,6 +1937,7 @@
 											<v8:content>Группа маршрут подписи</v8:content>
 										</v8:item>
 									</Title>
+									<Behavior>Usual</Behavior>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="ГруппаМаршрутПодписиРасширеннаяПодсказка" id="534"/>
@@ -1860,6 +1968,7 @@
 										</v8:item>
 									</Title>
 									<Group>AlwaysHorizontal</Group>
+									<Behavior>Usual</Behavior>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="ГруппаЗапрашиватьРасширеннаяПодсказка" id="521"/>
@@ -1993,6 +2102,7 @@
 					<HorizontalStretch>true</HorizontalStretch>
 					<Group>Vertical</Group>
 					<VerticalSpacing>Half</VerticalSpacing>
+					<Behavior>Usual</Behavior>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="ГруппаСохранитьНастройкиРасширеннаяПодсказка" id="570"/>
@@ -2005,6 +2115,7 @@
 								</v8:item>
 							</Title>
 							<HorizontalStretch>true</HorizontalStretch>
+							<Behavior>Usual</Behavior>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
 							<BackColor>style:ToolTipBackColor</BackColor>
@@ -2046,6 +2157,7 @@
 			</Title>
 			<VerticalSpacing>Half</VerticalSpacing>
 			<HorizontalAlign>Right</HorizontalAlign>
+			<Behavior>Usual</Behavior>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="КомандыУправленияРасширеннаяПодсказка" id="539"/>
 			<ChildItems>
@@ -2057,6 +2169,7 @@
 						</v8:item>
 					</Title>
 					<HorizontalStretch>true</HorizontalStretch>
+					<Behavior>Usual</Behavior>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="ГруппаГотовоРасширеннаяПодсказка" id="541"/>
@@ -2116,7 +2229,7 @@
 				</v8:item>
 			</Title>
 			<Type>
-				<v8:TypeSet>cfg:DefinedType.КонтрагентБЭД</v8:TypeSet>
+				<v8:TypeSet>cfg:DefinedType.УчастникЭДО</v8:TypeSet>
 			</Type>
 		</Attribute>
 		<Attribute name="ПредварительнаяНастройка" id="3">
@@ -2905,6 +3018,55 @@
 					<v8:content>Это редактирование существующей настройки</v8:content>
 				</v8:item>
 			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СтатусПриглашения" id="78">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Статус приглашения</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:EnumRef.СтатусыПриглашений</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ТипДокумента" id="80">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тип документа</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:EnumRef.ТипыДокументовЭДО</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ЭтоОблачныйЭДО" id="81">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Это облачный ЭДО</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ЕстьДействующийСертификатОрганизации" id="84">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Есть действующий сертификат организации</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Реквизит1" id="83">
 			<Type>
 				<v8:Type>xs:boolean</v8:Type>
 			</Type>

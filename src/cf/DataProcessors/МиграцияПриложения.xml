@@ -28,8 +28,8 @@
 			<Explanation/>
 		</Properties>
 		<ChildObjects>
-			<Form>ПереходВСервис</Form>
 			<Form>ДобавлениеПользователяСервиса</Form>
+			<Form>ПереходВСервис</Form>
 			<Command uuid="1e88aebb-e05e-4c21-aee5-32c557b62036">
 				<Properties>
 					<Name>ПерейтиВСервис</Name>

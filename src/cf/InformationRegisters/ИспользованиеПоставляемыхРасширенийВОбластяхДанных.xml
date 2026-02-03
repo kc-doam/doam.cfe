@@ -170,13 +170,13 @@
 			<ExecuteAfterWriteDataHistoryVersionProcessing>false</ExecuteAfterWriteDataHistoryVersionProcessing>
 		</Properties>
 		<ChildObjects>
-			<Resource uuid="1f644f0b-4fc2-407f-b3ae-b2d196b7a110">
+			<Resource uuid="e851edd0-c9c7-4b51-a8ca-3a4503096d83">
 				<Properties>
-					<Name>ИспользуемоеРасширение</Name>
+					<Name>ИдентификаторВерсии</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Используемое расширение</v8:content>
+							<v8:content>Идентификатор используемой версии расширения</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -248,13 +248,13 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Resource>
-			<Resource uuid="e851edd0-c9c7-4b51-a8ca-3a4503096d83">
+			<Resource uuid="1f644f0b-4fc2-407f-b3ae-b2d196b7a110">
 				<Properties>
-					<Name>ИдентификаторВерсии</Name>
+					<Name>ИспользуемоеРасширение</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Идентификатор используемой версии расширения</v8:content>
+							<v8:content>Используемое расширение</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>

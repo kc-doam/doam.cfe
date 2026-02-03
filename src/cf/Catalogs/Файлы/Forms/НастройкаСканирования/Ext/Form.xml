@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
 	<Customizable>false</Customizable>
 	<CommandBarLocation>None</CommandBarLocation>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
@@ -25,6 +25,7 @@
 				</v8:item>
 			</ToolTip>
 			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаКолонкиРасширеннаяПодсказка" id="86"/>
@@ -43,6 +44,7 @@
 						</v8:item>
 					</ToolTip>
 					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="ГруппаКолонкаЛевоРасширеннаяПодсказка" id="88"/>
@@ -80,14 +82,19 @@
 								</v8:item>
 							</ToolTip>
 							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
 							<ExtendedTooltip name="ГруппаПараметрыСканированияExtendedTooltip" id="70"/>
 							<ChildItems>
 								<InputField name="Разрешение" id="14">
 									<DataPath>Разрешение</DataPath>
 									<Width>13</Width>
 									<HorizontalStretch>false</HorizontalStretch>
+									<TextEdit>false</TextEdit>
 									<ContextMenu name="РазрешениеКонтекстноеМеню" id="15"/>
 									<ExtendedTooltip name="РазрешениеExtendedTooltip" id="71"/>
+									<Events>
+										<Event name="Clearing">РазрешениеОчистка</Event>
+									</Events>
 								</InputField>
 								<InputField name="Цветность" id="16">
 									<DataPath>Цветность</DataPath>
@@ -143,6 +150,7 @@
 							</ToolTip>
 							<HorizontalStretch>true</HorizontalStretch>
 							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
 							<ExtendedTooltip name="ГруппаФорматХраненияОдиночныйExtendedTooltip" id="59"/>
 							<ChildItems>
 								<UsualGroup name="ГруппаФорматаХранения" id="44">
@@ -159,6 +167,7 @@
 										</v8:item>
 									</ToolTip>
 									<Group>Horizontal</Group>
+									<Behavior>Usual</Behavior>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="ГруппаФорматаХраненияExtendedTooltip" id="60"/>
@@ -167,6 +176,76 @@
 											<DataPath>ФорматХраненияОдностраничный</DataPath>
 											<Width>9</Width>
 											<HorizontalStretch>false</HorizontalStretch>
+											<ListChoiceMode>true</ListChoiceMode>
+											<ChooseType>false</ChooseType>
+											<TextEdit>false</TextEdit>
+											<ChoiceList>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>GIF</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xr:DesignTimeRef">Enum.ФорматыХраненияОдностраничныхФайлов.EnumValue.GIF</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>JPG</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xr:DesignTimeRef">Enum.ФорматыХраненияОдностраничныхФайлов.EnumValue.JPG</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>PDF</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xr:DesignTimeRef">Enum.ФорматыХраненияОдностраничныхФайлов.EnumValue.PDF</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>PNG</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xr:DesignTimeRef">Enum.ФорматыХраненияОдностраничныхФайлов.EnumValue.PNG</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>TIF</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xr:DesignTimeRef">Enum.ФорматыХраненияОдностраничныхФайлов.EnumValue.TIF</Value>
+													</xr:Value>
+												</xr:Item>
+											</ChoiceList>
 											<DropListWidth>9</DropListWidth>
 											<ContextMenu name="ФорматХраненияОдностраничныйКонтекстноеМеню" id="43"/>
 											<ExtendedTooltip name="ФорматХраненияОдностраничныйExtendedTooltip" id="61"/>
@@ -200,6 +279,7 @@
 										</v8:item>
 									</ToolTip>
 									<Group>Horizontal</Group>
+									<Behavior>Usual</Behavior>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="ГруппаФорматаСканированияExtendedTooltip" id="63"/>
@@ -208,6 +288,63 @@
 											<DataPath>ФорматСканированногоИзображения</DataPath>
 											<Width>9</Width>
 											<HorizontalStretch>false</HorizontalStretch>
+											<ListChoiceMode>true</ListChoiceMode>
+											<ChooseType>false</ChooseType>
+											<TextEdit>false</TextEdit>
+											<ChoiceList>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>JPG</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xr:DesignTimeRef">Enum.ФорматыСканированногоИзображения.EnumValue.JPG</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>GIF</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xr:DesignTimeRef">Enum.ФорматыСканированногоИзображения.EnumValue.GIF</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>PNG</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xr:DesignTimeRef">Enum.ФорматыСканированногоИзображения.EnumValue.PNG</Value>
+													</xr:Value>
+												</xr:Item>
+												<xr:Item>
+													<xr:Presentation/>
+													<xr:CheckState>0</xr:CheckState>
+													<xr:Value xsi:type="FormChoiceListDesTimeValue">
+														<Presentation>
+															<v8:item>
+																<v8:lang>ru</v8:lang>
+																<v8:content>TIF</v8:content>
+															</v8:item>
+														</Presentation>
+														<Value xsi:type="xr:DesignTimeRef">Enum.ФорматыСканированногоИзображения.EnumValue.TIF</Value>
+													</xr:Value>
+												</xr:Item>
+											</ChoiceList>
 											<DropListWidth>9</DropListWidth>
 											<ContextMenu name="ФорматСканированногоИзображенияКонтекстноеМеню" id="19"/>
 											<ExtendedTooltip name="ФорматСканированногоИзображенияExtendedTooltip" id="64"/>
@@ -290,6 +427,7 @@
 						</v8:item>
 					</ToolTip>
 					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="ГруппаКолонкаПравоРасширеннаяПодсказка" id="90"/>
@@ -324,6 +462,7 @@
 								</v8:item>
 							</ToolTip>
 							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="ГруппаОпцииРасширеннаяПодсказка" id="57"/>
@@ -389,6 +528,7 @@
 							</ToolTip>
 							<HorizontalStretch>true</HorizontalStretch>
 							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
 							<ExtendedTooltip name="ГруппаФорматХраненияМногостраничныйExtendedTooltip" id="68"/>
 							<ChildItems>
 								<InputField name="ФорматХраненияМногостраничный" id="40">
@@ -421,6 +561,61 @@
 									<ContextMenu name="ДекорацияОтступЭквивалентСжатиеКонтекстноеМеню" id="123"/>
 									<ExtendedTooltip name="ДекорацияОтступЭквивалентСжатиеРасширеннаяПодсказка" id="124"/>
 								</LabelDecoration>
+								<RadioButtonField name="СпособПреобразованияВPDF" id="145">
+									<DataPath>СпособПреобразованияВPDF</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Преобразовывать в PDF</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTipRepresentation>Button</ToolTipRepresentation>
+									<RadioButtonType>Auto</RadioButtonType>
+									<ChoiceList>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>Встроенными средствами</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:decimal">0</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>С помощью ImageMagick</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:decimal">1</Value>
+											</xr:Value>
+										</xr:Item>
+									</ChoiceList>
+									<ContextMenu name="СпособПреобразованияВPDFКонтекстноеМеню" id="146"/>
+									<ExtendedTooltip name="СпособПреобразованияВPDFРасширеннаяПодсказка" id="147">
+										<Title formatted="true">
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>
+Преобразование с помощью &lt;link https://imagemagick.org/&gt;ImageMagick&lt;/&gt; может выполняться быстрее и формировать файлы изображений меньшего размера, чем встроенными средствами. Также при работе в клиент-серверном варианте, это не требует дополнительной передачи изображений на сервер 1С:Предприятие. При выборе этого способа на рабочем компьютере должно быть предварительно установлено бесплатное приложение ImageMagick.
+
+
+</v8:content>
+											</v8:item>
+										</Title>
+									</ExtendedTooltip>
+									<Events>
+										<Event name="OnChange">СпособПреобразованияВPDFПриИзменении</Event>
+									</Events>
+								</RadioButtonField>
 							</ChildItems>
 						</UsualGroup>
 					</ChildItems>
@@ -437,6 +632,108 @@
 			<ContextMenu name="ДекорацияОтступYКонтекстноеМеню" id="133"/>
 			<ExtendedTooltip name="ДекорацияОтступYРасширеннаяПодсказка" id="134"/>
 		</LabelDecoration>
+		<UsualGroup name="ГруппаЖурнал" id="148">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Диагностика проблем</v8:content>
+				</v8:item>
+			</Title>
+			<HorizontalStretch>true</HorizontalStretch>
+			<Group>Vertical</Group>
+			<Behavior>Collapsible</Behavior>
+			<CollapsedRepresentationTitle>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Диагностика проблем</v8:content>
+				</v8:item>
+			</CollapsedRepresentationTitle>
+			<Collapsed>true</Collapsed>
+			<ControlRepresentation>Picture</ControlRepresentation>
+			<Representation>NormalSeparation</Representation>
+			<ExtendedTooltip name="ГруппаЖурналРасширеннаяПодсказка" id="149"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаНастройкиЖурнала" id="150">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа1</v8:content>
+						</v8:item>
+					</Title>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаНастройкиЖурналаРасширеннаяПодсказка" id="151"/>
+					<ChildItems>
+						<CheckBoxField name="ИспользоватьКаталогЖурналаСканирования" id="152">
+							<DataPath>ИспользоватьКаталогЖурналаСканирования</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Сохранять информацию для технической поддержки:</v8:content>
+								</v8:item>
+							</Title>
+							<TitleLocation>Right</TitleLocation>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ИспользоватьКаталогЖурналаСканированияКонтекстноеМеню" id="153"/>
+							<ExtendedTooltip name="ИспользоватьКаталогЖурналаСканированияРасширеннаяПодсказка" id="154"/>
+							<Events>
+								<Event name="OnChange">ИспользоватьКаталогЖурналаСканированияПриИзменении</Event>
+							</Events>
+						</CheckBoxField>
+						<InputField name="КаталогЖурналаСканирования" id="155">
+							<DataPath>КаталогЖурналаСканирования</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Каталог журнала сканирования</v8:content>
+								</v8:item>
+							</Title>
+							<TitleLocation>None</TitleLocation>
+							<ToolTipRepresentation>Button</ToolTipRepresentation>
+							<Width>40</Width>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<HorizontalStretch>false</HorizontalStretch>
+							<ChoiceButton>true</ChoiceButton>
+							<InputHint>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Каталог журнала диагностики</v8:content>
+								</v8:item>
+							</InputHint>
+							<ContextMenu name="КаталогЖурналаСканированияКонтекстноеМеню" id="156"/>
+							<ExtendedTooltip name="КаталогЖурналаСканированияРасширеннаяПодсказка" id="157">
+								<Title formatted="false">
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>При аварийном завершении приложения в указанный каталог будет сохранена информация для технической поддержки. 
+Предоставьте ее в службу поддержки фирмы "1С".</v8:content>
+									</v8:item>
+								</Title>
+							</ExtendedTooltip>
+							<Events>
+								<Event name="StartChoice">КаталогЖурналаСканированияНачалоВыбора</Event>
+							</Events>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<LabelDecoration name="ИнформацияДляТехническойПоддержки" id="158">
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Информация для технической поддержки</v8:content>
+						</v8:item>
+					</Title>
+					<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+					<Hyperlink>true</Hyperlink>
+					<HorizontalAlign>Auto</HorizontalAlign>
+					<ContextMenu name="ИнформацияДляТехническойПоддержкиКонтекстноеМеню" id="159"/>
+					<ExtendedTooltip name="ИнформацияДляТехническойПоддержкиРасширеннаяПодсказка" id="160"/>
+					<Events>
+						<Event name="Click">ИнформацияДляТехническойПоддержкиНажатие</Event>
+					</Events>
+				</LabelDecoration>
+			</ChildItems>
+		</UsualGroup>
 		<UsualGroup name="ГруппаКомандСнизу" id="128">
 			<Title>
 				<v8:item>
@@ -453,6 +750,7 @@
 			<VerticalStretch>true</VerticalStretch>
 			<Group>Horizontal</Group>
 			<VerticalAlign>Bottom</VerticalAlign>
+			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаКомандСнизуРасширеннаяПодсказка" id="129"/>
@@ -502,8 +800,7 @@
 					<DataPath>ВерсияКомпонентыСканирования</DataPath>
 					<ReadOnly>true</ReadOnly>
 					<TitleTextColor>style:НедоступныеДанныеЦвет</TitleTextColor>
-					<Width>5</Width>
-					<HorizontalStretch>false</HorizontalStretch>
+					<Width>7</Width>
 					<TextColor>style:НедоступныеДанныеЦвет</TextColor>
 					<Font ref="style:SmallTextFont" kind="StyleItem"/>
 					<ContextMenu name="ВерсияКомпонентыСканированияКонтекстноеМеню" id="13"/>
@@ -820,6 +1117,49 @@
 				<v8:item>
 					<v8:lang>ru</v8:lang>
 					<v8:content>Компонента не установлена</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="КаталогЖурналаСканирования" id="25">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Каталог журнала сканирования</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="СпособПреобразованияВPDF" id="26">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Способ преобразования ВPDF</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>1</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ИспользоватьКаталогЖурналаСканирования" id="27">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Использовать каталог журнала сканирования</v8:content>
 				</v8:item>
 			</Title>
 			<Type>

@@ -591,10 +591,10 @@
 					</Attribute>
 				</ChildObjects>
 			</TabularSection>
-			<Form>ФормаЭлемента</Form>
-			<Form>ФормаСписка</Form>
 			<Form>ФормаВыбора</Form>
 			<Form>ФормаГруппы</Form>
+			<Form>ФормаСписка</Form>
+			<Form>ФормаЭлемента</Form>
 			<Command uuid="aaefb2d5-508c-4fff-a9b2-77d4f76ef89f">
 				<Properties>
 					<Name>СведенияОТочкахМаршрута</Name>

@@ -21,18 +21,14 @@
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.РаботаСПочтовымиСообщениями</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.ОтправкаСообщения</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Catalog.УчетныеЗаписиЭлектроннойПочты</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">Enum.ВариантыSMTPАутентификации</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">Enum.СпособыPOP3Аутентификации</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">Enum.СпособыSMTPАутентификации</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Enum.ТипыТекстовЭлектронныхПисем</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.ПриложитьФайл</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.НастройкаСистемнойУчетнойЗаписиЭлектроннойПочты</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">5cc3a29d-aa98-42bf-9800-f584229c8e46</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.РаботаСПочтовымиСообщениямиВызовСервера</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.ОтправкаТабличныхДокументовПоПочте</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.РаботаСПочтовымиСообщениямиПереопределяемый</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.ВыборПолучателейСообщения</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.РаботаСПочтовымиСообщениямиКлиентПереопределяемый</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.УчетнаяЗаписьДляВосстановленияПароля</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.НастройкиАвторизацииИнтернетСервисов</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

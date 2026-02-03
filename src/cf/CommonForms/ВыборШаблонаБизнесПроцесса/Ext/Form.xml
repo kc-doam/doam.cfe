@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
 	<Title>
 		<v8:item>
 			<v8:lang>ru</v8:lang>
@@ -857,6 +857,7 @@
 		</Pages>
 		<UsualGroup name="Группа" id="7">
 			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаExtendedTooltip" id="189"/>
@@ -905,7 +906,7 @@
 									<RowPictureDataPath>СписокОзнакомление.Картинка</RowPictureDataPath>
 									<RowsPicture>
 										<xr:Ref>CommonPicture.КоллекцияСветофорДляШаблоновПроцессов</xr:Ref>
-										<xr:LoadTransparent>true</xr:LoadTransparent>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
 									</RowsPicture>
 									<CommandSet>
 										<ExcludedCommand>DynamicListStandardSettings</ExcludedCommand>
@@ -915,7 +916,6 @@
 										<ExcludedCommand>LoadDynamicListSettings</ExcludedCommand>
 										<ExcludedCommand>MoveItem</ExcludedCommand>
 										<ExcludedCommand>SaveDynamicListSettings</ExcludedCommand>
-										<ExcludedCommand>SearchHistory</ExcludedCommand>
 										<ExcludedCommand>ShowMultipleSelection</ExcludedCommand>
 									</CommandSet>
 									<SearchStringLocation>CommandBar</SearchStringLocation>
@@ -992,7 +992,7 @@
 											</ToolTip>
 											<HeaderPicture>
 												<xr:Ref>CommonPicture.КоличествоВидовДокументов</xr:Ref>
-												<xr:LoadTransparent>true</xr:LoadTransparent>
+												<xr:LoadTransparent>false</xr:LoadTransparent>
 											</HeaderPicture>
 											<ShowInFooter>false</ShowInFooter>
 											<Width>4</Width>
@@ -1030,7 +1030,7 @@
 									<RowPictureDataPath>СписокСогласование.Картинка</RowPictureDataPath>
 									<RowsPicture>
 										<xr:Ref>CommonPicture.КоллекцияСветофорДляШаблоновПроцессов</xr:Ref>
-										<xr:LoadTransparent>true</xr:LoadTransparent>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
 									</RowsPicture>
 									<CommandSet>
 										<ExcludedCommand>DynamicListStandardSettings</ExcludedCommand>
@@ -1040,7 +1040,6 @@
 										<ExcludedCommand>LoadDynamicListSettings</ExcludedCommand>
 										<ExcludedCommand>MoveItem</ExcludedCommand>
 										<ExcludedCommand>SaveDynamicListSettings</ExcludedCommand>
-										<ExcludedCommand>SearchHistory</ExcludedCommand>
 										<ExcludedCommand>ShowMultipleSelection</ExcludedCommand>
 									</CommandSet>
 									<SearchStringLocation>CommandBar</SearchStringLocation>
@@ -1117,7 +1116,7 @@
 											</ToolTip>
 											<HeaderPicture>
 												<xr:Ref>CommonPicture.КоличествоВидовДокументов</xr:Ref>
-												<xr:LoadTransparent>true</xr:LoadTransparent>
+												<xr:LoadTransparent>false</xr:LoadTransparent>
 											</HeaderPicture>
 											<ShowInFooter>false</ShowInFooter>
 											<Width>4</Width>
@@ -1155,7 +1154,7 @@
 									<RowPictureDataPath>СписокИсполнение.Картинка</RowPictureDataPath>
 									<RowsPicture>
 										<xr:Ref>CommonPicture.КоллекцияСветофорДляШаблоновПроцессов</xr:Ref>
-										<xr:LoadTransparent>true</xr:LoadTransparent>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
 									</RowsPicture>
 									<CommandSet>
 										<ExcludedCommand>DynamicListStandardSettings</ExcludedCommand>
@@ -1165,7 +1164,6 @@
 										<ExcludedCommand>LoadDynamicListSettings</ExcludedCommand>
 										<ExcludedCommand>MoveItem</ExcludedCommand>
 										<ExcludedCommand>SaveDynamicListSettings</ExcludedCommand>
-										<ExcludedCommand>SearchHistory</ExcludedCommand>
 										<ExcludedCommand>ShowMultipleSelection</ExcludedCommand>
 									</CommandSet>
 									<SearchStringLocation>CommandBar</SearchStringLocation>
@@ -1242,7 +1240,7 @@
 											</ToolTip>
 											<HeaderPicture>
 												<xr:Ref>CommonPicture.КоличествоВидовДокументов</xr:Ref>
-												<xr:LoadTransparent>true</xr:LoadTransparent>
+												<xr:LoadTransparent>false</xr:LoadTransparent>
 											</HeaderPicture>
 											<ShowInFooter>false</ShowInFooter>
 											<Width>4</Width>
@@ -1280,7 +1278,7 @@
 									<RowPictureDataPath>СписокПоручение.Картинка</RowPictureDataPath>
 									<RowsPicture>
 										<xr:Ref>CommonPicture.КоллекцияСветофорДляШаблоновПроцессов</xr:Ref>
-										<xr:LoadTransparent>true</xr:LoadTransparent>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
 									</RowsPicture>
 									<CommandSet>
 										<ExcludedCommand>DynamicListStandardSettings</ExcludedCommand>
@@ -1290,7 +1288,6 @@
 										<ExcludedCommand>LoadDynamicListSettings</ExcludedCommand>
 										<ExcludedCommand>MoveItem</ExcludedCommand>
 										<ExcludedCommand>SaveDynamicListSettings</ExcludedCommand>
-										<ExcludedCommand>SearchHistory</ExcludedCommand>
 										<ExcludedCommand>ShowMultipleSelection</ExcludedCommand>
 									</CommandSet>
 									<SearchStringLocation>CommandBar</SearchStringLocation>
@@ -1367,7 +1364,7 @@
 											</ToolTip>
 											<HeaderPicture>
 												<xr:Ref>CommonPicture.КоличествоВидовДокументов</xr:Ref>
-												<xr:LoadTransparent>true</xr:LoadTransparent>
+												<xr:LoadTransparent>false</xr:LoadTransparent>
 											</HeaderPicture>
 											<ShowInFooter>false</ShowInFooter>
 											<Width>4</Width>
@@ -1405,7 +1402,7 @@
 									<RowPictureDataPath>СписокРассмотрение.Картинка</RowPictureDataPath>
 									<RowsPicture>
 										<xr:Ref>CommonPicture.КоллекцияСветофорДляШаблоновПроцессов</xr:Ref>
-										<xr:LoadTransparent>true</xr:LoadTransparent>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
 									</RowsPicture>
 									<CommandSet>
 										<ExcludedCommand>DynamicListStandardSettings</ExcludedCommand>
@@ -1415,7 +1412,6 @@
 										<ExcludedCommand>LoadDynamicListSettings</ExcludedCommand>
 										<ExcludedCommand>MoveItem</ExcludedCommand>
 										<ExcludedCommand>SaveDynamicListSettings</ExcludedCommand>
-										<ExcludedCommand>SearchHistory</ExcludedCommand>
 										<ExcludedCommand>ShowMultipleSelection</ExcludedCommand>
 									</CommandSet>
 									<SearchStringLocation>CommandBar</SearchStringLocation>
@@ -1492,7 +1488,7 @@
 											</ToolTip>
 											<HeaderPicture>
 												<xr:Ref>CommonPicture.КоличествоВидовДокументов</xr:Ref>
-												<xr:LoadTransparent>true</xr:LoadTransparent>
+												<xr:LoadTransparent>false</xr:LoadTransparent>
 											</HeaderPicture>
 											<ShowInFooter>false</ShowInFooter>
 											<Width>4</Width>
@@ -1530,7 +1526,7 @@
 									<RowPictureDataPath>СписокРегистрация.Картинка</RowPictureDataPath>
 									<RowsPicture>
 										<xr:Ref>CommonPicture.КоллекцияСветофорДляШаблоновПроцессов</xr:Ref>
-										<xr:LoadTransparent>true</xr:LoadTransparent>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
 									</RowsPicture>
 									<CommandSet>
 										<ExcludedCommand>DynamicListStandardSettings</ExcludedCommand>
@@ -1540,7 +1536,6 @@
 										<ExcludedCommand>LoadDynamicListSettings</ExcludedCommand>
 										<ExcludedCommand>MoveItem</ExcludedCommand>
 										<ExcludedCommand>SaveDynamicListSettings</ExcludedCommand>
-										<ExcludedCommand>SearchHistory</ExcludedCommand>
 										<ExcludedCommand>ShowMultipleSelection</ExcludedCommand>
 									</CommandSet>
 									<SearchStringLocation>CommandBar</SearchStringLocation>
@@ -1617,7 +1612,7 @@
 											</ToolTip>
 											<HeaderPicture>
 												<xr:Ref>CommonPicture.КоличествоВидовДокументов</xr:Ref>
-												<xr:LoadTransparent>true</xr:LoadTransparent>
+												<xr:LoadTransparent>false</xr:LoadTransparent>
 											</HeaderPicture>
 											<ShowInFooter>false</ShowInFooter>
 											<Width>4</Width>
@@ -1655,7 +1650,7 @@
 									<RowPictureDataPath>СписокУтверждение.Картинка</RowPictureDataPath>
 									<RowsPicture>
 										<xr:Ref>CommonPicture.КоллекцияСветофорДляШаблоновПроцессов</xr:Ref>
-										<xr:LoadTransparent>true</xr:LoadTransparent>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
 									</RowsPicture>
 									<CommandSet>
 										<ExcludedCommand>DynamicListStandardSettings</ExcludedCommand>
@@ -1665,7 +1660,6 @@
 										<ExcludedCommand>LoadDynamicListSettings</ExcludedCommand>
 										<ExcludedCommand>MoveItem</ExcludedCommand>
 										<ExcludedCommand>SaveDynamicListSettings</ExcludedCommand>
-										<ExcludedCommand>SearchHistory</ExcludedCommand>
 										<ExcludedCommand>ShowMultipleSelection</ExcludedCommand>
 									</CommandSet>
 									<SearchStringLocation>CommandBar</SearchStringLocation>
@@ -1742,7 +1736,7 @@
 											</ToolTip>
 											<HeaderPicture>
 												<xr:Ref>CommonPicture.КоличествоВидовДокументов</xr:Ref>
-												<xr:LoadTransparent>true</xr:LoadTransparent>
+												<xr:LoadTransparent>false</xr:LoadTransparent>
 											</HeaderPicture>
 											<ShowInFooter>false</ShowInFooter>
 											<Width>4</Width>
@@ -1779,7 +1773,7 @@
 									<RowPictureDataPath>СписокСоставные.Картинка</RowPictureDataPath>
 									<RowsPicture>
 										<xr:Ref>CommonPicture.КоллекцияСветофорДляШаблоновПроцессов</xr:Ref>
-										<xr:LoadTransparent>true</xr:LoadTransparent>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
 									</RowsPicture>
 									<CommandSet>
 										<ExcludedCommand>DynamicListStandardSettings</ExcludedCommand>
@@ -1789,7 +1783,6 @@
 										<ExcludedCommand>LoadDynamicListSettings</ExcludedCommand>
 										<ExcludedCommand>MoveItem</ExcludedCommand>
 										<ExcludedCommand>SaveDynamicListSettings</ExcludedCommand>
-										<ExcludedCommand>SearchHistory</ExcludedCommand>
 										<ExcludedCommand>ShowMultipleSelection</ExcludedCommand>
 									</CommandSet>
 									<SearchStringLocation>CommandBar</SearchStringLocation>
@@ -1866,7 +1859,7 @@
 											</ToolTip>
 											<HeaderPicture>
 												<xr:Ref>CommonPicture.КоличествоВидовДокументов</xr:Ref>
-												<xr:LoadTransparent>true</xr:LoadTransparent>
+												<xr:LoadTransparent>false</xr:LoadTransparent>
 											</HeaderPicture>
 											<ShowInFooter>false</ShowInFooter>
 											<Width>4</Width>
@@ -1904,7 +1897,7 @@
 									<RowPictureDataPath>СписокПриглашение.Картинка</RowPictureDataPath>
 									<RowsPicture>
 										<xr:Ref>CommonPicture.КоллекцияСветофорДляШаблоновПроцессов</xr:Ref>
-										<xr:LoadTransparent>true</xr:LoadTransparent>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
 									</RowsPicture>
 									<CommandSet>
 										<ExcludedCommand>DynamicListStandardSettings</ExcludedCommand>
@@ -1914,7 +1907,6 @@
 										<ExcludedCommand>LoadDynamicListSettings</ExcludedCommand>
 										<ExcludedCommand>MoveItem</ExcludedCommand>
 										<ExcludedCommand>SaveDynamicListSettings</ExcludedCommand>
-										<ExcludedCommand>SearchHistory</ExcludedCommand>
 										<ExcludedCommand>ShowMultipleSelection</ExcludedCommand>
 									</CommandSet>
 									<SearchStringLocation>CommandBar</SearchStringLocation>
@@ -1991,7 +1983,7 @@
 											</ToolTip>
 											<HeaderPicture>
 												<xr:Ref>CommonPicture.КоличествоВидовДокументов</xr:Ref>
-												<xr:LoadTransparent>true</xr:LoadTransparent>
+												<xr:LoadTransparent>false</xr:LoadTransparent>
 											</HeaderPicture>
 											<ShowInFooter>false</ShowInFooter>
 											<Width>4</Width>
@@ -2029,7 +2021,7 @@
 									<RowPictureDataPath>СписокКомплексный.Картинка</RowPictureDataPath>
 									<RowsPicture>
 										<xr:Ref>CommonPicture.КоллекцияСветофорДляШаблоновПроцессов</xr:Ref>
-										<xr:LoadTransparent>true</xr:LoadTransparent>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
 									</RowsPicture>
 									<CommandSet>
 										<ExcludedCommand>DynamicListStandardSettings</ExcludedCommand>
@@ -2039,7 +2031,6 @@
 										<ExcludedCommand>LoadDynamicListSettings</ExcludedCommand>
 										<ExcludedCommand>MoveItem</ExcludedCommand>
 										<ExcludedCommand>SaveDynamicListSettings</ExcludedCommand>
-										<ExcludedCommand>SearchHistory</ExcludedCommand>
 										<ExcludedCommand>ShowMultipleSelection</ExcludedCommand>
 									</CommandSet>
 									<SearchStringLocation>CommandBar</SearchStringLocation>
@@ -2116,7 +2107,7 @@
 											</ToolTip>
 											<HeaderPicture>
 												<xr:Ref>CommonPicture.КоличествоВидовДокументов</xr:Ref>
-												<xr:LoadTransparent>true</xr:LoadTransparent>
+												<xr:LoadTransparent>false</xr:LoadTransparent>
 											</HeaderPicture>
 											<ShowInFooter>false</ShowInFooter>
 											<Width>4</Width>

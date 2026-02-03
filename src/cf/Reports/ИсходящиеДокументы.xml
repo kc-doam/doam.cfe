@@ -21,12 +21,12 @@
 			</Synonym>
 			<Comment/>
 			<UseStandardCommands>true</UseStandardCommands>
-			<DefaultForm/>
+			<DefaultForm>CommonForm.ФормаОтчета</DefaultForm>
 			<AuxiliaryForm/>
 			<MainDataCompositionSchema>Report.ИсходящиеДокументы.Template.ОсновнаяСхемаКомпоновкиДанных</MainDataCompositionSchema>
-			<DefaultSettingsForm/>
+			<DefaultSettingsForm>CommonForm.ФормаНастроекОтчета</DefaultSettingsForm>
 			<AuxiliarySettingsForm/>
-			<DefaultVariantForm/>
+			<DefaultVariantForm>CommonForm.ФормаВариантаОтчета</DefaultVariantForm>
 			<VariantsStorage>SettingsStorage.ХранилищеВариантовОтчетов</VariantsStorage>
 			<SettingsStorage/>
 			<IncludeHelpInContents>true</IncludeHelpInContents>
@@ -39,13 +39,13 @@
 			<Explanation/>
 		</Properties>
 		<ChildObjects>
-			<Template>ОсновнаяСхемаКомпоновкиДанных</Template>
-			<Template>ОбразецОтчетаСписокИсходящихДокументов</Template>
 			<Template>ОбразецОтчетаДокументыОжидающиеОтвета</Template>
-			<Template>ОбразецОтчетаСтатистикаПоВидамИсходящиеДокументы</Template>
-			<Template>ОбразецОтчетаСтатистикаПоИнициативнымИОтветным</Template>
 			<Template>ОбразецОтчетаМоиДокументыОжидающиеОтвета</Template>
 			<Template>ОбразецОтчетаОшибкиОтправкиДокументовПоСВД</Template>
+			<Template>ОбразецОтчетаСписокИсходящихДокументов</Template>
+			<Template>ОбразецОтчетаСтатистикаПоВидамИсходящиеДокументы</Template>
+			<Template>ОбразецОтчетаСтатистикаПоИнициативнымИОтветным</Template>
+			<Template>ОсновнаяСхемаКомпоновкиДанных</Template>
 		</ChildObjects>
 	</Report>
 </MetaDataObject>

@@ -551,6 +551,13 @@
 		</right>
 	</object>
 	<object>
+		<name>CommonForm.РазблокированиеРеквизитов</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>InformationRegister.ФактическиеТрудозатраты.Dimension.Начало</name>
 		<right>
 			<name>View</name>
@@ -601,13 +608,6 @@
 		<name>WebService.DMMessageService.Operation.get</name>
 		<right>
 			<name>Use</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>Catalog.Файлы.Command.ВставитьШтрихкодВФайл</name>
-		<right>
-			<name>View</name>
 			<value>true</value>
 		</right>
 	</object>
@@ -755,6 +755,13 @@
 		</right>
 		<right>
 			<name>InteractiveClearDeletionMark</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Constant.ПутьКПрограммеКонвертацииPDF</name>
+		<right>
+			<name>Read</name>
 			<value>true</value>
 		</right>
 	</object>
@@ -1446,7 +1453,7 @@
 		</right>
 	</object>
 	<object>
-		<name>InformationRegister.ЭлектронныеПодписи.Dimension.УстановившийПодпись</name>
+		<name>InformationRegister.ЭлектронныеПодписи.Dimension.УдалитьУстановившийПодпись</name>
 		<right>
 			<name>View</name>
 			<value>false</value>
@@ -1454,6 +1461,13 @@
 		<right>
 			<name>Edit</name>
 			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>SessionParameter.ЭтоУдалениеПомеченных</name>
+		<right>
+			<name>Get</name>
+			<value>true</value>
 		</right>
 	</object>
 	<object>
@@ -1700,6 +1714,21 @@
 		</right>
 	</object>
 	<object>
+		<name>Catalog.МашиночитаемыеДоверенностиКонтрагентов</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InputByString</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>InformationRegister.СинхронизацияПапокПисемСМобильнымКлиентом</name>
 		<right>
 			<name>Read</name>
@@ -1715,6 +1744,21 @@
 		</right>
 		<right>
 			<name>Edit</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.РабочиеГруппыДляПерехода</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Update</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
 			<value>true</value>
 		</right>
 	</object>
@@ -1951,6 +1995,17 @@
 		</right>
 	</object>
 	<object>
+		<name>InformationRegister.ОтметкиВремениОчередь2</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Update</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>DataProcessor.ПоискПоРеквизитам.Command.ПоискДокументовИФайлов</name>
 		<right>
 			<name>View</name>
@@ -1984,6 +2039,17 @@
 		<right>
 			<name>Edit</name>
 			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.ОчередьЗапросовВРеестрМЧДЭДО</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
 		</right>
 	</object>
 	<object>
@@ -2379,6 +2445,21 @@
 		</right>
 	</object>
 	<object>
+		<name>Catalog.МашиночитаемыеДоверенностиОрганизаций</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InputByString</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>InformationRegister.ЗначенияПоказателейРаботыПользователя</name>
 		<right>
 			<name>Read</name>
@@ -2595,7 +2676,18 @@
 		</right>
 	</object>
 	<object>
-		<name>InformationRegister.ЭлектронныеПодписи.Dimension.Объект</name>
+		<name>Catalog.МЧД003</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.ЭлектронныеПодписи.Dimension.УдалитьОбъект</name>
 		<right>
 			<name>View</name>
 			<value>false</value>
@@ -3266,6 +3358,17 @@
 		</right>
 	</object>
 	<object>
+		<name>Constant.ПереходСтадия</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>InformationRegister.СвязиОбъектовИнтегрированныхСистем</name>
 		<right>
 			<name>Read</name>
@@ -3514,6 +3617,17 @@
 		</right>
 		<right>
 			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>SessionParameter.ЭтоМобильныйКлиент</name>
+		<right>
+			<name>Get</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Set</name>
 			<value>true</value>
 		</right>
 	</object>
@@ -3975,6 +4089,85 @@
 		</right>
 		<right>
 			<name>InputByString</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>ExchangePlan.ОбменНСИСАрхивом</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Insert</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Update</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Delete</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveInsert</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveSetDeletionMark</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveClearDeletionMark</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InputByString</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>ReadDataHistory</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>ReadDataHistoryOfMissingData</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>UpdateDataHistory</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>UpdateDataHistoryOfMissingData</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>UpdateDataHistorySettings</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>UpdateDataHistoryVersionComment</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>ViewDataHistory</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>EditDataHistoryVersionComment</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>SwitchToDataHistoryVersion</name>
 			<value>true</value>
 		</right>
 	</object>
@@ -4800,6 +4993,13 @@
 		</right>
 	</object>
 	<object>
+		<name>Constant.ЗавершенПереходНаНовыйФорматХраненияЭП</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>InformationRegister.НапоминанияПользователя</name>
 		<right>
 			<name>Read</name>
@@ -4941,6 +5141,17 @@
 		<right>
 			<name>Edit</name>
 			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.ОтметкиВремениОчередь3</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Update</name>
+			<value>true</value>
 		</right>
 	</object>
 	<object>
@@ -5253,6 +5464,25 @@
 		<name>Constant.ЗаголовокСистемы</name>
 		<right>
 			<name>Read</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.ДоверенностиЭлектронныхПодписей</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Update</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Edit</name>
 			<value>true</value>
 		</right>
 	</object>
@@ -5586,6 +5816,17 @@
 		</right>
 	</object>
 	<object>
+		<name>InformationRegister.ОтметкиВремениОчередь1</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Update</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>Catalog.ПрограммыЭлектроннойПодписиИШифрования</name>
 		<right>
 			<name>Read</name>
@@ -5649,6 +5890,17 @@
 	</object>
 	<object>
 		<name>Catalog.СообщенияОбсуждений.Command.ОткрытьОбсуждениеДокумента</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.ПравилаПроверкиПолномочийМЧД</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
 		<right>
 			<name>View</name>
 			<value>true</value>
@@ -6030,6 +6282,13 @@
 		</right>
 	</object>
 	<object>
+		<name>Constant.ПереходКаталог</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>Constant.ИспользоватьНесколькоОрганизаций</name>
 		<right>
 			<name>Read</name>
@@ -6375,7 +6634,7 @@
 		</right>
 	</object>
 	<object>
-		<name>InformationRegister.ОтметкиВремениСсылочныхДанных</name>
+		<name>InformationRegister.ОтметкиВремениСсылочныхОбъектов</name>
 		<right>
 			<name>Read</name>
 			<value>true</value>
@@ -6553,6 +6812,17 @@
 		<name>Constant.ВестиУчетФактическихТрудозатрат</name>
 		<right>
 			<name>Read</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>SessionParameter.ЗавершенПереходНаНовыйФорматХраненияЭП</name>
+		<right>
+			<name>Get</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Set</name>
 			<value>true</value>
 		</right>
 	</object>
@@ -7306,6 +7576,17 @@
 		</right>
 	</object>
 	<object>
+		<name>Constant.ИспользоватьУсовершенствованныеЭП</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>Report.Обсуждения</name>
 		<right>
 			<name>Use</name>
@@ -7663,14 +7944,6 @@
 			<name>InputByString</name>
 			<value>true</value>
 		</right>
-		<right>
-			<name>InteractiveSetDeletionMarkPredefinedData</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>InteractiveClearDeletionMarkPredefinedData</name>
-			<value>true</value>
-		</right>
 	</object>
 	<object>
 		<name>InformationRegister.РезультатыВыполненияПроцессовИЗадач</name>
@@ -7945,10 +8218,6 @@
 			<name>Edit</name>
 			<value>true</value>
 		</right>
-		<right>
-			<name>InteractiveDelete</name>
-			<value>true</value>
-		</right>
 	</object>
 	<object>
 		<name>Catalog.СообщенияИнтегрированныхСистем.Attribute.Входящее</name>
@@ -7969,7 +8238,7 @@
 		</right>
 	</object>
 	<object>
-		<name>InformationRegister.ЭлектронныеПодписи.Dimension.ДатаПодписи</name>
+		<name>InformationRegister.ЭлектронныеПодписи.Dimension.УдалитьДатаПодписи</name>
 		<right>
 			<name>View</name>
 			<value>false</value>
@@ -8938,6 +9207,17 @@
 	</object>
 	<object>
 		<name>CommonCommand.НастроитьСканерШтрихКодов</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>InformationRegister.ПравилаПроверкиПолномочийПоМЧД</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
 		<right>
 			<name>View</name>
 			<value>true</value>

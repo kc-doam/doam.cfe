@@ -64,13 +64,13 @@
 			<ExecuteAfterWriteDataHistoryVersionProcessing>false</ExecuteAfterWriteDataHistoryVersionProcessing>
 		</Properties>
 		<ChildObjects>
-			<Resource uuid="8644588c-580a-469c-821a-141a1067a9bc">
+			<Resource uuid="3e9bc807-9426-470d-ba0b-42a5eaec956e">
 				<Properties>
-					<Name>ЯвкаОбязательна</Name>
+					<Name>Отсутствовал</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Явка обязательна</v8:content>
+							<v8:content>Отсутствовал</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -103,18 +103,23 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Resource>
-			<Resource uuid="3e9bc807-9426-470d-ba0b-42a5eaec956e">
+			<Resource uuid="0aaccdbc-7a0f-49d1-a97e-1e1e4d7f107a">
 				<Properties>
-					<Name>Отсутствовал</Name>
+					<Name>Порядок</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Отсутствовал</v8:content>
+							<v8:content>Порядок</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
 					<Type>
-						<v8:Type>xs:boolean</v8:Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
 					</Type>
 					<PasswordMode>false</PasswordMode>
 					<Format/>
@@ -181,23 +186,18 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Resource>
-			<Resource uuid="0aaccdbc-7a0f-49d1-a97e-1e1e4d7f107a">
+			<Resource uuid="8644588c-580a-469c-821a-141a1067a9bc">
 				<Properties>
-					<Name>Порядок</Name>
+					<Name>ЯвкаОбязательна</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Порядок</v8:content>
+							<v8:content>Явка обязательна</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
 					<Type>
-						<v8:Type>xs:decimal</v8:Type>
-						<v8:NumberQualifiers>
-							<v8:Digits>10</v8:Digits>
-							<v8:FractionDigits>0</v8:FractionDigits>
-							<v8:AllowedSign>Any</v8:AllowedSign>
-						</v8:NumberQualifiers>
+						<v8:Type>xs:boolean</v8:Type>
 					</Type>
 					<PasswordMode>false</PasswordMode>
 					<Format/>

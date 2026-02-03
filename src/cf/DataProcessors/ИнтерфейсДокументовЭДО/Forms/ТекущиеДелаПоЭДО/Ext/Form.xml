@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
 	<Title>
 		<v8:item>
 			<v8:lang>ru</v8:lang>
@@ -29,10 +29,24 @@
 				</v8:item>
 			</Title>
 			<HorizontalStretch>true</HorizontalStretch>
+			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
-			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="3024"/>
+			<ExtendedTooltip name="ПанельКонтекстныхНовостейРасширеннаяПодсказка" id="3024"/>
 		</UsualGroup>
+		<Button name="ПоказатьСведенияОЗадолженности" id="3344">
+			<Type>UsualButton</Type>
+			<Representation>PictureAndText</Representation>
+			<CommandName>Form.Command.ПоказатьСведенияОЗадолженности</CommandName>
+			<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+			<Picture>
+				<xr:Ref>CommonPicture.ПредупреждениеБЭД</xr:Ref>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
+			</Picture>
+			<ShapeRepresentation>None</ShapeRepresentation>
+			<PictureLocation>Left</PictureLocation>
+			<ExtendedTooltip name="ПоказатьСведенияОЗадолженностиРасширеннаяПодсказка" id="3345"/>
+		</Button>
 		<UsualGroup name="ГруппаОсновная" id="620">
 			<Title>
 				<v8:item>
@@ -41,10 +55,11 @@
 				</v8:item>
 			</Title>
 			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ChildItemsWidth>LeftNarrowest</ChildItemsWidth>
 			<ShowTitle>false</ShowTitle>
-			<ExtendedTooltip name="ГруппаОсновнаяExtendedTooltip" id="839"/>
+			<ExtendedTooltip name="ГруппаОсновнаяРасширеннаяПодсказка" id="839"/>
 			<ChildItems>
 				<UsualGroup name="ГруппаЛево" id="638">
 					<Title>
@@ -56,14 +71,16 @@
 					<Width>28</Width>
 					<HorizontalStretch>false</HorizontalStretch>
 					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
-					<ExtendedTooltip name="ГруппаЛевоExtendedTooltip" id="840"/>
+					<ExtendedTooltip name="ГруппаЛевоРасширеннаяПодсказка" id="840"/>
 					<ChildItems>
 						<UsualGroup name="ГруппаЛевоОтправитьПолучитьСоздать" id="3019">
 							<Width>28</Width>
 							<HorizontalStretch>false</HorizontalStretch>
 							<Group>AlwaysHorizontal</Group>
+							<Behavior>Usual</Behavior>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="ГруппаЛевоОтправитьПолучитьСоздатьРасширеннаяПодсказка" id="3020"/>
@@ -73,7 +90,7 @@
 									<DefaultButton>true</DefaultButton>
 									<GroupHorizontalAlign>Left</GroupHorizontalAlign>
 									<CommandName>Form.Command.ОтправитьИПолучитьЭД</CommandName>
-									<ExtendedTooltip name="ОтправитьИПолучитьЭДExtendedTooltip" id="841"/>
+									<ExtendedTooltip name="ОтправитьИПолучитьЭДРасширеннаяПодсказка" id="841"/>
 								</Button>
 							</ChildItems>
 						</UsualGroup>
@@ -119,7 +136,7 @@
 							<AutoCommandBar name="ДеревоДействийКоманднаяПанель" id="617">
 								<Autofill>false</Autofill>
 							</AutoCommandBar>
-							<ExtendedTooltip name="ДеревоДействийExtendedTooltip" id="842"/>
+							<ExtendedTooltip name="ДеревоДействийРасширеннаяПодсказка" id="842"/>
 							<SearchStringAddition name="ДеревоДействийСтрокаПоиска" id="1382">
 								<AdditionSource>
 									<Item>ДеревоДействий</Item>
@@ -175,7 +192,7 @@
 											<DataPath>ДеревоДействий.Представление</DataPath>
 											<ShowInHeader>false</ShowInHeader>
 											<ContextMenu name="ДеревоДействийДействиеКонтекстноеМеню" id="619"/>
-											<ExtendedTooltip name="ДеревоДействийДействиеExtendedTooltip" id="843"/>
+											<ExtendedTooltip name="ДеревоДействийДействиеРасширеннаяПодсказка" id="843"/>
 										</InputField>
 									</ChildItems>
 								</ColumnGroup>
@@ -189,9 +206,10 @@
 								</v8:item>
 							</Title>
 							<Group>Horizontal</Group>
+							<Behavior>Usual</Behavior>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
-							<ExtendedTooltip name="ГруппаЗаголовокОтбораExtendedTooltip" id="844"/>
+							<ExtendedTooltip name="ГруппаЗаголовокОтбораРасширеннаяПодсказка" id="844"/>
 							<ChildItems>
 								<LabelDecoration name="ЗаголовокОтбора" id="655">
 									<AutoMaxWidth>false</AutoMaxWidth>
@@ -203,7 +221,7 @@
 									</Title>
 									<Hyperlink>true</Hyperlink>
 									<ContextMenu name="ЗаголовокОтбораКонтекстноеМеню" id="656"/>
-									<ExtendedTooltip name="ЗаголовокОтбораExtendedTooltip" id="845"/>
+									<ExtendedTooltip name="ЗаголовокОтбораРасширеннаяПодсказка" id="845"/>
 									<Events>
 										<Event name="Click">ЗаголовокОтбораНажатие</Event>
 									</Events>
@@ -216,13 +234,13 @@
 										</v8:item>
 									</Title>
 									<HorizontalLocation>Right</HorizontalLocation>
-									<ExtendedTooltip name="КомандыОтбораExtendedTooltip" id="846"/>
+									<ExtendedTooltip name="КомандыОтбораРасширеннаяПодсказка" id="846"/>
 									<ChildItems>
 										<Button name="СброситьОтбор" id="658">
 											<Type>CommandBarButton</Type>
 											<Enabled>false</Enabled>
 											<CommandName>Form.Command.СброситьОтбор</CommandName>
-											<ExtendedTooltip name="СброситьОтборExtendedTooltip" id="847"/>
+											<ExtendedTooltip name="СброситьОтборРасширеннаяПодсказка" id="847"/>
 										</Button>
 									</ChildItems>
 								</CommandBar>
@@ -230,7 +248,7 @@
 						</UsualGroup>
 						<Table name="БыстрыеОтборы" id="639">
 							<Representation>List</Representation>
-							<Visible>false</Visible>
+							<CommandBarLocation>None</CommandBarLocation>
 							<ChangeRowSet>false</ChangeRowSet>
 							<ChangeRowOrder>false</ChangeRowOrder>
 							<HeightInTableRows>5</HeightInTableRows>
@@ -257,9 +275,11 @@
 								<ExcludedCommand>Delete</ExcludedCommand>
 								<ExcludedCommand>EndEdit</ExcludedCommand>
 								<ExcludedCommand>Find</ExcludedCommand>
+								<ExcludedCommand>FindByCurrentValue</ExcludedCommand>
 								<ExcludedCommand>MoveDown</ExcludedCommand>
 								<ExcludedCommand>MoveUp</ExcludedCommand>
 								<ExcludedCommand>OutputList</ExcludedCommand>
+								<ExcludedCommand>SearchEverywhere</ExcludedCommand>
 								<ExcludedCommand>SelectAll</ExcludedCommand>
 								<ExcludedCommand>SortListAsc</ExcludedCommand>
 								<ExcludedCommand>SortListDesc</ExcludedCommand>
@@ -270,7 +290,7 @@
 							<RowFilter xsi:nil="true"/>
 							<ContextMenu name="БыстрыеОтборыКонтекстноеМеню" id="640"/>
 							<AutoCommandBar name="БыстрыеОтборыКоманднаяПанель" id="641"/>
-							<ExtendedTooltip name="БыстрыеОтборыExtendedTooltip" id="848"/>
+							<ExtendedTooltip name="БыстрыеОтборыРасширеннаяПодсказка" id="848"/>
 							<SearchStringAddition name="БыстрыеОтборыСтрокаПоиска" id="1391">
 								<AdditionSource>
 									<Item>БыстрыеОтборы</Item>
@@ -299,6 +319,7 @@
 							<Events>
 								<Event name="OnEditEnd">БыстрыеОтборыПриОкончанииРедактирования</Event>
 								<Event name="Selection">БыстрыеОтборыВыбор</Event>
+								<Event name="OnActivateRow">БыстрыеОтборыПриАктивизацииСтроки</Event>
 								<Event name="OnStartEdit">БыстрыеОтборыПриНачалеРедактирования</Event>
 							</Events>
 							<ChildItems>
@@ -309,7 +330,7 @@
 									<AutoMaxWidth>false</AutoMaxWidth>
 									<MaxWidth>5</MaxWidth>
 									<ContextMenu name="БыстрыеОтборыПредставлениеПараметраКонтекстноеМеню" id="647"/>
-									<ExtendedTooltip name="БыстрыеОтборыПредставлениеПараметраExtendedTooltip" id="849"/>
+									<ExtendedTooltip name="БыстрыеОтборыПредставлениеПараметраРасширеннаяПодсказка" id="849"/>
 								</InputField>
 								<InputField name="БыстрыеОтборыЗначение" id="644">
 									<DataPath>БыстрыеОтборы.Значение</DataPath>
@@ -332,11 +353,12 @@
 									</EditFormat>
 									<ChooseType>false</ChooseType>
 									<ContextMenu name="БыстрыеОтборыЗначениеКонтекстноеМеню" id="645"/>
-									<ExtendedTooltip name="БыстрыеОтборыЗначениеExtendedTooltip" id="850"/>
+									<ExtendedTooltip name="БыстрыеОтборыЗначениеРасширеннаяПодсказка" id="850"/>
 									<Events>
 										<Event name="OnChange">БыстрыеОтборыЗначениеПриИзменении</Event>
 										<Event name="StartChoice">БыстрыеОтборыЗначениеНачалоВыбора</Event>
 										<Event name="Clearing">БыстрыеОтборыЗначениеОчистка</Event>
+										<Event name="ChoiceProcessing">БыстрыеОтборыЗначениеОбработкаВыбора</Event>
 									</Events>
 								</InputField>
 								<InputField name="БыстрыеОтборыКнопка" id="2735">
@@ -355,7 +377,7 @@
 									<Visible>false</Visible>
 									<EditMode>EnterOnInput</EditMode>
 									<ContextMenu name="БыстрыеОтборыПараметрКонтекстноеМеню" id="668"/>
-									<ExtendedTooltip name="БыстрыеОтборыПараметрExtendedTooltip" id="851"/>
+									<ExtendedTooltip name="БыстрыеОтборыПараметрРасширеннаяПодсказка" id="851"/>
 								</InputField>
 							</ChildItems>
 						</Table>
@@ -370,64 +392,33 @@
 							<GroupVerticalAlign>Bottom</GroupVerticalAlign>
 							<Group>AlwaysHorizontal</Group>
 							<VerticalAlign>Bottom</VerticalAlign>
+							<Behavior>Usual</Behavior>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
-							<ExtendedTooltip name="ГруппаКонтактовПоддержкиExtendedTooltip" id="1527"/>
+							<ExtendedTooltip name="ГруппаКонтактовПоддержкиРасширеннаяПодсказка" id="1527"/>
 							<ChildItems>
-								<LabelDecoration name="Техподдержка" id="3013">
-									<AutoMaxWidth>false</AutoMaxWidth>
-									<MaxWidth>10</MaxWidth>
-									<ContextMenu name="ТехподдержкаКонтекстноеМеню" id="3014"/>
-									<ExtendedTooltip name="ТехподдержкаРасширеннаяПодсказка" id="3015"/>
-								</LabelDecoration>
-								<InputField name="ТелефонСлужбыПоддержки" id="1528">
-									<DataPath>ТелефонСлужбыПоддержки</DataPath>
-									<Visible>false</Visible>
-									<ReadOnly>true</ReadOnly>
-									<SkipOnInput>true</SkipOnInput>
-									<Title>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Служба поддержки</v8:content>
-										</v8:item>
-									</Title>
-									<HorizontalAlign>Left</HorizontalAlign>
-									<AutoMaxWidth>false</AutoMaxWidth>
-									<MaxWidth>12</MaxWidth>
-									<MultiLine>false</MultiLine>
-									<BackColor>style:FormBackColor</BackColor>
-									<BorderColor>style:FormBackColor</BorderColor>
+								<Button name="Техподдержка" id="3297">
+									<Type>Hyperlink</Type>
+									<CommandName>Form.Command.Техподдержка</CommandName>
 									<Font ref="style:ЖирныйШрифтБЭД" kind="StyleItem"/>
-									<ContextMenu name="ТелефонСлужбыПоддержкиКонтекстноеМеню" id="1529"/>
-									<ExtendedTooltip name="ТелефонСлужбыПоддержкиExtendedTooltip" id="1530"/>
-								</InputField>
-								<InputField name="АдресЭлектроннойПочтыСлужбыПоддержки" id="1531">
-									<DataPath>АдресЭлектроннойПочтыСлужбыПоддержки</DataPath>
-									<Visible>false</Visible>
-									<ReadOnly>true</ReadOnly>
-									<SkipOnInput>true</SkipOnInput>
-									<Title>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Поддержка пользователей ЭДО</v8:content>
-										</v8:item>
-									</Title>
-									<TitleLocation>None</TitleLocation>
-									<HorizontalAlign>Left</HorizontalAlign>
-									<AutoMaxWidth>false</AutoMaxWidth>
-									<MaxWidth>10</MaxWidth>
-									<MultiLine>false</MultiLine>
-									<BackColor>style:FormBackColor</BackColor>
-									<BorderColor>style:FormBackColor</BorderColor>
-									<Font ref="style:ЖирныйШрифтБЭД" kind="StyleItem"/>
-									<ContextMenu name="АдресЭлектроннойПочтыСлужбыПоддержкиКонтекстноеМеню" id="1532"/>
-									<ExtendedTooltip name="АдресЭлектроннойПочтыСлужбыПоддержкиExtendedTooltip" id="1533"/>
-								</InputField>
+									<ExtendedTooltip name="ТехподдержкаРасширеннаяПодсказка" id="3298"/>
+								</Button>
 								<Button name="Кнопка1СБухфон" id="1534">
 									<Type>Hyperlink</Type>
 									<Visible>false</Visible>
 									<CommandName>Form.Command.ОткрытьСсылкуНаСтатьюПо1СБухфон</CommandName>
 									<ExtendedTooltip name="Кнопка1СБухфонРасширеннаяПодсказка" id="1535"/>
+								</Button>
+								<Button name="ПолезныеСсылки" id="3354">
+									<Type>Hyperlink</Type>
+									<CommandName>Form.Command.ПолезныеСсылки</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Ссылки</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="ПолезныеСсылкиРасширеннаяПодсказка" id="3355"/>
 								</Button>
 								<UsualGroup name="ГруппаИдея" id="2316">
 									<Title>
@@ -440,6 +431,7 @@
 									<Group>AlwaysHorizontal</Group>
 									<HorizontalAlign>Right</HorizontalAlign>
 									<VerticalAlign>Bottom</VerticalAlign>
+									<Behavior>Usual</Behavior>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="ГруппаИдеяРасширеннаяПодсказка" id="2317"/>
@@ -483,6 +475,7 @@
 						</v8:item>
 					</Title>
 					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="ГруппаПравоРасширеннаяПодсказка" id="2348"/>
@@ -495,6 +488,7 @@
 								</v8:item>
 							</Title>
 							<Group>Horizontal</Group>
+							<Behavior>Usual</Behavior>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="ГруппаКомандыРасширеннаяПодсказка" id="2466"/>
@@ -653,6 +647,12 @@
 											<CommandName>Form.Command.СоздатьПроизвольныйДокумент</CommandName>
 											<ExtendedTooltip name="КомандаСоздатьПроизвольныйДокументРасширеннаяПодсказка" id="2892"/>
 										</Button>
+										<Button name="КомандаЗагрузитьФайлы" id="3299">
+											<Type>CommandBarButton</Type>
+											<CommandName>Form.Command.ЗагрузитьФайлы</CommandName>
+											<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+											<ExtendedTooltip name="КомандаЗагрузитьФайлыРасширеннаяПодсказка" id="3300"/>
+										</Button>
 										<Button name="КомандаСформироватьЭД" id="2443">
 											<Type>CommandBarButton</Type>
 											<Visible>false</Visible>
@@ -727,6 +727,15 @@
 											</Title>
 											<CommandSource>Item.ВходящиеЭД</CommandSource>
 											<ExtendedTooltip name="ГруппаКомандыВходящиеЭДРасширеннаяПодсказка" id="2724"/>
+											<ChildItems>
+												<Button name="ПометитьКакПрочтенные" id="3271">
+													<Type>CommandBarButton</Type>
+													<CommandName>Form.Command.ПометитьКакПрочтенные</CommandName>
+													<RepresentationInContextMenu>None</RepresentationInContextMenu>
+													<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+													<ExtendedTooltip name="ПометитьКакПрочтенныеРасширеннаяПодсказка" id="3272"/>
+												</Button>
+											</ChildItems>
 										</ButtonGroup>
 										<ButtonGroup name="ГруппаКомандыИсходящиеЭД" id="2727">
 											<Visible>false</Visible>
@@ -738,6 +747,15 @@
 											</Title>
 											<CommandSource>Item.ИсходящиеЭД</CommandSource>
 											<ExtendedTooltip name="ГруппаКомандыИсходящиеЭДРасширеннаяПодсказка" id="2728"/>
+											<ChildItems>
+												<Button name="ПометитьКакПрочтенные1" id="3273">
+													<Type>CommandBarButton</Type>
+													<CommandName>Form.Command.ПометитьКакПрочтенные</CommandName>
+													<RepresentationInContextMenu>None</RepresentationInContextMenu>
+													<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+													<ExtendedTooltip name="ПометитьКакПрочтенные1РасширеннаяПодсказка" id="3274"/>
+												</Button>
+											</ChildItems>
 										</ButtonGroup>
 										<ButtonGroup name="ГруппаКомандыСформироватьЭД" id="2729">
 											<Visible>false</Visible>
@@ -793,6 +811,31 @@
 											<CommandName>Form.StandardCommand.CustomizeForm</CommandName>
 											<ExtendedTooltip name="ИзменитьФормуРасширеннаяПодсказка" id="2726"/>
 										</Button>
+										<Button name="ПерейтиНаЛегкийИнтерфейс" id="3285">
+											<Type>CommandBarButton</Type>
+											<CommandName>Form.Command.ПерейтиНаЛегкийИнтерфейс</CommandName>
+											<RepresentationInContextMenu>OnlyInContextMenu</RepresentationInContextMenu>
+											<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+											<ExtendedTooltip name="ПерейтиНаЛегкийИнтерфейсРасширеннаяПодсказка" id="3286"/>
+										</Button>
+										<Button name="ВыборочныйОбменПоОрганизациям" id="3334">
+											<Type>CommandBarButton</Type>
+											<CommandName>Form.Command.ВыборочныйОбменПоОрганизациям</CommandName>
+											<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+											<ExtendedTooltip name="ВыборочныйОбменПоОрганизациямРасширеннаяПодсказка" id="3335"/>
+										</Button>
+										<Button name="ПоказыватьПомеченныеНаУдаление" id="3279">
+											<Type>CommandBarButton</Type>
+											<CommandName>Form.Command.ПоказыватьПомеченныеНаУдаление</CommandName>
+											<ExtendedTooltip name="ПоказыватьПомеченныеНаУдалениеРасширеннаяПодсказка" id="3280"/>
+										</Button>
+										<Button name="ПроверитьПодписи" id="3283">
+											<Type>CommandBarButton</Type>
+											<CommandName>Form.Command.ПроверитьПодписи</CommandName>
+											<RepresentationInContextMenu>OnlyInContextMenu</RepresentationInContextMenu>
+											<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
+											<ExtendedTooltip name="ПроверитьПодписиРасширеннаяПодсказка" id="3284"/>
+										</Button>
 										<Popup name="ГруппаКонтекстныхПодсказок" id="3025">
 											<Title>
 												<v8:item>
@@ -800,8 +843,15 @@
 													<v8:content>Группа контекстных подсказок</v8:content>
 												</v8:item>
 											</Title>
-											<ExtendedTooltip name="Группа1РасширеннаяПодсказка1" id="3026"/>
+											<ExtendedTooltip name="ГруппаКонтекстныхПодсказокРасширеннаяПодсказка" id="3026"/>
 										</Popup>
+										<Button name="ПравилаПоискаПоЧастиНаименования" id="3289">
+											<Type>CommandBarButton</Type>
+											<Visible>false</Visible>
+											<Representation>Text</Representation>
+											<CommandName>InformationRegister.ПравилаПоискаПоЧастиНаименованияБЭД.Command.ПравилаПоискаПоЧастиНаименования</CommandName>
+											<ExtendedTooltip name="ПравилаПоискаПоЧастиНаименованияРасширеннаяПодсказка" id="3290"/>
+										</Button>
 									</ChildItems>
 								</CommandBar>
 								<UsualGroup name="ГруппаКомандыОбщие" id="2345">
@@ -816,6 +866,7 @@
 									<VerticalStretch>false</VerticalStretch>
 									<Group>AlwaysHorizontal</Group>
 									<HorizontalAlign>Right</HorizontalAlign>
+									<Behavior>Usual</Behavior>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="ГруппаКомандыОбщиеРасширеннаяПодсказка" id="2346"/>
@@ -837,10 +888,55 @@
 											<Type>UsualButton</Type>
 											<Representation>Picture</Representation>
 											<CommandName>Form.StandardCommand.Help</CommandName>
-											<ExtendedTooltip name="ТаблицаСправкаExtendedTooltip" id="863"/>
+											<ExtendedTooltip name="ТаблицаСправкаРасширеннаяПодсказка" id="863"/>
 										</Button>
 									</ChildItems>
 								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаПредупреждениеАвтоматическогоПолученияЭДО" id="3346">
+							<Visible>false</Visible>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа предупреждение автоматического получения ЭДО</v8:content>
+								</v8:item>
+							</Title>
+							<HorizontalStretch>true</HorizontalStretch>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<BackColor>style:ToolTipBackColor</BackColor>
+							<ExtendedTooltip name="ГруппаПредупреждениеАвтоматическогоПолученияЭДОРасширеннаяПодсказка" id="3347"/>
+							<ChildItems>
+								<PictureDecoration name="КартинкаПредупреждениеАвтоматическогоПолученияЭДО" id="3348">
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Картинка предупреждение автоматического получения ЭДО</v8:content>
+										</v8:item>
+									</Title>
+									<Picture>
+										<xr:Ref>CommonPicture.Предупреждение</xr:Ref>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
+									</Picture>
+									<ContextMenu name="КартинкаПредупреждениеАвтоматическогоПолученияЭДОКонтекстноеМеню" id="3349"/>
+									<ExtendedTooltip name="КартинкаПредупреждениеАвтоматическогоПолученияЭДОРасширеннаяПодсказка" id="3350"/>
+								</PictureDecoration>
+								<LabelDecoration name="НадписьАвтоматическоеПолученияЭДОНеВыполнено" id="3351">
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<Title formatted="true">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Не удалось выполнить автоматическое получение по некоторым &lt;link ОткрытьУчетныеЗаписиЭДО&gt;учетным записям ЭДО&lt;/&gt;.
+</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="НадписьАвтоматическоеПолученияЭДОНеВыполненоКонтекстноеМеню" id="3352"/>
+									<ExtendedTooltip name="НадписьАвтоматическоеПолученияЭДОНеВыполненоРасширеннаяПодсказка" id="3353"/>
+									<Events>
+										<Event name="URLProcessing">НадписьПредупреждениеАвтоматическогоПолученияЭДООбработкаНавигационнойСсылки</Event>
+									</Events>
+								</LabelDecoration>
 							</ChildItems>
 						</UsualGroup>
 						<Pages name="ПанельСписков" id="2489">
@@ -868,6 +964,7 @@
 											<ChangeRowOrder>false</ChangeRowOrder>
 											<RowSelectionMode>Row</RowSelectionMode>
 											<HorizontalLines>false</HorizontalLines>
+											<InitialListView>Beginning</InitialListView>
 											<EnableStartDrag>true</EnableStartDrag>
 											<FileDragMode>AsFile</FileDragMode>
 											<DataPath>ВходящиеЭД</DataPath>
@@ -894,7 +991,6 @@
 												<ExcludedCommand>LoadDynamicListSettings</ExcludedCommand>
 												<ExcludedCommand>Refresh</ExcludedCommand>
 												<ExcludedCommand>SaveDynamicListSettings</ExcludedCommand>
-												<ExcludedCommand>SearchHistory</ExcludedCommand>
 												<ExcludedCommand>ShowMultipleSelection</ExcludedCommand>
 											</CommandSet>
 											<SearchStringLocation>PullFromTop</SearchStringLocation>
@@ -935,6 +1031,11 @@
 														<Type>CommandBarButton</Type>
 														<CommandName>Form.Command.Перенаправить</CommandName>
 														<ExtendedTooltip name="ВходящиеЭДКонтекстноеМенюПеренаправитьРасширеннаяПодсказка" id="2976"/>
+													</Button>
+													<Button name="ВходящиеЭДКонтекстноеМенюПометитьКакПрочтенные" id="3255">
+														<Type>CommandBarButton</Type>
+														<CommandName>Form.Command.ПометитьКакПрочтенные</CommandName>
+														<ExtendedTooltip name="ВходящиеЭДКонтекстноеМенюПометитьКакПрочтенныеРасширеннаяПодсказка" id="3256"/>
 													</Button>
 													<ButtonGroup name="ВходящиеЭДКонтекстноеМенюГруппа" id="2977">
 														<Title>
@@ -979,16 +1080,36 @@
 												<Event name="Selection">ВходящиеЭДВыбор</Event>
 												<Event name="OnActivateRow">СписокПриАктивизацииСтроки</Event>
 												<Event name="OnGetDataAtServer">ВходящиеЭДПриПолученииДанныхНаСервере</Event>
+												<Event name="OnChange">ВходящиеЭДПриИзменении</Event>
 												<Event name="RefreshRequestProcessing">ВходящиеЭДОбработкаЗапросаОбновления</Event>
 											</Events>
 											<ChildItems>
+												<PictureField name="ВходящиеЭДПрочтен" id="3259">
+													<DataPath>ВходящиеЭД.Прочтен</DataPath>
+													<Visible>false</Visible>
+													<TitleLocation>None</TitleLocation>
+													<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+													<FooterHorizontalAlign>Center</FooterHorizontalAlign>
+													<ValuesPicture>
+														<xr:Ref>CommonPicture.КоллекцияПрочтение</xr:Ref>
+														<xr:LoadTransparent>false</xr:LoadTransparent>
+													</ValuesPicture>
+													<ContextMenu name="ВходящиеЭДПрочтенКонтекстноеМеню" id="3260"/>
+													<ExtendedTooltip name="ВходящиеЭДПрочтенРасширеннаяПодсказка" id="3261"/>
+												</PictureField>
 												<LabelField name="ВходящиеЭДКонтрагент" id="2515">
 													<DataPath>ВходящиеЭД.Контрагент</DataPath>
 													<ContextMenu name="ВходящиеЭДКонтрагентКонтекстноеМеню" id="2516"/>
 													<ExtendedTooltip name="ВходящиеЭДКонтрагентРасширеннаяПодсказка" id="2517"/>
 												</LabelField>
-												<ColumnGroup name="ВходящиеЭДГруппаВидДОкументаКоличествоСкрытых" id="3037">
-													<ExtendedTooltip name="ВходящиеЭДГруппаВидДОкументаКоличествоСкрытыхРасширеннаяПодсказка" id="3038"/>
+												<ColumnGroup name="ВходящиеЭДГруппаВидДокументаКоличествоСкрытых" id="3037">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Входящие ЭД группа вид документа количество скрытых</v8:content>
+														</v8:item>
+													</Title>
+													<ExtendedTooltip name="ВходящиеЭДГруппаВидДокументаКоличествоСкрытыхРасширеннаяПодсказка" id="3038"/>
 													<ChildItems>
 														<LabelField name="ВходящиеЭДВидДокумента" id="2856">
 															<DataPath>ВходящиеЭД.ВидДокумента</DataPath>
@@ -1142,18 +1263,6 @@
 															<ContextMenu name="ВходящиеЭДДополнительнаяИнформацияКонтекстноеМеню" id="2513"/>
 															<ExtendedTooltip name="ВходящиеЭДДополнительнаяИнформацияРасширеннаяПодсказка" id="2514"/>
 														</LabelField>
-														<LabelField name="ВходящиеЭДПричинаОтклонения" id="2530">
-															<DataPath>~ВходящиеЭД.ПричинаОтклонения</DataPath>
-															<Title>
-																<v8:item>
-																	<v8:lang>ru</v8:lang>
-																	<v8:content>Причина отклонения</v8:content>
-																</v8:item>
-															</Title>
-															<TitleLocation>None</TitleLocation>
-															<ContextMenu name="ВходящиеЭДПричинаОтклоненияКонтекстноеМеню" id="2531"/>
-															<ExtendedTooltip name="ВходящиеЭДПричинаОтклоненияРасширеннаяПодсказка" id="2532"/>
-														</LabelField>
 													</ChildItems>
 												</ColumnGroup>
 												<LabelField name="ВходящиеЭДОписание" id="2521">
@@ -1186,6 +1295,7 @@
 											<ChangeRowOrder>false</ChangeRowOrder>
 											<RowSelectionMode>Row</RowSelectionMode>
 											<HorizontalLines>false</HorizontalLines>
+											<InitialListView>Beginning</InitialListView>
 											<InitialTreeView>ExpandAllLevels</InitialTreeView>
 											<FileDragMode>AsFile</FileDragMode>
 											<DataPath>ИсходящиеЭД</DataPath>
@@ -1212,7 +1322,6 @@
 												<ExcludedCommand>LoadDynamicListSettings</ExcludedCommand>
 												<ExcludedCommand>Refresh</ExcludedCommand>
 												<ExcludedCommand>SaveDynamicListSettings</ExcludedCommand>
-												<ExcludedCommand>SearchHistory</ExcludedCommand>
 											</CommandSet>
 											<SearchStringLocation>PullFromTop</SearchStringLocation>
 											<RefreshRequest>PullFromTop</RefreshRequest>
@@ -1252,6 +1361,11 @@
 														<Type>CommandBarButton</Type>
 														<CommandName>Form.Command.Перенаправить</CommandName>
 														<ExtendedTooltip name="ИсходящиеЭДКонтекстноеМенюПеренаправитьРасширеннаяПодсказка" id="2992"/>
+													</Button>
+													<Button name="ИсходящиеЭДКонтекстноеМенюПометитьКакПрочтенные" id="3257">
+														<Type>CommandBarButton</Type>
+														<CommandName>Form.Command.ПометитьКакПрочтенные</CommandName>
+														<ExtendedTooltip name="ИсходящиеЭДКонтекстноеМенюПометитьКакПрочтенныеРасширеннаяПодсказка" id="3258"/>
 													</Button>
 													<ButtonGroup name="ИсходящиеЭДКонтекстноеМенюГруппа" id="2993">
 														<Title>
@@ -1303,9 +1417,23 @@
 												<Event name="Selection">ИсходящиеЭДВыбор</Event>
 												<Event name="OnActivateRow">СписокПриАктивизацииСтроки</Event>
 												<Event name="OnGetDataAtServer">ИсходящиеЭДПриПолученииДанныхНаСервере</Event>
+												<Event name="OnChange">ИсходящиеЭДПриИзменении</Event>
 												<Event name="RefreshRequestProcessing">ИсходящиеЭДОбработкаЗапросаОбновления</Event>
 											</Events>
 											<ChildItems>
+												<PictureField name="ИсходящиеЭДПрочтен" id="3262">
+													<DataPath>ИсходящиеЭД.Прочтен</DataPath>
+													<Visible>false</Visible>
+													<TitleLocation>None</TitleLocation>
+													<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+													<FooterHorizontalAlign>Center</FooterHorizontalAlign>
+													<ValuesPicture>
+														<xr:Ref>CommonPicture.КоллекцияПрочтение</xr:Ref>
+														<xr:LoadTransparent>false</xr:LoadTransparent>
+													</ValuesPicture>
+													<ContextMenu name="ИсходящиеЭДПрочтенКонтекстноеМеню" id="3263"/>
+													<ExtendedTooltip name="ИсходящиеЭДПрочтенРасширеннаяПодсказка" id="3264"/>
+												</PictureField>
 												<InputField name="ИсходящиеЭДОтражениеВУчете" id="2850">
 													<DataPath>ИсходящиеЭД.ОтражениеВУчете</DataPath>
 													<UserVisible>
@@ -1333,14 +1461,14 @@
 													<ContextMenu name="ИсходящиеЭДКонтрагентКонтекстноеМеню" id="2570"/>
 													<ExtendedTooltip name="ИсходящиеЭДКонтрагентРасширеннаяПодсказка" id="2571"/>
 												</InputField>
-												<ColumnGroup name="ИсходящиеЭДГруппаВидДОкументаКоличествоСкрытых" id="3039">
+												<ColumnGroup name="ИсходящиеЭДГруппаВидДокументаКоличествоСкрытых" id="3039">
 													<Title>
 														<v8:item>
 															<v8:lang>ru</v8:lang>
 															<v8:content>Вид документа</v8:content>
 														</v8:item>
 													</Title>
-													<ExtendedTooltip name="ИсходящиеЭДГруппаВидДОкументаКоличествоСкрытыхРасширеннаяПодсказка" id="3040"/>
+													<ExtendedTooltip name="ИсходящиеЭДГруппаВидДокументаКоличествоСкрытыхРасширеннаяПодсказка" id="3040"/>
 													<ChildItems>
 														<LabelField name="ИсходящиеЭДВидДокумента" id="2859">
 															<DataPath>ИсходящиеЭД.ВидДокумента</DataPath>
@@ -1464,18 +1592,6 @@
 															<ContextMenu name="ИсходящиеЭДДополнительнаяИнформацияКонтекстноеМеню" id="2567"/>
 															<ExtendedTooltip name="ИсходящиеЭДДополнительнаяИнформацияРасширеннаяПодсказка" id="2568"/>
 														</LabelField>
-														<LabelField name="ИсходящиеЭДПричинаОтклонения" id="2584">
-															<DataPath>~ИсходящиеЭД.ПричинаОтклонения</DataPath>
-															<Title>
-																<v8:item>
-																	<v8:lang>ru</v8:lang>
-																	<v8:content>Причина отклонения</v8:content>
-																</v8:item>
-															</Title>
-															<TitleLocation>None</TitleLocation>
-															<ContextMenu name="ИсходящиеЭДПричинаОтклоненияКонтекстноеМеню" id="2585"/>
-															<ExtendedTooltip name="ИсходящиеЭДПричинаОтклоненияРасширеннаяПодсказка" id="2586"/>
-														</LabelField>
 													</ChildItems>
 												</ColumnGroup>
 												<LabelField name="ИсходящиеЭДОписание" id="2575">
@@ -1517,14 +1633,12 @@
 												</v8:item>
 											</Title>
 											<CommandSet>
-												<ExcludedCommand>Change</ExcludedCommand>
 												<ExcludedCommand>CopyToClipboard</ExcludedCommand>
 												<ExcludedCommand>DynamicListStandardSettings</ExcludedCommand>
 												<ExcludedCommand>ListSettings</ExcludedCommand>
 												<ExcludedCommand>LoadDynamicListSettings</ExcludedCommand>
 												<ExcludedCommand>Refresh</ExcludedCommand>
 												<ExcludedCommand>SaveDynamicListSettings</ExcludedCommand>
-												<ExcludedCommand>SearchHistory</ExcludedCommand>
 											</CommandSet>
 											<SearchStringLocation>None</SearchStringLocation>
 											<ViewStatusLocation>None</ViewStatusLocation>
@@ -1668,7 +1782,6 @@
 												<ExcludedCommand>LoadDynamicListSettings</ExcludedCommand>
 												<ExcludedCommand>Refresh</ExcludedCommand>
 												<ExcludedCommand>SaveDynamicListSettings</ExcludedCommand>
-												<ExcludedCommand>SearchHistory</ExcludedCommand>
 												<ExcludedCommand>SetDateInterval</ExcludedCommand>
 											</CommandSet>
 											<SearchStringLocation>None</SearchStringLocation>
@@ -1796,7 +1909,6 @@
 												<ExcludedCommand>LoadDynamicListSettings</ExcludedCommand>
 												<ExcludedCommand>Refresh</ExcludedCommand>
 												<ExcludedCommand>SaveDynamicListSettings</ExcludedCommand>
-												<ExcludedCommand>SearchHistory</ExcludedCommand>
 											</CommandSet>
 											<SearchStringLocation>None</SearchStringLocation>
 											<ViewStatusLocation>None</ViewStatusLocation>
@@ -2051,14 +2163,14 @@
 													<ContextMenu name="ОшибкиЭДКонтрагентКонтекстноеМеню" id="2935"/>
 													<ExtendedTooltip name="ОшибкиЭДКонтрагентРасширеннаяПодсказка" id="2936"/>
 												</LabelField>
-												<ColumnGroup name="ОшибкиЭДГруппаВидДОкументаКоличествоСкрытых1" id="3055">
+												<ColumnGroup name="ОшибкиЭДГруппаВидДокументаКоличествоСкрытых" id="3055">
 													<Title>
 														<v8:item>
 															<v8:lang>ru</v8:lang>
 															<v8:content>Вид документа</v8:content>
 														</v8:item>
 													</Title>
-													<ExtendedTooltip name="ОшибкиЭДГруппаВидДОкументаКоличествоСкрытых1РасширеннаяПодсказка" id="3056"/>
+													<ExtendedTooltip name="ОшибкиЭДГруппаВидДокументаКоличествоСкрытыхРасширеннаяПодсказка" id="3056"/>
 													<ChildItems>
 														<LabelField name="ОшибкиЭДВидДокумента" id="2922">
 															<DataPath>ОшибкиЭД.ВидДокумента</DataPath>
@@ -2246,14 +2358,14 @@
 													<ContextMenu name="ОзнакомитьсяЭДКонтрагентКонтекстноеМеню" id="2775"/>
 													<ExtendedTooltip name="ОзнакомитьсяЭДКонтрагентРасширеннаяПодсказка" id="2776"/>
 												</LabelField>
-												<ColumnGroup name="ОзнакомитьсяЭДГруппаВидДОкументаКоличествоСкрытых1" id="3159">
+												<ColumnGroup name="ОзнакомитьсяЭДГруппаВидДокументаКоличествоСкрытых" id="3159">
 													<Title>
 														<v8:item>
 															<v8:lang>ru</v8:lang>
 															<v8:content>Вид документа</v8:content>
 														</v8:item>
 													</Title>
-													<ExtendedTooltip name="ОзнакомитьсяЭДГруппаВидДОкументаКоличествоСкрытых1РасширеннаяПодсказка" id="3160"/>
+													<ExtendedTooltip name="ОзнакомитьсяЭДГруппаВидДокументаКоличествоСкрытыхРасширеннаяПодсказка" id="3160"/>
 													<ChildItems>
 														<InputField name="ОзнакомитьсяЭДВидДокумента" id="3161">
 															<DataPath>ОзнакомитьсяЭД.ВидДокумента</DataPath>
@@ -2404,16 +2516,16 @@
 												<Event name="Selection">НоменклатураКонтрагентовВыбор</Event>
 											</Events>
 											<ChildItems>
-												<InputField name="НоменклатураКонтрагентовВладелец" id="2839">
-													<DataPath>НоменклатураКонтрагентов.Владелец</DataPath>
+												<InputField name="НоменклатураКонтрагентовКонтрагент" id="2839">
+													<DataPath>НоменклатураКонтрагентов.Контрагент</DataPath>
 													<Title>
 														<v8:item>
 															<v8:lang>ru</v8:lang>
 															<v8:content>Контрагент</v8:content>
 														</v8:item>
 													</Title>
-													<ContextMenu name="НоменклатураКонтрагентовВладелецКонтекстноеМеню" id="2840"/>
-													<ExtendedTooltip name="НоменклатураКонтрагентовВладелецРасширеннаяПодсказка" id="2841"/>
+													<ContextMenu name="НоменклатураКонтрагентовКонтрагентКонтекстноеМеню" id="2840"/>
+													<ExtendedTooltip name="НоменклатураКонтрагентовКонтрагентРасширеннаяПодсказка" id="2841"/>
 												</InputField>
 												<InputField name="НоменклатураКонтрагентовСопоставить" id="2836">
 													<DataPath>НоменклатураКонтрагентов.Сопоставить</DataPath>
@@ -2464,7 +2576,15 @@
 											<AllowRootChoice>false</AllowRootChoice>
 											<UpdateOnDataChange>Auto</UpdateOnDataChange>
 											<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
-											<ContextMenu name="ОтправитьЭДКонтекстноеМеню" id="3067"/>
+											<ContextMenu name="ОтправитьЭДКонтекстноеМеню" id="3067">
+												<ChildItems>
+													<Button name="ОтправитьЭДКонтекстноеМенюПометкаУдаления" id="3281">
+														<Type>CommandBarButton</Type>
+														<CommandName>Form.Command.ПометкаУдаления</CommandName>
+														<ExtendedTooltip name="ОтправитьЭДКонтекстноеМенюПометкаУдаленияРасширеннаяПодсказка" id="3282"/>
+													</Button>
+												</ChildItems>
+											</ContextMenu>
 											<AutoCommandBar name="ОтправитьЭДКоманднаяПанель" id="3066"/>
 											<ExtendedTooltip name="ОтправитьЭДРасширеннаяПодсказка" id="3068"/>
 											<SearchStringAddition name="ОтправитьЭДСтрокаПоиска" id="3069">
@@ -2502,14 +2622,14 @@
 													<ContextMenu name="ОтправитьЭДКонтрагентКонтекстноеМеню" id="3109"/>
 													<ExtendedTooltip name="ОтправитьЭДКонтрагентРасширеннаяПодсказка" id="3110"/>
 												</InputField>
-												<ColumnGroup name="ОтправитьЭДГруппаВидДОкументаКоличествоСкрытых" id="3122">
+												<ColumnGroup name="ОтправитьЭДГруппаВидДокументаКоличествоСкрытых" id="3122">
 													<Title>
 														<v8:item>
 															<v8:lang>ru</v8:lang>
 															<v8:content>Вид документа</v8:content>
 														</v8:item>
 													</Title>
-													<ExtendedTooltip name="ОтправитьЭДГруппаВидДОкументаКоличествоСкрытыхРасширеннаяПодсказка" id="3123"/>
+													<ExtendedTooltip name="ОтправитьЭДГруппаВидДокументаКоличествоСкрытыхРасширеннаяПодсказка" id="3123"/>
 													<ChildItems>
 														<InputField name="ОтправитьЭДВидДокумента" id="3124">
 															<DataPath>ОтправитьЭД.ВидДокумента</DataPath>
@@ -2569,6 +2689,297 @@
 								</Page>
 							</ChildItems>
 						</Pages>
+						<UsualGroup name="ГруппаОбластьПросмотра" id="3204">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа область просмотра</v8:content>
+								</v8:item>
+							</Title>
+							<Height>20</Height>
+							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаОбластьПросмотраРасширеннаяПодсказка" id="3205"/>
+							<ChildItems>
+								<UsualGroup name="ГруппаДокументУчета" id="3206">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа документ учета</v8:content>
+										</v8:item>
+									</Title>
+									<Group>AlwaysHorizontal</Group>
+									<VerticalAlign>Center</VerticalAlign>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаДокументУчетаРасширеннаяПодсказка" id="3207"/>
+									<ChildItems>
+										<LabelField name="ТекущийДокументУчетаПредставление" id="3212">
+											<DataPath>ТекущийДокументУчетаПредставление</DataPath>
+											<Hiperlink>true</Hiperlink>
+											<ContextMenu name="ТекущийДокументУчетаПредставлениеКонтекстноеМеню" id="3213"/>
+											<ExtendedTooltip name="ТекущийДокументУчетаПредставлениеРасширеннаяПодсказка" id="3214"/>
+											<Events>
+												<Event name="Click">ТекущийДокументУчетаПредставлениеНажатие</Event>
+											</Events>
+										</LabelField>
+										<LabelField name="ТекущееСостояниеЭДОУчет" id="3215">
+											<DataPath>ТекущееСостояниеЭДО</DataPath>
+											<ContextMenu name="ТекущееСостояниеЭДОУчетКонтекстноеМеню" id="3216"/>
+											<ExtendedTooltip name="ТекущееСостояниеЭДОУчетРасширеннаяПодсказка" id="3217"/>
+										</LabelField>
+										<PictureDecoration name="ПоказатьКомментарийСостоянияЭДОУчет" id="3291">
+											<Visible>false</Visible>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Показать комментарий состояния ЭДОУчет</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTipRepresentation>None</ToolTipRepresentation>
+											<GroupHorizontalAlign>Left</GroupHorizontalAlign>
+											<Hyperlink>true</Hyperlink>
+											<Picture>
+												<xr:Ref>StdPicture.Find</xr:Ref>
+												<xr:LoadTransparent>true</xr:LoadTransparent>
+											</Picture>
+											<ContextMenu name="ПоказатьКомментарийСостоянияЭДОУчетКонтекстноеМеню" id="3292"/>
+											<ExtendedTooltip name="ПоказатьКомментарийСостоянияЭДОУчетРасширеннаяПодсказка" id="3293"/>
+											<Events>
+												<Event name="Click">ПоказатьКомментарийСостояния</Event>
+											</Events>
+										</PictureDecoration>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаФайл" id="3208">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа файл</v8:content>
+										</v8:item>
+									</Title>
+									<Group>AlwaysHorizontal</Group>
+									<HorizontalAlign>Center</HorizontalAlign>
+									<Behavior>Usual</Behavior>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаФайлРасширеннаяПодсказка" id="3209"/>
+									<ChildItems>
+										<LabelDecoration name="ДекорацияНадписьФайл" id="3218">
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Файл:</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="ДекорацияНадписьФайлКонтекстноеМеню" id="3219"/>
+											<ExtendedTooltip name="ДекорацияНадписьФайлРасширеннаяПодсказка" id="3220"/>
+										</LabelDecoration>
+										<PictureField name="КартинкаФайла" id="3224">
+											<DataPath>ТекущаяКартинкаФайла</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<Width>2</Width>
+											<Height>1</Height>
+											<HorizontalStretch>false</HorizontalStretch>
+											<VerticalStretch>false</VerticalStretch>
+											<ValuesPicture>
+												<xr:Ref>CommonPicture.КоллекцияПиктограммФайлов</xr:Ref>
+												<xr:LoadTransparent>false</xr:LoadTransparent>
+											</ValuesPicture>
+											<BorderColor>style:FormBackColor</BorderColor>
+											<ContextMenu name="КартинкаФайлаКонтекстноеМеню" id="3225"/>
+											<ExtendedTooltip name="КартинкаФайлаРасширеннаяПодсказка" id="3226"/>
+										</PictureField>
+										<LabelField name="ТекущийФайлПредставление" id="3227">
+											<DataPath>ТекущийФайлПредставление</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<Hiperlink>true</Hiperlink>
+											<ContextMenu name="ТекущийФайлПредставлениеКонтекстноеМеню" id="3228"/>
+											<ExtendedTooltip name="ТекущийФайлПредставлениеРасширеннаяПодсказка" id="3229"/>
+											<Events>
+												<Event name="Click">ТекущийФайлПредставлениеНажатие</Event>
+											</Events>
+										</LabelField>
+										<LabelField name="ТекущееСостояниеЭДОФайл" id="3230">
+											<DataPath>ТекущееСостояниеЭДО</DataPath>
+											<ContextMenu name="ТекущееСостояниеЭДОФайлКонтекстноеМеню" id="3231"/>
+											<ExtendedTooltip name="ТекущееСостояниеЭДОФайлРасширеннаяПодсказка" id="3232"/>
+										</LabelField>
+										<PictureDecoration name="ПоказатьКомментарийСостоянияЭДОФайл" id="3294">
+											<Visible>false</Visible>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Показать комментарий состояния</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTipRepresentation>None</ToolTipRepresentation>
+											<GroupHorizontalAlign>Left</GroupHorizontalAlign>
+											<Hyperlink>true</Hyperlink>
+											<Picture>
+												<xr:Ref>StdPicture.Find</xr:Ref>
+												<xr:LoadTransparent>true</xr:LoadTransparent>
+											</Picture>
+											<ContextMenu name="ПоказатьКомментарийСостоянияЭДОФайлКонтекстноеМеню" id="3295"/>
+											<ExtendedTooltip name="ПоказатьКомментарийСостоянияЭДОФайлРасширеннаяПодсказка" id="3296"/>
+											<Events>
+												<Event name="Click">ПоказатьКомментарийСостояния</Event>
+											</Events>
+										</PictureDecoration>
+									</ChildItems>
+								</UsualGroup>
+								<Pages name="СтраницыПредставленийДокумента" id="3210">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Страницы представлений документа</v8:content>
+										</v8:item>
+									</Title>
+									<PagesRepresentation>None</PagesRepresentation>
+									<ExtendedTooltip name="СтраницыПредставленийДокументаРасширеннаяПодсказка" id="3211"/>
+									<ChildItems>
+										<Page name="СтраницаТабличныйДокумент" id="3233">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Страница табличный документ</v8:content>
+												</v8:item>
+											</Title>
+											<ExtendedTooltip name="СтраницаТабличныйДокументРасширеннаяПодсказка" id="3234"/>
+											<ChildItems>
+												<SpreadSheetDocumentField name="ТекущийДокументТабличныйДокумент" id="3235">
+													<DataPath>ТекущийДокументТабличныйДокумент</DataPath>
+													<TitleLocation>None</TitleLocation>
+													<ContextMenu name="ТекущийДокументТабличныйДокументКонтекстноеМеню" id="3236"/>
+													<ExtendedTooltip name="ТекущийДокументТабличныйДокументРасширеннаяПодсказка" id="3237"/>
+												</SpreadSheetDocumentField>
+											</ChildItems>
+										</Page>
+										<Page name="СтраницаОжидание" id="3238">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Страница ожидание</v8:content>
+												</v8:item>
+											</Title>
+											<ExtendedTooltip name="СтраницаОжиданиеРасширеннаяПодсказка" id="3239"/>
+											<ChildItems>
+												<UsualGroup name="ГруппаОжиданиеКартинкаИНадпись" id="3240">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа ожидание картинка и надпись</v8:content>
+														</v8:item>
+													</Title>
+													<VerticalAlign>Center</VerticalAlign>
+													<Behavior>Usual</Behavior>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ГруппаОжиданиеКартинкаИНадписьРасширеннаяПодсказка" id="3241"/>
+													<ChildItems>
+														<PictureDecoration name="КартинкаДлительнаяОперация" id="3242">
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Длительная операция</v8:content>
+																</v8:item>
+															</Title>
+															<Picture>
+																<xr:Ref>CommonPicture.ДлительнаяОперация48</xr:Ref>
+																<xr:LoadTransparent>false</xr:LoadTransparent>
+															</Picture>
+															<ContextMenu name="КартинкаДлительнаяОперацияКонтекстноеМеню" id="3243"/>
+															<ExtendedTooltip name="КартинкаДлительнаяОперацияРасширеннаяПодсказка" id="3244"/>
+														</PictureDecoration>
+														<LabelDecoration name="НадписьДлительнаяОперация" id="3245">
+															<Width>30</Width>
+															<AutoMaxWidth>false</AutoMaxWidth>
+															<HorizontalStretch>true</HorizontalStretch>
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Пожалуйста, подождите...</v8:content>
+																</v8:item>
+															</Title>
+															<ContextMenu name="НадписьДлительнаяОперацияКонтекстноеМеню" id="3246"/>
+															<ExtendedTooltip name="НадписьДлительнаяОперацияРасширеннаяПодсказка" id="3247"/>
+														</LabelDecoration>
+													</ChildItems>
+												</UsualGroup>
+											</ChildItems>
+										</Page>
+										<Page name="СтраницаОшибка" id="3248">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Страница ошибка</v8:content>
+												</v8:item>
+											</Title>
+											<ExtendedTooltip name="СтраницаОшибкаРасширеннаяПодсказка" id="3249"/>
+											<ChildItems>
+												<UsualGroup name="ГруппаОшибкаФормированияПредставления" id="3250">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа ошибка формирования представления</v8:content>
+														</v8:item>
+													</Title>
+													<Behavior>Usual</Behavior>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<BackColor>style:ЦветФонаПредупреждения</BackColor>
+													<ExtendedTooltip name="ГруппаОшибкаФормированияПредставленияРасширеннаяПодсказка" id="3251"/>
+													<ChildItems>
+														<LabelDecoration name="НадписьОшибкаФормированияПредставления" id="3252">
+															<AutoMaxWidth>false</AutoMaxWidth>
+															<Title formatted="true">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>&lt;color #333333&gt;&lt;bgcolor #ffffff&gt;&lt;font Arial, Verdana, sans-serif&gt;При формировании представления электронного документа возникли ошибки. Подробности в &lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;link ОткрытьЖурналРегистрации&gt;&lt;color #1c55ae&gt;&lt;font Arial, Verdana, sans-serif&gt;журнале регистрации&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;color #333333&gt;&lt;bgcolor #ffffff&gt;&lt;font Arial, Verdana, sans-serif&gt;.&lt;/&gt;&lt;/&gt;&lt;/&gt;
+</v8:content>
+																</v8:item>
+															</Title>
+															<ContextMenu name="НадписьОшибкаФормированияПредставленияКонтекстноеМеню" id="3253"/>
+															<ExtendedTooltip name="НадписьОшибкаФормированияПредставленияРасширеннаяПодсказка" id="3254"/>
+															<Events>
+																<Event name="URLProcessing">НадписьОшибкаФормированияПредставленияОбработкаНавигационнойСсылки</Event>
+															</Events>
+														</LabelDecoration>
+													</ChildItems>
+												</UsualGroup>
+											</ChildItems>
+										</Page>
+										<Page name="СтраницаТекущийДокументPDF" id="3305">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Страница текущий документ PDF</v8:content>
+												</v8:item>
+											</Title>
+											<Group>AlwaysHorizontal</Group>
+											<ExtendedTooltip name="СтраницаТекущийДокументPDFРасширеннаяПодсказка" id="3306"/>
+										</Page>
+										<Page name="СтраницаПустая" id="3329">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Страница пустая</v8:content>
+												</v8:item>
+											</Title>
+											<ExtendedTooltip name="СтраницаПустаяРасширеннаяПодсказка" id="3330"/>
+											<ChildItems>
+												<LabelDecoration name="ДекорацияПустая" id="3331">
+													<ContextMenu name="ДекорацияПустаяКонтекстноеМеню" id="3332"/>
+													<ExtendedTooltip name="ДекорацияПустаяРасширеннаяПодсказка" id="3333"/>
+												</LabelDecoration>
+											</ChildItems>
+										</Page>
+									</ChildItems>
+								</Pages>
+							</ChildItems>
+						</UsualGroup>
 						<UsualGroup name="ГруппаЛегенда" id="2803">
 							<Title>
 								<v8:item>
@@ -2577,6 +2988,7 @@
 								</v8:item>
 							</Title>
 							<Group>AlwaysHorizontal</Group>
+							<Behavior>Usual</Behavior>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="ГруппаЛегендаРасширеннаяПодсказка" id="2804"/>
@@ -2690,6 +3102,7 @@
 							</Title>
 							<HorizontalStretch>true</HorizontalStretch>
 							<Group>AlwaysHorizontal</Group>
+							<Behavior>Usual</Behavior>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="ГруппаПодвалПравоРасширеннаяПодсказка" id="1545"/>
@@ -2703,7 +3116,7 @@
 											<v8:content>Общее состояние ЭДО</v8:content>
 										</v8:item>
 									</Title>
-									<ExtendedTooltip name="ОтчетДиаграммаСостоянияЭДООткрытьExtendedTooltip" id="1076"/>
+									<ExtendedTooltip name="ОтчетДиаграммаСостоянияЭДООткрытьРасширеннаяПодсказка" id="1076"/>
 								</Button>
 								<Button name="ОбработкаЭлектронныеДокументыНастройкиЭДООткрыть" id="1077">
 									<Type>Hyperlink</Type>
@@ -2714,7 +3127,7 @@
 											<v8:content>Настройки ЭДО</v8:content>
 										</v8:item>
 									</Title>
-									<ExtendedTooltip name="ОбработкаЭлектронныеДокументыНастройкиЭДООткрытьExtendedTooltip" id="1078"/>
+									<ExtendedTooltip name="ОбработкаЭлектронныеДокументыНастройкиЭДООткрытьРасширеннаяПодсказка" id="1078"/>
 								</Button>
 								<Button name="ОбработкаЭлектронныеДокументыАрхивЭДООткрыть" id="1079">
 									<Type>Hyperlink</Type>
@@ -2731,6 +3144,17 @@
 									<Type>Hyperlink</Type>
 									<CommandName>CommonCommand.ДиагностикаЭДО</CommandName>
 									<ExtendedTooltip name="ДиагностикаЭДОРасширеннаяПодсказка" id="2906"/>
+								</Button>
+								<Button name="ОткрытьМашиночитаемыеДоверенности" id="3275">
+									<Type>Hyperlink</Type>
+									<CommandName>Form.Command.ОткрытьМашиночитаемыеДоверенности</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Машиночитаемые доверенности</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="ОткрытьМашиночитаемыеДоверенностиРасширеннаяПодсказка" id="3276"/>
 								</Button>
 								<LabelDecoration name="НадписьВерсияБЭД" id="3016">
 									<TextColor>style:ПоясняющийТекст</TextColor>
@@ -2760,9 +3184,10 @@
 			<HorizontalStretch>true</HorizontalStretch>
 			<Group>Horizontal</Group>
 			<VerticalAlign>Top</VerticalAlign>
+			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
-			<ExtendedTooltip name="ГруппаПодвалExtendedTooltip" id="1066"/>
+			<ExtendedTooltip name="ГруппаПодвалРасширеннаяПодсказка" id="1066"/>
 		</UsualGroup>
 	</ChildItems>
 	<Attributes>
@@ -2804,7 +3229,114 @@
 	И НЕ СостоянияЭД.СсылкаНаОбъект ССЫЛКА Документ.УдалитьПроизвольныйЭД
 	И НЕ СостоянияЭД.СсылкаНаОбъект ССЫЛКА Документ.ТранспортныйКонтейнерЭДО
 	И НЕ СостоянияЭД.СсылкаНаОбъект ССЫЛКА Справочник.НастройкиЭДО
-	И НЕ СостоянияЭД.СсылкаНаОбъект ССЫЛКА Справочник.УдалитьСоглашенияОбИспользованииЭД</QueryText>
+	И НЕ СостоянияЭД.СсылкаНаОбъект ССЫЛКА Справочник.УдалитьСоглашенияОбИспользованииЭД
+	И НЕ ТИПЗНАЧЕНИЯ(СостоянияЭД.СсылкаНаОбъект) В (&amp;ТипыДоговорСКонтрагентомЭДО)
+	И СостоянияЭД.Вид &lt;&gt; ""</QueryText>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Документ</dcssch:dataPath>
+					<dcssch:field>Документ</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Документ</v8:content>
+						</v8:item>
+					</dcssch:title>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ВидДокумента</dcssch:dataPath>
+					<dcssch:field>ВидДокумента</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Вид документа</v8:content>
+						</v8:item>
+					</dcssch:title>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Дата</dcssch:dataPath>
+					<dcssch:field>Дата</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Номер</dcssch:dataPath>
+					<dcssch:field>Номер</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Организация</dcssch:dataPath>
+					<dcssch:field>Организация</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Контрагент</dcssch:dataPath>
+					<dcssch:field>Контрагент</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Контрагент</v8:content>
+						</v8:item>
+					</dcssch:title>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>СуммаДокумента</dcssch:dataPath>
+					<dcssch:field>СуммаДокумента</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Ссылка</dcssch:dataPath>
+					<dcssch:field>Ссылка</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ссылка</v8:content>
+						</v8:item>
+					</dcssch:title>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>СостояниеЭДО</dcssch:dataPath>
+					<dcssch:field>СостояниеЭДО</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>УдалитьЭлектронныйДокумент</dcssch:dataPath>
+					<dcssch:field>УдалитьЭлектронныйДокумент</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>УдалитьДействияСНашейСтороны</dcssch:dataPath>
+					<dcssch:field>УдалитьДействияСНашейСтороны</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>УдалитьДействияСоСтороныДругогоУчастника</dcssch:dataPath>
+					<dcssch:field>УдалитьДействияСоСтороныДругогоУчастника</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Комментарий</dcssch:dataPath>
+					<dcssch:field>Комментарий</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ПредставлениеСостояния</dcssch:dataPath>
+					<dcssch:field>ПредставлениеСостояния</dcssch:field>
+				</Field>
+				<Parameter>
+					<dcssch:name>ПустойКонтрагент</dcssch:name>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Пустой контрагент</v8:content>
+						</v8:item>
+					</dcssch:title>
+					<dcssch:valueType>
+						<v8:TypeId>8b205543-67c4-40ad-86c0-19fb38310d3d</v8:TypeId>
+					</dcssch:valueType>
+					<dcssch:value xsi:nil="true"/>
+					<dcssch:useRestriction>true</dcssch:useRestriction>
+				</Parameter>
+				<Parameter>
+					<dcssch:name>ТипыДоговорСКонтрагентомЭДО</dcssch:name>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Типы договор с контрагентом ЭДО</v8:content>
+						</v8:item>
+					</dcssch:title>
+					<dcssch:useRestriction>true</dcssch:useRestriction>
+					<dcssch:valueListAllowed>true</dcssch:valueListAllowed>
+				</Parameter>
 				<MainTable>InformationRegister.СостоянияПоОбъектамУчетаЭДО</MainTable>
 				<ListSettings>
 					<dcsset:filter>
@@ -3110,6 +3642,7 @@
 				<Field>ВходящиеЭД.DefaultPicture</Field>
 				<Field>ВходящиеЭД.ДатаПакета</Field>
 				<Field>ВходящиеЭД.ИдентификаторПакета</Field>
+				<Field>ВходящиеЭД.ИндексКартинкиПакета</Field>
 				<Field>ВходящиеЭД.КлючДокумента</Field>
 				<Field>ВходящиеЭД.КлючПакета</Field>
 				<Field>ВходящиеЭД.КлючСортировкиПакета</Field>
@@ -3120,6 +3653,7 @@
 				<Field>ВходящиеЭД.ПервыйДокументПакета</Field>
 				<Field>ВходящиеЭД.ПорядокСортировкиВПакете</Field>
 				<Field>ВходящиеЭД.ПредставлениеДокументовВнеОтбора</Field>
+				<Field>ВходящиеЭД.Прочтен</Field>
 				<Field>ВходящиеЭД.ТипДокумента</Field>
 				<Field>ВходящиеЭД.Четность</Field>
 				<Field>ВходящиеЭД.ЭлектронныйДокумент</Field>
@@ -3128,20 +3662,20 @@
 				<ManualQuery>true</ManualQuery>
 				<DynamicDataRead>true</DynamicDataRead>
 				<QueryText>ВЫБРАТЬ РАЗРЕШЕННЫЕ
-	ЭлектронныеДокументы.Ссылка КАК ЭлектронныйДокумент,
-	ЭлектронныеДокументы.ДатаДокумента КАК Дата,
-	ЭлектронныеДокументы.НомерДокумента КАК Номер,
-	ЭлектронныеДокументы.Организация КАК Организация,
-	ЭлектронныеДокументы.Контрагент КАК Контрагент,
-	ЭлектронныеДокументы.ДоговорКонтрагента КАК ДоговорКонтрагента,
-	ЭлектронныеДокументы.СуммаДокумента КАК СуммаДокумента,
-	ЭлектронныеДокументы.Ответственный КАК Ответственный,
-	СостоянияЭДО.Состояние КАК СостояниеЭДО,
-	ВЫРАЗИТЬ(СостоянияЭДО.Комментарий КАК СТРОКА(100)) КАК ДополнительнаяИнформация,
-	ЭлектронныеДокументы.ВидДокумента КАК ВидДокумента,
-	ЭлектронныеДокументы.ВидДокумента.ТипДокумента КАК ТипДокумента,
+	ЭлектронныеДокументыПереопределяемый.Ссылка КАК ЭлектронныйДокумент,
+	ЭлектронныеДокументыПереопределяемый.ДатаДокумента КАК Дата,
+	ЭлектронныеДокументыПереопределяемый.НомерДокумента КАК Номер,
+	ЭлектронныеДокументыПереопределяемый.Организация КАК Организация,
+	ЭлектронныеДокументыПереопределяемый.Контрагент КАК Контрагент,
+	ЭлектронныеДокументыПереопределяемый.ДоговорКонтрагента КАК ДоговорКонтрагента,
+	ЭлектронныеДокументыПереопределяемый.СуммаДокумента КАК СуммаДокумента,
+	ЭлектронныеДокументыПереопределяемый.Ответственный КАК Ответственный,
+	СостоянияЭДОПереопределяемый.Состояние КАК СостояниеЭДО,
+	ВЫРАЗИТЬ(СостоянияЭДОПереопределяемый.Комментарий КАК СТРОКА(100)) КАК ДополнительнаяИнформация,
+	ЭлектронныеДокументыПереопределяемый.ВидДокумента КАК ВидДокумента,
+	ЭлектронныеДокументыПереопределяемый.ВидДокумента.ТипДокумента КАК ТипДокумента,
 	"КартинкаМК" КАК КартинкаМК,
-	ВЫРАЗИТЬ(ЭлектронныеДокументы.Комментарий КАК СТРОКА(255)) КАК Описание,
+	ВЫРАЗИТЬ(ЭлектронныеДокументыПереопределяемый.Комментарий КАК СТРОКА(255)) КАК Описание,
 	&amp;РежимОтображения КАК РежимОтображения,
 	&amp;СписокПользователей КАК СписокПользователей,
 	ВЫБОР
@@ -3157,60 +3691,83 @@
 		ИНАЧЕ 3
 	КОНЕЦ КАК КонтрольОтраженияВУчете,
 	ВЫРАЗИТЬ("" КАК СТРОКА(300)) КАК ОтражениеВУчете,
-	СоставПакетовДокументовЭДО.ИдентификаторПакета КАК ИдентификаторПакета,
+	СоставПакетовДокументовЭДОПереопределяемый.ИдентификаторПакета КАК ИдентификаторПакета,
 	ВЫРАЗИТЬ("" КАК СТРОКА(20)) КАК ПредставлениеДокументовВнеОтбора,
 	Ложь КАК ПервыйДокументПакета,
-	ДанныеКоличестваДокументовВПакете.КоличествоДокументов КАК КоличествоДокументовВПакете,
+	ДанныеКоличестваДокументовВПакетеПереопределяемый.КоличествоДокументов КАК КоличествоДокументовВПакете,
 	ВЫБОР
-		КОГДА ПакетыДокументовЭДО.Дата ЕСТЬ NULL
-			ТОГДА ЭлектронныеДокументы.ДатаДокумента
-		ИНАЧЕ ПакетыДокументовЭДО.Дата
+		КОГДА ПакетыДокументовЭДОПереопределяемый.Дата ЕСТЬ NULL
+			ТОГДА ЭлектронныеДокументыПереопределяемый.ДатаДокумента
+		ИНАЧЕ ПакетыДокументовЭДОПереопределяемый.Дата
 	КОНЕЦ КАК ДатаПакета,
-	ЭлектронныеДокументы.Номер КАК НомерСлужебный,
+	ЭлектронныеДокументыПереопределяемый.Номер КАК НомерСлужебный,
 	-1 КАК ИндексКартинкиПакета,
-	ПакетыДокументовЭДО.КлючСортировки КАК КлючСортировкиПакета,
-	ЭлектронныеДокументы.ВидДокумента.ПорядокСортировкиВПакете КАК ПорядокСортировкиВПакете,
+	ПакетыДокументовЭДОПереопределяемый.КлючСортировки КАК КлючСортировкиПакета,
+	ЭлектронныеДокументыПереопределяемый.ВидДокумента.ПорядокСортировкиВПакете КАК ПорядокСортировкиВПакете,
 	Ложь КАК Четность,
 	ВЫРАЗИТЬ("" КАК СТРОКА(36)) КАК КлючДокумента,
-	ВЫРАЗИТЬ("" КАК СТРОКА(36)) КАК КлючПакета
+	ВЫРАЗИТЬ("" КАК СТРОКА(36)) КАК КлючПакета,
+	ВЫБОР
+		КОГДА ЭлектронныеДокументыПереопределяемый.Дата &lt; &amp;ДатаПереходаНаВерсиюСПрочтенностью
+		И СведенияОПрочтенииПереопределяемый.Прочтен ЕСТЬ NULL
+			ТОГДА ИСТИНА
+		КОГДА СведенияОПрочтенииПереопределяемый.Прочтен ЕСТЬ NULL
+			ТОГДА ЛОЖЬ
+		ИНАЧЕ СведенияОПрочтенииПереопределяемый.Прочтен
+	КОНЕЦ КАК Прочтен,
+	ЕСТЬNULL(ПроверкиЭлектронныхПодписейЭДОПереопределяемый.ЕстьНевалидныеПодписиПоМЧД, ЛОЖЬ) КАК
+		ЕстьНевалидныеПодписиПоМЧД
 {ВЫБРАТЬ
 	КонтрольОтраженияВУчете}
 ИЗ
-	Документ.ЭлектронныйДокументВходящийЭДО КАК ЭлектронныеДокументы
-		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.СостоянияДокументовЭДО КАК СостоянияЭДО
-		ПО СостоянияЭДО.ЭлектронныйДокумент = ЭлектронныеДокументы.Ссылка
-		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.СоставПакетовДокументовЭДО КАК СоставПакетовДокументовЭДО
+	Документ.ЭлектронныйДокументВходящийЭДО КАК ЭлектронныеДокументыПереопределяемый
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.СостоянияДокументовЭДО КАК СостоянияЭДОПереопределяемый
+		ПО СостоянияЭДОПереопределяемый.ЭлектронныйДокумент = ЭлектронныеДокументыПереопределяемый.Ссылка
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.СоставПакетовДокументовЭДО КАК СоставПакетовДокументовЭДОПереопределяемый
 			ЛЕВОЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
-				СоставПакетовДокументовЭДО.ИдентификаторПакета,
-				КОЛИЧЕСТВО(СоставПакетовДокументовЭДО.ЭлектронныйДокумент) КАК КоличествоДокументов
+				СоставПакетовДокументовЭДОПереопределяемый.ИдентификаторПакета,
+				КОЛИЧЕСТВО(СоставПакетовДокументовЭДОПереопределяемый.ЭлектронныйДокумент) КАК КоличествоДокументов
 			ИЗ
-				РегистрСведений.СоставПакетовДокументовЭДО КАК СоставПакетовДокументовЭДО
+				РегистрСведений.СоставПакетовДокументовЭДО КАК СоставПакетовДокументовЭДОПереопределяемый
 			СГРУППИРОВАТЬ ПО
-				СоставПакетовДокументовЭДО.ИдентификаторПакета) КАК ДанныеКоличестваДокументовВПакете
-			ПО СоставПакетовДокументовЭДО.ИдентификаторПакета = ДанныеКоличестваДокументовВПакете.ИдентификаторПакета
-		ПО СоставПакетовДокументовЭДО.ЭлектронныйДокумент = ЭлектронныеДокументы.Ссылка
-		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ПакетыДокументовЭДО КАК ПакетыДокументовЭДО
-		ПО СоставПакетовДокументовЭДО.ИдентификаторПакета = ПакетыДокументовЭДО.ИдентификаторПакета
+				СоставПакетовДокументовЭДОПереопределяемый.ИдентификаторПакета) КАК
+				ДанныеКоличестваДокументовВПакетеПереопределяемый
+			ПО СоставПакетовДокументовЭДОПереопределяемый.ИдентификаторПакета = ДанныеКоличестваДокументовВПакетеПереопределяемый.ИдентификаторПакета
+		ПО СоставПакетовДокументовЭДОПереопределяемый.ЭлектронныйДокумент = ЭлектронныеДокументыПереопределяемый.Ссылка
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ПакетыДокументовЭДО КАК ПакетыДокументовЭДОПереопределяемый
+		ПО СоставПакетовДокументовЭДОПереопределяемый.ИдентификаторПакета = ПакетыДокументовЭДОПереопределяемый.ИдентификаторПакета
 		{ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.КонтрольОтраженияВУчетеЭДО КАК КонтрольОтраженияПереопределяемый
-		ПО ЭлектронныеДокументы.Ссылка = КонтрольОтраженияПереопределяемый.ЭлектронныйДокумент}
+		ПО ЭлектронныеДокументыПереопределяемый.Ссылка = КонтрольОтраженияПереопределяемый.ЭлектронныйДокумент}
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.СведенияОПрочтенииДокументовЭДО КАК СведенияОПрочтенииПереопределяемый
+		ПО ЭлектронныеДокументыПереопределяемый.Ссылка = СведенияОПрочтенииПереопределяемый.Объект
+		И (СведенияОПрочтенииПереопределяемый.Пользователь = &amp;Пользователь)
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ПроверкиЭлектронныхПодписейЭДО КАК ПроверкиЭлектронныхПодписейЭДОПереопределяемый
+		ПО ЭлектронныеДокументыПереопределяемый.Ссылка = ПроверкиЭлектронныхПодписейЭДОПереопределяемый.ЭлектронныйДокумент
 ГДЕ
-	НЕ ЭлектронныеДокументы.ПометкаУдаления
+	ВЫБОР
+		КОГДА НЕ &amp;ПоказыватьПомеченныеНаУдаление
+			ТОГДА НЕ ЭлектронныеДокументыПереопределяемый.ПометкаУдаления
+		ИНАЧЕ
+			ИСТИНА
+	КОНЕЦ
 {ГДЕ
-	СостоянияЭДО.Состояние КАК СостояниеЭДО,
+	СостоянияЭДОПереопределяемый.Состояние КАК СостояниеЭДО,
 	(1 В
 		(ВЫБРАТЬ ПЕРВЫЕ 1
 			1
 		ИЗ
 			РегистрСведений.ОбъектыУчетаДокументовЭДО КАК ОбъектыУчетаДокументооборотаЭДО
 		ГДЕ
-			ОбъектыУчетаДокументооборотаЭДО.ЭлектронныйДокумент = ЭлектронныеДокументы.Ссылка)) КАК ЕстьОснование,
+			ОбъектыУчетаДокументооборотаЭДО.ЭлектронныйДокумент = ЭлектронныеДокументыПереопределяемый.Ссылка)) КАК
+		ЕстьОснование,
 	(1 В
 		(ВЫБРАТЬ ПЕРВЫЕ 1
 			1
 		ИЗ
 			РегистрСведений.КонтрольОтраженияВУчетеЭДО КАК КонтрольПереопределяемый
 		ГДЕ
-			ЭлектронныеДокументы.Ссылка = КонтрольПереопределяемый.ЭлектронныйДокумент)) КАК ЕстьКонтрольОтражения}</QueryText>
+			ЭлектронныеДокументыПереопределяемый.Ссылка = КонтрольПереопределяемый.ЭлектронныйДокумент)) КАК
+		ЕстьКонтрольОтражения}</QueryText>
 				<MainTable>Document.ЭлектронныйДокументВходящийЭДО</MainTable>
 				<ListSettings>
 					<dcsset:filter>
@@ -3279,6 +3836,7 @@
 				<Field>ИсходящиеЭД.ПервыйДокументПакета</Field>
 				<Field>ИсходящиеЭД.ПорядокСортировкиВПакете</Field>
 				<Field>ИсходящиеЭД.ПредставлениеДокументовВнеОтбора</Field>
+				<Field>ИсходящиеЭД.Прочтен</Field>
 				<Field>ИсходящиеЭД.Четность</Field>
 				<Field>ИсходящиеЭД.ЭлектронныйДокумент</Field>
 			</UseAlways>
@@ -3286,72 +3844,94 @@
 				<ManualQuery>true</ManualQuery>
 				<DynamicDataRead>true</DynamicDataRead>
 				<QueryText>ВЫБРАТЬ РАЗРЕШЕННЫЕ
-	ЭлектронныеДокументы.Ссылка КАК ЭлектронныйДокумент,
-	ЭлектронныеДокументы.ДатаДокумента КАК Дата,
-	ЭлектронныеДокументы.НомерДокумента КАК Номер,
-	ЭлектронныеДокументы.Организация КАК Организация,
-	ВЫБОР КОГДА ЭлектронныеДокументы.ВидДокумента.ТипДокумента = ЗНАЧЕНИЕ(Перечисление.ТипыДокументовЭДО.Внутренний) Тогда
-		ЭлектронныеДокументы.Организация
-	ИНАЧЕ
-		ЭлектронныеДокументы.Контрагент 
+	ЭлектронныеДокументыПереопределяемый.Ссылка КАК ЭлектронныйДокумент,
+	ЭлектронныеДокументыПереопределяемый.ДатаДокумента КАК Дата,
+	ЭлектронныеДокументыПереопределяемый.НомерДокумента КАК Номер,
+	ЭлектронныеДокументыПереопределяемый.Организация КАК Организация,
+	ВЫБОР
+		КОГДА
+			ЭлектронныеДокументыПереопределяемый.ВидДокумента.ТипДокумента = ЗНАЧЕНИЕ(Перечисление.ТипыДокументовЭДО.Внутренний)
+			Тогда ЭлектронныеДокументыПереопределяемый.Организация
+		ИНАЧЕ ЭлектронныеДокументыПереопределяемый.Контрагент
 	КОНЕЦ КАК Контрагент,
-	ЭлектронныеДокументы.ДоговорКонтрагента КАК ДоговорКонтрагента,
-	ЭлектронныеДокументы.СуммаДокумента КАК СуммаДокумента,
-	ЭлектронныеДокументы.Ответственный КАК Ответственный,
-	СостоянияЭДО.Состояние КАК СостояниеЭДО,
+	ЭлектронныеДокументыПереопределяемый.ДоговорКонтрагента КАК ДоговорКонтрагента,
+	ЭлектронныеДокументыПереопределяемый.СуммаДокумента КАК СуммаДокумента,
+	ЭлектронныеДокументыПереопределяемый.Ответственный КАК Ответственный,
+	СостоянияЭДОПереопределяемый.Состояние КАК СостояниеЭДО,
 	ВЫРАЗИТЬ("" КАК СТРОКА(300)) КАК ОтражениеВУчете,
-	ВЫРАЗИТЬ(СостоянияЭДО.Комментарий КАК СТРОКА(100)) КАК ДополнительнаяИнформация,
-	ЭлектронныеДокументы.ВидДокумента КАК ВидДокумента,
+	ВЫРАЗИТЬ(СостоянияЭДОПереопределяемый.Комментарий КАК СТРОКА(100)) КАК ДополнительнаяИнформация,
+	ЭлектронныеДокументыПереопределяемый.ВидДокумента КАК ВидДокумента,
 	"КартинкаМК" КАК КартинкаМК,
-	ВЫРАЗИТЬ(ЭлектронныеДокументы.Комментарий КАК СТРОКА(255)) КАК Описание,
+	ВЫРАЗИТЬ(ЭлектронныеДокументыПереопределяемый.Комментарий КАК СТРОКА(255)) КАК Описание,
 	&amp;РежимОтображения КАК РежимОтображения,
 	&amp;СписокПользователей КАК СписокПользователей,
-	СоставПакетовДокументовЭДО.ИдентификаторПакета КАК ИдентификаторПакета,
+	СоставПакетовДокументовЭДОПереопределяемый.ИдентификаторПакета КАК ИдентификаторПакета,
 	ВЫРАЗИТЬ("" КАК СТРОКА(20)) КАК ПредставлениеДокументовВнеОтбора,
 	Ложь КАК ПервыйДокументПакета,
 	ДанныеКоличестваДокументовВПакете.КоличествоДокументов КАК КоличествоДокументовВПакете,
 	ВЫБОР
-		КОГДА ПакетыДокументовЭДО.Дата ЕСТЬ NULL
-			ТОГДА ЭлектронныеДокументы.ДатаДокумента
-		ИНАЧЕ ПакетыДокументовЭДО.Дата
+		КОГДА ПакетыДокументовЭДОПереопределяемый.Дата ЕСТЬ NULL
+			ТОГДА ЭлектронныеДокументыПереопределяемый.ДатаДокумента
+		ИНАЧЕ ПакетыДокументовЭДОПереопределяемый.Дата
 	КОНЕЦ КАК ДатаПакета,
-	ЭлектронныеДокументы.Номер КАК НомерСлужебный,
+	ЭлектронныеДокументыПереопределяемый.Номер КАК НомерСлужебный,
 	-1 КАК ИндексКартинкиПакета,
-	ПакетыДокументовЭДО.КлючСортировки КАК КлючСортировкиПакета,
-	ЭлектронныеДокументы.ВидДокумента.ПорядокСортировкиВПакете КАК ПорядокСортировкиВПакете,
+	ПакетыДокументовЭДОПереопределяемый.КлючСортировки КАК КлючСортировкиПакета,
+	ЭлектронныеДокументыПереопределяемый.ВидДокумента.ПорядокСортировкиВПакете КАК ПорядокСортировкиВПакете,
 	Ложь КАК Четность,
 	ВЫРАЗИТЬ("" КАК СТРОКА(36)) КАК КлючДокумента,
-	ВЫРАЗИТЬ("" КАК СТРОКА(36)) КАК КлючПакета
-	
+	ВЫРАЗИТЬ("" КАК СТРОКА(36)) КАК КлючПакета,
+	ВЫБОР
+		КОГДА ЭлектронныеДокументыПереопределяемый.Дата &lt; &amp;ДатаПереходаНаВерсиюСПрочтенностью
+		И СведенияОПрочтенииПереопределяемый.Прочтен ЕСТЬ NULL
+			ТОГДА ИСТИНА
+		КОГДА СведенияОПрочтенииПереопределяемый.Прочтен ЕСТЬ NULL
+			ТОГДА ЛОЖЬ
+		ИНАЧЕ СведенияОПрочтенииПереопределяемый.Прочтен
+	КОНЕЦ КАК Прочтен,
+	ЕСТЬNULL(ПроверкиЭлектронныхПодписейЭДОПереопределяемый.ЕстьНевалидныеПодписиПоМЧД, ЛОЖЬ) КАК
+		ЕстьНевалидныеПодписиПоМЧД
 {ГДЕ
-	СостоянияЭДО.Состояние КАК СостояниеЭДО,
+	СостоянияЭДОПереопределяемый.Состояние КАК СостояниеЭДО,
 	(1 В
 		(ВЫБРАТЬ ПЕРВЫЕ 1
 			1
 		ИЗ
 			РегистрСведений.СостояниеПодписанияЭД КАК НаПодписиПереопределяемый
 		ГДЕ
-			ЭлектронныеДокументы.Ссылка = НаПодписиПереопределяемый.Объект.ЭлектронныйДокумент
+			ЭлектронныеДокументыПереопределяемый.Ссылка = НаПодписиПереопределяемый.Объект.ЭлектронныйДокумент
 			И НаПодписиПереопределяемый.Текущий
 			И ТИПЗНАЧЕНИЯ(НаПодписиПереопределяемый.Объект) = ТИП(Документ.СообщениеЭДО)
 			И (&amp;РежимОтображения &lt;&gt; "КИсполнению"
 			ИЛИ НаПодписиПереопределяемый.Подписант В (&amp;СписокПользователей)))) КАК НаПодпись}
 ИЗ
-	Документ.ЭлектронныйДокументИсходящийЭДО КАК ЭлектронныеДокументы
-		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.СостоянияДокументовЭДО КАК СостоянияЭДО
-		ПО СостоянияЭДО.ЭлектронныйДокумент = ЭлектронныеДокументы.Ссылка
-		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.СоставПакетовДокументовЭДО КАК СоставПакетовДокументовЭДО
+	Документ.ЭлектронныйДокументИсходящийЭДО КАК ЭлектронныеДокументыПереопределяемый
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.СостоянияДокументовЭДО КАК СостоянияЭДОПереопределяемый
+		ПО СостоянияЭДОПереопределяемый.ЭлектронныйДокумент = ЭлектронныеДокументыПереопределяемый.Ссылка
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.СоставПакетовДокументовЭДО КАК СоставПакетовДокументовЭДОПереопределяемый
 			ЛЕВОЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
-				СоставПакетовДокументовЭДО.ИдентификаторПакета,
-				КОЛИЧЕСТВО(СоставПакетовДокументовЭДО.ЭлектронныйДокумент) КАК КоличествоДокументов
+				СоставПакетовДокументовЭДОПереопределяемый.ИдентификаторПакета,
+				КОЛИЧЕСТВО(СоставПакетовДокументовЭДОПереопределяемый.ЭлектронныйДокумент) КАК КоличествоДокументов
 			ИЗ
-				РегистрСведений.СоставПакетовДокументовЭДО КАК СоставПакетовДокументовЭДО
+				РегистрСведений.СоставПакетовДокументовЭДО КАК СоставПакетовДокументовЭДОПереопределяемый
 			СГРУППИРОВАТЬ ПО
-				СоставПакетовДокументовЭДО.ИдентификаторПакета) КАК ДанныеКоличестваДокументовВПакете
-			ПО СоставПакетовДокументовЭДО.ИдентификаторПакета = ДанныеКоличестваДокументовВПакете.ИдентификаторПакета
-		ПО СоставПакетовДокументовЭДО.ЭлектронныйДокумент = ЭлектронныеДокументы.Ссылка
-		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ПакетыДокументовЭДО КАК ПакетыДокументовЭДО
-		ПО СоставПакетовДокументовЭДО.ИдентификаторПакета = ПакетыДокументовЭДО.ИдентификаторПакета</QueryText>
+				СоставПакетовДокументовЭДОПереопределяемый.ИдентификаторПакета) КАК ДанныеКоличестваДокументовВПакете
+			ПО СоставПакетовДокументовЭДОПереопределяемый.ИдентификаторПакета = ДанныеКоличестваДокументовВПакете.ИдентификаторПакета
+		ПО СоставПакетовДокументовЭДОПереопределяемый.ЭлектронныйДокумент = ЭлектронныеДокументыПереопределяемый.Ссылка
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ПакетыДокументовЭДО КАК ПакетыДокументовЭДОПереопределяемый
+		ПО СоставПакетовДокументовЭДОПереопределяемый.ИдентификаторПакета = ПакетыДокументовЭДОПереопределяемый.ИдентификаторПакета
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.СведенияОПрочтенииДокументовЭДО КАК СведенияОПрочтенииПереопределяемый
+		ПО ЭлектронныеДокументыПереопределяемый.Ссылка = СведенияОПрочтенииПереопределяемый.Объект
+		И (СведенияОПрочтенииПереопределяемый.Пользователь = &amp;Пользователь)
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ПроверкиЭлектронныхПодписейЭДО КАК ПроверкиЭлектронныхПодписейЭДОПереопределяемый
+		ПО ЭлектронныеДокументыПереопределяемый.Ссылка = ПроверкиЭлектронныхПодписейЭДОПереопределяемый.ЭлектронныйДокумент
+ГДЕ
+	ВЫБОР
+		КОГДА НЕ &amp;ПоказыватьПомеченныеНаУдаление
+			ТОГДА НЕ ЭлектронныеДокументыПереопределяемый.ПометкаУдаления
+		ИНАЧЕ
+			ИСТИНА
+	КОНЕЦ</QueryText>
 				<MainTable>Document.ЭлектронныйДокументИсходящийЭДО</MainTable>
 				<ListSettings>
 					<dcsset:filter>
@@ -3447,6 +4027,7 @@
     ОсновнаяТаблица.Статус КАК СтатусПодключения,
     ВЫБОР
         КОГДА ОсновнаяТаблица.Контрагент = &amp;ПустойКонтрагент
+        ИЛИ ОсновнаяТаблица.Контрагент = Неопределено
             ТОГДА ОсновнаяТаблица.Наименование + " (" + &amp;ИНН + ": " + ОсновнаяТаблица.ИНН + ")"
         ИНАЧЕ ОсновнаяТаблица.Контрагент
     КОНЕЦ КАК Контрагент,
@@ -3459,6 +4040,7 @@
     ОсновнаяТаблица.ИдентификаторОрганизации КАК ИдентификаторОрганизации,
     ВЫБОР
         КОГДА ОсновнаяТаблица.Контрагент = &amp;ПустойКонтрагент
+        ИЛИ ОсновнаяТаблица.Контрагент = Неопределено
             ТОГДА 1
         ИНАЧЕ 0
     КОНЕЦ КАК НовыйКонтрагент,
@@ -3713,104 +4295,122 @@
 				<ManualQuery>true</ManualQuery>
 				<DynamicDataRead>false</DynamicDataRead>
 				<QueryText>ВЫБРАТЬ
-	ЭлектронныйДокументВходящийЭДО.Ссылка КАК ЭлектронныйДокумент,
-	ЭлектронныйДокументВходящийЭДО.ВидДокумента КАК ВидДокумента,
-	ЭлектронныйДокументВходящийЭДО.ДатаДокумента КАК Дата,
-	ЭлектронныйДокументВходящийЭДО.НомерДокумента КАК Номер,
-	ЭлектронныйДокументВходящийЭДО.ДатаДокумента КАК ДатаЭД,
-	ЭлектронныйДокументВходящийЭДО.НомерДокумента КАК НомерЭД,
-	ЭлектронныйДокументВходящийЭДО.Организация КАК Организация,
-	ЭлектронныйДокументВходящийЭДО.Контрагент КАК Контрагент,
-	ЭлектронныйДокументВходящийЭДО.СуммаДокумента КАК СуммаДокумента,
-	СостоянияЭДО.Состояние КАК СостояниеЭД,
+	ЭлектронныйДокументВходящийЭДОПереопределяемый.Ссылка КАК ЭлектронныйДокумент,
+	ЭлектронныйДокументВходящийЭДОПереопределяемый.ВидДокумента КАК ВидДокумента,
+	ЭлектронныйДокументВходящийЭДОПереопределяемый.ДатаДокумента КАК Дата,
+	ЭлектронныйДокументВходящийЭДОПереопределяемый.НомерДокумента КАК Номер,
+	ЭлектронныйДокументВходящийЭДОПереопределяемый.ДатаДокумента КАК ДатаЭД,
+	ЭлектронныйДокументВходящийЭДОПереопределяемый.НомерДокумента КАК НомерЭД,
+	ЭлектронныйДокументВходящийЭДОПереопределяемый.Организация КАК Организация,
+	ЭлектронныйДокументВходящийЭДОПереопределяемый.Контрагент КАК Контрагент,
+	ЭлектронныйДокументВходящийЭДОПереопределяемый.СуммаДокумента КАК СуммаДокумента,
+	СостоянияЭДОПереопределяемый.Состояние КАК СостояниеЭД,
 	"КартинкаМК" КАК КартинкаМК,
-	ЭлектронныйДокументВходящийЭДО.Ответственный КАК Ответственный,
-	СоставПакетовДокументовЭДО.ИдентификаторПакета КАК ИдентификаторПакета,
+	ЭлектронныйДокументВходящийЭДОПереопределяемый.Ответственный КАК Ответственный,
+	СоставПакетовДокументовЭДОПереопределяемый.ИдентификаторПакета КАК ИдентификаторПакета,
 	ВЫРАЗИТЬ("" КАК СТРОКА(20)) КАК ПредставлениеДокументовВнеОтбора,
 	Ложь КАК ПервыйДокументПакета,
-	ДанныеКоличестваДокументовВПакете.КоличествоДокументов КАК КоличествоДокументовВПакете,
+	ДанныеКоличестваДокументовВПакетеПереопределяемый.КоличествоДокументов КАК КоличествоДокументовВПакете,
 	ВЫБОР
-		КОГДА ПакетыДокументовЭДО.Дата ЕСТЬ NULL
-			ТОГДА ЭлектронныйДокументВходящийЭДО.ДатаДокумента
-		ИНАЧЕ ПакетыДокументовЭДО.Дата
+		КОГДА ПакетыДокументовЭДОПереопределяемый.Дата ЕСТЬ NULL
+			ТОГДА ЭлектронныйДокументВходящийЭДОПереопределяемый.ДатаДокумента
+		ИНАЧЕ ПакетыДокументовЭДОПереопределяемый.Дата
 	КОНЕЦ КАК ДатаПакета,
 	-1 КАК ИндексКартинкиПакета,
-	ПакетыДокументовЭДО.КлючСортировки КАК КлючСортировкиПакета,
+	ПакетыДокументовЭДОПереопределяемый.КлючСортировки КАК КлючСортировкиПакета,
 	Ложь КАК Четность,
-	ЭлектронныйДокументВходящийЭДО.Номер КАК НомерСлужебный,
-	ЭлектронныйДокументВходящийЭДО.ВидДокумента.ПорядокСортировкиВПакете КАК ПорядокСортировкиВПакете,
+	ЭлектронныйДокументВходящийЭДОПереопределяемый.Номер КАК НомерСлужебный,
+	ЭлектронныйДокументВходящийЭДОПереопределяемый.ВидДокумента.ПорядокСортировкиВПакете КАК ПорядокСортировкиВПакете,
 	ВЫРАЗИТЬ("" КАК СТРОКА(36)) КАК КлючДокумента,
-	ВЫРАЗИТЬ("" КАК СТРОКА(36)) КАК КлючПакета
+	ВЫРАЗИТЬ("" КАК СТРОКА(36)) КАК КлючПакета,
+	ЕСТЬNULL(ПроверкиЭлектронныхПодписейЭДОПереопределяемый.ЕстьНевалидныеПодписиПоМЧД, ЛОЖЬ) КАК ЕстьНевалидныеПодписиПоМЧД,
+	ЭлектронныйДокументВходящийЭДОПереопределяемый.ПометкаУдаления КАК ПометкаУдаления
 ИЗ
-	Документ.ЭлектронныйДокументВходящийЭДО КАК ЭлектронныйДокументВходящийЭДО
-	ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.СостоянияДокументовЭДО КАК СостоянияЭДО
-	ПО СостоянияЭДО.ЭлектронныйДокумент = ЭлектронныйДокументВходящийЭДО.Ссылка
-	ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.СоставПакетовДокументовЭДО КАК СоставПакетовДокументовЭДО
+	Документ.ЭлектронныйДокументВходящийЭДО КАК ЭлектронныйДокументВходящийЭДОПереопределяемый
+	ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.СостоянияДокументовЭДО КАК СостоянияЭДОПереопределяемый
+	ПО СостоянияЭДОПереопределяемый.ЭлектронныйДокумент = ЭлектронныйДокументВходящийЭДОПереопределяемый.Ссылка
+	ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ПроверкиЭлектронныхПодписейЭДО КАК ПроверкиЭлектронныхПодписейЭДОПереопределяемый
+	ПО ЭлектронныйДокументВходящийЭДОПереопределяемый.Ссылка = ПроверкиЭлектронныхПодписейЭДОПереопределяемый.ЭлектронныйДокумент
+	ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.СоставПакетовДокументовЭДО КАК СоставПакетовДокументовЭДОПереопределяемый
 			ЛЕВОЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
-				СоставПакетовДокументовЭДО.ИдентификаторПакета,
-				КОЛИЧЕСТВО(СоставПакетовДокументовЭДО.ЭлектронныйДокумент) КАК КоличествоДокументов
+				СоставПакетовДокументовЭДОПереопределяемый.ИдентификаторПакета,
+				КОЛИЧЕСТВО(СоставПакетовДокументовЭДОПереопределяемый.ЭлектронныйДокумент) КАК КоличествоДокументов
 			ИЗ
-				РегистрСведений.СоставПакетовДокументовЭДО КАК СоставПакетовДокументовЭДО
+				РегистрСведений.СоставПакетовДокументовЭДО КАК СоставПакетовДокументовЭДОПереопределяемый
 			СГРУППИРОВАТЬ ПО
-				СоставПакетовДокументовЭДО.ИдентификаторПакета) КАК ДанныеКоличестваДокументовВПакете
-			ПО СоставПакетовДокументовЭДО.ИдентификаторПакета = ДанныеКоличестваДокументовВПакете.ИдентификаторПакета
-		ПО СоставПакетовДокументовЭДО.ЭлектронныйДокумент = ЭлектронныйДокументВходящийЭДО.Ссылка
-		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ПакетыДокументовЭДО КАК ПакетыДокументовЭДО
-		ПО СоставПакетовДокументовЭДО.ИдентификаторПакета = ПакетыДокументовЭДО.ИдентификаторПакета
+				СоставПакетовДокументовЭДОПереопределяемый.ИдентификаторПакета) КАК ДанныеКоличестваДокументовВПакетеПереопределяемый
+			ПО СоставПакетовДокументовЭДОПереопределяемый.ИдентификаторПакета = ДанныеКоличестваДокументовВПакетеПереопределяемый.ИдентификаторПакета
+		ПО СоставПакетовДокументовЭДОПереопределяемый.ЭлектронныйДокумент = ЭлектронныйДокументВходящийЭДОПереопределяемый.Ссылка
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ПакетыДокументовЭДО КАК ПакетыДокументовЭДОПереопределяемый
+		ПО СоставПакетовДокументовЭДОПереопределяемый.ИдентификаторПакета = ПакетыДокументовЭДОПереопределяемый.ИдентификаторПакета
 
 ГДЕ
-	ЭлектронныйДокументВходящийЭДО.НаОзнакомлении
-	И НЕ ЭлектронныйДокументВходящийЭДО.ПометкаУдаления
+	ЭлектронныйДокументВходящийЭДОПереопределяемый.НаОзнакомлении
+	И ВЫБОР
+		КОГДА НЕ &amp;ПоказыватьПомеченныеНаУдаление
+			ТОГДА НЕ ЭлектронныйДокументВходящийЭДОПереопределяемый.ПометкаУдаления
+		ИНАЧЕ
+			ИСТИНА
+	КОНЕЦ
 ОБЪЕДИНИТЬ ВСЕ
 
 ВЫБРАТЬ
-	ЭлектронныйДокументИсходящийЭДО.Ссылка,
-	ЭлектронныйДокументИсходящийЭДО.ВидДокумента,
-	ЭлектронныйДокументИсходящийЭДО.ДатаДокумента,
-	ЭлектронныйДокументИсходящийЭДО.НомерДокумента,
-	ЭлектронныйДокументИсходящийЭДО.ДатаДокумента,
-	ЭлектронныйДокументИсходящийЭДО.НомерДокумента,
-	ЭлектронныйДокументИсходящийЭДО.Организация,
-	ЭлектронныйДокументИсходящийЭДО.Контрагент,
-	ЭлектронныйДокументИсходящийЭДО.СуммаДокумента,
-	СостоянияЭДО.Состояние,
+	ЭлектронныйДокументИсходящийЭДОПереопределяемый.Ссылка,
+	ЭлектронныйДокументИсходящийЭДОПереопределяемый.ВидДокумента,
+	ЭлектронныйДокументИсходящийЭДОПереопределяемый.ДатаДокумента,
+	ЭлектронныйДокументИсходящийЭДОПереопределяемый.НомерДокумента,
+	ЭлектронныйДокументИсходящийЭДОПереопределяемый.ДатаДокумента,
+	ЭлектронныйДокументИсходящийЭДОПереопределяемый.НомерДокумента,
+	ЭлектронныйДокументИсходящийЭДОПереопределяемый.Организация,
+	ЭлектронныйДокументИсходящийЭДОПереопределяемый.Контрагент,
+	ЭлектронныйДокументИсходящийЭДОПереопределяемый.СуммаДокумента,
+	СостоянияЭДОПереопределяемый.Состояние,
 	"КартинкаМК",
-	ЭлектронныйДокументИсходящийЭДО.Ответственный,
-	СоставПакетовДокументовЭДО.ИдентификаторПакета КАК ИдентификаторПакета,
+	ЭлектронныйДокументИсходящийЭДОПереопределяемый.Ответственный,
+	СоставПакетовДокументовЭДОПереопределяемый.ИдентификаторПакета КАК ИдентификаторПакета,
 	ВЫРАЗИТЬ("" КАК СТРОКА(20)) КАК ПредставлениеДокументовВнеОтбора,
 	Ложь КАК ПервыйДокументПакета,
 	ДанныеКоличестваДокументовВПакете.КоличествоДокументов КАК КоличествоДокументовВПакете,
 	ВЫБОР
-		КОГДА ПакетыДокументовЭДО.Дата ЕСТЬ NULL
-			ТОГДА ЭлектронныйДокументИсходящийЭДО.ДатаДокумента
-		ИНАЧЕ ПакетыДокументовЭДО.Дата
+		КОГДА ПакетыДокументовЭДОПереопределяемый.Дата ЕСТЬ NULL
+			ТОГДА ЭлектронныйДокументИсходящийЭДОПереопределяемый.ДатаДокумента
+		ИНАЧЕ ПакетыДокументовЭДОПереопределяемый.Дата
 	КОНЕЦ КАК ДатаПакета,
 	-1 КАК ИндексКартинкиПакета,
-	ПакетыДокументовЭДО.КлючСортировки КАК КлючСортировкиПакета,
+	ПакетыДокументовЭДОПереопределяемый.КлючСортировки КАК КлючСортировкиПакета,
 	Ложь КАК Четность,
-	ЭлектронныйДокументИсходящийЭДО.Номер КАК НомерСлужебный,
-	ЭлектронныйДокументИсходящийЭДО.ВидДокумента.ПорядокСортировкиВПакете КАК ПорядокСортировкиВПакете,
+	ЭлектронныйДокументИсходящийЭДОПереопределяемый.Номер КАК НомерСлужебный,
+	ЭлектронныйДокументИсходящийЭДОПереопределяемый.ВидДокумента.ПорядокСортировкиВПакете КАК ПорядокСортировкиВПакете,
 	ВЫРАЗИТЬ("" КАК СТРОКА(36)) КАК КлючДокумента,
-	ВЫРАЗИТЬ("" КАК СТРОКА(36)) КАК КлючПакета
+	ВЫРАЗИТЬ("" КАК СТРОКА(36)) КАК КлючПакета,
+	ЕСТЬNULL(ПроверкиЭлектронныхПодписейЭДОПереопределяемый.ЕстьНевалидныеПодписиПоМЧД, ЛОЖЬ) КАК ЕстьНевалидныеПодписиПоМЧД,
+	ЭлектронныйДокументИсходящийЭДОПереопределяемый.ПометкаУдаления
 ИЗ
-	Документ.ЭлектронныйДокументИсходящийЭДО КАК ЭлектронныйДокументИсходящийЭДО
-	ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.СостоянияДокументовЭДО КАК СостоянияЭДО
-	ПО СостоянияЭДО.ЭлектронныйДокумент = ЭлектронныйДокументИсходящийЭДО.Ссылка
-	ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.СоставПакетовДокументовЭДО КАК СоставПакетовДокументовЭДО
+	Документ.ЭлектронныйДокументИсходящийЭДО КАК ЭлектронныйДокументИсходящийЭДОПереопределяемый
+	ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.СостоянияДокументовЭДО КАК СостоянияЭДОПереопределяемый
+	ПО СостоянияЭДОПереопределяемый.ЭлектронныйДокумент = ЭлектронныйДокументИсходящийЭДОПереопределяемый.Ссылка
+	ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ПроверкиЭлектронныхПодписейЭДО КАК ПроверкиЭлектронныхПодписейЭДОПереопределяемый
+	ПО ЭлектронныйДокументИсходящийЭДОПереопределяемый.Ссылка = ПроверкиЭлектронныхПодписейЭДОПереопределяемый.ЭлектронныйДокумент
+	ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.СоставПакетовДокументовЭДО КАК СоставПакетовДокументовЭДОПереопределяемый
 			ЛЕВОЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
-				СоставПакетовДокументовЭДО.ИдентификаторПакета,
-				КОЛИЧЕСТВО(СоставПакетовДокументовЭДО.ЭлектронныйДокумент) КАК КоличествоДокументов
+				СоставПакетовДокументовЭДОПереопределяемый.ИдентификаторПакета,
+				КОЛИЧЕСТВО(СоставПакетовДокументовЭДОПереопределяемый.ЭлектронныйДокумент) КАК КоличествоДокументов
 			ИЗ
-				РегистрСведений.СоставПакетовДокументовЭДО КАК СоставПакетовДокументовЭДО
+				РегистрСведений.СоставПакетовДокументовЭДО КАК СоставПакетовДокументовЭДОПереопределяемый
 			СГРУППИРОВАТЬ ПО
-				СоставПакетовДокументовЭДО.ИдентификаторПакета) КАК ДанныеКоличестваДокументовВПакете
-			ПО СоставПакетовДокументовЭДО.ИдентификаторПакета = ДанныеКоличестваДокументовВПакете.ИдентификаторПакета
-		ПО СоставПакетовДокументовЭДО.ЭлектронныйДокумент = ЭлектронныйДокументИсходящийЭДО.Ссылка
-		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ПакетыДокументовЭДО КАК ПакетыДокументовЭДО
-		ПО СоставПакетовДокументовЭДО.ИдентификаторПакета = ПакетыДокументовЭДО.ИдентификаторПакета
+				СоставПакетовДокументовЭДОПереопределяемый.ИдентификаторПакета) КАК ДанныеКоличестваДокументовВПакете
+			ПО СоставПакетовДокументовЭДОПереопределяемый.ИдентификаторПакета = ДанныеКоличестваДокументовВПакете.ИдентификаторПакета
+		ПО СоставПакетовДокументовЭДОПереопределяемый.ЭлектронныйДокумент = ЭлектронныйДокументИсходящийЭДОПереопределяемый.Ссылка
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ПакетыДокументовЭДО КАК ПакетыДокументовЭДОПереопределяемый
+		ПО СоставПакетовДокументовЭДОПереопределяемый.ИдентификаторПакета = ПакетыДокументовЭДОПереопределяемый.ИдентификаторПакета
 	
-ГДЕ ЭлектронныйДокументИсходящийЭДО.НаОзнакомлении
-	И НЕ ЭлектронныйДокументИсходящийЭДО.ПометкаУдаления</QueryText>
+ГДЕ ЭлектронныйДокументИсходящийЭДОПереопределяемый.НаОзнакомлении
+	И ВЫБОР
+		КОГДА НЕ &amp;ПоказыватьПомеченныеНаУдаление
+			ТОГДА НЕ ЭлектронныйДокументИсходящийЭДОПереопределяемый.ПометкаУдаления
+		ИНАЧЕ
+			ИСТИНА
+	КОНЕЦ</QueryText>
 				<ListSettings>
 					<dcsset:filter>
 						<dcsset:viewMode>Normal</dcsset:viewMode>
@@ -3840,22 +4440,36 @@
 				<v8:Type>cfg:DynamicList</v8:Type>
 			</Type>
 			<UseAlways>
-				<Field>НоменклатураКонтрагентов.Владелец</Field>
+				<Field>~НоменклатураКонтрагентов.Владелец</Field>
 			</UseAlways>
 			<Settings xsi:type="DynamicList">
 				<ManualQuery>true</ManualQuery>
-				<DynamicDataRead>true</DynamicDataRead>
+				<DynamicDataRead>false</DynamicDataRead>
 				<QueryText>ВЫБРАТЬ
-	Контроль.Владелец,
+	Контроль.Владелец КАК Контрагент,
 	КОЛИЧЕСТВО(РАЗЛИЧНЫЕ Контроль.Идентификатор) КАК Сопоставить
 ИЗ
 	РегистрСведений.КонтрольСопоставленияНоменклатурыЭДО КАК Контроль
 СГРУППИРОВАТЬ ПО
 	Контроль.Владелец</QueryText>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Сопоставить</dcssch:dataPath>
+					<dcssch:field>Сопоставить</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Контрагент</dcssch:dataPath>
+					<dcssch:field>Контрагент</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Контрагент</v8:content>
+						</v8:item>
+					</dcssch:title>
+				</Field>
 				<ListSettings>
 					<dcsset:order>
 						<dcsset:item xsi:type="dcsset:OrderItemField">
-							<dcsset:field>Владелец</dcsset:field>
+							<dcsset:field>Контрагент</dcsset:field>
 							<dcsset:orderType>Asc</dcsset:orderType>
 						</dcsset:item>
 					</dcsset:order>
@@ -3918,8 +4532,9 @@
 	ЭлектронныйДокументВходящийЭДО.Номер КАК НомерСлужебный,
 	ЭлектронныйДокументВходящийЭДО.ВидДокумента.ПорядокСортировкиВПакете КАК ПорядокСортировкиВПакете,
 	ВЫРАЗИТЬ("" КАК СТРОКА(36)) КАК КлючДокумента,
-	ВЫРАЗИТЬ("" КАК СТРОКА(36)) КАК КлючПакета
-	
+	ВЫРАЗИТЬ("" КАК СТРОКА(36)) КАК КлючПакета,
+	ЕСТЬNULL(ПроверкиЭлектронныхПодписейЭДО.ЕстьНевалидныеПодписиПоМЧД, ЛОЖЬ) КАК ЕстьНевалидныеПодписиПоМЧД,
+	ЭлектронныйДокументВходящийЭДО.ПометкаУдаления КАК ПометкаУдаления
 ИЗ
 	Документ.ЭлектронныйДокументВходящийЭДО КАК ЭлектронныйДокументВходящийЭДО
 		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.СостоянияДокументовЭДО КАК СостоянияЭДО
@@ -3936,9 +4551,16 @@
 		ПО СоставПакетовДокументовЭДО.ЭлектронныйДокумент = ЭлектронныйДокументВходящийЭДО.Ссылка
 		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ПакетыДокументовЭДО КАК ПакетыДокументовЭДО
 		ПО СоставПакетовДокументовЭДО.ИдентификаторПакета = ПакетыДокументовЭДО.ИдентификаторПакета
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ПроверкиЭлектронныхПодписейЭДО КАК ПроверкиЭлектронныхПодписейЭДО
+		ПО ЭлектронныйДокументВходящийЭДО.Ссылка = ПроверкиЭлектронныхПодписейЭДО.ЭлектронныйДокумент
 ГДЕ
 	НЕ ЭлектронныйДокументВходящийЭДО.ПометкаУдаления
 	И СостоянияЭДО.Состояние = ЗНАЧЕНИЕ(Перечисление.СостоянияДокументовЭДО.ТребуетсяИсправлениеОшибкиПередачи)
+	И ВЫБОР
+		КОГДА НЕ &amp;ПоказыватьПомеченныеНаУдаление
+			ТОГДА НЕ ЭлектронныйДокументВходящийЭДО.ПометкаУдаления
+		ИНАЧЕ ИСТИНА
+	КОНЕЦ
 
 ОБЪЕДИНИТЬ ВСЕ
 
@@ -3967,8 +4589,9 @@
 	ЭлектронныйДокументИсходящийЭДО.Номер КАК НомерСлужебный,
 	ЭлектронныйДокументИсходящийЭДО.ВидДокумента.ПорядокСортировкиВПакете КАК ПорядокСортировкиВПакете,
 	ВЫРАЗИТЬ("" КАК СТРОКА(36)) КАК КлючДокумента,
-	ВЫРАЗИТЬ("" КАК СТРОКА(36)) КАК КлючПакета
-	
+	ВЫРАЗИТЬ("" КАК СТРОКА(36)) КАК КлючПакета,
+	ЕСТЬNULL(ПроверкиЭлектронныхПодписейЭДО.ЕстьНевалидныеПодписиПоМЧД, ЛОЖЬ) КАК ЕстьНевалидныеПодписиПоМЧД,
+	ЭлектронныйДокументИсходящийЭДО.ПометкаУдаления
 ИЗ
 	Документ.ЭлектронныйДокументИсходящийЭДО КАК ЭлектронныйДокументИсходящийЭДО
 		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.СостоянияДокументовЭДО КАК СостоянияЭДО
@@ -3985,9 +4608,16 @@
 		ПО СоставПакетовДокументовЭДО.ЭлектронныйДокумент = ЭлектронныйДокументИсходящийЭДО.Ссылка
 		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ПакетыДокументовЭДО КАК ПакетыДокументовЭДО
 		ПО СоставПакетовДокументовЭДО.ИдентификаторПакета = ПакетыДокументовЭДО.ИдентификаторПакета
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ПроверкиЭлектронныхПодписейЭДО КАК ПроверкиЭлектронныхПодписейЭДО
+		ПО ЭлектронныйДокументИсходящийЭДО.Ссылка = ПроверкиЭлектронныхПодписейЭДО.ЭлектронныйДокумент
 ГДЕ
 	НЕ ЭлектронныйДокументИсходящийЭДО.ПометкаУдаления
-	И СостоянияЭДО.Состояние = ЗНАЧЕНИЕ(Перечисление.СостоянияДокументовЭДО.ТребуетсяИсправлениеОшибкиПередачи)</QueryText>
+	И СостоянияЭДО.Состояние = ЗНАЧЕНИЕ(Перечисление.СостоянияДокументовЭДО.ТребуетсяИсправлениеОшибкиПередачи)
+	И ВЫБОР
+		КОГДА НЕ &amp;ПоказыватьПомеченныеНаУдаление
+			ТОГДА НЕ ЭлектронныйДокументИсходящийЭДО.ПометкаУдаления
+		ИНАЧЕ ИСТИНА
+	КОНЕЦ</QueryText>
 				<ListSettings>
 					<dcsset:filter>
 						<dcsset:viewMode>Normal</dcsset:viewMode>
@@ -4057,12 +4687,14 @@
 				<Field>~ОтправитьЭД.ИндексКатринкиПакета</Field>
 				<Field>ОтправитьЭД.ДатаПакета</Field>
 				<Field>ОтправитьЭД.ИдентификаторПакета</Field>
+				<Field>ОтправитьЭД.ИндексКартинкиПакета</Field>
 				<Field>ОтправитьЭД.КлючДокумента</Field>
 				<Field>ОтправитьЭД.КлючПакета</Field>
 				<Field>ОтправитьЭД.КлючСортировкиПакета</Field>
 				<Field>ОтправитьЭД.КоличествоДокументовВПакете</Field>
 				<Field>ОтправитьЭД.НомерСлужебный</Field>
 				<Field>ОтправитьЭД.ПервыйДокументПакета</Field>
+				<Field>ОтправитьЭД.ПометкаУдаления</Field>
 				<Field>ОтправитьЭД.ПорядокСортировкиВПакете</Field>
 				<Field>ОтправитьЭД.ПредставлениеДокументовВнеОтбора</Field>
 				<Field>ОтправитьЭД.Четность</Field>
@@ -4099,27 +4731,28 @@
 	ЭлектронныйДокументВходящийЭДО.Номер КАК НомерСлужебный,
 	ЭлектронныйДокументВходящийЭДО.ВидДокумента.ПорядокСортировкиВПакете КАК ПорядокСортировкиВПакете,
 	ВЫРАЗИТЬ("" КАК СТРОКА(36)) КАК КлючДокумента,
-	ВЫРАЗИТЬ("" КАК СТРОКА(36)) КАК КлючПакета
-	
+	ВЫРАЗИТЬ("" КАК СТРОКА(36)) КАК КлючПакета,
+	ЕСТЬNULL(ПроверкиЭлектронныхПодписейЭДО.ЕстьНевалидныеПодписиПоМЧД, ЛОЖЬ) КАК ЕстьНевалидныеПодписиПоМЧД,
+	ЭлектронныйДокументВходящийЭДО.ПометкаУдаления КАК ПометкаУдаления
 ИЗ
 	Документ.ЭлектронныйДокументВходящийЭДО КАК ЭлектронныйДокументВходящийЭДО
-	ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.СостоянияДокументовЭДО КАК СостоянияЭДО
-	ПО СостоянияЭДО.ЭлектронныйДокумент = ЭлектронныйДокументВходящийЭДО.Ссылка
-	И СостоянияЭДО.Состояние В 
-	(
-		ЗНАЧЕНИЕ(Перечисление.СостоянияДокументовЭДО.ТребуетсяОтправка),
-		ЗНАЧЕНИЕ(Перечисление.СостоянияДокументовЭДО.ТребуетсяОтправкаАннулирования),
-		ЗНАЧЕНИЕ(Перечисление.СостоянияДокументовЭДО.ТребуетсяОтправкаИзвещения),
-		ЗНАЧЕНИЕ(Перечисление.СостоянияДокументовЭДО.ТребуетсяОтправкаИзвещенияПоОтклонению),
-		ЗНАЧЕНИЕ(Перечисление.СостоянияДокументовЭДО.ТребуетсяОтправкаОтклонения),
-		ЗНАЧЕНИЕ(Перечисление.СостоянияДокументовЭДО.ТребуетсяОтправкаПриглашения),
-		ЗНАЧЕНИЕ(Перечисление.СостоянияДокументовЭДО.ТребуетсяПодготовкаКОтправке),
-		ЗНАЧЕНИЕ(Перечисление.СостоянияДокументовЭДО.ТребуетсяПодготовкаКОтправкеАннулирования),
-		ЗНАЧЕНИЕ(Перечисление.СостоянияДокументовЭДО.ТребуетсяПодготовкаКОтправкеИзвещения),
-		ЗНАЧЕНИЕ(Перечисление.СостоянияДокументовЭДО.ТребуетсяПодготовкаКОтправкеОтклонения),
-		ЗНАЧЕНИЕ(Перечисление.СостоянияДокументовЭДО.ТребуетсяПодготовкаКОтправкеИзвещенияПоОтклонению)
-	)
-	ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.СоставПакетовДокументовЭДО КАК СоставПакетовДокументовЭДО
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.СостоянияДокументовЭДО КАК СостоянияЭДО
+		ПО СостоянияЭДО.ЭлектронныйДокумент = ЭлектронныйДокументВходящийЭДО.Ссылка
+		И СостоянияЭДО.Состояние В
+		(ЗНАЧЕНИЕ(Перечисление.СостоянияДокументовЭДО.ТребуетсяОтправка),
+			ЗНАЧЕНИЕ(Перечисление.СостоянияДокументовЭДО.ТребуетсяОтправкаАннулирования),
+			ЗНАЧЕНИЕ(Перечисление.СостоянияДокументовЭДО.ТребуетсяОтправкаИзвещения),
+			ЗНАЧЕНИЕ(Перечисление.СостоянияДокументовЭДО.ТребуетсяОтправкаИзвещенияПоОтклонению),
+			ЗНАЧЕНИЕ(Перечисление.СостоянияДокументовЭДО.ТребуетсяОтправкаОтклонения),
+			ЗНАЧЕНИЕ(Перечисление.СостоянияДокументовЭДО.ТребуетсяОтправкаПриглашения),
+			ЗНАЧЕНИЕ(Перечисление.СостоянияДокументовЭДО.ТребуетсяПодготовкаКОтправке),
+			ЗНАЧЕНИЕ(Перечисление.СостоянияДокументовЭДО.ТребуетсяПодготовкаКОтправкеАннулирования),
+			ЗНАЧЕНИЕ(Перечисление.СостоянияДокументовЭДО.ТребуетсяПодготовкаКОтправкеИзвещения),
+			ЗНАЧЕНИЕ(Перечисление.СостоянияДокументовЭДО.ТребуетсяПодготовкаКОтправкеОтклонения),
+			ЗНАЧЕНИЕ(Перечисление.СостоянияДокументовЭДО.ТребуетсяПодготовкаКОтправкеИзвещенияПоОтклонению))
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ПроверкиЭлектронныхПодписейЭДО КАК ПроверкиЭлектронныхПодписейЭДО
+		ПО ЭлектронныйДокументВходящийЭДО.Ссылка = ПроверкиЭлектронныхПодписейЭДО.ЭлектронныйДокумент
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.СоставПакетовДокументовЭДО КАК СоставПакетовДокументовЭДО
 			ЛЕВОЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
 				СоставПакетовДокументовЭДО.ИдентификаторПакета,
 				КОЛИЧЕСТВО(СоставПакетовДокументовЭДО.ЭлектронныйДокумент) КАК КоличествоДокументов
@@ -4131,6 +4764,13 @@
 		ПО СоставПакетовДокументовЭДО.ЭлектронныйДокумент = ЭлектронныйДокументВходящийЭДО.Ссылка
 		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ПакетыДокументовЭДО КАК ПакетыДокументовЭДО
 		ПО СоставПакетовДокументовЭДО.ИдентификаторПакета = ПакетыДокументовЭДО.ИдентификаторПакета
+ГДЕ
+	ВЫБОР
+		КОГДА НЕ &amp;ПоказыватьПомеченныеНаУдаление
+			ТОГДА НЕ ЭлектронныйДокументВходящийЭДО.ПометкаУдаления
+		ИНАЧЕ ИСТИНА
+	КОНЕЦ
+
 ОБЪЕДИНИТЬ ВСЕ
 
 ВЫБРАТЬ
@@ -4161,27 +4801,28 @@
 	ЭлектронныйДокументИсходящийЭДО.Номер КАК НомерСлужебный,
 	ЭлектронныйДокументИсходящийЭДО.ВидДокумента.ПорядокСортировкиВПакете КАК ПорядокСортировкиВПакете,
 	ВЫРАЗИТЬ("" КАК СТРОКА(36)) КАК КлючДокумента,
-	ВЫРАЗИТЬ("" КАК СТРОКА(36)) КАК КлючПакета
+	ВЫРАЗИТЬ("" КАК СТРОКА(36)) КАК КлючПакета,
+	ЕСТЬNULL(ПроверкиЭлектронныхПодписейЭДО.ЕстьНевалидныеПодписиПоМЧД, ЛОЖЬ) КАК ЕстьНевалидныеПодписиПоМЧД,
+	ЭлектронныйДокументИсходящийЭДО.ПометкаУдаления
 ИЗ
 	Документ.ЭлектронныйДокументИсходящийЭДО КАК ЭлектронныйДокументИсходящийЭДО
-	ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.СостоянияДокументовЭДО КАК СостоянияЭДО
-	ПО СостоянияЭДО.ЭлектронныйДокумент = ЭлектронныйДокументИсходящийЭДО.Ссылка
-	И СостоянияЭДО.Состояние В 
-	(
-		ЗНАЧЕНИЕ(Перечисление.СостоянияДокументовЭДО.ТребуетсяОтправка),
-		ЗНАЧЕНИЕ(Перечисление.СостоянияДокументовЭДО.ТребуетсяОтправкаАннулирования),
-		ЗНАЧЕНИЕ(Перечисление.СостоянияДокументовЭДО.ТребуетсяОтправкаИзвещения),
-		ЗНАЧЕНИЕ(Перечисление.СостоянияДокументовЭДО.ТребуетсяОтправкаИзвещенияПоОтклонению),
-		ЗНАЧЕНИЕ(Перечисление.СостоянияДокументовЭДО.ТребуетсяОтправкаОтклонения),
-		ЗНАЧЕНИЕ(Перечисление.СостоянияДокументовЭДО.ТребуетсяОтправкаПриглашения),
-		ЗНАЧЕНИЕ(Перечисление.СостоянияДокументовЭДО.ТребуетсяПодготовкаКОтправке),
-		ЗНАЧЕНИЕ(Перечисление.СостоянияДокументовЭДО.ТребуетсяПодготовкаКОтправкеАннулирования),
-		ЗНАЧЕНИЕ(Перечисление.СостоянияДокументовЭДО.ТребуетсяПодготовкаКОтправкеИзвещения),
-		ЗНАЧЕНИЕ(Перечисление.СостоянияДокументовЭДО.ТребуетсяПодготовкаКОтправкеОтклонения),
-		ЗНАЧЕНИЕ(Перечисление.СостоянияДокументовЭДО.ТребуетсяПодготовкаКОтправкеИзвещенияПоОтклонению)
-	)
-
-	ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.СоставПакетовДокументовЭДО КАК СоставПакетовДокументовЭДО
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ РегистрСведений.СостоянияДокументовЭДО КАК СостоянияЭДО
+		ПО СостоянияЭДО.ЭлектронныйДокумент = ЭлектронныйДокументИсходящийЭДО.Ссылка
+		И СостоянияЭДО.Состояние В
+		(ЗНАЧЕНИЕ(Перечисление.СостоянияДокументовЭДО.ТребуетсяОтправка),
+			ЗНАЧЕНИЕ(Перечисление.СостоянияДокументовЭДО.ТребуетсяОтправкаАннулирования),
+			ЗНАЧЕНИЕ(Перечисление.СостоянияДокументовЭДО.ТребуетсяОтправкаИзвещения),
+			ЗНАЧЕНИЕ(Перечисление.СостоянияДокументовЭДО.ТребуетсяОтправкаИзвещенияПоОтклонению),
+			ЗНАЧЕНИЕ(Перечисление.СостоянияДокументовЭДО.ТребуетсяОтправкаОтклонения),
+			ЗНАЧЕНИЕ(Перечисление.СостоянияДокументовЭДО.ТребуетсяОтправкаПриглашения),
+			ЗНАЧЕНИЕ(Перечисление.СостоянияДокументовЭДО.ТребуетсяПодготовкаКОтправке),
+			ЗНАЧЕНИЕ(Перечисление.СостоянияДокументовЭДО.ТребуетсяПодготовкаКОтправкеАннулирования),
+			ЗНАЧЕНИЕ(Перечисление.СостоянияДокументовЭДО.ТребуетсяПодготовкаКОтправкеИзвещения),
+			ЗНАЧЕНИЕ(Перечисление.СостоянияДокументовЭДО.ТребуетсяПодготовкаКОтправкеОтклонения),
+			ЗНАЧЕНИЕ(Перечисление.СостоянияДокументовЭДО.ТребуетсяПодготовкаКОтправкеИзвещенияПоОтклонению))
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ПроверкиЭлектронныхПодписейЭДО КАК ПроверкиЭлектронныхПодписейЭДО
+		ПО ЭлектронныйДокументИсходящийЭДО.Ссылка = ПроверкиЭлектронныхПодписейЭДО.ЭлектронныйДокумент
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.СоставПакетовДокументовЭДО КАК СоставПакетовДокументовЭДО
 			ЛЕВОЕ СОЕДИНЕНИЕ (ВЫБРАТЬ
 				СоставПакетовДокументовЭДО.ИдентификаторПакета,
 				КОЛИЧЕСТВО(СоставПакетовДокументовЭДО.ЭлектронныйДокумент) КАК КоличествоДокументов
@@ -4193,7 +4834,12 @@
 		ПО СоставПакетовДокументовЭДО.ЭлектронныйДокумент = ЭлектронныйДокументИсходящийЭДО.Ссылка
 		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ПакетыДокументовЭДО КАК ПакетыДокументовЭДО
 		ПО СоставПакетовДокументовЭДО.ИдентификаторПакета = ПакетыДокументовЭДО.ИдентификаторПакета
-</QueryText>
+ГДЕ
+	ВЫБОР
+		КОГДА НЕ &amp;ПоказыватьПомеченныеНаУдаление
+			ТОГДА НЕ ЭлектронныйДокументИсходящийЭДО.ПометкаУдаления
+		ИНАЧЕ ИСТИНА
+	КОНЕЦ</QueryText>
 				<ListSettings>
 					<dcsset:filter>
 						<dcsset:viewMode>Normal</dcsset:viewMode>
@@ -4253,6 +4899,292 @@
 					<v8:AllowedLength>Variable</v8:AllowedLength>
 				</v8:StringQualifiers>
 			</Type>
+		</Attribute>
+		<Attribute name="ПустойКонтрагент" id="73">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пустой контрагент</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="ПоказыватьОбластьПросмотра" id="74">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показывать область просмотра</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<Save>
+				<Field>ПоказыватьОбластьПросмотра</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ТекущийДокументУчетаПредставление" id="75">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Документ учета</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ТекущееСостояниеЭДО" id="76">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Состояние ЭДО</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ТекущаяКартинкаФайла" id="77">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текущая картинка файла</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ТекущийФайлПредставление" id="78">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текущий файл представление</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ТекущийДокументТабличныйДокумент" id="79">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текущий документ табличный документ</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type xmlns:mxl="http://v8.1c.ru/8.2/data/spreadsheet">mxl:SpreadsheetDocument</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ПоказыватьОбластьЛегенды" id="80">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показывать область легенды</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<Save>
+				<Field>ПоказыватьОбластьЛегенды</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ЕстьОтборПоНепрочтенным" id="81">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Есть отбор по непрочтенным</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ЭлементСхемыРегламента" id="82">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Элемент схемы регламента</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="ФормированиеПредставления" id="83">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Формирование представления</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="ТекущийФайл" id="84">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текущий файл</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.СообщениеЭДОПрисоединенныеФайлы</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ТекущийДокументУчета" id="85">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текущий документ учета</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:TypeSet>cfg:AnyIBRef</v8:TypeSet>
+			</Type>
+		</Attribute>
+		<Attribute name="ТекущаяСтрокаВОтбореВПапке" id="86">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текущая строка в отборе в папке</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>50</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПоказыватьПомеченныеНаУдаление" id="87">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показывать помеченные на удаление</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ТипыДоговорСКонтрагентомЭДО" id="88">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Типы договор с контрагентом ЭДО</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+			<Settings xsi:type="v8:TypeDescription"/>
+		</Attribute>
+		<Attribute name="ТекущийКомментарийСостояния" id="89">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Комментарий</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ОтложеннаяОтправкаЭлектронныхДокументов" id="94">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отложенная отправка электронных документов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ЕстьПроштампованныйPDF" id="91">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Есть проштампованный PDF</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ТекущееСообщениеЭДО" id="92">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текущее сообщение ЭДО</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DocumentRef.СообщениеЭДО</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СообщениеЭДО" id="93">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сообщение ЭДО</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DocumentRef.СообщениеЭДО</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ЭтоМобильныйКлиент" id="97">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Это мобильный клиент</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СведенияОPDFДокументе" id="98">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сведения ОPDFДокументе</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="ПараметрыАвтоматическогоПолученияЭДО" id="99">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Параметры автоматического получения ЭДО</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
 		</Attribute>
 	</Attributes>
 	<Commands>
@@ -4650,6 +5582,9 @@
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
 			<Action>Перенаправить</Action>
+			<FunctionalOptions>
+				<Item>FunctionalOption.ИспользоватьРазделениеДокументовПоОтветственнымЭДО</Item>
+			</FunctionalOptions>
 			<Representation>TextPicture</Representation>
 			<CurrentRowUse>DontUse</CurrentRowUse>
 		</Command>
@@ -4728,7 +5663,7 @@
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Настройка просмотра</v8:content>
+					<v8:content>Настройки просмотра</v8:content>
 				</v8:item>
 			</Title>
 			<Picture>
@@ -4967,6 +5902,147 @@
 			</Title>
 			<Action>ВернутьНаПодготовкуКОтправке</Action>
 		</Command>
+		<Command name="ПометитьКакПрочтенные" id="44">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пометить как прочтенные/непрочтенные</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пометить как прочтенные</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Shortcut>Ctrl+M</Shortcut>
+			<Action>ПометитьКакПрочтенные</Action>
+			<FunctionalOptions>
+				<Item>FunctionalOption.ИспользоватьПрочтениеДокументовЭДО</Item>
+			</FunctionalOptions>
+		</Command>
+		<Command name="ОткрытьМашиночитаемыеДоверенности" id="45">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть машиночитаемые доверенности</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть список машиночитаемых доверенностей организаций и контрагентов</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОткрытьМашиночитаемыеДоверенности</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ПоказыватьПомеченныеНаУдаление" id="46">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показывать помеченные на удаление</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ПоказыватьПомеченныеНаУдаление</Action>
+		</Command>
+		<Command name="ПометкаУдаления" id="47">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пометить на удаление / Снять пометку</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ПометкаУдаления</Action>
+		</Command>
+		<Command name="ПроверитьПодписи" id="48">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверить подписи</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверить подписи</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.CheckSyntax</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ПроверитьПодписи</Action>
+		</Command>
+		<Command name="ПерейтиНаЛегкийИнтерфейс" id="49">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перейти на легкий интерфейс</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ПерейтиНаЛегкийИнтерфейс</Action>
+		</Command>
+		<Command name="ПоказатьКомментарийСостояния" id="50">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать комментарий состояния</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ПоказатьКомментарийСостояния</Action>
+		</Command>
+		<Command name="Техподдержка" id="51">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Техподдержка</v8:content>
+				</v8:item>
+			</Title>
+			<Action>Техподдержка</Action>
+		</Command>
+		<Command name="ЗагрузитьФайлы" id="52">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Массовая отправка файлов</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ЗагрузитьФайлы</Action>
+		</Command>
+		<Command name="ВыборочныйОбменПоОрганизациям" id="53">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выборочный обмен по организациям</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ВыборочныйОбменПоОрганизациям</Action>
+		</Command>
+		<Command name="ПоказатьСведенияОЗадолженности" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>У вас задолженность</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать сведения о задолженности</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПоказатьСведенияОЗадолженности</Action>
+		</Command>
+		<Command name="ПолезныеСсылки" id="54">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Полезные ссылки</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ПолезныеСсылки</Action>
+		</Command>
 	</Commands>
 	<Parameters>
 		<Parameter name="ОтборВходящихДокументов">
@@ -5002,13 +6078,11 @@
 			<Item>
 				<Command>Form.Command.СформироватьПодписатьИОтправить</Command>
 				<Type>Added</Type>
-				<CommandGroup>CommandGroup.УдалитьЭД</CommandGroup>
 				<DefaultVisible>false</DefaultVisible>
 			</Item>
 			<Item>
 				<Command>Form.Command.СформироватьЭД</Command>
 				<Type>Added</Type>
-				<CommandGroup>CommandGroup.УдалитьЭД</CommandGroup>
 				<Index>1</Index>
 				<DefaultVisible>false</DefaultVisible>
 			</Item>

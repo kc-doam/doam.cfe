@@ -10,6 +10,11 @@
 		<enumeration>07</enumeration>
 		<enumeration>08</enumeration>
 		<enumeration>09</enumeration>
+		<enumeration>10</enumeration>
+		<enumeration>11</enumeration>
+		<enumeration>12</enumeration>
+		<enumeration>13</enumeration>
+		<enumeration>14</enumeration>
 	</valueType>
 	<valueType name="ВремяТип" base="xs:string" variety="Atomic"/>
 	<valueType name="ДатаТип" base="xs:string" variety="Atomic" length="10">

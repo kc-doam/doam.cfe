@@ -30,7 +30,6 @@
 				<xr:Item xsi:type="xr:MDObjectRef">FunctionalOption.ТехнологияСервисаВАвтономномРежиме</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ИнтеграцияПодсистемБТСКлиент</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Role.БазовыеПраваБТС</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ВитриныКлиент</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.РаботаВМоделиСервисаБТСПереопределяемый</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ИнтеграцияПодсистемБТСКлиентПовтИсп</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ИнтеграцияПодсистемБТСПовтИсп</xr:Item>
@@ -51,8 +50,6 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Enum.СтатусыОбластейДанных</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Constant.ВнешнийАдресУправляющегоПриложения</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Constant.ВнутреннийАдресМенеджераСервиса</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">Constant.КаталогОбменаФайламиВМоделиСервиса</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">Constant.КаталогОбменаФайламиВМоделиСервисаLinux</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Constant.КлючОбластиДанных</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Constant.КонечнаяТочкаМенеджераСервиса</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Constant.КопироватьОбластиДанныхИзЭталонной</xr:Item>
@@ -89,13 +86,12 @@
 				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.АдминистрированиеСервиса</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.БТС</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.БТСКлиент</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ФайлыБТСКлиент</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ФайлыБТСКлиентСервер</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ФайлыБТС</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ФайлыБТС</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonTemplate.fresh</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ОбщегоНазначенияВызовСервераБТС</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.УдалениеНеактуальныхДанных</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">SessionParameter.БлокировкаСеансаБТС</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.УстановленаМонопольнаяБлокировка</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">FunctionalOption.УстановленаМонопольнаяБлокировка</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

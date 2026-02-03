@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
 	<Width>100</Width>
 	<AutoTitle>false</AutoTitle>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
@@ -24,6 +24,7 @@
 			</Title>
 			<VerticalStretch>false</VerticalStretch>
 			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="СписокКомпоновщикНастроекПользовательскиеНастройкиРасширеннаяПодсказка" id="2"/>
 		</UsualGroup>
@@ -227,6 +228,64 @@
 							<ContextMenu name="ШтрихкодыНоменклатурыКонтекстноеМеню" id="86"/>
 							<ExtendedTooltip name="ШтрихкодыНоменклатурыРасширеннаяПодсказка" id="87"/>
 						</LabelField>
+						<InputField name="ТипНоменклатурыФНС" id="91">
+							<DataPath>Список.ТипНоменклатурыФНС</DataPath>
+							<UserVisible>
+								<xr:Common>false</xr:Common>
+							</UserVisible>
+							<ContextMenu name="ТипНоменклатурыФНСКонтекстноеМеню" id="92"/>
+							<ExtendedTooltip name="ТипНоменклатурыФНСРасширеннаяПодсказка" id="93"/>
+						</InputField>
+						<InputField name="КодНоменклатуры" id="94">
+							<DataPath>Список.КодНоменклатуры</DataPath>
+							<UserVisible>
+								<xr:Common>false</xr:Common>
+							</UserVisible>
+							<ContextMenu name="КодНоменклатурыКонтекстноеМеню" id="95"/>
+							<ExtendedTooltip name="КодНоменклатурыРасширеннаяПодсказка" id="96"/>
+						</InputField>
+						<InputField name="КодПоКТРУ" id="97">
+							<DataPath>Список.КодПоКТРУ</DataPath>
+							<UserVisible>
+								<xr:Common>false</xr:Common>
+							</UserVisible>
+							<ContextMenu name="КодПоКТРУКонтекстноеМеню" id="98"/>
+							<ExtendedTooltip name="КодПоКТРУРасширеннаяПодсказка" id="99"/>
+						</InputField>
+						<InputField name="КодТНВЭД" id="100">
+							<DataPath>Список.КодТНВЭД</DataPath>
+							<UserVisible>
+								<xr:Common>false</xr:Common>
+							</UserVisible>
+							<ContextMenu name="КодТНВЭДКонтекстноеМеню" id="101"/>
+							<ExtendedTooltip name="КодТНВЭДРасширеннаяПодсказка" id="102"/>
+						</InputField>
+						<InputField name="СтранаПроисхожденияКод" id="103">
+							<DataPath>Список.СтранаПроисхожденияКод</DataPath>
+							<UserVisible>
+								<xr:Common>false</xr:Common>
+							</UserVisible>
+							<ContextMenu name="СтранаПроисхожденияКодКонтекстноеМеню" id="104"/>
+							<ExtendedTooltip name="СтранаПроисхожденияКодРасширеннаяПодсказка" id="105"/>
+						</InputField>
+						<CheckBoxField name="ПрослеживаемыйТовар" id="106">
+							<DataPath>Список.ПрослеживаемыйТовар</DataPath>
+							<UserVisible>
+								<xr:Common>false</xr:Common>
+							</UserVisible>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ПрослеживаемыйТоварКонтекстноеМеню" id="107"/>
+							<ExtendedTooltip name="ПрослеживаемыйТоварРасширеннаяПодсказка" id="108"/>
+						</CheckBoxField>
+						<CheckBoxField name="МаркируемыйТовар" id="109">
+							<DataPath>Список.МаркируемыйТовар</DataPath>
+							<UserVisible>
+								<xr:Common>false</xr:Common>
+							</UserVisible>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="МаркируемыйТоварКонтекстноеМеню" id="110"/>
+							<ExtendedTooltip name="МаркируемыйТоварРасширеннаяПодсказка" id="111"/>
+						</CheckBoxField>
 						<ColumnGroup name="ГруппаИдентификаторы" id="60">
 							<Title>
 								<v8:item>
@@ -313,6 +372,14 @@
 								</LabelField>
 							</ChildItems>
 						</ColumnGroup>
+						<InputField name="ХешПравилаПоиска" id="114">
+							<DataPath>Список.ХешПравилаПоиска</DataPath>
+							<UserVisible>
+								<xr:Common>false</xr:Common>
+							</UserVisible>
+							<ContextMenu name="ХешПравилаПоискаКонтекстноеМеню" id="115"/>
+							<ExtendedTooltip name="ХешПравилаПоискаРасширеннаяПодсказка" id="116"/>
+						</InputField>
 					</ChildItems>
 				</ColumnGroup>
 				<ColumnGroup name="ГруппаНоменклатураИБ" id="58">
@@ -383,8 +450,44 @@
 						</CheckBoxField>
 					</ChildItems>
 				</ColumnGroup>
+				<ColumnGroup name="ГруппаХешиНатуральныхКлючей" id="117">
+					<UserVisible>
+						<xr:Common>false</xr:Common>
+					</UserVisible>
+					<Group>Horizontal</Group>
+					<ExtendedTooltip name="ГруппаХешиНатуральныхКлючейРасширеннаяПодсказка" id="118"/>
+					<ChildItems>
+						<InputField name="ХешНаименования" id="125">
+							<DataPath>Список.ХешНаименования</DataPath>
+							<ContextMenu name="ХешНаименованияКонтекстноеМеню" id="126"/>
+							<ExtendedTooltip name="ХешНаименованияРасширеннаяПодсказка" id="127"/>
+						</InputField>
+						<InputField name="ХешАртикула" id="119">
+							<DataPath>Список.ХешАртикула</DataPath>
+							<ContextMenu name="ХешАртикулаКонтекстноеМеню" id="120"/>
+							<ExtendedTooltip name="ХешАртикулаРасширеннаяПодсказка" id="121"/>
+						</InputField>
+						<InputField name="ХешКодаНоменклатуры" id="122">
+							<DataPath>Список.ХешКодаНоменклатуры</DataPath>
+							<ContextMenu name="ХешКодаНоменклатурыКонтекстноеМеню" id="123"/>
+							<ExtendedTooltip name="ХешКодаНоменклатурыРасширеннаяПодсказка" id="124"/>
+						</InputField>
+						<InputField name="ХешШтрихкода" id="131">
+							<DataPath>Список.ХешШтрихкода</DataPath>
+							<ContextMenu name="ХешШтрихкодаКонтекстноеМеню" id="132"/>
+							<ExtendedTooltip name="ХешШтрихкодаРасширеннаяПодсказка" id="133"/>
+						</InputField>
+					</ChildItems>
+				</ColumnGroup>
 			</ChildItems>
 		</Table>
+		<Button name="ПравилаПоискаПоЧастиНаименования" id="112">
+			<Type>Hyperlink</Type>
+			<Representation>Text</Representation>
+			<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+			<CommandName>InformationRegister.ПравилаПоискаПоЧастиНаименованияБЭД.Command.ПравилаПоискаПоЧастиНаименования</CommandName>
+			<ExtendedTooltip name="ПравилаПоискаПоЧастиНаименованияРасширеннаяПодсказка" id="113"/>
+		</Button>
 	</ChildItems>
 	<Attributes>
 		<Attribute name="Список" id="1">

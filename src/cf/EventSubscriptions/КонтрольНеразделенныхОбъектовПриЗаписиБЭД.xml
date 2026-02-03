@@ -13,6 +13,7 @@
 			<Source>
 				<v8:Type>cfg:ConstantValueManager.ИспользоватьСертификатыОблачногоСервисаВЭДО</v8:Type>
 				<v8:Type>cfg:ConstantValueManager.ДатаЗагрузкиОписанияФорматовДляПреобразования</v8:Type>
+				<v8:Type>cfg:ConstantValueManager.КлючДоступаКСервисуЭДО</v8:Type>
 			</Source>
 			<Event>OnWrite</Event>
 			<Handler>CommonModule.РаботаВМоделиСервиса.КонтрольНеразделенныхОбъектовПриЗаписи</Handler>

@@ -532,6 +532,12 @@
 					</dcscor:value>
 					<dcsset:userSettingID>206efa53-a06c-4d30-88a7-921001e70555</dcsset:userSettingID>
 				</dcscor:item>
+				<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+					<dcscor:use>false</dcscor:use>
+					<dcscor:parameter>Контрагент</dcscor:parameter>
+					<dcscor:value xsi:nil="true"/>
+					<dcsset:userSettingID>1dd75b82-1b7a-4da4-ae06-bc7dd2e4666e</dcsset:userSettingID>
+				</dcscor:item>
 			</dcsset:dataParameters>
 			<dcsset:order>
 				<dcsset:item xsi:type="dcsset:OrderItemField">

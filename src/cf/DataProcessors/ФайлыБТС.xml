@@ -28,9 +28,9 @@
 			<Explanation/>
 		</Properties>
 		<ChildObjects>
+			<Form>ДлительнаяОперация</Form>
 			<Form>ПолучениеФайла</Form>
 			<Form>ПомещениеФайла</Form>
-			<Form>ДлительнаяОперация</Form>
 		</ChildObjects>
 	</DataProcessor>
 </MetaDataObject>

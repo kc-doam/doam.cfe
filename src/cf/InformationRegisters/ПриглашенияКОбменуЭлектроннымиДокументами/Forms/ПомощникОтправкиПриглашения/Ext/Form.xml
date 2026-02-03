@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
 	<Title>
 		<v8:item>
 			<v8:lang>ru</v8:lang>
@@ -30,6 +30,7 @@
 			<HorizontalStretch>true</HorizontalStretch>
 			<VerticalStretch>false</VerticalStretch>
 			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<BackColor>style:ToolTipBackColor</BackColor>
@@ -62,6 +63,7 @@
 								</v8:item>
 							</Title>
 							<HorizontalStretch>true</HorizontalStretch>
+							<Behavior>Usual</Behavior>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
 							<BackColor>style:ToolTipBackColor</BackColor>
@@ -107,6 +109,7 @@
 								</v8:item>
 							</Title>
 							<Group>AlwaysHorizontal</Group>
+							<Behavior>Usual</Behavior>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="ГруппаПервыйЭтапРасширеннаяПодсказка" id="79"/>
@@ -134,6 +137,7 @@
 										</v8:item>
 									</Title>
 									<Group>Vertical</Group>
+									<Behavior>Usual</Behavior>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="ГруппаУчастникиРасширеннаяПодсказка" id="84"/>
@@ -157,6 +161,7 @@
 												</v8:item>
 											</Title>
 											<Group>AlwaysHorizontal</Group>
+											<Behavior>Usual</Behavior>
 											<Representation>None</Representation>
 											<ShowTitle>false</ShowTitle>
 											<ExtendedTooltip name="ГруппаОрганизацияРасширеннаяПодсказка" id="89"/>
@@ -192,6 +197,7 @@
 												</v8:item>
 											</Title>
 											<Group>AlwaysHorizontal</Group>
+											<Behavior>Usual</Behavior>
 											<Representation>None</Representation>
 											<ShowTitle>false</ShowTitle>
 											<ExtendedTooltip name="ГруппаКонтрагентРасширеннаяПодсказка" id="97"/>
@@ -215,6 +221,7 @@
 														</v8:item>
 													</Title>
 													<Group>Vertical</Group>
+													<Behavior>Usual</Behavior>
 													<Representation>None</Representation>
 													<ShowTitle>false</ShowTitle>
 													<ExtendedTooltip name="ГруппаКонтрагентИНадписьНеУказанИННРасширеннаяПодсказка" id="387"/>
@@ -232,6 +239,7 @@
 															<ExtendedTooltip name="КонтрагентРасширеннаяПодсказка" id="103"/>
 															<Events>
 																<Event name="OnChange">КонтрагентПриИзменении</Event>
+																<Event name="ChoiceProcessing">КонтрагентОбработкаВыбора</Event>
 															</Events>
 														</InputField>
 														<LabelDecoration name="НадписьНеУказанИНН" id="388">
@@ -250,290 +258,6 @@
 												</UsualGroup>
 											</ChildItems>
 										</UsualGroup>
-										<Pages name="ГруппаСтраницыИнформацииОКонтрагенте" id="106">
-											<Title>
-												<v8:item>
-													<v8:lang>ru</v8:lang>
-													<v8:content>Группа страницы информации о контрагенте</v8:content>
-												</v8:item>
-											</Title>
-											<ToolTipRepresentation>None</ToolTipRepresentation>
-											<PagesRepresentation>None</PagesRepresentation>
-											<ExtendedTooltip name="ГруппаСтраницыИнформацииОКонтрагентеРасширеннаяПодсказка" id="107"/>
-											<ChildItems>
-												<Page name="СтраницаИнформацииОКонтрагентеОператор" id="108">
-													<Title>
-														<v8:item>
-															<v8:lang>ru</v8:lang>
-															<v8:content>Страница информации о контрагенте оператор</v8:content>
-														</v8:item>
-													</Title>
-													<ExtendedTooltip name="СтраницаИнформацииОКонтрагентеОператорРасширеннаяПодсказка" id="109"/>
-													<ChildItems>
-														<UsualGroup name="ГруппаОператорКонтрагента" id="110">
-															<Title>
-																<v8:item>
-																	<v8:lang>ru</v8:lang>
-																	<v8:content>Группа оператор контрагента</v8:content>
-																</v8:item>
-															</Title>
-															<Group>AlwaysHorizontal</Group>
-															<Representation>None</Representation>
-															<ShowTitle>false</ShowTitle>
-															<ExtendedTooltip name="ГруппаОператорКонтрагентаРасширеннаяПодсказка" id="111"/>
-															<ChildItems>
-																<LabelDecoration name="НадписьОператорКонтрагента" id="112">
-																	<Width>13</Width>
-																	<Title formatted="false">
-																		<v8:item>
-																			<v8:lang>ru</v8:lang>
-																			<v8:content>Оператор контрагента:</v8:content>
-																		</v8:item>
-																	</Title>
-																	<ContextMenu name="НадписьОператорКонтрагентаКонтекстноеМеню" id="113"/>
-																	<ExtendedTooltip name="НадписьОператорКонтрагентаРасширеннаяПодсказка" id="114"/>
-																</LabelDecoration>
-																<InputField name="ОператорКонтрагента" id="115">
-																	<DataPath>ОператорКонтрагента</DataPath>
-																	<Title>
-																		<v8:item>
-																			<v8:lang>ru</v8:lang>
-																			<v8:content>Оператор контрагента</v8:content>
-																		</v8:item>
-																	</Title>
-																	<TitleLocation>None</TitleLocation>
-																	<ListChoiceMode>true</ListChoiceMode>
-																	<AutoMarkIncomplete>true</AutoMarkIncomplete>
-																	<ContextMenu name="ОператорКонтрагентаКонтекстноеМеню" id="116"/>
-																	<ExtendedTooltip name="ОператорКонтрагентаРасширеннаяПодсказка" id="117"/>
-																	<Events>
-																		<Event name="OnChange">ОператорКонтрагентаПриИзменении</Event>
-																	</Events>
-																</InputField>
-															</ChildItems>
-														</UsualGroup>
-														<LabelDecoration name="НадписьНеЗнаюОператора" id="138">
-															<Title formatted="false">
-																<v8:item>
-																	<v8:lang>ru</v8:lang>
-																	<v8:content>Я не знаю оператора контрагента</v8:content>
-																</v8:item>
-															</Title>
-															<GroupHorizontalAlign>Right</GroupHorizontalAlign>
-															<Hyperlink>true</Hyperlink>
-															<ContextMenu name="НадписьНеЗнаюОператораКонтекстноеМеню" id="139"/>
-															<ExtendedTooltip name="НадписьНеЗнаюОператораРасширеннаяПодсказка" id="140"/>
-															<Events>
-																<Event name="Click">НадписьНеЗнаюОператораНажатие</Event>
-															</Events>
-														</LabelDecoration>
-													</ChildItems>
-												</Page>
-												<Page name="СтраницаИнформацииОКонтрагентеЭлектроннаяПочта" id="118">
-													<Title>
-														<v8:item>
-															<v8:lang>ru</v8:lang>
-															<v8:content>Страница информации о контрагенте электронная почта</v8:content>
-														</v8:item>
-													</Title>
-													<ExtendedTooltip name="СтраницаИнформацииОКонтрагентеЭлектроннаяПочтаРасширеннаяПодсказка" id="119"/>
-													<ChildItems>
-														<UsualGroup name="ГруппаЭлектроннаяПочта" id="120">
-															<Title>
-																<v8:item>
-																	<v8:lang>ru</v8:lang>
-																	<v8:content>Группа электронная почта</v8:content>
-																</v8:item>
-															</Title>
-															<Group>AlwaysHorizontal</Group>
-															<Representation>None</Representation>
-															<ShowTitle>false</ShowTitle>
-															<ExtendedTooltip name="ГруппаЭлектроннаяПочтаРасширеннаяПодсказка" id="121"/>
-															<ChildItems>
-																<LabelDecoration name="НадписьЭлектроннаяПочта" id="122">
-																	<Width>13</Width>
-																	<Title formatted="false">
-																		<v8:item>
-																			<v8:lang>ru</v8:lang>
-																			<v8:content>E-mail контрагента:</v8:content>
-																		</v8:item>
-																	</Title>
-																	<ContextMenu name="НадписьЭлектроннаяПочтаКонтекстноеМеню" id="123"/>
-																	<ExtendedTooltip name="НадписьЭлектроннаяПочтаРасширеннаяПодсказка" id="124"/>
-																</LabelDecoration>
-																<UsualGroup name="ГруппаЭлектроннаяПочтаИНадписьНекорректна" id="379">
-																	<Title>
-																		<v8:item>
-																			<v8:lang>ru</v8:lang>
-																			<v8:content>Группа электронная почта и надпись некорректна</v8:content>
-																		</v8:item>
-																	</Title>
-																	<Group>Vertical</Group>
-																	<Representation>None</Representation>
-																	<United>false</United>
-																	<ShowTitle>false</ShowTitle>
-																	<ExtendedTooltip name="ГруппаЭлектроннаяПочтаИНадписьНекорректнаРасширеннаяПодсказка" id="380"/>
-																	<ChildItems>
-																		<InputField name="ЭлектроннаяПочта" id="125">
-																			<DataPath>ЭлектроннаяПочта</DataPath>
-																			<Title>
-																				<v8:item>
-																					<v8:lang>ru</v8:lang>
-																					<v8:content>E-mail контрагента</v8:content>
-																				</v8:item>
-																			</Title>
-																			<TitleLocation>None</TitleLocation>
-																			<ToolTip>
-																				<v8:item>
-																					<v8:lang>ru</v8:lang>
-																					<v8:content>Если получатель не зарегистрирован в сервисе ЭДО, на указанную электронную почту будет отправлена информация: как подключиться и принять приглашение.</v8:content>
-																				</v8:item>
-																			</ToolTip>
-																			<ToolTipRepresentation>Button</ToolTipRepresentation>
-																			<AutoMarkIncomplete>true</AutoMarkIncomplete>
-																			<EditTextUpdate>OnValueChange</EditTextUpdate>
-																			<ContextMenu name="ЭлектроннаяПочтаКонтекстноеМеню" id="126"/>
-																			<ExtendedTooltip name="ЭлектроннаяПочтаExtendedTooltip" id="127"/>
-																			<Events>
-																				<Event name="OnChange">ЭлектроннаяПочтаПриИзменении</Event>
-																				<Event name="EditTextChange">ЭлектроннаяПочтаИзменениеТекстаРедактирования</Event>
-																				<Event name="ChoiceProcessing">ЭлектроннаяПочтаОбработкаВыбора</Event>
-																			</Events>
-																		</InputField>
-																		<LabelDecoration name="НадписьЭлектроннаяПочтаНекорректна" id="376">
-																			<Visible>false</Visible>
-																			<TextColor>style:НезаполненныйРеквизитЦветБЭД</TextColor>
-																			<Title formatted="false">
-																				<v8:item>
-																					<v8:lang>ru</v8:lang>
-																					<v8:content>Почтовый адрес заполнен неверно</v8:content>
-																				</v8:item>
-																			</Title>
-																			<ContextMenu name="НадписьЭлектроннаяПочтаНекорректнаКонтекстноеМеню" id="377"/>
-																			<ExtendedTooltip name="НадписьЭлектроннаяПочтаНекорректнаРасширеннаяПодсказка" id="378"/>
-																		</LabelDecoration>
-																	</ChildItems>
-																</UsualGroup>
-															</ChildItems>
-														</UsualGroup>
-														<LabelDecoration name="НадписьНеЗнаюEmail" id="321">
-															<Title formatted="false">
-																<v8:item>
-																	<v8:lang>ru</v8:lang>
-																	<v8:content>Я не знаю e-mail контрагента</v8:content>
-																</v8:item>
-															</Title>
-															<GroupHorizontalAlign>Right</GroupHorizontalAlign>
-															<Hyperlink>true</Hyperlink>
-															<ContextMenu name="НадписьНеЗнаюEmailКонтекстноеМеню" id="322"/>
-															<ExtendedTooltip name="НадписьНеЗнаюEmailРасширеннаяПодсказка" id="323"/>
-															<Events>
-																<Event name="Click">НадписьНеЗнаюEmailНажатие</Event>
-															</Events>
-														</LabelDecoration>
-													</ChildItems>
-												</Page>
-												<Page name="СтраницаИнформацииОКонтрагентеИдентификатор" id="128">
-													<Title>
-														<v8:item>
-															<v8:lang>ru</v8:lang>
-															<v8:content>Страница информации о контрагенте идентификатор</v8:content>
-														</v8:item>
-													</Title>
-													<ExtendedTooltip name="СтраницаИнформацииОКонтрагентеИдентификаторРасширеннаяПодсказка" id="129"/>
-													<ChildItems>
-														<UsualGroup name="ГруппаИдентификаторКонтрагентаВвод" id="130">
-															<Title>
-																<v8:item>
-																	<v8:lang>ru</v8:lang>
-																	<v8:content>Группа идентификатор контрагента ввод</v8:content>
-																</v8:item>
-															</Title>
-															<Representation>None</Representation>
-															<ShowTitle>false</ShowTitle>
-															<ExtendedTooltip name="ГруппаИдентификаторКонтрагентаВводРасширеннаяПодсказка" id="131"/>
-															<ChildItems>
-																<LabelDecoration name="НадписьИдентификаторКонтрагентаВвод" id="132">
-																	<Width>13</Width>
-																	<Title formatted="false">
-																		<v8:item>
-																			<v8:lang>ru</v8:lang>
-																			<v8:content>Идентификатор ЭДО:</v8:content>
-																		</v8:item>
-																	</Title>
-																	<ContextMenu name="НадписьИдентификаторКонтрагентаВводКонтекстноеМеню" id="133"/>
-																	<ExtendedTooltip name="НадписьИдентификаторКонтрагентаВводРасширеннаяПодсказка" id="134"/>
-																</LabelDecoration>
-																<UsualGroup name="ГруппаИдентификаторКонтрагентаВводИНадписьНекорректный" id="413">
-																	<Title>
-																		<v8:item>
-																			<v8:lang>ru</v8:lang>
-																			<v8:content>Группа идентификатор контрагента ввод и надпись некорректный</v8:content>
-																		</v8:item>
-																	</Title>
-																	<Group>Vertical</Group>
-																	<Representation>None</Representation>
-																	<ShowTitle>false</ShowTitle>
-																	<ExtendedTooltip name="ГруппаИдентификаторКонтрагентаВводИНадписьНекорректныйРасширеннаяПодсказка" id="414"/>
-																	<ChildItems>
-																		<InputField name="ИдентификаторКонтрагентаВвод" id="135">
-																			<DataPath>ИдентификаторКонтрагента</DataPath>
-																			<Title>
-																				<v8:item>
-																					<v8:lang>ru</v8:lang>
-																					<v8:content>Идентификатор ЭДО</v8:content>
-																				</v8:item>
-																			</Title>
-																			<TitleLocation>None</TitleLocation>
-																			<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
-																			<InputHint>
-																				<v8:item>
-																					<v8:lang>ru</v8:lang>
-																					<v8:content>Идентификатор участника ЭДО</v8:content>
-																				</v8:item>
-																			</InputHint>
-																			<ContextMenu name="ИдентификаторКонтрагентаВводКонтекстноеМеню" id="136"/>
-																			<ExtendedTooltip name="ИдентификаторКонтрагентаВводРасширеннаяПодсказка" id="137"/>
-																			<Events>
-																				<Event name="OnChange">ИдентификаторКонтрагентаВводПриИзменении</Event>
-																				<Event name="EditTextChange">ИдентификаторКонтрагентаВводИзменениеТекстаРедактирования</Event>
-																			</Events>
-																		</InputField>
-																		<LabelDecoration name="НадписьИдентификаторКонтрагентаВводНекорректный" id="418">
-																			<Visible>false</Visible>
-																			<TextColor>style:НезаполненныйРеквизитЦветБЭД</TextColor>
-																			<Title formatted="false">
-																				<v8:item>
-																					<v8:lang>ru</v8:lang>
-																					<v8:content>Указан некорректный идентификатор ЭДО</v8:content>
-																				</v8:item>
-																			</Title>
-																			<ContextMenu name="НадписьИдентификаторКонтрагентаВводНекорректныйКонтекстноеМеню" id="419"/>
-																			<ExtendedTooltip name="НадписьИдентификаторКонтрагентаВводНекорректныйРасширеннаяПодсказка" id="420"/>
-																		</LabelDecoration>
-																	</ChildItems>
-																</UsualGroup>
-															</ChildItems>
-														</UsualGroup>
-														<LabelDecoration name="НадписьНеЗнаюИдентификатор" id="324">
-															<Title formatted="false">
-																<v8:item>
-																	<v8:lang>ru</v8:lang>
-																	<v8:content>Я не знаю идентификатор контрагента</v8:content>
-																</v8:item>
-															</Title>
-															<GroupHorizontalAlign>Right</GroupHorizontalAlign>
-															<Hyperlink>true</Hyperlink>
-															<ContextMenu name="НадписьНеЗнаюИдентификаторКонтекстноеМеню" id="325"/>
-															<ExtendedTooltip name="НадписьНеЗнаюИдентификаторРасширеннаяПодсказка" id="326"/>
-															<Events>
-																<Event name="Click">НадписьНеЗнаюИдентификаторНажатие</Event>
-															</Events>
-														</LabelDecoration>
-													</ChildItems>
-												</Page>
-											</ChildItems>
-										</Pages>
 									</ChildItems>
 								</UsualGroup>
 							</ChildItems>
@@ -546,6 +270,7 @@
 								</v8:item>
 							</Title>
 							<Group>AlwaysHorizontal</Group>
+							<Behavior>Usual</Behavior>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="ГруппаВторойЭтапРасширеннаяПодсказка" id="142"/>
@@ -573,6 +298,7 @@
 										</v8:item>
 									</Title>
 									<Group>Vertical</Group>
+									<Behavior>Usual</Behavior>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="ГруппаИдентификаторыЭДОРасширеннаяПодсказка" id="147"/>
@@ -616,6 +342,7 @@
 																	<v8:content>Группа идентификатор организации</v8:content>
 																</v8:item>
 															</Title>
+															<Behavior>Usual</Behavior>
 															<Representation>None</Representation>
 															<ShowTitle>false</ShowTitle>
 															<ExtendedTooltip name="ГруппаИдентификаторОрганизацииРасширеннаяПодсказка" id="156"/>
@@ -663,173 +390,482 @@
 															</Title>
 															<Group>AlwaysHorizontal</Group>
 															<VerticalAlign>Center</VerticalAlign>
+															<Behavior>Usual</Behavior>
 															<Representation>None</Representation>
 															<ShowTitle>false</ShowTitle>
 															<ExtendedTooltip name="ГруппаИдентификаторКонтрагентаРасширеннаяПодсказка" id="164"/>
 															<ChildItems>
-																<LabelDecoration name="НадписьИдентификаторКонтрагента" id="165">
-																	<Width>13</Width>
-																	<Title formatted="false">
-																		<v8:item>
-																			<v8:lang>ru</v8:lang>
-																			<v8:content>Контрагента:</v8:content>
-																		</v8:item>
-																	</Title>
-																	<ContextMenu name="НадписьИдентификаторКонтрагентаКонтекстноеМеню" id="166"/>
-																	<ExtendedTooltip name="НадписьИдентификаторКонтрагентаРасширеннаяПодсказка" id="167"/>
-																</LabelDecoration>
-																<UsualGroup name="ГруппаИдентификаторКонтрагентаИНадписьНекорректный" id="381">
+																<UsualGroup name="ГруппаНадписьУчетнаяЗаписьКонтрагента" id="484">
 																	<Title>
 																		<v8:item>
 																			<v8:lang>ru</v8:lang>
-																			<v8:content>Группа идентификатор контрагента и надпись некорректный</v8:content>
+																			<v8:content>Группа1</v8:content>
 																		</v8:item>
 																	</Title>
 																	<Group>Vertical</Group>
+																	<Behavior>Usual</Behavior>
 																	<Representation>None</Representation>
-																	<United>false</United>
 																	<ShowTitle>false</ShowTitle>
-																	<ExtendedTooltip name="ГруппаИдентификаторКонтрагентаИНадписьНекорректныйРасширеннаяПодсказка" id="382"/>
+																	<ExtendedTooltip name="ГруппаНадписьУчетнаяЗаписьКонтрагентаРасширеннаяПодсказка" id="485"/>
 																	<ChildItems>
-																		<InputField name="ИдентификаторКонтрагента" id="172">
-																			<DataPath>ИдентификаторКонтрагента</DataPath>
-																			<Title>
-																				<v8:item>
-																					<v8:lang>ru</v8:lang>
-																					<v8:content>Идентификатор контрагента</v8:content>
-																				</v8:item>
-																			</Title>
-																			<TitleLocation>None</TitleLocation>
-																			<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
-																			<ListChoiceMode>true</ListChoiceMode>
-																			<AutoMarkIncomplete>true</AutoMarkIncomplete>
-																			<InputHint>
-																				<v8:item>
-																					<v8:lang>ru</v8:lang>
-																					<v8:content>Идентификатор участника ЭДО</v8:content>
-																				</v8:item>
-																			</InputHint>
-																			<ContextMenu name="ИдентификаторКонтрагентаКонтекстноеМеню" id="173"/>
-																			<ExtendedTooltip name="ИдентификаторКонтрагентаРасширеннаяПодсказка" id="174"/>
-																			<Events>
-																				<Event name="OnChange">ИдентификаторКонтрагентаПриИзменении</Event>
-																				<Event name="TextEditEnd">ИдентификаторКонтрагентаОкончаниеВводаТекста</Event>
-																			</Events>
-																		</InputField>
-																		<LabelDecoration name="НадписьИдентификаторКонтрагентаНекорректный" id="383">
-																			<Visible>false</Visible>
-																			<TextColor>style:НезаполненныйРеквизитЦветБЭД</TextColor>
+																		<LabelDecoration name="НадписьИдентификаторКонтрагента" id="165">
+																			<Width>13</Width>
 																			<Title formatted="false">
 																				<v8:item>
 																					<v8:lang>ru</v8:lang>
-																					<v8:content>Указан некорректный идентификатор ЭДО</v8:content>
+																					<v8:content>Контрагента:</v8:content>
 																				</v8:item>
 																			</Title>
-																			<ContextMenu name="НадписьИдентификаторКонтрагентаНекорректныйКонтекстноеМеню" id="384"/>
-																			<ExtendedTooltip name="НадписьИдентификаторКонтрагентаНекорректныйРасширеннаяПодсказка" id="385"/>
+																			<ContextMenu name="НадписьИдентификаторКонтрагентаКонтекстноеМеню" id="166"/>
+																			<ExtendedTooltip name="НадписьИдентификаторКонтрагентаРасширеннаяПодсказка" id="167"/>
+																		</LabelDecoration>
+																		<LabelDecoration name="ПустаяДекорация" id="486">
+																			<ContextMenu name="ПустаяДекорацияКонтекстноеМеню" id="487"/>
+																			<ExtendedTooltip name="ПустаяДекорацияРасширеннаяПодсказка" id="488"/>
 																		</LabelDecoration>
 																	</ChildItems>
 																</UsualGroup>
-																<UsualGroup name="ГруппаПодробнее" id="175">
+																<Pages name="ГруппаСтраницыИнформацииОКонтрагенте" id="106">
 																	<Title>
 																		<v8:item>
 																			<v8:lang>ru</v8:lang>
-																			<v8:content>Подробнее</v8:content>
+																			<v8:content>Группа страницы информации о контрагенте</v8:content>
 																		</v8:item>
 																	</Title>
-																	<Group>Vertical</Group>
-																	<Behavior>PopUp</Behavior>
-																	<Representation>None</Representation>
-																	<ExtendedTooltip name="ГруппаПодробнееРасширеннаяПодсказка" id="176"/>
+																	<ToolTipRepresentation>None</ToolTipRepresentation>
+																	<PagesRepresentation>None</PagesRepresentation>
+																	<ExtendedTooltip name="ГруппаСтраницыИнформацииОКонтрагентеРасширеннаяПодсказка" id="107"/>
 																	<ChildItems>
-																		<UsualGroup name="ГруппаСтатусПриглашения" id="391">
+																		<Page name="СтраницаИнформацииОКонтрагентеОператор" id="108">
 																			<Title>
 																				<v8:item>
 																					<v8:lang>ru</v8:lang>
-																					<v8:content>Группа статус приглашения</v8:content>
+																					<v8:content>Страница информации о контрагенте оператор</v8:content>
 																				</v8:item>
 																			</Title>
-																			<Representation>None</Representation>
-																			<ShowTitle>false</ShowTitle>
-																			<ExtendedTooltip name="ГруппаСтатусПриглашенияРасширеннаяПодсказка" id="392"/>
+																			<ExtendedTooltip name="СтраницаИнформацииОКонтрагентеОператорРасширеннаяПодсказка" id="109"/>
 																			<ChildItems>
-																				<LabelDecoration name="НадписьСтатусПриглашения" id="393">
+																				<UsualGroup name="ГруппаОператорКонтрагента" id="110">
+																					<Title>
+																						<v8:item>
+																							<v8:lang>ru</v8:lang>
+																							<v8:content>Группа оператор контрагента</v8:content>
+																						</v8:item>
+																					</Title>
+																					<Group>AlwaysHorizontal</Group>
+																					<Behavior>Usual</Behavior>
+																					<Representation>None</Representation>
+																					<ShowTitle>false</ShowTitle>
+																					<ExtendedTooltip name="ГруппаОператорКонтрагентаРасширеннаяПодсказка" id="111"/>
+																					<ChildItems>
+																						<LabelDecoration name="НадписьОператорКонтрагента" id="481">
+																							<Visible>false</Visible>
+																							<Title formatted="false">
+																								<v8:item>
+																									<v8:lang>ru</v8:lang>
+																									<v8:content>ОператорКонтрагента:</v8:content>
+																								</v8:item>
+																							</Title>
+																							<ContextMenu name="НадписьОператорКонтрагентаКонтекстноеМеню" id="482"/>
+																							<ExtendedTooltip name="НадписьОператорКонтрагентаРасширеннаяПодсказка" id="483"/>
+																						</LabelDecoration>
+																						<InputField name="ОператорКонтрагента" id="115">
+																							<DataPath>ОператорКонтрагента</DataPath>
+																							<Title>
+																								<v8:item>
+																									<v8:lang>ru</v8:lang>
+																									<v8:content>Оператор контрагента</v8:content>
+																								</v8:item>
+																							</Title>
+																							<TitleLocation>None</TitleLocation>
+																							<ListChoiceMode>true</ListChoiceMode>
+																							<AutoMarkIncomplete>true</AutoMarkIncomplete>
+																							<InputHint>
+																								<v8:item>
+																									<v8:lang>ru</v8:lang>
+																									<v8:content>Оператор контрагента</v8:content>
+																								</v8:item>
+																							</InputHint>
+																							<ContextMenu name="ОператорКонтрагентаКонтекстноеМеню" id="116"/>
+																							<ExtendedTooltip name="ОператорКонтрагентаРасширеннаяПодсказка" id="117"/>
+																							<Events>
+																								<Event name="OnChange">ОператорКонтрагентаПриИзменении</Event>
+																							</Events>
+																						</InputField>
+																					</ChildItems>
+																				</UsualGroup>
+																				<LabelDecoration name="НадписьНеЗнаюОператора" id="138">
 																					<Title formatted="false">
 																						<v8:item>
 																							<v8:lang>ru</v8:lang>
-																							<v8:content>Статус приглашения:</v8:content>
+																							<v8:content>Я не знаю оператора контрагента</v8:content>
 																						</v8:item>
 																					</Title>
-																					<ContextMenu name="НадписьСтатусПриглашенияКонтекстноеМеню" id="394"/>
-																					<ExtendedTooltip name="НадписьСтатусПриглашенияРасширеннаяПодсказка" id="395"/>
+																					<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+																					<Hyperlink>true</Hyperlink>
+																					<ContextMenu name="НадписьНеЗнаюОператораКонтекстноеМеню" id="139"/>
+																					<ExtendedTooltip name="НадписьНеЗнаюОператораРасширеннаяПодсказка" id="140"/>
+																					<Events>
+																						<Event name="Click">НадписьНеЗнаюОператораНажатие</Event>
+																					</Events>
 																				</LabelDecoration>
-																				<PictureDecoration name="КартинкаСтатусПриглашения" id="396">
-																					<Width>2</Width>
-																					<Height>1</Height>
+																			</ChildItems>
+																		</Page>
+																		<Page name="СтраницаИнформацииОКонтрагентеЭлектроннаяПочта" id="118">
+																			<Title>
+																				<v8:item>
+																					<v8:lang>ru</v8:lang>
+																					<v8:content>Страница информации о контрагенте электронная почта</v8:content>
+																				</v8:item>
+																			</Title>
+																			<ExtendedTooltip name="СтраницаИнформацииОКонтрагентеЭлектроннаяПочтаРасширеннаяПодсказка" id="119"/>
+																			<ChildItems>
+																				<UsualGroup name="ГруппаЭлектроннаяПочта" id="120">
+																					<Title>
+																						<v8:item>
+																							<v8:lang>ru</v8:lang>
+																							<v8:content>Группа электронная почта</v8:content>
+																						</v8:item>
+																					</Title>
+																					<Group>AlwaysHorizontal</Group>
+																					<Behavior>Usual</Behavior>
+																					<Representation>None</Representation>
+																					<ShowTitle>false</ShowTitle>
+																					<ExtendedTooltip name="ГруппаЭлектроннаяПочтаРасширеннаяПодсказка" id="121"/>
+																					<ChildItems>
+																						<LabelDecoration name="НадписьЭлектроннаяПочта" id="122">
+																							<Visible>false</Visible>
+																							<Width>13</Width>
+																							<Title formatted="false">
+																								<v8:item>
+																									<v8:lang>ru</v8:lang>
+																									<v8:content>E-mail контрагента:</v8:content>
+																								</v8:item>
+																							</Title>
+																							<ContextMenu name="НадписьЭлектроннаяПочтаКонтекстноеМеню" id="123"/>
+																							<ExtendedTooltip name="НадписьЭлектроннаяПочтаРасширеннаяПодсказка" id="124"/>
+																						</LabelDecoration>
+																						<UsualGroup name="ГруппаЭлектроннаяПочтаИНадписьНекорректна" id="379">
+																							<Title>
+																								<v8:item>
+																									<v8:lang>ru</v8:lang>
+																									<v8:content>Группа электронная почта и надпись некорректна</v8:content>
+																								</v8:item>
+																							</Title>
+																							<Group>Vertical</Group>
+																							<Behavior>Usual</Behavior>
+																							<Representation>None</Representation>
+																							<United>false</United>
+																							<ShowTitle>false</ShowTitle>
+																							<ExtendedTooltip name="ГруппаЭлектроннаяПочтаИНадписьНекорректнаРасширеннаяПодсказка" id="380"/>
+																							<ChildItems>
+																								<InputField name="ЭлектроннаяПочта" id="125">
+																									<DataPath>ЭлектроннаяПочта</DataPath>
+																									<Title>
+																										<v8:item>
+																											<v8:lang>ru</v8:lang>
+																											<v8:content>E-mail контрагента</v8:content>
+																										</v8:item>
+																									</Title>
+																									<TitleLocation>None</TitleLocation>
+																									<ToolTip>
+																										<v8:item>
+																											<v8:lang>ru</v8:lang>
+																											<v8:content>Если получатель не зарегистрирован в сервисе ЭДО, на указанную электронную почту будет отправлена информация: как подключиться и принять приглашение.</v8:content>
+																										</v8:item>
+																									</ToolTip>
+																									<ToolTipRepresentation>Button</ToolTipRepresentation>
+																									<AutoMarkIncomplete>true</AutoMarkIncomplete>
+																									<EditTextUpdate>OnValueChange</EditTextUpdate>
+																									<InputHint>
+																										<v8:item>
+																											<v8:lang>ru</v8:lang>
+																											<v8:content>E-mail контрагента</v8:content>
+																										</v8:item>
+																									</InputHint>
+																									<ContextMenu name="ЭлектроннаяПочтаКонтекстноеМеню" id="126"/>
+																									<ExtendedTooltip name="ЭлектроннаяПочтаРасширеннаяПодсказка" id="127"/>
+																									<Events>
+																										<Event name="OnChange">ЭлектроннаяПочтаПриИзменении</Event>
+																										<Event name="EditTextChange">ЭлектроннаяПочтаИзменениеТекстаРедактирования</Event>
+																										<Event name="ChoiceProcessing">ЭлектроннаяПочтаОбработкаВыбора</Event>
+																									</Events>
+																								</InputField>
+																								<LabelDecoration name="НадписьЭлектроннаяПочтаНекорректна" id="376">
+																									<Visible>false</Visible>
+																									<TextColor>style:НезаполненныйРеквизитЦветБЭД</TextColor>
+																									<Title formatted="false">
+																										<v8:item>
+																											<v8:lang>ru</v8:lang>
+																											<v8:content>Почтовый адрес заполнен неверно</v8:content>
+																										</v8:item>
+																									</Title>
+																									<ContextMenu name="НадписьЭлектроннаяПочтаНекорректнаКонтекстноеМеню" id="377"/>
+																									<ExtendedTooltip name="НадписьЭлектроннаяПочтаНекорректнаРасширеннаяПодсказка" id="378"/>
+																								</LabelDecoration>
+																							</ChildItems>
+																						</UsualGroup>
+																					</ChildItems>
+																				</UsualGroup>
+																				<LabelDecoration name="НадписьНеЗнаюEmail" id="321">
 																					<Title formatted="false">
 																						<v8:item>
 																							<v8:lang>ru</v8:lang>
-																							<v8:content>Картинка статус приглашения</v8:content>
+																							<v8:content>Я не знаю e-mail контрагента</v8:content>
 																						</v8:item>
 																					</Title>
-																					<ContextMenu name="КартинкаСтатусПриглашенияКонтекстноеМеню" id="397"/>
-																					<ExtendedTooltip name="КартинкаСтатусПриглашенияРасширеннаяПодсказка" id="398"/>
-																				</PictureDecoration>
-																				<LabelField name="СтатусПриглашенияПредставление" id="399">
-																					<DataPath>СтатусПриглашенияПредставление</DataPath>
-																					<SkipOnInput>true</SkipOnInput>
-																					<TitleLocation>None</TitleLocation>
-																					<TitleHeight>1</TitleHeight>
-																					<ContextMenu name="СтатусПриглашенияПредставлениеКонтекстноеМеню" id="400"/>
-																					<ExtendedTooltip name="СтатусПриглашенияПредставлениеРасширеннаяПодсказка" id="401"/>
-																				</LabelField>
+																					<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+																					<Hyperlink>true</Hyperlink>
+																					<ContextMenu name="НадписьНеЗнаюEmailКонтекстноеМеню" id="322"/>
+																					<ExtendedTooltip name="НадписьНеЗнаюEmailРасширеннаяПодсказка" id="323"/>
+																					<Events>
+																						<Event name="Click">НадписьНеЗнаюEmailНажатие</Event>
+																					</Events>
+																				</LabelDecoration>
 																			</ChildItems>
-																		</UsualGroup>
-																		<InputField name="ОператорКонтрагентаПредставление" id="177">
-																			<DataPath>ОператорКонтрагентаПредставление</DataPath>
-																			<ReadOnly>true</ReadOnly>
+																		</Page>
+																		<Page name="СтраницаИнформацииОКонтрагентеИдентификатор" id="128">
 																			<Title>
 																				<v8:item>
 																					<v8:lang>ru</v8:lang>
-																					<v8:content>Оператор ЭДО</v8:content>
+																					<v8:content>Страница информации о контрагенте идентификатор</v8:content>
 																				</v8:item>
 																			</Title>
-																			<TextEdit>false</TextEdit>
-																			<BorderColor>style:FormBackColor</BorderColor>
-																			<InputHint>
-																				<v8:item>
-																					<v8:lang>ru</v8:lang>
-																					<v8:content>Неизвестен</v8:content>
-																				</v8:item>
-																			</InputHint>
-																			<ContextMenu name="ОператорКонтрагентаПредставлениеКонтекстноеМеню" id="178"/>
-																			<ExtendedTooltip name="ОператорКонтрагентаПредставлениеРасширеннаяПодсказка" id="179"/>
-																		</InputField>
-																		<InputField name="ИдентификаторКонтрагентаОписание" id="180">
-																			<DataPath>ИдентификаторКонтрагентаОписание</DataPath>
-																			<ReadOnly>true</ReadOnly>
-																			<Title>
-																				<v8:item>
-																					<v8:lang>ru</v8:lang>
-																					<v8:content>Подробное описание</v8:content>
-																				</v8:item>
-																			</Title>
-																			<TitleLocation>Left</TitleLocation>
-																			<AutoMaxHeight>false</AutoMaxHeight>
-																			<MaxHeight>2</MaxHeight>
-																			<MultiLine>true</MultiLine>
-																			<BorderColor>style:FormBackColor</BorderColor>
-																			<InputHint>
-																				<v8:item>
-																					<v8:lang>ru</v8:lang>
-																					<v8:content>Не указано контрагентом</v8:content>
-																				</v8:item>
-																			</InputHint>
-																			<ContextMenu name="ИдентификаторКонтрагентаОписаниеКонтекстноеМеню" id="181"/>
-																			<ExtendedTooltip name="ИдентификаторКонтрагентаОписаниеРасширеннаяПодсказка" id="182"/>
-																		</InputField>
+																			<ExtendedTooltip name="СтраницаИнформацииОКонтрагентеИдентификаторРасширеннаяПодсказка" id="129"/>
+																			<ChildItems>
+																				<UsualGroup name="ГруппаИдентификаторКонтрагентаВвод" id="130">
+																					<Title>
+																						<v8:item>
+																							<v8:lang>ru</v8:lang>
+																							<v8:content>Группа идентификатор контрагента ввод</v8:content>
+																						</v8:item>
+																					</Title>
+																					<Behavior>Usual</Behavior>
+																					<Representation>None</Representation>
+																					<ShowTitle>false</ShowTitle>
+																					<ExtendedTooltip name="ГруппаИдентификаторКонтрагентаВводРасширеннаяПодсказка" id="131"/>
+																					<ChildItems>
+																						<LabelDecoration name="НадписьИдентификаторКонтрагентаВвод" id="132">
+																							<Visible>false</Visible>
+																							<Width>13</Width>
+																							<Title formatted="false">
+																								<v8:item>
+																									<v8:lang>ru</v8:lang>
+																									<v8:content>Идентификатор ЭДО:</v8:content>
+																								</v8:item>
+																							</Title>
+																							<ContextMenu name="НадписьИдентификаторКонтрагентаВводКонтекстноеМеню" id="133"/>
+																							<ExtendedTooltip name="НадписьИдентификаторКонтрагентаВводРасширеннаяПодсказка" id="134"/>
+																						</LabelDecoration>
+																						<UsualGroup name="ГруппаИдентификаторКонтрагентаВводИНадписьНекорректный" id="413">
+																							<Title>
+																								<v8:item>
+																									<v8:lang>ru</v8:lang>
+																									<v8:content>Группа идентификатор контрагента ввод и надпись некорректный</v8:content>
+																								</v8:item>
+																							</Title>
+																							<Group>Vertical</Group>
+																							<Behavior>Usual</Behavior>
+																							<Representation>None</Representation>
+																							<ShowTitle>false</ShowTitle>
+																							<ExtendedTooltip name="ГруппаИдентификаторКонтрагентаВводИНадписьНекорректныйРасширеннаяПодсказка" id="414"/>
+																							<ChildItems>
+																								<InputField name="ИдентификаторКонтрагента" id="498">
+																									<DataPath>ИдентификаторКонтрагента</DataPath>
+																									<Title>
+																										<v8:item>
+																											<v8:lang>ru</v8:lang>
+																											<v8:content>Идентификатор контрагента</v8:content>
+																										</v8:item>
+																									</Title>
+																									<TitleLocation>None</TitleLocation>
+																									<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+																									<ListChoiceMode>true</ListChoiceMode>
+																									<InputHint>
+																										<v8:item>
+																											<v8:lang>ru</v8:lang>
+																											<v8:content>Идентификатор участника ЭДО</v8:content>
+																										</v8:item>
+																									</InputHint>
+																									<ContextMenu name="ИдентификаторКонтрагентаКонтекстноеМеню" id="499"/>
+																									<ExtendedTooltip name="ИдентификаторКонтрагентаРасширеннаяПодсказка" id="500"/>
+																									<Events>
+																										<Event name="OnChange">ИдентификаторКонтрагентаПриИзменении</Event>
+																										<Event name="TextEditEnd">ИдентификаторКонтрагентаОкончаниеВводаТекста</Event>
+																									</Events>
+																								</InputField>
+																								<LabelDecoration name="НадписьИдентификаторКонтрагентаНекорректный" id="501">
+																									<Visible>false</Visible>
+																									<TextColor>style:НезаполненныйРеквизитЦветБЭД</TextColor>
+																									<Title formatted="false">
+																										<v8:item>
+																											<v8:lang>ru</v8:lang>
+																											<v8:content>Указан некорректный идентификатор ЭДО</v8:content>
+																										</v8:item>
+																									</Title>
+																									<ContextMenu name="НадписьИдентификаторКонтрагентаНекорректныйКонтекстноеМеню" id="502"/>
+																									<ExtendedTooltip name="НадписьИдентификаторКонтрагентаНекорректныйРасширеннаяПодсказка" id="503"/>
+																								</LabelDecoration>
+																								<InputField name="ИдентификаторКонтрагентаВвод" id="135">
+																									<DataPath>ИдентификаторКонтрагента</DataPath>
+																									<Visible>false</Visible>
+																									<Title>
+																										<v8:item>
+																											<v8:lang>ru</v8:lang>
+																											<v8:content>Идентификатор ЭДО</v8:content>
+																										</v8:item>
+																									</Title>
+																									<TitleLocation>None</TitleLocation>
+																									<ToolTipRepresentation>ShowBottom</ToolTipRepresentation>
+																									<InputHint>
+																										<v8:item>
+																											<v8:lang>ru</v8:lang>
+																											<v8:content>Идентификатор участника ЭДО</v8:content>
+																										</v8:item>
+																									</InputHint>
+																									<ContextMenu name="ИдентификаторКонтрагентаВводКонтекстноеМеню" id="136"/>
+																									<ExtendedTooltip name="ИдентификаторКонтрагентаВводРасширеннаяПодсказка" id="137"/>
+																									<Events>
+																										<Event name="OnChange">ИдентификаторКонтрагентаВводПриИзменении</Event>
+																										<Event name="EditTextChange">ИдентификаторКонтрагентаВводИзменениеТекстаРедактирования</Event>
+																									</Events>
+																								</InputField>
+																								<LabelDecoration name="НадписьИдентификаторКонтрагентаВводНекорректный" id="418">
+																									<Visible>false</Visible>
+																									<TextColor>style:НезаполненныйРеквизитЦветБЭД</TextColor>
+																									<Title formatted="false">
+																										<v8:item>
+																											<v8:lang>ru</v8:lang>
+																											<v8:content>Указан некорректный идентификатор ЭДО</v8:content>
+																										</v8:item>
+																									</Title>
+																									<ContextMenu name="НадписьИдентификаторКонтрагентаВводНекорректныйКонтекстноеМеню" id="419"/>
+																									<ExtendedTooltip name="НадписьИдентификаторКонтрагентаВводНекорректныйРасширеннаяПодсказка" id="420"/>
+																								</LabelDecoration>
+																							</ChildItems>
+																						</UsualGroup>
+																						<UsualGroup name="ГруппаПодробнее" id="175">
+																							<Title>
+																								<v8:item>
+																									<v8:lang>ru</v8:lang>
+																									<v8:content>Подробнее</v8:content>
+																								</v8:item>
+																							</Title>
+																							<Group>Vertical</Group>
+																							<Behavior>PopUp</Behavior>
+																							<Representation>None</Representation>
+																							<ExtendedTooltip name="ГруппаПодробнееРасширеннаяПодсказка" id="176"/>
+																							<ChildItems>
+																								<UsualGroup name="ГруппаСтатусПриглашения" id="391">
+																									<Title>
+																										<v8:item>
+																											<v8:lang>ru</v8:lang>
+																											<v8:content>Группа статус приглашения</v8:content>
+																										</v8:item>
+																									</Title>
+																									<Behavior>Usual</Behavior>
+																									<Representation>None</Representation>
+																									<ShowTitle>false</ShowTitle>
+																									<ExtendedTooltip name="ГруппаСтатусПриглашенияРасширеннаяПодсказка" id="392"/>
+																									<ChildItems>
+																										<LabelDecoration name="НадписьСтатусПриглашения" id="393">
+																											<Title formatted="false">
+																												<v8:item>
+																													<v8:lang>ru</v8:lang>
+																													<v8:content>Статус приглашения:</v8:content>
+																												</v8:item>
+																											</Title>
+																											<ContextMenu name="НадписьСтатусПриглашенияКонтекстноеМеню" id="394"/>
+																											<ExtendedTooltip name="НадписьСтатусПриглашенияРасширеннаяПодсказка" id="395"/>
+																										</LabelDecoration>
+																										<PictureDecoration name="КартинкаСтатусПриглашения" id="396">
+																											<Width>2</Width>
+																											<Height>1</Height>
+																											<Title formatted="false">
+																												<v8:item>
+																													<v8:lang>ru</v8:lang>
+																													<v8:content>Картинка статус приглашения</v8:content>
+																												</v8:item>
+																											</Title>
+																											<ContextMenu name="КартинкаСтатусПриглашенияКонтекстноеМеню" id="397"/>
+																											<ExtendedTooltip name="КартинкаСтатусПриглашенияРасширеннаяПодсказка" id="398"/>
+																										</PictureDecoration>
+																										<LabelField name="СтатусПриглашенияПредставление" id="399">
+																											<DataPath>СтатусПриглашенияПредставление</DataPath>
+																											<SkipOnInput>true</SkipOnInput>
+																											<TitleLocation>None</TitleLocation>
+																											<TitleHeight>1</TitleHeight>
+																											<ContextMenu name="СтатусПриглашенияПредставлениеКонтекстноеМеню" id="400"/>
+																											<ExtendedTooltip name="СтатусПриглашенияПредставлениеРасширеннаяПодсказка" id="401"/>
+																										</LabelField>
+																									</ChildItems>
+																								</UsualGroup>
+																								<InputField name="ОператорКонтрагентаПредставление" id="177">
+																									<DataPath>ОператорКонтрагентаПредставление</DataPath>
+																									<ReadOnly>true</ReadOnly>
+																									<Title>
+																										<v8:item>
+																											<v8:lang>ru</v8:lang>
+																											<v8:content>Оператор ЭДО</v8:content>
+																										</v8:item>
+																									</Title>
+																									<TextEdit>false</TextEdit>
+																									<BorderColor>style:FormBackColor</BorderColor>
+																									<InputHint>
+																										<v8:item>
+																											<v8:lang>ru</v8:lang>
+																											<v8:content>Неизвестен</v8:content>
+																										</v8:item>
+																									</InputHint>
+																									<ContextMenu name="ОператорКонтрагентаПредставлениеКонтекстноеМеню" id="178"/>
+																									<ExtendedTooltip name="ОператорКонтрагентаПредставлениеРасширеннаяПодсказка" id="179"/>
+																								</InputField>
+																								<InputField name="ИдентификаторКонтрагентаОписание" id="180">
+																									<DataPath>ИдентификаторКонтрагентаОписание</DataPath>
+																									<ReadOnly>true</ReadOnly>
+																									<Title>
+																										<v8:item>
+																											<v8:lang>ru</v8:lang>
+																											<v8:content>Подробное описание</v8:content>
+																										</v8:item>
+																									</Title>
+																									<TitleLocation>Left</TitleLocation>
+																									<AutoMaxHeight>false</AutoMaxHeight>
+																									<MaxHeight>2</MaxHeight>
+																									<MultiLine>true</MultiLine>
+																									<BorderColor>style:FormBackColor</BorderColor>
+																									<InputHint>
+																										<v8:item>
+																											<v8:lang>ru</v8:lang>
+																											<v8:content>Не указано контрагентом</v8:content>
+																										</v8:item>
+																									</InputHint>
+																									<ContextMenu name="ИдентификаторКонтрагентаОписаниеКонтекстноеМеню" id="181"/>
+																									<ExtendedTooltip name="ИдентификаторКонтрагентаОписаниеРасширеннаяПодсказка" id="182"/>
+																								</InputField>
+																							</ChildItems>
+																						</UsualGroup>
+																					</ChildItems>
+																				</UsualGroup>
+																				<LabelDecoration name="НадписьНеЗнаюИдентификатор" id="324">
+																					<Title formatted="false">
+																						<v8:item>
+																							<v8:lang>ru</v8:lang>
+																							<v8:content>Я не знаю идентификатор контрагента</v8:content>
+																						</v8:item>
+																					</Title>
+																					<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+																					<Hyperlink>true</Hyperlink>
+																					<ContextMenu name="НадписьНеЗнаюИдентификаторКонтекстноеМеню" id="325"/>
+																					<ExtendedTooltip name="НадписьНеЗнаюИдентификаторРасширеннаяПодсказка" id="326"/>
+																					<Events>
+																						<Event name="Click">НадписьНеЗнаюИдентификаторНажатие</Event>
+																					</Events>
+																				</LabelDecoration>
+																			</ChildItems>
+																		</Page>
 																	</ChildItems>
-																</UsualGroup>
+																</Pages>
 															</ChildItems>
 														</UsualGroup>
 														<UsualGroup name="ГруппаПредупреждениеПроКПП" id="463">
@@ -842,6 +878,7 @@
 															</Title>
 															<HorizontalStretch>true</HorizontalStretch>
 															<Group>AlwaysHorizontal</Group>
+															<Behavior>Usual</Behavior>
 															<Representation>None</Representation>
 															<ShowTitle>false</ShowTitle>
 															<BackColor>style:ToolTipBackColor</BackColor>
@@ -911,6 +948,7 @@
 																				</v8:item>
 																			</Title>
 																			<Group>AlwaysHorizontal</Group>
+																			<Behavior>Usual</Behavior>
 																			<Representation>None</Representation>
 																			<ShowTitle>false</ShowTitle>
 																			<BackColor>style:ToolTipBackColor</BackColor>
@@ -964,6 +1002,7 @@
 																				</v8:item>
 																			</Title>
 																			<Group>AlwaysHorizontal</Group>
+																			<Behavior>Usual</Behavior>
 																			<Representation>None</Representation>
 																			<ShowTitle>false</ShowTitle>
 																			<BackColor>style:ToolTipBackColor</BackColor>
@@ -1021,6 +1060,7 @@
 																				</v8:item>
 																			</Title>
 																			<Group>AlwaysHorizontal</Group>
+																			<Behavior>Usual</Behavior>
 																			<Representation>None</Representation>
 																			<ShowTitle>false</ShowTitle>
 																			<BackColor>style:ToolTipBackColor</BackColor>
@@ -1078,6 +1118,7 @@
 																			</Title>
 																			<HorizontalStretch>true</HorizontalStretch>
 																			<Group>AlwaysHorizontal</Group>
+																			<Behavior>Usual</Behavior>
 																			<Representation>None</Representation>
 																			<ShowTitle>false</ShowTitle>
 																			<BackColor>style:ToolTipBackColor</BackColor>
@@ -1134,6 +1175,7 @@
 																				</v8:item>
 																			</Title>
 																			<Group>AlwaysHorizontal</Group>
+																			<Behavior>Usual</Behavior>
 																			<Representation>None</Representation>
 																			<ShowTitle>false</ShowTitle>
 																			<BackColor>style:ToolTipBackColor</BackColor>
@@ -1192,6 +1234,7 @@
 																			</Title>
 																			<HorizontalStretch>true</HorizontalStretch>
 																			<Group>AlwaysHorizontal</Group>
+																			<Behavior>Usual</Behavior>
 																			<Representation>None</Representation>
 																			<ShowTitle>false</ShowTitle>
 																			<BackColor>style:ToolTipBackColor</BackColor>
@@ -1262,6 +1305,45 @@
 														</LabelDecoration>
 													</ChildItems>
 												</Page>
+												<Page name="СтраницаОжиданияПолученияДанныхВторогоЭтапа" id="473">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Страница ожидания получения данных второго этапа</v8:content>
+														</v8:item>
+													</Title>
+													<Group>AlwaysHorizontal</Group>
+													<VerticalAlign>Center</VerticalAlign>
+													<ExtendedTooltip name="СтраницаОжиданияПолученияДанныхВторогоЭтапаРасширеннаяПодсказка" id="474"/>
+													<ChildItems>
+														<PictureDecoration name="КартинкаОжиданиеВторойЭтап" id="475">
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Картинка ожидание</v8:content>
+																</v8:item>
+															</Title>
+															<Picture>
+																<xr:Ref>CommonPicture.ДлительнаяОперация48</xr:Ref>
+																<xr:LoadTransparent>false</xr:LoadTransparent>
+															</Picture>
+															<FileDragMode>AsFile</FileDragMode>
+															<ContextMenu name="КартинкаОжиданиеВторойЭтапКонтекстноеМеню" id="476"/>
+															<ExtendedTooltip name="КартинкаОжиданиеВторойЭтапРасширеннаяПодсказка" id="477"/>
+														</PictureDecoration>
+														<LabelDecoration name="НадписьОжиданиеЗагрузкаВторойЭтап" id="478">
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Выполняется загрузка данных по участникам ЭДО.
+Пожалуйста, подождите...</v8:content>
+																</v8:item>
+															</Title>
+															<ContextMenu name="НадписьОжиданиеЗагрузкаВторойЭтапКонтекстноеМеню" id="479"/>
+															<ExtendedTooltip name="НадписьОжиданиеЗагрузкаВторойЭтапРасширеннаяПодсказка" id="480"/>
+														</LabelDecoration>
+													</ChildItems>
+												</Page>
 											</ChildItems>
 										</Pages>
 									</ChildItems>
@@ -1276,6 +1358,7 @@
 								</v8:item>
 							</Title>
 							<Group>AlwaysHorizontal</Group>
+							<Behavior>Usual</Behavior>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="ГруппаТретийЭтапРасширеннаяПодсказка" id="241"/>
@@ -1305,6 +1388,7 @@
 									<Width>55</Width>
 									<HorizontalStretch>false</HorizontalStretch>
 									<Group>Vertical</Group>
+									<Behavior>Usual</Behavior>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="ГруппаДополнительныеСведенияРасширеннаяПодсказка" id="246"/>
@@ -1347,6 +1431,7 @@
 																</v8:item>
 															</Title>
 															<Group>AlwaysHorizontal</Group>
+															<Behavior>Usual</Behavior>
 															<Representation>None</Representation>
 															<ShowTitle>false</ShowTitle>
 															<ExtendedTooltip name="ГруппаЭлектроннаяПочтаДополнительноРасширеннаяПодсказка" id="438"/>
@@ -1370,6 +1455,7 @@
 																		</v8:item>
 																	</Title>
 																	<Group>Vertical</Group>
+																	<Behavior>Usual</Behavior>
 																	<Representation>None</Representation>
 																	<United>false</United>
 																	<ShowTitle>false</ShowTitle>
@@ -1425,6 +1511,7 @@
 																</v8:item>
 															</Title>
 															<Group>AlwaysHorizontal</Group>
+															<Behavior>Usual</Behavior>
 															<Representation>None</Representation>
 															<ShowTitle>false</ShowTitle>
 															<ExtendedTooltip name="ГруппаЭлектроннаяПочтаОрганизацииДополнительноРасширеннаяПодсказка" id="451"/>
@@ -1448,6 +1535,7 @@
 																		</v8:item>
 																	</Title>
 																	<Group>Vertical</Group>
+																	<Behavior>Usual</Behavior>
 																	<Representation>None</Representation>
 																	<United>false</United>
 																	<ShowTitle>false</ShowTitle>
@@ -1491,6 +1579,7 @@
 																</v8:item>
 															</Title>
 															<Group>AlwaysHorizontal</Group>
+															<Behavior>Usual</Behavior>
 															<Representation>None</Representation>
 															<ShowTitle>false</ShowTitle>
 															<ExtendedTooltip name="ГруппаСоглашениеНаРоумингРасширеннаяПодсказка" id="255"/>
@@ -1633,6 +1722,7 @@
 																	<v8:content>Группа текст приглашения</v8:content>
 																</v8:item>
 															</Title>
+															<Behavior>Usual</Behavior>
 															<Representation>None</Representation>
 															<ShowTitle>false</ShowTitle>
 															<ExtendedTooltip name="ГруппаТекстПриглашенияРасширеннаяПодсказка" id="274"/>
@@ -1696,6 +1786,45 @@
 														</LabelDecoration>
 													</ChildItems>
 												</Page>
+												<Page name="СтраницаОжиданияПолученияДанныхТретьегоЭтапа" id="504">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Страница ожидания получения данных третьего этапа</v8:content>
+														</v8:item>
+													</Title>
+													<Group>AlwaysHorizontal</Group>
+													<VerticalAlign>Center</VerticalAlign>
+													<ExtendedTooltip name="СтраницаОжиданияПолученияДанныхТретьегоЭтапаРасширеннаяПодсказка" id="505"/>
+													<ChildItems>
+														<PictureDecoration name="КартинкаОжиданиеТретийЭтап" id="506">
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Картинка ожидание</v8:content>
+																</v8:item>
+															</Title>
+															<Picture>
+																<xr:Ref>CommonPicture.ДлительнаяОперация48</xr:Ref>
+																<xr:LoadTransparent>false</xr:LoadTransparent>
+															</Picture>
+															<FileDragMode>AsFile</FileDragMode>
+															<ContextMenu name="КартинкаОжиданиеТретийЭтапКонтекстноеМеню" id="507"/>
+															<ExtendedTooltip name="КартинкаОжиданиеТретийЭтапРасширеннаяПодсказка" id="508"/>
+														</PictureDecoration>
+														<LabelDecoration name="НадписьОжиданиеЗагрузкаТретийЭтап" id="509">
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Выполняется загрузка дополнительных сведений.
+Пожалуйста, подождите...</v8:content>
+																</v8:item>
+															</Title>
+															<ContextMenu name="НадписьОжиданиеЗагрузкаТретийЭтапКонтекстноеМеню" id="510"/>
+															<ExtendedTooltip name="НадписьОжиданиеЗагрузкаТретийЭтапРасширеннаяПодсказка" id="511"/>
+														</LabelDecoration>
+													</ChildItems>
+												</Page>
 											</ChildItems>
 										</Pages>
 									</ChildItems>
@@ -1725,6 +1854,7 @@
 								</v8:item>
 							</Title>
 							<Group>AlwaysHorizontal</Group>
+							<Behavior>Usual</Behavior>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="ГруппаОжиданиеРасширеннаяПодсказка" id="294"/>
@@ -1753,6 +1883,7 @@
 									</Title>
 									<Group>Vertical</Group>
 									<HorizontalAlign>Left</HorizontalAlign>
+									<Behavior>Usual</Behavior>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="ГруппаОжиданиеВариантыОперацийРасширеннаяПодсказка" id="328"/>
@@ -1807,6 +1938,7 @@
 							</Title>
 							<Group>Vertical</Group>
 							<HorizontalSpacing>Half</HorizontalSpacing>
+							<Behavior>Usual</Behavior>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="ГруппаОшибкаРасширеннаяПодсказка" id="304"/>
@@ -1820,6 +1952,7 @@
 									</Title>
 									<Group>AlwaysHorizontal</Group>
 									<VerticalAlign>Center</VerticalAlign>
+									<Behavior>Usual</Behavior>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="ГруппаОшибкаКартинкаИНадписьРасширеннаяПодсказка" id="422"/>
@@ -1892,6 +2025,7 @@
 									<v8:content>Группа выполнено</v8:content>
 								</v8:item>
 							</Title>
+							<Behavior>Usual</Behavior>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="ГруппаВыполненоРасширеннаяПодсказка" id="314"/>
@@ -1920,6 +2054,7 @@
 									</Title>
 									<Group>Vertical</Group>
 									<HorizontalAlign>Left</HorizontalAlign>
+									<Behavior>Usual</Behavior>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="ГруппаНадписьВыполненоРасширеннаяПодсказка" id="403"/>
@@ -1989,6 +2124,7 @@
 					<v8:content>Группа кнопки</v8:content>
 				</v8:item>
 			</Title>
+			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаКнопкиРасширеннаяПодсказка" id="341"/>
@@ -2099,7 +2235,7 @@
 				</v8:item>
 			</Title>
 			<Type>
-				<v8:TypeSet>cfg:DefinedType.КонтрагентБЭД</v8:TypeSet>
+				<v8:TypeSet>cfg:DefinedType.УчастникЭДО</v8:TypeSet>
 			</Type>
 		</Attribute>
 		<Attribute name="Организация" id="3">
@@ -2513,6 +2649,44 @@
 				<v8:item>
 					<v8:lang>ru</v8:lang>
 					<v8:content>Абонент в хабе 1С</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="НомерЭтапаОжиданияДанных" id="37">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Номер этапа ожидания данных</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>1</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ТребуетсяОбновитьКэшНастроек" id="38">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Требуется обновить кэш настроек</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ЭтоОблачныйЭДО" id="39">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Это облачный ЭДО</v8:content>
 				</v8:item>
 			</Title>
 			<Type>

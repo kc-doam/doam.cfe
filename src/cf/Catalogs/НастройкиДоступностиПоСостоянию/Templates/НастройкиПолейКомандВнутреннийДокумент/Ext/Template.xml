@@ -7979,6 +7979,454 @@
 	<rowsItem>
 		<index>27</index>
 		<row>
+			<formatIndex>117</formatIndex>
+			<c>
+				<c>
+					<f>118</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ДобавлениеОригиналов</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>119</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Добавление оригиналов</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>120</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>СоздатьФайл, 
+ДобавитьФайл, 
+Сканировать,
+КонтекстноеМенюФайлыСоздать, 
+КонтекстноеМенюФайлыСканировать,
+КонтекстноеМенюФайлыИмпортФайлов,
+СоздатьФайлСоздание, 
+СканироватьСоздание,
+КонтекстноеМенюФайлыСоздатьСоздание, 
+КонтекстноеМенюФайлыСканироватьСоздание,
+КонтекстноеМенюФайлыИмпортФайловСоздание,
+ДобавитьСканСМобильного,
+ДобавитьСканСМобильногоСоздание,
+ФайлыДобавленныеДобавитьСканСМобильного, ОригиналПолученТекст</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>85</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>addScannedCopy</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>101</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ВестиУчетСканКопийОригиналовДокументов</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>102</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Да</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Да</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>88</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Нет</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>89</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Да</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Да</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Да</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Да</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Да</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Да</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>0</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Да</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>89</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Да</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>121</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Да</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>122</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Да</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>89</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Да</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>121</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Да</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>122</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Да</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>89</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Да</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>103</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Да</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>93</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Да</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>94</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Да</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>93</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Да</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>93</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Да</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>95</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Да</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>93</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Да</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>96</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Да</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>93</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Да</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>97</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Да</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>88</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Да</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>93</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Да</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>98</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Да</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>99</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Да</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>93</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Да</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>98</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Да</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>100</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Да</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>28</index>
+		<row>
 			<formatIndex>111</formatIndex>
 			<c>
 				<c>
@@ -8031,7 +8479,7 @@
 			</c>
 			<c>
 				<c>
-					<f>117</f>
+					<f>123</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -8305,9 +8753,9 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>28</index>
+		<index>29</index>
 		<row>
-			<formatIndex>118</formatIndex>
+			<formatIndex>117</formatIndex>
 			<c>
 				<c>
 					<f>82</f>
@@ -8347,7 +8795,7 @@
 			</c>
 			<c>
 				<c>
-					<f>117</f>
+					<f>123</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -8409,12 +8857,12 @@
 			</c>
 			<c>
 				<c>
-					<f>119</f>
+					<f>121</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>120</f>
+					<f>122</f>
 				</c>
 			</c>
 			<c>
@@ -8430,12 +8878,12 @@
 			</c>
 			<c>
 				<c>
-					<f>119</f>
+					<f>121</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>120</f>
+					<f>122</f>
 				</c>
 			</c>
 			<c>
@@ -8579,9 +9027,9 @@
 		</row>
 	</rowsItem>
 	<rowsItem>
-		<index>29</index>
+		<index>30</index>
 		<row>
-			<formatIndex>118</formatIndex>
+			<formatIndex>117</formatIndex>
 			<c>
 				<c>
 					<f>82</f>
@@ -8648,7 +9096,7 @@
 			</c>
 			<c>
 				<c>
-					<f>117</f>
+					<f>123</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -8722,7 +9170,7 @@
 			</c>
 			<c>
 				<c>
-					<f>119</f>
+					<f>121</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -8733,7 +9181,7 @@
 			</c>
 			<c>
 				<c>
-					<f>120</f>
+					<f>122</f>
 				</c>
 			</c>
 			<c>
@@ -8749,7 +9197,7 @@
 			</c>
 			<c>
 				<c>
-					<f>119</f>
+					<f>121</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -8760,324 +9208,7 @@
 			</c>
 			<c>
 				<c>
-					<f>120</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>89</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Да</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>103</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Да</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>93</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Да</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>94</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Нет</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>93</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Да</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>93</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>95</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>93</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>96</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>93</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Да</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>97</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>88</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Да</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>93</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Да</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>98</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>99</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Да</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>93</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Да</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>98</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>100</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Да</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-		</row>
-	</rowsItem>
-	<rowsItem>
-		<index>30</index>
-		<row>
-			<formatIndex>118</formatIndex>
-			<c>
-				<c>
-					<f>82</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Товары</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>83</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Товары</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>84</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>ПодобратьТовары,
-ТоварыДобавить,
-Товары,
-ТоварыКонтекстноеМенюПереместитьВверх,
-ТоварыКонтекстноеМенюПереместитьВниз,
-ДобавитьНоменклатуру</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>117</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>productRows</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>101</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>102</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Да</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-			<c>
-				<i>7</i>
-				<c>
-					<f>88</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Нет</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>89</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Да</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-			<c>
-				<i>13</i>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Да</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-			<c>
-				<i>15</i>
-				<c>
-					<f>89</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Да</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>119</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Да</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>120</f>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>89</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Да</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>119</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Да</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>120</f>
+					<f>122</f>
 				</c>
 			</c>
 			<c>
@@ -9241,25 +9372,41 @@
 	<rowsItem>
 		<index>31</index>
 		<row>
-			<formatIndex>118</formatIndex>
+			<formatIndex>117</formatIndex>
 			<c>
 				<c>
-					<f>121</f>
+					<f>82</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ДобавлениеОригиналов</v8:content>
+							<v8:content>Товары</v8:content>
 						</v8:item>
 					</tl>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>122</f>
+					<f>83</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Добавление оригиналов</v8:content>
+							<v8:content>Товары</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>84</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ПодобратьТовары,
+ТоварыДобавить,
+Товары,
+ТоварыКонтекстноеМенюПереместитьВверх,
+ТоварыКонтекстноеМенюПереместитьВниз,
+ДобавитьНоменклатуру</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -9270,31 +9417,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>СоздатьФайл, 
-ДобавитьФайл, 
-Сканировать,
-КонтекстноеМенюФайлыСоздать, 
-КонтекстноеМенюФайлыСканировать,
-КонтекстноеМенюФайлыИмпортФайлов,
-СоздатьФайлСоздание, 
-СканироватьСоздание,
-КонтекстноеМенюФайлыСоздатьСоздание, 
-КонтекстноеМенюФайлыСканироватьСоздание,
-КонтекстноеМенюФайлыИмпортФайловСоздание,
-ДобавитьСканСМобильного,
-ДобавитьСканСМобильногоСоздание,
-ФайлыДобавленныеДобавитьСканСМобильного</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>85</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>addScannedCopy</v8:content>
+							<v8:content>productRows</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -9302,12 +9425,6 @@
 			<c>
 				<c>
 					<f>101</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>ВестиУчетСканКопийОригиналовДокументов</v8:content>
-						</v8:item>
-					</tl>
 				</c>
 			</c>
 			<c>
@@ -9322,17 +9439,7 @@
 				</c>
 			</c>
 			<c>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Да</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-			<c>
+				<i>7</i>
 				<c>
 					<f>88</f>
 					<tl>
@@ -9355,6 +9462,7 @@
 				</c>
 			</c>
 			<c>
+				<i>13</i>
 				<c>
 					<f>0</f>
 					<tl>
@@ -9366,8 +9474,9 @@
 				</c>
 			</c>
 			<c>
+				<i>15</i>
 				<c>
-					<f>0</f>
+					<f>89</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -9378,7 +9487,7 @@
 			</c>
 			<c>
 				<c>
-					<f>0</f>
+					<f>121</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -9389,35 +9498,7 @@
 			</c>
 			<c>
 				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Да</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Да</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>0</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Да</v8:content>
-						</v8:item>
-					</tl>
+					<f>122</f>
 				</c>
 			</c>
 			<c>
@@ -9433,7 +9514,7 @@
 			</c>
 			<c>
 				<c>
-					<f>119</f>
+					<f>121</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -9444,46 +9525,7 @@
 			</c>
 			<c>
 				<c>
-					<f>120</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Да</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>89</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Да</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>119</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Да</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>120</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Да</v8:content>
-						</v8:item>
-					</tl>
+					<f>122</f>
 				</c>
 			</c>
 			<c>
@@ -9525,7 +9567,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Да</v8:content>
+							<v8:content>Нет</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -9544,45 +9586,21 @@
 			<c>
 				<c>
 					<f>93</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Да</v8:content>
-						</v8:item>
-					</tl>
 				</c>
 			</c>
 			<c>
 				<c>
 					<f>95</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Да</v8:content>
-						</v8:item>
-					</tl>
 				</c>
 			</c>
 			<c>
 				<c>
 					<f>93</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Да</v8:content>
-						</v8:item>
-					</tl>
 				</c>
 			</c>
 			<c>
 				<c>
 					<f>96</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Да</v8:content>
-						</v8:item>
-					</tl>
 				</c>
 			</c>
 			<c>
@@ -9599,12 +9617,6 @@
 			<c>
 				<c>
 					<f>97</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Да</v8:content>
-						</v8:item>
-					</tl>
 				</c>
 			</c>
 			<c>
@@ -9632,12 +9644,6 @@
 			<c>
 				<c>
 					<f>98</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Да</v8:content>
-						</v8:item>
-					</tl>
 				</c>
 			</c>
 			<c>
@@ -9665,12 +9671,6 @@
 			<c>
 				<c>
 					<f>98</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Да</v8:content>
-						</v8:item>
-					</tl>
 				</c>
 			</c>
 			<c>
@@ -12771,21 +12771,7 @@
 		<width>90</width>
 	</format>
 	<format>
-		<leftBorder>0</leftBorder>
 		<height>45</height>
-		<width>136</width>
-		<verticalAlignment>Top</verticalAlignment>
-	</format>
-	<format>
-		<height>45</height>
-	</format>
-	<format>
-		<height>45</height>
-		<width>117</width>
-	</format>
-	<format>
-		<height>45</height>
-		<width>90</width>
 	</format>
 	<format>
 		<height>48</height>
@@ -12799,6 +12785,20 @@
 		<height>48</height>
 		<width>221</width>
 		<textPlacement>Wrap</textPlacement>
+	</format>
+	<format>
+		<height>45</height>
+		<width>117</width>
+	</format>
+	<format>
+		<height>45</height>
+		<width>90</width>
+	</format>
+	<format>
+		<leftBorder>0</leftBorder>
+		<height>45</height>
+		<width>136</width>
+		<verticalAlignment>Top</verticalAlignment>
 	</format>
 	<format>
 		<height>-48</height>

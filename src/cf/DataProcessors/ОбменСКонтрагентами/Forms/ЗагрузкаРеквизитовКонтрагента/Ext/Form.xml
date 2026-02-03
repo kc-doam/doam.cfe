@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
 	<Title>
 		<v8:item>
 			<v8:lang>ru</v8:lang>
@@ -15,7 +15,7 @@
 				<DefaultButton>true</DefaultButton>
 				<DefaultItem>true</DefaultItem>
 				<CommandName>Form.Command.Загрузить</CommandName>
-				<ExtendedTooltip name="ЗагрузитьExtendedTooltip" id="67"/>
+				<ExtendedTooltip name="ЗагрузитьРасширеннаяПодсказка" id="67"/>
 			</Button>
 		</ChildItems>
 	</AutoCommandBar>
@@ -31,9 +31,10 @@
 				</v8:item>
 			</Title>
 			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
-			<ExtendedTooltip name="ВыборФайлаExtendedTooltip" id="68"/>
+			<ExtendedTooltip name="ВыборФайлаРасширеннаяПодсказка" id="68"/>
 			<ChildItems>
 				<InputField name="Файл" id="55">
 					<DataPath>Файл</DataPath>
@@ -45,7 +46,7 @@
 					</Title>
 					<ChoiceButton>true</ChoiceButton>
 					<ContextMenu name="ФайлКонтекстноеМеню" id="56"/>
-					<ExtendedTooltip name="ФайлExtendedTooltip" id="69"/>
+					<ExtendedTooltip name="ФайлРасширеннаяПодсказка" id="69"/>
 					<Events>
 						<Event name="StartChoice">ФайлНачалоВыбора</Event>
 					</Events>
@@ -56,7 +57,7 @@
 			<DataPath>Контрагент</DataPath>
 			<ClearButton>true</ClearButton>
 			<ContextMenu name="КонтрагентКонтекстноеМеню" id="59"/>
-			<ExtendedTooltip name="КонтрагентExtendedTooltip" id="70"/>
+			<ExtendedTooltip name="КонтрагентРасширеннаяПодсказка" id="70"/>
 		</InputField>
 		<LabelField name="ОрганизацияНаименованиеПолное" id="5">
 			<DataPath>Наименование</DataPath>
@@ -67,7 +68,7 @@
 				</v8:item>
 			</Title>
 			<ContextMenu name="ОрганизацияНаименованиеПолноеКонтекстноеМеню" id="6"/>
-			<ExtendedTooltip name="ОрганизацияНаименованиеПолноеExtendedTooltip" id="71"/>
+			<ExtendedTooltip name="ОрганизацияНаименованиеПолноеРасширеннаяПодсказка" id="71"/>
 		</LabelField>
 		<LabelField name="ИННКПП" id="7">
 			<DataPath>ИНН_КПП</DataPath>
@@ -78,7 +79,7 @@
 				</v8:item>
 			</Title>
 			<ContextMenu name="ИННКППКонтекстноеМеню" id="8"/>
-			<ExtendedTooltip name="ИННКППExtendedTooltip" id="72"/>
+			<ExtendedTooltip name="ИННКППРасширеннаяПодсказка" id="72"/>
 		</LabelField>
 		<LabelField name="ОКПО" id="13">
 			<DataPath>ОКПО</DataPath>
@@ -89,7 +90,7 @@
 				</v8:item>
 			</Title>
 			<ContextMenu name="ОКПОКонтекстноеМеню" id="14"/>
-			<ExtendedTooltip name="ОКПОExtendedTooltip" id="73"/>
+			<ExtendedTooltip name="ОКПОРасширеннаяПодсказка" id="73"/>
 		</LabelField>
 		<UsualGroup name="ГруппаРуководитель" id="21">
 			<Title>
@@ -99,13 +100,14 @@
 				</v8:item>
 			</Title>
 			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
 			<Representation>StrongSeparation</Representation>
-			<ExtendedTooltip name="ГруппаРуководительExtendedTooltip" id="74"/>
+			<ExtendedTooltip name="ГруппаРуководительРасширеннаяПодсказка" id="74"/>
 			<ChildItems>
 				<LabelField name="ДолжностьРуководителя" id="22">
 					<DataPath>ДолжностьРуководителя</DataPath>
 					<ContextMenu name="ДолжностьРуководителяКонтекстноеМеню" id="23"/>
-					<ExtendedTooltip name="ДолжностьРуководителяExtendedTooltip" id="75"/>
+					<ExtendedTooltip name="ДолжностьРуководителяРасширеннаяПодсказка" id="75"/>
 				</LabelField>
 				<LabelField name="Руководитель" id="15">
 					<DataPath>Руководитель</DataPath>
@@ -116,24 +118,24 @@
 						</v8:item>
 					</Title>
 					<ContextMenu name="РуководительКонтекстноеМеню" id="16"/>
-					<ExtendedTooltip name="РуководительExtendedTooltip" id="76"/>
+					<ExtendedTooltip name="РуководительРасширеннаяПодсказка" id="76"/>
 				</LabelField>
 			</ChildItems>
 		</UsualGroup>
 		<LabelField name="ЮридическийАдрес" id="24">
 			<DataPath>ЮридическийАдрес</DataPath>
 			<ContextMenu name="ЮридическийАдресКонтекстноеМеню" id="25"/>
-			<ExtendedTooltip name="ЮридическийАдресExtendedTooltip" id="77"/>
+			<ExtendedTooltip name="ЮридическийАдресРасширеннаяПодсказка" id="77"/>
 		</LabelField>
 		<LabelField name="ФактическийАдрес" id="26">
 			<DataPath>ФактическийАдрес</DataPath>
 			<ContextMenu name="ФактическийАдресКонтекстноеМеню" id="27"/>
-			<ExtendedTooltip name="ФактическийАдресExtendedTooltip" id="78"/>
+			<ExtendedTooltip name="ФактическийАдресРасширеннаяПодсказка" id="78"/>
 		</LabelField>
 		<LabelField name="Телефон" id="28">
 			<DataPath>Телефон</DataPath>
 			<ContextMenu name="ТелефонКонтекстноеМеню" id="29"/>
-			<ExtendedTooltip name="ТелефонExtendedTooltip" id="79"/>
+			<ExtendedTooltip name="ТелефонРасширеннаяПодсказка" id="79"/>
 		</LabelField>
 		<UsualGroup name="БанковскиеРеквизиты" id="35">
 			<Title>
@@ -143,28 +145,29 @@
 				</v8:item>
 			</Title>
 			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
 			<Representation>StrongSeparation</Representation>
-			<ExtendedTooltip name="БанковскиеРеквизитыExtendedTooltip" id="80"/>
+			<ExtendedTooltip name="БанковскиеРеквизитыРасширеннаяПодсказка" id="80"/>
 			<ChildItems>
 				<LabelField name="Банк" id="40">
 					<DataPath>Банк</DataPath>
 					<ContextMenu name="БанкКонтекстноеМеню" id="41"/>
-					<ExtendedTooltip name="БанкExtendedTooltip" id="81"/>
+					<ExtendedTooltip name="БанкРасширеннаяПодсказка" id="81"/>
 				</LabelField>
 				<LabelField name="РасчетныйСчет" id="50">
 					<DataPath>РасчетныйСчет</DataPath>
 					<ContextMenu name="РасчетныйСчетКонтекстноеМеню" id="51"/>
-					<ExtendedTooltip name="РасчетныйСчетExtendedTooltip" id="82"/>
+					<ExtendedTooltip name="РасчетныйСчетРасширеннаяПодсказка" id="82"/>
 				</LabelField>
 				<LabelField name="КорреспондентскийСчет" id="38">
 					<DataPath>КорреспондентскийСчет</DataPath>
 					<ContextMenu name="КорреспондентскийСчетКонтекстноеМеню" id="39"/>
-					<ExtendedTooltip name="КорреспондентскийСчетExtendedTooltip" id="83"/>
+					<ExtendedTooltip name="КорреспондентскийСчетРасширеннаяПодсказка" id="83"/>
 				</LabelField>
 				<LabelField name="БИК" id="42">
 					<DataPath>БИК</DataPath>
 					<ContextMenu name="БИККонтекстноеМеню" id="43"/>
-					<ExtendedTooltip name="БИКExtendedTooltip" id="84"/>
+					<ExtendedTooltip name="БИКРасширеннаяПодсказка" id="84"/>
 				</LabelField>
 				<UsualGroup name="ГруппаНепрямыхРасчетов" id="60">
 					<Visible>false</Visible>
@@ -175,7 +178,8 @@
 						</v8:item>
 					</Title>
 					<Group>Vertical</Group>
-					<ExtendedTooltip name="ГруппаНепрямыхРасчетовExtendedTooltip" id="85"/>
+					<Behavior>Usual</Behavior>
+					<ExtendedTooltip name="ГруппаНепрямыхРасчетовРасширеннаяПодсказка" id="85"/>
 					<ChildItems>
 						<LabelField name="ПредставлениеБанкаДляРасчетов" id="61">
 							<DataPath>ПредставлениеБанкаДляРасчетов</DataPath>
@@ -186,7 +190,7 @@
 								</v8:item>
 							</Title>
 							<ContextMenu name="ПредставлениеБанкаДляРасчетовКонтекстноеМеню" id="62"/>
-							<ExtendedTooltip name="ПредставлениеБанкаДляРасчетовExtendedTooltip" id="86"/>
+							<ExtendedTooltip name="ПредставлениеБанкаДляРасчетовРасширеннаяПодсказка" id="86"/>
 						</LabelField>
 						<LabelField name="КоррСчетБанкаДляРасчетов" id="63">
 							<DataPath>КоррСчетБанкаДляРасчетов</DataPath>
@@ -197,7 +201,7 @@
 								</v8:item>
 							</Title>
 							<ContextMenu name="КоррСчетБанкаДляРасчетовКонтекстноеМеню" id="64"/>
-							<ExtendedTooltip name="КоррСчетБанкаДляРасчетовExtendedTooltip" id="87"/>
+							<ExtendedTooltip name="КоррСчетБанкаДляРасчетовРасширеннаяПодсказка" id="87"/>
 						</LabelField>
 						<LabelField name="БИКБанкаДляРасчетов" id="65">
 							<DataPath>БИКБанкаДляРасчетов</DataPath>
@@ -208,7 +212,7 @@
 								</v8:item>
 							</Title>
 							<ContextMenu name="БИКБанкаДляРасчетовКонтекстноеМеню" id="66"/>
-							<ExtendedTooltip name="БИКБанкаДляРасчетовExtendedTooltip" id="88"/>
+							<ExtendedTooltip name="БИКБанкаДляРасчетовРасширеннаяПодсказка" id="88"/>
 						</LabelField>
 					</ChildItems>
 				</UsualGroup>

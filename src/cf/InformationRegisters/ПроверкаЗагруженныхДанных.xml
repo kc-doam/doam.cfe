@@ -251,18 +251,21 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Attribute>
-			<Attribute uuid="d390d4d4-6009-47c9-ae68-b7bf7efd7ea0">
+			<Attribute uuid="48631fdb-ff9d-4b3d-b66b-c64a9547e967">
 				<Properties>
-					<Name>Проверил</Name>
+					<Name>ДатаПроверки</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Проверил</v8:content>
+							<v8:content>Дата проверки</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
 					<Type>
-						<v8:Type>cfg:CatalogRef.Пользователи</v8:Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>DateTime</v8:DateFractions>
+						</v8:DateQualifiers>
 					</Type>
 					<PasswordMode>false</PasswordMode>
 					<Format/>
@@ -290,21 +293,18 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Attribute>
-			<Attribute uuid="48631fdb-ff9d-4b3d-b66b-c64a9547e967">
+			<Attribute uuid="d390d4d4-6009-47c9-ae68-b7bf7efd7ea0">
 				<Properties>
-					<Name>ДатаПроверки</Name>
+					<Name>Проверил</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Дата проверки</v8:content>
+							<v8:content>Проверил</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
 					<Type>
-						<v8:Type>xs:dateTime</v8:Type>
-						<v8:DateQualifiers>
-							<v8:DateFractions>DateTime</v8:DateFractions>
-						</v8:DateQualifiers>
+						<v8:Type>cfg:CatalogRef.Пользователи</v8:Type>
 					</Type>
 					<PasswordMode>false</PasswordMode>
 					<Format/>

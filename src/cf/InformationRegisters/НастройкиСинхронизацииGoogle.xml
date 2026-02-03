@@ -170,13 +170,13 @@
 			<ExecuteAfterWriteDataHistoryVersionProcessing>false</ExecuteAfterWriteDataHistoryVersionProcessing>
 		</Properties>
 		<ChildObjects>
-			<Resource uuid="8c9fa5ef-0efc-4d36-ac96-5b8f5a48ac2c">
+			<Resource uuid="f1907f72-7378-47ec-8cb9-866066143237">
 				<Properties>
-					<Name>ТокенДоступа</Name>
+					<Name>ТипТокенаДоступа</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Токен доступа</v8:content>
+							<v8:content>Тип токена доступа</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -213,13 +213,13 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Resource>
-			<Resource uuid="f1907f72-7378-47ec-8cb9-866066143237">
+			<Resource uuid="8c9fa5ef-0efc-4d36-ac96-5b8f5a48ac2c">
 				<Properties>
-					<Name>ТипТокенаДоступа</Name>
+					<Name>ТокенДоступа</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Тип токена доступа</v8:content>
+							<v8:content>Токен доступа</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>

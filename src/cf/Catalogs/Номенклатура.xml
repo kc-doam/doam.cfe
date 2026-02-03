@@ -338,6 +338,7 @@
 			<QuickChoice>false</QuickChoice>
 			<ChoiceMode>BothWays</ChoiceMode>
 			<InputByString>
+				<xr:Field>Catalog.Номенклатура.Attribute.Артикул</xr:Field>
 				<xr:Field>Catalog.Номенклатура.StandardAttribute.Description</xr:Field>
 				<xr:Field>Catalog.Номенклатура.StandardAttribute.Code</xr:Field>
 			</InputByString>
@@ -499,7 +500,7 @@
 					<MinValue xsi:nil="true"/>
 					<MaxValue xsi:nil="true"/>
 					<FillFromFillingValue>true</FillFromFillingValue>
-					<FillValue xsi:type="xr:DesignTimeRef">d3a0be91-8172-4fd4-9de8-6c72c72127b1.ca0cf7c1-ce04-4fe1-9fe5-0f0e1099a0ff</FillValue>
+					<FillValue xsi:type="xr:DesignTimeRef"/>
 					<FillChecking>DontCheck</FillChecking>
 					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
 					<ChoiceParameterLinks/>
@@ -761,10 +762,10 @@
 					</Attribute>
 				</ChildObjects>
 			</TabularSection>
-			<Form>ФормаСписка</Form>
 			<Form>ФормаВыбора</Form>
-			<Form>ФормаЭлемента</Form>
 			<Form>ФормаГруппы</Form>
+			<Form>ФормаСписка</Form>
+			<Form>ФормаЭлемента</Form>
 		</ChildObjects>
 	</Catalog>
 </MetaDataObject>

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
 	<Title>
 		<v8:item>
 			<v8:lang>ru</v8:lang>
@@ -50,6 +50,7 @@
 				</v8:item>
 			</Title>
 			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
 			<Representation>NormalSeparation</Representation>
 			<ExtendedTooltip name="ГруппаУсловияОтбораРасширеннаяПодсказка" id="28"/>
 			<ChildItems>
@@ -129,7 +130,7 @@
 								<Title>
 									<v8:item>
 										<v8:lang>ru</v8:lang>
-										<v8:content>Компоновщик настроек настройки отбор группа 1</v8:content>
+										<v8:content>Компоновщик настроек</v8:content>
 									</v8:item>
 								</Title>
 								<CommandSource>Form</CommandSource>
@@ -170,7 +171,10 @@
 					<Events>
 						<Event name="OnEditEnd">КомпоновщикНастроекНастройкиОтборПриОкончанииРедактирования</Event>
 						<Event name="BeforeAddRow">КомпоновщикНастроекНастройкиОтборПередНачаломДобавления</Event>
+						<Event name="OnActivateRow">КомпоновщикНастроекНастройкиОтборПриАктивизацииСтроки</Event>
+						<Event name="OnStartEdit">КомпоновщикНастроекНастройкиОтборПриНачалеРедактирования</Event>
 						<Event name="AfterDeleteRow">КомпоновщикНастроекНастройкиОтборПослеУдаления</Event>
+						<Event name="OnChange">КомпоновщикНастроекНастройкиОтборПриИзменении</Event>
 					</Events>
 				</Table>
 			</ChildItems>
@@ -184,20 +188,20 @@
 			</Title>
 			<Height>8</Height>
 			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
 			<Representation>NormalSeparation</Representation>
 			<ExtendedTooltip name="ГруппаВыбранныеОбъектыРасширеннаяПодсказка" id="30"/>
 			<ChildItems>
 				<Table name="Список" id="74">
 					<Representation>List</Representation>
 					<CommandBarLocation>Bottom</CommandBarLocation>
-					<Header>false</Header>
 					<HorizontalLines>false</HorizontalLines>
 					<UseAlternationRowColor>true</UseAlternationRowColor>
 					<InitialTreeView>ExpandTopLevel</InitialTreeView>
 					<EnableStartDrag>true</EnableStartDrag>
 					<FileDragMode>AsFile</FileDragMode>
 					<DataPath>Список</DataPath>
-					<RowPictureDataPath>Список.DefaultPicture</RowPictureDataPath>
+					<RowPictureDataPath>~Список.DefaultPicture</RowPictureDataPath>
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -212,7 +216,6 @@
 						<ExcludedCommand>ListSettings</ExcludedCommand>
 						<ExcludedCommand>LoadDynamicListSettings</ExcludedCommand>
 						<ExcludedCommand>SaveDynamicListSettings</ExcludedCommand>
-						<ExcludedCommand>SearchHistory</ExcludedCommand>
 					</CommandSet>
 					<SearchStringLocation>Top</SearchStringLocation>
 					<SearchControlLocation>None</SearchControlLocation>
@@ -295,7 +298,6 @@
 					</SearchControlAddition>
 					<Events>
 						<Event name="Selection">СписокВыбор</Event>
-						<Event name="OnActivateRow">СписокПриАктивизацииСтроки</Event>
 					</Events>
 					<ChildItems>
 						<InputField name="СписокСсылка" id="87">
@@ -335,7 +337,7 @@
 				<v8:Type>cfg:DynamicList</v8:Type>
 			</Type>
 			<UseAlways>
-				<Field>Список.DefaultPicture</Field>
+				<Field>~Список.DefaultPicture</Field>
 				<Field>Список.Ссылка</Field>
 			</UseAlways>
 			<Settings xsi:type="DynamicList">
@@ -404,6 +406,21 @@
 					<v8:Digits>10</v8:Digits>
 					<v8:FractionDigits>0</v8:FractionDigits>
 					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ВыполняетсяРедактированиеОтборов" id="9">
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="КоличествоУсловий" id="10">
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
 				</v8:NumberQualifiers>
 			</Type>
 		</Attribute>

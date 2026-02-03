@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
 	<Title>
 		<v8:item>
 			<v8:lang>ru</v8:lang>
@@ -12,6 +12,7 @@
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
 	<Events>
 		<Event name="AfterWrite">ПослеЗаписи</Event>
+		<Event name="BeforeWrite">ПередЗаписью</Event>
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 		<Event name="BeforeWriteAtServer">ПередЗаписьюНаСервере</Event>
 		<Event name="OnWriteAtServer">ПриЗаписиНаСервере</Event>
@@ -50,6 +51,7 @@
 				</v8:item>
 			</Title>
 			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаРаботаСФайламиExtendedTooltip" id="435"/>
@@ -68,6 +70,7 @@
 						</v8:item>
 					</ToolTip>
 					<Group>Horizontal</Group>
+					<Behavior>Usual</Behavior>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
 					<ThroughAlign>DontUse</ThroughAlign>
@@ -110,6 +113,7 @@
 						</v8:item>
 					</Title>
 					<Group>Horizontal</Group>
+					<Behavior>Usual</Behavior>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="ГруппаТипХраненияExtendedTooltip" id="439"/>
@@ -155,6 +159,11 @@
 					<ContextMenu name="СписокРасширенийТекстовыхФайловКонтекстноеМеню" id="300"/>
 					<ExtendedTooltip name="СписокРасширенийТекстовыхФайловExtendedTooltip" id="444"/>
 				</InputField>
+				<InputField name="РасширенияФайловICalendar" id="550">
+					<DataPath>НаборКонстант.РасширенияФайловICalendar</DataPath>
+					<ContextMenu name="РасширенияФайловICalendarКонтекстноеМеню" id="551"/>
+					<ExtendedTooltip name="РасширенияФайловICalendarРасширеннаяПодсказка" id="552"/>
+				</InputField>
 				<InputField name="РасширенияФайловДляПроверкиБлокировкиФайлаНаДиске" id="541">
 					<DataPath>НаборКонстант.РасширенияФайловДляПроверкиБлокировкиФайлаНаДиске</DataPath>
 					<Title>
@@ -195,6 +204,7 @@
 						</v8:item>
 					</Title>
 					<Group>Horizontal</Group>
+					<Behavior>Usual</Behavior>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="ГруппаРасширениеExtendedTooltip" id="447"/>
@@ -237,6 +247,7 @@
 						</v8:item>
 					</Title>
 					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
 					<Representation>NormalSeparation</Representation>
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="ГруппаРаспознаваниеExtendedTooltip" id="451"/>
@@ -271,6 +282,7 @@
 								</v8:item>
 							</ToolTip>
 							<Group>AlwaysHorizontal</Group>
+							<Behavior>Usual</Behavior>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
 							<ThroughAlign>DontUse</ThroughAlign>
@@ -349,6 +361,7 @@
 										</v8:item>
 									</ToolTip>
 									<Group>Vertical</Group>
+									<Behavior>Usual</Behavior>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="ГруппаНастройкиПрогаммРаспознаванияРасширеннаяПодсказка" id="535"/>
@@ -383,6 +396,7 @@
 						</v8:item>
 					</ToolTip>
 					<Group>AlwaysHorizontal</Group>
+					<Behavior>Usual</Behavior>
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="ГруппаImageMagickРасширеннаяПодсказка" id="516"/>
 					<ChildItems>
@@ -424,6 +438,32 @@
 							<ContextMenu name="ДекорацияМаджикКонтекстноеМеню" id="524"/>
 							<ExtendedTooltip name="ДекорацияМаджикРасширеннаяПодсказка" id="525"/>
 						</LabelDecoration>
+						<LabelDecoration name="ДекорацияОтступ" id="547">
+							<Width>2</Width>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content> </v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ДекорацияОтступКонтекстноеМеню" id="548"/>
+							<ExtendedTooltip name="ДекорацияОтступРасширеннаяПодсказка" id="549"/>
+						</LabelDecoration>
+						<CheckBoxField name="ИспользоватьGhostscript" id="544">
+							<DataPath>НаборКонстант.ИспользоватьGhostscript</DataPath>
+							<TitleLocation>Right</TitleLocation>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Если настройка включена и на сервере (или клиенте) установлена программа Ghostscript, для PDF-файлов станут доступны: сканирование, потоковое сканирование, распознавание и автоматическая вставка штампа ЭП (с установленным ImageMagick).
+Если настройка отключена, перечисленные возможности недоступны. </v8:content>
+								</v8:item>
+							</ToolTip>
+							<ToolTipRepresentation>Button</ToolTipRepresentation>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ИспользоватьGhostscriptКонтекстноеМеню" id="545"/>
+							<ExtendedTooltip name="ИспользоватьGhostscriptРасширеннаяПодсказка" id="546"/>
+						</CheckBoxField>
 					</ChildItems>
 				</UsualGroup>
 				<CheckBoxField name="ИспользоватьХранилищеФайлов" id="80">
@@ -465,6 +505,7 @@
 								</v8:item>
 							</Title>
 							<Group>Horizontal</Group>
+							<Behavior>Usual</Behavior>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="ГруппаОчисткиExtendedTooltip" id="455"/>
@@ -500,6 +541,7 @@
 								</v8:item>
 							</Title>
 							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="ГруппаНастроекОчисткиExtendedTooltip" id="458"/>
@@ -512,6 +554,7 @@
 										</v8:item>
 									</Title>
 									<Group>Horizontal</Group>
+									<Behavior>Usual</Behavior>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="ГруппаСрокХраненияВерсийExtendedTooltip" id="459"/>
@@ -724,6 +767,17 @@
 				<v8:item>
 					<v8:lang>ru</v8:lang>
 					<v8:content>Разделение включено</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ЗаданВопросООтключенииАвтовизуализацииЭП" id="27">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Задан вопрос о отключении автовизуализации ЭП</v8:content>
 				</v8:item>
 			</Title>
 			<Type>

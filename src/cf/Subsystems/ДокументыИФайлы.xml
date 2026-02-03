@@ -133,7 +133,6 @@
 				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.ШаблоныДокументов</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Report.НеподписанныеВнутренниеДокументы</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ОбменСКонтрагентами</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.КонтрагентыНаМониторингеСПАРКРиски</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Report.ИндексыСПАРКРиски</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Report.СобытияМониторингаСПАРКРиски</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Report.ЗаявкиНаОплату</xr:Item>
@@ -149,11 +148,14 @@
 				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.ОтправитьИПолучитьЭДО</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ИнтерфейсДокументовЭДОДокументооборот</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Report.РегламентированныйОтчетПоРезультатамРассмотренияОбращений</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ТекущиеДелаМЭДО</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.АктОбУничтоженииПерсональныхДанных</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ОтсрочкаУдаленияДанныхУничтоженныхДокументов</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects>
-			<Subsystem>РегламентированныйУчетОбращений</Subsystem>
 			<Subsystem>РегламентированнаяОтчетность</Subsystem>
+			<Subsystem>РегламентированныйУчетОбращений</Subsystem>
 		</ChildObjects>
 	</Subsystem>
 </MetaDataObject>

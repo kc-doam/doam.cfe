@@ -21,12 +21,12 @@
 			</Synonym>
 			<Comment/>
 			<UseStandardCommands>true</UseStandardCommands>
-			<DefaultForm/>
+			<DefaultForm>CommonForm.ФормаОтчета</DefaultForm>
 			<AuxiliaryForm/>
 			<MainDataCompositionSchema>Report.ОтправкаДокументовПоСВД.Template.Макет</MainDataCompositionSchema>
-			<DefaultSettingsForm/>
+			<DefaultSettingsForm>CommonForm.ФормаНастроекОтчета</DefaultSettingsForm>
 			<AuxiliarySettingsForm/>
-			<DefaultVariantForm/>
+			<DefaultVariantForm>CommonForm.ФормаВариантаОтчета</DefaultVariantForm>
 			<VariantsStorage>SettingsStorage.ХранилищеВариантовОтчетов</VariantsStorage>
 			<SettingsStorage/>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
@@ -35,10 +35,10 @@
 		</Properties>
 		<ChildObjects>
 			<Template>Макет</Template>
+			<Template>ОбразецОтчетаВсеОтправляемыеДокументы</Template>
 			<Template>ОбразецОтчетаЗависшиеОтправленныеДокументы</Template>
 			<Template>ОбразецОтчетаОбъемОтправленныхСообщений</Template>
 			<Template>ОбразецОтчетаТОП10Контрагентов</Template>
-			<Template>ОбразецОтчетаВсеОтправляемыеДокументы</Template>
 		</ChildObjects>
 	</Report>
 </MetaDataObject>

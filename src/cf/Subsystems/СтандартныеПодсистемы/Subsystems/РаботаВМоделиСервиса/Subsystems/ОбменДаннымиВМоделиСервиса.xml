@@ -42,7 +42,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">XDTOPackage.АдминистрированиеОбменаДаннымиУправление</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">XDTOPackage.АдминистрированиеОбменаДаннымиКонтроль</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ПомощникНастройкиСинхронизацииДанныхМеждуПриложениямиВИнтернете</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.СинхронизацияДанныхВМоделиСервиса</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.НастройкиСинхронизацииДанныхВМоделиСервиса</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">XDTOPackage.ОбменДаннымиУправление</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">XDTOPackage.ОбменДаннымиКонтроль</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.НастройкиТранспортаОбменаОбластейДанных</xr:Item>
@@ -62,11 +62,6 @@
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.СообщенияОбменаДаннымиКонтрольОбработчикСообщения_2_1_2_1</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.СообщенияОбменаДаннымиУправлениеИнтерфейс</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.СообщенияОбменаДаннымиУправлениеОбработчикСообщения_2_1_2_1</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.АвтономнаяРаботаПроверитьВозможностьЗаписиОбщихДанныхНаборЗаписейРасчета</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.АвтономнаяРаботаПроверитьВозможностьЗаписиОбщихДанныхНаборЗаписей</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.АвтономнаяРаботаПроверитьВозможностьЗаписиОбщихДанныхКонстанта</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.АвтономнаяРаботаПроверитьВозможностьЗаписиОбщихДанныхДокумент</xr:Item>
-				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.АвтономнаяРаботаПроверитьВозможностьЗаписиОбщихДанных</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.АвтономнаяРабота</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.СостоянияОбменовДаннымиОбластейДанных</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.СостоянияУспешныхОбменовДаннымиОбластейДанных</xr:Item>
@@ -85,6 +80,21 @@
 				<xr:Item xsi:type="xr:MDObjectRef">DefinedType.КонечнаяТочкаОбменаСообщениями</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Constant.ИспользоватьСинхронизациюДанныхВМоделиСервиса</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">FunctionalOption.ИспользоватьАвтономнуюРаботуВЛокальномРежиме</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ЗадачиОбменаДаннымиВнутренняяПубликация</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ОбменДаннымиВнутренняяПубликация</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.СообщенияАдминистрированиеОбменаДаннымиУправлениеОбработчикСообщения_3_0_1_1</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.СообщенияАдминистрированиеОбменаДаннымиУправлениеТрансляция_2_1_2_1</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">XDTOPackage.АдминистрированиеОбменаДаннымиУправление_3_0_1_1</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ДействияПриОбменеВнутренняяПубликация</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">FunctionalOption.ИспользоватьСценарииВМоделиСервиса</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">FunctionalOption.ИспользоватьНастройкиПодключенияВМоделиСервиса</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">FunctionalOptionsParameter.ОбщиеНастройкиУзлов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ОбменДаннымиВнутренняяПубликацияКлиент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.ОбменДаннымиВнутренняяПубликацияВызовСервера</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">FunctionalOption.ИспользоватьОптимизированнуюЗаписьСозданияАвтономногоРабочегоМеста</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ИспользоватьОптимизированнуюЗаписьСозданияАвтономногоРабочегоМеста</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.КонтрольНеразделенныхНаборовЗаписейПриЗаписиБСД</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.КонтрольНеразделенныхОбъектовПриЗаписиБСД</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

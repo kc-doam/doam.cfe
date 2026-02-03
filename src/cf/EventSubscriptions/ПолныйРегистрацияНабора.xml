@@ -34,9 +34,9 @@
 				<v8:Type>cfg:InformationRegisterRecordSet.ПереносыСроковВыполненияПроцессовИЗадач</v8:Type>
 				<v8:Type>cfg:InformationRegisterRecordSet.УдалитьНастройкиУведомленияОКонтроле</v8:Type>
 				<v8:Type>cfg:InformationRegisterRecordSet.ПроверкаПоступленияНовыхПисем</v8:Type>
-				<v8:Type>cfg:InformationRegisterRecordSet.ПроизошедшиеБизнесСобытия</v8:Type>
 				<v8:Type>cfg:InformationRegisterRecordSet.ЗначенияУсловийПриОбработкеПисем</v8:Type>
 				<v8:Type>cfg:InformationRegisterRecordSet.СостоянияДелХраненияДокументов</v8:Type>
+				<v8:Type>cfg:InformationRegisterRecordSet.НастройкиОрганизацийМЭДО</v8:Type>
 				<v8:Type>cfg:InformationRegisterRecordSet.ДанныеБизнесПроцессов</v8:Type>
 				<v8:Type>cfg:InformationRegisterRecordSet.НастройкаСвязей</v8:Type>
 				<v8:Type>cfg:InformationRegisterRecordSet.ЗначенияДействийПриОбработкеПисем</v8:Type>
@@ -83,6 +83,7 @@
 				<v8:Type>cfg:InformationRegisterRecordSet.СведенияОСохраненииКопийУстаревшихВерсий</v8:Type>
 				<v8:Type>cfg:InformationRegisterRecordSet.ТекущиеСостоянияДокументов</v8:Type>
 				<v8:Type>cfg:InformationRegisterRecordSet.Штрихкоды</v8:Type>
+				<v8:Type>cfg:InformationRegisterRecordSet.СостоянияДокументовМЭДО</v8:Type>
 				<v8:Type>cfg:InformationRegisterRecordSet.ПодчиненностьПодразделений</v8:Type>
 				<v8:Type>cfg:InformationRegisterRecordSet.УчастникиМероприятия</v8:Type>
 				<v8:Type>cfg:InformationRegisterRecordSet.НеотправленныеИсходящиеПисьма</v8:Type>
@@ -139,6 +140,7 @@
 				<v8:Type>cfg:InformationRegisterRecordSet.ДанныеИсходящихДокументов</v8:Type>
 				<v8:Type>cfg:InformationRegisterRecordSet.СведенияОПросмотреПисем</v8:Type>
 				<v8:Type>cfg:InformationRegisterRecordSet.ПоискВАдреснойКниге</v8:Type>
+				<v8:Type>cfg:InformationRegisterRecordSet.НастройкиКонтрагентовМЭДО</v8:Type>
 				<v8:Type>cfg:InformationRegisterRecordSet.УдалитьДвоичныеДанныеФайлов</v8:Type>
 				<v8:Type>cfg:InformationRegisterRecordSet.РазрешенияДоступаОбщие</v8:Type>
 				<v8:Type>cfg:InformationRegisterRecordSet.ПодпискиНаПоказателиПроцессов</v8:Type>
@@ -167,6 +169,7 @@
 				<v8:Type>cfg:InformationRegisterRecordSet.ДоступноеВремяПользователя</v8:Type>
 				<v8:Type>cfg:InformationRegisterRecordSet.ФайлыСозданныеПоШаблону</v8:Type>
 				<v8:Type>cfg:InformationRegisterRecordSet.ПапкиПисемЧастоИспользуемые</v8:Type>
+				<v8:Type>cfg:InformationRegisterRecordSet.СвязиОбъектовИнтегрированныхСистем</v8:Type>
 				<v8:Type>cfg:InformationRegisterRecordSet.УдалитьНастройкиУведомленияОкончанияСрокаДействия</v8:Type>
 				<v8:Type>cfg:InformationRegisterRecordSet.ПравилаАвтоматическогоЗапускаБизнесПроцессов</v8:Type>
 				<v8:Type>cfg:InformationRegisterRecordSet.ПользователиВКонтейнерах</v8:Type>
@@ -184,6 +187,7 @@
 				<v8:Type>cfg:InformationRegisterRecordSet.ВерсииОбъектов</v8:Type>
 				<v8:Type>cfg:InformationRegisterRecordSet.СведенияОГолосовании</v8:Type>
 				<v8:Type>cfg:InformationRegisterRecordSet.НаследованиеНастроекПравОбъектов</v8:Type>
+				<v8:Type>cfg:InformationRegisterRecordSet.ОчередьУведомлений</v8:Type>
 				<v8:Type>cfg:InformationRegisterRecordSet.ЗначенияПоказателейПроцессов</v8:Type>
 				<v8:Type>cfg:InformationRegisterRecordSet.СоставыГруппПользователей</v8:Type>
 			</Source>

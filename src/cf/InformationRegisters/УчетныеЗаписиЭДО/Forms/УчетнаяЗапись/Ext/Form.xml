@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
 	<CommandSet>
 		<ExcludedCommand>Delete</ExcludedCommand>
 		<ExcludedCommand>WriteAndClose</ExcludedCommand>
@@ -18,10 +18,10 @@
 				<LocationInCommandBar>InAdditionalSubmenu</LocationInCommandBar>
 				<ExtendedTooltip name="ФормаПроверкаУчетнойЗаписиРасширеннаяПодсказка" id="213"/>
 			</Button>
-			<Button name="ФормаКнопка1" id="162">
+			<Button name="ФормаЗаписать" id="162">
 				<Type>CommandBarButton</Type>
 				<CommandName>Form.StandardCommand.Write</CommandName>
-				<ExtendedTooltip name="ФормаКнопка1РасширеннаяПодсказка" id="163"/>
+				<ExtendedTooltip name="ФормаЗаписатьРасширеннаяПодсказка" id="163"/>
 			</Button>
 			<Button name="ФормаУдалить" id="164">
 				<Type>CommandBarButton</Type>
@@ -62,6 +62,7 @@
 			<HorizontalStretch>true</HorizontalStretch>
 			<VerticalStretch>false</VerticalStretch>
 			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<BackColor>style:ToolTipBackColor</BackColor>
@@ -76,6 +77,7 @@
 				</v8:item>
 			</Title>
 			<HorizontalStretch>true</HorizontalStretch>
+			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<BackColor>style:ToolTipBackColor</BackColor>
@@ -113,6 +115,80 @@
 				</LabelDecoration>
 			</ChildItems>
 		</UsualGroup>
+		<UsualGroup name="ГруппаПредупреждениеАвтоматическогоПолученияЭДО" id="242">
+			<Visible>false</Visible>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа предупреждение автоматического получения ЭДО</v8:content>
+				</v8:item>
+			</Title>
+			<HorizontalStretch>true</HorizontalStretch>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<BackColor>style:ToolTipBackColor</BackColor>
+			<ExtendedTooltip name="ГруппаПредупреждениеАвтоматическогоПолученияЭДОРасширеннаяПодсказка" id="243"/>
+			<ChildItems>
+				<PictureDecoration name="КартинкаПредупреждениеАвтоматическогоПолученияЭДО" id="244">
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Картинка предупреждение автоматического получения ЭДО</v8:content>
+						</v8:item>
+					</Title>
+					<Picture>
+						<xr:Ref>CommonPicture.Предупреждение</xr:Ref>
+						<xr:LoadTransparent>false</xr:LoadTransparent>
+					</Picture>
+					<ContextMenu name="КартинкаПредупреждениеАвтоматическогоПолученияЭДОКонтекстноеМеню" id="245"/>
+					<ExtendedTooltip name="КартинкаПредупреждениеАвтоматическогоПолученияЭДОРасширеннаяПодсказка" id="246"/>
+				</PictureDecoration>
+				<UsualGroup name="ГруппаВариантыПредупрежденияАвтоматическогоПолученияЭДО" id="250">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа варианты предупреждения автоматического получения ЭДО</v8:content>
+						</v8:item>
+					</Title>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаВариантыПредупрежденияАвтоматическогоПолученияЭДОРасширеннаяПодсказка" id="251"/>
+					<ChildItems>
+						<LabelDecoration name="НадписьАвтоматическоеПолученияЭДОНеВыполнено" id="252">
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<Title formatted="true">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Не удалось выполнить автоматическое получение. Подробности в  &lt;link ОткрытьЖурналРегистрации&gt;журнале регистрации&lt;/&gt;.
+</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="НадписьАвтоматическоеПолученияЭДОНеВыполненоКонтекстноеМеню" id="253"/>
+							<ExtendedTooltip name="НадписьАвтоматическоеПолученияЭДОНеВыполненоРасширеннаяПодсказка" id="254"/>
+							<Events>
+								<Event name="URLProcessing">НадписьПредупреждениеАвтоматическогоПолученияЭДООбработкаНавигационнойСсылки</Event>
+							</Events>
+						</LabelDecoration>
+						<LabelDecoration name="НадписьАвтоматическоеПолученияЭДООстановлено" id="247">
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<Title formatted="true">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Автоматическое получение электронных документов остановлено.
+Для возобновления &lt;link ВключитьИспользованиеКлючаДоступаКСервисуЭДО&gt;авторизуйтесь по сертификату&lt;/&gt;.</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="НадписьАвтоматическоеПолученияЭДООстановленоКонтекстноеМеню" id="248"/>
+							<ExtendedTooltip name="НадписьАвтоматическоеПолученияЭДООстановленоРасширеннаяПодсказка" id="249"/>
+							<Events>
+								<Event name="URLProcessing">НадписьПредупреждениеАвтоматическогоПолученияЭДООбработкаНавигационнойСсылки</Event>
+							</Events>
+						</LabelDecoration>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
 		<UsualGroup name="ГруппаОжиданиеСинхронизации" id="150">
 			<Title>
 				<v8:item>
@@ -121,6 +197,7 @@
 				</v8:item>
 			</Title>
 			<HorizontalSpacing>Half</HorizontalSpacing>
+			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаОжиданиеСинхронизацииРасширеннаяПодсказка" id="151"/>
@@ -161,6 +238,7 @@
 				</v8:item>
 			</Title>
 			<HorizontalSpacing>Half</HorizontalSpacing>
+			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаОжиданиеУдаленияРасширеннаяПодсказка" id="169"/>
@@ -256,6 +334,7 @@
 							</Title>
 							<Group>Vertical</Group>
 							<VerticalSpacing>Half</VerticalSpacing>
+							<Behavior>Usual</Behavior>
 							<Collapsed>true</Collapsed>
 							<Format>
 								<v8:item>
@@ -280,6 +359,7 @@
 										</v8:item>
 									</Title>
 									<Group>AlwaysHorizontal</Group>
+									<Behavior>Usual</Behavior>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="ГруппаИдентификаторРасширеннаяПодсказка" id="20"/>
@@ -321,9 +401,10 @@
 										</v8:item>
 									</Title>
 									<Group>Vertical</Group>
+									<Behavior>Usual</Behavior>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
-									<ExtendedTooltip name="ГруппаОбменЧерезОператораИнформацияExtendedTooltip" id="177"/>
+									<ExtendedTooltip name="ГруппаОбменЧерезОператораИнформацияРасширеннаяПодсказка" id="177"/>
 									<ChildItems>
 										<LabelDecoration name="НадписьЛичныйКабинетУчастникаОбменаЭД" id="178">
 											<AutoMaxWidth>false</AutoMaxWidth>
@@ -335,7 +416,7 @@
 											</Title>
 											<Hyperlink>true</Hyperlink>
 											<ContextMenu name="НадписьЛичныйКабинетУчастникаОбменаЭДКонтекстноеМеню" id="179"/>
-											<ExtendedTooltip name="НадписьЛичныйКабинетУчастникаОбменаЭДExtendedTooltip" id="180"/>
+											<ExtendedTooltip name="НадписьЛичныйКабинетУчастникаОбменаЭДРасширеннаяПодсказка" id="180"/>
 											<Events>
 												<Event name="Click">НадписьЛичныйКабинетУчастникаОбменаЭДНажатие</Event>
 											</Events>
@@ -364,6 +445,7 @@
 												</v8:item>
 											</Title>
 											<Group>AlwaysHorizontal</Group>
+											<Behavior>Usual</Behavior>
 											<Representation>None</Representation>
 											<ShowTitle>false</ShowTitle>
 											<ExtendedTooltip name="ГруппаИзменитьАдресРасширеннаяПодсказка" id="193"/>
@@ -399,7 +481,7 @@
 											<Title formatted="true">
 												<v8:item>
 													<v8:lang>ru</v8:lang>
-													<v8:content>&lt;colorstyle 0:1d75bfa4-5698-4cbc-98cb-591509fcfde8&gt;Юридический адрес &lt;/&gt;&lt;colorstyle 0:1d75bfa4-5698-4cbc-98cb-591509fcfde8&gt;организации&lt;/&gt;&lt;colorstyle 0:1d75bfa4-5698-4cbc-98cb-591509fcfde8&gt; был изменен.&lt;/&gt;&lt;colorstyle 0:ad87bd29-0ad1-4da4-ac62-38e714e0cb9f&gt; &lt;/&gt;&lt;link ОбновитьАдрес&gt;&lt;colorstyle 0:8f5d5ef6-9944-4c4a-b6d0-8441a7de72b7&gt;&lt;bgcolorstyle -1&gt;Обновить адрес&lt;/&gt;&lt;/&gt;&lt;/&gt;</v8:content>
+													<v8:content>&lt;colorstyle 0:1d75bfa4-5698-4cbc-98cb-591509fcfde8&gt;Юридический адрес &lt;/&gt;&lt;colorstyle 0:1d75bfa4-5698-4cbc-98cb-591509fcfde8&gt;организации&lt;/&gt;&lt;colorstyle 0:1d75bfa4-5698-4cbc-98cb-591509fcfde8&gt; был изменен.&lt;/&gt;&lt;colorstyle 0:ad87bd29-0ad1-4da4-ac62-38e714e0cb9f&gt; &lt;/&gt;&lt;link ОбновитьАдрес&gt;&lt;bgcolorstyle -1&gt;&lt;colorstyle 0:8f5d5ef6-9944-4c4a-b6d0-8441a7de72b7&gt;Обновить адрес&lt;/&gt;&lt;/&gt;&lt;/&gt;</v8:content>
 												</v8:item>
 											</Title>
 											<ContextMenu name="ДекорацияАдресКонтекстноеМеню" id="131"/>
@@ -432,6 +514,7 @@
 												</v8:item>
 											</Title>
 											<Group>AlwaysHorizontal</Group>
+											<Behavior>Usual</Behavior>
 											<Representation>None</Representation>
 											<ShowTitle>false</ShowTitle>
 											<ExtendedTooltip name="ГруппаИзменитьКодНалоговогоОрганаРасширеннаяПодсказка" id="198"/>
@@ -465,7 +548,7 @@
 											<Title formatted="true">
 												<v8:item>
 													<v8:lang>ru</v8:lang>
-													<v8:content>&lt;colorstyle 0:1d75bfa4-5698-4cbc-98cb-591509fcfde8&gt;Код налоговой инспекции был изменен.&lt;/&gt;&lt;colorstyle -17&gt; &lt;/&gt;&lt;link ОбновитьАдрес&gt;&lt;colorstyle 0:8f5d5ef6-9944-4c4a-b6d0-8441a7de72b7&gt;&lt;bgcolorstyle -1&gt;Обновить код&lt;/&gt;&lt;/&gt;&lt;/&gt;</v8:content>
+													<v8:content>&lt;colorstyle 0:1d75bfa4-5698-4cbc-98cb-591509fcfde8&gt;Код налоговой инспекции был изменен.&lt;/&gt;&lt;colorstyle -17&gt; &lt;/&gt;&lt;link ОбновитьАдрес&gt;&lt;bgcolorstyle -1&gt;&lt;colorstyle 0:8f5d5ef6-9944-4c4a-b6d0-8441a7de72b7&gt;Обновить код&lt;/&gt;&lt;/&gt;&lt;/&gt;</v8:content>
 												</v8:item>
 											</Title>
 											<ContextMenu name="ДекорацияКодНалоговогоОрганаКонтекстноеМеню" id="134"/>
@@ -485,6 +568,7 @@
 									<v8:content>Параметры учетной записи</v8:content>
 								</v8:item>
 							</Title>
+							<Behavior>Usual</Behavior>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="ПараметрыУчетнойЗаписиРасширеннаяПодсказка" id="159"/>
@@ -497,6 +581,7 @@
 										</v8:item>
 									</Title>
 									<Group>Vertical</Group>
+									<Behavior>Usual</Behavior>
 									<Format>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
@@ -526,6 +611,7 @@
 												</v8:item>
 											</Title>
 											<Group>Vertical</Group>
+											<Behavior>Usual</Behavior>
 											<Representation>None</Representation>
 											<ShowTitle>false</ShowTitle>
 											<ExtendedTooltip name="ГруппаСведенияРасширеннаяПодсказка" id="57"/>
@@ -538,6 +624,7 @@
 														</v8:item>
 													</Title>
 													<Group>AlwaysHorizontal</Group>
+													<Behavior>Usual</Behavior>
 													<Representation>None</Representation>
 													<ShowTitle>false</ShowTitle>
 													<ExtendedTooltip name="ГруппаСведенияТекстРасширеннаяПодсказка" id="59"/>
@@ -614,6 +701,7 @@
 								</v8:item>
 							</Title>
 							<Group>Vertical</Group>
+							<Behavior>Usual</Behavior>
 							<Format>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
@@ -651,6 +739,7 @@
 													</Title>
 													<Group>AlwaysHorizontal</Group>
 													<HorizontalSpacing>Half</HorizontalSpacing>
+													<Behavior>Usual</Behavior>
 													<Representation>None</Representation>
 													<ShowTitle>false</ShowTitle>
 													<ExtendedTooltip name="УведомлятьНаРасширеннаяПодсказка" id="83"/>
@@ -703,6 +792,7 @@
 														</v8:item>
 													</Title>
 													<Group>Horizontal</Group>
+													<Behavior>Usual</Behavior>
 													<ShowTitle>false</ShowTitle>
 													<ExtendedTooltip name="ГруппаНастройкиРасширеннаяПодсказка" id="88"/>
 													<ChildItems>
@@ -718,6 +808,7 @@
 																</v8:item>
 															</Title>
 															<Group>Vertical</Group>
+															<Behavior>Usual</Behavior>
 															<Representation>None</Representation>
 															<ShowTitle>false</ShowTitle>
 															<ExtendedTooltip name="ГруппаСоставРасширеннаяПодсказка" id="93"/>
@@ -866,6 +957,7 @@
 								</v8:item>
 							</Title>
 							<HorizontalSpacing>Half</HorizontalSpacing>
+							<Behavior>Usual</Behavior>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="ГруппаОжиданиеТакскомРасширеннаяПодсказка" id="141"/>
@@ -951,9 +1043,10 @@
 								<ExtendedTooltip name="СписокСертификатовУправлениеПоискомРасширеннаяПодсказка" id="35"/>
 							</SearchControlAddition>
 							<Events>
+								<Event name="Selection">СписокСертификатовВыбор</Event>
 								<Event name="BeforeAddRow">СписокСертификатовПередНачаломДобавления</Event>
 								<Event name="BeforeDeleteRow">СписокСертификатовПередУдалением</Event>
-								<Event name="BeforeRowChange">СписокСертификатовПередНачаломИзменения</Event>
+								<Event name="OnActivateCell">СписокСертификатовПриАктивизацииЯчейки</Event>
 							</Events>
 							<ChildItems>
 								<LabelField name="СписокСертификатовСертификат" id="42">
@@ -1007,6 +1100,18 @@
 									<ContextMenu name="СписокСертификатовКемВыданКонтекстноеМеню" id="40"/>
 									<ExtendedTooltip name="СписокСертификатовКемВыданРасширеннаяПодсказка" id="41"/>
 								</LabelField>
+								<InputField name="СписокСертификатовДоверенность" id="239">
+									<DataPath>СписокСертификатов.Доверенность</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<DropListButton>true</DropListButton>
+									<ListChoiceMode>true</ListChoiceMode>
+									<ChoiceHistoryOnInput>DontUse</ChoiceHistoryOnInput>
+									<ContextMenu name="СписокСертификатовДоверенностьКонтекстноеМеню" id="240"/>
+									<ExtendedTooltip name="СписокСертификатовДоверенностьРасширеннаяПодсказка" id="241"/>
+									<Events>
+										<Event name="ChoiceProcessing">СписокСертификатовДоверенностьОбработкаВыбора</Event>
+									</Events>
+								</InputField>
 							</ChildItems>
 						</Table>
 					</ChildItems>
@@ -1149,6 +1254,50 @@
 						<v8:item>
 							<v8:lang>ru</v8:lang>
 							<v8:content>Сертификат действителен</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Доверенность" id="19">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Доверенность</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:TypeSet>cfg:DefinedType.МашиночитаемаяДоверенность</v8:TypeSet>
+					</Type>
+				</Column>
+				<Column name="ТребуетсяДоверенность" id="22">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Требуется доверенность</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Доверенности" id="23">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Доверенности</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>v8:ValueListType</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Отозван" id="26">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отозван</v8:content>
 						</v8:item>
 					</Title>
 					<Type>
@@ -1333,6 +1482,38 @@
 			<Type>
 				<v8:TypeSet>cfg:DefinedType.Организация</v8:TypeSet>
 			</Type>
+		</Attribute>
+		<Attribute name="ЕстьНедействительныеСертификаты" id="24">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Есть недействительные сертификаты</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="УчетнаяЗаписьОблачногоЭДО" id="27">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Учетная запись
+облачного ЭДО</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.УчетныеЗаписиОблачногоЭДО</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ПараметрыАвтоматическогоПолученияЭДО" id="28">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Параметры автоматического получения ЭДО</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
 		</Attribute>
 	</Attributes>
 	<Commands>

@@ -388,6 +388,7 @@
 														</v8:item>
 													</Title>
 													<Height>14</Height>
+													<PagesRepresentation>TabsOnTop</PagesRepresentation>
 													<ExtendedTooltip name="СтраницыПолучательСпособВыбораРасширеннаяПодсказка" id="258"/>
 													<Events>
 														<Event name="OnCurrentPageChange">СтраницыПолучательСпособВыбораПриСменеСтраницы</Event>

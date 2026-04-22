@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
 	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
 	<CommandSet>
 		<ExcludedCommand>WriteAndClose</ExcludedCommand>
@@ -237,6 +237,7 @@
 			<HorizontalStretch>true</HorizontalStretch>
 			<VerticalStretch>true</VerticalStretch>
 			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаВсеПоляИФотоExtendedTooltip" id="64"/>
@@ -257,6 +258,7 @@
 					<HorizontalStretch>true</HorizontalStretch>
 					<VerticalStretch>true</VerticalStretch>
 					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="ГруппаВсеПоляExtendedTooltip" id="65"/>
@@ -310,6 +312,7 @@
 											</ToolTip>
 											<HorizontalStretch>true</HorizontalStretch>
 											<Group>Horizontal</Group>
+											<Behavior>Usual</Behavior>
 											<BackColor>style:ФонУправляющегоПоля</BackColor>
 											<ThroughAlign>Use</ThroughAlign>
 											<ExtendedTooltip name="ГруппаЗаполнениеПоДаннымЕдиныхГосРеестровРасширеннаяПодсказка" id="427"/>
@@ -322,6 +325,7 @@
 														</v8:item>
 													</Title>
 													<Group>Horizontal</Group>
+													<Behavior>Usual</Behavior>
 													<Representation>None</Representation>
 													<ShowTitle>false</ShowTitle>
 													<ExtendedTooltip name="ГруппаПоискаИНННаименованиеРасширеннаяПодсказка" id="429"/>
@@ -356,6 +360,7 @@
 										</UsualGroup>
 										<UsualGroup name="Группа2" id="424">
 											<Group>AlwaysHorizontal</Group>
+											<Behavior>Usual</Behavior>
 											<Representation>None</Representation>
 											<ShowTitle>false</ShowTitle>
 											<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="425"/>
@@ -369,6 +374,7 @@
 													</Title>
 													<VerticalStretch>true</VerticalStretch>
 													<Group>Vertical</Group>
+													<Behavior>Usual</Behavior>
 													<Representation>None</Representation>
 													<ShowTitle>false</ShowTitle>
 													<ThroughAlign>Use</ThroughAlign>
@@ -388,6 +394,7 @@
 																</v8:item>
 															</ToolTip>
 															<Group>Horizontal</Group>
+															<Behavior>Usual</Behavior>
 															<Representation>None</Representation>
 															<ShowTitle>false</ShowTitle>
 															<ExtendedTooltip name="ГруппаНаименованиеКодExtendedTooltip" id="66"/>
@@ -451,6 +458,7 @@
 														</InputField>
 														<UsualGroup name="ГруппаЮрЛицоИндексНумерации" id="263">
 															<Group>Horizontal</Group>
+															<Behavior>Usual</Behavior>
 															<Representation>None</Representation>
 															<ShowTitle>false</ShowTitle>
 															<ExtendedTooltip name="ГруппаЮрЛицоИндексНумерацииРасширеннаяПодсказка" id="264"/>
@@ -458,6 +466,7 @@
 																<InputField name="ЮрФизЛицо" id="23">
 																	<DataPath>Объект.ЮрФизЛицо</DataPath>
 																	<TitleLocation>Left</TitleLocation>
+																	<Width>25</Width>
 																	<HorizontalStretch>false</HorizontalStretch>
 																	<ContextMenu name="ЮрФизЛицоКонтекстноеМеню" id="24"/>
 																	<ExtendedTooltip name="ЮрФизЛицоExtendedTooltip" id="71"/>
@@ -490,6 +499,7 @@
 															</Title>
 															<Height>4</Height>
 															<Group>Vertical</Group>
+															<Behavior>Usual</Behavior>
 															<ShowTitle>false</ShowTitle>
 															<ThroughAlign>Use</ThroughAlign>
 															<ExtendedTooltip name="ГруппаКакЮрЛицоExtendedTooltip" id="161"/>
@@ -502,6 +512,7 @@
 																		</v8:item>
 																	</Title>
 																	<Group>Vertical</Group>
+																	<Behavior>Usual</Behavior>
 																	<Representation>None</Representation>
 																	<ShowTitle>false</ShowTitle>
 																	<ExtendedTooltip name="ПолноеНаименованиеЮрЛицоРасширеннаяПодсказка" id="163"/>
@@ -527,6 +538,7 @@
 																		</InputField>
 																		<UsualGroup name="ИННЮрЛицо" id="170">
 																			<Group>Horizontal</Group>
+																			<Behavior>Usual</Behavior>
 																			<Representation>None</Representation>
 																			<ShowTitle>false</ShowTitle>
 																			<ExtendedTooltip name="ИННЮрЛицоРасширеннаяПодсказка" id="171"/>
@@ -602,6 +614,7 @@
 																		</v8:item>
 																	</ToolTip>
 																	<Group>AlwaysHorizontal</Group>
+																	<Behavior>Usual</Behavior>
 																	<Representation>None</Representation>
 																	<ShowTitle>false</ShowTitle>
 																	<ExtendedTooltip name="ГруппаКонтролирующийОрганРасширеннаяПодсказка" id="462"/>
@@ -682,6 +695,7 @@
 																</v8:item>
 															</Title>
 															<Group>Vertical</Group>
+															<Behavior>Usual</Behavior>
 															<ShowTitle>false</ShowTitle>
 															<ThroughAlign>Use</ThroughAlign>
 															<ExtendedTooltip name="ГруппаКакФизЛицоExtendedTooltip" id="195"/>
@@ -728,6 +742,7 @@
 																</v8:item>
 															</Title>
 															<Group>Vertical</Group>
+															<Behavior>Usual</Behavior>
 															<ShowTitle>false</ShowTitle>
 															<ThroughAlign>Use</ThroughAlign>
 															<ExtendedTooltip name="ГруппаКакИПExtendedTooltip" id="213"/>
@@ -759,6 +774,7 @@
 																</InputField>
 																<UsualGroup name="ИННИП" id="230">
 																	<Group>Horizontal</Group>
+																	<Behavior>Usual</Behavior>
 																	<Representation>None</Representation>
 																	<ShowTitle>false</ShowTitle>
 																	<ExtendedTooltip name="ИННИПРасширеннаяПодсказка" id="231"/>
@@ -827,6 +843,7 @@
 																</v8:item>
 															</Title>
 															<Group>Vertical</Group>
+															<Behavior>Usual</Behavior>
 															<ShowTitle>false</ShowTitle>
 															<ThroughAlign>Use</ThroughAlign>
 															<ExtendedTooltip name="ГруппаКакНерезидентExtendedTooltip" id="247"/>
@@ -879,6 +896,7 @@
 																</v8:item>
 															</ToolTip>
 															<Group>AlwaysHorizontal</Group>
+															<Behavior>Usual</Behavior>
 															<Representation>None</Representation>
 															<ShowTitle>false</ShowTitle>
 															<ThroughAlign>Use</ThroughAlign>
@@ -1005,6 +1023,7 @@
 																</v8:item>
 															</Title>
 															<Group>Horizontal</Group>
+															<Behavior>Usual</Behavior>
 															<Representation>None</Representation>
 															<ShowTitle>false</ShowTitle>
 															<ExtendedTooltip name="БанковскийСчетЗаданРасширеннаяПодсказка" id="157"/>
@@ -1017,6 +1036,13 @@
 																			<v8:content>Банковский счет</v8:content>
 																		</v8:item>
 																	</Title>
+																	<ChoiceParameterLinks>
+																		<xr:Link>
+																			<xr:Name>Отбор.Владелец</xr:Name>
+																			<xr:DataPath xsi:type="xs:string">1</xr:DataPath>
+																			<xr:ValueChange>Clear</xr:ValueChange>
+																		</xr:Link>
+																	</ChoiceParameterLinks>
 																	<ContextMenu name="ОсновнойБанковскийСчетКонтекстноеМеню" id="55"/>
 																	<ExtendedTooltip name="ОсновнойБанковскийСчетExtendedTooltip" id="90"/>
 																</InputField>
@@ -1037,6 +1063,7 @@
 																</v8:item>
 															</ToolTip>
 															<Group>Horizontal</Group>
+															<Behavior>Usual</Behavior>
 															<Representation>None</Representation>
 															<ShowTitle>false</ShowTitle>
 															<ExtendedTooltip name="БанковскийСчетНеЗаданРасширеннаяПодсказка" id="147"/>
@@ -1164,6 +1191,7 @@
 															<v8:content>Группа фото и спарк</v8:content>
 														</v8:item>
 													</ToolTip>
+													<Behavior>Usual</Behavior>
 													<Representation>None</Representation>
 													<ShowTitle>false</ShowTitle>
 													<ExtendedTooltip name="ГруппаФотоИСпаркРасширеннаяПодсказка" id="491"/>
@@ -1176,6 +1204,7 @@
 																</v8:item>
 															</Title>
 															<Group>Vertical</Group>
+															<Behavior>Usual</Behavior>
 															<Representation>None</Representation>
 															<ShowTitle>false</ShowTitle>
 															<ExtendedTooltip name="ГруппаТолькоФотоExtendedTooltip" id="97"/>
@@ -1241,325 +1270,15 @@
 															</Title>
 															<HorizontalStretch>false</HorizontalStretch>
 															<Group>Horizontal</Group>
+															<Behavior>Usual</Behavior>
 															<Representation>None</Representation>
 															<ShowTitle>false</ShowTitle>
 															<ExtendedTooltip name="ГруппаИндексыСПАРКРискиРасширеннаяПодсказка" id="492"/>
 															<ChildItems>
-																<UsualGroup name="ГруппаИндексыСПАРКРискиДекорации" id="463">
-																	<Title>
-																		<v8:item>
-																			<v8:lang>ru</v8:lang>
-																			<v8:content>Группа индексы СПАРКРиски декорации</v8:content>
-																		</v8:item>
-																	</Title>
-																	<Group>Vertical</Group>
-																	<Representation>None</Representation>
-																	<ShowTitle>false</ShowTitle>
-																	<ThroughAlign>Use</ThroughAlign>
-																	<ExtendedTooltip name="ГруппаИндексыСПАРКРискиДекорацииРасширеннаяПодсказка" id="493"/>
-																	<ChildItems>
-																		<UsualGroup name="ГруппаИндексыСПАРКРискиДекорацииСтрока1" id="465">
-																			<Title>
-																				<v8:item>
-																					<v8:lang>ru</v8:lang>
-																					<v8:content>ГруппаИндексыСПАРКРискиДекорацииСтрока1</v8:content>
-																				</v8:item>
-																			</Title>
-																			<Group>Horizontal</Group>
-																			<Representation>None</Representation>
-																			<ChildItemsWidth>LeftWide</ChildItemsWidth>
-																			<ShowTitle>false</ShowTitle>
-																			<ExtendedTooltip name="ГруппаИндексыСПАРКРискиДекорацииСтрока1РасширеннаяПодсказка" id="494"/>
-																			<ChildItems>
-																				<LabelDecoration name="ДекорацияИндексыСПАРКРискиСтрока1Заголовок" id="473">
-																					<HorizontalStretch>true</HorizontalStretch>
-																					<Title formatted="false">
-																						<v8:item>
-																							<v8:lang>ru</v8:lang>
-																							<v8:content>Заголовок1</v8:content>
-																						</v8:item>
-																					</Title>
-																					<ContextMenu name="ДекорацияИндексыСПАРКРискиСтрока1ЗаголовокКонтекстноеМеню" id="497"/>
-																					<ExtendedTooltip name="ДекорацияИндексыСПАРКРискиСтрока1ЗаголовокРасширеннаяПодсказка" id="498"/>
-																				</LabelDecoration>
-																				<LabelDecoration name="ДекорацияИндексыСПАРКРискиСтрока1Значение" id="476">
-																					<Width>15</Width>
-																					<AutoMaxHeight>false</AutoMaxHeight>
-																					<HorizontalStretch>false</HorizontalStretch>
-																					<VerticalStretch>false</VerticalStretch>
-																					<Title formatted="false">
-																						<v8:item>
-																							<v8:lang>ru</v8:lang>
-																							<v8:content>Значение1</v8:content>
-																						</v8:item>
-																					</Title>
-																					<ContextMenu name="ДекорацияИндексыСПАРКРискиСтрока1ЗначениеКонтекстноеМеню" id="499"/>
-																					<ExtendedTooltip name="ДекорацияИндексыСПАРКРискиСтрока1ЗначениеРасширеннаяПодсказка" id="500"/>
-																				</LabelDecoration>
-																			</ChildItems>
-																		</UsualGroup>
-																		<UsualGroup name="ГруппаИндексыСПАРКРискиДекорацииСтрока2" id="467">
-																			<Title>
-																				<v8:item>
-																					<v8:lang>ru</v8:lang>
-																					<v8:content>ГруппаИндексыСПАРКРискиДекорацииСтрока2</v8:content>
-																				</v8:item>
-																			</Title>
-																			<Group>Horizontal</Group>
-																			<Representation>None</Representation>
-																			<ChildItemsWidth>LeftWide</ChildItemsWidth>
-																			<ShowTitle>false</ShowTitle>
-																			<ExtendedTooltip name="ГруппаИндексыСПАРКРискиДекорацииСтрока2РасширеннаяПодсказка" id="495"/>
-																			<ChildItems>
-																				<LabelDecoration name="ДекорацияИндексыСПАРКРискиСтрока2Заголовок" id="479">
-																					<Width>15</Width>
-																					<AutoMaxWidth>false</AutoMaxWidth>
-																					<HorizontalStretch>true</HorizontalStretch>
-																					<Title formatted="false">
-																						<v8:item>
-																							<v8:lang>ru</v8:lang>
-																							<v8:content>Заголовок2</v8:content>
-																						</v8:item>
-																					</Title>
-																					<ContextMenu name="ДекорацияИндексыСПАРКРискиСтрока2ЗаголовокКонтекстноеМеню" id="501"/>
-																					<ExtendedTooltip name="ДекорацияИндексыСПАРКРискиСтрока2ЗаголовокРасширеннаяПодсказка" id="502"/>
-																				</LabelDecoration>
-																				<PictureDecoration name="ДекорацияИндексыСПАРКРискиСтрока2КартинкаКр" id="438">
-																					<Visible>false</Visible>
-																					<Width>2</Width>
-																					<AutoMaxWidth>false</AutoMaxWidth>
-																					<HorizontalStretch>false</HorizontalStretch>
-																					<Title formatted="false">
-																						<v8:item>
-																							<v8:lang>ru</v8:lang>
-																							<v8:content>Декорация индексы СПАРКРиски строка2 картинка зел</v8:content>
-																						</v8:item>
-																					</Title>
-																					<FileDragMode>AsFile</FileDragMode>
-																					<ContextMenu name="ДекорацияИндексыСПАРКРискиСтрока2КартинкаКрКонтекстноеМеню" id="439"/>
-																					<ExtendedTooltip name="ДекорацияИндексыСПАРКРискиСтрока2КартинкаКрРасширеннаяПодсказка" id="440"/>
-																				</PictureDecoration>
-																				<PictureDecoration name="ДекорацияИндексыСПАРКРискиСтрока2КартинкаОранж" id="441">
-																					<Visible>false</Visible>
-																					<Width>2</Width>
-																					<AutoMaxWidth>false</AutoMaxWidth>
-																					<HorizontalStretch>false</HorizontalStretch>
-																					<Title formatted="false">
-																						<v8:item>
-																							<v8:lang>ru</v8:lang>
-																							<v8:content>Декорация индексы СПАРКРиски строка2 картинка зел</v8:content>
-																						</v8:item>
-																					</Title>
-																					<FileDragMode>AsFile</FileDragMode>
-																					<ContextMenu name="ДекорацияИндексыСПАРКРискиСтрока2КартинкаОранжКонтекстноеМеню" id="442"/>
-																					<ExtendedTooltip name="ДекорацияИндексыСПАРКРискиСтрока2КартинкаОранжРасширеннаяПодсказка" id="443"/>
-																				</PictureDecoration>
-																				<PictureDecoration name="ДекорацияИндексыСПАРКРискиСтрока2КартинкаЗел" id="435">
-																					<Visible>false</Visible>
-																					<Width>2</Width>
-																					<AutoMaxWidth>false</AutoMaxWidth>
-																					<HorizontalStretch>false</HorizontalStretch>
-																					<Title formatted="false">
-																						<v8:item>
-																							<v8:lang>ru</v8:lang>
-																							<v8:content>Декорация индексы СПАРКРиски строка2 картинка зел</v8:content>
-																						</v8:item>
-																					</Title>
-																					<FileDragMode>AsFile</FileDragMode>
-																					<ContextMenu name="ДекорацияИндексыСПАРКРискиСтрока2КартинкаЗелКонтекстноеМеню" id="436"/>
-																					<ExtendedTooltip name="ДекорацияИндексыСПАРКРискиСтрока2КартинкаЗелРасширеннаяПодсказка" id="437"/>
-																				</PictureDecoration>
-																				<LabelDecoration name="ДекорацияИндексыСПАРКРискиСтрока2Значение" id="482">
-																					<Width>15</Width>
-																					<AutoMaxWidth>false</AutoMaxWidth>
-																					<AutoMaxHeight>false</AutoMaxHeight>
-																					<HorizontalStretch>false</HorizontalStretch>
-																					<VerticalStretch>false</VerticalStretch>
-																					<Title formatted="false">
-																						<v8:item>
-																							<v8:lang>ru</v8:lang>
-																							<v8:content>Значение2</v8:content>
-																						</v8:item>
-																					</Title>
-																					<ContextMenu name="ДекорацияИндексыСПАРКРискиСтрока2ЗначениеКонтекстноеМеню" id="503"/>
-																					<ExtendedTooltip name="ДекорацияИндексыСПАРКРискиСтрока2ЗначениеРасширеннаяПодсказка" id="504"/>
-																				</LabelDecoration>
-																			</ChildItems>
-																		</UsualGroup>
-																		<UsualGroup name="ГруппаИндексыСПАРКРискиДекорацииСтрока3" id="469">
-																			<Title>
-																				<v8:item>
-																					<v8:lang>ru</v8:lang>
-																					<v8:content>ГруппаИндексыСПАРКРискиДекорацииСтрока3</v8:content>
-																				</v8:item>
-																			</Title>
-																			<Group>Horizontal</Group>
-																			<Representation>None</Representation>
-																			<ChildItemsWidth>LeftWide</ChildItemsWidth>
-																			<ShowTitle>false</ShowTitle>
-																			<ExtendedTooltip name="ГруппаИндексыСПАРКРискиДекорацииСтрока3РасширеннаяПодсказка" id="496"/>
-																			<ChildItems>
-																				<LabelDecoration name="ДекорацияИндексыСПАРКРискиСтрока3Заголовок" id="485">
-																					<Width>15</Width>
-																					<AutoMaxWidth>false</AutoMaxWidth>
-																					<HorizontalStretch>true</HorizontalStretch>
-																					<Title formatted="false">
-																						<v8:item>
-																							<v8:lang>ru</v8:lang>
-																							<v8:content>Заголовок3</v8:content>
-																						</v8:item>
-																					</Title>
-																					<ContextMenu name="ДекорацияИндексыСПАРКРискиСтрока3ЗаголовокКонтекстноеМеню" id="505"/>
-																					<ExtendedTooltip name="ДекорацияИндексыСПАРКРискиСтрока3ЗаголовокРасширеннаяПодсказка" id="506"/>
-																				</LabelDecoration>
-																				<LabelDecoration name="ДекорацияИндексыСПАРКРискиСтрока3Значение" id="488">
-																					<Width>15</Width>
-																					<AutoMaxWidth>false</AutoMaxWidth>
-																					<AutoMaxHeight>false</AutoMaxHeight>
-																					<HorizontalStretch>false</HorizontalStretch>
-																					<VerticalStretch>false</VerticalStretch>
-																					<Title formatted="false">
-																						<v8:item>
-																							<v8:lang>ru</v8:lang>
-																							<v8:content>Значение3</v8:content>
-																						</v8:item>
-																					</Title>
-																					<ContextMenu name="ДекорацияИндексыСПАРКРискиСтрока3ЗначениеКонтекстноеМеню" id="507"/>
-																					<ExtendedTooltip name="ДекорацияИндексыСПАРКРискиСтрока3ЗначениеРасширеннаяПодсказка" id="508"/>
-																				</LabelDecoration>
-																			</ChildItems>
-																		</UsualGroup>
-																		<UsualGroup name="ГруппаИндексыСПАРКРискиДекорацииСтрока4" id="395">
-																			<Title>
-																				<v8:item>
-																					<v8:lang>ru</v8:lang>
-																					<v8:content>ГруппаИндексыСПАРКРискиДекорацииСтрока4</v8:content>
-																				</v8:item>
-																			</Title>
-																			<Group>Horizontal</Group>
-																			<Representation>None</Representation>
-																			<ChildItemsWidth>LeftWide</ChildItemsWidth>
-																			<ShowTitle>false</ShowTitle>
-																			<ExtendedTooltip name="ГруппаИндексыСПАРКРискиДекорацииСтрока4РасширеннаяПодсказка" id="396"/>
-																			<ChildItems>
-																				<LabelDecoration name="ДекорацияИндексыСПАРКРискиСтрока4Заголовок" id="397">
-																					<Width>15</Width>
-																					<AutoMaxWidth>false</AutoMaxWidth>
-																					<HorizontalStretch>true</HorizontalStretch>
-																					<Title formatted="false">
-																						<v8:item>
-																							<v8:lang>ru</v8:lang>
-																							<v8:content>Заголовок4</v8:content>
-																						</v8:item>
-																					</Title>
-																					<ContextMenu name="ДекорацияИндексыСПАРКРискиСтрока4ЗаголовокКонтекстноеМеню" id="398"/>
-																					<ExtendedTooltip name="ДекорацияИндексыСПАРКРискиСтрока4ЗаголовокРасширеннаяПодсказка" id="399"/>
-																				</LabelDecoration>
-																				<LabelDecoration name="ДекорацияИндексыСПАРКРискиСтрока4Значение" id="400">
-																					<Width>15</Width>
-																					<AutoMaxWidth>false</AutoMaxWidth>
-																					<AutoMaxHeight>false</AutoMaxHeight>
-																					<HorizontalStretch>false</HorizontalStretch>
-																					<VerticalStretch>false</VerticalStretch>
-																					<Title formatted="false">
-																						<v8:item>
-																							<v8:lang>ru</v8:lang>
-																							<v8:content>Значение4</v8:content>
-																						</v8:item>
-																					</Title>
-																					<ContextMenu name="ДекорацияИндексыСПАРКРискиСтрока4ЗначениеКонтекстноеМеню" id="401"/>
-																					<ExtendedTooltip name="ДекорацияИндексыСПАРКРискиСтрока4ЗначениеРасширеннаяПодсказка" id="402"/>
-																				</LabelDecoration>
-																			</ChildItems>
-																		</UsualGroup>
-																		<UsualGroup name="ГруппаИндексыСПАРКРискиДекорацииСтрока5" id="403">
-																			<Title>
-																				<v8:item>
-																					<v8:lang>ru</v8:lang>
-																					<v8:content>ГруппаИндексыСПАРКРискиДекорацииСтрока5</v8:content>
-																				</v8:item>
-																			</Title>
-																			<Group>Horizontal</Group>
-																			<Representation>None</Representation>
-																			<ChildItemsWidth>LeftWide</ChildItemsWidth>
-																			<ShowTitle>false</ShowTitle>
-																			<ExtendedTooltip name="ГруппаИндексыСПАРКРискиДекорацииСтрока5РасширеннаяПодсказка" id="404"/>
-																			<ChildItems>
-																				<LabelDecoration name="ДекорацияИндексыСПАРКРискиСтрока5Заголовок" id="405">
-																					<Width>15</Width>
-																					<AutoMaxWidth>false</AutoMaxWidth>
-																					<HorizontalStretch>true</HorizontalStretch>
-																					<Title formatted="false">
-																						<v8:item>
-																							<v8:lang>ru</v8:lang>
-																							<v8:content>Заголовок5</v8:content>
-																						</v8:item>
-																					</Title>
-																					<ContextMenu name="ДекорацияИндексыСПАРКРискиСтрока5ЗаголовокКонтекстноеМеню" id="406"/>
-																					<ExtendedTooltip name="ДекорацияИндексыСПАРКРискиСтрока5ЗаголовокРасширеннаяПодсказка" id="407"/>
-																				</LabelDecoration>
-																				<LabelDecoration name="ДекорацияИндексыСПАРКРискиСтрока5Значение" id="408">
-																					<Width>15</Width>
-																					<AutoMaxWidth>false</AutoMaxWidth>
-																					<AutoMaxHeight>false</AutoMaxHeight>
-																					<HorizontalStretch>false</HorizontalStretch>
-																					<VerticalStretch>false</VerticalStretch>
-																					<Title formatted="false">
-																						<v8:item>
-																							<v8:lang>ru</v8:lang>
-																							<v8:content>Значение5</v8:content>
-																						</v8:item>
-																					</Title>
-																					<ContextMenu name="ДекорацияИндексыСПАРКРискиСтрока5ЗначениеКонтекстноеМеню" id="409"/>
-																					<ExtendedTooltip name="ДекорацияИндексыСПАРКРискиСтрока5ЗначениеРасширеннаяПодсказка" id="410"/>
-																				</LabelDecoration>
-																			</ChildItems>
-																		</UsualGroup>
-																		<UsualGroup name="ГруппаИндексыСПАРКРискиДекорацииСтрока6" id="411">
-																			<Title>
-																				<v8:item>
-																					<v8:lang>ru</v8:lang>
-																					<v8:content>ГруппаИндексыСПАРКРискиДекорацииСтрока6</v8:content>
-																				</v8:item>
-																			</Title>
-																			<Group>Horizontal</Group>
-																			<Representation>None</Representation>
-																			<ChildItemsWidth>LeftWide</ChildItemsWidth>
-																			<ShowTitle>false</ShowTitle>
-																			<ExtendedTooltip name="ГруппаИндексыСПАРКРискиДекорацииСтрока6РасширеннаяПодсказка" id="412"/>
-																			<ChildItems>
-																				<LabelDecoration name="ДекорацияИндексыСПАРКРискиСтрока6Заголовок" id="413">
-																					<Width>15</Width>
-																					<AutoMaxWidth>false</AutoMaxWidth>
-																					<HorizontalStretch>true</HorizontalStretch>
-																					<Title formatted="false">
-																						<v8:item>
-																							<v8:lang>ru</v8:lang>
-																							<v8:content>Заголовок6</v8:content>
-																						</v8:item>
-																					</Title>
-																					<ContextMenu name="ДекорацияИндексыСПАРКРискиСтрока6ЗаголовокКонтекстноеМеню" id="414"/>
-																					<ExtendedTooltip name="ДекорацияИндексыСПАРКРискиСтрока6ЗаголовокРасширеннаяПодсказка" id="415"/>
-																				</LabelDecoration>
-																				<LabelDecoration name="ДекорацияИндексыСПАРКРискиСтрока6Значение" id="416">
-																					<Width>15</Width>
-																					<AutoMaxWidth>false</AutoMaxWidth>
-																					<AutoMaxHeight>false</AutoMaxHeight>
-																					<HorizontalStretch>false</HorizontalStretch>
-																					<VerticalStretch>false</VerticalStretch>
-																					<Title formatted="false">
-																						<v8:item>
-																							<v8:lang>ru</v8:lang>
-																							<v8:content>Значение6</v8:content>
-																						</v8:item>
-																					</Title>
-																					<ContextMenu name="ДекорацияИндексыСПАРКРискиСтрока6ЗначениеКонтекстноеМеню" id="417"/>
-																					<ExtendedTooltip name="ДекорацияИндексыСПАРКРискиСтрока6ЗначениеРасширеннаяПодсказка" id="418"/>
-																				</LabelDecoration>
-																			</ChildItems>
-																		</UsualGroup>
-																	</ChildItems>
-																</UsualGroup>
+																<LabelDecoration name="ДекорацияИндексыСПАРКРиски" id="475">
+																	<ContextMenu name="ДекорацияИндексыСПАРКРискиКонтекстноеМеню" id="561"/>
+																	<ExtendedTooltip name="ДекорацияИндексыСПАРКРискиРасширеннаяПодсказка" id="477"/>
+																</LabelDecoration>
 																<PictureDecoration name="КартинкаОжиданиеЗагрузкиИндексовСПАРКРиски" id="419">
 																	<Width>2</Width>
 																	<AutoMaxWidth>false</AutoMaxWidth>
@@ -1644,7 +1363,15 @@
 											<FileDragMode>AsFile</FileDragMode>
 											<DataPath>КонтактныеЛица</DataPath>
 											<CommandSet>
+												<ExcludedCommand>CancelSearch</ExcludedCommand>
 												<ExcludedCommand>EndEdit</ExcludedCommand>
+												<ExcludedCommand>Find</ExcludedCommand>
+												<ExcludedCommand>MoveDown</ExcludedCommand>
+												<ExcludedCommand>MoveUp</ExcludedCommand>
+												<ExcludedCommand>ShowMultipleSelection</ExcludedCommand>
+												<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
+												<ExcludedCommand>SortListAsc</ExcludedCommand>
+												<ExcludedCommand>SortListDesc</ExcludedCommand>
 											</CommandSet>
 											<RowFilter xsi:nil="true"/>
 											<ContextMenu name="КонтактныеЛицаКонтекстноеМеню" id="115">
@@ -2677,7 +2404,7 @@
 			<Action callType="After">РасшДОАМ_СоавторыУдалитьПосле</Action>
 		</Command>
 	</Commands>
-	<BaseForm version="2.17">
+	<BaseForm version="2.20">
 		<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
 		<CommandSet>
 			<ExcludedCommand>WriteAndClose</ExcludedCommand>
@@ -2909,6 +2636,7 @@
 				<HorizontalStretch>true</HorizontalStretch>
 				<VerticalStretch>true</VerticalStretch>
 				<Group>Horizontal</Group>
+				<Behavior>Usual</Behavior>
 				<Representation>None</Representation>
 				<ShowTitle>false</ShowTitle>
 				<ExtendedTooltip name="ГруппаВсеПоляИФотоExtendedTooltip" id="64"/>
@@ -2929,6 +2657,7 @@
 						<HorizontalStretch>true</HorizontalStretch>
 						<VerticalStretch>true</VerticalStretch>
 						<Group>Vertical</Group>
+						<Behavior>Usual</Behavior>
 						<Representation>None</Representation>
 						<ShowTitle>false</ShowTitle>
 						<ExtendedTooltip name="ГруппаВсеПоляExtendedTooltip" id="65"/>
@@ -2982,6 +2711,7 @@
 												</ToolTip>
 												<HorizontalStretch>true</HorizontalStretch>
 												<Group>Horizontal</Group>
+												<Behavior>Usual</Behavior>
 												<BackColor>style:ФонУправляющегоПоля</BackColor>
 												<ThroughAlign>Use</ThroughAlign>
 												<ExtendedTooltip name="ГруппаЗаполнениеПоДаннымЕдиныхГосРеестровРасширеннаяПодсказка" id="427"/>
@@ -2994,6 +2724,7 @@
 															</v8:item>
 														</Title>
 														<Group>Horizontal</Group>
+														<Behavior>Usual</Behavior>
 														<Representation>None</Representation>
 														<ShowTitle>false</ShowTitle>
 														<ExtendedTooltip name="ГруппаПоискаИНННаименованиеРасширеннаяПодсказка" id="429"/>
@@ -3028,6 +2759,7 @@
 											</UsualGroup>
 											<UsualGroup name="Группа2" id="424">
 												<Group>AlwaysHorizontal</Group>
+												<Behavior>Usual</Behavior>
 												<Representation>None</Representation>
 												<ShowTitle>false</ShowTitle>
 												<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="425"/>
@@ -3041,6 +2773,7 @@
 														</Title>
 														<VerticalStretch>true</VerticalStretch>
 														<Group>Vertical</Group>
+														<Behavior>Usual</Behavior>
 														<Representation>None</Representation>
 														<ShowTitle>false</ShowTitle>
 														<ThroughAlign>Use</ThroughAlign>
@@ -3060,6 +2793,7 @@
 																	</v8:item>
 																</ToolTip>
 																<Group>Horizontal</Group>
+																<Behavior>Usual</Behavior>
 																<Representation>None</Representation>
 																<ShowTitle>false</ShowTitle>
 																<ExtendedTooltip name="ГруппаНаименованиеКодExtendedTooltip" id="66"/>
@@ -3125,6 +2859,7 @@
 															</InputField>
 															<UsualGroup name="ГруппаЮрЛицоИндексНумерации" id="263">
 																<Group>Horizontal</Group>
+																<Behavior>Usual</Behavior>
 																<Representation>None</Representation>
 																<ShowTitle>false</ShowTitle>
 																<ThroughAlign>Use</ThroughAlign>
@@ -3133,6 +2868,7 @@
 																	<InputField name="ЮрФизЛицо" id="23">
 																		<DataPath>Объект.ЮрФизЛицо</DataPath>
 																		<TitleLocation>Left</TitleLocation>
+																		<Width>25</Width>
 																		<AutoMaxWidth>false</AutoMaxWidth>
 																		<HorizontalStretch>false</HorizontalStretch>
 																		<ContextMenu name="ЮрФизЛицоКонтекстноеМеню" id="24"/>
@@ -3163,6 +2899,7 @@
 																</Title>
 																<Height>4</Height>
 																<Group>Vertical</Group>
+																<Behavior>Usual</Behavior>
 																<ShowTitle>false</ShowTitle>
 																<ThroughAlign>Use</ThroughAlign>
 																<ExtendedTooltip name="ГруппаКакЮрЛицоExtendedTooltip" id="161"/>
@@ -3175,6 +2912,7 @@
 																			</v8:item>
 																		</Title>
 																		<Group>Vertical</Group>
+																		<Behavior>Usual</Behavior>
 																		<Representation>None</Representation>
 																		<ShowTitle>false</ShowTitle>
 																		<ExtendedTooltip name="ПолноеНаименованиеЮрЛицоРасширеннаяПодсказка" id="163"/>
@@ -3201,6 +2939,7 @@
 																			</InputField>
 																			<UsualGroup name="ИННЮрЛицо" id="170">
 																				<Group>Horizontal</Group>
+																				<Behavior>Usual</Behavior>
 																				<Representation>None</Representation>
 																				<ShowTitle>false</ShowTitle>
 																				<ExtendedTooltip name="ИННЮрЛицоРасширеннаяПодсказка" id="171"/>
@@ -3276,6 +3015,7 @@
 																			</v8:item>
 																		</ToolTip>
 																		<Group>AlwaysHorizontal</Group>
+																		<Behavior>Usual</Behavior>
 																		<Representation>None</Representation>
 																		<ShowTitle>false</ShowTitle>
 																		<ExtendedTooltip name="ГруппаКонтролирующийОрганРасширеннаяПодсказка" id="462"/>
@@ -3356,6 +3096,7 @@
 																	</v8:item>
 																</Title>
 																<Group>Vertical</Group>
+																<Behavior>Usual</Behavior>
 																<ShowTitle>false</ShowTitle>
 																<ThroughAlign>Use</ThroughAlign>
 																<ExtendedTooltip name="ГруппаКакФизЛицоExtendedTooltip" id="195"/>
@@ -3391,6 +3132,7 @@
 																	</v8:item>
 																</Title>
 																<Group>Vertical</Group>
+																<Behavior>Usual</Behavior>
 																<ShowTitle>false</ShowTitle>
 																<ThroughAlign>Use</ThroughAlign>
 																<ExtendedTooltip name="ГруппаКакИПExtendedTooltip" id="213"/>
@@ -3424,6 +3166,7 @@
 																	</InputField>
 																	<UsualGroup name="ИННИП" id="230">
 																		<Group>Horizontal</Group>
+																		<Behavior>Usual</Behavior>
 																		<Representation>None</Representation>
 																		<ShowTitle>false</ShowTitle>
 																		<ExtendedTooltip name="ИННИПРасширеннаяПодсказка" id="231"/>
@@ -3486,6 +3229,7 @@
 																	</v8:item>
 																</Title>
 																<Group>Vertical</Group>
+																<Behavior>Usual</Behavior>
 																<ShowTitle>false</ShowTitle>
 																<ThroughAlign>Use</ThroughAlign>
 																<ExtendedTooltip name="ГруппаКакНерезидентExtendedTooltip" id="247"/>
@@ -3539,6 +3283,7 @@
 																	</v8:item>
 																</ToolTip>
 																<Group>AlwaysHorizontal</Group>
+																<Behavior>Usual</Behavior>
 																<Representation>None</Representation>
 																<ShowTitle>false</ShowTitle>
 																<ThroughAlign>Use</ThroughAlign>
@@ -3580,6 +3325,7 @@
 																	</v8:item>
 																</Title>
 																<Group>Horizontal</Group>
+																<Behavior>Usual</Behavior>
 																<Representation>None</Representation>
 																<ShowTitle>false</ShowTitle>
 																<ExtendedTooltip name="БанковскийСчетЗаданРасширеннаяПодсказка" id="157"/>
@@ -3593,6 +3339,13 @@
 																			</v8:item>
 																		</Title>
 																		<AutoMaxWidth>false</AutoMaxWidth>
+																		<ChoiceParameterLinks>
+																			<xr:Link>
+																				<xr:Name>Отбор.Владелец</xr:Name>
+																				<xr:DataPath xsi:type="xs:string">1</xr:DataPath>
+																				<xr:ValueChange>Clear</xr:ValueChange>
+																			</xr:Link>
+																		</ChoiceParameterLinks>
 																		<ContextMenu name="ОсновнойБанковскийСчетКонтекстноеМеню" id="55"/>
 																		<ExtendedTooltip name="ОсновнойБанковскийСчетExtendedTooltip" id="90"/>
 																	</InputField>
@@ -3613,6 +3366,7 @@
 																	</v8:item>
 																</ToolTip>
 																<Group>Horizontal</Group>
+																<Behavior>Usual</Behavior>
 																<Representation>None</Representation>
 																<ShowTitle>false</ShowTitle>
 																<ExtendedTooltip name="БанковскийСчетНеЗаданРасширеннаяПодсказка" id="147"/>
@@ -3686,6 +3440,7 @@
 																<v8:content>Группа фото и спарк</v8:content>
 															</v8:item>
 														</ToolTip>
+														<Behavior>Usual</Behavior>
 														<Representation>None</Representation>
 														<ShowTitle>false</ShowTitle>
 														<ExtendedTooltip name="ГруппаФотоИСпаркРасширеннаяПодсказка" id="366"/>
@@ -3698,6 +3453,7 @@
 																	</v8:item>
 																</Title>
 																<Group>Vertical</Group>
+																<Behavior>Usual</Behavior>
 																<Representation>None</Representation>
 																<ShowTitle>false</ShowTitle>
 																<ExtendedTooltip name="ГруппаТолькоФотоExtendedTooltip" id="97"/>
@@ -3763,325 +3519,15 @@
 																</Title>
 																<HorizontalStretch>false</HorizontalStretch>
 																<Group>Horizontal</Group>
+																<Behavior>Usual</Behavior>
 																<Representation>None</Representation>
 																<ShowTitle>false</ShowTitle>
 																<ExtendedTooltip name="ГруппаИндексыСПАРКРискиРасширеннаяПодсказка" id="368"/>
 																<ChildItems>
-																	<UsualGroup name="ГруппаИндексыСПАРКРискиДекорации" id="369">
-																		<Title>
-																			<v8:item>
-																				<v8:lang>ru</v8:lang>
-																				<v8:content>Группа индексы СПАРКРиски декорации</v8:content>
-																			</v8:item>
-																		</Title>
-																		<Group>Vertical</Group>
-																		<Representation>None</Representation>
-																		<ShowTitle>false</ShowTitle>
-																		<ThroughAlign>Use</ThroughAlign>
-																		<ExtendedTooltip name="ГруппаИндексыСПАРКРискиДекорацииРасширеннаяПодсказка" id="370"/>
-																		<ChildItems>
-																			<UsualGroup name="ГруппаИндексыСПАРКРискиДекорацииСтрока1" id="371">
-																				<Title>
-																					<v8:item>
-																						<v8:lang>ru</v8:lang>
-																						<v8:content>ГруппаИндексыСПАРКРискиДекорацииСтрока1</v8:content>
-																					</v8:item>
-																				</Title>
-																				<Group>Horizontal</Group>
-																				<Representation>None</Representation>
-																				<ChildItemsWidth>LeftWide</ChildItemsWidth>
-																				<ShowTitle>false</ShowTitle>
-																				<ExtendedTooltip name="ГруппаИндексыСПАРКРискиДекорацииСтрока1РасширеннаяПодсказка" id="372"/>
-																				<ChildItems>
-																					<LabelDecoration name="ДекорацияИндексыСПАРКРискиСтрока1Заголовок" id="373">
-																						<HorizontalStretch>true</HorizontalStretch>
-																						<Title formatted="false">
-																							<v8:item>
-																								<v8:lang>ru</v8:lang>
-																								<v8:content>Заголовок1</v8:content>
-																							</v8:item>
-																						</Title>
-																						<ContextMenu name="ДекорацияИндексыСПАРКРискиСтрока1ЗаголовокКонтекстноеМеню" id="374"/>
-																						<ExtendedTooltip name="ДекорацияИндексыСПАРКРискиСтрока1ЗаголовокРасширеннаяПодсказка" id="375"/>
-																					</LabelDecoration>
-																					<LabelDecoration name="ДекорацияИндексыСПАРКРискиСтрока1Значение" id="376">
-																						<Width>15</Width>
-																						<AutoMaxHeight>false</AutoMaxHeight>
-																						<HorizontalStretch>false</HorizontalStretch>
-																						<VerticalStretch>false</VerticalStretch>
-																						<Title formatted="false">
-																							<v8:item>
-																								<v8:lang>ru</v8:lang>
-																								<v8:content>Значение1</v8:content>
-																							</v8:item>
-																						</Title>
-																						<ContextMenu name="ДекорацияИндексыСПАРКРискиСтрока1ЗначениеКонтекстноеМеню" id="377"/>
-																						<ExtendedTooltip name="ДекорацияИндексыСПАРКРискиСтрока1ЗначениеРасширеннаяПодсказка" id="378"/>
-																					</LabelDecoration>
-																				</ChildItems>
-																			</UsualGroup>
-																			<UsualGroup name="ГруппаИндексыСПАРКРискиДекорацииСтрока2" id="379">
-																				<Title>
-																					<v8:item>
-																						<v8:lang>ru</v8:lang>
-																						<v8:content>ГруппаИндексыСПАРКРискиДекорацииСтрока2</v8:content>
-																					</v8:item>
-																				</Title>
-																				<Group>Horizontal</Group>
-																				<Representation>None</Representation>
-																				<ChildItemsWidth>LeftWide</ChildItemsWidth>
-																				<ShowTitle>false</ShowTitle>
-																				<ExtendedTooltip name="ГруппаИндексыСПАРКРискиДекорацииСтрока2РасширеннаяПодсказка" id="380"/>
-																				<ChildItems>
-																					<LabelDecoration name="ДекорацияИндексыСПАРКРискиСтрока2Заголовок" id="381">
-																						<Width>15</Width>
-																						<AutoMaxWidth>false</AutoMaxWidth>
-																						<HorizontalStretch>true</HorizontalStretch>
-																						<Title formatted="false">
-																							<v8:item>
-																								<v8:lang>ru</v8:lang>
-																								<v8:content>Заголовок2</v8:content>
-																							</v8:item>
-																						</Title>
-																						<ContextMenu name="ДекорацияИндексыСПАРКРискиСтрока2ЗаголовокКонтекстноеМеню" id="382"/>
-																						<ExtendedTooltip name="ДекорацияИндексыСПАРКРискиСтрока2ЗаголовокРасширеннаяПодсказка" id="383"/>
-																					</LabelDecoration>
-																					<PictureDecoration name="ДекорацияИндексыСПАРКРискиСтрока2КартинкаКр" id="438">
-																						<Visible>false</Visible>
-																						<Width>2</Width>
-																						<AutoMaxWidth>false</AutoMaxWidth>
-																						<HorizontalStretch>false</HorizontalStretch>
-																						<Title formatted="false">
-																							<v8:item>
-																								<v8:lang>ru</v8:lang>
-																								<v8:content>Декорация индексы СПАРКРиски строка2 картинка зел</v8:content>
-																							</v8:item>
-																						</Title>
-																						<FileDragMode>AsFile</FileDragMode>
-																						<ContextMenu name="ДекорацияИндексыСПАРКРискиСтрока2КартинкаКрКонтекстноеМеню" id="439"/>
-																						<ExtendedTooltip name="ДекорацияИндексыСПАРКРискиСтрока2КартинкаКрРасширеннаяПодсказка" id="440"/>
-																					</PictureDecoration>
-																					<PictureDecoration name="ДекорацияИндексыСПАРКРискиСтрока2КартинкаОранж" id="441">
-																						<Visible>false</Visible>
-																						<Width>2</Width>
-																						<AutoMaxWidth>false</AutoMaxWidth>
-																						<HorizontalStretch>false</HorizontalStretch>
-																						<Title formatted="false">
-																							<v8:item>
-																								<v8:lang>ru</v8:lang>
-																								<v8:content>Декорация индексы СПАРКРиски строка2 картинка зел</v8:content>
-																							</v8:item>
-																						</Title>
-																						<FileDragMode>AsFile</FileDragMode>
-																						<ContextMenu name="ДекорацияИндексыСПАРКРискиСтрока2КартинкаОранжКонтекстноеМеню" id="442"/>
-																						<ExtendedTooltip name="ДекорацияИндексыСПАРКРискиСтрока2КартинкаОранжРасширеннаяПодсказка" id="443"/>
-																					</PictureDecoration>
-																					<PictureDecoration name="ДекорацияИндексыСПАРКРискиСтрока2КартинкаЗел" id="435">
-																						<Visible>false</Visible>
-																						<Width>2</Width>
-																						<AutoMaxWidth>false</AutoMaxWidth>
-																						<HorizontalStretch>false</HorizontalStretch>
-																						<Title formatted="false">
-																							<v8:item>
-																								<v8:lang>ru</v8:lang>
-																								<v8:content>Декорация индексы СПАРКРиски строка2 картинка зел</v8:content>
-																							</v8:item>
-																						</Title>
-																						<FileDragMode>AsFile</FileDragMode>
-																						<ContextMenu name="ДекорацияИндексыСПАРКРискиСтрока2КартинкаЗелКонтекстноеМеню" id="436"/>
-																						<ExtendedTooltip name="ДекорацияИндексыСПАРКРискиСтрока2КартинкаЗелРасширеннаяПодсказка" id="437"/>
-																					</PictureDecoration>
-																					<LabelDecoration name="ДекорацияИндексыСПАРКРискиСтрока2Значение" id="384">
-																						<Width>15</Width>
-																						<AutoMaxWidth>false</AutoMaxWidth>
-																						<AutoMaxHeight>false</AutoMaxHeight>
-																						<HorizontalStretch>false</HorizontalStretch>
-																						<VerticalStretch>false</VerticalStretch>
-																						<Title formatted="false">
-																							<v8:item>
-																								<v8:lang>ru</v8:lang>
-																								<v8:content>Значение2</v8:content>
-																							</v8:item>
-																						</Title>
-																						<ContextMenu name="ДекорацияИндексыСПАРКРискиСтрока2ЗначениеКонтекстноеМеню" id="385"/>
-																						<ExtendedTooltip name="ДекорацияИндексыСПАРКРискиСтрока2ЗначениеРасширеннаяПодсказка" id="386"/>
-																					</LabelDecoration>
-																				</ChildItems>
-																			</UsualGroup>
-																			<UsualGroup name="ГруппаИндексыСПАРКРискиДекорацииСтрока3" id="387">
-																				<Title>
-																					<v8:item>
-																						<v8:lang>ru</v8:lang>
-																						<v8:content>ГруппаИндексыСПАРКРискиДекорацииСтрока3</v8:content>
-																					</v8:item>
-																				</Title>
-																				<Group>Horizontal</Group>
-																				<Representation>None</Representation>
-																				<ChildItemsWidth>LeftWide</ChildItemsWidth>
-																				<ShowTitle>false</ShowTitle>
-																				<ExtendedTooltip name="ГруппаИндексыСПАРКРискиДекорацииСтрока3РасширеннаяПодсказка" id="388"/>
-																				<ChildItems>
-																					<LabelDecoration name="ДекорацияИндексыСПАРКРискиСтрока3Заголовок" id="389">
-																						<Width>15</Width>
-																						<AutoMaxWidth>false</AutoMaxWidth>
-																						<HorizontalStretch>true</HorizontalStretch>
-																						<Title formatted="false">
-																							<v8:item>
-																								<v8:lang>ru</v8:lang>
-																								<v8:content>Заголовок3</v8:content>
-																							</v8:item>
-																						</Title>
-																						<ContextMenu name="ДекорацияИндексыСПАРКРискиСтрока3ЗаголовокКонтекстноеМеню" id="390"/>
-																						<ExtendedTooltip name="ДекорацияИндексыСПАРКРискиСтрока3ЗаголовокРасширеннаяПодсказка" id="391"/>
-																					</LabelDecoration>
-																					<LabelDecoration name="ДекорацияИндексыСПАРКРискиСтрока3Значение" id="392">
-																						<Width>15</Width>
-																						<AutoMaxWidth>false</AutoMaxWidth>
-																						<AutoMaxHeight>false</AutoMaxHeight>
-																						<HorizontalStretch>false</HorizontalStretch>
-																						<VerticalStretch>false</VerticalStretch>
-																						<Title formatted="false">
-																							<v8:item>
-																								<v8:lang>ru</v8:lang>
-																								<v8:content>Значение3</v8:content>
-																							</v8:item>
-																						</Title>
-																						<ContextMenu name="ДекорацияИндексыСПАРКРискиСтрока3ЗначениеКонтекстноеМеню" id="393"/>
-																						<ExtendedTooltip name="ДекорацияИндексыСПАРКРискиСтрока3ЗначениеРасширеннаяПодсказка" id="394"/>
-																					</LabelDecoration>
-																				</ChildItems>
-																			</UsualGroup>
-																			<UsualGroup name="ГруппаИндексыСПАРКРискиДекорацииСтрока4" id="395">
-																				<Title>
-																					<v8:item>
-																						<v8:lang>ru</v8:lang>
-																						<v8:content>ГруппаИндексыСПАРКРискиДекорацииСтрока4</v8:content>
-																					</v8:item>
-																				</Title>
-																				<Group>Horizontal</Group>
-																				<Representation>None</Representation>
-																				<ChildItemsWidth>LeftWide</ChildItemsWidth>
-																				<ShowTitle>false</ShowTitle>
-																				<ExtendedTooltip name="ГруппаИндексыСПАРКРискиДекорацииСтрока4РасширеннаяПодсказка" id="396"/>
-																				<ChildItems>
-																					<LabelDecoration name="ДекорацияИндексыСПАРКРискиСтрока4Заголовок" id="397">
-																						<Width>15</Width>
-																						<AutoMaxWidth>false</AutoMaxWidth>
-																						<HorizontalStretch>true</HorizontalStretch>
-																						<Title formatted="false">
-																							<v8:item>
-																								<v8:lang>ru</v8:lang>
-																								<v8:content>Заголовок4</v8:content>
-																							</v8:item>
-																						</Title>
-																						<ContextMenu name="ДекорацияИндексыСПАРКРискиСтрока4ЗаголовокКонтекстноеМеню" id="398"/>
-																						<ExtendedTooltip name="ДекорацияИндексыСПАРКРискиСтрока4ЗаголовокРасширеннаяПодсказка" id="399"/>
-																					</LabelDecoration>
-																					<LabelDecoration name="ДекорацияИндексыСПАРКРискиСтрока4Значение" id="400">
-																						<Width>15</Width>
-																						<AutoMaxWidth>false</AutoMaxWidth>
-																						<AutoMaxHeight>false</AutoMaxHeight>
-																						<HorizontalStretch>false</HorizontalStretch>
-																						<VerticalStretch>false</VerticalStretch>
-																						<Title formatted="false">
-																							<v8:item>
-																								<v8:lang>ru</v8:lang>
-																								<v8:content>Значение4</v8:content>
-																							</v8:item>
-																						</Title>
-																						<ContextMenu name="ДекорацияИндексыСПАРКРискиСтрока4ЗначениеКонтекстноеМеню" id="401"/>
-																						<ExtendedTooltip name="ДекорацияИндексыСПАРКРискиСтрока4ЗначениеРасширеннаяПодсказка" id="402"/>
-																					</LabelDecoration>
-																				</ChildItems>
-																			</UsualGroup>
-																			<UsualGroup name="ГруппаИндексыСПАРКРискиДекорацииСтрока5" id="403">
-																				<Title>
-																					<v8:item>
-																						<v8:lang>ru</v8:lang>
-																						<v8:content>ГруппаИндексыСПАРКРискиДекорацииСтрока5</v8:content>
-																					</v8:item>
-																				</Title>
-																				<Group>Horizontal</Group>
-																				<Representation>None</Representation>
-																				<ChildItemsWidth>LeftWide</ChildItemsWidth>
-																				<ShowTitle>false</ShowTitle>
-																				<ExtendedTooltip name="ГруппаИндексыСПАРКРискиДекорацииСтрока5РасширеннаяПодсказка" id="404"/>
-																				<ChildItems>
-																					<LabelDecoration name="ДекорацияИндексыСПАРКРискиСтрока5Заголовок" id="405">
-																						<Width>15</Width>
-																						<AutoMaxWidth>false</AutoMaxWidth>
-																						<HorizontalStretch>true</HorizontalStretch>
-																						<Title formatted="false">
-																							<v8:item>
-																								<v8:lang>ru</v8:lang>
-																								<v8:content>Заголовок5</v8:content>
-																							</v8:item>
-																						</Title>
-																						<ContextMenu name="ДекорацияИндексыСПАРКРискиСтрока5ЗаголовокКонтекстноеМеню" id="406"/>
-																						<ExtendedTooltip name="ДекорацияИндексыСПАРКРискиСтрока5ЗаголовокРасширеннаяПодсказка" id="407"/>
-																					</LabelDecoration>
-																					<LabelDecoration name="ДекорацияИндексыСПАРКРискиСтрока5Значение" id="408">
-																						<Width>15</Width>
-																						<AutoMaxWidth>false</AutoMaxWidth>
-																						<AutoMaxHeight>false</AutoMaxHeight>
-																						<HorizontalStretch>false</HorizontalStretch>
-																						<VerticalStretch>false</VerticalStretch>
-																						<Title formatted="false">
-																							<v8:item>
-																								<v8:lang>ru</v8:lang>
-																								<v8:content>Значение5</v8:content>
-																							</v8:item>
-																						</Title>
-																						<ContextMenu name="ДекорацияИндексыСПАРКРискиСтрока5ЗначениеКонтекстноеМеню" id="409"/>
-																						<ExtendedTooltip name="ДекорацияИндексыСПАРКРискиСтрока5ЗначениеРасширеннаяПодсказка" id="410"/>
-																					</LabelDecoration>
-																				</ChildItems>
-																			</UsualGroup>
-																			<UsualGroup name="ГруппаИндексыСПАРКРискиДекорацииСтрока6" id="411">
-																				<Title>
-																					<v8:item>
-																						<v8:lang>ru</v8:lang>
-																						<v8:content>ГруппаИндексыСПАРКРискиДекорацииСтрока6</v8:content>
-																					</v8:item>
-																				</Title>
-																				<Group>Horizontal</Group>
-																				<Representation>None</Representation>
-																				<ChildItemsWidth>LeftWide</ChildItemsWidth>
-																				<ShowTitle>false</ShowTitle>
-																				<ExtendedTooltip name="ГруппаИндексыСПАРКРискиДекорацииСтрока6РасширеннаяПодсказка" id="412"/>
-																				<ChildItems>
-																					<LabelDecoration name="ДекорацияИндексыСПАРКРискиСтрока6Заголовок" id="413">
-																						<Width>15</Width>
-																						<AutoMaxWidth>false</AutoMaxWidth>
-																						<HorizontalStretch>true</HorizontalStretch>
-																						<Title formatted="false">
-																							<v8:item>
-																								<v8:lang>ru</v8:lang>
-																								<v8:content>Заголовок6</v8:content>
-																							</v8:item>
-																						</Title>
-																						<ContextMenu name="ДекорацияИндексыСПАРКРискиСтрока6ЗаголовокКонтекстноеМеню" id="414"/>
-																						<ExtendedTooltip name="ДекорацияИндексыСПАРКРискиСтрока6ЗаголовокРасширеннаяПодсказка" id="415"/>
-																					</LabelDecoration>
-																					<LabelDecoration name="ДекорацияИндексыСПАРКРискиСтрока6Значение" id="416">
-																						<Width>15</Width>
-																						<AutoMaxWidth>false</AutoMaxWidth>
-																						<AutoMaxHeight>false</AutoMaxHeight>
-																						<HorizontalStretch>false</HorizontalStretch>
-																						<VerticalStretch>false</VerticalStretch>
-																						<Title formatted="false">
-																							<v8:item>
-																								<v8:lang>ru</v8:lang>
-																								<v8:content>Значение6</v8:content>
-																							</v8:item>
-																						</Title>
-																						<ContextMenu name="ДекорацияИндексыСПАРКРискиСтрока6ЗначениеКонтекстноеМеню" id="417"/>
-																						<ExtendedTooltip name="ДекорацияИндексыСПАРКРискиСтрока6ЗначениеРасширеннаяПодсказка" id="418"/>
-																					</LabelDecoration>
-																				</ChildItems>
-																			</UsualGroup>
-																		</ChildItems>
-																	</UsualGroup>
+																	<LabelDecoration name="ДекорацияИндексыСПАРКРиски" id="475">
+																		<ContextMenu name="ДекорацияИндексыСПАРКРискиКонтекстноеМеню" id="476"/>
+																		<ExtendedTooltip name="ДекорацияИндексыСПАРКРискиРасширеннаяПодсказка" id="477"/>
+																	</LabelDecoration>
 																	<PictureDecoration name="КартинкаОжиданиеЗагрузкиИндексовСПАРКРиски" id="419">
 																		<Width>2</Width>
 																		<AutoMaxWidth>false</AutoMaxWidth>
@@ -4166,7 +3612,15 @@
 												<FileDragMode>AsFile</FileDragMode>
 												<DataPath>КонтактныеЛица</DataPath>
 												<CommandSet>
+													<ExcludedCommand>CancelSearch</ExcludedCommand>
 													<ExcludedCommand>EndEdit</ExcludedCommand>
+													<ExcludedCommand>Find</ExcludedCommand>
+													<ExcludedCommand>MoveDown</ExcludedCommand>
+													<ExcludedCommand>MoveUp</ExcludedCommand>
+													<ExcludedCommand>ShowMultipleSelection</ExcludedCommand>
+													<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
+													<ExcludedCommand>SortListAsc</ExcludedCommand>
+													<ExcludedCommand>SortListDesc</ExcludedCommand>
 												</CommandSet>
 												<RowFilter xsi:nil="true"/>
 												<ContextMenu name="КонтактныеЛицаКонтекстноеМеню" id="115">
@@ -4269,6 +3723,15 @@
 			</UsualGroup>
 		</ChildItems>
 		<Attributes>
+			<Attribute name="ДанныеКонтактногоЛица" id="1000013">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Данные контактного лица</v8:content>
+					</v8:item>
+				</Title>
+				<Type/>
+			</Attribute>
 			<Attribute name="Объект" id="1000001">
 				<Type>
 					<v8:Type>cfg:CatalogObject.Контрагенты</v8:Type>
@@ -4487,15 +3950,6 @@
 						<v8:AllowedLength>Variable</v8:AllowedLength>
 					</v8:StringQualifiers>
 				</Type>
-			</Attribute>
-			<Attribute name="ДанныеКонтактногоЛица" id="1000013">
-				<Title>
-					<v8:item>
-						<v8:lang>ru</v8:lang>
-						<v8:content>Данные контактного лица</v8:content>
-					</v8:item>
-				</Title>
-				<Type/>
 			</Attribute>
 			<Attribute name="ПредставлениеКонтактногоЛица" id="1000014">
 				<Title>

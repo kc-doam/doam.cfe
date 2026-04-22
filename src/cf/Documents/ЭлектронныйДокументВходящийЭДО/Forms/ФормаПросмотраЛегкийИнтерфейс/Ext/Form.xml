@@ -1709,6 +1709,7 @@
 											<v8:content>Группа страницы панель закладок</v8:content>
 										</v8:item>
 									</Title>
+									<PagesRepresentation>TabsOnTop</PagesRepresentation>
 									<ExtendedTooltip name="ГруппаСтраницыПанельЗакладокРасширеннаяПодсказка" id="293"/>
 									<ChildItems>
 										<Page name="СтраницаДокумент" id="294">

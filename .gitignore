@@ -14,3 +14,4 @@ src/**/ConfigDumpInfo.xml
 
 *.rar
 *.zip
+!src/cf/**/Picture.zip
